@@ -9,7 +9,7 @@ import uuid
 # ==============================
 # CONFIGURATION
 # ==============================
-OTX_API_KEY = "cc67246c7278a9c830a4563062260bead550a6a687fc2d0f79fd63681c4fe218"  # <- replace with your real key
+OTX_API_KEY = "YOUR_KEY_HERE"  # <- replace with your real key
 OTX_URL = "https://otx.alienvault.com/api/v1/pulses/subscribed"
 
 OUTPUT_DIR = "sigma_rules"        # Root directory for generated Sigma rules
