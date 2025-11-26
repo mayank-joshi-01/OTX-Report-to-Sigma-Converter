@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA1 IOC - ae62d8372aad883a424cf7d3685e422387eff105
+id: 51ce0e36-995a-4869-ae3f-e72d6dacbbc0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From Targeting Pwn2Own
+  Vulnerabilities to Shotgunning Exploits' (68e86b551440846b11a598a1).
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/rondodox.html
+tags:
+- cve-2023-1389
+- pwn2own
+- cve-2024-3721
+- cve-2024-12856
+- rondodox
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ae62d8372aad883a424cf7d3685e422387eff105
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

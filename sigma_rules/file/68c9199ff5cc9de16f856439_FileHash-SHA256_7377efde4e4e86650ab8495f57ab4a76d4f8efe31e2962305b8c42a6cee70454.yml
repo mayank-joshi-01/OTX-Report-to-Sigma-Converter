@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 7377efde4e4e86650ab8495f57ab4a76d4f8efe31e2962305b8c42a6cee70454
+id: d4d59929-ba9a-4082-a37c-6ad775601a6a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of SmokeLoader Version 2025' (68c9199ff5cc9de16f856439).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.zscaler.com/blogs/security-research/smokeloader-rises-ashes
+tags:
+- evasion techniques
+- persistence
+- anti-analysis
+- smoke
+- dofoil
+- smokeloader
+- version 2025
+- malware loader
+- network protocol
+- bug fixes
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7377efde4e4e86650ab8495f57ab4a76d4f8efe31e2962305b8c42a6cee70454
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

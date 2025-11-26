@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - c24353e61826eb7187d1acabbd857ddb694ddfe130eb1f5195aadd39701565ca
+id: 3cbc5776-f5f7-473b-8188-8e8aa720dd2b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kimsuky Attack Disguised
+  as Sex Offender Notification Information' (68d3ca2cd673df55f478a246).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://logpresso.com/ko/blog/2025-09-18-Kimsuky-Attack
+tags:
+- north korea
+- apt
+- data exfiltration
+- anti-vm
+- spear-phishing
+- browser hijacking
+- cryptocurrency theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c24353e61826eb7187d1acabbd857ddb694ddfe130eb1f5195aadd39701565ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

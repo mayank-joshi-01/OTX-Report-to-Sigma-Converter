@@ -1,0 +1,29 @@
+title: OTX IPv4 IOC - 192.124.176.103
+id: d9763f04-1638-4f5a-9a91-3edc05e01fa3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClickFix Gets Creative:
+  Malware Buried in Images'' (6924c9a94b1c7374cf444b82).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.huntress.com/blog/clickfix-malware-buried-in-images
+tags:
+- multi-stage
+- social engineering
+- steganography
+- infostealer
+- rhadamanthys
+- lummac2
+- clickfix
+- windows update
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 192.124.176.103
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

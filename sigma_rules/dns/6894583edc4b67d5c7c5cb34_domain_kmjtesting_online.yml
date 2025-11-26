@@ -1,0 +1,20 @@
+title: OTX domain IOC - kmjtesting.online
+id: b2e2d4bb-dca2-4f61-9f90-e1115b95e2ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kmjtesting.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

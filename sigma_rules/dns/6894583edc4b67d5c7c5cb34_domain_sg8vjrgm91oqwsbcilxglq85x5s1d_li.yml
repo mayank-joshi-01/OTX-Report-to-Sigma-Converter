@@ -1,0 +1,20 @@
+title: OTX domain IOC - sg8vjrgm91oqwsbcilxglq85x5s1d.li
+id: 41cd5018-5ba4-4b0d-8506-a423986baafc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sg8vjrgm91oqwsbcilxglq85x5s1d.li
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

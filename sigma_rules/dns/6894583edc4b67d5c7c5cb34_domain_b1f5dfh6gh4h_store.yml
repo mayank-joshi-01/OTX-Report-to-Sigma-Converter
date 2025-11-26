@@ -1,0 +1,20 @@
+title: OTX domain IOC - b1f5dfh6gh4h.store
+id: 88ced33e-7afc-4e5c-bd69-4700df2aef9f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: b1f5dfh6gh4h.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

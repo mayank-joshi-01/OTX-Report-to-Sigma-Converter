@@ -1,0 +1,20 @@
+title: OTX domain IOC - se-houston-truck-accident-lawyer.site
+id: 7a2a7375-eb23-4739-a982-76131dc74bfe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: se-houston-truck-accident-lawyer.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

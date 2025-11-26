@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 4948e80172a4245256f8627527d7fa96
+id: 93bdfe12-2e03-4e61-b7c3-c270065c2c20
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Targeted attacks leverage
+  accounts on popular online platforms as C2 servers' (688a2f161490dbf0763365ef).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://securelist.com/cobalt-strike-attacks-using-quora-github-social-media/117085/
+tags:
+- cobalt strike beacon
+- cobalt strike
+- api obfuscation
+- shellcode
+- c2 communication
+- spear phishing
+- targeted attacks
+- dll hijacking
+- social media
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 4948e80172a4245256f8627527d7fa96
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - simpanlux88togel.online
+id: 0fb1e67e-6b6b-4146-971b-c1fc95e9f137
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: simpanlux88togel.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

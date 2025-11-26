@@ -1,0 +1,20 @@
+title: OTX domain IOC - uihuuc9877.cfd
+id: 00533a25-9452-4da4-889e-28e7f7c0fd85
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uihuuc9877.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

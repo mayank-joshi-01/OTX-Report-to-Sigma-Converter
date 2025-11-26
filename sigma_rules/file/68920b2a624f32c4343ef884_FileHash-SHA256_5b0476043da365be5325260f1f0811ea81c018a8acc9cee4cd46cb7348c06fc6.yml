@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 5b0476043da365be5325260f1f0811ea81c018a8acc9cee4cd46cb7348c06fc6
+id: 5fbde79e-8722-4ff5-8eaf-4284f5ccad8a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Raspberry Robin:
+  Latest Updates and Improvements'' (68920b2a624f32c4343ef884).'
+author: AlienVault
+date: '2025-08-05'
+references: []
+tags:
+- encryption
+- roshtyak
+- usb
+- privilege-escalation
+- obfuscation
+- tor
+- raspberry robin
+- cve-2024-38196
+- downloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5b0476043da365be5325260f1f0811ea81c018a8acc9cee4cd46cb7348c06fc6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

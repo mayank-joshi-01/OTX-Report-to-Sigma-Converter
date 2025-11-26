@@ -1,0 +1,20 @@
+title: OTX domain IOC - kaskus288selatan.site
+id: 04c7f853-96e0-408e-a90e-4d39ef097c3e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kaskus288selatan.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

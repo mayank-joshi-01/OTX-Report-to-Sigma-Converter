@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 0bbbf2a9d49152ac6ad755167ccb0f2b4f00b976
+id: c82bb0ed-d6a2-4e9f-b2a4-270c6ad09b09
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From SharePoint Vulnerability
+  Exploit to Enterprise Ransomware' (68a608153322e1cffd371694).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://www.trendmicro.com/en_us/research/25/h/warlock-ransomware.html
+tags:
+- warlock
+- cve-2023-27532
+- dll sideloading
+- credential theft
+- lockbit 3.0
+- lateral movement
+- data exfiltration
+- vulnerability
+- lockbit
+- ransomware
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0bbbf2a9d49152ac6ad755167ccb0f2b4f00b976
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

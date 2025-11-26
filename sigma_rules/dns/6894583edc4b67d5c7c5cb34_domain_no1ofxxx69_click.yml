@@ -1,0 +1,20 @@
+title: OTX domain IOC - no1ofxxx69.click
+id: 5da0b7f4-4517-479e-8f35-cc79057765cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: no1ofxxx69.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

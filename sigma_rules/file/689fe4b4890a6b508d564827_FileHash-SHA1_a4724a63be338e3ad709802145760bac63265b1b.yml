@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - a4724a63be338e3ad709802145760bac63265b1b
+id: 1adfba6b-b6bf-4fbe-a6ff-3da0714e8e68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Supply Chain Risk
+  in Python: Termcolor and Colorama Explained'' (689fe4b4890a6b508d564827).'
+author: AlienVault
+date: '2025-08-16'
+references:
+- https://www.zscaler.com/blogs/security-research/supply-chain-risk-python-termncolor-and-colorinal-explained
+tags:
+- c2-communication
+- zulip
+- termncolor
+- dll-sideloading
+- pypi
+- supply-chain
+- python
+- persistence
+- colorinal
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a4724a63be338e3ad709802145760bac63265b1b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

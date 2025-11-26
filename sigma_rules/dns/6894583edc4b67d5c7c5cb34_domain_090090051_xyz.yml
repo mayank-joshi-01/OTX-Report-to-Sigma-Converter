@@ -1,0 +1,20 @@
+title: OTX domain IOC - 090090051.xyz
+id: 19b2f832-348f-4f4c-b18b-90332b836379
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 090090051.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

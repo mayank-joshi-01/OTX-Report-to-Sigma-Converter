@@ -1,0 +1,20 @@
+title: OTX domain IOC - tarologamayabueno-platformspiritual.site
+id: 6c21b4e7-90ed-471d-8799-d9a32b78324c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tarologamayabueno-platformspiritual.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

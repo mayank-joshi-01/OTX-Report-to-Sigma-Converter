@@ -1,0 +1,20 @@
+title: OTX domain IOC - completeai-test.online
+id: fef9b2d9-eb26-4716-9b6d-42a4af11c13f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: completeai-test.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

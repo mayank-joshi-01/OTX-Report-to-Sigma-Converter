@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 8fb1ae1bc6e8fa3a6d7cc335ac4d379b
+id: 7bc9e7a4-82d5-40bb-8707-3a3121919bc8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Update on Attacks
+  by Threat Group APT-C-60' (690b07d26b6f30fe642910b2).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://blogs.jpcert.or.jp/en/2025/11/APT-C-60_update.html
+tags:
+- github
+- vhdx
+- recruitment
+- spyglace
+- spear-phishing
+- east asia
+- downloader1
+- com hijacking
+- rc4
+- downloader2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8fb1ae1bc6e8fa3a6d7cc335ac4d379b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

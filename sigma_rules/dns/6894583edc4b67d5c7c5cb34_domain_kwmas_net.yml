@@ -1,0 +1,20 @@
+title: OTX domain IOC - kwmas.net
+id: 32f863f5-98b8-400c-9cda-e7258000ca8d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kwmas.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

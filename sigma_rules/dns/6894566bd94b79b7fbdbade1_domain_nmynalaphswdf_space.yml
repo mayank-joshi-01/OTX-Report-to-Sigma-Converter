@@ -1,0 +1,20 @@
+title: OTX domain IOC - nmynalaphswdf.space
+id: 45acf9b1-81b5-438a-bd2d-0a28b9dee455
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nmynalaphswdf.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

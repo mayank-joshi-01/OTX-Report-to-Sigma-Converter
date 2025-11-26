@@ -1,0 +1,32 @@
+title: OTX hostname IOC - ds20221202.dsc.wcsset.com
+id: e6e11226-98d8-44a7-a0a1-00cd746f548c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PlushDaemon compromises
+  network devices for adversary-in-the-middle attacks' (691e322b7508a5264ba48186).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-network-devices-for-adversary-in-the-middle-attacks
+tags:
+- slowstepper
+- apt
+- china
+- littledaemon
+- software update hijacking
+- adversary-in-the-middle
+- edgestepper
+- espionage
+- network implant
+- dns hijacking
+- daemoniclogistics
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ds20221202.dsc.wcsset.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

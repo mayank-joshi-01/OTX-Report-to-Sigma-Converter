@@ -1,0 +1,20 @@
+title: OTX domain IOC - mxziwarmshiftgarden.click
+id: 90ed0fd9-d9fb-4e2e-98f9-2f3ecb8581e1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mxziwarmshiftgarden.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

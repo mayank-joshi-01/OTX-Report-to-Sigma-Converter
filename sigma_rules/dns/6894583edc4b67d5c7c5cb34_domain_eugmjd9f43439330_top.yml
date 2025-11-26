@@ -1,0 +1,20 @@
+title: OTX domain IOC - eugmjd9f43439330.top
+id: 22982c07-81a7-44b6-a4f1-9468cd6aa869
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eugmjd9f43439330.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

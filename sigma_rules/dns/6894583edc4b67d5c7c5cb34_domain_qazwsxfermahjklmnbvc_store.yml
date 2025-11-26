@@ -1,0 +1,20 @@
+title: OTX domain IOC - qazwsxfermahjklmnbvc.store
+id: 8d9d4e08-3b34-4148-9a97-7c0bdb141fa6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qazwsxfermahjklmnbvc.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

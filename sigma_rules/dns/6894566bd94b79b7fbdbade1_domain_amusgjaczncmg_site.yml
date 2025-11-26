@@ -1,0 +1,20 @@
+title: OTX domain IOC - amusgjaczncmg.site
+id: ec6be67c-0cc0-4ad5-b580-fa874574b631
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amusgjaczncmg.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX domain IOC - westford-systems.icu
+id: 3e15276e-443d-4bf1-a292-6ccba94527af
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: westford-systems.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

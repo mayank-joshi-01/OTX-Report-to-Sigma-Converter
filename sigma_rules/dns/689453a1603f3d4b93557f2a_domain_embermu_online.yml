@@ -1,0 +1,20 @@
+title: OTX domain IOC - embermu.online
+id: 71927129-ba9c-45eb-9d90-cff0dfc7a01c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: embermu.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

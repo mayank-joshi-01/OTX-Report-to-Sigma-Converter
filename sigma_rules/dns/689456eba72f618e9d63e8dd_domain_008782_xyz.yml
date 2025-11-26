@@ -1,0 +1,20 @@
+title: OTX domain IOC - 008782.xyz
+id: c9de51e8-32e3-440e-9695-f4a422d81600
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 008782.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

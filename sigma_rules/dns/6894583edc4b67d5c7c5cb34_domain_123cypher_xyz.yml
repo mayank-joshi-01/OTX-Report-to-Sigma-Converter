@@ -1,0 +1,20 @@
+title: OTX domain IOC - 123cypher.xyz
+id: e171ed42-1b7b-463a-b5b4-b952543fd99e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 123cypher.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

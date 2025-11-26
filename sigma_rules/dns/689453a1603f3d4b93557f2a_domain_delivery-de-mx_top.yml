@@ -1,0 +1,20 @@
+title: OTX domain IOC - delivery-de-mx.top
+id: 329bd272-a775-4c31-a7a6-bc079e4ce927
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: delivery-de-mx.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

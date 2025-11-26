@@ -1,0 +1,20 @@
+title: OTX domain IOC - khazana.site
+id: cd6c42b7-706e-492c-95fd-49654f43ecab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: khazana.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

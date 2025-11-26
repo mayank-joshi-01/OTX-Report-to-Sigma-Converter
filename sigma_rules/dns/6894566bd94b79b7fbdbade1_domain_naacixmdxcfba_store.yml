@@ -1,0 +1,20 @@
+title: OTX domain IOC - naacixmdxcfba.store
+id: 08788f8c-9749-4741-a4d6-42121583918a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: naacixmdxcfba.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

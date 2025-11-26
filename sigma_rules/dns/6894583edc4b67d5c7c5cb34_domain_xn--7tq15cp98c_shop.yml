@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--7tq15cp98c.shop
+id: 5935937b-9629-47c8-b8af-8a16c365d7df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--7tq15cp98c.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

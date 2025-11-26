@@ -1,0 +1,20 @@
+title: OTX domain IOC - houseofelixir.online
+id: 6346a4f9-bb7d-4b3b-8ace-5d302ed12da9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: houseofelixir.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

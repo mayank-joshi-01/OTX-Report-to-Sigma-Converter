@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 56cbe6c4fa42b142fdfe47e23e51a047af53cff7a0a5a2d205684ade6e20f8ab
+id: 76afbf00-84ae-4cbb-a87c-438a4687f865
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Linuxsys Cryptominer'
+  (6879f96c1e20b47d8569ff16).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.vulncheck.com/blog/linuxsys-cryptominer
+tags:
+- cryptomining
+- xmrig
+- linuxsys
+- compromised websites
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 56cbe6c4fa42b142fdfe47e23e51a047af53cff7a0a5a2d205684ade6e20f8ab
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

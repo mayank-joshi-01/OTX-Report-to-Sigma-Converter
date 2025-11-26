@@ -1,0 +1,20 @@
+title: OTX domain IOC - dawidkruiper.xyz
+id: f6c6bb30-91b9-46ca-9dcb-f2f3e2a7e41b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dawidkruiper.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

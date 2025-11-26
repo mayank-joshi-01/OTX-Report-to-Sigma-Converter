@@ -1,0 +1,20 @@
+title: OTX domain IOC - expert-window-repair-services-uk-13.online
+id: 492563b0-fa0f-43b8-8dd5-add9d6210bb0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: expert-window-repair-services-uk-13.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 789654444.xyz
+id: aae8eea9-91d3-437c-aa6f-29270f1f157b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 789654444.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

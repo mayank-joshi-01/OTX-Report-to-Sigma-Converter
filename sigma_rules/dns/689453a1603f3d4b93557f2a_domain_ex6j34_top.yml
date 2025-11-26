@@ -1,0 +1,20 @@
+title: OTX domain IOC - ex6j34.top
+id: 07a0c135-6193-4c64-ab1e-f91ef9a72bcb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ex6j34.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

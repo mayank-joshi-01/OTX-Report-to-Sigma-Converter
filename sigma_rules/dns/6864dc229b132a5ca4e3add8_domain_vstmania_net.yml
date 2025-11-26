@@ -1,0 +1,26 @@
+title: OTX domain IOC - vstmania.net
+id: 319e7ab8-29bd-4891-a05a-1d1add1e2121
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pakistani freelancers
+  building cracking websites for stealer-delivery' (6864dc229b132a5ca4e3add8).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.intrinsec.com/wp-content/uploads/2025/06/TLP-CLEAR-Pakistani-Freelancers-EN.pdf
+tags:
+- pakistani freelancers
+- cracking websites
+- hosting providers
+- stealer malware
+- pay-per-install
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vstmania.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

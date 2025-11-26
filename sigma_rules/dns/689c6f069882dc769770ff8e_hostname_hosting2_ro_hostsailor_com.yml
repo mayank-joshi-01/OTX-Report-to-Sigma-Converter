@@ -1,0 +1,28 @@
+title: OTX hostname IOC - hosting2.ro.hostsailor.com
+id: 178a6b99-0877-4a86-8ec2-590d1c8db20e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CVE-2017-11882 Will
+  Never Die' (689c6f069882dc769770ff8e).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://isc.sans.edu/diary/rss/32196
+tags:
+- microsoft office
+- vipkeylogger
+- exploit
+- cve-2017-11882
+- obfuscation
+- keylogger
+- equation editor
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hosting2.ro.hostsailor.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

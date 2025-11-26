@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://ilustremotivo.com/mail/
+id: b1bc2d8d-2627-4ac7-9927-e44c2c7ce846
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://ilustremotivo.com/mail/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

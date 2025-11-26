@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA1 IOC - 03d9b8f0fcf9173d2964ce7173d21e681dfa8da4
+id: e49c6c96-7f49-4a92-92b9-db7d73fd978a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gotta fly: Lazarus
+  targets the UAV sector'' (68fa32c80f24106e04d886f7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector
+tags:
+- scoringmathtea
+- quanpinloader
+- operation dreamjob
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 03d9b8f0fcf9173d2964ce7173d21e681dfa8da4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

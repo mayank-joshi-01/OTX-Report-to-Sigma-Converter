@@ -1,0 +1,20 @@
+title: OTX domain IOC - ddill.icu
+id: 716dc06b-54e3-439d-8983-c9e416271831
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ddill.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - staketree.net
+id: d0a8f61e-1aa3-4410-b905-a26c0f70dfbc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Solidity Language
+  open-source package was used in a $500,000 crypto heist' (6877cefdf99ce3c2912e8daa).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://securelist.com/open-source-package-for-cursor-ai-turned-into-a-crypto-heist/116908
+tags:
+- open-source
+- cursor ai
+- screenconnect
+- quasar
+- cryptocurrency
+- solidity
+- data theft
+- blockchain
+- vmdetector
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: staketree.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

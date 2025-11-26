@@ -1,0 +1,20 @@
+title: OTX domain IOC - apple-cha-xun.com
+id: 0d5a81ab-62d5-44b0-a53f-a035c79fd853
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: apple-cha-xun.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

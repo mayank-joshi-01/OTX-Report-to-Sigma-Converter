@@ -1,0 +1,20 @@
+title: OTX domain IOC - extremegamenook.site
+id: d5ced4bc-7a52-4f79-8e73-2ca453cef65d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: extremegamenook.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

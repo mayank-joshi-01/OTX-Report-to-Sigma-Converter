@@ -1,0 +1,20 @@
+title: OTX domain IOC - bridgesdataconsulting.online
+id: d7ffdb4c-d58d-4fe2-b8ad-03575d855e0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bridgesdataconsulting.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

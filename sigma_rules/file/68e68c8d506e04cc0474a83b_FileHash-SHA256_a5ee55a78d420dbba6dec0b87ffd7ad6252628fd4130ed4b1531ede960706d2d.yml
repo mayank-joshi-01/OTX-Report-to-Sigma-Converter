@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - a5ee55a78d420dbba6dec0b87ffd7ad6252628fd4130ed4b1531ede960706d2d
+id: 6659c713-396a-4ff2-8f15-6b1c67859812
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT Meets GPT: Targeted
+  Operations with Untamed LLMs'' (68e68c8d506e04cc0474a83b).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.volexity.com/blog/2025/10/08/apt-meets-gpt-targeted-operations-with-untamed-llms/
+tags:
+- uta0388
+- govershell
+- llms
+- powershell
+- randomdir8char
+- websocket
+- persistence
+- govershell c2
+- archive file
+- zip
+- rar
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a5ee55a78d420dbba6dec0b87ffd7ad6252628fd4130ed4b1531ede960706d2d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 9bab404584f6a0d9d82112d6e017cfa37d0094d97e510101d6a0132fd145dd32
+id: e3098070-fa78-4977-b31a-6d2db1683501
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Booking.com Phishing
+  Campaign Targeting Hotels and Customers' (690dba690d5c272baae78d78).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://blog.sekoia.io/phishing-campaigns-i-paid-twice-targeting-booking-com-hotels-and-customers/
+tags:
+- phishing
+- social engineering
+- clickfix
+- hospitality
+- booking.com
+- purerat
+- cybercrime
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 9bab404584f6a0d9d82112d6e017cfa37d0094d97e510101d6a0132fd145dd32
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - jvastgbi.com
+id: 6eed160e-e6be-46ed-99a0-0ac1b84f3498
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jvastgbi.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - fantasistory.cfd
+id: 9309f42b-fe41-45b4-b40d-e2a5700f7031
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fantasistory.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

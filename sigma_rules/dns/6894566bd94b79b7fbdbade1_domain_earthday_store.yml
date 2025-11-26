@@ -1,0 +1,20 @@
+title: OTX domain IOC - earthday.store
+id: e8bc2497-5b14-49f4-87fb-a8d04ac25150
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: earthday.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

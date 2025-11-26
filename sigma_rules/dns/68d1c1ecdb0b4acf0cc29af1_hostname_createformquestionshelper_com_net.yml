@@ -1,0 +1,26 @@
+title: OTX hostname IOC - createformquestionshelper.com.net
+id: 9e7de392-fe4b-4af0-a4d0-9e42d9229a83
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: createformquestionshelper.com.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

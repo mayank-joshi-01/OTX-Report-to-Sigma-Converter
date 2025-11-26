@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 0fd7eb57f5f9d817dd497c1ce3be0791f5e798077f8dc2c3a4e2b2b0b0bdc2c6
+id: edf1873a-0976-4ab3-a289-0f0ba3530259
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Botnet Emerges
+  from the Shadows: NightshadeC2'' (68babf81ce8dc0a40f7d42f5).'
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.esentire.com/blog/new-botnet-emerges-from-the-shadows-nightshadec2
+tags:
+- c2 communication
+- trojanized software
+- uac bypass
+- nightshadec2
+- lumma stealer
+- sandbox evasion
+- keylogging
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0fd7eb57f5f9d817dd497c1ce3be0791f5e798077f8dc2c3a4e2b2b0b0bdc2c6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

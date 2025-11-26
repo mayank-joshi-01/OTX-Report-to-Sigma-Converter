@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 701296f6ff0daf3264dd8814c469b2c7f56df1ec
+id: e6c71f1a-5a75-4e93-9180-759dc27793cd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Lazarus Group targets
+  Aerospace and Defense with new Comebacker variant' (6911c89518dbf918e90866ee).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://www.enki.co.kr/en/media-center/blog/lazarus-group-targets-aerospace-and-defense-with-new-comebacker-variant
+tags:
+- decryption
+- backdoor
+- dprk
+- c2 communication
+- comebacker
+- north korea
+- defense
+- spear phishing
+- aerospace
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 701296f6ff0daf3264dd8814c469b2c7f56df1ec
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - a39696e95a34a017be1435db7ff139d5
+id: 704f771c-baf2-439b-af23-298d65510fc9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ViewState Deserialization
+  Zero-Day Vulnerability in Sitecore Products (CVE-2025-53690)' (68b9d2694432c73564226cd5).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability
+tags:
+- privilege escalation
+- cve-2025-53690
+- sitecore
+- dwagent
+- lateral movement
+- deserialization
+- reconnaissance
+- weepsteel
+- sharphound
+- remote code execution
+- earthworm
+- viewstate
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a39696e95a34a017be1435db7ff139d5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

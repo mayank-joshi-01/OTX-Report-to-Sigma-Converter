@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - d082207e503654670260d7a6c19e39d4
+id: 219e4afd-7f68-4921-9c58-7e057bb33c45
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Shai-Hulud" Worm
+  Compromises npm Ecosystem in Supply Chain Attack' (68cb5d39b043cd92b8527cff).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://unit42.paloaltonetworks.com/wp-content/uploads/2025/09/06_Malware_Category_1920x900.jpg
+- https://unit42.paloaltonetworks.com/npm-supply-chain-attack/
+tags:
+- credential harvesting
+- phishing
+- supply chain
+- shai-hulud
+- worm
+- npm
+- self-replicating
+- javascript
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d082207e503654670260d7a6c19e39d4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - cdd5717fd3bfd375c1c34237c24073e92ad6dccc
+id: 8e2db231-9460-420e-a10b-b433a9d4cbc0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New LockBit 5.0 Targets
+  Windows, Linux, ESXi' (68da3f9ccd5b37095bdef492).
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://www.trendmicro.com/en_gb/research/25/i/lockbit-5-targets-windows-linux-esxi.html
+tags:
+- anti-analysis
+- virtualization
+- encryption
+- obfuscation
+- esxi
+- dll reflection
+- ransomware
+- lockbit 5.0
+- cross-platform
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: cdd5717fd3bfd375c1c34237c24073e92ad6dccc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

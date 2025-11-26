@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - a1c6090674f3778ea207b14b1b55be487ce1a2ab
+id: d4331a64-dda2-45a5-b4e7-86334221f0be
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Ransomware Charon
+  Uses Earth Baxia APT Techniques to Target Enterprises' (689b2780c21f5f675ae44730).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://www.trendmicro.com/en_us/research/25/h/new-ransomware-charon.html
+tags:
+- evasion
+- dll sideloading
+- network propagation
+- middle east
+- ransomware
+- apt
+- charon
+- aviation
+- encryption
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a1c6090674f3778ea207b14b1b55be487ce1a2ab
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

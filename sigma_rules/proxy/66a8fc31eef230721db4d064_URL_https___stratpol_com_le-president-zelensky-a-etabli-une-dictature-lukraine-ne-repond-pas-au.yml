@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://stratpol.com/le-president-zelensky-a-etabli-une-dictature-lukraine-ne-repond-pas-aux-criteres-dadhesion-a-lue-ni-politiquement-ni-economiquement/
+id: ed88ce5e-3340-4b9f-a8a3-108335ccc03b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://stratpol.com/le-president-zelensky-a-etabli-une-dictature-lukraine-ne-repond-pas-aux-criteres-dadhesion-a-lue-ni-politiquement-ni-economiquement/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

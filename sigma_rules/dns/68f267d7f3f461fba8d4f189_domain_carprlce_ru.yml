@@ -1,0 +1,28 @@
+title: OTX domain IOC - carprlce.ru
+id: 97456df1-9011-4acf-8649-4e6cc0c2e9b2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CAPI Backdoor: .NET
+  Stealer Targeting Russian Auto-Commerce'' (68f267d7f3f461fba8d4f189).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://www.seqrite.com/blog/seqrite-capi-backdoor-dotnet-stealer-russian-auto-commerce-oct-2025/
+tags:
+- phishing
+- campaign
+- backdoor
+- russia
+- capi
+- .net implant
+- lolbin
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: carprlce.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

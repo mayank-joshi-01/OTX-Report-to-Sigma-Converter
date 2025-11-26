@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - f3a6d4ccdd0f663269c3909e74d6847608b8632fb2814b0436a4532b8281e617
+id: a154933a-6042-49a6-aed5-012e2e5e65fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''KAWA4096’s Ransomware
+  Tide: Rising Threat With Borrowed Styles'' (6879f992f53c24606746d8de).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/kawa4096s-ransomware-tide-rising-threat-with-borrowed-styles
+tags:
+- multithreading
+- ransomware
+- shadow copy deletion
+- kawa4096
+- data leak site
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f3a6d4ccdd0f663269c3909e74d6847608b8632fb2814b0436a4532b8281e617
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

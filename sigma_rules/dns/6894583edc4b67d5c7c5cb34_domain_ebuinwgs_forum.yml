@@ -1,0 +1,20 @@
+title: OTX domain IOC - ebuinwgs.forum
+id: 1b208ad5-37e7-4f92-891e-508d5769242b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ebuinwgs.forum
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

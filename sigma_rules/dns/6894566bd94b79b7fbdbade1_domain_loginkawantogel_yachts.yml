@@ -1,0 +1,20 @@
+title: OTX domain IOC - loginkawantogel.yachts
+id: 445c4b89-2cde-4db8-93c5-3c70523c7c10
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: loginkawantogel.yachts
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

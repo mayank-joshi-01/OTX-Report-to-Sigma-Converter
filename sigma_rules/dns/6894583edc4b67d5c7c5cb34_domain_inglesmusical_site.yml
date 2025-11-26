@@ -1,0 +1,20 @@
+title: OTX domain IOC - inglesmusical.site
+id: 01679fb7-15f4-40a3-a981-5933722194f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: inglesmusical.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

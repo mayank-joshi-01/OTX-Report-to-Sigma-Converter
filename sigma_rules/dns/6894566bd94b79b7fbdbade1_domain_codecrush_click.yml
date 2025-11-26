@@ -1,0 +1,20 @@
+title: OTX domain IOC - codecrush.click
+id: aa94b533-90a4-446f-9d50-736276878376
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: codecrush.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

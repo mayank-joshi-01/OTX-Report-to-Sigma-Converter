@@ -1,0 +1,25 @@
+title: OTX domain IOC - proxysource.net
+id: d8dafc86-43eb-43a5-b7e8-1d18426a50d5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Belarus-Linked DSLRoot
+  Proxy Network Deploys Hardware in U.S. Residences, Including Military Homes' (68af30b52ebb20fed2ec85f7).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://infrawatch.app/blog/dslroot-us-proxy-investigation
+tags:
+- residential proxy
+- anonymous routing
+- u.s. infrastructure
+- virtual credit cards
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: proxysource.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

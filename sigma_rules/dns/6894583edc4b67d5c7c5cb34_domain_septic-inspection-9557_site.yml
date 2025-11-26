@@ -1,0 +1,20 @@
+title: OTX domain IOC - septic-inspection-9557.site
+id: 70e215d4-8cbf-4dff-9ae3-ce67ad73fa3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: septic-inspection-9557.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

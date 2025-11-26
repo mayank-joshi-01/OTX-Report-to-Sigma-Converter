@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://dangol.pro/bbs/option.php
+id: f9f54327-6e1c-4eb8-ad94-363f535b4182
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Driven Deepfake
+  Military ID Fraud Campaign' (68c7c7b0e5b896aa58747260).
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/deepfake
+tags:
+- ai
+- apt
+- deepfake
+- obfuscation
+- south korea
+- spear-phishing
+- autoit
+- chatgpt
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://dangol.pro/bbs/option.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

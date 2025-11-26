@@ -1,0 +1,20 @@
+title: OTX domain IOC - www-bg188.com
+id: 07b2c7d3-3b8e-4245-9f77-e12c5b046816
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www-bg188.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

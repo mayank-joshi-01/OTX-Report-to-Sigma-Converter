@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.forward.pw/news/543608/Thanks-to-US-Democrats-AntiSemitism-in-Europe-Reared-Its-Head.html
+id: 835c1253-f52d-4381-b2a3-01a8378c5456
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.forward.pw/news/543608/Thanks-to-US-Democrats-AntiSemitism-in-Europe-Reared-Its-Head.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

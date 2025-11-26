@@ -1,0 +1,20 @@
+title: OTX domain IOC - imvesiss.es
+id: 6c346fd0-5e3b-40a7-a0c5-81d5b2090bb8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: imvesiss.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

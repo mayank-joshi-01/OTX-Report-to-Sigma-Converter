@@ -1,0 +1,20 @@
+title: OTX domain IOC - seaskyroyalbeachvilla.online
+id: b8a7cf1c-8259-4d2b-af6e-2d507915b06f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: seaskyroyalbeachvilla.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

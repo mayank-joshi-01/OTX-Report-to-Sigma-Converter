@@ -1,0 +1,32 @@
+title: OTX hostname IOC - investigators-boxing-trademark-threatened.trycloudflare.com
+id: ed6ab9c0-7341-4e4d-a744-e5f9a8d20b4e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Interlock ransomware
+  evolving under the radar' (67ffb7eba715b936a2c4c2a8).
+author: AlienVault
+date: '2025-04-16'
+references:
+- https://blog.sekoia.io/interlock-ransomware-evolving-under-the-radar
+tags:
+- berserkstealer
+- clickfix
+- interlock rat
+- double extortion
+- ransomware
+- remote access trojan
+- interlock ransomware
+- credential stealer
+- fake updaters
+- powershell backdoor
+- lumma
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: investigators-boxing-trademark-threatened.trycloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - onlineservice-mapasfind.app
+id: 8eab1652-926d-409f-a269-4f52c0b8eb7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onlineservice-mapasfind.app
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

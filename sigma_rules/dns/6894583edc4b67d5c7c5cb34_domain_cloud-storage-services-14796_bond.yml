@@ -1,0 +1,20 @@
+title: OTX domain IOC - cloud-storage-services-14796.bond
+id: 24da814a-f0fc-41d3-8ce8-4ecb26fd853b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cloud-storage-services-14796.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

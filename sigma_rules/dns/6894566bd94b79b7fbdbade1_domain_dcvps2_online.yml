@@ -1,0 +1,20 @@
+title: OTX domain IOC - dcvps2.online
+id: 8c6edd59-a666-488e-96ef-c5bc1d602c24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dcvps2.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

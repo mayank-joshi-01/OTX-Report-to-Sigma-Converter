@@ -1,0 +1,35 @@
+title: OTX URL IOC - http://43.247.135.53:10443
+id: 2d9af149-fc25-4f2e-94d6-de82ce646607
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'China-Nexus Nation
+  State Actors Exploit SAP NetWeaver (CVE-2025-31324) to Target Critical Infrastructures'
+  (6824ce5f2a19922c64e259ed).
+author: AlienVault
+date: '2025-05-14'
+references:
+- https://blog.eclecticiq.com/china-nexus-nation-state-actors-exploit-sap-netweaver-cve-2025-31324-to-target-critical-infrastructures
+tags:
+- sap netweaver
+- unc5174
+- vshell
+- clsta0048
+- webshell
+- snowlight
+- cve202531324
+- sliver
+- azure ad
+- sta-0048
+- apt
+- china-nexus
+- krustyloader
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://43.247.135.53:10443
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

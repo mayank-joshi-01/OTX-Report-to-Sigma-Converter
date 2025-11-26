@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 943c1d64cda373beab24e3b1fdb715e14ce79b0f04674368e26db781cc68cea6
+id: c8fab4f1-536d-4389-baec-97a5e9e3e9b9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Loader Executing
+  TorNet and PureHVNC' (6904820b4fdb3fddd4d310fd).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://sect.iij.ad.jp/en/2025/10/loader-executing-tornet-and-purehvnc/
+tags:
+- purehvnc
+- loader
+- murmurhash2
+- code injection
+- tornet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 943c1d64cda373beab24e3b1fdb715e14ce79b0f04674368e26db781cc68cea6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

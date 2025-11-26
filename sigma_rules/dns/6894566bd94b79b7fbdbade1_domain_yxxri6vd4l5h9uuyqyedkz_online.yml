@@ -1,0 +1,20 @@
+title: OTX domain IOC - yxxri6vd4l5h9uuyqyedkz.online
+id: ebb761e2-8be7-4f24-a757-9531a22abae8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yxxri6vd4l5h9uuyqyedkz.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

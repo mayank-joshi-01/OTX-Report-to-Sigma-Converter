@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 37c1ff3236dd4989153ccac2ca712192
+id: 914443e9-db94-4128-9e4b-c6475b229c11
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Loader Executing
+  TorNet and PureHVNC' (6904820b4fdb3fddd4d310fd).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://sect.iij.ad.jp/en/2025/10/loader-executing-tornet-and-purehvnc/
+tags:
+- purehvnc
+- loader
+- murmurhash2
+- code injection
+- tornet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 37c1ff3236dd4989153ccac2ca712192
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

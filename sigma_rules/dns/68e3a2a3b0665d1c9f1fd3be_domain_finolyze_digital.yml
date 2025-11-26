@@ -1,0 +1,28 @@
+title: OTX domain IOC - finolyze.digital
+id: 6df3115a-8c02-4bab-9c42-e0f8481c6b1e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: finolyze.digital
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

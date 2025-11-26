@@ -1,0 +1,20 @@
+title: OTX domain IOC - protectedsuperi.online
+id: cb94c2df-9663-41cc-8725-cae8451d86c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: protectedsuperi.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

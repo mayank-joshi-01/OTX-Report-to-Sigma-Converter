@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - c7a4ab2fa94d1340969720cc3fd40f85
+id: 01f5aa6f-6fc2-40af-8eb0-cd4d26b6bc1d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Backdoor in "AppSuite
+  PDF Editor": A Detailed Technical Analysis'' (68b09f3c74e054a6720fdf73).'
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://feeds.feedblitz.com/~/923960972/0/gdatasecurityblog-en~AppSuite-PDF-Editor-Backdoor-A-Detailed-Technical-Analysis
+- https://www.gdatasoftware.com/blog/2025/08/38257-appsuite-pdf-editor-backdoor-analysis
+tags:
+- backdoor
+- scheduled tasks
+- command and control
+- appsuite pdf editor
+- aes encryption
+- pdf editor
+- trojan
+- browser manipulation
+- data exfiltration
+- appsuite
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c7a4ab2fa94d1340969720cc3fd40f85
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

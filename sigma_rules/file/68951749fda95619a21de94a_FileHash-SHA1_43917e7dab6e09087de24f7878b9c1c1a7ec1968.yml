@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 43917e7dab6e09087de24f7878b9c1c1a7ec1968
+id: ef9db289-d23b-4594-a8af-ed26fbb0581c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Odyssey Stealer Malware
+  Attacks macOS Users' (68951749fda95619a21de94a).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.forcepoint.com/blog/x-labs/odyssey-stealer-attacks-macos-users
+tags:
+- phishing
+- clickfix
+- credential theft
+- applescript
+- crypto wallet
+- macos
+- odyssey stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 43917e7dab6e09087de24f7878b9c1c1a7ec1968
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

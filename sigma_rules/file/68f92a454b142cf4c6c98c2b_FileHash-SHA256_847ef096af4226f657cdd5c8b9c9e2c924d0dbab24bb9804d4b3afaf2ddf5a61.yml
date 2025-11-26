@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 847ef096af4226f657cdd5c8b9c9e2c924d0dbab24bb9804d4b3afaf2ddf5a61
+id: 1bb81b9b-74a3-41a5-8c0d-474ec33c1fce
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Python RAT Targets
+  Gamers via Minecraft' (68f92a454b142cf4c6c98c2b).
+author: AlienVault
+date: '2025-10-22'
+references:
+- https://www.netskope.com/blog/new-python-rat-targets-gamers-via-minecraft
+tags:
+- discord
+- gaming
+- surveillance
+- token theft
+- rat
+- nursultan client
+- python
+- minecraft
+- telegram
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 847ef096af4226f657cdd5c8b9c9e2c924d0dbab24bb9804d4b3afaf2ddf5a61
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

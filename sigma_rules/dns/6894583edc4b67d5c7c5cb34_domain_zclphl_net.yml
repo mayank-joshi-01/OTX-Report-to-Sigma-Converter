@@ -1,0 +1,20 @@
+title: OTX domain IOC - zclphl.net
+id: d44fb5a5-ee94-46c5-a4a2-06a5f18157a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zclphl.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 2ecce89fa1e5de9f94d038744fc34219
+id: 09c1547b-c51a-4d9d-984a-b272a677e904
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking the SVG
+  Threat: How Hackers Use Vector Graphics for Phishing Attacks'' (6895174bde6ff52ca61cd121).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.seqrite.com/blog/unmasking-the-svg-threat-how-hackers-use-vector-graphics-for-phishing-attacks
+tags:
+- cloud storage
+- javascript
+- phishing
+- credential theft
+- browser execution
+- captcha
+- email attachments
+- svg
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2ecce89fa1e5de9f94d038744fc34219
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

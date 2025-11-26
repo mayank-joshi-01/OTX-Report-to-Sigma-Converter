@@ -1,0 +1,20 @@
+title: OTX domain IOC - southeastcustomwelding.online
+id: 8f30b3fc-d59b-4050-8a9c-71152ca71dbb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: southeastcustomwelding.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

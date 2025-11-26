@@ -1,0 +1,20 @@
+title: OTX domain IOC - www123979.com
+id: 3cff8183-662d-4fc7-a4e4-c544b74f5ba0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www123979.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

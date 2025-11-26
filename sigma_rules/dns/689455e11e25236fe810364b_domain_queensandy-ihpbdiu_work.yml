@@ -1,0 +1,20 @@
+title: OTX domain IOC - queensandy-ihpbdiu.work
+id: 5cb1c97e-86af-476d-b8bd-34ad39979ede
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: queensandy-ihpbdiu.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

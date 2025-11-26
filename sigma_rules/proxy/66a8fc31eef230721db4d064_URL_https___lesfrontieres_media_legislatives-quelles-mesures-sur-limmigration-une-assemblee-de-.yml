@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lesfrontieres.media/legislatives-quelles-mesures-sur-limmigration-une-assemblee-de-droite-pourrait-adopter
+id: 9e90df19-9625-4c4e-b039-19d8ee920195
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lesfrontieres.media/legislatives-quelles-mesures-sur-limmigration-une-assemblee-de-droite-pourrait-adopter
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

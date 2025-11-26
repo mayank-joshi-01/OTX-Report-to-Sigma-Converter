@@ -1,0 +1,30 @@
+title: OTX hostname IOC - amoled.multicoloredhdrsupport.xyz
+id: 1e0019d0-1f50-497b-bc55-75dd035ce376
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mobile Banking Malware
+  bypassing WhatsApp, Telegram and Signal Encryption' (691f6f33a8a195ad7e1ee091).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.threatfabric.com/blogs/sturnus-banking-trojan-bypassing-whatsapp-telegram-and-signal
+tags:
+- banking trojan
+- remote control
+- europe
+- android
+- vnc
+- keylogging
+- sturnus
+- encrypted messaging
+- data exfiltration
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amoled.multicoloredhdrsupport.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

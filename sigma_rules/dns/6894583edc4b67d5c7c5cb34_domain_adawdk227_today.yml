@@ -1,0 +1,20 @@
+title: OTX domain IOC - adawdk227.today
+id: 17704322-4ea6-436a-ac38-45c5a2724f07
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adawdk227.today
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

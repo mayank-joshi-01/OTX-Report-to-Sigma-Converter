@@ -1,0 +1,20 @@
+title: OTX domain IOC - sjglrzaelbfyk.space
+id: b6433f38-eecd-4011-a92a-eb84422ccd37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sjglrzaelbfyk.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

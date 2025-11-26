@@ -1,0 +1,20 @@
+title: OTX domain IOC - ppxsjdexi.cn
+id: db82103c-964a-4397-900d-f486796a3480
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ppxsjdexi.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

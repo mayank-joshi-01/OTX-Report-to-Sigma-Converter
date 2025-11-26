@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://electionwatch.live/g7-loan-approval
+id: 38f691a5-03e1-4f55-861b-2ef2444f47f3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://electionwatch.live/g7-loan-approval
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

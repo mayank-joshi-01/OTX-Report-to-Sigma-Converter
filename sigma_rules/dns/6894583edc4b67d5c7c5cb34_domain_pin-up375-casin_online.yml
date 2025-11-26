@@ -1,0 +1,20 @@
+title: OTX domain IOC - pin-up375-casin.online
+id: 32e6f39a-7398-46e5-93c4-ef173da8bdd3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pin-up375-casin.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

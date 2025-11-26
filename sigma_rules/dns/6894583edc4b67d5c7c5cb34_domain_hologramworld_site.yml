@@ -1,0 +1,20 @@
+title: OTX domain IOC - hologramworld.site
+id: b8f47e07-0461-4897-9196-228cea6f0c8e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hologramworld.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

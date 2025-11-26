@@ -1,0 +1,20 @@
+title: OTX domain IOC - armswideopen.store
+id: 17b3197e-bad6-4d0e-8333-d4f25f1fee43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: armswideopen.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

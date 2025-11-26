@@ -1,0 +1,20 @@
+title: OTX domain IOC - cheshirebloodservices.online
+id: 2145833d-8c18-4f3d-bd3a-1c7a7138ecd3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cheshirebloodservices.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - c04e70613fcf916e27bd653f38149f71
+id: dd939c6e-0966-4996-8106-71436aae7ab6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CyberVolk Ransomware:
+  Analysis of Double Encryption Structure and Disguised Decryption Logic'' (68c3cf4879c4e8a5a1e2f37c).'
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://asec.ahnlab.com/en/90077/
+tags:
+- symmetric key
+- geopolitical
+- pro-russian
+- cybervolk
+- aes-256 gcm
+- ransomware
+- double encryption
+- chacha20-poly1305
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c04e70613fcf916e27bd653f38149f71
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

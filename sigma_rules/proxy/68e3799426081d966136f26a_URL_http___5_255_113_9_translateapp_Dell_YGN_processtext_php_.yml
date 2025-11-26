@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://5.255.113.9/translateapp/Dell_YGN/processtext.php.
+id: 847cec81-56ba-4ecb-8a44-c5fa120240fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://5.255.113.9/translateapp/Dell_YGN/processtext.php.
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 5aa684e90dd0b85f41383efe89dddb2d43ecbdaf9c1d52c40a2fdf037fb40138
+id: b92188b8-3544-44e6-9a2c-8b01195ab820
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Rewrite:
+  Chinese-Speaking Threat Actors Deploy BadIIS in a Wide Scale SEO Poisoning Campaign''
+  (68d2615ca893a861b85e0392).'
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign/?pdf=print&lg=en&_wpnonce=8cd08de11a
+tags:
+- badiis
+- dragonrank
+- operation rewrite
+- web shells
+- seo poisoning
+- chinese threat actor
+- iis modules
+- group 9
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5aa684e90dd0b85f41383efe89dddb2d43ecbdaf9c1d52c40a2fdf037fb40138
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

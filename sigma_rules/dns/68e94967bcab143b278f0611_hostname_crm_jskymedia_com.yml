@@ -1,0 +1,33 @@
+title: OTX hostname IOC - crm.jskymedia.com
+id: ebd8b8e2-9f03-493a-bff3-d91d95b9cce0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The ClickFix Factory:
+  First Exposure of IUAM ClickFix Generator'' (68e94967bcab143b278f0611).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://unit42.paloaltonetworks.com/clickfix-generator-first-of-its-kind/
+tags:
+- ClickFix
+- clipboard
+- phishing
+- deerstealer
+- rat
+- remote access
+- captcha
+- odyssey
+- infostealer
+- iuam
+- clickfix generator
+- macos
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: crm.jskymedia.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 100kprofitblueprint.info
+id: 03022446-76a0-4911-af2b-f4c83238617d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 100kprofitblueprint.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

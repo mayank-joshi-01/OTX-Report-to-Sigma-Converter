@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 82ba4340be2e07bb74347ade0b7b43f12cf8503a8fa535f154d2e228efbef69c
+id: 5329914a-6599-4f89-9b1c-720ef7fcc7e2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unveiling a New Variant
+  of the DarkCloud Campaign' (689603fb45b4df2572916578).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.fortinet.com/blog/threat-research/unveiling-a-new-variant-of-the-darkcloud-campaign
+tags:
+- fileless
+- process-hollowing
+- darkcloud
+- anti-analysis
+- credential-theft
+- powershell
+- information-stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 82ba4340be2e07bb74347ade0b7b43f12cf8503a8fa535f154d2e228efbef69c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

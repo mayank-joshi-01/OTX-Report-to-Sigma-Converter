@@ -1,0 +1,20 @@
+title: OTX domain IOC - prefabricatedhomesdesign-deop.site
+id: 56de2249-4dc0-4015-a877-6529993625ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: prefabricatedhomesdesign-deop.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

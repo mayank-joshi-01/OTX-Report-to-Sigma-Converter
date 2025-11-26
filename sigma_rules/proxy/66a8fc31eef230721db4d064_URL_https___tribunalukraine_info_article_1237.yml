@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://tribunalukraine.info/article/1237
+id: 7049bee2-913d-48b4-a4fd-03715e706fa1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://tribunalukraine.info/article/1237
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

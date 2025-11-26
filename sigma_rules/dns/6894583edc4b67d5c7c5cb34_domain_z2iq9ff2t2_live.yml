@@ -1,0 +1,20 @@
+title: OTX domain IOC - z2iq9ff2t2.live
+id: 257421bd-89c0-48b3-8e21-f7ce60215786
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: z2iq9ff2t2.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

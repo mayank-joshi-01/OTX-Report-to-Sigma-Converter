@@ -1,0 +1,20 @@
+title: OTX domain IOC - kurtkaveli1.online
+id: cdb2f9d1-41e4-4184-887f-41ed099c831e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kurtkaveli1.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

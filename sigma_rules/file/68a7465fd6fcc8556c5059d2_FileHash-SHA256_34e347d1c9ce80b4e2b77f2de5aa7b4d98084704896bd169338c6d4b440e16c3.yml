@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 34e347d1c9ce80b4e2b77f2de5aa7b4d98084704896bd169338c6d4b440e16c3
+id: 25ab2bdb-2b1e-4c9c-a387-ecd70ed2f4f7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Greedy Sponge Targets
+  Mexico with AllaKore RAT and SystemBC' (68a7465fd6fcc8556c5059d2).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://arcticwolf.com/resources/blog/greedy-sponge-targets-mexico-with-allakore-rat-and-systembc
+tags:
+- credential theft
+- spear-phishing
+- drive-by download
+- financial fraud
+- allakore rat
+- systembc
+- geofencing
+- mexico
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 34e347d1c9ce80b4e2b77f2de5aa7b4d98084704896bd169338c6d4b440e16c3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

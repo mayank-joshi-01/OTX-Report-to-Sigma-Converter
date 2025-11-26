@@ -1,0 +1,28 @@
+title: OTX domain IOC - ltdpdf.net
+id: 94c4a706-b330-4b48-af47-87fc7f11e88c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ltdpdf.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

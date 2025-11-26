@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 8317ff6416af8ab6eb35df3529689671a700fdb61a5e6436f4d6ea8ee002d694
+id: 5efdf602-3f50-42b1-82b7-a78f63b4724d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking Akira:
+  The ransomware tactics you can''t afford to ignore'' (68d102f951065675d59e9f7a).'
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://zensec.co.uk/blog/unmasking-akira-the-ransomware-tactics-you-cant-afford-to-ignore/
+tags:
+- backup destruction
+- cve-2024-40766
+- cve-2024-40711
+- encryption
+- data exfiltration
+- cve-2023-27532
+- credential theft
+- cve-2023-20269
+- akira
+- vpn exploitation
+- ransomware
+- double extortion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8317ff6416af8ab6eb35df3529689671a700fdb61a5e6436f4d6ea8ee002d694
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

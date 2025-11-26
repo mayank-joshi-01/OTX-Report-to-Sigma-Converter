@@ -1,0 +1,33 @@
+title: OTX hostname IOC - dt1.automotosport.net
+id: 14380a30-66bf-473e-81ca-90da2986d80c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of Zloader Updates' (68d1a617f335188fccdd1b72).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://www.zscaler.com/blogs/security-research/technical-analysis-zloader-updates
+tags:
+- zeus
+- dns-tunneling
+- ransomware
+- zeus-based
+- websockets
+- evasion
+- banking
+- ldap
+- obfuscation
+- zloader
+- trojan
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dt1.automotosport.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

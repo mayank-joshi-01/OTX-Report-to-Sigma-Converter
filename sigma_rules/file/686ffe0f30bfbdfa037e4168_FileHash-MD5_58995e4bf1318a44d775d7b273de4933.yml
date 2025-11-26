@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 58995e4bf1318a44d775d7b273de4933
+id: 7c1b7a35-012f-4042-88a0-65dd000f2b0a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Fix the Click: Preventing
+  the ClickFix Attack Vector'' (686ffe0f30bfbdfa037e4168).'
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://unit42.paloaltonetworks.com/preventing-clickfix-attack-vector
+tags:
+- latrodectus
+- typosquatting
+- powershell
+- clipboard hijacking
+- autoit
+- social engineering
+- clickfix
+- rat
+- infostealer
+- netsupport rat
+- lumma stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 58995e4bf1318a44d775d7b273de4933
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

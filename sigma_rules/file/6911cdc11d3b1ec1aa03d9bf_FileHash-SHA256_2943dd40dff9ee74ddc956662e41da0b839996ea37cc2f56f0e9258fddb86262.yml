@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 2943dd40dff9ee74ddc956662e41da0b839996ea37cc2f56f0e9258fddb86262
+id: 579c67d0-a539-48ef-867a-e219cdbdb5ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Fantasy Hub: Another
+  Russian Based RAT as Malware-as-a-Service'' (6911cdc11d3b1ec1aa03d9bf).'
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://github.com/Zimperium/IOC/blob/master/2025-11-FantasyHUB/hosts.csv
+- https://zimperium.com/blog/fantasy-hub-another-russian-based-rat-as-m-a-a-s
+- https://github.com/Zimperium/IOC/blob/master/2025-11-FantasyHUB/apks.csv
+tags:
+- sms
+- android
+- financial
+- banking
+- spyware
+- russian
+- rat
+- maas
+- fantasy hub
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2943dd40dff9ee74ddc956662e41da0b839996ea37cc2f56f0e9258fddb86262
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

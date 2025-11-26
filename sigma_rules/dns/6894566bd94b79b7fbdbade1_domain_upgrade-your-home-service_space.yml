@@ -1,0 +1,20 @@
+title: OTX domain IOC - upgrade-your-home-service.space
+id: 833943b9-ea25-4e09-94e5-8d895440596d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: upgrade-your-home-service.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

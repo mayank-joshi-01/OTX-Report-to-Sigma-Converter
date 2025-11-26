@@ -1,0 +1,20 @@
+title: OTX domain IOC - 44qeltronavix.site
+id: a6f17a84-8e10-4c79-b02e-dfb0f1f4282b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 44qeltronavix.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

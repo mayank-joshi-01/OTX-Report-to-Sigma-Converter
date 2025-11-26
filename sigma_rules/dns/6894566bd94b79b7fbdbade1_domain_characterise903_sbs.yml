@@ -1,0 +1,20 @@
+title: OTX domain IOC - characterise903.sbs
+id: b193a4c3-65fb-43d1-a0ce-57354765b891
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: characterise903.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

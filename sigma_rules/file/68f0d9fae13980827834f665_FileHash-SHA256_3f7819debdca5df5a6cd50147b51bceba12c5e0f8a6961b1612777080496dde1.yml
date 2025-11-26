@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 3f7819debdca5df5a6cd50147b51bceba12c5e0f8a6961b1612777080496dde1
+id: a5fab62a-7136-4542-b1ea-c52ae0945c05
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Silk Lure:
+  Scheduled Tasks Weaponized for DLL Side-Loading (drops ValleyRAT)'' (68f0d9fae13980827834f665).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://www.seqrite.com/blog/operation-silk-lure-scheduled-tasks-weaponized-for-dll-side-loading-drops-valleyrat/
+tags:
+- valleyrat
+- job lures
+- fintech
+- cryptocurrency
+- dll side-loading
+- spear-phishing
+- china
+- scheduled tasks
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3f7819debdca5df5a6cd50147b51bceba12c5e0f8a6961b1612777080496dde1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

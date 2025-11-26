@@ -1,0 +1,26 @@
+title: OTX URL IOC - http://cloudcenter.top/macosUpdate.plist
+id: e00fa1a8-b1a7-4ea3-9f6f-5ba85ab30c4c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious package
+  with AdaptixC2 framework agent found in npm registry' (68f22e20dbd8823524fbecb6).
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/adaptixc2-agent-found-in-an-npm-package/117784/
+tags:
+- adaptixc2
+- post-exploitation
+- npm
+- multi-platform
+- supply-chain
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://cloudcenter.top/macosUpdate.plist
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

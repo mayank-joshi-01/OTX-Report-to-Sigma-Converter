@@ -1,0 +1,20 @@
+title: OTX domain IOC - andydrop.fun
+id: 5333004c-e9f8-4397-ba62-5f54c67a3450
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: andydrop.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

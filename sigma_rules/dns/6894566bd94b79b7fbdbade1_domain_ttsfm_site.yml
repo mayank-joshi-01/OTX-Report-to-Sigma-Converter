@@ -1,0 +1,20 @@
+title: OTX domain IOC - ttsfm.site
+id: e8a0ec5c-4657-4ac2-bd14-04f5e33c6f6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ttsfm.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9lmcw3a5qw.shop
+id: 8add8951-7dec-441b-8b87-708af6e70a56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9lmcw3a5qw.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

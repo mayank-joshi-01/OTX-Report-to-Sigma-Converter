@@ -1,0 +1,20 @@
+title: OTX domain IOC - collectpaid.online
+id: 7f0bd7f9-fad7-4357-a6de-d6ed17c3fe24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: collectpaid.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

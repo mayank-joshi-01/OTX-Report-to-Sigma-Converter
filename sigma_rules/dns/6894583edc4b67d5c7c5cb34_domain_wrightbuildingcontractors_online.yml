@@ -1,0 +1,20 @@
+title: OTX domain IOC - wrightbuildingcontractors.online
+id: 0c34bf29-a2c7-4d96-9c10-708c96dd8ac8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wrightbuildingcontractors.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

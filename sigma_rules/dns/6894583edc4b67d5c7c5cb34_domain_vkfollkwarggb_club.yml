@@ -1,0 +1,20 @@
+title: OTX domain IOC - vkfollkwarggb.club
+id: 2f3aaaa4-946c-4fc4-966d-2744022d0967
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vkfollkwarggb.club
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - jingou888.com
+id: e9a65488-2cd2-40d4-8153-19e267cccf66
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jingou888.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

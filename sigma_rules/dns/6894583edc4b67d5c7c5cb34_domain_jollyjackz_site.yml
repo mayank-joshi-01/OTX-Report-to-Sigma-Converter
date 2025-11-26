@@ -1,0 +1,20 @@
+title: OTX domain IOC - jollyjackz.site
+id: 9796d24b-c862-4e43-812a-375baf8eae8d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jollyjackz.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

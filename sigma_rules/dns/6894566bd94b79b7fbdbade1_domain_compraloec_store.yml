@@ -1,0 +1,20 @@
+title: OTX domain IOC - compraloec.store
+id: 1110dbd0-3f03-44dd-8d26-010f7f6e8f1a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: compraloec.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

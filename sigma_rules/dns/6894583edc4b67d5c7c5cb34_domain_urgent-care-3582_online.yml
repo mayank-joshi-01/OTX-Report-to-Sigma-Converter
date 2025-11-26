@@ -1,0 +1,20 @@
+title: OTX domain IOC - urgent-care-3582.online
+id: e7991770-50dc-413b-800e-78feb8f19c55
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: urgent-care-3582.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

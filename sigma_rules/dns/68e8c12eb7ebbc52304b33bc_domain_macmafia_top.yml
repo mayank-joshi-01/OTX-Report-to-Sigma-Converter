@@ -1,0 +1,25 @@
+title: OTX domain IOC - macmafia.top
+id: 54dacd6f-a3e3-4f88-8c14-0a45db233f03
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClayRat: A New Android
+  Spyware Targeting Russia'' (68e8c12eb7ebbc52304b33bc).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://zimperium.com/blog/clayrat-a-new-android-spyware-targeting-russia
+tags:
+- ClayRat
+- Spyware
+- phishing
+- SMS
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: macmafia.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

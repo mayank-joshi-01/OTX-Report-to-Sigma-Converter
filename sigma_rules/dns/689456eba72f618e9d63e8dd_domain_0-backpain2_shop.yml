@@ -1,0 +1,20 @@
+title: OTX domain IOC - 0-backpain2.shop
+id: 6cd77df9-3fdf-45a2-87f1-a869fd8118a3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 0-backpain2.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

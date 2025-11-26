@@ -1,0 +1,20 @@
+title: OTX domain IOC - peaxion-0205.online
+id: 499632b7-fb87-4fcc-bb46-7ee2dae14057
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: peaxion-0205.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

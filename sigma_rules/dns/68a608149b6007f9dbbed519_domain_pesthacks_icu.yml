@@ -1,0 +1,32 @@
+title: OTX domain IOC - pesthacks.icu
+id: 0861e39f-7072-417c-913a-df52736b0092
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pressure on Ukraine
+  and Poland Continues' (68a608149b6007f9dbbed519).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland
+tags:
+- vba macros
+- poland
+- cobalt strike
+- espionage
+- downloaders
+- infrastructure
+- slack
+- ukraine
+- c++
+- xls
+- c#
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pesthacks.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

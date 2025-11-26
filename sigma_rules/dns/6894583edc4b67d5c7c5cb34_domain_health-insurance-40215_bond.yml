@@ -1,0 +1,20 @@
+title: OTX domain IOC - health-insurance-40215.bond
+id: 83caa53e-71cd-46ce-bcb1-fcc7bac8913b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: health-insurance-40215.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

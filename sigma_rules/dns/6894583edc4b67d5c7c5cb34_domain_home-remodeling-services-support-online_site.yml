@@ -1,0 +1,20 @@
+title: OTX domain IOC - home-remodeling-services-support-online.site
+id: c3fc80e6-e400-4fa6-9f5d-f552968e2e54
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: home-remodeling-services-support-online.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - devicesetupx.com
+id: 1f95489b-ee37-44f9-a9a7-c4e1b84cda82
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Stories from the
+  SOC: Mystery of the postponed proxyware install'' (6924c9aad09e7e30fb5d9b70).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://expel.com/blog/stories-from-the-soc-mystery-of-the-postponed-proxyware-install
+tags:
+- download cradle
+- node.js
+- unauthorized software
+- in-memory execution
+- c2 server
+- disk-cleaning utility
+- proxyware
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: devicesetupx.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

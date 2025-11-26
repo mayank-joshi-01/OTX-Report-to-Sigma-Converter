@@ -1,0 +1,20 @@
+title: OTX domain IOC - 63594172887.cfd
+id: 457f0122-6f33-4070-80e0-c7d9886d4dff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 63594172887.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

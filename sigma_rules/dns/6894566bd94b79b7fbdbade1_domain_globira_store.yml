@@ -1,0 +1,20 @@
+title: OTX domain IOC - globira.store
+id: 5871ef93-79e2-48ee-9de8-c5f3ae370191
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: globira.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

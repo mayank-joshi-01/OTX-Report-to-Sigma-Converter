@@ -1,0 +1,27 @@
+title: OTX hostname IOC - mail.beamofthemoon.com
+id: d9a91cec-3956-41f5-9dcb-41f2f95c6a34
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Hybrid Approach
+  with Data Exfiltration and Encryption' (687229325abbf82b9f462e99).
+author: AlienVault
+date: '2025-07-12'
+references:
+- https://www.cybereason.com/blog/blacksuit-data-exfil
+tags:
+- data exfiltration
+- blacksuit
+- ransomware
+- rclone
+- encryption
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mail.beamofthemoon.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

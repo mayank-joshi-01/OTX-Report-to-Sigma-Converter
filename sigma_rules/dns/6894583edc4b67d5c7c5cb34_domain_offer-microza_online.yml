@@ -1,0 +1,20 @@
+title: OTX domain IOC - offer-microza.online
+id: 0ec14a2c-53c3-4f7e-b5dc-d0d151b5bcc0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: offer-microza.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

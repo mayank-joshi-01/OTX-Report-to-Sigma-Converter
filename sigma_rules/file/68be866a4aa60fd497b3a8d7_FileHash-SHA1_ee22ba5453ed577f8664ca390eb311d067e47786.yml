@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - ee22ba5453ed577f8664ca390eb311d067e47786
+id: 073cb53a-0a2f-4680-a95b-a44af4c0f9d7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GhostRedirector
+  poisons Windows servers: Backdoors with a side of Potatoes'' (68be866a4aa60fd497b3a8d7).'
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://www.welivesecurity.com/en/eset-research/ghostredirector-poisons-windows-servers-backdoors-side-potatoes/
+tags:
+- zunput
+- rungan
+- privilege escalation
+- gamshen
+- seo fraud
+- iis module
+- windows servers
+- backdoor
+- china-aligned
+- comdai
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ee22ba5453ed577f8664ca390eb311d067e47786
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

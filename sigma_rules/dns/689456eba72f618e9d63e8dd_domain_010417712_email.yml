@@ -1,0 +1,20 @@
+title: OTX domain IOC - 010417712.email
+id: d9189f6f-dc12-41ca-8e3c-0c6018600444
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 010417712.email
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

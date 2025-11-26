@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://laterrasse.online/les-francais-sont-preoccupes-par-le-nombre-d-immigres-dans-le-pays
+id: 7a107c6f-f1bc-4ef8-b400-af0b4d40472e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://laterrasse.online/les-francais-sont-preoccupes-par-le-nombre-d-immigres-dans-le-pays
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

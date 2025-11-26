@@ -1,0 +1,26 @@
+title: OTX domain IOC - lastpassdesktop.com
+id: 3c64bcc3-3b66-4901-98a0-55370f4527ff
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LastPass Warns Customers
+  It Has Not Been Hacked Amid Phishing Emails' (68f130fb06f690c540c87cc0).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://www.infosecurity-magazine.com/news/lastpass-not-hacked-phishing-email
+tags:
+- phishing
+- credential theft
+- password manager
+- lastpass
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lastpassdesktop.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

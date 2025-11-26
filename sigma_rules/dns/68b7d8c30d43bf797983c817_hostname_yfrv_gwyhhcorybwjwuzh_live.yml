@@ -1,0 +1,30 @@
+title: OTX hostname IOC - yfrv.gwyhhcorybwjwuzh.live
+id: 96b6f383-d906-4e56-8b2a-030066299f0f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting RapperBot
+  Botnet: From Infection to DDoS & More'' (68b7d8c30d43bf797983c817).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.bitsight.com/blog/rapperbot-infection-ddos-split-second
+tags:
+- infrastructure
+- ddos
+- nvr
+- dns
+- rapperbot
+- botnet
+- iot
+- encryption
+- exploit
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yfrv.gwyhhcorybwjwuzh.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - evara-usa.store
+id: 676720ac-18d2-4fdd-9d2b-1d68c896cd8e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: evara-usa.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

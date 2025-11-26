@@ -1,0 +1,20 @@
+title: OTX domain IOC - omffnjybqlxdr.online
+id: b8850e3a-1927-4148-9925-5326d2d494c2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: omffnjybqlxdr.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

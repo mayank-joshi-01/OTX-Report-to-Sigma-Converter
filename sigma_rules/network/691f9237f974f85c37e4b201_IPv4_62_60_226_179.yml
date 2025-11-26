@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 62.60.226.179
+id: 2714c634-9c3a-40ce-acc6-c30f93b792bf
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Tsundere botnet
+  uses the Ethereum blockchain to infect its targets' (691f9237f974f85c37e4b201).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/
+tags:
+- ethereum
+- 123 stealer
+- websocket
+- botnet
+- node.js
+- javascript
+- msi
+- powershell
+- aes-256
+- tsundere bot
+- koneko
+- tsundere
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 62.60.226.179
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

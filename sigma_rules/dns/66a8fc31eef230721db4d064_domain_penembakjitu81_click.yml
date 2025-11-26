@@ -1,0 +1,26 @@
+title: OTX domain IOC - penembakjitu81.click
+id: b78dfd13-ce02-4368-b825-525e3ad1d893
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: penembakjitu81.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

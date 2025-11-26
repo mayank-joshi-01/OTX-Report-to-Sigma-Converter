@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://kykggujjvvag7p4nmptsfuyqrqtqiqqun3pimsuupecmpoez2gph4vqd.onion:34469
+id: 014c092b-9723-40b9-91e0-d81918e4ec7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Raspberry Robin:
+  Latest Updates and Improvements'' (68920b2a624f32c4343ef884).'
+author: AlienVault
+date: '2025-08-05'
+references: []
+tags:
+- encryption
+- roshtyak
+- usb
+- privilege-escalation
+- obfuscation
+- tor
+- raspberry robin
+- cve-2024-38196
+- downloader
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://kykggujjvvag7p4nmptsfuyqrqtqiqqun3pimsuupecmpoez2gph4vqd.onion:34469
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

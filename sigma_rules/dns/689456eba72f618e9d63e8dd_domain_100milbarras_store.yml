@@ -1,0 +1,20 @@
+title: OTX domain IOC - 100milbarras.store
+id: 2373eb9a-4047-447e-a804-d094bbcf1ae3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 100milbarras.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

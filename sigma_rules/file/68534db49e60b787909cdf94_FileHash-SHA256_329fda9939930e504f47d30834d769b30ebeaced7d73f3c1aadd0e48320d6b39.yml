@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 329fda9939930e504f47d30834d769b30ebeaced7d73f3c1aadd0e48320d6b39
+id: b714e463-f01a-49df-9b4c-329702ceb0c2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'What's in an ASP?
+  Creative Phishing Attack on Prominent Academics and Critics of Russia' (68534db49e60b787909cdf94).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/creative-phishing-academics-critics-of-russia
+tags:
+- department of state
+- phishing
+- email compromise
+- asp
+- state-sponsored
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 329fda9939930e504f47d30834d769b30ebeaced7d73f3c1aadd0e48320d6b39
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - best-new-build-homes-usa-44.online
+id: 58f6ecbb-31c6-4c22-ae9c-347918c9b7eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: best-new-build-homes-usa-44.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

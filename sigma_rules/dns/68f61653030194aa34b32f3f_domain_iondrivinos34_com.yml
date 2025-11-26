@@ -1,0 +1,25 @@
+title: OTX domain IOC - iondrivinos34.com
+id: 1aa3cc5f-5b56-4543-8f70-a9c279cc384a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Lunar Spider Expands
+  their Web via FakeCaptcha' (68f61653030194aa34b32f3f).
+author: AlienVault
+date: '2025-10-20'
+references:
+- https://blog.nviso.eu/2025/10/01/lunar-spider-expands-their-web-via-fakecaptcha
+tags:
+- fakecaptcha
+- icedid
+- msi downloader
+- latrodectus
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iondrivinos34.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

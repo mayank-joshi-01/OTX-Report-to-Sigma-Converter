@@ -1,0 +1,20 @@
+title: OTX domain IOC - cibhmyowgsmpa.store
+id: e5cf70df-1297-4849-b883-3d1a1ff19069
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cibhmyowgsmpa.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

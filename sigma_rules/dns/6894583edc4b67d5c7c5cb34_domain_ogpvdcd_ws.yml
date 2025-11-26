@@ -1,0 +1,20 @@
+title: OTX domain IOC - ogpvdcd.ws
+id: bc03f4c2-e178-45f6-9956-e0518eb80cd5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ogpvdcd.ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

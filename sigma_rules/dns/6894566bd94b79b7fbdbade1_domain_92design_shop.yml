@@ -1,0 +1,20 @@
+title: OTX domain IOC - 92design.shop
+id: 50d1727e-434a-48a6-915f-d9b0d2ca6a95
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 92design.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

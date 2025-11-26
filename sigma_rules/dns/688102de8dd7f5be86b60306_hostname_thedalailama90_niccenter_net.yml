@@ -1,0 +1,28 @@
+title: OTX hostname IOC - thedalailama90.niccenter.net
+id: e85139a9-be45-49c9-9e9f-148dff934224
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Illusory Wishes:
+  China-nexus APT Targets the Tibetan Community'' (688102de8dd7f5be86b60306).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.zscaler.com/blogs/security-research/illusory-wishes-china-nexus-apt-targets-tibetan-community
+tags:
+- ghost rat
+- phantomnet
+- multi-stage attack
+- dll sideloading
+- web compromise
+- tibetan community
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thedalailama90.niccenter.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

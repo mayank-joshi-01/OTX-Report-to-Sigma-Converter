@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - bbbf99de707dd28c938668d34c2e1b26
+id: 38d98576-9a84-4a15-8ee2-c5ace56b81df
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Underground Ransomware
+  Being Distributed Worldwide' (68af30b7cd42cadb1e4cffbd).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://asec.ahnlab.com/en/89835
+tags:
+- striping method
+- ransomware
+- global attacks
+- underground ransomware
+- encryption
+- data theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: bbbf99de707dd28c938668d34c2e1b26
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - allpremiumservice.store
+id: f90357fa-5cb6-4ff4-980b-463661cc9963
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: allpremiumservice.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

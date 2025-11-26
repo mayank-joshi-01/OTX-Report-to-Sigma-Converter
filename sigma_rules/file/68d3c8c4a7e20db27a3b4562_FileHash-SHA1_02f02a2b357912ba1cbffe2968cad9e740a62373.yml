@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 02f02a2b357912ba1cbffe2968cad9e740a62373
+id: f2125b7a-0937-4ac9-8c95-9ddc638dad24
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 02f02a2b357912ba1cbffe2968cad9e740a62373
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

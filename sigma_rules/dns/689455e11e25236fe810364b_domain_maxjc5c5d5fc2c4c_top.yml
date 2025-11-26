@@ -1,0 +1,20 @@
+title: OTX domain IOC - maxjc5c5d5fc2c4c.top
+id: ef2a791d-2417-4927-9192-462a19aa6b7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: maxjc5c5d5fc2c4c.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - kgkqsmxtlae.ws
+id: 824a2028-5ef1-430c-92bc-c3f9cb3b094d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kgkqsmxtlae.ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 827797a9bff728ae6f46abd505e67a15e40b0ba69a8dc92a36fd90d9974c9593
+id: a8065e64-7d89-4211-8ca9-4f7cc43d001d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Smoking Gun Uncovered:
+  RPX Relay at PolarEdge''s Core Exposed'' (69025eeb36a0f5fdf2f85765).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://blog.xlab.qianxin.com/smoking-gun-uncovered-rpx-relay-at-polaredges-core-exposed
+tags:
+- proxy
+- infrastructure
+- orb
+- vps
+- polaredge
+- command execution
+- iot
+- cve-2023-20118
+- evasion
+- rpx_server
+- rpx_client
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 827797a9bff728ae6f46abd505e67a15e40b0ba69a8dc92a36fd90d9974c9593
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

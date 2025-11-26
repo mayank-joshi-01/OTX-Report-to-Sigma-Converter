@@ -1,0 +1,65 @@
+title: OTX IPv4 IOC - 83.252.42.112
+id: f7d8271e-3552-4a11-aee3-0f075b072001
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RondoDox v2: Evolution
+  of RondoDox Botnet with 650% More Exploits'' (6911c73e9d8c6d03d8d71b34).'
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://beelzebub.ai/blog/rondo-dox-v2/
+tags:
+- cve-2019-16920
+- cve-2024-3721
+- cve-2018-10561
+- cve-2017-18368
+- cve-2025-7414
+- cve-2023-47565
+- cve-2016-6277
+- rondodox
+- cve-2024-10914
+- cve-2022-37129
+- cve-2022-36553
+- cve-2014-1635
+- cve-2018-11714
+- cve-2023-52163
+- botnet
+- obfuscation
+- enterprise
+- cve-2025-5504
+- cve-2023-1389
+- cve-2025-34037
+- cve-2017-18369
+- cve-2015-2051
+- cve-2020-10987
+- multi-architecture
+- cve-2021-42013
+- cve-2023-25280
+- cve-2025-4008
+- command-injection
+- cve-2025-22905
+- cve-2023-51833
+- ddos
+- cve-2023-26801
+- cve-2022-44149
+- iot
+- cve-2021-41773
+- cve-2025-1829
+- persistence
+- cve-2014-6271
+- cve-2024-12856
+- exploit
+- cve-2020-27867
+- cve-2024-12847
+- cve-2020-25506
+- cve-2024-7029
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 83.252.42.112
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

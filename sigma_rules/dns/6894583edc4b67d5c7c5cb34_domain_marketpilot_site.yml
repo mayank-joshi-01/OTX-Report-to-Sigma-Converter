@@ -1,0 +1,20 @@
+title: OTX domain IOC - marketpilot.site
+id: 8cb7c014-01e8-4fa9-a8df-d983fb31f06b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: marketpilot.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

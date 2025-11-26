@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 031c916b599e17d8cfa13089bddafc2436be8522f0c9e479c7d76ba3010bbd18
+id: a6f90a13-53cb-4d8f-8ee7-afd698ccd496
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Tracking Malware
+  and Attack Expansion: A Hacker Group''s Journey across Asia'' (68f286c7e3ba464045fcfce5).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://www.fortinet.com/blog/threat-research/tracking-malware-and-attack-expansion-a-hacker-groups-journey-across-asia
+tags:
+- winos
+- phishing
+- task scheduler
+- multi-stage attack
+- holdinghands
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 031c916b599e17d8cfa13089bddafc2436be8522f0c9e479c7d76ba3010bbd18
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

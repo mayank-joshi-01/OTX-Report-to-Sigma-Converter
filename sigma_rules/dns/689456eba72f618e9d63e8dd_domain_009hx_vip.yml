@@ -1,0 +1,20 @@
+title: OTX domain IOC - 009hx.vip
+id: 3393f99e-5cd7-4ac1-8baa-1b92a8e4f2ca
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 009hx.vip
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

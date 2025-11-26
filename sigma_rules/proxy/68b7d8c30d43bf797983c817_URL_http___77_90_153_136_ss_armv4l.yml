@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://77.90.153.136/ss/armv4l
+id: 1542a1d9-eb98-4af6-8266-6edb508d25e5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting RapperBot
+  Botnet: From Infection to DDoS & More'' (68b7d8c30d43bf797983c817).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.bitsight.com/blog/rapperbot-infection-ddos-split-second
+tags:
+- infrastructure
+- ddos
+- nvr
+- dns
+- rapperbot
+- botnet
+- iot
+- encryption
+- exploit
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://77.90.153.136/ss/armv4l
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

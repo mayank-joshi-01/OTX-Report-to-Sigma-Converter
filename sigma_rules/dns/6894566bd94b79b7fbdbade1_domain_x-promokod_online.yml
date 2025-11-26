@@ -1,0 +1,20 @@
+title: OTX domain IOC - x-promokod.online
+id: 027097f2-4dd8-46d8-80b6-f4a4f16a48fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: x-promokod.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

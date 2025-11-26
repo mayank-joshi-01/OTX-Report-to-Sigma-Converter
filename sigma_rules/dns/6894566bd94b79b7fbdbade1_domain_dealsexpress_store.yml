@@ -1,0 +1,20 @@
+title: OTX domain IOC - dealsexpress.store
+id: 014a7029-4b5c-4500-9723-0cb0b0c6f96b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dealsexpress.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

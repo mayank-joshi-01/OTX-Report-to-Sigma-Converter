@@ -1,0 +1,20 @@
+title: OTX domain IOC - cointracker.cloud
+id: 6240e65a-f066-459b-9dc4-82a8ce1d1c24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cointracker.cloud
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

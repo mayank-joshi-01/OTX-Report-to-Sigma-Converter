@@ -1,0 +1,20 @@
+title: OTX domain IOC - shop-avona.store
+id: 954d59f9-587d-4a0b-b5c6-6b8aaf0b7b70
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shop-avona.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

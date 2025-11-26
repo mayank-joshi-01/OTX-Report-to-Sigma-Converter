@@ -1,0 +1,20 @@
+title: OTX domain IOC - blagorinesta.click
+id: cf09206a-6b57-4a5e-8c9c-29dd23e779d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blagorinesta.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 638033comtz.shop
+id: 84a28cfc-e1b3-4821-8161-e03f7a3a38c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 638033comtz.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

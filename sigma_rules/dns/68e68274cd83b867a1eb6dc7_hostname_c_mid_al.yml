@@ -1,0 +1,29 @@
+title: OTX hostname IOC - c.mid.al
+id: 53c3faf2-1a7d-47fa-a736-c12645f65ace
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nezha Tool Used in
+  New Cyber Campaign Targeting Web Applications' (68e68274cd83b867a1eb6dc7).
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.infosecurity-magazine.com/news/nezha-tool-used-new-cyber-campaign
+tags:
+- phpmyadmin
+- log poisoning
+- nezha
+- ghost rat
+- mariadb
+- china-linked
+- antsword
+- web applications
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: c.mid.al
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

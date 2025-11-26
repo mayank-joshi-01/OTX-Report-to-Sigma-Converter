@@ -1,0 +1,20 @@
+title: OTX domain IOC - myagentic.online
+id: de5c28f3-158f-42c6-bda5-d051798c4243
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: myagentic.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dronedropfishing.online
+id: ccb3a701-4a20-4f9d-ba34-3164e4c52f3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dronedropfishing.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

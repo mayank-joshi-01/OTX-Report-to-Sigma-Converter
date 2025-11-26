@@ -1,0 +1,32 @@
+title: OTX domain IOC - ttseo66.com
+id: 73926fc0-322a-4922-81ca-f88ff5e514c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''WEBJACK: Evolving
+  IIS Hijacking Campaign Abuses SEO for Fraud and Monetization'' (691d87825037189199f53698).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://labs.withsecure.com/publications/webjack
+tags:
+- badiis
+- latin america
+- chinese threat actor
+- xlanyloader
+- iis hijacking
+- seo poisoning
+- southeast asia
+- m0yv
+- cobalt strike
+- iis modules
+- gambling redirection
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ttseo66.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

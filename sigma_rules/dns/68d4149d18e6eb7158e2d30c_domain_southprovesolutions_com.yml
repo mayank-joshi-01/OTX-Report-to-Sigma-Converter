@@ -1,0 +1,29 @@
+title: OTX domain IOC - southprovesolutions.com
+id: 96f37ac7-9556-401b-acc2-24a0b00856c0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Updates Arsenal with
+  BAITSWITCH and SIMPLEFIX' (68d4149d18e6eb7158e2d30c).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://www.zscaler.com/blogs/security-research/coldriver-updates-arsenal-baitswitch-and-simplefix
+tags:
+- baitswitch
+- powershell
+- apt
+- russia
+- social engineering
+- backdoor
+- clickfix
+- simplefix
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: southprovesolutions.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

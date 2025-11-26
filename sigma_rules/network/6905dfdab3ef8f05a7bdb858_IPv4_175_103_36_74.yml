@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 175.103.36.74
+id: be639c90-3275-4398-a144-9b8959690b5c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cloud Abuse at Scale'
+  (6905dfdab3ef8f05a7bdb858).
+author: AlienVault
+date: '2025-11-01'
+references:
+- https://www.fortinet.com/blog/threat-research/cloud-abuse-at-scale
+tags:
+- identity compromise
+- trufflehog
+- credential abuse
+- cloud infrastructure
+- coroxy
+- systembc
+- aws
+- bec
+- portainer
+- trufflenet
+- xmrig
+- ses
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 175.103.36.74
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

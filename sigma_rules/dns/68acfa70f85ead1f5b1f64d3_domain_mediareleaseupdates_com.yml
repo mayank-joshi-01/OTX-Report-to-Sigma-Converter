@@ -1,0 +1,30 @@
+title: OTX domain IOC - mediareleaseupdates.com
+id: 2d6ded0a-0793-47cf-9f58-fc43c3bdc8c4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PRC-Nexus Espionage
+  Campaign Hijacks Web Traffic to Target Diplomats' (68acfa70f85ead1f5b1f64d3).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats
+tags:
+- prc-nexus
+- social engineering
+- in-memory execution
+- espionage
+- canonstager
+- sogu.sec
+- digital signatures
+- staticplugin
+- captive portal
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mediareleaseupdates.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

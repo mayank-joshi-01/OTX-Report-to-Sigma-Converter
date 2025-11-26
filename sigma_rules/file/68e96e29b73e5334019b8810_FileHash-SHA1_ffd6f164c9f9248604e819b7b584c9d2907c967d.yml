@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA1 IOC - ffd6f164c9f9248604e819b7b584c9d2907c967d
+id: 3e7a6f81-9d41-4299-8f22-105eef97c712
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From infostealer
+  to full RAT: dissecting the PureRAT attack chain'' (68e96e29b73e5334019b8810).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.bleepingcomputer.com/news/security/from-infostealer-to-full-rat-dissecting-the-purerat-attack-chain/
+tags:
+- purerat
+- zip archive
+- python
+- lonenone
+- pxa stealer
+- telegram
+- winrar
+- purecrypter
+- service
+- purelogs
+- cryptoloader
+- netloader
+- pythonloader
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ffd6f164c9f9248604e819b7b584c9d2907c967d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

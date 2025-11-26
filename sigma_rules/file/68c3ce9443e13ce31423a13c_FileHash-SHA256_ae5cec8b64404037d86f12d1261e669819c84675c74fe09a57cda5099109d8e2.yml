@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - ae5cec8b64404037d86f12d1261e669819c84675c74fe09a57cda5099109d8e2
+id: 06f2a29a-60e8-4c2c-891e-1fb7be5374ce
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Trigona Rebranding
+  Suspicions and Global Threats, and BlackNevas Ransomware Analysis' (68c3ce9443e13ce31423a13c).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://asec.ahnlab.com/en/90080/
+tags:
+- encryption
+- asia-pacific
+- global threats
+- rsa
+- aes
+- blacknevas
+- ransomware
+- data leak
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ae5cec8b64404037d86f12d1261e669819c84675c74fe09a57cda5099109d8e2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

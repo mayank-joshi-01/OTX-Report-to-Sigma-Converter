@@ -1,0 +1,20 @@
+title: OTX domain IOC - abrigo-amor-em-patas.online
+id: 95ab984e-f2af-4f65-9b19-0f0bc7a44908
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: abrigo-amor-em-patas.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

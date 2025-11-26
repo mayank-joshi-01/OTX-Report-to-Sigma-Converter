@@ -1,0 +1,37 @@
+title: OTX URL IOC - http://cloud.qunetcentre.org:443
+id: 41fe518a-0b92-45f5-8aff-99a3c76f9e63
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Mysterious Elephant
+  APT: TTPs and tools'' (68efd379576217166803e5e1).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://securelist.com/mysterious-elephant-apt-ttps-and-tools/117596/
+tags:
+- custom tools
+- babshell
+- stom exfiltrator
+- foreign affairs
+- memloader hidendesk
+- whatsapp exploitation
+- memloader edge
+- uplo exfiltrator
+- government targets
+- remcos
+- chromestealer exfiltrator
+- vrat
+- exfiltration
+- apt
+- asia-pacific
+- spear phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://cloud.qunetcentre.org:443
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

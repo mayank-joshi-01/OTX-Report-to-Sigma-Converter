@@ -1,0 +1,20 @@
+title: OTX domain IOC - 99036.xyz
+id: 1ba5e5f0-cfc3-49fa-8e69-729af29b306f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 99036.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

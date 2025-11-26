@@ -1,0 +1,20 @@
+title: OTX domain IOC - thetravellerslastjourney.online
+id: 8d27c9b0-f31c-40af-91ca-3e952ee08355
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thetravellerslastjourney.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

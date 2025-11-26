@@ -1,0 +1,20 @@
+title: OTX hostname IOC - cctvfilsham.bht.org.uk
+id: 784dd1f4-8d9a-415a-9b1e-ad32cac72b04
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cctvfilsham.bht.org.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

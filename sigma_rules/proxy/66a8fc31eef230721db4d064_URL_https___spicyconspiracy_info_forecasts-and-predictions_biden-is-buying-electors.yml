@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://spicyconspiracy.info/forecasts-and-predictions/biden-is-buying-electors
+id: 6e1d70f9-0bf6-4bbc-9099-221dd07a0b14
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://spicyconspiracy.info/forecasts-and-predictions/biden-is-buying-electors
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

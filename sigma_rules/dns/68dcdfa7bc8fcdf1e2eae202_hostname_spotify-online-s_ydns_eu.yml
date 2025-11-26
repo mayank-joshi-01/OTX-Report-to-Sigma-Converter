@@ -1,0 +1,30 @@
+title: OTX hostname IOC - spotify-online-s.ydns.eu
+id: 0f90d1a6-2e3b-4daf-83c6-1976685c78d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: spotify-online-s.ydns.eu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

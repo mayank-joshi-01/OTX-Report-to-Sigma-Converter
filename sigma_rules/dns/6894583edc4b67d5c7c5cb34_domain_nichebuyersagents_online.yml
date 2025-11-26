@@ -1,0 +1,20 @@
+title: OTX domain IOC - nichebuyersagents.online
+id: 1d8acf7f-fbd5-4ea8-9aa1-77d12c0fa7f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nichebuyersagents.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - jaxpowers.online
+id: 20a726a2-d173-4e39-ab5e-35430d6b3e1e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jaxpowers.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zakariabouguezzar.site
+id: ddfd2fea-7095-4d0b-a713-25eb8a0110db
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zakariabouguezzar.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion
+id: 5f9491fd-8cbe-4e6a-8aa6-8dd07c862df2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Weaponized Military
+  Documents Deliver Advanced SSH-Tor Backdoor' (690b44c980cc3d5d3a5f7631).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://cyble.com/blog/weaponized-military-documents-deliver-backdoor
+tags:
+- tor hidden service
+- defense sector
+- openssh
+- military lure
+- obfs4
+- uav operations
+- ssh-tor backdoor
+- belarusian air force
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yuknkap4im65njr3tlprnpqwj4h7aal4hrn2tdieg75rpp6fx25hqbyd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

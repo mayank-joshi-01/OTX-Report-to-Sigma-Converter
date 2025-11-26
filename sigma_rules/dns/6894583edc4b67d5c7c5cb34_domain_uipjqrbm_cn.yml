@@ -1,0 +1,20 @@
+title: OTX domain IOC - uipjqrbm.cn
+id: 3cfd6616-4ae3-447b-8e82-d69d3f35188e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uipjqrbm.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

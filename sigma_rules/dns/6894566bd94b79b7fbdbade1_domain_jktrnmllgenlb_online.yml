@@ -1,0 +1,20 @@
+title: OTX domain IOC - jktrnmllgenlb.online
+id: f8a0a599-61bb-4537-b8fa-8797ef926d5b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jktrnmllgenlb.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

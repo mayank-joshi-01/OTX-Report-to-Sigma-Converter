@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxury-home-villas-apartment-and-for-rent-deals.store
+id: ef317ee7-eecd-4e40-b149-f38c814cf3e2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxury-home-villas-apartment-and-for-rent-deals.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

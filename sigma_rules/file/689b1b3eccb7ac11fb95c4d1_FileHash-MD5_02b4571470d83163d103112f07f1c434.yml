@@ -1,0 +1,34 @@
+title: OTX FileHash-MD5 IOC - 02b4571470d83163d103112f07f1c434
+id: 33a140c1-d8fb-491e-b976-40518b0099f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ToolShell: An all-you-can-eat
+  buffet for threat actors'' (689b1b3eccb7ac11fb95c4d1).'
+author: AlienVault
+date: '2025-08-12'
+references: []
+tags:
+- msil/webshell.js
+- cve-2025-49704
+- sharepoint
+- vulnerability
+- exploitation
+- cve-2025-49706
+- webshell
+- china-aligned
+- cve-2025-53771
+- backdoor
+- apt
+- toolshell
+- cve-2025-53770
+- zero-day
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 02b4571470d83163d103112f07f1c434
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

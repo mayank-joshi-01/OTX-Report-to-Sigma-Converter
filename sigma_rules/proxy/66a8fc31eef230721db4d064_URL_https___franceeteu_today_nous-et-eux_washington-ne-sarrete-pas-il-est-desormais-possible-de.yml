@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://franceeteu.today/nous-et-eux/washington-ne-sarrete-pas-il-est-desormais-possible-de-frapper-la-russie
+id: 43a39e69-5dad-4adb-90fa-e99e73b46929
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://franceeteu.today/nous-et-eux/washington-ne-sarrete-pas-il-est-desormais-possible-de-frapper-la-russie
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

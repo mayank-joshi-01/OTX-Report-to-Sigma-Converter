@@ -1,0 +1,33 @@
+title: OTX URL IOC - https://ice.theinnovationfactory.it/static/4l4md4r.exe
+id: c63a4f9a-3f3f-4310-9548-ce761b0a315e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Religious symbols
+  weaponized, group uses Microsoft SharePoint RCE vulnerability to deliver 4L4MD4r
+  ransomware' (688ca78ff00082bce0dc1d5e).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://mp.weixin.qq.com/s/h6_ijQAHhq4tersaBE5fXQ
+tags:
+- 4l4md4r
+- cve-2025-49704
+- microsoft
+- cve-2025-53770
+- golang
+- cve-2025-53771
+- cve-2025-49706
+- rce
+- ransomware
+- religious symbols
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://ice.theinnovationfactory.it/static/4l4md4r.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

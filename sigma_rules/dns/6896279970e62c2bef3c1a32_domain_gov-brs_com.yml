@@ -1,0 +1,29 @@
+title: OTX domain IOC - gov-brs.com
+id: 71b6600a-38e3-489f-992f-03298846cdf9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GenAI Used to Impersonate
+  Brazil's Government Websites' (6896279970e62c2bef3c1a32).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.zscaler.com/blogs/security-research/genai-used-phishing-websites-impersonating-brazil-s-government
+tags:
+- deepsite ai
+- blackbox ai
+- pix payment
+- phishing
+- brazil
+- government impersonation
+- generative ai
+- seo poisoning
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gov-brs.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://gwadarport.ddns.net:9090
+id: e56a2dd9-c12b-4589-8000-0e4771c2ef80
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://gwadarport.ddns.net:9090
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

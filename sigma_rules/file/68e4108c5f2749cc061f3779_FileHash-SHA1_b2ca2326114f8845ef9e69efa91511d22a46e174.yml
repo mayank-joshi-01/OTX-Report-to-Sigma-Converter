@@ -1,0 +1,39 @@
+title: OTX FileHash-SHA1 IOC - b2ca2326114f8845ef9e69efa91511d22a46e174
+id: f573e378-40d0-4b1c-abdb-2a5b3f66f4a4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Self-Propagating Malware
+  Spreading Via WhatsApp, Targets Brazilian Users' (68e4108c5f2749cc061f3779).
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/self-propagating-malware-spreads-via-whatsapp.html
+tags:
+- malware
+- phishing
+- whatsapp
+- brazil
+- whatsapp web
+- c server
+- water saci
+- lnk file
+- powershell
+- loader
+- bradesco
+- persistence
+- format
+- brazilian
+- turn
+- telegram
+- watsonclient
+- SORVEPOTEL
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: b2ca2326114f8845ef9e69efa91511d22a46e174
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

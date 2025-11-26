@@ -1,0 +1,20 @@
+title: OTX domain IOC - mafia1688.info
+id: 2aae0271-ad9b-4ce4-bd5d-0f0c5d652bde
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mafia1688.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

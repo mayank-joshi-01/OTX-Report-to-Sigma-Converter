@@ -1,0 +1,20 @@
+title: OTX domain IOC - hh5hafutfcltsc4tforbwgq3wyftt.km
+id: 4aa0f697-3f99-48f7-aa53-924eb3da4bf5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hh5hafutfcltsc4tforbwgq3wyftt.km
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

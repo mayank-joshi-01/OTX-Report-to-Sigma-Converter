@@ -1,0 +1,20 @@
+title: OTX domain IOC - geminiprompt.online
+id: b085888b-8e77-4a02-a403-d1f6214a769c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: geminiprompt.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - jmkllewpfhryg.space
+id: 941f5dbb-0417-4b8e-a755-bd9af418a3d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jmkllewpfhryg.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

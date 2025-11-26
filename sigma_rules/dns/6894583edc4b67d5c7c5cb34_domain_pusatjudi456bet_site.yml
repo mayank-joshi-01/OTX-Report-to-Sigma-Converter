@@ -1,0 +1,20 @@
+title: OTX domain IOC - pusatjudi456bet.site
+id: 51d462ad-a35e-4a46-9af7-d7ad8d21fccf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pusatjudi456bet.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

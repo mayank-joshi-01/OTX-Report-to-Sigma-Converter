@@ -1,0 +1,20 @@
+title: OTX domain IOC - mallorcatransfers.online
+id: 19c728d7-818e-44a1-ace1-f1c7e4fcf76d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mallorcatransfers.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

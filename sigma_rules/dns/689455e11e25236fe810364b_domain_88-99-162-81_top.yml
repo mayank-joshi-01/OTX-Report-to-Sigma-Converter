@@ -1,0 +1,20 @@
+title: OTX domain IOC - 88-99-162-81.top
+id: b25d0aa9-52b5-44b9-b4a1-591cbd500c74
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 88-99-162-81.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

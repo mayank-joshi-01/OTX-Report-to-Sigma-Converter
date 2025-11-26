@@ -1,0 +1,20 @@
+title: OTX domain IOC - woxjj6405186be91.top
+id: a8b30c03-bd63-486e-a62b-b2a13838945a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: woxjj6405186be91.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

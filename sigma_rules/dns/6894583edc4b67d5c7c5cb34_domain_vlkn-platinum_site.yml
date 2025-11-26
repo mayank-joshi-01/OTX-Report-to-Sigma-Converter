@@ -1,0 +1,20 @@
+title: OTX domain IOC - vlkn-platinum.site
+id: 30af00f8-5168-4360-a83f-9f71ad7f4b36
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vlkn-platinum.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

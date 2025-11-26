@@ -1,0 +1,20 @@
+title: OTX domain IOC - brandechode.online
+id: b8c77a0b-8223-463e-8ad4-db4ba7eaccf1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brandechode.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

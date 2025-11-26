@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - be8fb47abea1a89b31464206460b8c96
+id: 4e8135fd-cfef-4e3f-80be-3a5d7f95881f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Evolving Tactics
+  of SLOW#TEMPEST: A Deep Dive Into Advanced Malware Techniques'' (6877cefc216ca8bfd071f73c).'
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://unit42.paloaltonetworks.com/slow-tempest-malware-obfuscation
+tags:
+- obfuscation
+- anti-sandbox
+- emulation
+- slow#tempest
+- dynamic jumps
+- cfg
+- anti-analysis
+- dll side-loading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: be8fb47abea1a89b31464206460b8c96
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

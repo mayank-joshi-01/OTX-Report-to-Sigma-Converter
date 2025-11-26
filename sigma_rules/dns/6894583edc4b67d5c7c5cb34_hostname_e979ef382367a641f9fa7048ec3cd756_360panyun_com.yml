@@ -1,0 +1,20 @@
+title: OTX hostname IOC - e979ef382367a641f9fa7048ec3cd756.360panyun.com
+id: 85774f1a-e4d1-49ab-8677-7c5c30a35812
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: e979ef382367a641f9fa7048ec3cd756.360panyun.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

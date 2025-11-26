@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 3c621b0c91b758767f883cbd041c8ef701b9806a78f2ae1e08f932b43fb433bb
+id: 66fbc22f-2bc1-4c69-a2f9-48ae9979ed14
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MostereRAT Deployed
+  AnyDesk/TightVNC for Covert Full Access' (68bfb1a471409d34dfdf3279).
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.fortinet.com/blog/threat-research/mostererat-deployed-anydesk-tightvnc-for-covert-full-access
+tags:
+- mostererat
+- remote access
+- epl
+- anydesk
+- mtls
+- evasion techniques
+- phishing
+- tightvnc
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3c621b0c91b758767f883cbd041c8ef701b9806a78f2ae1e08f932b43fb433bb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

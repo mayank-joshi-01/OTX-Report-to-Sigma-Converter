@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 5ec8268a5995a1fac3530acafe4a10eab73c08b03cabb5d76154a7d693085cc2
+id: ae3d21f9-da5b-4317-a03f-6be9a666c494
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LNK Trojan delivers
+  REMCOS' (688a324d62b64db244b9463f).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.pointwild.com/threat-intelligence/trojan-winlnk-powershell-runner
+tags:
+- base64 encoding
+- multi-stage attack
+- remcos
+- keylogger
+- c2 communication
+- backdoor
+- pif file
+- powershell
+- lnk file
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5ec8268a5995a1fac3530acafe4a10eab73c08b03cabb5d76154a7d693085cc2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

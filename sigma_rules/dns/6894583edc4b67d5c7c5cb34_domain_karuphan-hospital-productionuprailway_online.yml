@@ -1,0 +1,20 @@
+title: OTX domain IOC - karuphan-hospital-productionuprailway.online
+id: 0231873b-07c7-426b-992c-88681d34e4ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: karuphan-hospital-productionuprailway.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

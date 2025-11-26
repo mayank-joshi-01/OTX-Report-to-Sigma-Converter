@@ -1,0 +1,20 @@
+title: OTX domain IOC - dqwxixvisqmwx.space
+id: 5f8950b1-d8ed-4dd8-999e-647167c1f5de
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dqwxixvisqmwx.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

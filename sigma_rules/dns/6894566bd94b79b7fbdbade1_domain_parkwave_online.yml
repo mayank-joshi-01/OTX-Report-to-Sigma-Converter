@@ -1,0 +1,20 @@
+title: OTX domain IOC - parkwave.online
+id: 9b7e4aa2-ddc0-44f1-977e-74ea2f039b2b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: parkwave.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

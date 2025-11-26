@@ -1,0 +1,20 @@
+title: OTX domain IOC - teammatchbox.online
+id: a8a582a3-fd90-4361-95e0-a413784e968c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: teammatchbox.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

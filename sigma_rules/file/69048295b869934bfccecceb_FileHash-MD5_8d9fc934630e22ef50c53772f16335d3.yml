@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - 8d9fc934630e22ef50c53772f16335d3
+id: 188936dd-839d-41f0-8e91-462e37c16e62
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New wave of cyberattacks
+  by APT group Cloud Atlas on Russia's government sector' (69048295b869934bfccecceb).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.ptsecurity.com/research/pt-esc-threat-intelligence/novaya-volna-kiberatak-apt-gruppirovki-cloud-atlas-na-gosudarstvennyj-sektor-rossii/
+tags:
+- bec attacks
+- powershower
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8d9fc934630e22ef50c53772f16335d3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

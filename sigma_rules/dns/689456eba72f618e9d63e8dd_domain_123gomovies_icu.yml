@@ -1,0 +1,20 @@
+title: OTX domain IOC - 123gomovies.icu
+id: bebc03c8-aa2d-45c4-8541-e31527229267
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 123gomovies.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 016k.info
+id: 2c4ed119-cde3-4454-ae5b-7873684c8105
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 016k.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

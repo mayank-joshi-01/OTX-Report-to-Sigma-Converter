@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.observateurcontinental.fr/?module=articles&action=view&id=6030
+id: 70fe7bc9-69be-4964-a46e-888ac959f66c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.observateurcontinental.fr/?module=articles&action=view&id=6030
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

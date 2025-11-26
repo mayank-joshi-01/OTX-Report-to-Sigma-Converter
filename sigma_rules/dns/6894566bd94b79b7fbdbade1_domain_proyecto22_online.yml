@@ -1,0 +1,20 @@
+title: OTX domain IOC - proyecto22.online
+id: e9e3910e-00bc-4460-9d54-5d89103100d0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: proyecto22.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

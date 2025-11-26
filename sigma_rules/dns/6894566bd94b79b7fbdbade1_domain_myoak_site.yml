@@ -1,0 +1,20 @@
+title: OTX domain IOC - myoak.site
+id: efd9d403-5bfa-40b4-9163-f8c36f861866
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: myoak.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

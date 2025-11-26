@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - d28b4136a7e6148de5c26a055c711f4f
+id: 43a6d470-0008-404f-9bf5-9244f8c7d033
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Actors Leverage
+  SEO Poisoning and Malicious Ads to Distribute Backdoored Microsoft Teams Installers'
+  (68de52ef382d67c8bdc97094).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://blackpointcyber.com/blog/malicious-teams-installers-drop-oyster-malware/
+tags:
+- persistence
+- seo poisoning
+- malvertising
+- oyster backdoor
+- microsoft teams
+- c2 communication
+- dll sideloading
+- trojanized installer
+- broomstick
+- oyster
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d28b4136a7e6148de5c26a055c711f4f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

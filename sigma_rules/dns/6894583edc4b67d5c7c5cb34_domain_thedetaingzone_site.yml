@@ -1,0 +1,20 @@
+title: OTX domain IOC - thedetaingzone.site
+id: 9f5b3071-2354-4638-a1a5-7e3c9e9c3222
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thedetaingzone.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

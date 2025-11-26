@@ -1,0 +1,20 @@
+title: OTX domain IOC - furvannaa.store
+id: 3111c873-2f54-4e02-9a63-d384455948d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: furvannaa.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bxtyxzahl.ws
+id: 9ffb61e8-f103-49c4-a033-5f1f0842f346
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bxtyxzahl.ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

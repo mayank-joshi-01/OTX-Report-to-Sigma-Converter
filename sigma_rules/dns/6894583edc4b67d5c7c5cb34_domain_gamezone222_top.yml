@@ -1,0 +1,20 @@
+title: OTX domain IOC - gamezone222.top
+id: c9247aac-a4db-49d0-b374-5e0d679fbade
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gamezone222.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

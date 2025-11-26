@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://varegjopeaks.com/altor/installer.msi
+id: cb75685f-2d0e-4f3a-aa1a-1146b3179533
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Banking Trojan
+  Identified, Distributed Through WhatsApp' (691e7a33a0a2a7b299ae7a59).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/spiderlabs-ids-new-banking-trojan-distributed-through-whatsapp
+tags:
+- eternidade stealer
+- delphi
+- banking trojan
+- credential theft
+- whatsapp
+- imap
+- brazil
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://varegjopeaks.com/altor/installer.msi
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

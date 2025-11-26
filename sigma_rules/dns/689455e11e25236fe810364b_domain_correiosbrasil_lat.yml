@@ -1,0 +1,20 @@
+title: OTX domain IOC - correiosbrasil.lat
+id: d601b873-df31-4b14-b002-c7147ed0c84d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: correiosbrasil.lat
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

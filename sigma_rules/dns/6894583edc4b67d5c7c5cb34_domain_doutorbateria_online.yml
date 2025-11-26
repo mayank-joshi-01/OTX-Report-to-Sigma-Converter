@@ -1,0 +1,20 @@
+title: OTX domain IOC - doutorbateria.online
+id: 0db538c2-f710-494e-85d1-5bb02a5c07ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: doutorbateria.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

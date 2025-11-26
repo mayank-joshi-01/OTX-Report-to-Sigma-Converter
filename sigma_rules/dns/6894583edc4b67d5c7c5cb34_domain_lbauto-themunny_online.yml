@@ -1,0 +1,20 @@
+title: OTX domain IOC - lbauto-themunny.online
+id: d245c0e9-cbce-4844-9a7e-bfb666731636
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lbauto-themunny.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - smallbusinesssupporter.online
+id: f3bc9939-0aa8-4ae9-9a07-45b4895b056e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smallbusinesssupporter.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

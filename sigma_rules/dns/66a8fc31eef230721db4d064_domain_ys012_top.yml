@@ -1,0 +1,26 @@
+title: OTX domain IOC - ys012.top
+id: 6508b509-d15e-4e0d-9f66-c4bdeddb5805
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ys012.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

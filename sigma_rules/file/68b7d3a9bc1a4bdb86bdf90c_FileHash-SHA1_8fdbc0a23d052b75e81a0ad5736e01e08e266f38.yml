@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 8fdbc0a23d052b75e81a0ad5736e01e08e266f38
+id: fbede71e-c41d-4dd4-9871-3d396fd3e4f1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNVEILING A PYTHON
+  STEALER – INF0S3C STEALER' (68b7d3a9bc1a4bdb86bdf90c).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.cyfirma.com/research/unveiling-a-python-stealer-inf0s3c-stealer/
+tags:
+- upx packing
+- blank grabber
+- system reconnaissance
+- data exfiltration
+- stealer
+- python
+- inf0s3c stealer
+- pyinstaller
+- discord
+- umbral-stealer
+- windows api
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 8fdbc0a23d052b75e81a0ad5736e01e08e266f38
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

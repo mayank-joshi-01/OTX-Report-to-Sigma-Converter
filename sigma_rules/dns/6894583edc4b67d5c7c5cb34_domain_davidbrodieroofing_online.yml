@@ -1,0 +1,20 @@
+title: OTX domain IOC - davidbrodieroofing.online
+id: dd357351-4d0a-4118-8ca7-d6edb3ce81f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: davidbrodieroofing.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

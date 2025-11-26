@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - c94a6bd6ec88385e4e831b208fed2fa6faed6666
+id: 8391ef8e-63a6-4ad5-a8eb-056c996067cb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Update WinRAR tools
+  now: RomCom and others exploiting zero-day vulnerability'' (689a04b1cf818643f79c1bd3).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://www.welivesecurity.com/en/eset-research/update-winrar-tools-now-romcom-and-others-exploiting-zero-day-vulnerability
+tags:
+- rustyclaw
+- winrar
+- vulnerability
+- mythic
+- zero-day
+- spearphishing
+- russia-aligned
+- cve-2025-8088
+- backdoor
+- exploit
+- snipbot
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: c94a6bd6ec88385e4e831b208fed2fa6faed6666
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

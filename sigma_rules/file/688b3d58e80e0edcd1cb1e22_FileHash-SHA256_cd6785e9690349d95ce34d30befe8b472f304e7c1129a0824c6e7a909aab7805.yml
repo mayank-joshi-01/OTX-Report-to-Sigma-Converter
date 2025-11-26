@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - cd6785e9690349d95ce34d30befe8b472f304e7c1129a0824c6e7a909aab7805
+id: bd6036ee-4d9c-4afc-8e1a-8ece010b435b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Sealed Chain of
+  Deception: Actors leveraging Node.JS to Launch JSCeal'' (688b3d58e80e0edcd1cb1e22).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://research.checkpoint.com/2025/jsceal-targets-crypto-apps/
+tags:
+- fake apps
+- stealer
+- cryptocurrency
+- malvertising
+- multi-stage
+- node.js
+- evasion
+- jsceal
+- jsc
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: cd6785e9690349d95ce34d30befe8b472f304e7c1129a0824c6e7a909aab7805
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

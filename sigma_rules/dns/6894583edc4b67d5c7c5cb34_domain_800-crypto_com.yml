@@ -1,0 +1,20 @@
+title: OTX domain IOC - 800-crypto.com
+id: e432c591-48d3-4cd9-a510-00f13c3da06e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 800-crypto.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

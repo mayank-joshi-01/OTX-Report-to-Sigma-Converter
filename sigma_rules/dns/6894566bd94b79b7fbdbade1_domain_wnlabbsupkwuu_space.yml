@@ -1,0 +1,20 @@
+title: OTX domain IOC - wnlabbsupkwuu.space
+id: 39d2bb9d-bf27-4a4c-b20d-0f78c5a616bc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wnlabbsupkwuu.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - thetopdeals.online
+id: 88d408fc-71af-4a88-a84b-3d3465d98175
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thetopdeals.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

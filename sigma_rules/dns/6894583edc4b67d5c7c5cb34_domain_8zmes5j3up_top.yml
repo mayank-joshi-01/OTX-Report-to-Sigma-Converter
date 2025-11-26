@@ -1,0 +1,20 @@
+title: OTX domain IOC - 8zmes5j3up.top
+id: a280d5eb-c8d7-4f2d-8b55-19c150e71f5e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 8zmes5j3up.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

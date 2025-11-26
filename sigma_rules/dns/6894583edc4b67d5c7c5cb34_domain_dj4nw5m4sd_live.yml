@@ -1,0 +1,20 @@
+title: OTX domain IOC - dj4nw5m4sd.live
+id: 26f8b7e1-d8e2-4b5e-8bd6-33144eb6d4a4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dj4nw5m4sd.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

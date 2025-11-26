@@ -1,0 +1,20 @@
+title: OTX domain IOC - zenithelectricalco.online
+id: 24109b88-d1e9-431f-a2c0-f11ba25005e4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zenithelectricalco.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

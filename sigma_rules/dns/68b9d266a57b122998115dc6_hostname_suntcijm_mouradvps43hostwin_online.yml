@@ -1,0 +1,31 @@
+title: OTX hostname IOC - suntcijm.mouradvps43hostwin.online
+id: 076a6f9e-c8bb-42aa-8ac1-a9e4099f5b9e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms'
+  (68b9d266a57b122998115dc6).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops
+tags:
+- cyber espionage
+- social engineering
+- north korea
+- job seeker targeting
+- clickfix
+- lazarus
+- infrastructure monitoring
+- cryptocurrency
+- contagiousdrop
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: suntcijm.mouradvps43hostwin.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

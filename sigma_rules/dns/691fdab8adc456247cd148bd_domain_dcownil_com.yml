@@ -1,0 +1,28 @@
+title: OTX domain IOC - dcownil.com
+id: e60d8a9b-7b1f-4ee7-b965-bad8968a174a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Reoccurring Use of
+  Highly Suspicious PDF Editors to Infiltrate Environments' (691fdab8adc456247cd148bd).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://www.truesec.com/hub/blog/reoccurring-use-of-highly-suspicious-pdf-editors-to-infiltrate-environments
+tags:
+- scheduled tasks
+- malicious vector
+- suspicious behavior
+- convertmate
+- pdf converter
+- amaryllis signal ltd
+- pdfeditor
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dcownil.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

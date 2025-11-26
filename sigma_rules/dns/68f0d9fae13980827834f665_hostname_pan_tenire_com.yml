@@ -1,0 +1,29 @@
+title: OTX hostname IOC - pan.tenire.com
+id: 52168ebb-7207-4fb2-a22e-61e9b036d031
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Silk Lure:
+  Scheduled Tasks Weaponized for DLL Side-Loading (drops ValleyRAT)'' (68f0d9fae13980827834f665).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://www.seqrite.com/blog/operation-silk-lure-scheduled-tasks-weaponized-for-dll-side-loading-drops-valleyrat/
+tags:
+- valleyrat
+- job lures
+- fintech
+- cryptocurrency
+- dll side-loading
+- spear-phishing
+- china
+- scheduled tasks
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pan.tenire.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

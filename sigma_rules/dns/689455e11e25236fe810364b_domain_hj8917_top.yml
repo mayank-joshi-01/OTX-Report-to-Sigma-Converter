@@ -1,0 +1,20 @@
+title: OTX domain IOC - hj8917.top
+id: 21348fa8-e7dd-41b1-aafa-015347539a12
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hj8917.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

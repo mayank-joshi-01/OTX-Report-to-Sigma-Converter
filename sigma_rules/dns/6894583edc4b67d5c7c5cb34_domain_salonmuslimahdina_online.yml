@@ -1,0 +1,20 @@
+title: OTX domain IOC - salonmuslimahdina.online
+id: 8a3d9565-ca4a-471d-b2b4-f3d0c4b414cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: salonmuslimahdina.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - tk.mall-poi.top
+id: 84a02919-6abe-46ee-b9e3-e0e59389aeb4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tk.mall-poi.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

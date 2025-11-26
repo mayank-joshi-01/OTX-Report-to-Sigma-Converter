@@ -1,0 +1,20 @@
+title: OTX hostname IOC - condescending-engelbart.176-123-1-62.plesk.page
+id: b65c6d85-6459-4968-9018-5426d8cb8b13
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: condescending-engelbart.176-123-1-62.plesk.page
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.spiegel.ltd/ausland/Das-Scheitern-in-der-Schweiz-wird-eine-T%C3%BCr-zum-Frieden-%C3%B6ffnen--a-f6e19b84-f463-4072-9dc9-4f01d107bbe4.html
+id: 8f76c234-4fae-4b95-8a38-33bc19699c33
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.spiegel.ltd/ausland/Das-Scheitern-in-der-Schweiz-wird-eine-T%C3%BCr-zum-Frieden-%C3%B6ffnen--a-f6e19b84-f463-4072-9dc9-4f01d107bbe4.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - runsociety.org
+id: bff766c2-8b5b-45d6-9c01-e9a5a15c0e1e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Leveraging Generative
+  AI to Reverse Engineer XLoader' (6908bc11abca08a2cfd014e9).
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://research.checkpoint.com/2025/generative-ai-for-reverse-engineering
+tags:
+- generative ai
+- reverse engineering
+- chatgpt
+- xloader
+- encryption
+- obfuscation
+- ioc extraction
+- malware analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: runsociety.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

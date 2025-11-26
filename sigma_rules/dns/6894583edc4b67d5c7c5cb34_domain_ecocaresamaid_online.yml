@@ -1,0 +1,20 @@
+title: OTX domain IOC - ecocaresamaid.online
+id: aac2490b-f560-4f9d-9111-a3860a08a548
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ecocaresamaid.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

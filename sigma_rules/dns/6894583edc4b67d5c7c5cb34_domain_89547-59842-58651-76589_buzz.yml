@@ -1,0 +1,20 @@
+title: OTX domain IOC - 89547-59842-58651-76589.buzz
+id: 2697650f-2d93-4a36-b855-d3633e2468d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 89547-59842-58651-76589.buzz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 6285d32a9491a0084da85a384a11e15e203badf67b1deed54155f02b7338b108
+id: ac972d39-57e2-429b-b2f0-a7e5c90471db
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cat''s Got Your
+  Files: Lynx Ransomware'' (691b65be81167e8300b087de).'
+author: AlienVault
+date: '2025-11-17'
+references:
+- https://thedfirreport.com/2025/11/17/cats-got-your-files-lynx-ransomware
+tags:
+- network reconnaissance
+- lynx ransomware
+- rdp
+- backup deletion
+- credential abuse
+- data exfiltration
+- ransomware
+- lateral movement
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6285d32a9491a0084da85a384a11e15e203badf67b1deed54155f02b7338b108
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

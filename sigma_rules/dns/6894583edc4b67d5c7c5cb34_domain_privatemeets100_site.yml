@@ -1,0 +1,20 @@
+title: OTX domain IOC - privatemeets100.site
+id: ecd82c86-96c0-4885-bef8-6d28da6d6367
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: privatemeets100.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

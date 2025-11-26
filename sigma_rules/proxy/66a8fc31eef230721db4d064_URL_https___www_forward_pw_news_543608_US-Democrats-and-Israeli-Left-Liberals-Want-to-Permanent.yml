@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.forward.pw/news/543608/US-Democrats-and-Israeli-Left-Liberals-Want-to-Permanently-Set-the-US-and-Israel-at-Variance.html
+id: 26aec4d5-c3d7-4fcb-bfb6-9c7d076cc3fe
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.forward.pw/news/543608/US-Democrats-and-Israeli-Left-Liberals-Want-to-Permanently-Set-the-US-and-Israel-at-Variance.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - nooideco.com
+id: b630ec5b-17b6-471e-ade8-03d2b5b270c3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nooideco.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

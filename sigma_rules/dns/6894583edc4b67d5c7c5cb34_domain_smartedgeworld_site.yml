@@ -1,0 +1,20 @@
+title: OTX domain IOC - smartedgeworld.site
+id: b5abb18f-d4ba-4d96-ab88-fc4e6b1f6bbb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smartedgeworld.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

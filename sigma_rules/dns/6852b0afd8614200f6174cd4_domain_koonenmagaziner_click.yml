@@ -1,0 +1,30 @@
+title: OTX domain IOC - koonenmagaziner.click
+id: 32da9b2f-fbb7-47fd-b9ee-28512d8ee0c7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From ClickFix deception
+  to information stealer deployment' (6852b0afd8614200f6174cd4).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://www.elastic.co/security-labs/a-wretch-client
+tags:
+- lumma
+- ghostpulse
+- eddiestealer
+- clickfix
+- multi-stage attack
+- arechclient2
+- infostealer
+- remote access trojan
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: koonenmagaziner.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

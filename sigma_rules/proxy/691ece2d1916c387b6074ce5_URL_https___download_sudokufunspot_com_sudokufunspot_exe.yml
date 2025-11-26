@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://download.sudokufunspot.com/sudokufunspot.exe
+id: 520f3792-929d-4d1f-8daf-c0c5f5e474a9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cooking up trouble:
+  How TamperedChef uses signed apps to deliver stealthy payloads'' (691ece2d1916c387b6074ce5).'
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.acronis.com/en/tru/posts/cooking-up-trouble-how-tamperedchef-uses-signed-apps-to-deliver-stealthy-payloads
+tags:
+- malvertising
+- javascript
+- persistence
+- shell companies
+- code-signing
+- seo
+- remote access
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://download.sudokufunspot.com/sudokufunspot.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

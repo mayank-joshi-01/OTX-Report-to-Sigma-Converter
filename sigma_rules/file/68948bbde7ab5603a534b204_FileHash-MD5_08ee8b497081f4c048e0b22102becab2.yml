@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - 08ee8b497081f4c048e0b22102becab2
+id: d83a1f61-5d93-42cf-a150-79e86ea6b0fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Reconnaissance
+  to Control: The Operational Blueprint of Kimsuky APT for Cyber Espionage'' (68948bbde7ab5603a534b204).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.aryaka.com/docs/reports/aryaka-kimsuky-apt-operational-blueprint.pdf
+tags:
+- data exfiltration
+- reflective dll injection
+- powershell
+- apt43
+- keylogging
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 08ee8b497081f4c048e0b22102becab2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 7074d674d120d19aa7e44e29dd126af152ccdb7c
+id: aa5f5d67-9d4a-4573-ba7a-32ffa9d65b86
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Exposed JDWP Exploited
+  in the Wild: What Happens When Debug Ports Are Left Open'' (68962f0f91f8829022afff4a).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.wiz.io/blog/exposed-jdwp-exploited-in-the-wild
+tags:
+- cryptomining
+- remote code execution
+- jdwp
+- debugging
+- teamcity
+- xmrig
+- java
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 7074d674d120d19aa7e44e29dd126af152ccdb7c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

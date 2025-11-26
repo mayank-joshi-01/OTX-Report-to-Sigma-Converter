@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 835a74b3c33a66678c66118dbe26dccf
+id: 06fdbb52-7ec0-466e-9a2d-5fe42956f773
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of malicious
+  HWP cases of 'APT37' group distributed through K messenger' (67a38d686710526e35f1ff4d).
+author: AlienVault
+date: '2025-02-05'
+references:
+- https://www.genians.co.kr/blog/threat_intelligence/k-messenger
+tags:
+- ole
+- file-less
+- spear-phishing
+- pcloud
+- hwp
+- powershell
+- rokrat
+- k messenger
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 835a74b3c33a66678c66118dbe26dccf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

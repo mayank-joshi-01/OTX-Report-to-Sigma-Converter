@@ -1,0 +1,20 @@
+title: OTX domain IOC - mxzilivelyriver.click
+id: 7017f572-9e52-4397-b7ca-80b61a3deacf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mxzilivelyriver.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

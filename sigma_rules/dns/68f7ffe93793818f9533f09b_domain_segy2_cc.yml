@@ -1,0 +1,28 @@
+title: OTX domain IOC - segy2.cc
+id: 6b04e464-5f04-47f2-a377-72121d36b21a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Tykit Analysis:
+  New Phishing Kit Stealing Hundreds of Microsoft Accounts in Finance'' (68f7ffe93793818f9533f09b).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://any.run/cybersecurity-blog/tykit-technical-analysis
+tags:
+- svg
+- microsoft 365
+- phishing
+- multi-stage attack
+- credential theft
+- cloudflare turnstile
+- tykit
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: segy2.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

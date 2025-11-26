@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - cce52f8d5fcdf83d6f89de141b62115c
+id: 7f3e8ee8-7a29-4ae8-ac26-2bdd749e8cef
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Yurei the New Ransomware
+  Group on the Scene' (68c43d61b51a94ee89fc81a7).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://research.checkpoint.com/2025/yurei-the-ghost-of-open-source-ransomware
+tags:
+- open-source
+- double-extortion
+- morocco
+- satanlockv2
+- shadow copies
+- go
+- ransomware
+- prince-ransomware
+- yurei
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: cce52f8d5fcdf83d6f89de141b62115c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

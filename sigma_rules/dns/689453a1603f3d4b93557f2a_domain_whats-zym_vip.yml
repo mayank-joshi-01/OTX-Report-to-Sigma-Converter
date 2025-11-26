@@ -1,0 +1,20 @@
+title: OTX domain IOC - whats-zym.vip
+id: 1e9a2085-35af-43ae-8544-1d0de1d81c24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whats-zym.vip
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

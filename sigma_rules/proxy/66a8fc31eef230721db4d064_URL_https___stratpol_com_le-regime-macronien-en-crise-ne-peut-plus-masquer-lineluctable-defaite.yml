@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://stratpol.com/le-regime-macronien-en-crise-ne-peut-plus-masquer-lineluctable-defaite-ukrainienne/
+id: 000ee3c3-f9b1-44b7-82c3-f9da3576594b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://stratpol.com/le-regime-macronien-en-crise-ne-peut-plus-masquer-lineluctable-defaite-ukrainienne/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

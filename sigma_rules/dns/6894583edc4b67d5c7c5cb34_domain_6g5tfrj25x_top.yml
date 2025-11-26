@@ -1,0 +1,20 @@
+title: OTX domain IOC - 6g5tfrj25x.top
+id: 76b9b6ce-4393-4470-b496-463f4f52ba37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 6g5tfrj25x.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

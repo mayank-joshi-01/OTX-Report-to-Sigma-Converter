@@ -1,0 +1,20 @@
+title: OTX domain IOC - qwqjp2d490aa4112.top
+id: 3fe288d6-f212-492f-b52a-e9e58f626635
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qwqjp2d490aa4112.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

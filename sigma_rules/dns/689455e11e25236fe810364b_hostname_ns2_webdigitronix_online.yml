@@ -1,0 +1,20 @@
+title: OTX hostname IOC - ns2.webdigitronix.online
+id: 7a0bf958-4ac2-4ed0-8558-e0918d770545
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ns2.webdigitronix.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

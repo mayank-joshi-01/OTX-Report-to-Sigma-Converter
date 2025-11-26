@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 1b77beedb0b99bf5430c1a18315302399d07812c
+id: 9db7e5d8-9ba9-48d6-8e27-9d49b9cabe9f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Backdoor in "AppSuite
+  PDF Editor": A Detailed Technical Analysis'' (68b09f3c74e054a6720fdf73).'
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://feeds.feedblitz.com/~/923960972/0/gdatasecurityblog-en~AppSuite-PDF-Editor-Backdoor-A-Detailed-Technical-Analysis
+- https://www.gdatasoftware.com/blog/2025/08/38257-appsuite-pdf-editor-backdoor-analysis
+tags:
+- backdoor
+- scheduled tasks
+- command and control
+- appsuite pdf editor
+- aes encryption
+- pdf editor
+- trojan
+- browser manipulation
+- data exfiltration
+- appsuite
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1b77beedb0b99bf5430c1a18315302399d07812c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

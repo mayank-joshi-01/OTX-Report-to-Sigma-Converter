@@ -1,0 +1,20 @@
+title: OTX domain IOC - multifind.ru
+id: 32a669ba-3eb7-4540-ad70-aa33368ff113
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: multifind.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

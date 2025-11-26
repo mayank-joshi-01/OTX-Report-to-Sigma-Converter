@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://es-koerier.nl/tmp/
+id: 6c5399a2-8d6f-4db3-8136-8fb3a8d4fee2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of SmokeLoader Version 2025' (68c9199ff5cc9de16f856439).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.zscaler.com/blogs/security-research/smokeloader-rises-ashes
+tags:
+- evasion techniques
+- persistence
+- anti-analysis
+- smoke
+- dofoil
+- smokeloader
+- version 2025
+- malware loader
+- network protocol
+- bug fixes
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://es-koerier.nl/tmp/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX domain IOC - fewcriet5rhoy66k6c4cyvb2pqrblxtx4mekj3s5l4jjt4t4kn4vheyd.onion
+id: ade66ec8-bcbf-40f6-810f-fe9c6dd98c38
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''YUREI RANSOMWARE:
+  THE DIGITAL GHOST'' (68e0e75b99d8512eaf923024).'
+author: AlienVault
+date: '2025-10-04'
+references:
+- https://www.cyfirma.com/research/yurei-ransomware-the-digital-ghost
+tags:
+- yurei
+- ransomware
+- double-extortion
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fewcriet5rhoy66k6c4cyvb2pqrblxtx4mekj3s5l4jjt4t4kn4vheyd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

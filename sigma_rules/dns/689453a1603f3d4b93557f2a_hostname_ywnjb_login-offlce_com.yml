@@ -1,0 +1,20 @@
+title: OTX hostname IOC - ywnjb.login-offlce.com
+id: b40640be-f3e4-4a85-8cc6-f7fab2f2a8a3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ywnjb.login-offlce.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

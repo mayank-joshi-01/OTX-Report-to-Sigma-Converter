@@ -1,0 +1,26 @@
+title: OTX domain IOC - clearstory.news
+id: a7ca0469-fd62-49a0-bf04-94675e2737f5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clearstory.news
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

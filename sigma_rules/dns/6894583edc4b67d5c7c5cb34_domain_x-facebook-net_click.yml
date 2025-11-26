@@ -1,0 +1,20 @@
+title: OTX domain IOC - x-facebook-net.click
+id: e6fcc7cb-1129-4fbd-8761-c5534acc209b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: x-facebook-net.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX domain IOC - posholnahuy.ru
+id: ce66aa6c-8d97-4cb7-a447-0813cdc92dda
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasked: Salat
+  Stealer – A Deep Dive into Its Advanced Persistence Mechanisms and C2 Infrastructure''
+  (68bc1b3d133e998d66daaa42).'
+author: AlienVault
+date: '2025-09-06'
+references:
+- https://www.cyfirma.com/research/unmasked-salat-stealer-a-deep-dive-into-its-advanced-persistence-mechanisms-and-c2-infrastructure
+tags:
+- persistence
+- salat stealer
+- malware-as-a-service
+- web_rat
+- windows
+- infostealer
+- go-based
+- cryptocurrency
+- browser credentials
+- evasion
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: posholnahuy.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

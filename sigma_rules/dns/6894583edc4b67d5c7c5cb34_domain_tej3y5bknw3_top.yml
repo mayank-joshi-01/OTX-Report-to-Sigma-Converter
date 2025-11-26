@@ -1,0 +1,20 @@
+title: OTX domain IOC - tej3y5bknw3.top
+id: fe798c34-ddfb-4cab-b951-8f9bc6f6c0fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tej3y5bknw3.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

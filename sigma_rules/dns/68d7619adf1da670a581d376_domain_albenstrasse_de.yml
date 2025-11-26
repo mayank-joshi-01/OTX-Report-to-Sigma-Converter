@@ -1,0 +1,33 @@
+title: OTX domain IOC - albenstrasse.de
+id: 965216bb-f2eb-421e-a860-f76f925f67a4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68d7619adf1da670a581d376).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/
+tags:
+- pterographin
+- pteroodd
+- pteroeffigy
+- pterostew
+- backdoor
+- ukraine
+- pteropaste
+- apt
+- collaboration
+- kazuar
+- fsb
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: albenstrasse.de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

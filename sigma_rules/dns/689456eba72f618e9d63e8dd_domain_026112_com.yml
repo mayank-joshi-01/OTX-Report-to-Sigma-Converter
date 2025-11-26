@@ -1,0 +1,20 @@
+title: OTX domain IOC - 026112.com
+id: 3eaeba64-583b-4dfd-a023-fc90aab4e464
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 026112.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

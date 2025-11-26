@@ -1,0 +1,20 @@
+title: OTX domain IOC - dismisivck.click
+id: 4c51184b-9569-48e0-aca9-25ea1848cb8a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dismisivck.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

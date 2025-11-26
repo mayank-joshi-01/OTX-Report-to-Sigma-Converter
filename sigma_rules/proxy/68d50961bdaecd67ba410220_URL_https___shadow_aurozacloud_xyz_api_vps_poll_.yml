@@ -1,0 +1,32 @@
+title: OTX URL IOC - https://shadow.aurozacloud.xyz/api/vps/poll/
+id: 12fb59a1-2d02-4eb8-908d-2d8087c4ae6e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'An emerging DDoS for
+  hire botnet' (68d50961bdaecd67ba410220).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.darktrace.com/blog/shadowv2-an-emerging-ddos-for-hire-botnet
+tags:
+- shadowv2
+- cybercrime-as-a-service
+- python
+- api
+- containerization
+- botnet
+- cloud-native
+- ddos-as-a-service
+- docker
+- go
+- http2
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://shadow.aurozacloud.xyz/api/vps/poll/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

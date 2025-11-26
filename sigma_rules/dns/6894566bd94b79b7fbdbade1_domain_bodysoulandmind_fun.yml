@@ -1,0 +1,20 @@
+title: OTX domain IOC - bodysoulandmind.fun
+id: b1f24108-963a-4e59-859a-b3200dbd24e2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bodysoulandmind.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

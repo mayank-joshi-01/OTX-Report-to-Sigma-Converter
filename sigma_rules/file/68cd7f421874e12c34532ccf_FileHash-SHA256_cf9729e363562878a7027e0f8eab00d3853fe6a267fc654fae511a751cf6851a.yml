@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - cf9729e363562878a7027e0f8eab00d3853fe6a267fc654fae511a751cf6851a
+id: cfb7ce9f-8286-408a-8579-237f43755d0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AsyncRAT Campaigns
+  Uncovered: How Attackers Abuse ScreenConnect and Open Directories'' (68cd7f421874e12c34532ccf).'
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://hunt.io/blog/asyncrat-screenconnect-open-directory-campaigns#ConnectWise_ScreenConnect_Network_Observables_and_Indicators_of_Compromise_IOCs
+tags:
+- phishing
+- open directories
+- screenconnect
+- remote access trojan
+- powershell rat
+- c2 infrastructure
+- payload staging
+- persistence
+- asyncrat
+- cve-2025-3935
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: cf9729e363562878a7027e0f8eab00d3853fe6a267fc654fae511a751cf6851a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

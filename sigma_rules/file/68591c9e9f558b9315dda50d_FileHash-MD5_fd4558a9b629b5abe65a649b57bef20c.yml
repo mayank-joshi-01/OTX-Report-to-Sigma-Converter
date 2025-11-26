@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - fd4558a9b629b5abe65a649b57bef20c
+id: 26a67906-3fa1-4952-9c0a-9278523cab5c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The new SparkKitty
+  Trojan spy in the App Store and Google Play' (68591c9e9f558b9315dda50d).
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://securelist.com/sparkkitty-ios-android-malware/116793
+tags:
+- sparkcat
+- china
+- ios
+- southeast asia
+- sparkkitty
+- android
+- cryptocurrency
+- spyware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: fd4558a9b629b5abe65a649b57bef20c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

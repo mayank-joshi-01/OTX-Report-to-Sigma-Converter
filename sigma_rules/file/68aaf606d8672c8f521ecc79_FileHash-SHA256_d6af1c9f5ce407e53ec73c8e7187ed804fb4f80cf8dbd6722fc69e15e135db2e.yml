@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - d6af1c9f5ce407e53ec73c8e7187ed804fb4f80cf8dbd6722fc69e15e135db2e
+id: 97247753-70ef-46fc-a31b-5dad41b1216a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing LAMEHUG'
+  (68aaf606d8672c8f521ecc79).
+author: AlienVault
+date: '2025-08-24'
+references:
+- https://www.catonetworks.com/blog/cato-ctrl-threat-research-analyzing-lamehug
+tags:
+- apt28
+- proof-of-concept
+- ukraine
+- reconnaissance
+- lamehug
+- phishing
+- llm
+- ai-generated commands
+- exfiltration
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d6af1c9f5ce407e53ec73c8e7187ed804fb4f80cf8dbd6722fc69e15e135db2e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

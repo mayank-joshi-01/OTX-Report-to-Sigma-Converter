@@ -1,0 +1,20 @@
+title: OTX domain IOC - transition101.online
+id: 93966e5d-ad0f-4854-9de0-148f3f52b0b0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: transition101.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

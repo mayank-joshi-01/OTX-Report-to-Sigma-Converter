@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 5b9bfa06d05172f61d1ee19724fcd12cec110353
+id: 321a8f4b-92f7-4021-8f70-f6455b556cc5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Caught in the Act:
+  Uncovering SpyNote in Unexpected Places'' (6855b5cab3eba6db222aa167).'
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://hunt.io/blog/caught-in-the-act-uncovering-spynote-in-unexpected-places
+tags:
+- open directories
+- spynote
+- data exfiltration
+- spyware
+- device administrator
+- android
+- accessibility services
+- c2 infrastructure
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 5b9bfa06d05172f61d1ee19724fcd12cec110353
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

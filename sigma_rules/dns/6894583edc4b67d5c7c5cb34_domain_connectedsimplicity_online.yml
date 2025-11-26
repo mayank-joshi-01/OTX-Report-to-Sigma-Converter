@@ -1,0 +1,20 @@
+title: OTX domain IOC - connectedsimplicity.online
+id: 04a093c9-aef6-4e6f-9d1a-5aa9b2e85acc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: connectedsimplicity.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

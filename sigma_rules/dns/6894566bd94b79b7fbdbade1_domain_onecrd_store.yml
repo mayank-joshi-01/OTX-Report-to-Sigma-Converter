@@ -1,0 +1,20 @@
+title: OTX domain IOC - onecrd.store
+id: 0a5524d3-6164-4833-bfb6-efde22d3c52b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onecrd.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

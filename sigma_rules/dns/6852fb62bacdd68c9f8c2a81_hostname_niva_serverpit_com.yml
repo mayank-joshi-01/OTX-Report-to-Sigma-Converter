@@ -1,0 +1,29 @@
+title: OTX hostname IOC - niva.serverpit.com
+id: ac8dcde3-58b1-4e57-bb72-b511a7c5f5f1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Warning Against Distribution
+  of Malware Disguised as Research Papers' (6852fb62bacdd68c9f8c2a81).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://asec.ahnlab.com/en/88465
+tags:
+- apt
+- dropbox
+- remote-access
+- ole
+- social-engineering
+- phishing
+- anydesk
+- hwp
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: niva.serverpit.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

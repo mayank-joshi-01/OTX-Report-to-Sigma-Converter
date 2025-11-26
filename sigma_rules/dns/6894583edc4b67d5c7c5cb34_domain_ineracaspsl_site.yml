@@ -1,0 +1,20 @@
+title: OTX domain IOC - ineracaspsl.site
+id: 0ea66392-a3b1-41f8-8fc6-b5e7045b79ea
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ineracaspsl.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

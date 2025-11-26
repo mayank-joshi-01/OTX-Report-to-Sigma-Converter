@@ -1,0 +1,20 @@
+title: OTX domain IOC - shockwave.gq
+id: fd5de3f1-a36c-45a0-88f8-d38c30a1c160
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shockwave.gq
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

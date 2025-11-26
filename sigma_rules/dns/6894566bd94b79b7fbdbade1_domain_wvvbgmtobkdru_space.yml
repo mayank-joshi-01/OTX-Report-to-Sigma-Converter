@@ -1,0 +1,20 @@
+title: OTX domain IOC - wvvbgmtobkdru.space
+id: 9952be4a-ad17-4bb5-89e3-a6f1ef4a23ad
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wvvbgmtobkdru.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - shopsilhouettes.online
+id: 37434e5e-36bf-4fcd-8b92-1138f55fbeb8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shopsilhouettes.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

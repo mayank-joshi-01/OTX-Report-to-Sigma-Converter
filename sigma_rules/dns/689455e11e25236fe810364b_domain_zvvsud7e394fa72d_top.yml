@@ -1,0 +1,20 @@
+title: OTX domain IOC - zvvsud7e394fa72d.top
+id: d789d74c-4f2b-4d0f-8d26-5ee8dd838e25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zvvsud7e394fa72d.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - anti-snoring-solutions.online
+id: 446299ee-fa59-4b35-8c96-9906796e0d10
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: anti-snoring-solutions.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

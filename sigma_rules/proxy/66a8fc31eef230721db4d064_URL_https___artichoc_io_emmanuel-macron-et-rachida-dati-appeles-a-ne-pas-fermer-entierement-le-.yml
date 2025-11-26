@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://artichoc.io/emmanuel-macron-et-rachida-dati-appeles-a-ne-pas-fermer-entierement-le-centre-pompidou-pour-cinq-ans/
+id: 0802827d-e3f2-4335-9fd6-6e6a21f61f10
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://artichoc.io/emmanuel-macron-et-rachida-dati-appeles-a-ne-pas-fermer-entierement-le-centre-pompidou-pour-cinq-ans/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

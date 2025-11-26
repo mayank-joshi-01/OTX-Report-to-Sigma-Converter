@@ -1,0 +1,20 @@
+title: OTX domain IOC - pozctoweusiugl00177392.cfd
+id: 6909a08a-a8db-4638-bbc8-18d112355d76
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pozctoweusiugl00177392.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

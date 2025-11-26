@@ -1,0 +1,20 @@
+title: OTX domain IOC - healthslimchoice.site
+id: 1d438a7a-7b2c-40e6-ad94-f69ff822e539
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: healthslimchoice.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

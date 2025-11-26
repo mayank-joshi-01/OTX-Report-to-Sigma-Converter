@@ -1,0 +1,35 @@
+title: OTX domain IOC - requiredvalue.com
+id: a62ae5fb-466d-48e4-a251-bc91d5df8e2f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Inside Salt Typhoon:
+  China''s State-Corporate Advanced Persistent Threat'' (68d56db8ea32a255b0de8822).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://dti.domaintools.com/inside-salt-typhoon-chinas-state-corporate-advanced-persistent-threat
+tags:
+- cve-2024-3400
+- long-term persistence
+- china chopper
+- infrastructure targeting
+- demodex
+- advanced persistent threat
+- cve-2023-20198
+- ministry of state security
+- sigrouter
+- telecommunications
+- china
+- cve-2023-35082
+- contractor ecosystem
+- cyber espionage
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: requiredvalue.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

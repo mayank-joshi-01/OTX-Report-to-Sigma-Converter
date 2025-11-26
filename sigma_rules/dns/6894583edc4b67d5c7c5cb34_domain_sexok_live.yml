@@ -1,0 +1,20 @@
+title: OTX domain IOC - sexok.live
+id: 497e9ab1-a1fe-4aba-adbd-6c4bc1ac799c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sexok.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

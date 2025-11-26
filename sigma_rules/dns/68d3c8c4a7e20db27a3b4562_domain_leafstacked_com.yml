@@ -1,0 +1,30 @@
+title: OTX domain IOC - leafstacked.com
+id: 96625342-956a-4071-abe3-a3307950782e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: leafstacked.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

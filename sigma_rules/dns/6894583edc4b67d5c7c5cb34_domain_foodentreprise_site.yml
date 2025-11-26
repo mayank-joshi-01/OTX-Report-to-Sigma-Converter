@@ -1,0 +1,20 @@
+title: OTX domain IOC - foodentreprise.site
+id: 56cb6662-f08f-45b5-949e-224c1457c80c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: foodentreprise.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

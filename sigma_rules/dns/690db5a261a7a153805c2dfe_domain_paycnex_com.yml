@@ -1,0 +1,30 @@
+title: OTX domain IOC - paycnex.com
+id: 1da206b0-ecc6-401f-b198-737dbbf50fd8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LeakyInjector and
+  LeakyStealer Duo Hunts For Crypto and Browser History' (690db5a261a7a153805c2dfe).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://hybrid-analysis.blogspot.com/2025/11/leakyinjector-and-leakystealer-duo.html
+tags:
+- cryptocurrency
+- persistence
+- two-stage
+- injection
+- polymorphic
+- leakystealer
+- data-exfiltration
+- browser-history
+- leakyinjector
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: paycnex.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

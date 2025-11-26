@@ -1,0 +1,20 @@
+title: OTX domain IOC - ecliptastratos.space
+id: ceca0a7e-09f7-4d29-bd9e-ccb25b5a7633
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ecliptastratos.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

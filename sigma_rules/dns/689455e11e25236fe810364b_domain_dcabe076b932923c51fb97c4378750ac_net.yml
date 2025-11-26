@@ -1,0 +1,20 @@
+title: OTX domain IOC - dcabe076b932923c51fb97c4378750ac.net
+id: f5b5c77b-4587-4d0e-b3cc-206120af441d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dcabe076b932923c51fb97c4378750ac.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

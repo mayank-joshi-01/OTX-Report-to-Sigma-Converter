@@ -1,0 +1,20 @@
+title: OTX domain IOC - p53kq298tb.bond
+id: f79d5dbc-b8db-430a-98e4-3c6b174a1470
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: p53kq298tb.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

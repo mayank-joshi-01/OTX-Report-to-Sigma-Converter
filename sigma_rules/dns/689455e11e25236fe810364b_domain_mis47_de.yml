@@ -1,0 +1,20 @@
+title: OTX domain IOC - mis47.de
+id: 69b2ee85-54c2-45ea-a9f4-2a0039c1d573
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mis47.de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

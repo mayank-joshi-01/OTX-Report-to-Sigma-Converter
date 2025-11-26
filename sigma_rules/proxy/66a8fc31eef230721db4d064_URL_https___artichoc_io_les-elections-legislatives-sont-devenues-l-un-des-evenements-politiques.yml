@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://artichoc.io/les-elections-legislatives-sont-devenues-l-un-des-evenements-politiques-les-plus-mediatises/
+id: 2964aaf3-ca7d-4a38-90bc-96967e802224
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://artichoc.io/les-elections-legislatives-sont-devenues-l-un-des-evenements-politiques-les-plus-mediatises/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - moretonislandtransfersandtours.online
+id: 251ef9e9-d9e8-4a31-885c-394fa8c12edd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: moretonislandtransfersandtours.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

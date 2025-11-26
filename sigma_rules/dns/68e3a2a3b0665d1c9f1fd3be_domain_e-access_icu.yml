@@ -1,0 +1,28 @@
+title: OTX domain IOC - e-access.icu
+id: 5d95bf95-b7df-428c-9187-17392d62a240
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: e-access.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

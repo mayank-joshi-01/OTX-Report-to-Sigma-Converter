@@ -1,0 +1,20 @@
+title: OTX domain IOC - dcw85513152-4o5a.top
+id: d9830143-338b-44a7-846e-c4d01ec19e0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dcw85513152-4o5a.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

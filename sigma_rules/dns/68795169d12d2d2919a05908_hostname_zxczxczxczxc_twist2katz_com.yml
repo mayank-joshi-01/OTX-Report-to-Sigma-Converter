@@ -1,0 +1,29 @@
+title: OTX hostname IOC - zxczxczxczxc.twist2katz.com
+id: f71463cf-2d1d-4913-9853-e07644ec1515
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Powerful MaaS On the
+  Prowl for Credentials and Crypto Assets' (68795169d12d2d2919a05908).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.sentinelone.com/blog/katz-stealer-powerful-maas-on-the-prowl-for-credentials-and-crypto-assets/
+tags:
+- credential theft
+- browser injection
+- evasion techniques
+- infostealer
+- cryptocurrency
+- maas
+- data exfiltration
+- katz stealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zxczxczxczxc.twist2katz.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

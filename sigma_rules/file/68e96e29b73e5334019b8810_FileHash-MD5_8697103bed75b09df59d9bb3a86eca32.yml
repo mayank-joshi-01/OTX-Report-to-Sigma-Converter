@@ -1,0 +1,35 @@
+title: OTX FileHash-MD5 IOC - 8697103bed75b09df59d9bb3a86eca32
+id: dc1611a2-2263-4087-b696-3f4c5f3a3c84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From infostealer
+  to full RAT: dissecting the PureRAT attack chain'' (68e96e29b73e5334019b8810).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.bleepingcomputer.com/news/security/from-infostealer-to-full-rat-dissecting-the-purerat-attack-chain/
+tags:
+- purerat
+- zip archive
+- python
+- lonenone
+- pxa stealer
+- telegram
+- winrar
+- purecrypter
+- service
+- purelogs
+- cryptoloader
+- netloader
+- pythonloader
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8697103bed75b09df59d9bb3a86eca32
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

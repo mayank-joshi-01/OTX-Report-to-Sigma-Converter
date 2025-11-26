@@ -1,0 +1,33 @@
+title: OTX hostname IOC - app-site-association.cdn-apple.info
+id: 1cb48931-6877-4670-b93e-a63795cc7ae1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT Meets GPT: Targeted
+  Operations with Untamed LLMs'' (68e68c8d506e04cc0474a83b).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.volexity.com/blog/2025/10/08/apt-meets-gpt-targeted-operations-with-untamed-llms/
+tags:
+- uta0388
+- govershell
+- llms
+- powershell
+- randomdir8char
+- websocket
+- persistence
+- govershell c2
+- archive file
+- zip
+- rar
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: app-site-association.cdn-apple.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

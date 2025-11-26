@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 10e01ce96889c7b4366cfa1e7d99759e4e2b6e5dfe378087d9e836b7278abfb6
+id: 915dd98a-d80e-419f-b142-1e06f0378d26
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Inside The ToolShell
+  Campaign' (6883ede4e24f54beae83e56e).
+author: AlienVault
+date: '2025-07-25'
+references:
+- https://www.fortinet.com/blog/threat-research/inside-the-toolshell-campaign
+tags:
+- keysiphon
+- cve-2025-49706
+- remote code execution
+- sharepoint
+- cve-2025-53771
+- exploit chain
+- toolshell
+- zero-day
+- cve-2025-53770
+- cve-2025-49704
+- ghostwebshell
+- fileless
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 10e01ce96889c7b4366cfa1e7d99759e4e2b6e5dfe378087d9e836b7278abfb6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

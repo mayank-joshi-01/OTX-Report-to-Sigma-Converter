@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://aitd.one/bainit.php.
+id: 7767f148-ee46-475d-b466-6beea0a86dc9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Legitimate Chrome
+  VPN Extension Turns to Browser Spyware' (68a4af922ef70aec773db4ee).
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://www.infosecurity-magazine.com/news/chrome-vpn-extension-spyware
+tags:
+- browser security
+- screenshot capture
+- freevpn.one
+- vpn
+- data exfiltration
+- google web store
+- spyware
+- user privacy
+- chrome extension
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://aitd.one/bainit.php.
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - ce834dca38aeac100f853d79e77e3f61c12b9d4da48bb0a949d0a961bf9c0a27
+id: a2523c9f-7007-4f8e-bd51-5db3a19ff295
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Generated Code
+  and Fake Apps Used for Far-Reaching Attacks' (68c3ce085d8c1f8ab4b66b02).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://www.trendmicro.com/en_us/research/25/i/evilai.html
+tags:
+- ai-generated code
+- node.js
+- evilai
+- credential theft
+- fake applications
+- persistence
+- trojan
+- command and control
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ce834dca38aeac100f853d79e77e3f61c12b9d4da48bb0a949d0a961bf9c0a27
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lianli888.com
+id: 445bac24-5b07-4b47-abb0-4bac558427f8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lianli888.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

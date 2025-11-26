@@ -1,0 +1,20 @@
+title: OTX hostname IOC - perso154-g5.free.fr
+id: 93cdf4ae-4e62-4b30-90fc-26a7d398d041
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: perso154-g5.free.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

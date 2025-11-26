@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1winuna49837.online
+id: 78e388bb-1a2f-44d3-ac02-9cbe0b761f60
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1winuna49837.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

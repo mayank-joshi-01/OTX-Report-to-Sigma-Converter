@@ -1,0 +1,32 @@
+title: OTX hostname IOC - login.principal.user.email
+id: 6985bef8-d5f8-4fc0-a59e-9fadc7c12f25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cybercrime Observations
+  from the Frontlines: UNC6040 Proactive Hardening Recommendations'' (68dd1afb1b0d42961ea3539c).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc6040-proactive-hardening-recommendations
+tags:
+- detection
+- logging
+- identity verification
+- data loader
+- connected apps
+- data exfiltration
+- multi-factor authentication
+- voice phishing
+- access control
+- social engineering
+- salesforce
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: login.principal.user.email
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - clafenval.medicarium.help
+id: edb588a6-bc82-4072-b17c-349466bba732
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clafenval.medicarium.help
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

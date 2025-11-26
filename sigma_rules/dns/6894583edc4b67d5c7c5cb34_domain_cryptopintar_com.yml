@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptopintar.com
+id: c5902196-3c05-4a79-98c0-0cec0fcccd15
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptopintar.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

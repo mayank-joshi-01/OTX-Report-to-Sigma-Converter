@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA1 IOC - d29821f7872fbf3acfd200b5109ab8526ab637cf
+id: 82e1727f-2e03-442a-952c-ee4200c2dece
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Tsundere botnet
+  uses the Ethereum blockchain to infect its targets' (691f9237f974f85c37e4b201).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://securelist.com/tsundere-node-js-botnet-uses-ethereum-blockchain/117979/
+tags:
+- ethereum
+- 123 stealer
+- websocket
+- botnet
+- node.js
+- javascript
+- msi
+- powershell
+- aes-256
+- tsundere bot
+- koneko
+- tsundere
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: d29821f7872fbf3acfd200b5109ab8526ab637cf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

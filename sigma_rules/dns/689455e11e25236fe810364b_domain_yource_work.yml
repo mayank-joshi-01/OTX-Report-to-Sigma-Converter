@@ -1,0 +1,20 @@
+title: OTX domain IOC - yource.work
+id: 574ba149-ceb0-4610-94c1-c73317fa9b4f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yource.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

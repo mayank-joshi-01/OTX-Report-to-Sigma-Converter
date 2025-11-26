@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 90b2e64ce4c6b2a0048158755281466b60b83ac1a8b43bb28614ec67c9fe52eb
+id: 7c9c7810-4a06-4522-8857-9753420979df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AppSuite, OneStart
+  & ManualFinder: The Nexus of Deception'' (68c97741ac9d67d0e0c4c44b).'
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.gdatasoftware.com/blog/2025/09/38262-appsuite-onestart-deception
+tags:
+- browser-extension
+- cloudfront
+- onestart
+- powershell
+- desktopbar
+- appsuite
+- manualfinder
+- infrastructure
+- node.js
+- browserassistant
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 90b2e64ce4c6b2a0048158755281466b60b83ac1a8b43bb28614ec67c9fe52eb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

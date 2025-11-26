@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://advanceorthocenter.com/wp-includes/editor.php
+id: e1556d46-8a77-40a8-aacc-160b3cc9c455
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian linked conglomerate
+  MuddyWater comprised of regionally focused subgroups' (622a1df4039af2610815beff).
+author: AlienVault
+date: '2022-03-10'
+references:
+- https://blog.talosintelligence.com/2022/03/iranian-supergroup-muddywater.html
+tags:
+- APT
+- MuddyWater
+- Iran
+- MalDoc
+- SloughRAT
+- Static Kitten
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://advanceorthocenter.com/wp-includes/editor.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

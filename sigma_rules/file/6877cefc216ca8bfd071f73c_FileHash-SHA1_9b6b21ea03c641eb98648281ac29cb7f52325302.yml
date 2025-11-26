@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 9b6b21ea03c641eb98648281ac29cb7f52325302
+id: 8e187f0b-45af-4f47-ad28-22c4707c4e7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Evolving Tactics
+  of SLOW#TEMPEST: A Deep Dive Into Advanced Malware Techniques'' (6877cefc216ca8bfd071f73c).'
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://unit42.paloaltonetworks.com/slow-tempest-malware-obfuscation
+tags:
+- obfuscation
+- anti-sandbox
+- emulation
+- slow#tempest
+- dynamic jumps
+- cfg
+- anti-analysis
+- dll side-loading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 9b6b21ea03c641eb98648281ac29cb7f52325302
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

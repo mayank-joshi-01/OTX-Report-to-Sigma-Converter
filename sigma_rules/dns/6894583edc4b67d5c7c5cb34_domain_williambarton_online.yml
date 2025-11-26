@@ -1,0 +1,20 @@
+title: OTX domain IOC - williambarton.online
+id: 1126bcf6-dd75-4158-93b9-ba1570060e1d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: williambarton.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

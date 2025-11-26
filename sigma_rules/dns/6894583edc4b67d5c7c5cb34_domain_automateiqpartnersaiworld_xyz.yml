@@ -1,0 +1,20 @@
+title: OTX domain IOC - automateiqpartnersaiworld.xyz
+id: 4f9ec1ca-82e5-49e5-963a-6b55b6a42722
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: automateiqpartnersaiworld.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

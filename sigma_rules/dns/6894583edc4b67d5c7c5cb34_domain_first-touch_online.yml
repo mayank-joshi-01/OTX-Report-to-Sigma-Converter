@@ -1,0 +1,20 @@
+title: OTX domain IOC - first-touch.online
+id: 25146489-cf95-4c4e-bf3d-ed77ff63ab48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: first-touch.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

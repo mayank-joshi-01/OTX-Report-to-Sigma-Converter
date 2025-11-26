@@ -1,0 +1,20 @@
+title: OTX domain IOC - sherlocksocial.online
+id: 4d9643b0-369d-4252-872a-fda2a094e0ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sherlocksocial.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

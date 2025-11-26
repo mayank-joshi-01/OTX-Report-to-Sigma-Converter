@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 01b60a616a0c66a549323c2a0bb3262f5afe6e82
+id: 79fe8466-5da9-4af1-9f64-14e069170ee5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Microsoft 365 Direct
+  Send Abuse: Phishing Risks & Security Recommendations'' (68a335b16810180f68852d39).'
+author: AlienVault
+date: '2025-08-18'
+references:
+- https://www.mimecast.com/threat-intelligence-hub/microsoft-direct-send-abuse/
+tags:
+- credential theft
+- phishing
+- microsoft 365
+- direct send
+- spoofing
+- email security
+- business email compromise
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 01b60a616a0c66a549323c2a0bb3262f5afe6e82
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

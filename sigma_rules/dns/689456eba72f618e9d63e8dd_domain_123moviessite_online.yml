@@ -1,0 +1,20 @@
+title: OTX domain IOC - 123moviessite.online
+id: 85b4bbee-1744-4b17-a3ae-b6186dc68831
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 123moviessite.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

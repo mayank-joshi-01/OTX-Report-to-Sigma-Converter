@@ -1,0 +1,20 @@
+title: OTX domain IOC - privatesalonmikke.site
+id: 6ee5bbb1-a27b-491d-9524-e6d7c7fbe532
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: privatesalonmikke.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

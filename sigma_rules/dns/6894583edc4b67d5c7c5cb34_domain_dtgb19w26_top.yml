@@ -1,0 +1,20 @@
+title: OTX domain IOC - dtgb19w26.top
+id: e76f3ee0-67d7-4ccf-b277-8b0872a732f4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dtgb19w26.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

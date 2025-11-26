@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://94.74.164.157:8888/gateway/6xomjoww.1hj7n
+id: 5519e8ae-5276-4be2-9661-5eb644294c3a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Dissecting YouTube's
+  Malware Distribution Network' (68fa32c7a4263ce24950835d).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://research.checkpoint.com/2025/youtube-ghost-network
+tags:
+- compromised accounts
+- redline
+- rhadamanthys
+- lumma
+- 0debug
+- stealc
+- ghost network
+- hijackloader
+- youtube
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://94.74.164.157:8888/gateway/6xomjoww.1hj7n
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

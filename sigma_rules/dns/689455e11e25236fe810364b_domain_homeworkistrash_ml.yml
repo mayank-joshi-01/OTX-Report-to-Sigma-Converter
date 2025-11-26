@@ -1,0 +1,20 @@
+title: OTX domain IOC - homeworkistrash.ml
+id: b0d7cd2e-b9e1-46db-9e44-5da6d925cd35
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: homeworkistrash.ml
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

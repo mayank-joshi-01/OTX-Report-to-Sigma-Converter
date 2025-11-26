@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 69e9c41b5ef6c33b5caff67ffd3ad0ddd01a799f7cde2b182df3326417dfb78e
+id: 22f9acc2-288b-40e9-ba4d-5cc50c976df7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''When the monster
+  bytes: tracking TA585 and its arsenal'' (68edc60d33bbc8833d677ae6).'
+author: AlienVault
+date: '2025-10-14'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/when-monster-bytes-tracking-ta585-and-its-arsenal
+tags:
+- stealer
+- clickfix
+- github
+- rhadamanthys
+- stealc version 2
+- monsterv2
+- web injection
+- remote access trojan
+- lumma stealer
+- remcos
+- soniccrypt
+- cybercrime
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 69e9c41b5ef6c33b5caff67ffd3ad0ddd01a799f7cde2b182df3326417dfb78e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

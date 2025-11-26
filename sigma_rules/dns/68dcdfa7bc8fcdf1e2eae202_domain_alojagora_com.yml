@@ -1,0 +1,30 @@
+title: OTX domain IOC - alojagora.com
+id: 2970d4f4-f894-42dd-b36c-b6900120c3a6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alojagora.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

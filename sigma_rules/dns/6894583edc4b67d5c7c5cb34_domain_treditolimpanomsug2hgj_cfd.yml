@@ -1,0 +1,20 @@
+title: OTX domain IOC - treditolimpanomsug2hgj.cfd
+id: 57c803f7-468b-4160-bb04-04d599ff04eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: treditolimpanomsug2hgj.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

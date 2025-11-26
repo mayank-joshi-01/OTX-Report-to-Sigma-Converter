@@ -1,0 +1,20 @@
+title: OTX domain IOC - testerosh.top
+id: 099001b3-59e2-4bc8-82c2-9206b7b38dc0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: testerosh.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

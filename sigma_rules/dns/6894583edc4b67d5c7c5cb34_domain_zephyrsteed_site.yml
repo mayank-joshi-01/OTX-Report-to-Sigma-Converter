@@ -1,0 +1,20 @@
+title: OTX domain IOC - zephyrsteed.site
+id: 158af5dd-be4d-4a54-8459-61c4fbf795c6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zephyrsteed.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

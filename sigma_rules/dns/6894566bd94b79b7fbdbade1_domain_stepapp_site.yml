@@ -1,0 +1,20 @@
+title: OTX domain IOC - stepapp.site
+id: e7d68c35-9f3d-4e1d-9b1e-bf472748fc49
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stepapp.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

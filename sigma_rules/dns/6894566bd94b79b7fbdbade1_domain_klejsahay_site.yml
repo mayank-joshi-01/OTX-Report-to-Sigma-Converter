@@ -1,0 +1,20 @@
+title: OTX domain IOC - klejsahay.site
+id: fd2a0242-45d2-4d2c-aadb-14e83f28643e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: klejsahay.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

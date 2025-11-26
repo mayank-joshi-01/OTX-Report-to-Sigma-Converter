@@ -1,0 +1,20 @@
+title: OTX domain IOC - telegfzyru.work
+id: 27cc4d7a-1627-434a-a09f-efbdc14ad9e4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: telegfzyru.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

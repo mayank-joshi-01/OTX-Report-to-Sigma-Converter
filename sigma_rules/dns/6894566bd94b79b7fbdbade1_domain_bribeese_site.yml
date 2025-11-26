@@ -1,0 +1,20 @@
+title: OTX domain IOC - bribeese.site
+id: 7c60da4e-bc2e-4162-abb1-b814dc983ea9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bribeese.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

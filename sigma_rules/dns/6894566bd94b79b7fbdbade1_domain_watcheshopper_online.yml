@@ -1,0 +1,20 @@
+title: OTX domain IOC - watcheshopper.online
+id: a38178d5-daf1-4b7d-8b33-4c70b6cd1f4e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: watcheshopper.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zjtdhz3888.vip
+id: 5d5584bd-1f5b-45c5-94c7-f6f4c28a9e89
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zjtdhz3888.vip
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

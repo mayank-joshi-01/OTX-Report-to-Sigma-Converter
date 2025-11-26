@@ -1,0 +1,20 @@
+title: OTX domain IOC - binancebp20.online
+id: 0f5eca89-e483-474d-afb3-2c3f32ed9c0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: binancebp20.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

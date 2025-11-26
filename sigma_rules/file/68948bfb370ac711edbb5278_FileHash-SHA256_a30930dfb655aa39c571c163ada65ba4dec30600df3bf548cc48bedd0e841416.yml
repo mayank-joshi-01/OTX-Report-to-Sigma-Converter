@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - a30930dfb655aa39c571c163ada65ba4dec30600df3bf548cc48bedd0e841416
+id: d57f0e39-1396-40f1-927b-24d884421279
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Arsenal: LAMEHUG,
+  the First AI-Powered Malware'' (68948bfb370ac711edbb5278).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.logpoint.com/en/blog/apt28s-new-arsenal-lamehug-the-first-ai-powered-malware
+tags:
+- ai-powered malware
+- phishing
+- reconnaissance
+- data exfiltration
+- ukraine
+- python
+- hugging face api
+- lamehug
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a30930dfb655aa39c571c163ada65ba4dec30600df3bf548cc48bedd0e841416
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

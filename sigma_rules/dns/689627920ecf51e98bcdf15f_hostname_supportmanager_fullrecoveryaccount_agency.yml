@@ -1,0 +1,28 @@
+title: OTX hostname IOC - supportmanager.fullrecoveryaccount.agency
+id: 34b2dab8-0251-4f6e-a947-9a46a8f9666f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Homograph Illusion:
+  Not Everything Is As It Seems'' (689627920ecf51e98bcdf15f).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://unit42.paloaltonetworks.com/homograph-attacks/
+tags:
+- email security
+- character substitution
+- phishing
+- homograph attack
+- social engineering
+- unicode
+- brand impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: supportmanager.fullrecoveryaccount.agency
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

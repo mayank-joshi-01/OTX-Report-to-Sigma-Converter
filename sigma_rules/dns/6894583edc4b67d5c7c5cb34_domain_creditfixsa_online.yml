@@ -1,0 +1,20 @@
+title: OTX domain IOC - creditfixsa.online
+id: c2b774b4-672d-4d0b-a2ca-9feb0937abbc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: creditfixsa.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

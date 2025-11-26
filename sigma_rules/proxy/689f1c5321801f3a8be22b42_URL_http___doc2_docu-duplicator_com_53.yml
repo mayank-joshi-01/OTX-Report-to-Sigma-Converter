@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://doc2.docu-duplicator.com:53
+id: f76a2ede-4646-43ae-8a60-1b6544efa635
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CrossC2 Expanding
+  Cobalt Strike Beacon to Cross-Platform Attacks' (689f1c5321801f3a8be22b42).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://blogs.jpcert.or.jp/en/2025/08/crossc2.html
+tags:
+- readnimeloader
+- systembc
+- crossc2
+- ad
+- linux
+- macos
+- cobalt strike
+- psexec
+- odinldr
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://doc2.docu-duplicator.com:53
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

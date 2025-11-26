@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://la-sante.info/epidemie-de-cholera-dans-l-armee-ukrainienne-plusieurs-cas-mortels-deja-signales/
+id: 5a0e23ac-5deb-4068-9a1b-6cf2108525b3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://la-sante.info/epidemie-de-cholera-dans-l-armee-ukrainienne-plusieurs-cas-mortels-deja-signales/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - edypersonalshop.online
+id: cf42cfa6-e5aa-4eba-be4c-a93d15acbfd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: edypersonalshop.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - b5e811d7c104ce8dd2509f809a80932540a21ada0ee9e22ac61d080dc0bd237d
+id: c604356b-cc03-4fd5-985f-510b4cc1a09b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Emerging Ransomware-as-a-Service,
+  Supporting AI Driven Negotiation and Mobile Control Panel for Their Affiliates'
+  (6877cee47723c96cd1d54e25).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://blog.eclecticiq.com/global-group-emerging-ransomware-as-a-service
+tags:
+- mobile control panel
+- initial access brokers
+- cross-platform
+- ai-driven negotiation
+- ransomware-as-a-service
+- mamona
+- black lock
+- vpn brute-force
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b5e811d7c104ce8dd2509f809a80932540a21ada0ee9e22ac61d080dc0bd237d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

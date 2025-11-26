@@ -1,0 +1,26 @@
+title: OTX domain IOC - gocareers.org
+id: a9eb420d-48d9-404a-9e22-ed536ac0c425
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gocareers.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

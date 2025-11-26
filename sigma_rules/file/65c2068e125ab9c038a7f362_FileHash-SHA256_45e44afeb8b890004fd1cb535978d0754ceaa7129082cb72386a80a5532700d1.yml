@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 45e44afeb8b890004fd1cb535978d0754ceaa7129082cb72386a80a5532700d1
+id: 2fadbdd3-b904-43c4-9011-4dfb745136fa
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pawn Storm Uses Brute
+  Force and Stealth Against High-Value Targets' (65c2068e125ab9c038a7f362).
+author: AlienVault
+date: '2024-02-06'
+references:
+- https://www.trendmicro.com/en_us/research/24/a/pawn-storm-uses-brute-force-and-stealth.html
+- https://www.trendmicro.com/content/dam/trendmicro/global/en/research/23/l/pawn-storm-uses-brute-force-and-stealth-against-high-value-targets-/iocs-pawn-storm-uses-brute-force-and-stealth-against-high-value-targets.txt
+tags:
+- brute-force
+- targeted attack
+- spear-phishing
+- cve-2023-38831
+- apt
+- hash theft
+- information stealer
+- cve-2023-23397
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 45e44afeb8b890004fd1cb535978d0754ceaa7129082cb72386a80a5532700d1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

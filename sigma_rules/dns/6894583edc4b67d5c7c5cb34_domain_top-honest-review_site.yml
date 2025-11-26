@@ -1,0 +1,20 @@
+title: OTX domain IOC - top-honest-review.site
+id: 1585632d-538f-4a10-a981-ef1ef9683c16
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: top-honest-review.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

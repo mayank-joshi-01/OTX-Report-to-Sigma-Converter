@@ -1,0 +1,20 @@
+title: OTX domain IOC - app-software-development-training-54453.bond
+id: 30d0b70d-7600-4072-b7ee-346e1526367b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: app-software-development-training-54453.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

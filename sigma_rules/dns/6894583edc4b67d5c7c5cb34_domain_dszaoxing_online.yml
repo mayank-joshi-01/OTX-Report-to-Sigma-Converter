@@ -1,0 +1,20 @@
+title: OTX domain IOC - dszaoxing.online
+id: e744e51b-cbea-47f2-92e9-9f9be5e6b185
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dszaoxing.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

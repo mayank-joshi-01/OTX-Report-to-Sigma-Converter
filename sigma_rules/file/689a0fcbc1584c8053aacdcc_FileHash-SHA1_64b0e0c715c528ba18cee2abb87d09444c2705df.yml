@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - 64b0e0c715c528ba18cee2abb87d09444c2705df
+id: fc591175-6dad-45ec-9b00-301806351a7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Echoes in the Shell:
+  Legacy Tooling Behind Ongoing SharePoint ''ToolShell'' Exploitation'' (689a0fcbc1584c8053aacdcc).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/echoes-in-the-shell-legacy-tooling-behind-ongoing-sharepoint-toolshell-exploitation/
+tags:
+- requestrepo
+- toolshell
+- cve-2025-49706
+- cve-2025-53771
+- china chopper
+- cve-2025-49704
+- cve-2025-53770
+- antsword
+- valleyrat
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 64b0e0c715c528ba18cee2abb87d09444c2705df
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

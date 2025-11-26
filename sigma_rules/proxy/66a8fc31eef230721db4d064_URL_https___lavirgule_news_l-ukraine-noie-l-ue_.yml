@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lavirgule.news/l-ukraine-noie-l-ue/
+id: 47deaf0a-8ce3-47a8-8f2f-b6c131ccc70a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lavirgule.news/l-ukraine-noie-l-ue/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

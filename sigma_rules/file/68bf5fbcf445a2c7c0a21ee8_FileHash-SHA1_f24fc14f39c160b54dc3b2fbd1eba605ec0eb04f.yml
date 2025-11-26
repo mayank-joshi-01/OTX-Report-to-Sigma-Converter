@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - f24fc14f39c160b54dc3b2fbd1eba605ec0eb04f
+id: 8e3a9565-2d14-4d87-b5d3-678c4799d897
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Blurring the Lines:
+  Intrusion Shows Connection With Three Major Ransomware Gangs'' (68bf5fbcf445a2c7c0a21ee8).'
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/
+tags:
+- data exfiltration
+- grixba
+- systembc
+- multi-group affiliation
+- betruger
+- ransomware
+- lateral movement
+- sectoprat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: f24fc14f39c160b54dc3b2fbd1eba605ec0eb04f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

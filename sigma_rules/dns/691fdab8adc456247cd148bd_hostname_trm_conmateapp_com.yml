@@ -1,0 +1,28 @@
+title: OTX hostname IOC - trm.conmateapp.com
+id: 13c126c7-a1f2-417e-8b83-1f6790114794
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Reoccurring Use of
+  Highly Suspicious PDF Editors to Infiltrate Environments' (691fdab8adc456247cd148bd).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://www.truesec.com/hub/blog/reoccurring-use-of-highly-suspicious-pdf-editors-to-infiltrate-environments
+tags:
+- scheduled tasks
+- malicious vector
+- suspicious behavior
+- convertmate
+- pdf converter
+- amaryllis signal ltd
+- pdfeditor
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trm.conmateapp.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

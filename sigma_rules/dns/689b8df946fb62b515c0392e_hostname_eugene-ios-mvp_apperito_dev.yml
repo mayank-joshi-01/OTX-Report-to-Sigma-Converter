@@ -1,0 +1,29 @@
+title: OTX hostname IOC - eugene-ios-mvp.apperito.dev
+id: 1253738c-aa1d-4ce0-a5f0-3e0c9b8f68fc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Click to Allow" Robot
+  Exposes Online Fraud Empire' (689b8df946fb62b515c0392e).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams
+tags:
+- cryptocurrency fraud
+- scams
+- traffic distribution
+- dating scams
+- cybercrime
+- spam
+- affiliate marketing
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eugene-ios-mvp.apperito.dev
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - albam.site
+id: 5dc77457-9598-43fe-9389-6d17efd41d1f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: albam.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

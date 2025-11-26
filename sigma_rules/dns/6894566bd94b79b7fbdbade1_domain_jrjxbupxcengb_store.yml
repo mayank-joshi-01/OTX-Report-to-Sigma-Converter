@@ -1,0 +1,20 @@
+title: OTX domain IOC - jrjxbupxcengb.store
+id: 5aa469c9-b737-4bf2-a54d-5056a0587a6c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jrjxbupxcengb.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

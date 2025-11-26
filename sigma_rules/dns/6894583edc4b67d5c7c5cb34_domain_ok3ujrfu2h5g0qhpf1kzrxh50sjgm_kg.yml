@@ -1,0 +1,20 @@
+title: OTX domain IOC - ok3ujrfu2h5g0qhpf1kzrxh50sjgm.kg
+id: 1e4113d4-3331-48be-8f5c-2b869c84bb55
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ok3ujrfu2h5g0qhpf1kzrxh50sjgm.kg
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 0fc0f54e9708a7a392be32f5be8d9a734e28c00dbe018001ac5ea2917f9771a8
+id: feaf3ada-5f08-406e-98fd-9d7b7e56d126
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Dark Side of Parental
+  Control Apps' (689c7d9e5239e5acfdc84530).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://asec.ahnlab.com/en/89544
+tags:
+- privacy
+- appcare/android.kidlogger
+- app permissions
+- surveillance
+- smartphone monitoring
+- security concerns
+- child protection
+- appcare/android.manamgeri
+- parental control
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0fc0f54e9708a7a392be32f5be8d9a734e28c00dbe018001ac5ea2917f9771a8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

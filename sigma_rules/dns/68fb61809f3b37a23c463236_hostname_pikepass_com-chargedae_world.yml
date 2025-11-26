@@ -1,0 +1,24 @@
+title: OTX hostname IOC - pikepass.com-chargedae.world
+id: 312cb4f6-6a0d-483a-a60f-9442f498a49c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Smishing Deluge:
+  China-Based Campaign Flooding Global Text Messages'' (68fb61809f3b37a23c463236).'
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://unit42.paloaltonetworks.com/global-smishing-campaign
+tags:
+- phaas
+- phishing
+- smishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pikepass.com-chargedae.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - f292c0911456c1d9c40d5740c7d3997f
+id: 9e3cae5e-3b88-47e5-a829-0db6bc3a50bb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Rhadamanthys 0.9.x
+  - walk through the updates' (68dd8edde79b4d282c08dc5f).
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates
+tags:
+- evasion
+- encryption
+- configurability
+- rhadamanthys
+- stealer
+- png payload
+- custom formats
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f292c0911456c1d9c40d5740c7d3997f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

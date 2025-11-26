@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - f0ad3189fe9076ddd632d304e6bee9e8
+id: a5780574-d258-48d3-b903-cf867958c669
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Spear Phishing Campaign
+  Delivers VIP Keylogger via Email Attachment' (688a355ead4c75a9701f25fd).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.seqrite.com/blog/spear-phishing-campaign-delivers-vip-keylogger-via-email-attachment/
+tags:
+- spear phishing
+- autoit
+- vip keylogger
+- exfiltration
+- data theft
+- obfuscation
+- process hollowing
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f0ad3189fe9076ddd632d304e6bee9e8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

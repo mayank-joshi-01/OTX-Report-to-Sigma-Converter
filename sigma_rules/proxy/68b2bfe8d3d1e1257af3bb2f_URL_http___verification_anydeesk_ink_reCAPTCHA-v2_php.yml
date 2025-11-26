@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://verification.anydeesk.ink/reCAPTCHA-v2.php
+id: 6dd7ecee-7ba3-469b-ad2a-f503a8358a22
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From a Fake AnyDesk
+  Installer to MetaStealer' (68b2bfe8d3d1e1257af3bb2f).
+author: AlienVault
+date: '2025-08-30'
+references:
+- https://www.huntress.com/blog/fake-anydesk-clickfix-metastealer-malware
+tags:
+- windows file explorer
+- social engineering
+- clickfix
+- filefix
+- anydesk
+- metastealer
+- cloudflare turnstile
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://verification.anydeesk.ink/reCAPTCHA-v2.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

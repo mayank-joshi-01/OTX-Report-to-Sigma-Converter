@@ -1,0 +1,20 @@
+title: OTX domain IOC - iblock.online
+id: 1ec3c8d8-0ed2-44f3-8f15-6b70d8ae0755
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iblock.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

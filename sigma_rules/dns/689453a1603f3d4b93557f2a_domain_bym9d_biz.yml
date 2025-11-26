@@ -1,0 +1,20 @@
+title: OTX domain IOC - bym9d.biz
+id: 575583f3-4bdc-4618-a8cd-b677f7284a08
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bym9d.biz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - seuedu.online
+id: 9aef7e07-3fc0-4bb2-be23-8d5c183f8333
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: seuedu.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

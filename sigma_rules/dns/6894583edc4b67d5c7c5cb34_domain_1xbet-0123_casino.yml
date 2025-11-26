@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1xbet-0123.casino
+id: 3bb26360-1948-491e-bb45-8e81d018f572
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1xbet-0123.casino
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

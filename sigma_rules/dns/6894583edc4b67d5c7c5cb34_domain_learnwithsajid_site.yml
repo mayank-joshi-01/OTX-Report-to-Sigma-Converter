@@ -1,0 +1,20 @@
+title: OTX domain IOC - learnwithsajid.site
+id: c00939d5-8783-478e-925c-040f7c3a2b43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: learnwithsajid.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

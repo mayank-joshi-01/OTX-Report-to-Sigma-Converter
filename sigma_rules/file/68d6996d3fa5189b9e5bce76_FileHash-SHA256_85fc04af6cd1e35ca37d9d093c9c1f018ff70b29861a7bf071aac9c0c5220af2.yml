@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 85fc04af6cd1e35ca37d9d093c9c1f018ff70b29861a7bf071aac9c0c5220af2
+id: 7c29f88b-d57e-4527-9294-f55ee6af1298
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 85fc04af6cd1e35ca37d9d093c9c1f018ff70b29861a7bf071aac9c0c5220af2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

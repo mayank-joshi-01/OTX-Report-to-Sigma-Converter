@@ -1,0 +1,34 @@
+title: OTX IPv4 IOC - 92.243.65.240
+id: 479664f7-21cc-4081-85a6-8c67a839dac0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Commercial-Grade
+  Android Spyware in Exploit Chain Targeting Samsung Devices' (690e354ec352a7329cbaf7d4).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://unit42.paloaltonetworks.com/wp-content/uploads/2025/11/09_Nation-State-cyberattacks_1920x900.jpg
+- https://unit42.paloaltonetworks.com/landfall-is-new-commercial-grade-android-spyware/
+tags:
+- whatsapp
+- cve-2025-55177
+- android
+- samsung
+- spyware
+- cve-2025-21042
+- cve-2025-21043
+- zero-day
+- landfall
+- cve-2025-43300
+- dng
+- commercial-grade
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 92.243.65.240
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514
+id: 86f36797-4f4a-455c-a7b6-808ab900ad0d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CVE-2025-53770 and
+  CVE-2025-53771: Actively Exploited SharePoint Vulnerabilities'' (687f540a2b7d8ca9da74c8fe).'
+author: AlienVault
+date: '2025-07-22'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/cve-2025-53770-and-cve-2025-53771-sharepoint-attacks.html
+tags:
+- microsoft sharepoint
+- viewstate abuse
+- remote code execution
+- cve-2025-49704
+- deserialization
+- cve-2025-53770
+- cve-2025-49706
+- cve-2025-53771
+- unauthenticated attacks
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

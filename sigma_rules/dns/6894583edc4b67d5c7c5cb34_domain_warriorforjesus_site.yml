@@ -1,0 +1,20 @@
+title: OTX domain IOC - warriorforjesus.site
+id: 5ac6504e-89e5-4ca2-9f4d-bd0109c28915
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: warriorforjesus.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

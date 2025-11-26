@@ -1,0 +1,25 @@
+title: OTX domain IOC - clashzi.com
+id: 7b47ed04-ca6d-44d3-a8ce-94f8bcf94f2f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clashzi.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - mails.navy.mll.bd.account.file.centralized-email-system-np.com
+id: 1191e1fd-c930-468a-b703-206acf45d5da
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mails.navy.mll.bd.account.file.centralized-email-system-np.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

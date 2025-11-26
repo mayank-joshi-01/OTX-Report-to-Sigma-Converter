@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 185.158.113.114
+id: 4ca1c370-d6a3-4fd5-b870-bcc6b9d306bb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The DragonForce
+  Cartel: Scattered Spider at the gate'' (690b1a8fb4a0df0cf6a16178).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.acronis.com/en/tru/posts/the-dragonforce-cartel-scattered-spider-at-the-gate/
+tags:
+- conti
+- dragonforce
+- social engineering
+- global
+- scattered spider
+- ransomware
+- cartel
+- byovd
+- encryption
+- mamona
+- devman
+- affiliate program
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 185.158.113.114
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

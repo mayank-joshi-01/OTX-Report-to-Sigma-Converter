@@ -1,0 +1,29 @@
+title: OTX domain IOC - wanderclean.com
+id: db0f1d4e-1d31-4d55-8a6a-c0650c5b350c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious JavaScript
+  Injects Fullscreen Iframe On a WordPress Website' (689d9929e2ae3c7ac177ec6a).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.sucuri.net/2025/08/malicious-javascript-injects-fullscreen-iframe-on-a-wordpress-website.html
+tags:
+- wordpress
+- iframe injection
+- javascript
+- wpcode plugin
+- powershell exploitation
+- anti-debugging
+- fullscreen overlay
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wanderclean.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

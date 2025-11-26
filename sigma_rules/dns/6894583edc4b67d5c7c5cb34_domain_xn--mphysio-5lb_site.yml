@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--mphysio-5lb.site
+id: 676973a5-f632-4b79-9b4a-a4679dcc9858
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--mphysio-5lb.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

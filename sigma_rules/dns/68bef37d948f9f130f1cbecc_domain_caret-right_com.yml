@@ -1,0 +1,26 @@
+title: OTX domain IOC - caret-right.com
+id: 6b61abaa-1fdf-4c11-9db3-810e9b48156c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Significant Risk and
+  Proactive Defense' (68bef37d948f9f130f1cbecc).
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://www.silentpush.com/blog/salt-typhoon-2025/
+tags:
+- telecommunications
+- persistent threat
+- domain infrastructure
+- long-term access
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: caret-right.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

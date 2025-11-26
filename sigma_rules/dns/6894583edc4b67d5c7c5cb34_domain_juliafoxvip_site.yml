@@ -1,0 +1,20 @@
+title: OTX domain IOC - juliafoxvip.site
+id: ea9415be-09b0-4de8-a3cb-8b4355ccb593
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: juliafoxvip.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zke2dhkwddv0qvb4ez2ydmpqgglph.my
+id: 3f2be6bb-81b2-49d1-ac67-a716f01e6b5a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zke2dhkwddv0qvb4ez2ydmpqgglph.my
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

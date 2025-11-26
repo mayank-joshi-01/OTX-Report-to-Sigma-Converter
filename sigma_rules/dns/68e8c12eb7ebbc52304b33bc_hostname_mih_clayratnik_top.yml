@@ -1,0 +1,25 @@
+title: OTX hostname IOC - mih.clayratnik.top
+id: 26d81f92-2767-4b63-ade2-4f68600c30c0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClayRat: A New Android
+  Spyware Targeting Russia'' (68e8c12eb7ebbc52304b33bc).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://zimperium.com/blog/clayrat-a-new-android-spyware-targeting-russia
+tags:
+- ClayRat
+- Spyware
+- phishing
+- SMS
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mih.clayratnik.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

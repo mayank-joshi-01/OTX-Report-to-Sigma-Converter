@@ -1,0 +1,20 @@
+title: OTX domain IOC - chaingptrewardsclaim.online
+id: 45c21a60-af8d-422b-9657-0456e6f3e09c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chaingptrewardsclaim.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zawwpfaeag.cn
+id: 33e56a8f-bc4e-45b2-9efd-e7f0a4f8fef5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zawwpfaeag.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

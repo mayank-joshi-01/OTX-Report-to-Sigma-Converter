@@ -1,0 +1,20 @@
+title: OTX domain IOC - tong123.top
+id: 1b84e733-2e4b-45d9-997f-e2e950be3e42
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tong123.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - pingtest.online
+id: bdc72b13-3405-41bf-b9bd-1ec27be94831
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pingtest.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

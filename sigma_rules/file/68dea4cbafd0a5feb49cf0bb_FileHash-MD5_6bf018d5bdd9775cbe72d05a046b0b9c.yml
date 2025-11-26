@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 6bf018d5bdd9775cbe72d05a046b0b9c
+id: 9d612f14-dc6e-4545-91f8-8e0b791142fe
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New spyware campaigns
+  target privacy-conscious Android users in the UAE' (68dea4cbafd0a5feb49cf0bb).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://www.welivesecurity.com/en/eset-research/new-spyware-campaigns-target-privacy-conscious-android-users-uae/
+- https://github.com/eset/malware-ioc/tree/master/prospytospy
+tags:
+- data exfiltration
+- android/spy.tospy
+- signal
+- uae
+- totok
+- persistence
+- app impersonation
+- spyware
+- android/spy.prospy
+- phishing
+- android
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6bf018d5bdd9775cbe72d05a046b0b9c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

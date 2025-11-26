@@ -1,0 +1,20 @@
+title: OTX domain IOC - guthreybuild.online
+id: 6492c2b1-49c0-40d4-8a72-3be47d12bb41
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guthreybuild.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

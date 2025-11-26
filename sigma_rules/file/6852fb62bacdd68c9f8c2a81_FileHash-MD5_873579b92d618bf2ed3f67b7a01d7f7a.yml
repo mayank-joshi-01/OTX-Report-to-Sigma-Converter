@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 873579b92d618bf2ed3f67b7a01d7f7a
+id: 364b0619-963e-4a83-9888-049d9c36310c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Warning Against Distribution
+  of Malware Disguised as Research Papers' (6852fb62bacdd68c9f8c2a81).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://asec.ahnlab.com/en/88465
+tags:
+- apt
+- dropbox
+- remote-access
+- ole
+- social-engineering
+- phishing
+- anydesk
+- hwp
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 873579b92d618bf2ed3f67b7a01d7f7a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

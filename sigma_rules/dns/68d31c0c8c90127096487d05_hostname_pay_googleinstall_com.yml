@@ -1,0 +1,31 @@
+title: OTX hostname IOC - pay.googleinstall.com
+id: 7dd09a0e-a270-4b4d-aeda-a66942e88fb8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How a new PlugX variant
+  abuses DLL search order hijacking' (68d31c0c8c90127096487d05).
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://blog.talosintelligence.com/how-rainyday-turian-and-a-new-plugx-variant-abuse-dll-search-order-hijacking/
+tags:
+- telecommunications
+- manufacturing
+- plugx
+- rainyday
+- backdoordiplomacy
+- naikon
+- turian
+- chinese apt
+- dll hijacking
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pay.googleinstall.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

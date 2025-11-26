@@ -1,0 +1,20 @@
+title: OTX domain IOC - consulta-indeniza.online
+id: 3e9b0b5a-68b2-4749-8c9d-1d82ef76f4c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: consulta-indeniza.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - xn--actu-auvergne-rhne-alpes-lnc.fr
+id: 20ae4ffa-a2e9-4f36-882f-df21e8fb84ec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deepens Its Playbook
+  with New Websites and Targets' (68cb7aa638a3244a9fa2ea60).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets
+tags:
+- elections
+- deepfakes
+- ai-generated content
+- ukraine
+- political fragmentation
+- social media
+- disinformation
+- russian influence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--actu-auvergne-rhne-alpes-lnc.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

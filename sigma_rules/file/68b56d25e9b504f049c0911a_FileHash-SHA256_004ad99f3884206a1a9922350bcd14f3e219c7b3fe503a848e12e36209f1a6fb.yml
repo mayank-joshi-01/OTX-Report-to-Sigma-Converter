@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 004ad99f3884206a1a9922350bcd14f3e219c7b3fe503a848e12e36209f1a6fb
+id: 37d45976-d892-42a8-b398-86002ed5d90a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AI Waifu RAT: A
+  Ring3 malware-like RAT based on LLM manipulation is circulating in the wild'' (68b56d25e9b504f049c0911a).'
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://ryingo.gitbook.io/writeups-ai_waifu_rat/
+tags:
+- ai
+- rat
+- threat actor
+- ctf
+- llm
+- ai waifu rat
+- social engineering
+- code execution
+- backdoor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 004ad99f3884206a1a9922350bcd14f3e219c7b3fe503a848e12e36209f1a6fb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

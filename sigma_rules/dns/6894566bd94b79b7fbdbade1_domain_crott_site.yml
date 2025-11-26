@@ -1,0 +1,20 @@
+title: OTX domain IOC - crott.site
+id: 94838a1e-c5d9-4b7f-a48c-a2e5b402aa58
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: crott.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zeidjggo.cn
+id: a028ac77-5da2-4440-bec0-2cc69c524504
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zeidjggo.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

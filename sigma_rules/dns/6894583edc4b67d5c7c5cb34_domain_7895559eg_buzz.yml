@@ -1,0 +1,20 @@
+title: OTX domain IOC - 7895559eg.buzz
+id: 3c918ca2-cab0-4970-898e-7226cb92bd74
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 7895559eg.buzz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

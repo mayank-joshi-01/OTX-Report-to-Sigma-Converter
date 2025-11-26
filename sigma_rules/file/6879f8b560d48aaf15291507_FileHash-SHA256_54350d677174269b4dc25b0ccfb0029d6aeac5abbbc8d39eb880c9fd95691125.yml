@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 54350d677174269b4dc25b0ccfb0029d6aeac5abbbc8d39eb880c9fd95691125
+id: 1b638033-57b5-4629-8d42-a7d8516c1ea2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malware Identified
+  in Attacks Exploiting Ivanti Connect Secure Vulnerabilities' (6879f8b560d48aaf15291507).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://blogs.jpcert.or.jp/en/2025/07/ivanti_cs.html
+tags:
+- cobalt strike
+- fscan
+- cobalt strike beacon
+- ivanti connect secure
+- vshell
+- mdifyloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 54350d677174269b4dc25b0ccfb0029d6aeac5abbbc8d39eb880c9fd95691125
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

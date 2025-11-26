@@ -1,0 +1,27 @@
+title: OTX hostname IOC - theleakedmaterialreferencesexfiltrateddatafromfmis.mef.gov.kh
+id: 07837919-fa8a-4c33-98f8-4c0ea2bd0e84
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theleakedmaterialreferencesexfiltrateddatafromfmis.mef.gov.kh
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

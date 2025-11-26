@@ -1,0 +1,20 @@
+title: OTX domain IOC - jibsneeannnlz.site
+id: 148c1e95-4019-458c-a2d5-b578d356e8fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jibsneeannnlz.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

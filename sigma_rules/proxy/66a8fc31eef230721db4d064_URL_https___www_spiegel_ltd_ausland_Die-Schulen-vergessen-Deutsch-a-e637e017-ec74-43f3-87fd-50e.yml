@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.spiegel.ltd/ausland/Die-Schulen-vergessen-Deutsch-a-e637e017-ec74-43f3-87fd-50edb6b9d52f.html
+id: 1758f627-478d-41ef-a38d-1d69ef9fb51e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.spiegel.ltd/ausland/Die-Schulen-vergessen-Deutsch-a-e637e017-ec74-43f3-87fd-50edb6b9d52f.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

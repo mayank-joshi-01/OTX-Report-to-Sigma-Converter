@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--oy2b17mptg0vh34a.com
+id: cf78078d-48a1-4855-9f8c-7d9e4e368678
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--oy2b17mptg0vh34a.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

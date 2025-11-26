@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - b2c52fde1301a3624a9ceb995f2de4112d57fcbc6a4695799aec15af4fa0a122
+id: 33cca307-0d65-438e-be05-0e9cdd8ee5ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CTI Analysis: Malicious
+  Email Campaign'' (68b6b1b5ba004947dbc00475).'
+author: AlienVault
+date: '2025-09-02'
+references:
+- https://dreamgroup.com/blog-cti/
+tags:
+- reconnaissance
+- diplomatic targets
+- iran-nexus
+- oman mfa
+- anti-analysis
+- spear-phishing
+- vba macro
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b2c52fde1301a3624a9ceb995f2de4112d57fcbc6a4695799aec15af4fa0a122
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

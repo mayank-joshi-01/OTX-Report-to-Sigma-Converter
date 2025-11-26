@@ -1,0 +1,26 @@
+title: OTX hostname IOC - ping.ynrkone.top
+id: 69c3f234-09e7-483f-b664-19c5c950a4f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Investigation Report:
+  Android/BankBot-YNRK Mobile Banking Trojan'' (6904819df7d79e5e4607c32b).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.cyfirma.com/research/investigation-report-android-bankbot-ynrk-mobile-banking-trojan/
+tags:
+- overlay attacks
+- cryptocurrency theft
+- android/bankbot-ynrk
+- banking trojan
+- android
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ping.ynrkone.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

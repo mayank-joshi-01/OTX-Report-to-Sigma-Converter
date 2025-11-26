@@ -1,0 +1,28 @@
+title: OTX hostname IOC - verification.anydeesk.ink
+id: 2adc37a6-8ee3-4278-8376-c51c0f081b82
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From a Fake AnyDesk
+  Installer to MetaStealer' (68b2bfe8d3d1e1257af3bb2f).
+author: AlienVault
+date: '2025-08-30'
+references:
+- https://www.huntress.com/blog/fake-anydesk-clickfix-metastealer-malware
+tags:
+- windows file explorer
+- social engineering
+- clickfix
+- filefix
+- anydesk
+- metastealer
+- cloudflare turnstile
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: verification.anydeesk.ink
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

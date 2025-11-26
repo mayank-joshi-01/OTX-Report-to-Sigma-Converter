@@ -1,0 +1,29 @@
+title: OTX hostname IOC - direct-nouvelles.fr.meilleuresactus.fr
+id: 494c87e7-a367-4a2a-972c-5fe1ee9f05be
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deepens Its Playbook
+  with New Websites and Targets' (68cb7aa638a3244a9fa2ea60).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets
+tags:
+- elections
+- deepfakes
+- ai-generated content
+- ukraine
+- political fragmentation
+- social media
+- disinformation
+- russian influence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: direct-nouvelles.fr.meilleuresactus.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

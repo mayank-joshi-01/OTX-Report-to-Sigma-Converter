@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 49ad6431fb67c29e1a2745092232898c491652ddf7115e0332382b42466d0734
+id: 4a7132ec-e476-4c6d-8e95-b3592cfa486f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DeerStealer Malware
+  Campaign: Stealth, Persistence, and Rootkit-Like Capabilities'' (68ce938ae34f725fce8b67a4).'
+author: AlienVault
+date: '2025-09-20'
+references:
+- https://www.cyfirma.com/research/deerstealer-malware-campaign-stealth-persistence-and-rootkit-like-capabilities
+tags:
+- multi-stage-execution
+- rootkit
+- data-exfiltration
+- xfiles spyware
+- persistence
+- deerstealer
+- uac-bypass
+- information-stealing
+- stealth
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 49ad6431fb67c29e1a2745092232898c491652ddf7115e0332382b42466d0734
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

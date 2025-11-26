@@ -1,0 +1,20 @@
+title: OTX domain IOC - tkmallallianceo-2.top
+id: bc9807ea-73a7-4c96-9934-d9a37c5e3f55
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tkmallallianceo-2.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

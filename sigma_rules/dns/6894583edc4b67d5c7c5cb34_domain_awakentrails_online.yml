@@ -1,0 +1,20 @@
+title: OTX domain IOC - awakentrails.online
+id: d0e554c0-a569-4891-8089-7dc9f017f09b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: awakentrails.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

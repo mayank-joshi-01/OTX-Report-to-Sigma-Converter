@@ -1,0 +1,20 @@
+title: OTX domain IOC - mxtmsmfbin.biz
+id: 216bf694-1231-4d21-9d7e-521123500490
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mxtmsmfbin.biz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

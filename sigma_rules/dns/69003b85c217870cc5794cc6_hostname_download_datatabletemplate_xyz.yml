@@ -1,0 +1,28 @@
+title: OTX hostname IOC - download.datatabletemplate.xyz
+id: 3ebff21d-a793-4016-87a6-dab091a072e6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crypto wasted: BlueNoroff’s
+  ghost mirage of funding and jobs'' (69003b85c217870cc5794cc6).'
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842
+tags:
+- zoomclutch
+- rootroy
+- sysphon
+- silentsiphon
+- sneakmain
+- cosmicdoor
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: download.datatabletemplate.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

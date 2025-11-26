@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://myanmar-org-mail.com/cbm/action.php
+id: 7da85426-26b4-4800-85ab-9b98ba8a077f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://myanmar-org-mail.com/cbm/action.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

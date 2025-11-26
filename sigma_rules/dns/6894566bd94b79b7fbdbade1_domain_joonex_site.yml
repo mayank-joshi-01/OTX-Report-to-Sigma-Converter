@@ -1,0 +1,20 @@
+title: OTX domain IOC - joonex.site
+id: 3d32f5ce-1baf-4ce4-bf29-24be0e7f7e8c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: joonex.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

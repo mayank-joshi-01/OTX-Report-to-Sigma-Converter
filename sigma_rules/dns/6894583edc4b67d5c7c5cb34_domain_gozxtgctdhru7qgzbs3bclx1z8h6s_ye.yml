@@ -1,0 +1,20 @@
+title: OTX domain IOC - gozxtgctdhru7qgzbs3bclx1z8h6s.ye
+id: 3f535df6-6ce8-4897-8436-de2d55f5e190
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gozxtgctdhru7qgzbs3bclx1z8h6s.ye
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

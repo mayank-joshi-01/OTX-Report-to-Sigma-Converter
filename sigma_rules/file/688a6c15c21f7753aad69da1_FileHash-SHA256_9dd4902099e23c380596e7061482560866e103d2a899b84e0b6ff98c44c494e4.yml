@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 9dd4902099e23c380596e7061482560866e103d2a899b84e0b6ff98c44c494e4
+id: 321898b6-bf73-46aa-9d83-cfc30811e57b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XWorm V6: Advanced
+  Evasion and AMSI Bypass Capabilities Revealed'' (688a6c15c21f7753aad69da1).'
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.netskope.com/blog/xworm-v6-0-enhanced-malware-protection-and-stealthy-delivery
+tags:
+- persistence
+- xworm
+- evasion
+- malware
+- amsi bypass
+- in-memory execution
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 9dd4902099e23c380596e7061482560866e103d2a899b84e0b6ff98c44c494e4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

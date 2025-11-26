@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 0223b36e193979cf72ff7dae6d2493c7
+id: 37a8d3d9-2942-435d-a3b6-2176f83e999f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'October 2025 Infostealer
+  Trend Report' (691f29a1fb65b42a9f9f4e0e).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91062
+tags:
+- seo poisoning
+- rhadamanthys
+- acrstealer
+- lummac2
+- infostealer
+- loader
+- phishing
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0223b36e193979cf72ff7dae6d2493c7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

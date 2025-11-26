@@ -1,0 +1,20 @@
+title: OTX domain IOC - artoeaincy.online
+id: b7edb6f0-7161-4e07-b3f7-f52c2a677108
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: artoeaincy.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

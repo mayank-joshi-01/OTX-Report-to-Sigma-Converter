@@ -1,0 +1,20 @@
+title: OTX domain IOC - themagicmirror.site
+id: dd7de916-9a2f-4993-b12d-0d996f06b615
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: themagicmirror.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

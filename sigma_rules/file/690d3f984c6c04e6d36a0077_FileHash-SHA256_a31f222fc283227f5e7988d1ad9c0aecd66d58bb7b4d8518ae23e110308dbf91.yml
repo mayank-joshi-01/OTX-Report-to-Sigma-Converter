@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - a31f222fc283227f5e7988d1ad9c0aecd66d58bb7b4d8518ae23e110308dbf91
+id: 6555aac8-3e48-44d9-ae17-f49eb13a3f26
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Remember, remember
+  the fifth of November' (690d3f984c6c04e6d36a0077).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://blog.talosintelligence.com/remember-remember-the-fifth-of-november/
+tags:
+- gunpowder plot
+- threat intelligence
+- history
+- uk
+- guy fawkes
+- cybersecurity
+- hacktivism
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a31f222fc283227f5e7988d1ad9c0aecd66d58bb7b4d8518ae23e110308dbf91
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

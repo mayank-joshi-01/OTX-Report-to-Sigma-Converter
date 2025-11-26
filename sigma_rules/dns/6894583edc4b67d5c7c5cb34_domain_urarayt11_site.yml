@@ -1,0 +1,20 @@
+title: OTX domain IOC - urarayt11.site
+id: 8bc84b87-ed1c-4479-b795-41f5622c938a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: urarayt11.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

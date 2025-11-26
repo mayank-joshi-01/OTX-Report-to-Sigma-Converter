@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - b4c5d6749222539ff6fb6c83174867ea
+id: 07009cae-039a-4292-ae6c-29338d4bac82
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Greedy Sponge Targets
+  Mexico with AllaKore RAT and SystemBC' (68a7465fd6fcc8556c5059d2).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://arcticwolf.com/resources/blog/greedy-sponge-targets-mexico-with-allakore-rat-and-systembc
+tags:
+- credential theft
+- spear-phishing
+- drive-by download
+- financial fraud
+- allakore rat
+- systembc
+- geofencing
+- mexico
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: b4c5d6749222539ff6fb6c83174867ea
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

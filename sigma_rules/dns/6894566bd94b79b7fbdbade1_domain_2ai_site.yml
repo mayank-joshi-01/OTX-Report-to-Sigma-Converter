@@ -1,0 +1,20 @@
+title: OTX domain IOC - 2ai.site
+id: 66d29782-268a-4beb-949b-968ba625c067
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 2ai.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

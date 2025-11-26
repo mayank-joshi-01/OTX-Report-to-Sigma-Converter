@@ -1,0 +1,20 @@
+title: OTX domain IOC - dyuiuqw1237whujwe89whds89wehisajl.xyz
+id: 6740eca6-41ed-41e2-a731-ca9607b28a93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dyuiuqw1237whujwe89whds89wehisajl.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

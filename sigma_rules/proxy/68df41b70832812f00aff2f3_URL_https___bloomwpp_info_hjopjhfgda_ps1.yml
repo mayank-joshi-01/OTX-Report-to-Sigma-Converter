@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://bloomwpp.info/hjopjhfgda.ps1
+id: d89651b5-5f5b-4ed3-bb77-e6e56f83a08d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://bloomwpp.info/hjopjhfgda.ps1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

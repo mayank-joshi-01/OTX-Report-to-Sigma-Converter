@@ -1,0 +1,26 @@
+title: OTX domain IOC - b0l9.top
+id: c0eb2ec9-8bea-4d04-9279-edcd40e915c1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: b0l9.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

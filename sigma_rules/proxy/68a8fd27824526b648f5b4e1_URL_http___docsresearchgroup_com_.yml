@@ -1,0 +1,34 @@
+title: OTX URL IOC - http://docsresearchgroup.com/
+id: 98ccf101-c3b9-4308-940e-0b011790bfa1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Android Document
+  Readers and Deception: Tracking the Latest Updates to Anatsa'' (68a8fd27824526b648f5b4e1).'
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://www.zscaler.com/blogs/security-research/android-document-readers-and-deception-tracking-latest-updates-anatsa
+tags:
+- coper
+- harly
+- joker
+- financial institutions
+- banking trojan
+- facestealer
+- evasion techniques
+- credential theft
+- android
+- cryptocurrency
+- teabot
+- anatsa
+- google play store
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://docsresearchgroup.com/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 02b4571470d83163d103112f07f1c434
+id: 7c561871-d680-4ff4-af9d-8557513592f5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SharePoint Vulnerabilities
+  (CVE-2025-53770 & CVE-2025-53771): Everything You Need to Know'' (687ec30ead4d6a2798563303).'
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://www.wiz.io/blog/sharepoint-vulnerabilities-cve-2025-53770-cve-2025-53771-everything-you-need-to-k
+tags:
+- zero-day
+- sharepoint
+- cve-2025-53770
+- toolshell
+- rce
+- authentication bypass
+- patch
+- on-premises
+- spoofing
+- deserialization
+- cve-2025-53771
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 02b4571470d83163d103112f07f1c434
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 10b7139952e3daae8f9d7ee407696ccf
+id: 75795b4a-f94a-44b4-ae36-db0c39df46f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT36: Targets Indian
+  BOSS Linux Systems with Weaponized AutoStart Files'' (68a999165ab79f5b181e6068).'
+author: AlienVault
+date: '2025-08-23'
+references:
+- https://www.cyfirma.com/research/apt36-targets-indian-boss-linux-systems-with-weaponized-autostart-files
+tags:
+- government
+- elf
+- cyber-espionage
+- india
+- persistence
+- pakistan
+- spear-phishing
+- boss linux
+- .desktop files
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 10b7139952e3daae8f9d7ee407696ccf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

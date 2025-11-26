@@ -1,0 +1,20 @@
+title: OTX domain IOC - jitu692k25.online
+id: 1c7bd1ce-0260-4f7d-9747-74b45ec5ebdd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jitu692k25.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

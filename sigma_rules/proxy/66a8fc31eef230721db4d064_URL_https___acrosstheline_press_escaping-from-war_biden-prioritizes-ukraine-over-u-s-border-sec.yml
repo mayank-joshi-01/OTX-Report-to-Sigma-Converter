@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://acrosstheline.press/escaping-from-war/biden-prioritizes-ukraine-over-u-s-border-security
+id: 8d2368f2-67f3-490a-8095-af68c89d874f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://acrosstheline.press/escaping-from-war/biden-prioritizes-ukraine-over-u-s-border-security
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 7760000101.com
+id: 76454096-a698-4734-8633-0c1d0fdc0c18
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 7760000101.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

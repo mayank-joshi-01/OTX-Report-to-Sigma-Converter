@@ -1,0 +1,20 @@
+title: OTX domain IOC - viper.click
+id: 41eca3a5-ed51-4578-886c-66bc17c7a97b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: viper.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

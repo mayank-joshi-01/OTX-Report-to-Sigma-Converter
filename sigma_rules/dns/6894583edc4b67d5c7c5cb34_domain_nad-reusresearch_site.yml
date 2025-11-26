@@ -1,0 +1,20 @@
+title: OTX domain IOC - nad-reusresearch.site
+id: f5bc3bc6-e649-4781-9034-f8e0a43b6f00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nad-reusresearch.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

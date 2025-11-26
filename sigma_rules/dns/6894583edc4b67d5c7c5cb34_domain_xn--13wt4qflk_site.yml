@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--13wt4qflk.site
+id: 4610f5bf-0221-4b42-b44f-bc88bf28d3a8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--13wt4qflk.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - bandeorch.com
+id: d505edfe-83dd-4304-bd69-eb1bc9f922e1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bandeorch.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

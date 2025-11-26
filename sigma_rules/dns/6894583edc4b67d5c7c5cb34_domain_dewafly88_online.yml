@@ -1,0 +1,20 @@
+title: OTX domain IOC - dewafly88.online
+id: 4fd511b7-e344-4c0f-8cd4-0803e2ee720f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dewafly88.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

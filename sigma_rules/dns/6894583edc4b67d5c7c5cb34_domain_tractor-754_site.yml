@@ -1,0 +1,20 @@
+title: OTX domain IOC - tractor-754.site
+id: d595c779-cead-47d6-8291-a3afd7f5d7bb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tractor-754.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

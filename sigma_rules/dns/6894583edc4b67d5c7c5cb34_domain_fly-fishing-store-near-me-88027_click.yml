@@ -1,0 +1,20 @@
+title: OTX domain IOC - fly-fishing-store-near-me-88027.click
+id: cae89931-bfeb-4b0c-b3ef-12974e01c05e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fly-fishing-store-near-me-88027.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

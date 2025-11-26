@@ -1,0 +1,28 @@
+title: OTX domain IOC - pornvideoswatch.net
+id: 62d1d0aa-8a8a-4b3c-b3a9-0ce4ae9b9e1f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pornvideoswatch.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

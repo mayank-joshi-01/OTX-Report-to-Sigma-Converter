@@ -1,0 +1,20 @@
+title: OTX domain IOC - dewawangi168.site
+id: f29e51bc-59fa-4c90-861a-c73c198b8ef1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dewawangi168.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

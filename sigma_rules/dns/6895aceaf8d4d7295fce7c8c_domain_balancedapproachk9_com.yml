@@ -1,0 +1,36 @@
+title: OTX domain IOC - balancedapproachk9.com
+id: f4796600-ab21-429a-b665-c5d11b5ae965
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking SocGholish:
+  Untangling the Malware Web Behind the ''Pioneer of Fake Updates'' and Its Operator''
+  (6895aceaf8d4d7295fce7c8c).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.silentpush.com/blog/socgholish/
+tags:
+- wastedlocker
+- socgholish
+- netsupportrat
+- malware-as-a-service
+- fake updates
+- traffic distribution system
+- domain shadowing
+- hades
+- mintsloader
+- raspberry robin
+- lockbit
+- ransomware
+- dridex
+- initial access broker
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: balancedapproachk9.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

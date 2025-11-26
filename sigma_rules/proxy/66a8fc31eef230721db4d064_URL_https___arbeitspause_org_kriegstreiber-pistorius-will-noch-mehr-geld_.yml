@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://arbeitspause.org/kriegstreiber-pistorius-will-noch-mehr-geld/
+id: a2c8702b-615b-49df-831b-b45db4e6c9b1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://arbeitspause.org/kriegstreiber-pistorius-will-noch-mehr-geld/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

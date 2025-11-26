@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - ec443de3ed3d17515ce137fe271c885b4f09f03e
+id: 5e2a3212-8488-4d06-a1c5-091d8d8ccbd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Search, Click, Steal:
+  The Hidden Threat of Spoofed Ivanti VPN Client Sites'' (68ef1e76a4b321acc814160b).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://www.zscaler.com/blogs/security-research/spoofed-ivanti-vpn-client-sites
+tags:
+- ivanti
+- credential theft
+- trojanized installer
+- akira
+- vpn
+- seo poisoning
+- akira ransomware
+- pulse secure
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ec443de3ed3d17515ce137fe271c885b4f09f03e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

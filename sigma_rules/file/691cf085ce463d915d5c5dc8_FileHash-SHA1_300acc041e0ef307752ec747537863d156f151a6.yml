@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 300acc041e0ef307752ec747537863d156f151a6
+id: 1267534c-99c0-4566-9fa7-c8edeb87a7da
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'EVALUSION Campaign
+  Delivers Amatera Stealer and NetSupport...' (691cf085ce463d915d5c5dc8).
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://www.esentire.com/blog/evalusion-campaign-delivers-amatera-stealer-and-netsupport-rat
+tags:
+- crypto-wallets
+- evasion techniques
+- information theft
+- amatera stealer
+- acr stealer
+- clickfix
+- netsupport rat
+- c2 communication
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 300acc041e0ef307752ec747537863d156f151a6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

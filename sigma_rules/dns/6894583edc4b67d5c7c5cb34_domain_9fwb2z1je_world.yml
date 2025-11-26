@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9fwb2z1je.world
+id: 855df2c6-1e56-40ef-bf9f-81675997a491
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9fwb2z1je.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

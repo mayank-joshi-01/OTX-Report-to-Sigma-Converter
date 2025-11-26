@@ -1,0 +1,20 @@
+title: OTX domain IOC - adultfriendtop.online
+id: f97d334a-906a-4a8d-84e5-a6fd1f44d02d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adultfriendtop.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

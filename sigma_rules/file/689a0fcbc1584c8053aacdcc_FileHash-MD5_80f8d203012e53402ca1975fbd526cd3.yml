@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 80f8d203012e53402ca1975fbd526cd3
+id: bf9cc5a2-2233-48af-b1fb-ae6def3df94c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Echoes in the Shell:
+  Legacy Tooling Behind Ongoing SharePoint ''ToolShell'' Exploitation'' (689a0fcbc1584c8053aacdcc).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/echoes-in-the-shell-legacy-tooling-behind-ongoing-sharepoint-toolshell-exploitation/
+tags:
+- requestrepo
+- toolshell
+- cve-2025-49706
+- cve-2025-53771
+- china chopper
+- cve-2025-49704
+- cve-2025-53770
+- antsword
+- valleyrat
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 80f8d203012e53402ca1975fbd526cd3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

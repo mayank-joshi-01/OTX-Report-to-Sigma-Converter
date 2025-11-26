@@ -1,0 +1,32 @@
+title: OTX domain IOC - capitalestates.es
+id: f65bdf22-005e-4c12-95dd-d67959b88b76
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targeting Companies via UpCrypter' (68acfa712f35ab723b2af3db).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.fortinet.com/blog/threat-research/phishing-campaign-targeting-companies-via-upcrypter
+tags:
+- phishing
+- remote access tools
+- anti-vm
+- purehvnc
+- upcrypter
+- global campaign
+- anti-analysis
+- obfuscation
+- persistence
+- babylon rat
+- dcrat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capitalestates.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

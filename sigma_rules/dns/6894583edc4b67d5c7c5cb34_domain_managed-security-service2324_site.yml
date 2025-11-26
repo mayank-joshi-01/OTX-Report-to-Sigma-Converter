@@ -1,0 +1,20 @@
+title: OTX domain IOC - managed-security-service2324.site
+id: 3f256ba0-1a2b-4c34-997a-27bf042910f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: managed-security-service2324.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

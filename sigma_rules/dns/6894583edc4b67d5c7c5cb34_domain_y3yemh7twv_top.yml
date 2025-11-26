@@ -1,0 +1,20 @@
+title: OTX domain IOC - y3yemh7twv.top
+id: a464c978-4cd4-42a0-81ce-16127e54c177
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y3yemh7twv.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

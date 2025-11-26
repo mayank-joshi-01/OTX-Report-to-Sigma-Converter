@@ -1,0 +1,20 @@
+title: OTX domain IOC - amgummies.store
+id: 924c73fa-b584-433f-8965-c92a48b7e011
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amgummies.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

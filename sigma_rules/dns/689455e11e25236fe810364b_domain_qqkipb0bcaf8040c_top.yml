@@ -1,0 +1,20 @@
+title: OTX domain IOC - qqkipb0bcaf8040c.top
+id: 89360e41-349e-40fd-b8e6-c48f0de1f394
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qqkipb0bcaf8040c.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

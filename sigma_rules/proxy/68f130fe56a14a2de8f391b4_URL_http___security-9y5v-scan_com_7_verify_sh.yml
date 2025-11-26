@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://security-9y5v-scan.com/7/verify.sh
+id: 50143f30-6756-475b-879f-15fff5086458
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Group on the
+  Block: UNC5142 Leverages EtherHiding to Distribute Malware'' (68f130fe56a14a2de8f391b4).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware
+tags:
+- smart contracts
+- blockchain
+- cloudflare pages
+- bnb smart chain
+- atomic
+- lummac.v2
+- vidar
+- infostealers
+- radthief
+- clearshort
+- wordpress
+- etherhiding
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://security-9y5v-scan.com/7/verify.sh
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

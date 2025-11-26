@@ -1,0 +1,25 @@
+title: OTX domain IOC - letescvpn.com
+id: 529146d6-4d55-4afa-8b48-b711f859e3ac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: letescvpn.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

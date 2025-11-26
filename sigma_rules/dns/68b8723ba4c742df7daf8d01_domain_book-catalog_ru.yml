@@ -1,0 +1,28 @@
+title: OTX domain IOC - book-catalog.ru
+id: 6d70f95e-ca60-4c8d-839b-6e0d92d2e2b6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Russian Influence
+  Assets Converge on Moldovan Elections' (68b8723ba4c742df7daf8d01).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.recordedfuture.com/research/russian-influence-assets-converge-on-moldovan-elections
+tags:
+- elections
+- moldova
+- social media manipulation
+- influence operations
+- eu integration
+- disinformation
+- russia
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: book-catalog.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

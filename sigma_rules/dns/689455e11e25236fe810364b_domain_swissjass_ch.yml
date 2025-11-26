@@ -1,0 +1,20 @@
+title: OTX domain IOC - swissjass.ch
+id: 5af0cd2d-c515-42aa-b742-ca935fd2e176
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: swissjass.ch
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

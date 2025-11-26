@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://download1529.mediafire.com/8006s55pduvgtQ0THBMZxcLtlrh20a5BnfF18n8YfGUB8P7M5U3mEQb-UYYDCrMHsSG0aWvnyy_LIMg2OnTc4kuNYmWzjWLQwOds-qSfhdO03NOQFAAaYCPiOvB8nU7mBEHe-3a5gDSufW6upPbFXyGlbzBTdtpcrVPXokNKOYZ9/c4zbp39q02jvrn8/Aykadia.rar
+id: 9cca48f2-d31e-423d-92bd-ee24027f84dd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://download1529.mediafire.com/8006s55pduvgtQ0THBMZxcLtlrh20a5BnfF18n8YfGUB8P7M5U3mEQb-UYYDCrMHsSG0aWvnyy_LIMg2OnTc4kuNYmWzjWLQwOds-qSfhdO03NOQFAAaYCPiOvB8nU7mBEHe-3a5gDSufW6upPbFXyGlbzBTdtpcrVPXokNKOYZ9/c4zbp39q02jvrn8/Aykadia.rar
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

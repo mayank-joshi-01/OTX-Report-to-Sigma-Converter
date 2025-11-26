@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 38580294995d09e2ceacaf17fb03d609
+id: a1bb56e3-3af7-47fd-b9b7-233f03f89a34
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UAC-0057 Keeps Pressure
+  on Ukraine and Poland' (68af6276333998b0be9668fc).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland/#tid_chains_sim
+tags:
+- ukraine
+- confuserex
+- cobalt strike
+- poland
+- cyber espionage
+- upx
+- downloaders
+- vba macros
+- domain impersonation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 38580294995d09e2ceacaf17fb03d609
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

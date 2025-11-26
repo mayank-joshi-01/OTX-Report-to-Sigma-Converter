@@ -1,0 +1,32 @@
+title: OTX hostname IOC - api.nova-blight.top
+id: ce0a5ee1-927c-41b2-b1e3-d53db910e1c5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''MaaS Appeal: An
+  Infostealer Rises From The Ashes'' (688bcc2443b220b3ccb77c5c).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.elastic.co/security-labs/maas-appeal-an-infostealer-rises-from-the-ashes
+tags:
+- maas
+- obfuscation
+- nova sentinel
+- data exfiltration
+- malicord
+- credential theft
+- novablight
+- nodejs
+- anti-analysis
+- infostealer
+- electron
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: api.nova-blight.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

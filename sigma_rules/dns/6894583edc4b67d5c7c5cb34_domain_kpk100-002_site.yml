@@ -1,0 +1,20 @@
+title: OTX domain IOC - kpk100-002.site
+id: 79ead9a6-5d19-4821-9d77-caf8eeabdd6f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kpk100-002.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

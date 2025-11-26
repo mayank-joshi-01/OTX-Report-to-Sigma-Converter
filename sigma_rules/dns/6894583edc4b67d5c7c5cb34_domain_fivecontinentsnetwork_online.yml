@@ -1,0 +1,20 @@
+title: OTX domain IOC - fivecontinentsnetwork.online
+id: 78c9aab5-5694-4769-9eab-664b6248649d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fivecontinentsnetwork.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

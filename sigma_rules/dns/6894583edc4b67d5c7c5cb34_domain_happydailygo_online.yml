@@ -1,0 +1,20 @@
+title: OTX domain IOC - happydailygo.online
+id: 842f1a94-cbeb-43d0-b4bd-0d9a4156a0d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: happydailygo.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

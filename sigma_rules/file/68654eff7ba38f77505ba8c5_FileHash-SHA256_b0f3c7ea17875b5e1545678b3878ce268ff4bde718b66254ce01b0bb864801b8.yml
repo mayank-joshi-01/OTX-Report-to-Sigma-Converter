@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - b0f3c7ea17875b5e1545678b3878ce268ff4bde718b66254ce01b0bb864801b8
+id: ab8799a7-a12f-4bcc-ba96-0d44c183cdee
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DCRAT Impersonating
+  the Colombian Government' (68654eff7ba38f77505ba8c5).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.fortinet.com/blog/threat-research/dcrat-impersonating-the-columbian-government
+tags:
+- remote access trojan
+- obfuscation
+- credential harvesting
+- phishing
+- colombia
+- dcrat
+- persistence
+- steganography
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b0f3c7ea17875b5e1545678b3878ce268ff4bde718b66254ce01b0bb864801b8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

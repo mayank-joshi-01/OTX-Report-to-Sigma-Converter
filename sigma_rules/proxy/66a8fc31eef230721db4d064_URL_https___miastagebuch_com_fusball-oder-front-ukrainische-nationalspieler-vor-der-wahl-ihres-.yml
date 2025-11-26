@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://miastagebuch.com/fusball-oder-front-ukrainische-nationalspieler-vor-der-wahl-ihres-lebens
+id: 59678e00-66e6-43cc-bf20-f2b9d8acdef6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://miastagebuch.com/fusball-oder-front-ukrainische-nationalspieler-vor-der-wahl-ihres-lebens
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - aproveite-ultimodiaagora.site
+id: 2091d4d1-39ff-4ca0-9a0c-411197094eb6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aproveite-ultimodiaagora.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - smartlights.site
+id: 6cc081e2-65b9-4767-ba0d-ea97848675b1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smartlights.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

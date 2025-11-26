@@ -1,0 +1,20 @@
+title: OTX domain IOC - luggage-promocode.online
+id: c1ab0ac3-089b-4ea2-b5b4-1fa44c3a2b59
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luggage-promocode.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - themoneypower-max.online
+id: f53d4fe3-ee87-4db2-95fb-9c0a135e3983
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: themoneypower-max.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX hostname IOC - booking-confimraition-28732893.duckdns.org
+id: 4af9e629-4c3e-4b7f-862d-bef0a000c405
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: booking-confimraition-28732893.duckdns.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

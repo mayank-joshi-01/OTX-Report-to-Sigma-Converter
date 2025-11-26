@@ -1,0 +1,20 @@
+title: OTX domain IOC - xslecteurcdn07.click
+id: 9454b2bc-59d9-4e0d-b729-d24afa26c854
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xslecteurcdn07.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX domain IOC - noblico.net
+id: 1858c2bb-8746-4ef1-b173-1131b67e3a55
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New spyware campaigns
+  target privacy-conscious Android users in the UAE' (68dea4cbafd0a5feb49cf0bb).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://www.welivesecurity.com/en/eset-research/new-spyware-campaigns-target-privacy-conscious-android-users-uae/
+- https://github.com/eset/malware-ioc/tree/master/prospytospy
+tags:
+- data exfiltration
+- android/spy.tospy
+- signal
+- uae
+- totok
+- persistence
+- app impersonation
+- spyware
+- android/spy.prospy
+- phishing
+- android
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: noblico.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX hostname IOC - www.uvfr4ep.com
+id: e20c006e-5c0f-4d98-906e-5936ba8492f5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bookworm to Stately
+  Taurus Using the Attribution Framework' (68d54d860104d98d5199b518).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://unit42.paloaltonetworks.com/bookworm-to-stately-taurus
+tags:
+- apt
+- pubload
+- toneshell
+- infrastructure
+- china
+- southeast asia
+- victimology
+- bookworm
+- attribution
+- malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.uvfr4ep.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

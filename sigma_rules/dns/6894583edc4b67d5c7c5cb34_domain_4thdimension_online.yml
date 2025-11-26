@@ -1,0 +1,20 @@
+title: OTX domain IOC - 4thdimension.online
+id: b3b66e49-0422-488f-9d0a-0ed8898fc505
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4thdimension.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

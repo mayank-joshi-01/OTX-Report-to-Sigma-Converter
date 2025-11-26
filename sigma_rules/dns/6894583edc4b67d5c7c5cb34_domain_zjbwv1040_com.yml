@@ -1,0 +1,20 @@
+title: OTX domain IOC - zjbwv1040.com
+id: 76ef959a-9f9f-42cc-a4d8-cb83e588a99b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zjbwv1040.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

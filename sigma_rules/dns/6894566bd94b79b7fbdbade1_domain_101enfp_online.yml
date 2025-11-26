@@ -1,0 +1,20 @@
+title: OTX domain IOC - 101enfp.online
+id: a4832228-3059-4f14-8f28-aa6eae5ba751
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 101enfp.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - eef6d4b6bdf48a605cade0b517d5a51fc4f4570e505f3d8b9b66158902dcd4af
+id: 06818b98-c47c-458b-b373-c2209ed07719
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Like PuTTY in Admin's
+  Hands' (68af30b5c4033492fe0be98f).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://levelblue.com/blogs/security-essentials/like-putty-in-admins-hands
+tags:
+- kerberoasting
+- malvertising
+- oyster
+- putty
+- broomstick
+- trojanized
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: eef6d4b6bdf48a605cade0b517d5a51fc4f4570e505f3d8b9b66158902dcd4af
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

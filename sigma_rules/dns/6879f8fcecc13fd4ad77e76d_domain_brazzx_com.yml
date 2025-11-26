@@ -1,0 +1,25 @@
+title: OTX domain IOC - brazzx.com
+id: 9eac53d0-ce14-45ea-9843-a7960349d5be
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brazzx.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

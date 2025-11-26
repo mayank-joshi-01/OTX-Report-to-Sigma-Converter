@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 69af1d10dd1dacae362ab8fd4e5bcc97ddb363cdeb06a4bf1bc3db4dfc68b1e1
+id: d1ef305e-555d-4641-b5d3-1f36bdebe606
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Fix the Click: Preventing
+  the ClickFix Attack Vector'' (686ffe0f30bfbdfa037e4168).'
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://unit42.paloaltonetworks.com/preventing-clickfix-attack-vector
+tags:
+- latrodectus
+- typosquatting
+- powershell
+- clipboard hijacking
+- autoit
+- social engineering
+- clickfix
+- rat
+- infostealer
+- netsupport rat
+- lumma stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 69af1d10dd1dacae362ab8fd4e5bcc97ddb363cdeb06a4bf1bc3db4dfc68b1e1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

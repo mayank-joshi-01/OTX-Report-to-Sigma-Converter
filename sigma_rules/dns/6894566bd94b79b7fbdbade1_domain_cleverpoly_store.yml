@@ -1,0 +1,20 @@
+title: OTX domain IOC - cleverpoly.store
+id: 815e94b5-a210-44ca-ac6a-d38b02016724
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cleverpoly.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

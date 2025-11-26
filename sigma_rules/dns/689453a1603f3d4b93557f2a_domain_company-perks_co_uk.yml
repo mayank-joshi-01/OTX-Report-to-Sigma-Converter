@@ -1,0 +1,20 @@
+title: OTX domain IOC - company-perks.co.uk
+id: 2f3f87b1-4c48-4f32-a18b-bc1ca8682f95
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: company-perks.co.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

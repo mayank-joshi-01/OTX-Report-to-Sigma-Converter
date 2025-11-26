@@ -1,0 +1,20 @@
+title: OTX domain IOC - susalud28.online
+id: 22394d9c-dc87-4c99-95af-628c93d49f70
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: susalud28.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

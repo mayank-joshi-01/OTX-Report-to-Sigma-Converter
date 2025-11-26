@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - af034492ee081f65675ab4e7d7a13704430d8b65
+id: 5639bb2b-5764-4f61-9ae4-0a583db1a5ee
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ToolShell Used to
+  Compromise Telecoms Company in Middle East' (68fa481d43dd91466956c071).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.security.com/threat-intelligence/toolshell-china-zingdoor
+tags:
+- krustyloader
+- toolshell
+- warlock
+- telecoms
+- sliver
+- zingdoor
+- shadowpad
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: af034492ee081f65675ab4e7d7a13704430d8b65
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

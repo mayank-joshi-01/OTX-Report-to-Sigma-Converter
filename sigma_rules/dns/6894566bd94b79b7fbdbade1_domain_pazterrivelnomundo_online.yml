@@ -1,0 +1,20 @@
+title: OTX domain IOC - pazterrivelnomundo.online
+id: 579e216f-d09e-413c-9c69-88cf13266a59
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pazterrivelnomundo.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

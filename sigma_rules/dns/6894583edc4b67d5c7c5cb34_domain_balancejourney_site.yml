@@ -1,0 +1,20 @@
+title: OTX domain IOC - balancejourney.site
+id: 328a96d4-8fb1-4ae6-8d3f-a04e406b3883
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: balancejourney.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

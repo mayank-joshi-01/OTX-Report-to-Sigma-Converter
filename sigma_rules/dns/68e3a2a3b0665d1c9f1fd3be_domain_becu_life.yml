@@ -1,0 +1,28 @@
+title: OTX domain IOC - becu.life
+id: 29036bcb-e20e-4eaf-a30a-cb84cc062762
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: becu.life
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

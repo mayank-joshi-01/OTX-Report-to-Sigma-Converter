@@ -1,0 +1,29 @@
+title: OTX domain IOC - mostere.com
+id: 77196147-5568-4f8e-a3bf-7831581e1166
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MostereRAT Deployed
+  AnyDesk/TightVNC for Covert Full Access' (68bfb1a471409d34dfdf3279).
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.fortinet.com/blog/threat-research/mostererat-deployed-anydesk-tightvnc-for-covert-full-access
+tags:
+- mostererat
+- remote access
+- epl
+- anydesk
+- mtls
+- evasion techniques
+- phishing
+- tightvnc
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mostere.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

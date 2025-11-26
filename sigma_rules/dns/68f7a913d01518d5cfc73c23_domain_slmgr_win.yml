@@ -1,0 +1,28 @@
+title: OTX domain IOC - slmgr.win
+id: 61c00e11-dd13-4813-bb68-b7ee1c638f76
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TikTok Videos Promoting
+  Malware Installation' (68f7a913d01518d5cfc73c23).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://isc.sans.edu/diary/32380
+tags:
+- scheduled tasks
+- self-compiling
+- tiktok
+- powershell
+- social engineering
+- aurostealer
+- shellcode injection
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: slmgr.win
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

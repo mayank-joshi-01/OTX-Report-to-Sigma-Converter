@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://www.yobox.store/karma/karma.js?karma=bs?nosaj=faster.mo
+id: 2631a92b-07ce-42a6-ab52-e3d8219e5876
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CryptoJacking is
+  dead: long live CryptoJacking'' (68a5a893d0e6cf5fee6c45a2).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://cside.dev/blog/cryptojacking-is-dead-long-live-cryptojacking
+tags:
+- cryptojacking
+- webassembly
+- monero
+- stealth mining
+- web workers
+- obfuscation
+- websockets
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.yobox.store/karma/karma.js?karma=bs?nosaj=faster.mo
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

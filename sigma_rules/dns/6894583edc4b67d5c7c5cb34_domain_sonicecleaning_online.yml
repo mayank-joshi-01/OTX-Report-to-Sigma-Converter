@@ -1,0 +1,20 @@
+title: OTX domain IOC - sonicecleaning.online
+id: af95d693-56dc-4f5a-8cba-1d94614a5619
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sonicecleaning.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

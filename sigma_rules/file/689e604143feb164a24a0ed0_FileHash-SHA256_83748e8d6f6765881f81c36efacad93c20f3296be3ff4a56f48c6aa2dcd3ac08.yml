@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 83748e8d6f6765881f81c36efacad93c20f3296be3ff4a56f48c6aa2dcd3ac08
+id: a33d871d-9ea7-42d4-a387-4379f6dd09dd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'What happened in Vegas
+  (that you actually want to know about)' (689e604143feb164a24a0ed0).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.talosintelligence.com/what-happened-in-vegas-that-you-actually-want-to-know-about/
+tags:
+- cve-2025-6543
+- embedded security
+- ai guardrails
+- c#
+- powershell
+- ps1bot
+- malvertising
+- incident-response
+- black hat usa
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 83748e8d6f6765881f81c36efacad93c20f3296be3ff4a56f48c6aa2dcd3ac08
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

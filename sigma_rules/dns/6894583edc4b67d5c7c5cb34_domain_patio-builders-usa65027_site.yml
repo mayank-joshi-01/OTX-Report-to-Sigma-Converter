@@ -1,0 +1,20 @@
+title: OTX domain IOC - patio-builders-usa65027.site
+id: e3fac2ac-c5f6-46b4-946f-fd4b43d7d0a2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: patio-builders-usa65027.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

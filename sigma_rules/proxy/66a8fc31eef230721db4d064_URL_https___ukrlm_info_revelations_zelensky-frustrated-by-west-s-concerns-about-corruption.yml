@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://ukrlm.info/revelations/zelensky-frustrated-by-west-s-concerns-about-corruption
+id: 63b3a503-82bb-4160-8f7d-754b3b031f34
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://ukrlm.info/revelations/zelensky-frustrated-by-west-s-concerns-about-corruption
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

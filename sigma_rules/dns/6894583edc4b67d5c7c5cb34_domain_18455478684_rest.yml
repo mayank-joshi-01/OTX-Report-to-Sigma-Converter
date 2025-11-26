@@ -1,0 +1,20 @@
+title: OTX domain IOC - 18455478684.rest
+id: 1abbad1b-fc76-4604-9659-0ff82454c160
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 18455478684.rest
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

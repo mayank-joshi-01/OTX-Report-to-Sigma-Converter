@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 20368580a775b6f8b07be0a59cb57cb8b9b5fd8fbea41d90f4f10b9ebb588f50
+id: 1a6fb3d4-79de-4dd7-b441-c4bbd7d7dd07
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Evolution of macOS
+  Odyssey Stealer: New Techniques & Signed Malware'' (68792679d13c814d91c9c973).'
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.jamf.com/blog/signed-and-stealing-uncovering-new-insights-on-odyssey-infostealer
+tags:
+- infostealer
+- backdoor
+- cryptocurrency
+- persistence
+- amos
+- code-signing
+- notarization
+- odyssey
+- odyssey stealer
+- macos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 20368580a775b6f8b07be0a59cb57cb8b9b5fd8fbea41d90f4f10b9ebb588f50
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

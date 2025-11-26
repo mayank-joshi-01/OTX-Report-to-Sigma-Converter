@@ -1,0 +1,26 @@
+title: OTX domain IOC - cytershop.com
+id: b5787725-e666-45a6-9792-0863a7636b8d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cytershop.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

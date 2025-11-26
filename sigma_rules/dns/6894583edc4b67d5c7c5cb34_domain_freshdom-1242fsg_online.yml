@@ -1,0 +1,20 @@
+title: OTX domain IOC - freshdom-1242fsg.online
+id: 8d90abed-49a8-452c-bf6b-1c4b4afc4ba6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: freshdom-1242fsg.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

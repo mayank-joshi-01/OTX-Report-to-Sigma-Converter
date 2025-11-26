@@ -1,0 +1,20 @@
+title: OTX domain IOC - phautosolutions.online
+id: 439ce9d2-b84f-4c63-b99f-3fb090f8c92d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: phautosolutions.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

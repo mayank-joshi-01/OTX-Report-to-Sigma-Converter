@@ -1,0 +1,20 @@
+title: OTX domain IOC - nilecenter.online
+id: f8f64688-d373-4247-a90f-4a4c6fdf0115
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nilecenter.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

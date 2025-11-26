@@ -1,0 +1,30 @@
+title: OTX domain IOC - everstead.group
+id: 907c7432-e37b-4781-877b-84041ac33ddf
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LeakyInjector and
+  LeakyStealer Duo Hunts For Crypto and Browser History' (690db5a261a7a153805c2dfe).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://hybrid-analysis.blogspot.com/2025/11/leakyinjector-and-leakystealer-duo.html
+tags:
+- cryptocurrency
+- persistence
+- two-stage
+- injection
+- polymorphic
+- leakystealer
+- data-exfiltration
+- browser-history
+- leakyinjector
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: everstead.group
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

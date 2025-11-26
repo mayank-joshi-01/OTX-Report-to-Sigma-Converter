@@ -1,0 +1,20 @@
+title: OTX domain IOC - personal-loans-by0817.click
+id: b4686056-f761-4a92-99d5-b26b0aecd7b7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: personal-loans-by0817.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

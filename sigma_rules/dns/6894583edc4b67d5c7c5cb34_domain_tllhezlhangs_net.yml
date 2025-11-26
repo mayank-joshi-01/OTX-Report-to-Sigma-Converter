@@ -1,0 +1,20 @@
+title: OTX domain IOC - tllhezlhangs.net
+id: 5fbb5b98-1f23-4ca8-89c3-6cd72121d54d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tllhezlhangs.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bkkuywz1104.vip
+id: e5ba3782-7370-42d5-b0da-b83c8e876ff9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bkkuywz1104.vip
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

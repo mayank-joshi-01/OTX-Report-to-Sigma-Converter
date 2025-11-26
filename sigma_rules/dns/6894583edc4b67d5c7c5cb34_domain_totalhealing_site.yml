@@ -1,0 +1,20 @@
+title: OTX domain IOC - totalhealing.site
+id: 48e6ecc1-5c87-4d27-86f2-a2bc8dbc426e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: totalhealing.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

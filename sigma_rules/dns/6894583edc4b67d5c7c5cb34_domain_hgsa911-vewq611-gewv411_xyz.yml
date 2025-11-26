@@ -1,0 +1,20 @@
+title: OTX domain IOC - hgsa911-vewq611-gewv411.xyz
+id: 87eb4a3e-8499-42d9-82c1-862c96270383
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hgsa911-vewq611-gewv411.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

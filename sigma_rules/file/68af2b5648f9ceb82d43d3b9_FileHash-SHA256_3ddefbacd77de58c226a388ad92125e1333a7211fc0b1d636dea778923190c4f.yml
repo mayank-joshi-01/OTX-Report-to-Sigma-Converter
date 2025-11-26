@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 3ddefbacd77de58c226a388ad92125e1333a7211fc0b1d636dea778923190c4f
+id: 57a57677-4b31-421c-98ff-d651ff29645d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Price of Trust:
+  Analyzing the Malware Campaign Exploiting TASPEN''s Legacy to Target Indonesian
+  Senior Citizens'' (68af2b5648f9ceb82d43d3b9).'
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://www.cloudsek.com/blog/taspen-malware-campaign-targeting-indonesian-senior-citizens
+tags:
+- mobile malware
+- phishing
+- banking trojan
+- senior citizens
+- indonesia
+- pension fund
+- taspen
+- spyware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3ddefbacd77de58c226a388ad92125e1333a7211fc0b1d636dea778923190c4f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

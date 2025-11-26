@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://alphadogprinting.com/index.php?8jl9lz
+id: 482b4514-0eec-47c4-94ec-268ae740c940
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://alphadogprinting.com/index.php?8jl9lz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

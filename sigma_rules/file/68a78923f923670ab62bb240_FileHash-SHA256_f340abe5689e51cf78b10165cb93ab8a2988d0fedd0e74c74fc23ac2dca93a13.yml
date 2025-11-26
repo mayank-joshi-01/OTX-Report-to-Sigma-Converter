@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - f340abe5689e51cf78b10165cb93ab8a2988d0fedd0e74c74fc23ac2dca93a13
+id: 41bafdfb-5980-4c89-81d2-2a18c39c2fe2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Your Connection,
+  Their Cash: Threat Actors Misuse SDKs to Sell Your Bandwidth'' (68a78923f923670ab62bb240).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://unit42.paloaltonetworks.com/attackers-sell-your-bandwidth-using-sdks/
+tags:
+- ip address
+- jxpath
+- dart
+- cve202436401
+- geoserver
+- persistence
+- apache
+- sdk
+- CVE-2024-36401
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f340abe5689e51cf78b10165cb93ab8a2988d0fedd0e74c74fc23ac2dca93a13
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

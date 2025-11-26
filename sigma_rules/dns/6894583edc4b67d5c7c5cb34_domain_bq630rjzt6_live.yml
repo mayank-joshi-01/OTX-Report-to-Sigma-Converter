@@ -1,0 +1,20 @@
+title: OTX domain IOC - bq630rjzt6.live
+id: e8efce72-54fd-49d9-a5c3-1f171853e396
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bq630rjzt6.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://api.rivatalk.net/meta/pay.ps1
+id: b5288701-26d8-4289-9dc9-1bfff9718f09
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''When Hackers Call:
+  Social Engineering, Abusing Brave Support, and EncryptHub''s Expanding Arsenal''
+  (689e4e005893bc49a76dc3e5).'
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/when-hackers-call-social-engineering-abusing-brave-support-and-encrypthubs-expanding-arsenal
+tags:
+- cve-2025-26633
+- socks5 proxy
+- golang
+- fickle stealer
+- social engineering
+- powershell
+- silentcrystal
+- rivatalk
+- brave support
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://api.rivatalk.net/meta/pay.ps1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - tradostw.com
+id: 9ded80ba-c9f4-4698-ae64-bc4365bc13c4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT24  Pivot to Multi-Vector
+  Attacks' (691f6f351b8c5d05831416d7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/apt24-pivot-to-multi-vector-attacks
+tags:
+- badaudio
+- phishing
+- obfuscation
+- cobalt strike
+- cobalt strike beacon
+- china
+- strategic web compromise
+- cyber espionage
+- supply chain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tradostw.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - escuelalucrativa.online
+id: 21b2edb1-ae59-4ff6-9f7b-b6e5d5f7a2ed
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: escuelalucrativa.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

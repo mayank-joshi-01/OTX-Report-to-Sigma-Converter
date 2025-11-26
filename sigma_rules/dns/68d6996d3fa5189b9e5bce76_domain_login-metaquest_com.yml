@@ -1,0 +1,24 @@
+title: OTX domain IOC - login-metaquest.com
+id: 5778495b-24c1-425f-91e0-2c43c7b18266
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: login-metaquest.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

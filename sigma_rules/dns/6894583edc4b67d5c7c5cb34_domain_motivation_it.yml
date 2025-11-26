@@ -1,0 +1,20 @@
+title: OTX domain IOC - motivation.it
+id: ab130d9f-3425-44c5-a782-de81c14779ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: motivation.it
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

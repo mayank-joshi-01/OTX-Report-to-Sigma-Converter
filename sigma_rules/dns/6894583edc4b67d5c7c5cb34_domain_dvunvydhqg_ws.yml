@@ -1,0 +1,20 @@
+title: OTX domain IOC - dvunvydhqg.ws
+id: 0c32596e-c75f-4c66-9afe-9d3c34bcd242
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dvunvydhqg.ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

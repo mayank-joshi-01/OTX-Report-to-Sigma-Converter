@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - a54fd38b7c6e421a7a0c68e763b69fcb
+id: 0bf703df-2f3f-4335-825c-5689b9b411d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From a Teams Call
+  to a Ransomware Threat: Matanbuchus 3.0 MaaS Levels Up'' (687a0d5dc93942c183eddbf5).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up
+tags:
+- Matanbuchus
+- MaaS
+- ransomware
+- Microsoft Teams
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a54fd38b7c6e421a7a0c68e763b69fcb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

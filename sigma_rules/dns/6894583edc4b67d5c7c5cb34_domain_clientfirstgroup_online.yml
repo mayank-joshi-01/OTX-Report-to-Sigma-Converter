@@ -1,0 +1,20 @@
+title: OTX domain IOC - clientfirstgroup.online
+id: 5418dae9-749f-4617-8e26-6c0795cc84b1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clientfirstgroup.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

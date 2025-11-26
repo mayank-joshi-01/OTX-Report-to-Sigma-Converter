@@ -1,0 +1,20 @@
+title: OTX domain IOC - bulldogmailing.com
+id: 541f9566-2078-4823-9ae8-be4fc227566f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bulldogmailing.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

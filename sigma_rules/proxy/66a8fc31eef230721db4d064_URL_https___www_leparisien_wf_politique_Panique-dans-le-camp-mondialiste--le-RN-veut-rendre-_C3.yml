@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.leparisien.wf/politique/Panique-dans-le-camp-mondialiste--le-RN-veut-rendre-%C3%A0-la-France-son-ind%C3%A9pendance-24-06-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+id: cd5aef11-569f-4d4e-a774-a51966ac1088
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.leparisien.wf/politique/Panique-dans-le-camp-mondialiste--le-RN-veut-rendre-%C3%A0-la-France-son-ind%C3%A9pendance-24-06-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

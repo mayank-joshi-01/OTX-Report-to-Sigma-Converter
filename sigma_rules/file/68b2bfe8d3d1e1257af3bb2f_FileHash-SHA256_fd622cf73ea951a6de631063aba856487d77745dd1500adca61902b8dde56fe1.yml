@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - fd622cf73ea951a6de631063aba856487d77745dd1500adca61902b8dde56fe1
+id: 26d7b89b-ee65-474f-a59a-0ca1d2d2aa51
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From a Fake AnyDesk
+  Installer to MetaStealer' (68b2bfe8d3d1e1257af3bb2f).
+author: AlienVault
+date: '2025-08-30'
+references:
+- https://www.huntress.com/blog/fake-anydesk-clickfix-metastealer-malware
+tags:
+- windows file explorer
+- social engineering
+- clickfix
+- filefix
+- anydesk
+- metastealer
+- cloudflare turnstile
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fd622cf73ea951a6de631063aba856487d77745dd1500adca61902b8dde56fe1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

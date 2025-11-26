@@ -1,0 +1,20 @@
+title: OTX domain IOC - lembrandodeantigamente.online
+id: 5f375541-5ae1-421f-9500-579f8b5bc296
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lembrandodeantigamente.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

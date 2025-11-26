@@ -1,0 +1,20 @@
+title: OTX domain IOC - eliteframesolutions.online
+id: 98e1c28f-9683-463f-99fe-90a377f24321
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eliteframesolutions.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

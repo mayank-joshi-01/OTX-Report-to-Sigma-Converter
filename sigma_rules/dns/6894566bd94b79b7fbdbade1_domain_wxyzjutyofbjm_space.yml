@@ -1,0 +1,20 @@
+title: OTX domain IOC - wxyzjutyofbjm.space
+id: c85b7b29-6425-4b68-9c2c-981d8266efb0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wxyzjutyofbjm.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

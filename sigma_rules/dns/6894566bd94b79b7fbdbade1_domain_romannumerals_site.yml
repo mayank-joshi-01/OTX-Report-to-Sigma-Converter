@@ -1,0 +1,20 @@
+title: OTX domain IOC - romannumerals.site
+id: 3472d006-fe16-424e-9ffd-876af4d62a2f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: romannumerals.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

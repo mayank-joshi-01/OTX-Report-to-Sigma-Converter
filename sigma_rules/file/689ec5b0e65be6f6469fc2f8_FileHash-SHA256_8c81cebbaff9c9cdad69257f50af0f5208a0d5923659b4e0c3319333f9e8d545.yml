@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 8c81cebbaff9c9cdad69257f50af0f5208a0d5923659b4e0c3319333f9e8d545
+id: 7c18e417-83aa-43a5-a093-c96ead15130d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ERMAC V3.0 Banking
+  Trojan: Full Source Code Leak and Infrastructure Analysis'' (689ec5b0e65be6f6469fc2f8).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://hunt.io/blog/ermac-v3-banking-trojan-source-code-leak
+tags:
+- banking trojan
+- exfiltration server
+- c2 backend
+- cerberus
+- android malware
+- source code leak
+- encrypted communications
+- infrastructure analysis
+- form injection
+- ermac
+- malware-as-a-service
+- hook
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8c81cebbaff9c9cdad69257f50af0f5208a0d5923659b4e0c3319333f9e8d545
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

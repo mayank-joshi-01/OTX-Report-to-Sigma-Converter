@@ -1,0 +1,29 @@
+title: OTX hostname IOC - scrivinlinfer.medicinatramp.icu
+id: db92c71d-e8b6-4d77-bd99-19899a7757b7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: scrivinlinfer.medicinatramp.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

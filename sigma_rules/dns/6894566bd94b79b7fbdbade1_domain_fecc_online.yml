@@ -1,0 +1,20 @@
+title: OTX domain IOC - fecc.online
+id: 123ca767-7573-4504-bb29-e2ed780f35db
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fecc.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - zheltzyvv.cn
+id: b210b26d-e371-4574-8242-8286326d2a06
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zheltzyvv.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

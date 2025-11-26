@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.fox-news.in/world/US-Is-Stuck-in-Europe-It's-Time-to-Get-Out.html
+id: 812b0f72-c445-499a-86a4-1e3884818d2d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.fox-news.in/world/US-Is-Stuck-in-Europe-It's-Time-to-Get-Out.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

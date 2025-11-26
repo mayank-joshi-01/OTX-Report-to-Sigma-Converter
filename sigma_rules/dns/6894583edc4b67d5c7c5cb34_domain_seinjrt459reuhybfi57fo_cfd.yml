@@ -1,0 +1,20 @@
+title: OTX domain IOC - seinjrt459reuhybfi57fo.cfd
+id: 6cb51454-e810-4fc2-b793-b61e950d6f7e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: seinjrt459reuhybfi57fo.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

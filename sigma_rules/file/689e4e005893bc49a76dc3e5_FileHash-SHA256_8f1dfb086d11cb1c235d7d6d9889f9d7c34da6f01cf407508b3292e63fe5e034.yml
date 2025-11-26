@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 8f1dfb086d11cb1c235d7d6d9889f9d7c34da6f01cf407508b3292e63fe5e034
+id: c779673a-831f-4fb5-9988-7d1f33d8f86f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''When Hackers Call:
+  Social Engineering, Abusing Brave Support, and EncryptHub''s Expanding Arsenal''
+  (689e4e005893bc49a76dc3e5).'
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/when-hackers-call-social-engineering-abusing-brave-support-and-encrypthubs-expanding-arsenal
+tags:
+- cve-2025-26633
+- socks5 proxy
+- golang
+- fickle stealer
+- social engineering
+- powershell
+- silentcrystal
+- rivatalk
+- brave support
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8f1dfb086d11cb1c235d7d6d9889f9d7c34da6f01cf407508b3292e63fe5e034
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

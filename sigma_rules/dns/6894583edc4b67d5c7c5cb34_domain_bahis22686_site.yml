@@ -1,0 +1,20 @@
+title: OTX domain IOC - bahis22686.site
+id: 4a06b191-234e-4e66-af1a-284d3e4228b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bahis22686.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

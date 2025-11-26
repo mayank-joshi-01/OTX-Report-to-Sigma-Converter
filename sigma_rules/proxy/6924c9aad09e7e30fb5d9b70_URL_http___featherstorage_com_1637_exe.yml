@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://featherstorage.com/1637.exe
+id: 657c92d1-fbef-476c-8ba9-491f018b80e1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Stories from the
+  SOC: Mystery of the postponed proxyware install'' (6924c9aad09e7e30fb5d9b70).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://expel.com/blog/stories-from-the-soc-mystery-of-the-postponed-proxyware-install
+tags:
+- download cradle
+- node.js
+- unauthorized software
+- in-memory execution
+- c2 server
+- disk-cleaning utility
+- proxyware
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://featherstorage.com/1637.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

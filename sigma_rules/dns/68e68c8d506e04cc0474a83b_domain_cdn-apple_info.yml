@@ -1,0 +1,33 @@
+title: OTX domain IOC - cdn-apple.info
+id: 6686d391-a63c-4f3e-827d-ccc2aa547a73
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT Meets GPT: Targeted
+  Operations with Untamed LLMs'' (68e68c8d506e04cc0474a83b).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.volexity.com/blog/2025/10/08/apt-meets-gpt-targeted-operations-with-untamed-llms/
+tags:
+- uta0388
+- govershell
+- llms
+- powershell
+- randomdir8char
+- websocket
+- persistence
+- govershell c2
+- archive file
+- zip
+- rar
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cdn-apple.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

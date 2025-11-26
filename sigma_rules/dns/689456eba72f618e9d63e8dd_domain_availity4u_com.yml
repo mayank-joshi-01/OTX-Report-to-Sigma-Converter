@@ -1,0 +1,20 @@
+title: OTX domain IOC - availity4u.com
+id: c080eeb1-73ae-4735-9970-8a8720e0f1e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: availity4u.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

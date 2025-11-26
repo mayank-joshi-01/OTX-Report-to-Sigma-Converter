@@ -1,0 +1,20 @@
+title: OTX domain IOC - srx8340.click
+id: c0dfc589-cc9d-43a8-b450-05ac1d067709
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: srx8340.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

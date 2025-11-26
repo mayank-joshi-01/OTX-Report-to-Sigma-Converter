@@ -1,0 +1,20 @@
+title: OTX domain IOC - extranet-login65784.com
+id: 9c8d1ef7-ba39-406a-a6fe-3083ad905a73
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: extranet-login65784.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

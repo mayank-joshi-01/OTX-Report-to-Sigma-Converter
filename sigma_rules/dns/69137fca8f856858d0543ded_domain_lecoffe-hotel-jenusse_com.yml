@@ -1,0 +1,25 @@
+title: OTX domain IOC - lecoffe-hotel-jenusse.com
+id: 41bd4e10-eb0b-41e2-887f-417a26a6ce4f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Thousands of Fake
+  Hotel Domains Used in Massive Phishing Campaign' (69137fca8f856858d0543ded).
+author: AlienVault
+date: '2025-11-11'
+references:
+- https://www.netcraft.com/blog/thousands-of-domains-target-hotel-guests-in-massive-phishing-campaign
+- https://raw.githubusercontent.com/netcraftcom/public-iocs/refs/heads/main/2025-11%20hotel%20phishing%20IOCs.csv
+tags:
+- phishing
+- domain registration
+- malspam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lecoffe-hotel-jenusse.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

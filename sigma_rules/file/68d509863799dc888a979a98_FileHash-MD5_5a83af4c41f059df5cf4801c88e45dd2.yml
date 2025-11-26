@@ -1,0 +1,36 @@
+title: OTX FileHash-MD5 IOC - 5a83af4c41f059df5cf4801c88e45dd2
+id: a7d94593-992c-4096-b898-54fa90dc0c49
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SystemBC – Bringing
+  the Noise' (68d509863799dc888a979a98).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://blog.lumen.com/systembc-bringing-the-noise
+tags:
+- icedid
+- vps
+- cybercrime
+- ransomware
+- proxy
+- botnet
+- avoslocker
+- ngioweb
+- rem proxy
+- morpheus
+- trickbot
+- transferloader
+- malicious traffic
+- infrastructure
+- systembc
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 5a83af4c41f059df5cf4801c88e45dd2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

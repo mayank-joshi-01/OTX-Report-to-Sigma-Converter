@@ -1,0 +1,20 @@
+title: OTX domain IOC - bigcuan188.online
+id: 8b989830-98fc-49b9-9e5d-86db3ff6b77d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bigcuan188.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - cc7cd6f43f862528fc1ec72cbb17fe040eec61f1e84118c73ec586fd634c538d
+id: 89146667-cf1a-4e0d-b0be-7ca357a07c68
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Rust Malware "ChaosBot"
+  Uses Discord for Command and...' (68ee0bf5e7169d315b09a22c).
+author: AlienVault
+date: '2025-10-14'
+references:
+- https://www.esentire.com/blog/new-rust-malware-chaosbot-uses-discord-for-command-and-control
+tags:
+- rust
+- discord
+- evasion
+- command and control
+- chaosbot
+- backdoor
+- vietnam
+- reconnaissance
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: cc7cd6f43f862528fc1ec72cbb17fe040eec61f1e84118c73ec586fd634c538d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

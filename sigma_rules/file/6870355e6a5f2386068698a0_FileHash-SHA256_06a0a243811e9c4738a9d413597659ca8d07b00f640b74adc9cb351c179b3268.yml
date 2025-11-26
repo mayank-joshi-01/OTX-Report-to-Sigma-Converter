@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 06a0a243811e9c4738a9d413597659ca8d07b00f640b74adc9cb351c179b3268
+id: e3ae02e8-72cb-47af-87ad-a8daaa988650
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deploying NetSupport
+  RAT via WordPress & ClickFix' (6870355e6a5f2386068698a0).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://www.cybereason.com/blog/net-support-rat-wordpress-clickfix/
+tags:
+- post-exploitation
+- netsupport rat
+- fake captcha
+- dom manipulation
+- phishing
+- wordpress
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 06a0a243811e9c4738a9d413597659ca8d07b00f640b74adc9cb351c179b3268
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

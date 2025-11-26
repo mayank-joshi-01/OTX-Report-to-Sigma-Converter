@@ -1,0 +1,20 @@
+title: OTX domain IOC - pvyce.ws
+id: 8f0eecfa-908d-43e4-a8bb-7161e04ba488
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pvyce.ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

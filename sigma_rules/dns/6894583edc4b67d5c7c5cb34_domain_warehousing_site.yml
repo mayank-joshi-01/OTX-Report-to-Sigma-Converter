@@ -1,0 +1,20 @@
+title: OTX domain IOC - warehousing.site
+id: 7ccb6102-8ca1-4155-b475-6a5e832b85f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: warehousing.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

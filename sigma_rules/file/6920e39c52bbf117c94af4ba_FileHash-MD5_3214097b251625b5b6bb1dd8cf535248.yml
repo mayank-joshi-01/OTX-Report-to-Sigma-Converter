@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 3214097b251625b5b6bb1dd8cf535248
+id: 3c0c4fe0-8b6d-475d-8d3b-936b13b9201b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT-C-26
+  (Lazarus) Group's Attack Campaign Using Remote IT Disguise to Deploy Monitoring
+  Software' (6920e39c52bbf117c94af4ba).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://mp.weixin.qq.com/s/YzDg8MXiV6FhsiF7HWth4A?poc_token=HCzjIGmjFYvbkuW9wrpXCkYm_Yh3Ojib9Gv6B97t
+tags:
+- systemuiext.dll
+- remote desktop
+- apt
+- north korea
+- persistence
+- winupdateservice.exe
+- remote it
+- monitorinstaller_update1.exe
+- screen capture
+- monitoring software
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 3214097b251625b5b6bb1dd8cf535248
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

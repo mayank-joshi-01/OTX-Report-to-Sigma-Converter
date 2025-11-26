@@ -1,0 +1,20 @@
+title: OTX domain IOC - saclub999s.online
+id: 22df4698-3c7b-4c52-b4df-b33a5434dbe2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saclub999s.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - voerou.top
+id: 71b51879-6aec-4b2d-9f7f-954a5bbd5d43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: voerou.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

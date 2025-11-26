@@ -1,0 +1,20 @@
+title: OTX domain IOC - brain-teaser-puzzles.online
+id: 18edd39e-73be-4231-b43e-fe1f6c53ae06
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brain-teaser-puzzles.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

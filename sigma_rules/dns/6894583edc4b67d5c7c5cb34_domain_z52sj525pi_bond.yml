@@ -1,0 +1,20 @@
+title: OTX domain IOC - z52sj525pi.bond
+id: 227d6d43-60d9-45c5-ab81-14b688a894f0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: z52sj525pi.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

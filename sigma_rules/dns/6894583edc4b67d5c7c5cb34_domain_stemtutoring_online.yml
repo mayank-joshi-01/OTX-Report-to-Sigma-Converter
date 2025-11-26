@@ -1,0 +1,20 @@
+title: OTX domain IOC - stemtutoring.online
+id: a77b634c-66d2-4b99-aa5a-76b8c9063248
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stemtutoring.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

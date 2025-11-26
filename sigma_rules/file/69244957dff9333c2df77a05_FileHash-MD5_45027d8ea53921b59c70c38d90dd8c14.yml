@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 45027d8ea53921b59c70c38d90dd8c14
+id: 58e53fd9-d276-49bd-b95f-15f485f3f657
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Brazilian Campaign:
+  Spreading the Malware via WhatsApp'' (69244957dff9333c2df77a05).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://labs.k7computing.com/index.php/brazilian-campaign-spreading-the-malware-via-whatsapp/
+tags:
+- selenium
+- whatsapp
+- banking trojan
+- in-memory execution
+- brazil
+- autoit
+- phishing
+- water-saci
+- sorvepotel
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 45027d8ea53921b59c70c38d90dd8c14
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

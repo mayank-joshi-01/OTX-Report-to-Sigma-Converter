@@ -1,0 +1,20 @@
+title: OTX domain IOC - lawyer679.fun
+id: 07eaa088-f65f-4951-85f3-d6727b35c607
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lawyer679.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

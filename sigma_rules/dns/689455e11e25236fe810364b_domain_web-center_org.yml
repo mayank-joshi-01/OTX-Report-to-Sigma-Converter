@@ -1,0 +1,20 @@
+title: OTX domain IOC - web-center.org
+id: 8cad41dd-3174-4327-91af-f9ae375375ac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: web-center.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

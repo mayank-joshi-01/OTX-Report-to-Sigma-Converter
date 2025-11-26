@@ -1,0 +1,20 @@
+title: OTX domain IOC - new-renovation-builders.online
+id: 2ab9ba24-6c58-463a-9e93-1285380da785
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: new-renovation-builders.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

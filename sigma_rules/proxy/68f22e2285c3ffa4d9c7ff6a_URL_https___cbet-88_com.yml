@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://cbet-88.com
+id: 7e79e8f1-1597-497b-bf3e-9f8f3b1396f8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://cbet-88.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

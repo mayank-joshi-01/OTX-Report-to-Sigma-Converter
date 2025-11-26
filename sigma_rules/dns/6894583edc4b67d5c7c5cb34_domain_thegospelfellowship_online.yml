@@ -1,0 +1,20 @@
+title: OTX domain IOC - thegospelfellowship.online
+id: 34c41722-c2e2-40dc-beb1-ed3992626bc3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thegospelfellowship.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 1612ab799df51a7f1169d3f47ea129356b42c8ad81286d05b0256f80c17d4089
+id: 3eb8f9d5-2641-4aea-b28b-76d93d7b2aec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The First AI-Powered
+  Ransomware & How It Works' (68b1adfad2b4f175757d71b2).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.welivesecurity.com/en/ransomware/first-known-ai-powered-ransomware-uncovered-eset-research/
+tags:
+- proof-of-concept
+- speck encryption
+- filesystem scanning
+- dynamic ransom notes
+- ai-powered
+- ransomware
+- cross-platform
+- promptlock
+- ollama api
+- lua scripts
+- go language
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1612ab799df51a7f1169d3f47ea129356b42c8ad81286d05b0256f80c17d4089
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

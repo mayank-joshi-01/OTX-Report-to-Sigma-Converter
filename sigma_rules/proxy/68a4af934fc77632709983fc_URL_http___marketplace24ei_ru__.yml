@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://marketplace24ei.ru//
+id: 04173a01-4dd3-4cf3-ae46-669d1e5ee3d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Salty 2FA: Undetected
+  PhaaS Hitting US and EU Industries'' (68a4af934fc77632709983fc).'
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://any.run/cybersecurity-blog/salty2fa-technical-analysis
+tags:
+- salty 2fa
+- storm-1575
+- domain pattern
+- behavioral detection
+- 2fa bypass
+- multi-stage execution
+- phaas
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://marketplace24ei.ru//
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - asphaltpaving-nwvrtx-bc7-asl-us-eng-4.shop
+id: 07349185-4829-4e3e-aea6-2b826cd14a84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asphaltpaving-nwvrtx-bc7-asl-us-eng-4.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

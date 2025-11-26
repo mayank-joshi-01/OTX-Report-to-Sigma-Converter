@@ -1,0 +1,20 @@
+title: OTX domain IOC - officemark.net
+id: 57d8b44d-3942-4035-a868-2fafcad55313
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: officemark.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

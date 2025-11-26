@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 2ac5303ddb97d67e2230c7f2061d82e1
+id: 735ae3c3-1c00-4bf4-ac0c-dc69419a7c43
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android Malware Posing
+  As Indian Bank Apps' (68835c6fda683e2a665d5722).
+author: AlienVault
+date: '2025-07-25'
+references:
+- https://www.cyfirma.com/research/android-malware-posing-as-indian-bank-apps
+tags:
+- call-forwarding
+- banking
+- sms-interception
+- android
+- firebase
+- trojan
+- credential-theft
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2ac5303ddb97d67e2230c7f2061d82e1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

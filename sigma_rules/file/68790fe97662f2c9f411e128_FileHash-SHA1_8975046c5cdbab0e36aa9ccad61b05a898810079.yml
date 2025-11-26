@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA1 IOC - 8975046c5cdbab0e36aa9ccad61b05a898810079
+id: 69b1d3cb-6763-4152-a98d-a4ebffb19640
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MaaS operation using
+  Emmenhtal and Amadey linked to threats against Ukrainian entities' (68790fe97662f2c9f411e128).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://blog.talosintelligence.com/maas-operation-using-emmenhtal-and-amadey-linked-to-threats-against-ukrainian-entities/
+- https://github.com/Cisco-Talos/IOCs/blob/main/2025/07/maas-operation-using-emmenhtal-and-amadey.txt
+tags:
+- github
+- downloader
+- redline
+- amadey
+- obfuscation
+- lumma
+- asyncrat
+- smokeloader
+- maas
+- phishing
+- emmenhtal
+- ukraine
+- rhadamanthys
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 8975046c5cdbab0e36aa9ccad61b05a898810079
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - mges-ural.online
+id: efc614b6-2796-4c42-9a1d-3affd1265e99
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mges-ural.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

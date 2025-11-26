@@ -1,0 +1,20 @@
+title: OTX domain IOC - aptna-crypto.com
+id: e1306fa1-1764-4ce8-9180-d9855c545e4e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aptna-crypto.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

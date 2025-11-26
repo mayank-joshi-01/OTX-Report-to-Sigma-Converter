@@ -1,0 +1,20 @@
+title: OTX domain IOC - yardbombsgone.com
+id: 4c842f90-5c1e-4de2-94ed-e06136aa431f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yardbombsgone.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

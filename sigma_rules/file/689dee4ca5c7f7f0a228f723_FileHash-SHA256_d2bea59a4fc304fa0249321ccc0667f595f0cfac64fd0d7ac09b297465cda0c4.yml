@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - d2bea59a4fc304fa0249321ccc0667f595f0cfac64fd0d7ac09b297465cda0c4
+id: 7ec8a961-8bd2-4926-a9e0-ed1a6788b15b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Mega Malware Analysis
+  Tutorial Featuring Donut-Generated Shellcode' (689dee4ca5c7f7f0a228f723).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://unit42.paloaltonetworks.com/donut-malware-analysis-tutorial/
+tags:
+- x64dbg
+- malware analysis
+- shellcode
+- reverse engineering
+- dynamic analysis
+- static analysis
+- donut
+- ida pro
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d2bea59a4fc304fa0249321ccc0667f595f0cfac64fd0d7ac09b297465cda0c4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

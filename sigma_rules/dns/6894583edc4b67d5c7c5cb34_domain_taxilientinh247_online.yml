@@ -1,0 +1,20 @@
+title: OTX domain IOC - taxilientinh247.online
+id: cfbcb496-df24-4005-9c2a-b64e14fde7eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: taxilientinh247.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

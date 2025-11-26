@@ -1,0 +1,32 @@
+title: OTX hostname IOC - w3c.sneaws.com
+id: 3470fc4b-db04-46ed-8c78-3278d28228c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''WEBJACK: Evolving
+  IIS Hijacking Campaign Abuses SEO for Fraud and Monetization'' (691d87825037189199f53698).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://labs.withsecure.com/publications/webjack
+tags:
+- badiis
+- latin america
+- chinese threat actor
+- xlanyloader
+- iis hijacking
+- seo poisoning
+- southeast asia
+- m0yv
+- cobalt strike
+- iis modules
+- gambling redirection
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: w3c.sneaws.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

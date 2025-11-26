@@ -1,0 +1,20 @@
+title: OTX domain IOC - melbournescootermechanic.online
+id: 7daeb923-17d4-4b3d-9765-5e0031653e3a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: melbournescootermechanic.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - window-cleaning-jobs-17605.bond
+id: 276f6d48-09c0-43b6-bde2-43e598da41a7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: window-cleaning-jobs-17605.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - y4u53rt453tr453y453es.top
+id: 399dd513-12bc-43de-8a15-531e6576e281
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y4u53rt453tr453y453es.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

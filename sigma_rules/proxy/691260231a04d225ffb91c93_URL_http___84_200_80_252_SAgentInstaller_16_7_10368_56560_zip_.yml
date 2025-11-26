@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://84.200.80.252/SAgentInstaller_16.7.10368.56560.zip'
+id: 1554ba9a-e4db-4663-a0ed-05f4251e26ab
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unauthenticated Remote
+  Access via Triofox Vulnerability CVE-2025-12480' (691260231a04d225ffb91c93).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/triofox-vulnerability-cve-2025-12480
+tags:
+- anti-virus abuse
+- file-sharing
+- cve-2025-12480
+- triofox
+- remote access
+- unauthenticated access
+- host header attack
+- privilege escalation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://84.200.80.252/SAgentInstaller_16.7.10368.56560.zip'
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

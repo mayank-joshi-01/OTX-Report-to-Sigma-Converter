@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://albacosmeticos.shop/
+id: a45eb609-74ce-40cb-bc60-287dd0f28853
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://albacosmeticos.shop/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

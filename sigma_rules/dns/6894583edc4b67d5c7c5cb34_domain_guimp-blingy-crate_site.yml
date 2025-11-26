@@ -1,0 +1,20 @@
+title: OTX domain IOC - guimp-blingy-crate.site
+id: 5b42d584-b5d5-4db7-98b1-86fb8bc99631
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guimp-blingy-crate.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

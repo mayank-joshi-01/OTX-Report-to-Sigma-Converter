@@ -1,0 +1,36 @@
+title: OTX FileHash-MD5 IOC - ffa24cb3547347a9b442d8015bf56f82
+id: 146b1506-9f7d-45ad-8027-a0e9fd42e173
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'August Vulnerabilities
+  of Note' (68c8542d707c703692b65d8f).
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.recordedfuture.com/blog/august-2025-cve-landscape
+tags:
+- command injection
+- cve-2025-20265
+- remote code execution
+- cve-2025-25256
+- cve-2025-8875
+- snipbot
+- patch management
+- cve-2025-8876
+- mythic c2 agent
+- deserialization
+- exploitation
+- cve-2025-8088
+- cve-2025-7775
+- rustyclaw
+- vulnerability
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ffa24cb3547347a9b442d8015bf56f82
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - fasshionworld.online
+id: 0a300117-d2c6-4a4c-b2cf-01c5fc450d5f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fasshionworld.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

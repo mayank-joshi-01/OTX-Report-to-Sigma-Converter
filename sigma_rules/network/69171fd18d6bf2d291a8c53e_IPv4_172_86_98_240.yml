@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 172.86.98.240
+id: f7f90cbd-fba4-4610-b03f-0835a9d20a8e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  Actors Now Utilize JSON Storage Services for Malware Delivery' (69171fd18d6bf2d291a8c53e).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://blog.nviso.eu/2025/11/13/contagious-interview-actors-now-utilize-json-storage-services-for-malware-delivery/
+tags:
+- ottercookie
+- json storage
+- tsunami payload
+- web3
+- social engineering
+- rat
+- north korea
+- infostealer
+- cryptocurrency
+- invisibleferret
+- trojanized code
+- beavertail
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 172.86.98.240
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 87118baadfa7075d7b9d2aff75d8e730
+id: 2e1d3b0d-a998-41aa-b493-5f9142fad327
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Beyond Signatures:
+  Detecting Lumma Stealer with an ML-Powered Sandbox'' (68d5ce750be50aef2715a20b).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.netskope.com/blog/beyond-signatures-detecting-lumma-stealer-with-an-ml-powered-sandbox
+tags:
+- evasion techniques
+- sandbox
+- anti-analysis
+- lumma stealer
+- nsis
+- machine learning
+- autoit
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 87118baadfa7075d7b9d2aff75d8e730
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

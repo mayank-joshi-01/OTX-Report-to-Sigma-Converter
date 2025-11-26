@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://derleitstern.com/prognosen-und-vorhersagen/neue-umstrukturierungen-im-militarapparat-der-ukraine
+id: bdd60c76-561b-4777-b479-d7e56f5a940b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://derleitstern.com/prognosen-und-vorhersagen/neue-umstrukturierungen-im-militarapparat-der-ukraine
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

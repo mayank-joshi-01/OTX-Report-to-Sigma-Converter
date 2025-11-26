@@ -1,0 +1,20 @@
+title: OTX domain IOC - onein5000foundation.online
+id: 0b44e98e-fa25-4a23-b05e-97aab63ec0a8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onein5000foundation.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

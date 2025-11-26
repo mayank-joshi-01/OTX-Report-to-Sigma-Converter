@@ -1,0 +1,20 @@
+title: OTX domain IOC - esencianaturalstore.store
+id: fa6f3379-65e3-4554-95e5-5d4bb9a1918a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: esencianaturalstore.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

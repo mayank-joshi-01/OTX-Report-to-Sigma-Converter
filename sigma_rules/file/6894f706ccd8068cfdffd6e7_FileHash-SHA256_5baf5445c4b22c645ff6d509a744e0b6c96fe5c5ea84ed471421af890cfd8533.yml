@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - 5baf5445c4b22c645ff6d509a744e0b6c96fe5c5ea84ed471421af890cfd8533
+id: 110c4cf2-ab4e-49dd-a4ea-a5e835d772fe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Shared secret: EDR
+  killer in the kill chain'' (6894f706ccd8068cfdffd6e7).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://news.sophos.com/en-us/2025/08/06/shared-secret-edr-killer-in-the-kill-chain/
+tags:
+- ransomware
+- inc
+- ransomhub
+- blacksuit
+- medusalocker
+- dragonforce
+- qilin
+- crytox
+- lynx
+- driver
+- compromise
+- avkiller
+- threat-sharing
+- edr
+- heartcrypt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5baf5445c4b22c645ff6d509a744e0b6c96fe5c5ea84ed471421af890cfd8533
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

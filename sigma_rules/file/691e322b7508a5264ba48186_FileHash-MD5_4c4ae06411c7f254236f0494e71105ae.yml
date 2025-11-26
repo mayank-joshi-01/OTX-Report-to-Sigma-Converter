@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 4c4ae06411c7f254236f0494e71105ae
+id: a4827027-be84-4f25-8287-ee5f3328fe8c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PlushDaemon compromises
+  network devices for adversary-in-the-middle attacks' (691e322b7508a5264ba48186).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-network-devices-for-adversary-in-the-middle-attacks
+tags:
+- slowstepper
+- apt
+- china
+- littledaemon
+- software update hijacking
+- adversary-in-the-middle
+- edgestepper
+- espionage
+- network implant
+- dns hijacking
+- daemoniclogistics
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 4c4ae06411c7f254236f0494e71105ae
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

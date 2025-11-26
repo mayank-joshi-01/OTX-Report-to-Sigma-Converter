@@ -1,0 +1,28 @@
+title: OTX domain IOC - clarvexa.icu
+id: 05771daa-8137-4fe1-a658-992a824b3806
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clarvexa.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

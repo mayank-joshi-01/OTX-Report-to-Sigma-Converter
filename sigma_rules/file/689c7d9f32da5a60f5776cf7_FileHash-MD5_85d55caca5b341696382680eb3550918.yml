@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 85d55caca5b341696382680eb3550918
+id: 074362d8-9ff9-47e5-a096-012f4f809221
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Watcher:
+  Dissecting Cmimai Stealer''s VBS Payload'' (689c7d9f32da5a60f5776cf7).'
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://labs.k7computing.com/index.php/silent-watcher-dissecting-cmimai-stealers-vbs-payload
+tags:
+- vbs
+- infostealer
+- powershell
+- discord
+- browser-data
+- wmi
+- exfiltration
+- windows
+- screenshot
+- cmimai stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 85d55caca5b341696382680eb3550918
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

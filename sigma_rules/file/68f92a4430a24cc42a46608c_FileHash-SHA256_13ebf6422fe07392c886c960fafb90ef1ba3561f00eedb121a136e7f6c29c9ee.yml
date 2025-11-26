@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 13ebf6422fe07392c886c960fafb90ef1ba3561f00eedb121a136e7f6c29c9ee
+id: 5db1acff-5bb8-4929-906f-f9eb8c224e1b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IIS servers owned
+  by RudePanda like it's 2003' (68f92a4430a24cc42a46608c).
+author: AlienVault
+date: '2025-10-22'
+references:
+- https://harfanglab.io/insidethelab/rudepanda-owns-iis-servers-like-2003
+tags:
+- remote command execution
+- rootkit
+- wingtbcli
+- hijackserver
+- asp .net
+- iis
+- cryptocurrency
+- hijackdrivermanager
+- seo
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 13ebf6422fe07392c886c960fafb90ef1ba3561f00eedb121a136e7f6c29c9ee
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

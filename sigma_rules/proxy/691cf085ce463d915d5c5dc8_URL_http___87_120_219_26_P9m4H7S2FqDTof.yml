@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://87.120.219.26/P9m4H7S2FqDTof
+id: ae51a395-6bae-4f78-9206-b78e09ec07aa
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'EVALUSION Campaign
+  Delivers Amatera Stealer and NetSupport...' (691cf085ce463d915d5c5dc8).
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://www.esentire.com/blog/evalusion-campaign-delivers-amatera-stealer-and-netsupport-rat
+tags:
+- crypto-wallets
+- evasion techniques
+- information theft
+- amatera stealer
+- acr stealer
+- clickfix
+- netsupport rat
+- c2 communication
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://87.120.219.26/P9m4H7S2FqDTof
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - telegpwxq.motorcycles
+id: 34dc10b6-bbd2-4b73-b098-3a9d7dca026d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: telegpwxq.motorcycles
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

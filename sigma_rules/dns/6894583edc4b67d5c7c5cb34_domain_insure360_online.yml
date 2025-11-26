@@ -1,0 +1,20 @@
+title: OTX domain IOC - insure360.online
+id: f758a994-1dbf-4846-8f1d-be5ba9fc2e9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: insure360.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

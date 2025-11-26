@@ -1,0 +1,20 @@
+title: OTX domain IOC - jingga888ww.space
+id: 21140a5d-428b-4c42-9e65-c5944ef51476
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jingga888ww.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

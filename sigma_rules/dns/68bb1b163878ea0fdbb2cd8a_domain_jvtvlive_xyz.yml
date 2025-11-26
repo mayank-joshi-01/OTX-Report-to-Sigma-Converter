@@ -1,0 +1,30 @@
+title: OTX domain IOC - jvtvlive.xyz
+id: e0e84598-b93e-4c3b-a255-324739d3d2c2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Massive IPTV Piracy
+  Network Uncovered' (68bb1b163878ea0fdbb2cd8a).
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.silentpush.com/blog/iptv-piracy/#Sample-IPTV-Piracy-Network-IOFA-List
+tags:
+- cybercrime
+- iptv
+- xuione
+- piracy
+- digital content
+- infrastructure mapping
+- streaming
+- brand protection
+- tiyansoft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jvtvlive.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

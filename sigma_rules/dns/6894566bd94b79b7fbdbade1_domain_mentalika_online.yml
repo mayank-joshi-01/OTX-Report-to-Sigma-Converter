@@ -1,0 +1,20 @@
+title: OTX domain IOC - mentalika.online
+id: 83344f1d-8537-43d8-8099-d883a277f82a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mentalika.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

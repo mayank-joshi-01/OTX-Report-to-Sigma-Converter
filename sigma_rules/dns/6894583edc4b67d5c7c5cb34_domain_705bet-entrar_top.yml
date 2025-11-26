@@ -1,0 +1,20 @@
+title: OTX domain IOC - 705bet-entrar.top
+id: 51e83fed-1405-4cf1-9a13-96fc7275d5d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 705bet-entrar.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

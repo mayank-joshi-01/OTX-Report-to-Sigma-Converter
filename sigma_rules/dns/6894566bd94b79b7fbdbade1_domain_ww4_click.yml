@@ -1,0 +1,20 @@
+title: OTX domain IOC - ww4.click
+id: e1dc6a2d-6636-471e-8bcd-32a0693540d9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ww4.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

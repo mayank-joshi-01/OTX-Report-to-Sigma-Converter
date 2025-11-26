@@ -1,0 +1,28 @@
+title: OTX hostname IOC - djvzk.uekmu.es
+id: 4e1d9edf-db08-4e55-ab2f-ef699618e39d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Microsoft 365 Direct
+  Send Abuse: Phishing Risks & Security Recommendations'' (68a335b16810180f68852d39).'
+author: AlienVault
+date: '2025-08-18'
+references:
+- https://www.mimecast.com/threat-intelligence-hub/microsoft-direct-send-abuse/
+tags:
+- credential theft
+- phishing
+- microsoft 365
+- direct send
+- spoofing
+- email security
+- business email compromise
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: djvzk.uekmu.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

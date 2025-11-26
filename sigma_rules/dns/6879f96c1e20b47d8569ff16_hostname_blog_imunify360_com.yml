@@ -1,0 +1,25 @@
+title: OTX hostname IOC - blog.imunify360.com
+id: f9a7f3a0-7c6b-413e-917c-edb84bb9f9b8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Linuxsys Cryptominer'
+  (6879f96c1e20b47d8569ff16).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.vulncheck.com/blog/linuxsys-cryptominer
+tags:
+- cryptomining
+- xmrig
+- linuxsys
+- compromised websites
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blog.imunify360.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

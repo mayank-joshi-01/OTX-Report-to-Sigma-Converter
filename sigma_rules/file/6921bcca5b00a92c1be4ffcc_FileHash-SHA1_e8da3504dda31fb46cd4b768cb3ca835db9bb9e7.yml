@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA1 IOC - e8da3504dda31fb46cd4b768cb3ca835db9bb9e7
+id: adc29dc4-90b1-42e2-8627-580053bf608d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT35 Internal Leak
+  of Hacking Campaigns Against Lebanon, Kuwait, Turkey, Saudi Arabia, Korea, and Domestic
+  Iranian Targets' (6921bcca5b00a92c1be4ffcc).
+author: AlienVault
+date: '2025-11-22'
+references:
+- https://dti.domaintools.com/threat-intelligence-report-apt35-internal-leak-of-hacking-campaigns-against-lebanon-kuwait-turkey-saudi-arabia-korea-and-domestic-iranian-targets
+tags:
+- middle east
+- herv phishing kit
+- powershort
+- phishing
+- exchange
+- rat-2ac2
+- intelligence collection
+- iran
+- irgc
+- cyberespionage
+- proxyshell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: e8da3504dda31fb46cd4b768cb3ca835db9bb9e7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - beauty-dental-clips-v4qh5w.bond
+id: 174afe19-16cd-4b13-9efc-9461a0c74ab2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beauty-dental-clips-v4qh5w.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

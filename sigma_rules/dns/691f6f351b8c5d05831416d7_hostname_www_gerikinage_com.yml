@@ -1,0 +1,30 @@
+title: OTX hostname IOC - www.gerikinage.com
+id: 17fdf15a-a1be-4e6b-a4a0-3f23b270c588
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT24  Pivot to Multi-Vector
+  Attacks' (691f6f351b8c5d05831416d7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/apt24-pivot-to-multi-vector-attacks
+tags:
+- badaudio
+- phishing
+- obfuscation
+- cobalt strike
+- cobalt strike beacon
+- china
+- strategic web compromise
+- cyber espionage
+- supply chain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.gerikinage.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

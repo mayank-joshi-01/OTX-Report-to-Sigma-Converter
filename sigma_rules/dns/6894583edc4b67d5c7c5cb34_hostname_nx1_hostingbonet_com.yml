@@ -1,0 +1,20 @@
+title: OTX hostname IOC - nx1.hostingbonet.com
+id: 431f660f-2c83-49bf-85f1-c59c949759b8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nx1.hostingbonet.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ya4m7.ru
+id: 42ad6586-e9bd-42c7-825e-04328c8189fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ya4m7.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

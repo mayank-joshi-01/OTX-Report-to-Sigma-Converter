@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.reverent-dubinsky.213-226-123-177.plesk.page
+id: 7820cc0e-f2e0-4446-bf30-a3833042c0f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.reverent-dubinsky.213-226-123-177.plesk.page
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

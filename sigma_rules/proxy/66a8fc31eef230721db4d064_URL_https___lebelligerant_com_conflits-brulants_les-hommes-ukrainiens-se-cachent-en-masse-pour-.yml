@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lebelligerant.com/conflits-brulants/les-hommes-ukrainiens-se-cachent-en-masse-pour-echapper-a-la-conscription
+id: 1de82e7a-eb9e-44e1-b3ad-170f5d9865a9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lebelligerant.com/conflits-brulants/les-hommes-ukrainiens-se-cachent-en-masse-pour-echapper-a-la-conscription
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

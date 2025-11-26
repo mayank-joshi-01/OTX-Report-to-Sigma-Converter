@@ -1,0 +1,20 @@
+title: OTX domain IOC - topgameafr.online
+id: 0bfce171-5384-45d9-8a9a-4421647b51f0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: topgameafr.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

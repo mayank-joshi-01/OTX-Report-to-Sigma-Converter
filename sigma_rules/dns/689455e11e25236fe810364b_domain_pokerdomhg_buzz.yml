@@ -1,0 +1,20 @@
+title: OTX domain IOC - pokerdomhg.buzz
+id: a9341ccc-9a95-4d52-8a43-c513a108826e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pokerdomhg.buzz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

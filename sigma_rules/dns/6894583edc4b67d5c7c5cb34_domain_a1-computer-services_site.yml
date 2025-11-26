@@ -1,0 +1,20 @@
+title: OTX domain IOC - a1-computer-services.site
+id: 526b1c1d-4940-4750-9909-b88f69b68d88
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: a1-computer-services.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

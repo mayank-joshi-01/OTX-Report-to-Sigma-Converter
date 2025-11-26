@@ -1,0 +1,20 @@
+title: OTX domain IOC - capitaltop-creditboosthubx.sbs
+id: e1643b81-9efb-4d65-9df9-a3ad37d4ae22
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capitaltop-creditboosthubx.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

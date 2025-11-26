@@ -1,0 +1,20 @@
+title: OTX domain IOC - 999yes.site
+id: 95d03a2e-8462-47a8-980e-ffb674f83799
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 999yes.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - c3ed337e2891736db6334a5f1d37dc0f
+id: 4ebd7aac-7115-4f58-b588-bb9b8fd3904d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SOC files: an APT41
+  attack on government IT services in Africa'' (68a5a89257ad374e405f6097).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://securelist.com/apt41-in-africa/116986
+tags:
+- targeted attack
+- africa
+- checkout
+- dll sideloading
+- lateral movement
+- sharepoint
+- mimikatz
+- pillager
+- data exfiltration
+- government
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c3ed337e2891736db6334a5f1d37dc0f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

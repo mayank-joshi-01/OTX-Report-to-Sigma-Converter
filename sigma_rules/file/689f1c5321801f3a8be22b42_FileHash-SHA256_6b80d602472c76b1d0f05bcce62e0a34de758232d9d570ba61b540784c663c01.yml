@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 6b80d602472c76b1d0f05bcce62e0a34de758232d9d570ba61b540784c663c01
+id: c31b86fd-a9a5-4605-9373-0879c0ec3a9e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CrossC2 Expanding
+  Cobalt Strike Beacon to Cross-Platform Attacks' (689f1c5321801f3a8be22b42).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://blogs.jpcert.or.jp/en/2025/08/crossc2.html
+tags:
+- readnimeloader
+- systembc
+- crossc2
+- ad
+- linux
+- macos
+- cobalt strike
+- psexec
+- odinldr
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6b80d602472c76b1d0f05bcce62e0a34de758232d9d570ba61b540784c663c01
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

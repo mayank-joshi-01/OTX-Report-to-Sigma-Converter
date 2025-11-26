@@ -1,0 +1,29 @@
+title: OTX domain IOC - cpewyx.es
+id: e92e1f02-fb94-4a47-ae41-700ff9322359
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Threat Spotlight:
+  Speed, Scale, and Stealth: How Axios Powers Automated Phishing'' (68c12e2e7aa38d67ee887f3d).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://reliaquest.com/blog/threat-spotlight-attackers-exploit-axios-for-automated-phishing/
+tags:
+- automation
+- direct send
+- qr codes
+- user agent
+- axios
+- phishing
+- api exploitation
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cpewyx.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

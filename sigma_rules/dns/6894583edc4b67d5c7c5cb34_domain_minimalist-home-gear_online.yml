@@ -1,0 +1,20 @@
+title: OTX domain IOC - minimalist-home-gear.online
+id: e43eb9b9-70d6-49d2-84c3-6ac64e4b893f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: minimalist-home-gear.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

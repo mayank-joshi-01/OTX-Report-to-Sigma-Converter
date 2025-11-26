@@ -1,0 +1,20 @@
+title: OTX domain IOC - 009hd.app
+id: 74854dd7-a907-4016-915f-04b3057db944
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 009hd.app
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

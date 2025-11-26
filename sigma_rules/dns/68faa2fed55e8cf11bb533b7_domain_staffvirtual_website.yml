@@ -1,0 +1,27 @@
+title: OTX domain IOC - staffvirtual.website
+id: fbe06318-9e60-4ce4-a031-9184e1ce6cc5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Help Wanted: Vietnamese
+  Actors Using Fake Job Posting Campaigns to Deliver Malware and Steal Credentials''
+  (68faa2fed55e8cf11bb533b7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/vietnamese-actors-fake-job-posting-campaigns
+tags:
+- fake job postings
+- credential theft
+- remote access trojans
+- digital advertising
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: staffvirtual.website
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

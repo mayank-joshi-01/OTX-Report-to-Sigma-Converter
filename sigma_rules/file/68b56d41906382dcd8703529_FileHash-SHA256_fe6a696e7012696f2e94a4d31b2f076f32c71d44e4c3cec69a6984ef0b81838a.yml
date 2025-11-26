@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - fe6a696e7012696f2e94a4d31b2f076f32c71d44e4c3cec69a6984ef0b81838a
+id: 10c5e593-975e-4186-8d8f-622301b1502f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TINKYWINKEY KEYLOGGER'
+  (68b56d41906382dcd8703529).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://www.cyfirma.com/research/tinkywinkey-keylogger/
+tags:
+- keylogger
+- stealth
+- persistence
+- dll injection
+- windows
+- system profiling
+- tinkywinkey
+- service
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fe6a696e7012696f2e94a4d31b2f076f32c71d44e4c3cec69a6984ef0b81838a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

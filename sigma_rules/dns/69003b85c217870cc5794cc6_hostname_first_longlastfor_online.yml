@@ -1,0 +1,28 @@
+title: OTX hostname IOC - first.longlastfor.online
+id: 3dc23885-8f63-498e-8815-ca5befc229b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crypto wasted: BlueNoroff’s
+  ghost mirage of funding and jobs'' (69003b85c217870cc5794cc6).'
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842
+tags:
+- zoomclutch
+- rootroy
+- sysphon
+- silentsiphon
+- sneakmain
+- cosmicdoor
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: first.longlastfor.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

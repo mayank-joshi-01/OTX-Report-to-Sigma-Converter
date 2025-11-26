@@ -1,0 +1,20 @@
+title: OTX domain IOC - engrasadoras.top
+id: b1342144-6e8f-47f4-89a8-79af843a9373
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: engrasadoras.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

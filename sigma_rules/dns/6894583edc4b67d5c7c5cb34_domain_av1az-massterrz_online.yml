@@ -1,0 +1,20 @@
+title: OTX domain IOC - av1az-massterrz.online
+id: 657bde0f-72f3-461c-8f7c-2ffc68e960b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: av1az-massterrz.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

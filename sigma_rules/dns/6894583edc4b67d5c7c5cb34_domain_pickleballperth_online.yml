@@ -1,0 +1,20 @@
+title: OTX domain IOC - pickleballperth.online
+id: 15a04bc1-a9f3-4bdc-8712-8c5c1d545ce2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pickleballperth.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

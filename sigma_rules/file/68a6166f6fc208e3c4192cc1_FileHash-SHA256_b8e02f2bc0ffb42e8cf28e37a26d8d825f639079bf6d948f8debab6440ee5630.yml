@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - b8e02f2bc0ffb42e8cf28e37a26d8d825f639079bf6d948f8debab6440ee5630
+id: adbb5bd9-7e0d-4b40-96c1-6636d5bcc142
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Behind the Curtain:
+  How Lumma Affiliates Operate'' (68a6166f6fc208e3c4192cc1).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://www.recordedfuture.com/research/media_146663d7945a8f6dd5a6e50a5cdde5655e178e9a3.gif?width=1200&format=pjpg&optimize=medium
+- https://www.recordedfuture.com/research/behind-the-curtain-how-lumma-affiliates-operate
+tags:
+- cybercrime
+- vpn
+- underground forums
+- crypting
+- infostealer
+- affiliate
+- lumma
+- anti-detect browser
+- craxsrat
+- stealc
+- meduza stealer
+- vidar
+- proxy
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b8e02f2bc0ffb42e8cf28e37a26d8d825f639079bf6d948f8debab6440ee5630
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

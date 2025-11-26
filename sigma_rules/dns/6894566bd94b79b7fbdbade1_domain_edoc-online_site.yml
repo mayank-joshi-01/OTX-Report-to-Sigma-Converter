@@ -1,0 +1,20 @@
+title: OTX domain IOC - edoc-online.site
+id: bf5580ec-36c8-4baf-9683-858a42f854c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: edoc-online.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - modgovindia.space
+id: 1e44d46e-d8e4-4d97-978a-ca469c0bf87a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT36: Targets Indian
+  BOSS Linux Systems with Weaponized AutoStart Files'' (68a999165ab79f5b181e6068).'
+author: AlienVault
+date: '2025-08-23'
+references:
+- https://www.cyfirma.com/research/apt36-targets-indian-boss-linux-systems-with-weaponized-autostart-files
+tags:
+- government
+- elf
+- cyber-espionage
+- india
+- persistence
+- pakistan
+- spear-phishing
+- boss linux
+- .desktop files
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: modgovindia.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

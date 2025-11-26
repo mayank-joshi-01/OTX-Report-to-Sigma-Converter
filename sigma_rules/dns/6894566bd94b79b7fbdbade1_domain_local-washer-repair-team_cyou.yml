@@ -1,0 +1,20 @@
+title: OTX domain IOC - local-washer-repair-team.cyou
+id: 617b3394-d427-42fb-a6c5-ccf5a64099d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: local-washer-repair-team.cyou
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

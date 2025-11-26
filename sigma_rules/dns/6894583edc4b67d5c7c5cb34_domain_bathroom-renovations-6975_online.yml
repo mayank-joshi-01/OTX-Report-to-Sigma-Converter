@@ -1,0 +1,20 @@
+title: OTX domain IOC - bathroom-renovations-6975.online
+id: 7fa3d82c-2f75-4be3-ae41-d54c6f0ecf3a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bathroom-renovations-6975.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

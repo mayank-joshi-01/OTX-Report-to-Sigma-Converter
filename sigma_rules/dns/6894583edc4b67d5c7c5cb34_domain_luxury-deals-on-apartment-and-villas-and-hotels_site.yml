@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxury-deals-on-apartment-and-villas-and-hotels.site
+id: ff8ae85b-9e0b-4601-b663-04de3f32e92a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxury-deals-on-apartment-and-villas-and-hotels.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

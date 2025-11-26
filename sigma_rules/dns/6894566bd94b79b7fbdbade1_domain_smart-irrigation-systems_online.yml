@@ -1,0 +1,20 @@
+title: OTX domain IOC - smart-irrigation-systems.online
+id: d696ec75-e48f-4f07-a019-a36e5eb82aaa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smart-irrigation-systems.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

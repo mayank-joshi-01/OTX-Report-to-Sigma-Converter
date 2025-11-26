@@ -1,0 +1,29 @@
+title: OTX hostname IOC - vm-technitrade.holacode.tech
+id: 505b27cf-62a6-434a-aa96-afac7e355430
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Click to Allow" Robot
+  Exposes Online Fraud Empire' (689b8df946fb62b515c0392e).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams
+tags:
+- cryptocurrency fraud
+- scams
+- traffic distribution
+- dating scams
+- cybercrime
+- spam
+- affiliate marketing
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vm-technitrade.holacode.tech
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

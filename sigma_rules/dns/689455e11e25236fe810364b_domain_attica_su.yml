@@ -1,0 +1,20 @@
+title: OTX domain IOC - attica.su
+id: 275d713f-28e6-4b3c-9124-427974ad585c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: attica.su
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

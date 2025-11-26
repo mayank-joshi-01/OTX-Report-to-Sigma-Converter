@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptologicx.click
+id: 5102f6b4-708a-4ad6-8ef1-cd3e4abb9db3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptologicx.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

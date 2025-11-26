@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 3ff9c9cc7cc65bef73bf75d222b8ba56728aeb4fc5e8882e82a4fab970dbe1c6
+id: 93aee422-374c-4534-86e8-24e563c5c0f6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3ff9c9cc7cc65bef73bf75d222b8ba56728aeb4fc5e8882e82a4fab970dbe1c6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - promocriancas.store
+id: de2c7e55-d790-40dc-a0bd-3015a6a19ad5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: promocriancas.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

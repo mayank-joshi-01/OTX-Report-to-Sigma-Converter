@@ -1,0 +1,20 @@
+title: OTX domain IOC - chuncheongunma.online
+id: 848ad1e6-fe9f-4376-9a44-88545a52a734
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chuncheongunma.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

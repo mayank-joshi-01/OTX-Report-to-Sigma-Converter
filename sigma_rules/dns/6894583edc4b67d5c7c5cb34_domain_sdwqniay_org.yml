@@ -1,0 +1,20 @@
+title: OTX domain IOC - sdwqniay.org
+id: b45a7b09-68b4-4cf3-b5d6-58c5392fc6ae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sdwqniay.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

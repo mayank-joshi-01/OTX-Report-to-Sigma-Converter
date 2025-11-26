@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 1248c4b352b9b1325ef97435bd38b2f02d21e2c6d494a2218ee363d9874b7607
+id: 2182f3f3-8e90-4790-b966-a9560f28584f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NailaoLocker Ransomware's
+  'Cheese'' (687e161b6ba1211b16b985c4).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://www.fortinet.com/blog/threat-research/nailaolocker-ransomware-cheese
+tags:
+- sm2 cryptography
+- multi-threaded
+- nailaolocker
+- dll side-loading
+- ransomware
+- aes-256-cbc
+- windows
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1248c4b352b9b1325ef97435bd38b2f02d21e2c6d494a2218ee363d9874b7607
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

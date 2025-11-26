@@ -1,0 +1,20 @@
+title: OTX domain IOC - thecentreforgastrointestinalhealth.online
+id: 38610b03-4d17-45a5-95bd-f78f6a857c85
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thecentreforgastrointestinalhealth.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

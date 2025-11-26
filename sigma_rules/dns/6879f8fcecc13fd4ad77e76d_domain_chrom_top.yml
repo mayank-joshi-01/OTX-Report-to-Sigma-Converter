@@ -1,0 +1,25 @@
+title: OTX domain IOC - chrom.top
+id: 25558d51-0885-494f-ae22-501379749302
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chrom.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

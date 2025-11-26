@@ -1,0 +1,29 @@
+title: OTX domain IOC - adoodlz.com
+id: d4c29590-d65c-462d-a9e1-a7f80c2fcfb5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious JavaScript
+  Injects Fullscreen Iframe On a WordPress Website' (689d9929e2ae3c7ac177ec6a).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.sucuri.net/2025/08/malicious-javascript-injects-fullscreen-iframe-on-a-wordpress-website.html
+tags:
+- wordpress
+- iframe injection
+- javascript
+- wpcode plugin
+- powershell exploitation
+- anti-debugging
+- fullscreen overlay
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adoodlz.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

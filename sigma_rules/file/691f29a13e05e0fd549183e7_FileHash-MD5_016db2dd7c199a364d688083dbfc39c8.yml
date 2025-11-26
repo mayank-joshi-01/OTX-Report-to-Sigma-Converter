@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 016db2dd7c199a364d688083dbfc39c8
+id: 92d4eb83-4b6b-428b-8600-e0defd87768f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'October 2025 Trends
+  Report on Phishing Emails' (691f29a13e05e0fd549183e7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91060
+tags:
+- email attachments
+- rar compression
+- trojans
+- remcos rat
+- korean phishing
+- ole objects
+- phishing
+- js files
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 016db2dd7c199a364d688083dbfc39c8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

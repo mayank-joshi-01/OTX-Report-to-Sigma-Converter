@@ -1,0 +1,20 @@
+title: OTX domain IOC - applestoreid.store
+id: 9a67221d-bf31-48c2-9011-6aefff214cab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: applestoreid.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

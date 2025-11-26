@@ -1,0 +1,20 @@
+title: OTX domain IOC - 06zw.net
+id: ee2c28e5-c95a-4542-bbdb-5426fc13e5a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 06zw.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

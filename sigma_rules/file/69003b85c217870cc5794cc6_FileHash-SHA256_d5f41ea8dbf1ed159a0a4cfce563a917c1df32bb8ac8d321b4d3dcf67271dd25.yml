@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - d5f41ea8dbf1ed159a0a4cfce563a917c1df32bb8ac8d321b4d3dcf67271dd25
+id: d6bb63d3-60b7-43ba-95b1-b798f1fa64b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crypto wasted: BlueNoroff’s
+  ghost mirage of funding and jobs'' (69003b85c217870cc5794cc6).'
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842
+tags:
+- zoomclutch
+- rootroy
+- sysphon
+- silentsiphon
+- sneakmain
+- cosmicdoor
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d5f41ea8dbf1ed159a0a4cfce563a917c1df32bb8ac8d321b4d3dcf67271dd25
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

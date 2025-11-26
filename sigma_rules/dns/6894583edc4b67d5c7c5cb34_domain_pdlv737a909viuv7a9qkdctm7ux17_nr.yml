@@ -1,0 +1,20 @@
+title: OTX domain IOC - pdlv737a909viuv7a9qkdctm7ux17.nr
+id: a4faaeb7-345d-4523-b9ff-c9db0a62daf5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pdlv737a909viuv7a9qkdctm7ux17.nr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

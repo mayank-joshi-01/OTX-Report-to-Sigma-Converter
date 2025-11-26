@@ -1,0 +1,29 @@
+title: OTX domain IOC - bioomx.com
+id: 988743a3-66a3-41e1-86b7-eed38f89ddc7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Botnet Emerges
+  from the Shadows: NightshadeC2'' (68babf81ce8dc0a40f7d42f5).'
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.esentire.com/blog/new-botnet-emerges-from-the-shadows-nightshadec2
+tags:
+- c2 communication
+- trojanized software
+- uac bypass
+- nightshadec2
+- lumma stealer
+- sandbox evasion
+- keylogging
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bioomx.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

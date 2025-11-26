@@ -1,0 +1,28 @@
+title: OTX domain IOC - winbet-bet.com
+id: 0cce1d21-4d11-4be9-8ea5-3e6c9457ca90
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: winbet-bet.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

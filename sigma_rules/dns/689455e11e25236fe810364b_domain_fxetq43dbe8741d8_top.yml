@@ -1,0 +1,20 @@
+title: OTX domain IOC - fxetq43dbe8741d8.top
+id: 2b684c3b-4847-4f2b-9a47-bf1e10c3bce0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fxetq43dbe8741d8.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

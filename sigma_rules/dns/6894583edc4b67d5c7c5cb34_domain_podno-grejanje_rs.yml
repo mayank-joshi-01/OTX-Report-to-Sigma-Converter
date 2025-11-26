@@ -1,0 +1,20 @@
+title: OTX domain IOC - podno-grejanje.rs
+id: d3e9e25c-cbee-4d32-8981-3636e6cd642e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: podno-grejanje.rs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - pertamaberkatbersama.com
+id: ab52fb99-4162-4cb8-a79d-a6c8986a9f42
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pertamaberkatbersama.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bookingradar.online
+id: eb0d1ce1-dd3f-48c1-b87d-10910585c698
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bookingradar.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

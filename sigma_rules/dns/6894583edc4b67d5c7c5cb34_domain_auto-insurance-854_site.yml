@@ -1,0 +1,20 @@
+title: OTX domain IOC - auto-insurance-854.site
+id: 42efffa7-d492-4852-8f28-e047cbef035d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: auto-insurance-854.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,35 @@
+title: OTX URL IOC - https://0x0.st/8WBr.py
+id: 67cd8a2d-faf6-4397-abda-985a77498e29
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From infostealer
+  to full RAT: dissecting the PureRAT attack chain'' (68e96e29b73e5334019b8810).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.bleepingcomputer.com/news/security/from-infostealer-to-full-rat-dissecting-the-purerat-attack-chain/
+tags:
+- purerat
+- zip archive
+- python
+- lonenone
+- pxa stealer
+- telegram
+- winrar
+- purecrypter
+- service
+- purelogs
+- cryptoloader
+- netloader
+- pythonloader
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://0x0.st/8WBr.py
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

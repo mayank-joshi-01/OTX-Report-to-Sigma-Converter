@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://quickhelpsolve.com/public/commands.php
+id: 90569357-f101-4708-8b8e-e67eceeba641
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://quickhelpsolve.com/public/commands.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

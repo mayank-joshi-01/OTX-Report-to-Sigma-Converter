@@ -1,0 +1,23 @@
+title: OTX URL IOC - https://msoffice.365cloudz.esanojinjasvc.com/cloudzx/msweb/drdxcsv34.php
+id: 97e4fc99-a0ec-48c7-8e0f-c3aa53ec1e6a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bitter (APT-Q-37)
+  uses diverse means to deliver new backdoor components' (68f9e25d901d09154f09b282).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://ti.qianxin.com/blog/articles/bitter-uses-diverse-means-to-deliver-new-backdoor-components-en
+tags:
+- winrar vulnerability
+- apt-q-37
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://msoffice.365cloudz.esanojinjasvc.com/cloudzx/msweb/drdxcsv34.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

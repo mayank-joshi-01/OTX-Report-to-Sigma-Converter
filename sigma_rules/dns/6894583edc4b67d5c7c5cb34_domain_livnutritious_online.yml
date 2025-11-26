@@ -1,0 +1,20 @@
+title: OTX domain IOC - livnutritious.online
+id: 6e869b8b-23d6-45f4-97f8-157b1a356c2c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: livnutritious.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

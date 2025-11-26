@@ -1,0 +1,20 @@
+title: OTX domain IOC - fold-microza.online
+id: 7f767c8f-513f-4b11-bdd0-6a5660255852
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fold-microza.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - civicjobportal.site
+id: 2767dc13-4477-4f94-a2a1-fd3cdd40846d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: civicjobportal.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

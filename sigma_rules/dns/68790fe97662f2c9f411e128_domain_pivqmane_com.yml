@@ -1,0 +1,35 @@
+title: OTX domain IOC - pivqmane.com
+id: 1b5ab087-fa95-4fff-95b5-7f4dd9ef0eec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MaaS operation using
+  Emmenhtal and Amadey linked to threats against Ukrainian entities' (68790fe97662f2c9f411e128).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://blog.talosintelligence.com/maas-operation-using-emmenhtal-and-amadey-linked-to-threats-against-ukrainian-entities/
+- https://github.com/Cisco-Talos/IOCs/blob/main/2025/07/maas-operation-using-emmenhtal-and-amadey.txt
+tags:
+- github
+- downloader
+- redline
+- amadey
+- obfuscation
+- lumma
+- asyncrat
+- smokeloader
+- maas
+- phishing
+- emmenhtal
+- ukraine
+- rhadamanthys
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pivqmane.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

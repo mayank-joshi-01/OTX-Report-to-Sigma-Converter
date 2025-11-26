@@ -1,0 +1,20 @@
+title: OTX domain IOC - dailyhollywooddramabuzz.site
+id: 7cd9e32c-3d39-4163-b7a6-7a809dddd631
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dailyhollywooddramabuzz.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

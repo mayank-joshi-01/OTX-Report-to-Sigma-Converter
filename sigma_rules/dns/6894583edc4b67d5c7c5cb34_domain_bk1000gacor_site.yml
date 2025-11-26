@@ -1,0 +1,20 @@
+title: OTX domain IOC - bk1000gacor.site
+id: 4010d58d-12ec-4f69-8a8d-ef97f57d6844
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bk1000gacor.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

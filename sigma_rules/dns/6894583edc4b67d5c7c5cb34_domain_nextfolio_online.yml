@@ -1,0 +1,20 @@
+title: OTX domain IOC - nextfolio.online
+id: df0bf6a4-1337-46bc-a465-cc729a7cfecc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nextfolio.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - mode-outlet.store
+id: a76064c6-acad-48bd-91dc-32f079303b96
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mode-outlet.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

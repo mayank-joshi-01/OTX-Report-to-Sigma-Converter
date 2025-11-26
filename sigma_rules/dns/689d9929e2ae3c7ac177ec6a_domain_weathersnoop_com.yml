@@ -1,0 +1,29 @@
+title: OTX domain IOC - weathersnoop.com
+id: e24ca2d9-8c3d-4e08-b2e0-699ec43fb5ec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious JavaScript
+  Injects Fullscreen Iframe On a WordPress Website' (689d9929e2ae3c7ac177ec6a).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.sucuri.net/2025/08/malicious-javascript-injects-fullscreen-iframe-on-a-wordpress-website.html
+tags:
+- wordpress
+- iframe injection
+- javascript
+- wpcode plugin
+- powershell exploitation
+- anti-debugging
+- fullscreen overlay
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: weathersnoop.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

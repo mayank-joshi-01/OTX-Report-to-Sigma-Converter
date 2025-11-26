@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - f631a96c57b07830d42f1ff4c88ed3d3
+id: 7401593b-be0e-40c0-8f56-beda1c004623
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TikTok Videos Promoting
+  Malware Installation' (68f7a913d01518d5cfc73c23).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://isc.sans.edu/diary/32380
+tags:
+- scheduled tasks
+- self-compiling
+- tiktok
+- powershell
+- social engineering
+- aurostealer
+- shellcode injection
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f631a96c57b07830d42f1ff4c88ed3d3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

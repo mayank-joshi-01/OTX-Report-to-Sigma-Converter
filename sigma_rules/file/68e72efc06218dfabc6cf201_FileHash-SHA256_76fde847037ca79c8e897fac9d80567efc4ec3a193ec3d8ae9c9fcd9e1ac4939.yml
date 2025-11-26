@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 76fde847037ca79c8e897fac9d80567efc4ec3a193ec3d8ae9c9fcd9e1ac4939
+id: 8e3da334-77db-4e99-a3d1-2f3d07123fb2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Evolution of
+  Chaos Ransomware: Faster, Smarter, and More Dangerous'' (68e72efc06218dfabc6cf201).'
+author: AlienVault
+date: '2025-10-09'
+references:
+- https://www.fortinet.com/blog/threat-research/evolution-of-chaos-ransomware-faster-smarter-and-more-dangerous
+tags:
+- ransomware
+- blacksnake
+- cryptocurrency theft
+- lucky_gh0$t
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 76fde847037ca79c8e897fac9d80567efc4ec3a193ec3d8ae9c9fcd9e1ac4939
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

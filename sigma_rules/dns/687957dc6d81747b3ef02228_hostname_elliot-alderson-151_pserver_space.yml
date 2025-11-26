@@ -1,0 +1,32 @@
+title: OTX hostname IOC - elliot-alderson-151.pserver.space
+id: b90b05ac-79c9-42a2-9d0d-e98ce718afa3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Phish and Chips:
+  China-Aligned Espionage Actors Ramp Up Taiwan Semiconductor Industry Targeting''
+  (687957dc6d81747b3ef02228).'
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/phish-china-aligned-espionage-actors-ramp-up-taiwan-semiconductor-targeting
+tags:
+- semiconductor
+- unk_droppitch
+- unk_sparkycarp
+- voldemort
+- cobalt strike
+- sparkrat
+- phishing
+- espionage
+- unk_fistbump
+- healthkick
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: elliot-alderson-151.pserver.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

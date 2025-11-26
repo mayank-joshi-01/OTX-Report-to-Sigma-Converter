@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1483pj38d8ej8dj38dh7d.top
+id: 3e369fb0-3d11-407b-bcd0-c94f54ca0b98
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1483pj38d8ej8dj38dh7d.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

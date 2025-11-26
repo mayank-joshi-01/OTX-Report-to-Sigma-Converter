@@ -1,0 +1,20 @@
+title: OTX domain IOC - awhitescreen.online
+id: ba20695e-33e8-462c-8b53-925a2f500309
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: awhitescreen.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

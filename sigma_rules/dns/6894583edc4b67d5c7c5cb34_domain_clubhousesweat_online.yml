@@ -1,0 +1,20 @@
+title: OTX domain IOC - clubhousesweat.online
+id: 10f5d430-0840-460c-b563-0e6dd7955495
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clubhousesweat.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

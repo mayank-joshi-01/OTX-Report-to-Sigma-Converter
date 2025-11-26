@@ -1,0 +1,20 @@
+title: OTX domain IOC - raja321bf.online
+id: 0326c31c-e5ad-4420-8603-4b9558da0a65
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: raja321bf.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

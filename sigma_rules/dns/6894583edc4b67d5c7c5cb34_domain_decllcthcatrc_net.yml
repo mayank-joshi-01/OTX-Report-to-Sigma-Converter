@@ -1,0 +1,20 @@
+title: OTX domain IOC - decllcthcatrc.net
+id: 96edaf76-82f1-47a2-b9a4-1436461edd85
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: decllcthcatrc.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

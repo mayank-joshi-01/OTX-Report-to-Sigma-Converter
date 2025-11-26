@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 3826898251b22807fc011e04f2f6d88976a2d3699ac1ecbe5e5fff63c25b43f4
+id: ff665cdf-af8e-4bb7-b47a-5598605b435c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Certified OysterLoader:
+  Tracking Rhysida ransomware gang activity via code-signing certificates'' (690880cb9724e9d7053104ca).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://expel.com/blog/certified-oysterloader-tracking-rhysida-ransomware-gang-activity-via-code-signing-certificates/
+tags:
+- latrodectus
+- initial access
+- microsoft trusted signing
+- oysterloader
+- code-signing
+- ransomware
+- malvertising
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3826898251b22807fc011e04f2f6d88976a2d3699ac1ecbe5e5fff63c25b43f4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

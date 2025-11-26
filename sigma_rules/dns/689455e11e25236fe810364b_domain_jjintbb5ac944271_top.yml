@@ -1,0 +1,20 @@
+title: OTX domain IOC - jjintbb5ac944271.top
+id: 0d7a0853-b7da-4b18-b521-3628b1770f45
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jjintbb5ac944271.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

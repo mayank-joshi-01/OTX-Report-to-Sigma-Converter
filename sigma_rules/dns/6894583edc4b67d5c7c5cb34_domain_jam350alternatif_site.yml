@@ -1,0 +1,20 @@
+title: OTX domain IOC - jam350alternatif.site
+id: b5d5388f-b546-48c1-899a-7a20ac2d2a42
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jam350alternatif.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

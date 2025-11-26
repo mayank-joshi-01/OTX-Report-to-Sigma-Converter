@@ -1,0 +1,20 @@
+title: OTX domain IOC - jsfree5.online
+id: aaed2ffa-7006-48cd-9b4d-1ee66dc3bd83
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jsfree5.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

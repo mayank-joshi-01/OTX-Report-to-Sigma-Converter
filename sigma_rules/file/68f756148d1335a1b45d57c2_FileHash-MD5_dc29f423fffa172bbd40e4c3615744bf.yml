@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - dc29f423fffa172bbd40e4c3615744bf
+id: b7f27dff-76c3-409f-bd1b-302eb0d31bdf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''To Be (A Robot)
+  or Not to Be: New Malware Attributed to Russia State-Sponsored COLDRIVER'' (68f756148d1335a1b45d57c2).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver?linkId=17354485
+tags:
+- coldcopy
+- backdoor
+- lostkeys
+- russian state-sponsored
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: dc29f423fffa172bbd40e4c3615744bf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

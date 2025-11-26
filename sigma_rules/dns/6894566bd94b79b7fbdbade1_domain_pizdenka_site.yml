@@ -1,0 +1,20 @@
+title: OTX domain IOC - pizdenka.site
+id: ba2dc07f-50db-4bb5-bf56-25dbeed05313
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pizdenka.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - gi4h5y60u.click
+id: 26d26b33-fd56-4167-9168-6fc5c26b0ceb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gi4h5y60u.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

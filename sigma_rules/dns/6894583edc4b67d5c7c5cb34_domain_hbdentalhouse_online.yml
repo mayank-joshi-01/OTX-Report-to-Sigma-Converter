@@ -1,0 +1,20 @@
+title: OTX domain IOC - hbdentalhouse.online
+id: 74b8c3f2-3168-4b46-854f-88b7de8a12c2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hbdentalhouse.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

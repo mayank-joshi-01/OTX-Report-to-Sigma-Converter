@@ -1,0 +1,20 @@
+title: OTX domain IOC - nctdlf5aimedjmhv3pk1upn9fykzj.gp
+id: db3a6491-eaf0-4a4c-954b-3bef2045f992
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nctdlf5aimedjmhv3pk1upn9fykzj.gp
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX hostname IOC - www.msn-microsoft.org
+id: e4e46d4b-8480-4e38-95f7-2a85e85aa941
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SOC files: an APT41
+  attack on government IT services in Africa'' (68a5a89257ad374e405f6097).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://securelist.com/apt41-in-africa/116986
+tags:
+- targeted attack
+- africa
+- checkout
+- dll sideloading
+- lateral movement
+- sharepoint
+- mimikatz
+- pillager
+- data exfiltration
+- government
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.msn-microsoft.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

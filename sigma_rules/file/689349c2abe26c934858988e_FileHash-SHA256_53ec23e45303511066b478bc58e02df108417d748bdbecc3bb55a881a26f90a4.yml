@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 53ec23e45303511066b478bc58e02df108417d748bdbecc3bb55a881a26f90a4
+id: 70bea73a-02fd-4d92-8b6d-f2f9d7881dc7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ThrottleStop driver
+  abused to terminate AV processes' (689349c2abe26c934858988e).
+author: AlienVault
+date: '2025-08-06'
+references:
+- https://securelist.com/av-killer-exploiting-throttlestop-sys/117026/
+tags:
+- driver abuse
+- byovd
+- ransomware
+- av killer
+- cve-2025-7771
+- kernel exploitation
+- throttlestop
+- medusalocker
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 53ec23e45303511066b478bc58e02df108417d748bdbecc3bb55a881a26f90a4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

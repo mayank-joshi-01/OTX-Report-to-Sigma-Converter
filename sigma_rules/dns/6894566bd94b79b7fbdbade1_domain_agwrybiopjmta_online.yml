@@ -1,0 +1,20 @@
+title: OTX domain IOC - agwrybiopjmta.online
+id: f95f2907-9ee7-4266-b633-e13e6e527d8f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: agwrybiopjmta.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

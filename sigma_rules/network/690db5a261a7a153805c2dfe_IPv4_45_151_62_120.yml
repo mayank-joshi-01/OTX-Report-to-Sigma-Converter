@@ -1,0 +1,30 @@
+title: OTX IPv4 IOC - 45.151.62.120
+id: 9f4ee4ed-2801-4a91-bb63-bbf739eda20f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LeakyInjector and
+  LeakyStealer Duo Hunts For Crypto and Browser History' (690db5a261a7a153805c2dfe).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://hybrid-analysis.blogspot.com/2025/11/leakyinjector-and-leakystealer-duo.html
+tags:
+- cryptocurrency
+- persistence
+- two-stage
+- injection
+- polymorphic
+- leakystealer
+- data-exfiltration
+- browser-history
+- leakyinjector
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 45.151.62.120
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

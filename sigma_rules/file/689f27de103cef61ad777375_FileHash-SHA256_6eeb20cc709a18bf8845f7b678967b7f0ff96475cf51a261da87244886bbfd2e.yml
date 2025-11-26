@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 6eeb20cc709a18bf8845f7b678967b7f0ff96475cf51a261da87244886bbfd2e
+id: 75537e9b-4705-42e0-ab5e-e4eccf3e4269
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''''Blue Locker''
+  Analysis: Ransomware Targeting Oil & Gas Sector in Pakistan'' (689f27de103cef61ad777375).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://www.resecurity.com/blog/article/blue-locker-analysis-ransomware-targeting-oil-gas-sector-in-pakistan
+tags:
+- ransomware
+- phishing
+- pakistan
+- oil and gas
+- ncert
+- cybersecurity
+- proton
+- encryption
+- shinra
+- blue locker
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6eeb20cc709a18bf8845f7b678967b7f0ff96475cf51a261da87244886bbfd2e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - gov.ministerioeduca.com
+id: 18c7f42d-c29f-4aee-b530-8554e7d48ef9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GenAI Used to Impersonate
+  Brazil's Government Websites' (6896279970e62c2bef3c1a32).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.zscaler.com/blogs/security-research/genai-used-phishing-websites-impersonating-brazil-s-government
+tags:
+- deepsite ai
+- blackbox ai
+- pix payment
+- phishing
+- brazil
+- government impersonation
+- generative ai
+- seo poisoning
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gov.ministerioeduca.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - video-conferencing-kings.online
+id: cbff96f9-9057-4de2-b742-92f81ca7aaec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: video-conferencing-kings.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

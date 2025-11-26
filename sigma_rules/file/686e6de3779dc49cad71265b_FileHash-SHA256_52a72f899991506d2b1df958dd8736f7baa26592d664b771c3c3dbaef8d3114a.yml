@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 52a72f899991506d2b1df958dd8736f7baa26592d664b771c3c3dbaef8d3114a
+id: e1b9988c-4759-4ee0-8eb8-09d7ba249218
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Exploitation of Leaked
+  Machine Keys by Initial Access Broker' (686e6de3779dc49cad71265b).
+author: AlienVault
+date: '2025-07-09'
+references:
+- https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/
+tags:
+- in-memory execution
+- updf
+- privilege escalation
+- initial access broker
+- view state deserialization
+- txportmap
+- machine keys
+- iis
+- post-exploitation
+- asp.net
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 52a72f899991506d2b1df958dd8736f7baa26592d664b771c3c3dbaef8d3114a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

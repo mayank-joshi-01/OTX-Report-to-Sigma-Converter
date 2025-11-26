@@ -1,0 +1,20 @@
+title: OTX domain IOC - chikatilovsesezonyein.online
+id: ae106d3e-88c9-42ab-b7e0-8d8d388a91b1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chikatilovsesezonyein.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

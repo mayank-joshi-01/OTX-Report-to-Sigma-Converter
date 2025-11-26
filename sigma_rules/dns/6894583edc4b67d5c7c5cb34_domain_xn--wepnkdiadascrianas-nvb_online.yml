@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--wepnkdiadascrianas-nvb.online
+id: 709bbff3-6267-4c6c-ad56-53215c1477fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--wepnkdiadascrianas-nvb.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

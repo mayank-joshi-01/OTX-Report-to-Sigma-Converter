@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - 118ae6110a4b5708433ebd5809682e8c30f281f459a3b92b3e8ada5023eb6640
+id: a38ea41e-9cdf-4fa0-ba45-78ca2c8223ba
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CoinMiner Attacks
+  Exploiting GeoServer Vulnerability' (68962f0d60d5de6c3ecb055f).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://asec.ahnlab.com/en/88917
+tags:
+- netcat
+- sidewalk
+- monero
+- bash
+- powershell
+- remote code execution
+- goreverse
+- condi
+- mirai
+- coinminer
+- xmrig
+- cve-2024-36401
+- geoserver
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 118ae6110a4b5708433ebd5809682e8c30f281f459a3b92b3e8ada5023eb6640
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

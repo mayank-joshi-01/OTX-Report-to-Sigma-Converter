@@ -1,0 +1,20 @@
+title: OTX domain IOC - tazeenuae.store
+id: 75345d23-ff2b-409a-b05c-900aff90d16e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tazeenuae.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

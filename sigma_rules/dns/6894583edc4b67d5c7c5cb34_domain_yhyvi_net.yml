@@ -1,0 +1,20 @@
+title: OTX domain IOC - yhyvi.net
+id: 77d6e8e0-998b-4f49-92b5-50e9d6bf5e29
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yhyvi.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

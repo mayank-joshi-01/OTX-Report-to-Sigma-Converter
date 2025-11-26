@@ -1,0 +1,20 @@
+title: OTX domain IOC - medical360.site
+id: 6cd0eb9c-617c-40ad-8ecb-e6876f7c9d37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: medical360.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

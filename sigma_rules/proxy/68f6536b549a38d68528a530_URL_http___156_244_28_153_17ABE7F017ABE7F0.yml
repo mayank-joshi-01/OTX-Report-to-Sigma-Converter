@@ -1,0 +1,26 @@
+title: OTX URL IOC - http://156.244.28.153/17ABE7F017ABE7F0
+id: 2b0288a8-fcf2-4d58-b8f1-a8f3e17e3179
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A view on a recent
+  Salt Typhoon intrusion' (68f6536b549a38d68528a530).
+author: AlienVault
+date: '2025-10-20'
+references:
+- https://www.darktrace.com/blog/salty-much-darktraces-view-on-a-recent-salt-typhoon-intrusion
+tags:
+- snappybee
+- citrix
+- telecommunications
+- cve-2024-40766
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://156.244.28.153/17ABE7F017ABE7F0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

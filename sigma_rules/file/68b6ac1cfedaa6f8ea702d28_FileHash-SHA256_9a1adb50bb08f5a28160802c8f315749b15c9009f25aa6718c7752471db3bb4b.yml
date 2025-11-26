@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 9a1adb50bb08f5a28160802c8f315749b15c9009f25aa6718c7752471db3bb4b
+id: fc5636f0-17e9-4aba-a0cb-a51232ffa60c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Sindoor Dropper:
+  New Phishing Campaign'' (68b6ac1cfedaa6f8ea702d28).'
+author: AlienVault
+date: '2025-09-02'
+references:
+- https://www.nextron-systems.com/2025/08/29/sindoor-dropper-new-phishing-campaign/
+tags:
+- obfuscation
+- linux
+- apt36
+- sindoor
+- phishing
+- meshagent
+- spear-phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 9a1adb50bb08f5a28160802c8f315749b15c9009f25aa6718c7752471db3bb4b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

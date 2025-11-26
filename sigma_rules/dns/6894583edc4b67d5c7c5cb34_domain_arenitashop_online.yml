@@ -1,0 +1,20 @@
+title: OTX domain IOC - arenitashop.online
+id: 1f54e978-5c6a-4f21-aff3-9d3cba899a9e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: arenitashop.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

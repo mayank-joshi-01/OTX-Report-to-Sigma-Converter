@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 0e17f987efa46626eb5d22d6516b3718
+id: 547c5597-b932-4cdf-ae5d-7b78d405c79e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Novel Use of "mount"
+  Spotted in Hikvision Attacks' (68828d2c8ee13e9ea6e37e65).
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://www.vulncheck.com/blog/hikvision-mount-shell
+tags:
+- nfs
+- go-exploit
+- mount
+- gtfobin
+- hikvision
+- mirai
+- command injection
+- cve-2021-36260
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0e17f987efa46626eb5d22d6516b3718
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

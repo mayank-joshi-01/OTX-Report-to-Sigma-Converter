@@ -1,0 +1,26 @@
+title: OTX hostname IOC - plp.en1inei2.top
+id: 870e6952-df3a-496c-9336-ea1cacf97a78
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Investigation Report:
+  Android/BankBot-YNRK Mobile Banking Trojan'' (6904819df7d79e5e4607c32b).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.cyfirma.com/research/investigation-report-android-bankbot-ynrk-mobile-banking-trojan/
+tags:
+- overlay attacks
+- cryptocurrency theft
+- android/bankbot-ynrk
+- banking trojan
+- android
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: plp.en1inei2.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

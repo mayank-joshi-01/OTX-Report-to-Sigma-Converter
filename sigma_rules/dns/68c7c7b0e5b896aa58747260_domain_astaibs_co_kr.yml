@@ -1,0 +1,30 @@
+title: OTX domain IOC - astaibs.co.kr
+id: 1a399dda-7621-480f-9521-7602d250dd41
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Driven Deepfake
+  Military ID Fraud Campaign' (68c7c7b0e5b896aa58747260).
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/deepfake
+tags:
+- ai
+- apt
+- deepfake
+- obfuscation
+- south korea
+- spear-phishing
+- autoit
+- chatgpt
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: astaibs.co.kr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

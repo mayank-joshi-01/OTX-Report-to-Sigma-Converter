@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - f33ebe44521abb954ec6b1c18efc567fe940ae8b7b495a302885ecefceba535b
+id: 52330072-bd79-40f4-82f3-71a9028a3c3f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RedHook: A New Android
+  Banking Trojan Targeting Users In Vietnam'' (688bc2c2387bb9752f1e2c86).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://cyble.com/blog/redhook-new-android-banking-targeting-in-vietnam/
+tags:
+- banking trojan
+- keylogging
+- chinese-language
+- websocket
+- android
+- redhook
+- rat
+- aws s3
+- vietnam
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f33ebe44521abb954ec6b1c18efc567fe940ae8b7b495a302885ecefceba535b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

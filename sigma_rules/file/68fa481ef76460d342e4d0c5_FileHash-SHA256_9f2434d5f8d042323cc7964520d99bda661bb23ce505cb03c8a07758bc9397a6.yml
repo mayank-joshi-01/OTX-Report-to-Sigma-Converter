@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 9f2434d5f8d042323cc7964520d99bda661bb23ce505cb03c8a07758bc9397a6
+id: 7919d2ee-4746-4837-85d9-2bddb4486b16
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Warlock Ransomware:
+  Old Actor, New Tricks?'' (68fa481ef76460d342e4d0c5).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.security.com/threat-intelligence/warlock-ransomware-origins
+tags:
+- lockbit
+- warlock
+- ransomware
+- anylock
+- espionage
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 9f2434d5f8d042323cc7964520d99bda661bb23ce505cb03c8a07758bc9397a6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

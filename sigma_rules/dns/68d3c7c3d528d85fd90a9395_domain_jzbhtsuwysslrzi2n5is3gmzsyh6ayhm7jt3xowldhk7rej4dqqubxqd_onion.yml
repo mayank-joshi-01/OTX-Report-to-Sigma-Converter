@@ -1,0 +1,32 @@
+title: OTX domain IOC - jzbhtsuwysslrzi2n5is3gmzsyh6ayhm7jt3xowldhk7rej4dqqubxqd.onion
+id: e29522f0-b0a2-4231-b692-7c65ed5049e0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GUNRA RANSOMWARE:
+  What You Don''t Know!'' (68d3c7c3d528d85fd90a9395).'
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://theravenfile.com/2025/09/23/gunra-ransomware-what-you-dont-know/
+tags:
+- windows
+- lumma stealer
+- encryption
+- data leak site
+- phishing
+- negotiation
+- gunra ransomware
+- donot loader
+- linux
+- ransomware
+- double extortion
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jzbhtsuwysslrzi2n5is3gmzsyh6ayhm7jt3xowldhk7rej4dqqubxqd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

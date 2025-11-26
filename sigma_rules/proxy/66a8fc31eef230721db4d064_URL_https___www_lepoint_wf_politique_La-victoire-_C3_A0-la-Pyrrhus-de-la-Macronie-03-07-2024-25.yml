@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.lepoint.wf/politique/La-victoire-%C3%A0-la-Pyrrhus-de-la-Macronie-03-07-2024-2528358_20.php
+id: 3769aaa9-2edd-4cfd-8417-9893105d1a53
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.lepoint.wf/politique/La-victoire-%C3%A0-la-Pyrrhus-de-la-Macronie-03-07-2024-2528358_20.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

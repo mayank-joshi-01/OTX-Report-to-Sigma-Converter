@@ -1,0 +1,20 @@
+title: OTX domain IOC - shalomacres.online
+id: b0ef5cfb-edc0-4ff8-969a-41f1817838f1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shalomacres.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

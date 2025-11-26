@@ -1,0 +1,20 @@
+title: OTX domain IOC - pngmljxwpr.biz
+id: 1233fa7d-93cb-4173-b51f-7391a6b8527d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pngmljxwpr.biz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - capital-top-fundrisepro.sbs
+id: 727b01c7-e343-42ff-9571-b286ce21d266
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capital-top-fundrisepro.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

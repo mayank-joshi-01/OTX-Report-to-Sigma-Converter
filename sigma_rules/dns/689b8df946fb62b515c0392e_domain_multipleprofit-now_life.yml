@@ -1,0 +1,29 @@
+title: OTX domain IOC - multipleprofit-now.life
+id: 5aac6b85-70dc-4c81-82f3-0c7482940bf7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Click to Allow" Robot
+  Exposes Online Fraud Empire' (689b8df946fb62b515c0392e).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams
+tags:
+- cryptocurrency fraud
+- scams
+- traffic distribution
+- dating scams
+- cybercrime
+- spam
+- affiliate marketing
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: multipleprofit-now.life
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

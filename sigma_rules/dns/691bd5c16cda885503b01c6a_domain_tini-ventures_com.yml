@@ -1,0 +1,40 @@
+title: OTX domain IOC - tini-ventures.com
+id: bc7e74f3-7788-4e2f-b4ad-7c0cbc504aa8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Frontline Intelligence:
+  Analysis of UNC1549 TTPs, Custom Tools, and Malware Targeting the Aerospace and
+  Defense Ecosystem'' (691bd5c16cda885503b01c6a).'
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/analysis-of-unc1549-ttps-targeting-aerospace-defense
+tags:
+- dcsyncer.slick
+- third-party compromise
+- sightgrab
+- aerospace
+- trusttrap
+- lateral movement
+- minibike
+- defense
+- espionage
+- lightrail
+- deeproot
+- crashpad
+- twostroke
+- pollblend
+- custom malware
+- phishing
+- privilege escalation
+- ghostline
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tini-ventures.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - e129dd5cc80f39b24db489df999c847335d169910bd966814d2f81b0b1bbc365
+id: 5ac1e8ff-d19f-479a-a838-e0a37aa6a75c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Uncovering Qilin attack
+  methods exposed through multiple cases' (68ff293c6892fe669c7aa472).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://blog.talosintelligence.com/uncovering-qilin-attack-methods-exposed-through-multiple-cases/
+tags:
+- manufacturing
+- ransomware
+- systembc
+- cobalt strike
+- qilin
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: e129dd5cc80f39b24db489df999c847335d169910bd966814d2f81b0b1bbc365
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

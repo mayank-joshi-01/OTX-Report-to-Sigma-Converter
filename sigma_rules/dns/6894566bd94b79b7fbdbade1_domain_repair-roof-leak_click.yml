@@ -1,0 +1,20 @@
+title: OTX domain IOC - repair-roof-leak.click
+id: 3e772b32-5a79-41f9-b271-0b40c4dfb436
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: repair-roof-leak.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

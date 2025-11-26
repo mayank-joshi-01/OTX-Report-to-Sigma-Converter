@@ -1,0 +1,40 @@
+title: OTX IPv4 IOC - 104.194.215.88
+id: 8a73d4fd-e91f-4536-8273-bb57f60efb2b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Frontline Intelligence:
+  Analysis of UNC1549 TTPs, Custom Tools, and Malware Targeting the Aerospace and
+  Defense Ecosystem'' (691bd5c16cda885503b01c6a).'
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/analysis-of-unc1549-ttps-targeting-aerospace-defense
+tags:
+- dcsyncer.slick
+- third-party compromise
+- sightgrab
+- aerospace
+- trusttrap
+- lateral movement
+- minibike
+- defense
+- espionage
+- lightrail
+- deeproot
+- crashpad
+- twostroke
+- pollblend
+- custom malware
+- phishing
+- privilege escalation
+- ghostline
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 104.194.215.88
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

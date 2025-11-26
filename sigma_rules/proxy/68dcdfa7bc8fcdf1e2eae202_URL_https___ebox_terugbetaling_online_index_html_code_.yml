@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://ebox.terugbetaling.online/index.html.code=
+id: 42457205-0493-4e76-b605-48bdb8290f9b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://ebox.terugbetaling.online/index.html.code=
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

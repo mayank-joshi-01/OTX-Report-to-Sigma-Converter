@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--9kq178cxwa.top
+id: 150a5d32-bd11-4e6b-a741-00a10426751e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--9kq178cxwa.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

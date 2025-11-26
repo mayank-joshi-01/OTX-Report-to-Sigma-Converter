@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.flixfoxapk.app.37-49-227-160.cpanel.site
+id: e03fafdc-583c-4914-a125-0ed80362bd50
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.flixfoxapk.app.37-49-227-160.cpanel.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - kt-aws-infra.site
+id: ea6f1385-2892-4c9b-b2ab-be6f49bcd06b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kt-aws-infra.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

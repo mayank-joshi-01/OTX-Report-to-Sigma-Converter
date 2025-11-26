@@ -1,0 +1,20 @@
+title: OTX domain IOC - pjkwzzz2pi10io7w.online
+id: a0acec33-b982-40cd-9ab1-3b038f352f77
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pjkwzzz2pi10io7w.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

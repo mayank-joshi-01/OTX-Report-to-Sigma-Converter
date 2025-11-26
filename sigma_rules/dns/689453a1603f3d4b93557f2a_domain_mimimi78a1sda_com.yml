@@ -1,0 +1,20 @@
+title: OTX domain IOC - mimimi78a1sda.com
+id: 6744eb64-179f-4460-8a96-b963e505c971
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mimimi78a1sda.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

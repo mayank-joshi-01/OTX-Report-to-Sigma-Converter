@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 4843429e2e8871847bc1e97a0f12fa1f4166baa4735dff585cb3b4736e3fe49e
+id: 6742981d-af97-426f-b459-850385b5bf40
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting PipeMagic:
+  Inside the architecture of a modular backdoor framework'' (68a3aebbf92e6f27e1be7207).'
+author: AlienVault
+date: '2025-08-18'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/08/18/dissecting-pipemagic-inside-the-architecture-of-a-modular-backdoor-framework/
+tags:
+- zero-day
+- clfs
+- backdoor
+- pipemagic
+- ransomware
+- modular
+- windows
+- cve-2025-29824
+- chatgpt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4843429e2e8871847bc1e97a0f12fa1f4166baa4735dff585cb3b4736e3fe49e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

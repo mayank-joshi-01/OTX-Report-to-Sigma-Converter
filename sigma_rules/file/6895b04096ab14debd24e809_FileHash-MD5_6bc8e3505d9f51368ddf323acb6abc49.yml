@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 6bc8e3505d9f51368ddf323acb6abc49
+id: f036d6a5-b2b1-4c50-8968-b0dc656de432
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Observed Malicious
+  Driver Use Associated with Akira SonicWall Campaign' (6895b04096ab14debd24e809).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.guidepointsecurity.com/blog/gritrep-akira-sonicwall/
+tags:
+- zero-day
+- akira
+- vpn
+- sonicwall
+- byovd
+- drivers
+- av/edr evasion
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6bc8e3505d9f51368ddf323acb6abc49
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - revivehemp.store
+id: 05822971-939a-4e10-a748-d29f3382ade3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: revivehemp.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

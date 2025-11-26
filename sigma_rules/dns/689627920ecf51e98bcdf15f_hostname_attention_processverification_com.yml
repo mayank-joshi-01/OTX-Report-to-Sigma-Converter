@@ -1,0 +1,28 @@
+title: OTX hostname IOC - attention.processverification.com
+id: 316fd6e7-a93a-489c-9ecc-4539103469ea
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Homograph Illusion:
+  Not Everything Is As It Seems'' (689627920ecf51e98bcdf15f).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://unit42.paloaltonetworks.com/homograph-attacks/
+tags:
+- email security
+- character substitution
+- phishing
+- homograph attack
+- social engineering
+- unicode
+- brand impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: attention.processverification.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

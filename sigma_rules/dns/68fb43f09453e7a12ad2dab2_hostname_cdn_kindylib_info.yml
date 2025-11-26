@@ -1,0 +1,24 @@
+title: OTX hostname IOC - cdn.kindylib.info
+id: e3ebcdd3-a335-4a26-8569-bb960a6f2135
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Jewelbug: Chinese
+  APT Group Widens Reach to Russia'' (68fb43f09453e7a12ad2dab2).'
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.security.com/threat-intelligence/jewelbug-apt-russia
+tags:
+- squidoor
+- byovd
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cdn.kindylib.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

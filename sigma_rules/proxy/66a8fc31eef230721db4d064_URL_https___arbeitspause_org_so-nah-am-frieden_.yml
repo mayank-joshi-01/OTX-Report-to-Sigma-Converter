@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://arbeitspause.org/so-nah-am-frieden/
+id: 205dba89-3d79-4d07-9de1-99fa7240a359
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://arbeitspause.org/so-nah-am-frieden/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

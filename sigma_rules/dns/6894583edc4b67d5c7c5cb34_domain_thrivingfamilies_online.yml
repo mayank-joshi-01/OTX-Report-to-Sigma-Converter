@@ -1,0 +1,20 @@
+title: OTX domain IOC - thrivingfamilies.online
+id: c00f6f3b-e289-4aca-9303-cf1f347dfe34
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thrivingfamilies.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

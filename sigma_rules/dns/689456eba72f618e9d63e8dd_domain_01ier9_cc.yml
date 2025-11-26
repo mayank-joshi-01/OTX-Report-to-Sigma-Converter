@@ -1,0 +1,20 @@
+title: OTX domain IOC - 01ier9.cc
+id: 6c0fe66b-82e5-4fc2-926c-59d5d1e11a35
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 01ier9.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

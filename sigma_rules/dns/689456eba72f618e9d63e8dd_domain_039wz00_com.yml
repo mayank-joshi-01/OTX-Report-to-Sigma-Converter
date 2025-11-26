@@ -1,0 +1,20 @@
+title: OTX domain IOC - 039wz00.com
+id: 0700fbce-69e7-417e-9cc9-9b775d133cf8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 039wz00.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

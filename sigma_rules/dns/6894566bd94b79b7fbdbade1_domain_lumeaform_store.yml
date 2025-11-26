@@ -1,0 +1,20 @@
+title: OTX domain IOC - lumeaform.store
+id: 3f2caf79-e0ef-4de3-9fa5-c9a224820e38
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lumeaform.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

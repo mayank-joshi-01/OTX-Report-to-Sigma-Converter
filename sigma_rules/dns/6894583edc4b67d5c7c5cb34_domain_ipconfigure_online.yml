@@ -1,0 +1,20 @@
+title: OTX domain IOC - ipconfigure.online
+id: 277293a6-82ba-40be-b826-145799398857
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ipconfigure.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

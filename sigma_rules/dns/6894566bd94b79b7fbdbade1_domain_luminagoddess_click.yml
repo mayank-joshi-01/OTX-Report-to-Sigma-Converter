@@ -1,0 +1,20 @@
+title: OTX domain IOC - luminagoddess.click
+id: 453e8d11-c067-4882-9793-98776299b1f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luminagoddess.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

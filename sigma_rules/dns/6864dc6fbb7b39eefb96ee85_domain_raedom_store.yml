@@ -1,0 +1,26 @@
+title: OTX domain IOC - raedom.store
+id: 1da106b9-002a-4c50-925a-cca15233e019
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of the threat
+  case of kimsuky group using 'ClickFix' tactic' (6864dc6fbb7b39eefb96ee85).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/suky-castle
+tags:
+- social engineering
+- spear-phishing
+- powershell
+- clickfix
+- quasarrat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: raedom.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

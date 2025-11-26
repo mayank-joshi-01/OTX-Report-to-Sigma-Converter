@@ -1,0 +1,20 @@
+title: OTX domain IOC - hokiwin805.online
+id: 56206d69-c2b1-4fa9-b838-b467b8d06df4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hokiwin805.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

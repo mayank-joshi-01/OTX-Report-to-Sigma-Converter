@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://mil-by.info/#/i?id=[REDACTED]
+id: 35e26080-2d7b-41bf-b67e-c833c44f60f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Team46 and TaxOff:
+  Two Sides of the Same Coin'' (6901f129a41c174ffad3e746).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://ptsecurity.com/research/pt-esc-threat-intelligence/team46-i-taxoff-dve-storony-odnoi-medali
+tags:
+- trinper
+- cobalt strike
+- dante
+- TaxOff
+- Team46
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://mil-by.info/#/i?id=[REDACTED]
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

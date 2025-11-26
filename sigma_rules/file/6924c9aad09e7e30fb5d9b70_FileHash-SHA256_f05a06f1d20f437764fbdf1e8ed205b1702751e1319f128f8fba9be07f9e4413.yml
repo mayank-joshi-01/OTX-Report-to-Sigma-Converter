@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - f05a06f1d20f437764fbdf1e8ed205b1702751e1319f128f8fba9be07f9e4413
+id: 44e74e14-99a7-439a-863f-a54d9fd6634a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Stories from the
+  SOC: Mystery of the postponed proxyware install'' (6924c9aad09e7e30fb5d9b70).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://expel.com/blog/stories-from-the-soc-mystery-of-the-postponed-proxyware-install
+tags:
+- download cradle
+- node.js
+- unauthorized software
+- in-memory execution
+- c2 server
+- disk-cleaning utility
+- proxyware
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f05a06f1d20f437764fbdf1e8ed205b1702751e1319f128f8fba9be07f9e4413
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

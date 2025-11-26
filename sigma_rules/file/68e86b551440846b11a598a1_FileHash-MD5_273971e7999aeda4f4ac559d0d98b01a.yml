@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 273971e7999aeda4f4ac559d0d98b01a
+id: 08cf3c93-bac3-4751-8c30-3a3e9eae319e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From Targeting Pwn2Own
+  Vulnerabilities to Shotgunning Exploits' (68e86b551440846b11a598a1).
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/rondodox.html
+tags:
+- cve-2023-1389
+- pwn2own
+- cve-2024-3721
+- cve-2024-12856
+- rondodox
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 273971e7999aeda4f4ac559d0d98b01a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

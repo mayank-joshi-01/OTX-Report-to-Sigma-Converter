@@ -1,0 +1,20 @@
+title: OTX domain IOC - socialgier.site
+id: 82e911f8-5861-413d-8772-27e7f38f59d9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: socialgier.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

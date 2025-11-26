@@ -1,0 +1,20 @@
+title: OTX domain IOC - almiraofficial.online
+id: 14af5f7b-9ed1-48c9-9d0b-71c35a38045d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: almiraofficial.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

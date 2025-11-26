@@ -1,0 +1,27 @@
+title: OTX domain IOC - look-together-online.online
+id: 8e88db83-3324-4797-9009-6718b54b599c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Hunting on
+  potential APT35 Servers' (68d7b01af9417544ec39f9e5).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.stormshield.com/news/apt35-plays-same-music-again
+tags:
+- typosquatting
+- iranian apt
+- video conferencing
+- threat hunting
+- infrastructure tracking
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: look-together-online.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

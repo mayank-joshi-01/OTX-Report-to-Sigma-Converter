@@ -1,0 +1,20 @@
+title: OTX domain IOC - acesso2viacorssan.site
+id: b1e0936e-ef01-46c8-a7e9-5f2226c4a24d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: acesso2viacorssan.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

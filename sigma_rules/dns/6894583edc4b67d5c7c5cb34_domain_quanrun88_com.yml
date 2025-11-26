@@ -1,0 +1,20 @@
+title: OTX domain IOC - quanrun88.com
+id: b365598c-576c-4218-99ae-a339d9e6bb4e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quanrun88.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

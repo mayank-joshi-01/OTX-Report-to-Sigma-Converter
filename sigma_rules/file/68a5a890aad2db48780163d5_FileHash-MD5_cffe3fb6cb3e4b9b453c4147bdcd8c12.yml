@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - cffe3fb6cb3e4b9b453c4147bdcd8c12
+id: daa91613-cac9-4e79-87e7-b0fb19624703
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Attacks Targeting
+  Linux SSH Servers to Install SVF DDoS Bot' (68a5a890aad2db48780163d5).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://asec.ahnlab.com/en/89083
+tags:
+- svf bot
+- proxy servers
+- ssh
+- svf botnet
+- discord
+- dictionary attack
+- ddos
+- brute force
+- linux
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: cffe3fb6cb3e4b9b453c4147bdcd8c12
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lovaura.store
+id: e0b442e7-c50a-4738-ad52-a4ae3e0a3260
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lovaura.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

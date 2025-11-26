@@ -1,0 +1,20 @@
+title: OTX domain IOC - dandadansezonmjg.online
+id: 4ccd5e14-43d0-45dc-98f0-6acb7c62abf8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dandadansezonmjg.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

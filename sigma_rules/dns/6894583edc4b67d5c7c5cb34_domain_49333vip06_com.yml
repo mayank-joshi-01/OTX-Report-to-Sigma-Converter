@@ -1,0 +1,20 @@
+title: OTX domain IOC - 49333vip06.com
+id: 72825d3a-3ed6-4ce3-8a99-bf6aee4211e6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 49333vip06.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

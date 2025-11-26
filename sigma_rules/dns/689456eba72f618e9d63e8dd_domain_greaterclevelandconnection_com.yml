@@ -1,0 +1,20 @@
+title: OTX domain IOC - greaterclevelandconnection.com
+id: 833f8d98-6749-431f-bf3b-a2c2d2b426a4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: greaterclevelandconnection.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

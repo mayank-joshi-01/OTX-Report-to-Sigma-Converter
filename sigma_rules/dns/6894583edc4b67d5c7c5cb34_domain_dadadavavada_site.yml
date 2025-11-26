@@ -1,0 +1,20 @@
+title: OTX domain IOC - dadadavavada.site
+id: c0b886e0-f102-4525-ab71-211bae2b01ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dadadavavada.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

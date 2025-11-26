@@ -1,0 +1,20 @@
+title: OTX domain IOC - suncedetailing.site
+id: 5534cf08-4553-479b-94be-66e2737e4a5f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: suncedetailing.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - cybersecurity-awareness-training2335.site
+id: f0c974cf-03d8-4c09-bd2d-45232cff440a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cybersecurity-awareness-training2335.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

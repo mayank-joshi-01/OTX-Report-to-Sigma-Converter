@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - c52e03b9a9625023a255f051f179143c4c5e5636
+id: f6b948d5-181b-4197-a133-98ef4930e3d7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Learn about ChillyHell,
+  a modular Mac backdoor' (68c1a4c210fdbe8b2e7054b7).
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.jamf.com/blog/chillyhell-a-modular-macos-backdoor/?nav=1
+tags:
+- macos
+- dns
+- c2
+- persistence
+- password-cracking
+- modular
+- notarized
+- backdoor
+- http
+- matanbuchus
+- chillyhell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: c52e03b9a9625023a255f051f179143c4c5e5636
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

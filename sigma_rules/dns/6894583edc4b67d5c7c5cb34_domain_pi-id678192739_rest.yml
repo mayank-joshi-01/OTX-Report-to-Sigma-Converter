@@ -1,0 +1,20 @@
+title: OTX domain IOC - pi-id678192739.rest
+id: 386a0351-62e1-47ed-8c56-e8a771ec8b56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pi-id678192739.rest
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

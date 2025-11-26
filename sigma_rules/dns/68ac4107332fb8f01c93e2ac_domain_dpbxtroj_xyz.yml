@@ -1,0 +1,31 @@
+title: OTX domain IOC - dpbxtroj.xyz
+id: 2fdaf53f-01a8-4ce2-86df-5413d810df80
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android backdoor spies
+  on Russian business employees' (68ac4107332fb8f01c93e2ac).
+author: AlienVault
+date: '2025-08-25'
+references:
+- http://news.drweb.ru/show/?i=15047&lng=ru
+- https://raw.githubusercontent.com/DoctorWebLtd/malware-iocs/refs/heads/master/Android.Backdoor.916.origin/README.adoc
+tags:
+- russian
+- mobile-malware
+- spyware
+- backdoor
+- business
+- android.backdoor.916.origin
+- surveillance
+- android
+- targeted-attack
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dpbxtroj.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

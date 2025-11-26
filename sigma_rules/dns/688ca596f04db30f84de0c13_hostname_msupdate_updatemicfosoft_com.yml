@@ -1,0 +1,28 @@
+title: OTX hostname IOC - msupdate.updatemicfosoft.com
+id: de0ba98d-4c27-4d44-8071-377c1871849a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking LockBit:
+  A Deep Dive into DLL Sideloading and Masquerading Tactics'' (688ca596f04db30f84de0c13).'
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.security.com/threat-intelligence/lockbit-ransomware-attack-techniques
+tags:
+- masquerading
+- dll sideloading
+- persistence
+- encryption
+- evasion
+- ransomware
+- lockbit
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: msupdate.updatemicfosoft.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

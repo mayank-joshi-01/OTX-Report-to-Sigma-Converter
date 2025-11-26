@@ -1,0 +1,27 @@
+title: OTX domain IOC - temopix.com
+id: b2fa72b1-2de3-4a52-8dc9-6deadc5d39c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: temopix.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

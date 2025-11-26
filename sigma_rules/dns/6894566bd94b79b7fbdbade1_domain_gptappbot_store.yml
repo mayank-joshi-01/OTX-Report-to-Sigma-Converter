@@ -1,0 +1,20 @@
+title: OTX domain IOC - gptappbot.store
+id: fd6164c6-b3b6-439e-b2e0-90f87eb8db62
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gptappbot.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

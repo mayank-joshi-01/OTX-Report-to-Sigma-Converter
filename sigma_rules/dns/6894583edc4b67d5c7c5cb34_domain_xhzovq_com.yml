@@ -1,0 +1,20 @@
+title: OTX domain IOC - xhzovq.com
+id: 83552dfd-3884-44b4-8c90-79876c1befea
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xhzovq.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

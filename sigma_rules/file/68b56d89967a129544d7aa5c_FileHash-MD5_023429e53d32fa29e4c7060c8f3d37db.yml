@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 023429e53d32fa29e4c7060c8f3d37db
+id: f3ed470f-49ed-4f7f-a20e-3d73caadab70
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT-C-53
+  (Gamaredon) Attack on Ukrainian Government Agencies' (68b56d89967a129544d7aa5c).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507351&idx=1&sn=0b8c9e5b3ff9d7b6551b3a69c151f7e0&chksm=f9c1ee9eceb66788c94178eec69e10142c58dc7721874f9e4d3120d7ea952faa230221a6e2cc
+tags:
+- cloudflareworkers
+- ukraine
+- vbscript
+- powershell
+- cyberespionage
+- apt
+- russia
+- dropbox
+- devtunnels
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 023429e53d32fa29e4c7060c8f3d37db
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

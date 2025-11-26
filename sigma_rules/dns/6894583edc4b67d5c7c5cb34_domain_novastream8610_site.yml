@@ -1,0 +1,20 @@
+title: OTX domain IOC - novastream8610.site
+id: 29197bc0-d22f-45d0-8fe4-2a8a7f6bc1b2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: novastream8610.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

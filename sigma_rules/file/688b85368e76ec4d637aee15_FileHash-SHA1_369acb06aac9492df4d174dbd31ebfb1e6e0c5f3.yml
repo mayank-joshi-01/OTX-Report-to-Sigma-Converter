@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA1 IOC - 369acb06aac9492df4d174dbd31ebfb1e6e0c5f3
+id: d1ed9e8a-a44d-4fe4-bf65-fa77cce5f1fa
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GOLD BLADE remote
+  DLL sideloading attack deploys RedLoader' (688b85368e76ec4d637aee15).
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://news.sophos.com/en-us/2025/07/29/gold-blade-remote-dll-sideloading-attack-deploys-redloader/
+tags:
+- RedLoader
+- DLL sideloading
+- WebDAV
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 369acb06aac9492df4d174dbd31ebfb1e6e0c5f3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

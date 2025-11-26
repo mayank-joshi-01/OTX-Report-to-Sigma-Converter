@@ -1,0 +1,20 @@
+title: OTX domain IOC - copride.ml
+id: a11b4c07-ce15-4cf8-b7da-1648c7725fb2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: copride.ml
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

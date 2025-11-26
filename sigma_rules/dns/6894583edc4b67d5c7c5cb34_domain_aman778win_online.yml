@@ -1,0 +1,20 @@
+title: OTX domain IOC - aman778win.online
+id: b7e5bc12-a889-46e1-9fa9-ade1974392ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aman778win.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

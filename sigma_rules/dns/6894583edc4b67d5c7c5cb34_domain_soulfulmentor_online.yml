@@ -1,0 +1,20 @@
+title: OTX domain IOC - soulfulmentor.online
+id: e855a80c-000e-4278-928e-050f2182f851
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: soulfulmentor.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

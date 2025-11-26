@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://217.69.3.218/get_arhive_npm/
+id: 975e2918-9201-400a-8f5d-b677a94d190b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GlassWorm: Self-Propagating
+  VSCode Extension Worm'' (68f7b9ecf349cd47ba5c8f84).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://www.truesec.com/hub/blog/glassworm-self-propagating-vscode-extension
+tags:
+- self-propagating
+- vscode
+- extension
+- glassworm
+- openvsx
+- worm
+- unicode
+- credential-theft
+- blockchain
+- solana
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://217.69.3.218/get_arhive_npm/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

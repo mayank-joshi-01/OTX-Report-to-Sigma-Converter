@@ -1,0 +1,26 @@
+title: OTX domain IOC - andicrack.com
+id: c3b4ea46-edf0-4a45-a0f6-b52f23f1e621
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pakistani freelancers
+  building cracking websites for stealer-delivery' (6864dc229b132a5ca4e3add8).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.intrinsec.com/wp-content/uploads/2025/06/TLP-CLEAR-Pakistani-Freelancers-EN.pdf
+tags:
+- pakistani freelancers
+- cracking websites
+- hosting providers
+- stealer malware
+- pay-per-install
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: andicrack.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

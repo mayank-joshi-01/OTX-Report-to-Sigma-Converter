@@ -1,0 +1,20 @@
+title: OTX domain IOC - recargas-jogos-br.site
+id: 892656ca-b8f9-4d13-9924-97a61cb8dd3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: recargas-jogos-br.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

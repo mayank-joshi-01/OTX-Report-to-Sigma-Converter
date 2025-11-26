@@ -1,0 +1,20 @@
+title: OTX domain IOC - destinytherapygroup.online
+id: 27cf3649-78fb-4bbe-807d-8d38bb940b6d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: destinytherapygroup.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

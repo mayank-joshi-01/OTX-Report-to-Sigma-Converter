@@ -1,0 +1,20 @@
+title: OTX domain IOC - evovault.store
+id: c7373e6c-7f22-4e60-ad58-6eb7d8102213
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: evovault.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

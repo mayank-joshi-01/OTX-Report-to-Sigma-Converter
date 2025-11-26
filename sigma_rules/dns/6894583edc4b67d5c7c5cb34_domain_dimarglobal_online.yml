@@ -1,0 +1,20 @@
+title: OTX domain IOC - dimarglobal.online
+id: 6dd431d0-a03e-422e-95ae-51aaa3ba8fad
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dimarglobal.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

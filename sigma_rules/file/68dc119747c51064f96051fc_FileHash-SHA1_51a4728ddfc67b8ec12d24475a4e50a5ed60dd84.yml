@@ -1,0 +1,38 @@
+title: OTX FileHash-SHA1 IOC - 51a4728ddfc67b8ec12d24475a4e50a5ed60dd84
+id: b42d3769-cc57-4fa7-9ba1-8e4d7f91c719
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Phantom Taurus:
+  A New Chinese Nexus APT and the Discovery of the NET-STAR Malware Suite'' (68dc119747c51064f96051fc).'
+author: AlienVault
+date: '2025-09-30'
+references:
+- https://unit42.paloaltonetworks.com/phantom-taurus/
+tags:
+- specter
+- telecommunications
+- africa
+- iiservercore
+- chinese apt
+- assemblyexecuter
+- ntospy
+- china chopper
+- gh0st rat
+- asia
+- espionage
+- government
+- middle east
+- plugx
+- net-star
+- iis backdoor
+- database targeting
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 51a4728ddfc67b8ec12d24475a4e50a5ed60dd84
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

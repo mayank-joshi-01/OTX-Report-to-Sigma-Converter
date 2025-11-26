@@ -1,0 +1,20 @@
+title: OTX domain IOC - intleka88.site
+id: 660f2b1f-e6ce-4870-8149-41cbbe903aa7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: intleka88.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

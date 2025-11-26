@@ -1,0 +1,25 @@
+title: OTX hostname IOC - zam.claydc.top
+id: f360d37c-0514-4270-9d4f-6e71f90e8910
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClayRat: A New Android
+  Spyware Targeting Russia'' (68e8c12eb7ebbc52304b33bc).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://zimperium.com/blog/clayrat-a-new-android-spyware-targeting-russia
+tags:
+- ClayRat
+- Spyware
+- phishing
+- SMS
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zam.claydc.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

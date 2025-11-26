@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 101593a51d9c40fc8ec162d67504e221
+id: d6a76af5-f0e9-4356-a287-89cd557958cf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Maverick: a new
+  banking trojan abusing WhatsApp in a massive scale distribution'' (68efd37872530e298a58dba7).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://securelist.com/maverick-banker-distributing-via-whatsapp/117715/
+tags:
+- fileless
+- maverick
+- coyote
+- ai-assisted
+- banking trojan
+- whatsapp
+- brazil
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 101593a51d9c40fc8ec162d67504e221
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - casinos31546035.site
+id: d5e49b5f-0d30-41b8-9162-d567c9e1b61d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: casinos31546035.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

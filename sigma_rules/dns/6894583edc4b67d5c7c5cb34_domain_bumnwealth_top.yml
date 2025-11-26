@@ -1,0 +1,20 @@
+title: OTX domain IOC - bumnwealth.top
+id: 061d3e1f-1ccc-430b-8f4a-c1ac7e9fd6bf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bumnwealth.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

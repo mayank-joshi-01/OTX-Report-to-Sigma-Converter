@@ -1,0 +1,20 @@
+title: OTX domain IOC - menditspares.online
+id: b11b1097-fd85-4aa2-b84a-04e2a1ce7def
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: menditspares.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

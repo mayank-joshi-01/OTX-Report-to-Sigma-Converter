@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - edac632c9b9ff2a2da0eacaab63627f4
+id: 6d040915-492c-4815-a021-b68c662a7c76
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious package
+  with AdaptixC2 framework agent found in npm registry' (68f22e20dbd8823524fbecb6).
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/adaptixc2-agent-found-in-an-npm-package/117784/
+tags:
+- adaptixc2
+- post-exploitation
+- npm
+- multi-platform
+- supply-chain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: edac632c9b9ff2a2da0eacaab63627f4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 55092e1dea3834abde5367d79e50079a
+id: 4023bc5d-6788-4602-9b8a-b200a4f1263d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Tools and Techniques
+  of ToddyCat APT' (69207948196fee16fcb9b0af).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://securelist.com/toddycat-apt-steals-email-data-from-outlook/118044/
+tags:
+- browser
+- oauth
+- data theft
+- outlook
+- xstreader
+- powershell
+- email
+- apt
+- tcsectorcopy
+- tomberbil
+- sharptokenfinder
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 55092e1dea3834abde5367d79e50079a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - periclesfilms.online
+id: cbc5b7fe-8dd2-4574-837c-5e66a8f4d803
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: periclesfilms.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

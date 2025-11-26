@@ -1,0 +1,20 @@
+title: OTX domain IOC - path2success.online
+id: 80f60d53-ab7b-4602-a2e6-83d7e29857a6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: path2success.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

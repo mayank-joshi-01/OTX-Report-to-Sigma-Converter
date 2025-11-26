@@ -1,0 +1,20 @@
+title: OTX domain IOC - randalljokyce.online
+id: e1bddeac-a5f8-4cd6-881d-435b6ed58053
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: randalljokyce.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX hostname IOC - ftb.gov-ciehka.xmnsia.cc
+id: 6c9fee59-ffa4-4a8e-9bf7-31b890605efe
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tax refund scam targets
+  Californians' (68b87b643f45e9b76af61208).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.malwarebytes.com/blog/news/2025/09/tax-refund-scam-targets-californians
+tags:
+- california
+- franchise tax board
+- phishing
+- text messages
+- tax refund scam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ftb.gov-ciehka.xmnsia.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

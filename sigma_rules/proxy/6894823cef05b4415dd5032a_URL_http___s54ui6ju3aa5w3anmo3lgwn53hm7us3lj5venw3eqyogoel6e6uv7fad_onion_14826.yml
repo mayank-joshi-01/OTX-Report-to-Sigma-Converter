@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://s54ui6ju3aa5w3anmo3lgwn53hm7us3lj5venw3eqyogoel6e6uv7fad.onion:14826
+id: 86c1ff5e-81d9-49af-b5f7-879d1290b91a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking Updates to
+  Raspberry Robin' (6894823cef05b4415dd5032a).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.zscaler.com/blogs/security-research/tracking-updates-raspberry-robin
+tags:
+- tor
+- downloader
+- raspberry robin
+- roshtyak
+- encryption
+- cve-2024-38196
+- obfuscation
+- usb-spread
+- evasion
+- privilege-escalation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://s54ui6ju3aa5w3anmo3lgwn53hm7us3lj5venw3eqyogoel6e6uv7fad.onion:14826
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

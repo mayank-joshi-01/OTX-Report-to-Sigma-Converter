@@ -1,0 +1,20 @@
+title: OTX domain IOC - remarkableoffers.site
+id: 62ca1f4e-07b3-4a43-90c4-02798e538355
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: remarkableoffers.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

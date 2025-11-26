@@ -1,0 +1,20 @@
+title: OTX domain IOC - 8tokeslot88.site
+id: f6f6df8a-ef8f-4fb8-978d-950aa903c6d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 8tokeslot88.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

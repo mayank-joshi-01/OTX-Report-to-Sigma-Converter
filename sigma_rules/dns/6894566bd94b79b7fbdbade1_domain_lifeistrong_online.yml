@@ -1,0 +1,20 @@
+title: OTX domain IOC - lifeistrong.online
+id: 7a46ed0e-4e1d-476c-9f3d-af283aa2e249
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lifeistrong.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

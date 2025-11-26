@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 0aa1d24f40eec02b26a12fbe2250cab1c9f7b958
+id: d8b927ca-3c05-4f97-8820-543e8dc7e139
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Watch out for SVG
+  files booby-trapped with malware' (6910193d52761593fdf7ff28).
+author: AlienVault
+date: '2025-11-09'
+references:
+- https://www.welivesecurity.com/en/malware/svg-files-spreading-malware/
+tags:
+- ai-generated templates
+- colombia
+- asyncrat
+- social engineering
+- svg
+- dll sideloading
+- latin america
+- judicial system impersonation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0aa1d24f40eec02b26a12fbe2250cab1c9f7b958
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

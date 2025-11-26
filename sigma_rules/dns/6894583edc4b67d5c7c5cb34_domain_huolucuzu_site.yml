@@ -1,0 +1,20 @@
+title: OTX domain IOC - huolucuzu.site
+id: 65dac916-156c-4433-adbf-7486a5bbc59e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: huolucuzu.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

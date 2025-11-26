@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryozen360.online
+id: faf5677a-5802-42fd-aed5-17b02d8f171c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryozen360.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

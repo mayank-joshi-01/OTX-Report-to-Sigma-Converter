@@ -1,0 +1,20 @@
+title: OTX domain IOC - loans-that-accept-everyone.click
+id: 87dd1a4d-48f1-4708-b83d-5f4ac393fa3e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: loans-that-accept-everyone.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

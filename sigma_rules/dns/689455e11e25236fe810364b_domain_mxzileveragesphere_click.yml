@@ -1,0 +1,20 @@
+title: OTX domain IOC - mxzileveragesphere.click
+id: 6c44ef19-a890-4f27-8c21-ce6db6933c37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mxzileveragesphere.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

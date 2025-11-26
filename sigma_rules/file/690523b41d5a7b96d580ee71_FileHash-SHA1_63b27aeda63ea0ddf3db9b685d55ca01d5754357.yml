@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 63b27aeda63ea0ddf3db9b685d55ca01d5754357
+id: eb358569-5b6a-4105-bb1c-a30d1217f869
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SkyCloak:
+  Tor Campaign targets Military of Russia & Belarus'' (690523b41d5a7b96d580ee71).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.seqrite.com/blog/operation-skycloak-tor-campaign-targets-military-of-russia-belarus/
+tags:
+- ssh
+- tor
+- powershell
+- military
+- espionage
+- obfuscation
+- belarus
+- russia
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 63b27aeda63ea0ddf3db9b685d55ca01d5754357
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - day700.com
+id: e73b7c67-4bc5-42b0-a5f4-430e81542f1e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Thousands of Fake
+  Hotel Domains Used in Massive Phishing Campaign' (69137fca8f856858d0543ded).
+author: AlienVault
+date: '2025-11-11'
+references:
+- https://www.netcraft.com/blog/thousands-of-domains-target-hotel-guests-in-massive-phishing-campaign
+- https://raw.githubusercontent.com/netcraftcom/public-iocs/refs/heads/main/2025-11%20hotel%20phishing%20IOCs.csv
+tags:
+- phishing
+- domain registration
+- malspam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: day700.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - blueskypediatricendo.online
+id: 46f45ee8-d5d7-4873-aff5-a83d03f7a328
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blueskypediatricendo.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

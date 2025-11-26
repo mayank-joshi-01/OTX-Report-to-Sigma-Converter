@@ -1,0 +1,20 @@
+title: OTX domain IOC - d522lveodxohxd.online
+id: 63a4ad5b-6ce1-440d-b58d-7f51d11afd7f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: d522lveodxohxd.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

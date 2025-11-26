@@ -1,0 +1,20 @@
+title: OTX domain IOC - zlushba-evakuacii-autohelp18.online
+id: 8fd28425-30c9-412a-bcba-e54691096a34
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zlushba-evakuacii-autohelp18.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

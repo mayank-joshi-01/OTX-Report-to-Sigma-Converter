@@ -1,0 +1,20 @@
+title: OTX domain IOC - chartmedia.online
+id: e8318cd7-d0a8-4cb4-abe7-d9257b970703
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chartmedia.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

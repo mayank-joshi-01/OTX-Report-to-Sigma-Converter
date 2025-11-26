@@ -1,0 +1,20 @@
+title: OTX domain IOC - datinghb.online
+id: d73f57e8-3d49-4225-9f2c-41be6e0c1080
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: datinghb.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

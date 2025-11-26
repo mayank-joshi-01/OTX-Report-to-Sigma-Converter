@@ -1,0 +1,20 @@
+title: OTX domain IOC - sgmidasvault.online
+id: 5b732e1c-6c97-43aa-9d63-1b45116af9eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sgmidasvault.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

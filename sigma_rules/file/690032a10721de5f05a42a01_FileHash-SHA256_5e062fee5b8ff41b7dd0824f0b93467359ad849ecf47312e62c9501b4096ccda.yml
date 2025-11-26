@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 5e062fee5b8ff41b7dd0824f0b93467359ad849ecf47312e62c9501b4096ccda
+id: d94ef572-be4c-4c0c-a959-4fe747e7033b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Earth Entries alive
+  and kicking' (690032a10721de5f05a42a01).
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://bartblaze.blogspot.com/2025/10/earth-estries-alive-and-kicking.html
+tags:
+- cve-2025-8088
+- shadowpad
+- snappybee
+- winrar
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5e062fee5b8ff41b7dd0824f0b93467359ad849ecf47312e62c9501b4096ccda
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

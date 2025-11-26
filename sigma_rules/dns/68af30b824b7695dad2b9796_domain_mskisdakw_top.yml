@@ -1,0 +1,25 @@
+title: OTX domain IOC - mskisdakw.top
+id: 600e66ad-a9eb-43d9-ae3a-f71d6a1a451a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mskisdakw.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

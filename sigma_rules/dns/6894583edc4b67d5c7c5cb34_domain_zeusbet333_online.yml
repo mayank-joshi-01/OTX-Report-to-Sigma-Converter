@@ -1,0 +1,20 @@
+title: OTX domain IOC - zeusbet333.online
+id: 61b6ace9-51cb-4348-8b42-50ca555c0191
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zeusbet333.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

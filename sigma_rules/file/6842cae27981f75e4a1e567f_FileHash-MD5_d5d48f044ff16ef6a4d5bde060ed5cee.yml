@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - d5d48f044ff16ef6a4d5bde060ed5cee
+id: 0792329d-e5e6-4ce8-bc4f-5a95f20aff7b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT37
+  Attack Case Disguised as a Think Tank for National Security Strategy in South Korea
+  (Operation ToyBox Story)' (6842cae27981f75e4a1e567f).
+author: AlienVault
+date: '2025-06-06'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/toybox-story
+tags:
+- cloud c2
+- spear phishing
+- north korea
+- national security
+- rokrat
+- south korea
+- cve-2022-41128
+- lnk files
+- fileless attacks
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d5d48f044ff16ef6a4d5bde060ed5cee
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

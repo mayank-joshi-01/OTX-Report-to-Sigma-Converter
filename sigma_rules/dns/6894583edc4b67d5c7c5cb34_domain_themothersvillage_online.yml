@@ -1,0 +1,20 @@
+title: OTX domain IOC - themothersvillage.online
+id: 189ee1da-a6c1-4018-afb7-fbc0c8448815
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: themothersvillage.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

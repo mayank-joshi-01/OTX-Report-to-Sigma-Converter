@@ -1,0 +1,20 @@
+title: OTX domain IOC - thriveinmotion.online
+id: 2c744c67-22d9-4a41-a0e8-07ae41079aad
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thriveinmotion.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

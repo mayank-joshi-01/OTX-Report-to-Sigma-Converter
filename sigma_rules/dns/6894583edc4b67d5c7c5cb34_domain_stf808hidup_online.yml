@@ -1,0 +1,20 @@
+title: OTX domain IOC - stf808hidup.online
+id: 0d969a6f-1b66-4615-8a81-16436d11e952
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stf808hidup.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

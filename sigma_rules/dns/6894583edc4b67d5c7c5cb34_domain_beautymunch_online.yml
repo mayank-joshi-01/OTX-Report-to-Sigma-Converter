@@ -1,0 +1,20 @@
+title: OTX domain IOC - beautymunch.online
+id: 0265e3e2-f0bc-4d24-bbd2-1578e9f11d13
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beautymunch.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

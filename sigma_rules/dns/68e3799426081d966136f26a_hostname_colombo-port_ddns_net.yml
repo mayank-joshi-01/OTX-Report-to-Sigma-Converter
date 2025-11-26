@@ -1,0 +1,27 @@
+title: OTX hostname IOC - colombo-port.ddns.net
+id: 7e4e0e85-3ea4-40a4-9f6e-5861f7b0ea65
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: colombo-port.ddns.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,38 @@
+title: OTX FileHash-SHA256 IOC - 05ecf871c7382b0c74e5bac267bb5d12446f52368bb1bfe5d2a4200d0f43c1d8
+id: 84649026-f2ae-4c93-8442-e4ddd1ba6367
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CastleLoader Analysis'
+  (689c7d9e36c4ad103e6d786e).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://blog.polyswarm.io/castleloader
+tags:
+- payload delivery
+- autoit
+- powershell
+- deerstealer
+- malware loader
+- c2
+- information stealers
+- github
+- castleloader
+- sectoprat
+- stealc
+- netsupport rat
+- hijackloader
+- rats
+- redline
+- u.s. government
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 05ecf871c7382b0c74e5bac267bb5d12446f52368bb1bfe5d2a4200d0f43c1d8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

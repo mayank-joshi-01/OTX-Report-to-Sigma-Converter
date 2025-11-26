@@ -1,0 +1,20 @@
+title: OTX domain IOC - hype-factory.online
+id: c2d4e66b-87fe-4ffc-9165-af4a4e645045
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hype-factory.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

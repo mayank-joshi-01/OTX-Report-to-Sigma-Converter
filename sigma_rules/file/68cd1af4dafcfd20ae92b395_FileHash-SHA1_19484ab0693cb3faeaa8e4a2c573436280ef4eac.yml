@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA1 IOC - 19484ab0693cb3faeaa8e4a2c573436280ef4eac
+id: 56f07a8f-4a6b-456b-9625-840e78a1161c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CountLoader: New
+  Malware Loader Being Served in 3 Different Versions'' (68cd1af4dafcfd20ae92b395).'
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://www.silentpush.com/blog/countloader
+tags:
+- adaptixc2
+- malware loader
+- purehvnc
+- lumma stealer
+- phishing
+- jscript
+- initial access broker
+- .net
+- cobaltstrike
+- ukraine
+- countloader
+- powershell
+- ransomware
+- evasion techniques
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 19484ab0693cb3faeaa8e4a2c573436280ef4eac
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

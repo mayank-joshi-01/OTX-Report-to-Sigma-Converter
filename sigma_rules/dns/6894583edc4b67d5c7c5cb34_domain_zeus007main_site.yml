@@ -1,0 +1,20 @@
+title: OTX domain IOC - zeus007main.site
+id: 689ac210-f27f-49a4-953b-70cc5225d103
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zeus007main.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

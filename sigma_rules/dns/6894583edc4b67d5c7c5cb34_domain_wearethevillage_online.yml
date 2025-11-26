@@ -1,0 +1,20 @@
+title: OTX domain IOC - wearethevillage.online
+id: fb95dbd3-4c57-48fe-a109-3ce0d4bf6441
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wearethevillage.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

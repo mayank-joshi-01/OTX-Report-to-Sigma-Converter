@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 227973069e288943021e4c8010a94b3c
+id: ff35587f-ba34-47e9-9bda-da28e0214242
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Driven Deepfake
+  Military ID Fraud Campaign' (68c7c7b0e5b896aa58747260).
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/deepfake
+tags:
+- ai
+- apt
+- deepfake
+- obfuscation
+- south korea
+- spear-phishing
+- autoit
+- chatgpt
+- military
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 227973069e288943021e4c8010a94b3c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

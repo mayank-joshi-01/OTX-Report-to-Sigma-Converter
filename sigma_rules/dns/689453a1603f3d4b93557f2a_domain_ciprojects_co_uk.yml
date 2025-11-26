@@ -1,0 +1,20 @@
+title: OTX domain IOC - ciprojects.co.uk
+id: 30c284f9-9058-4744-b45b-046abd6c3db5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ciprojects.co.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

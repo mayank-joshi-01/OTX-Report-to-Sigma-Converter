@@ -1,0 +1,20 @@
+title: OTX domain IOC - phonebooster.site
+id: a09ec51d-07b6-4ac4-935a-5049aa60ee25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: phonebooster.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

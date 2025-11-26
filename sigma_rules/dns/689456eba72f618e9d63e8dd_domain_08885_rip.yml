@@ -1,0 +1,20 @@
+title: OTX domain IOC - 08885.rip
+id: a4b15afc-9b09-4140-a236-0a75e21dccd8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 08885.rip
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

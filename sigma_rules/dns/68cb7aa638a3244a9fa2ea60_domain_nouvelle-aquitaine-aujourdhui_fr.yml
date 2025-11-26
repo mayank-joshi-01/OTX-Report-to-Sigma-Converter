@@ -1,0 +1,29 @@
+title: OTX domain IOC - nouvelle-aquitaine-aujourdhui.fr
+id: db6dfaa2-e694-46fa-bb48-98c9f5e230dd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deepens Its Playbook
+  with New Websites and Targets' (68cb7aa638a3244a9fa2ea60).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets
+tags:
+- elections
+- deepfakes
+- ai-generated content
+- ukraine
+- political fragmentation
+- social media
+- disinformation
+- russian influence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nouvelle-aquitaine-aujourdhui.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - australianhikingfestival.site
+id: 7d4d4bd9-3a4e-4243-a7b0-d0803665069d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: australianhikingfestival.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

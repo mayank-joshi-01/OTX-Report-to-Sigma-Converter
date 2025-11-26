@@ -1,0 +1,24 @@
+title: OTX domain IOC - supportmeta-horizonusa.org
+id: c2e2d2d5-b8e6-4604-b107-00a9766ffb0e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: supportmeta-horizonusa.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

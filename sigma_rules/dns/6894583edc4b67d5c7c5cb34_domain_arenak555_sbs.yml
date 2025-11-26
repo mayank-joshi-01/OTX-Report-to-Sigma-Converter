@@ -1,0 +1,20 @@
+title: OTX domain IOC - arenak555.sbs
+id: 4ea56b0f-fd7d-4dae-a769-7fd164203fb0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: arenak555.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

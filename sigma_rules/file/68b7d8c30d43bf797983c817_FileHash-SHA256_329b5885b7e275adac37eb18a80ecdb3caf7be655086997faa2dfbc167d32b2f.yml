@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 329b5885b7e275adac37eb18a80ecdb3caf7be655086997faa2dfbc167d32b2f
+id: c1be36c1-332f-4fc2-8852-00d2c07a48a9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting RapperBot
+  Botnet: From Infection to DDoS & More'' (68b7d8c30d43bf797983c817).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.bitsight.com/blog/rapperbot-infection-ddos-split-second
+tags:
+- infrastructure
+- ddos
+- nvr
+- dns
+- rapperbot
+- botnet
+- iot
+- encryption
+- exploit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 329b5885b7e275adac37eb18a80ecdb3caf7be655086997faa2dfbc167d32b2f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

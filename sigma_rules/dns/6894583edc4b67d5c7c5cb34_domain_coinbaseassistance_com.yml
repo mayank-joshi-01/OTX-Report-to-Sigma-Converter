@@ -1,0 +1,20 @@
+title: OTX domain IOC - coinbaseassistance.com
+id: 5d4c09ea-ccc0-4a71-ba5c-e4cbac5bacb4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: coinbaseassistance.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - cancunsfamilyrest.online
+id: ea9e48b7-f3f9-45a5-b5d2-02b5aebbd380
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cancunsfamilyrest.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

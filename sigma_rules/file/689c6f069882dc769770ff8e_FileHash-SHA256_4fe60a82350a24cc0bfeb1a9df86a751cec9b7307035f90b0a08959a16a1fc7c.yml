@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 4fe60a82350a24cc0bfeb1a9df86a751cec9b7307035f90b0a08959a16a1fc7c
+id: 060d3b5a-9433-48d2-b54f-f021b9baebd3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CVE-2017-11882 Will
+  Never Die' (689c6f069882dc769770ff8e).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://isc.sans.edu/diary/rss/32196
+tags:
+- microsoft office
+- vipkeylogger
+- exploit
+- cve-2017-11882
+- obfuscation
+- keylogger
+- equation editor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4fe60a82350a24cc0bfeb1a9df86a751cec9b7307035f90b0a08959a16a1fc7c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

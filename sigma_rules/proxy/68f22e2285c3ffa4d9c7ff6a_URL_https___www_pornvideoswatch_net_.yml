@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://www.pornvideoswatch.net/
+id: 7bcf8ac3-313c-4dd1-9daa-ad0ab6450482
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.pornvideoswatch.net/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

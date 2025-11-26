@@ -1,0 +1,32 @@
+title: OTX hostname IOC - natezlx.myvnc.com
+id: ff8a2bec-a0f2-4d22-a198-22bdec4d6246
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kimsuky's Ongoing
+  Evolution of KimJongRAT and Expanding Threats' (6924489d963d7a76a737f173).
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.enki.co.kr/en/media-center/blog/kimsuky-s-ongoing-evolution-of-kimjongrat-and-expanding-threats
+tags:
+- spear-phishing
+- browser credentials
+- north korea
+- babyshark
+- kimjongrat
+- powershell
+- pe executable
+- keylogging
+- data exfiltration
+- credential theft
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: natezlx.myvnc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

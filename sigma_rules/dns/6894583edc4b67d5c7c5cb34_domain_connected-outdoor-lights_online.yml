@@ -1,0 +1,20 @@
+title: OTX domain IOC - connected-outdoor-lights.online
+id: 056219a9-b1ad-4b40-bdf7-879aa537d724
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: connected-outdoor-lights.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

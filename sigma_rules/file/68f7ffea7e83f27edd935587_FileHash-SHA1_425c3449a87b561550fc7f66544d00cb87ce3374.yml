@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA1 IOC - 425c3449a87b561550fc7f66544d00cb87ce3374
+id: 5a510d78-87d6-4651-8117-af778f2373e0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Mirai: The IoT Botnet''
+  (68f7ffea7e83f27edd935587).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://www.pointwild.com/threat-intelligence/mirai-the-iot-botnet
+tags:
+- botnet
+- iot
+- mirai
+- upx packing
+- ddos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 425c3449a87b561550fc7f66544d00cb87ce3374
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

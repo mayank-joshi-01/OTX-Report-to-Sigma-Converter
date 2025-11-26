@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 8bbeafcc91a43936ae8a91de31795842cd93d2d8be3f72ce5c6ed27a08cdc092
+id: 7a2788c4-e17c-408e-b81e-337a35a63985
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Shuyal Stealer:
+  Advanced Infostealer Targeting 19 Browsers'' (68e68278a0b8b21ac7e1edb7).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.pointwild.com/threat-intelligence/shuyal-stealer-advanced-infostealer-targeting-19-browsers
+tags:
+- evasion
+- browser targeting
+- system reconnaissance
+- data exfiltration
+- telegram bot
+- persistence
+- shuyal stealer
+- infostealer
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8bbeafcc91a43936ae8a91de31795842cd93d2d8be3f72ce5c6ed27a08cdc092
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

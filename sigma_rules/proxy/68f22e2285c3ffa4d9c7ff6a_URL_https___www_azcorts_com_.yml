@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://www.azcorts.com/
+id: 57c0fdc2-f5cf-439a-a0fb-868dfbdf94fe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.azcorts.com/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

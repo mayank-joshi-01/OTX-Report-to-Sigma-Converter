@@ -1,0 +1,20 @@
+title: OTX domain IOC - anywayio.site
+id: f61263d9-3be5-46c1-bae1-b98c60cc1750
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: anywayio.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - www52935v.com
+id: ec0b6564-7be1-40dc-abf3-8ccc237ff9ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www52935v.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

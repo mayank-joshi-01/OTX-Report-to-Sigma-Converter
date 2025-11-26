@@ -1,0 +1,20 @@
+title: OTX domain IOC - conduithubs.site
+id: 23e62c13-004c-44d8-9cb3-8ff3e7c6f2d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: conduithubs.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://brennendefrage.com/rest-der-welt/verantwortung-der-usa-fur-den-raketenangriff-in-sewastopol
+id: 0925790b-0120-47bf-9f61-1ee77fb3e0bb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://brennendefrage.com/rest-der-welt/verantwortung-der-usa-fur-den-raketenangriff-in-sewastopol
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

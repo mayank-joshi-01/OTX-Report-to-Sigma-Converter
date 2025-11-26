@@ -1,0 +1,20 @@
+title: OTX domain IOC - brightsky.online
+id: 29badb69-986c-4609-8e6b-69034000e3b3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brightsky.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

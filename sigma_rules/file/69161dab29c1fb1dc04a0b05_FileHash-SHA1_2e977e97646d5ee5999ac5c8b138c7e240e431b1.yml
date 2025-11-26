@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 2e977e97646d5ee5999ac5c8b138c7e240e431b1
+id: 07a1d6ad-85a7-4a48-9a52-768fcbfc35f6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unleashing the Kraken
+  ransomware group' (69161dab29c1fb1dc04a0b05).
+author: AlienVault
+date: '2025-11-13'
+references:
+- https://blog.talosintelligence.com/kraken-ransomware-group/
+tags:
+- cross-platform
+- data leak
+- double extortion
+- kraken
+- underground forum
+- encryption
+- ransomware
+- russian-speaking
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 2e977e97646d5ee5999ac5c8b138c7e240e431b1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

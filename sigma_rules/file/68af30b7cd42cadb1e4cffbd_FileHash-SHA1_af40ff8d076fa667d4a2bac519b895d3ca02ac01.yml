@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - af40ff8d076fa667d4a2bac519b895d3ca02ac01
+id: 1c5c531a-a00d-4f20-b1fc-a767381d3fb7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Underground Ransomware
+  Being Distributed Worldwide' (68af30b7cd42cadb1e4cffbd).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://asec.ahnlab.com/en/89835
+tags:
+- striping method
+- ransomware
+- global attacks
+- underground ransomware
+- encryption
+- data theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: af40ff8d076fa667d4a2bac519b895d3ca02ac01
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

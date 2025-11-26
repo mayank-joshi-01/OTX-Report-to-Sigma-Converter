@@ -1,0 +1,40 @@
+title: OTX FileHash-MD5 IOC - 72616e99230dab898ba193741a0b5d35
+id: 05448ce1-5f90-4f26-900c-7f74445db501
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Most Powerful
+  Ever? Inside the 11.5Tbps-Scale Mega Botnet AISURU' (68d5096c02da6fff718c6c50).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://blog.xlab.qianxin.com/super-large-scale-botnet-aisuru-en
+tags:
+- cve-2017-5259
+- encryption
+- cve-2022-35733
+- cve-2013-5948
+- botnet
+- vulnerabilities
+- firmware
+- aisuru
+- cve-2013-1599
+- cve-2023-28771
+- airashi
+- cve-2022-44149
+- cve-2024-3721
+- cybercrime
+- cve-2013-3307
+- proxy
+- cve-2023-50381
+- ddos
+- router
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 72616e99230dab898ba193741a0b5d35
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

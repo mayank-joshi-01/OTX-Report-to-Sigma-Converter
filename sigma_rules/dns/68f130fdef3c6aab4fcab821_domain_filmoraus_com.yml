@@ -1,0 +1,31 @@
+title: OTX domain IOC - filmoraus.com
+id: 10826fe8-87d5-4725-a6e8-88630d6f927c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Odyssey Stealer &
+  AMOS Hit macOS Developers with Fake Homebrew Sites' (68f130fdef3c6aab4fcab821).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://hunt.io/blog/macos-odyssey-amos-malware-campaign
+tags:
+- stealer
+- macos
+- privilege escalation
+- phishing
+- homebrew
+- odyssey stealer
+- amos
+- developers
+- social engineering
+- infrastructure reuse
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: filmoraus.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

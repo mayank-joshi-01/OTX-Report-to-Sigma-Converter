@@ -1,0 +1,25 @@
+title: OTX domain IOC - residential-ip.com
+id: ff153452-70ea-4e6a-9793-e8e3b2da42f4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Belarus-Linked DSLRoot
+  Proxy Network Deploys Hardware in U.S. Residences, Including Military Homes' (68af30b52ebb20fed2ec85f7).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://infrawatch.app/blog/dslroot-us-proxy-investigation
+tags:
+- residential proxy
+- anonymous routing
+- u.s. infrastructure
+- virtual credit cards
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: residential-ip.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

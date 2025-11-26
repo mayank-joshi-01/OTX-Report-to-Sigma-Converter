@@ -1,0 +1,20 @@
+title: OTX domain IOC - fregaveiculos.site
+id: b50f23e5-5ed6-42a1-84f9-0d67aa6afaaf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fregaveiculos.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

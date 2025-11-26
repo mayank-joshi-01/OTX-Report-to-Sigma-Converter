@@ -1,0 +1,20 @@
+title: OTX domain IOC - n8n-aihelper.online
+id: c5c39928-ffc5-4ba4-81cd-aa679a7db729
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: n8n-aihelper.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

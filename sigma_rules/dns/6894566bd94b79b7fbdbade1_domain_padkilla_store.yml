@@ -1,0 +1,20 @@
+title: OTX domain IOC - padkilla.store
+id: e6b9e7fb-28b8-4c99-8905-1fe6c2b334c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: padkilla.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

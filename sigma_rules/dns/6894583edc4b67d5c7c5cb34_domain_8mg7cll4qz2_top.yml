@@ -1,0 +1,20 @@
+title: OTX domain IOC - 8mg7cll4qz2.top
+id: 3e91646f-a02e-4511-8681-fc28cdf2465d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 8mg7cll4qz2.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

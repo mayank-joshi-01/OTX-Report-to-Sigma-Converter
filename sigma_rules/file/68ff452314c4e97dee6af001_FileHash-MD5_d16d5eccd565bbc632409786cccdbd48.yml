@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - d16d5eccd565bbc632409786cccdbd48
+id: f418f683-8197-4bf9-a975-235cef213b87
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Dream Job to
+  Malware: DreamLoaders in Recent Campaign'' (68ff452314c4e97dee6af001).'
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://lab52.io/blog/dreamloaders
+tags:
+- tightvnc
+- dreamloaders
+- dreamjob
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d16d5eccd565bbc632409786cccdbd48
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

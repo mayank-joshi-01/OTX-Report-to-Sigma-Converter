@@ -1,0 +1,20 @@
+title: OTX domain IOC - duren777-up.site
+id: f2f19d20-e1cf-46b6-a6d5-b1a77fa25b6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: duren777-up.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

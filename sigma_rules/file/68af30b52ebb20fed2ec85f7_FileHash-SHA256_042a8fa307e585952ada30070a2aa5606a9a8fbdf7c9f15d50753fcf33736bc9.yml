@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 042a8fa307e585952ada30070a2aa5606a9a8fbdf7c9f15d50753fcf33736bc9
+id: b71bb98b-60bf-40c3-bca1-c0424aba34cd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Belarus-Linked DSLRoot
+  Proxy Network Deploys Hardware in U.S. Residences, Including Military Homes' (68af30b52ebb20fed2ec85f7).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://infrawatch.app/blog/dslroot-us-proxy-investigation
+tags:
+- residential proxy
+- anonymous routing
+- u.s. infrastructure
+- virtual credit cards
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 042a8fa307e585952ada30070a2aa5606a9a8fbdf7c9f15d50753fcf33736bc9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

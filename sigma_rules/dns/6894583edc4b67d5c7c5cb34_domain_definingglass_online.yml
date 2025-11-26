@@ -1,0 +1,20 @@
+title: OTX domain IOC - definingglass.online
+id: 21411c8c-3a34-41f0-a197-1655d5a34ff3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: definingglass.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - topraban28.online
+id: 1bfe8424-44c5-4874-897f-7c9cc80b9bf9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: topraban28.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

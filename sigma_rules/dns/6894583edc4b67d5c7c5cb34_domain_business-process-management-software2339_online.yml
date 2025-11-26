@@ -1,0 +1,20 @@
+title: OTX domain IOC - business-process-management-software2339.online
+id: c39a4e9b-21f3-4463-ac1a-7bee22151bac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: business-process-management-software2339.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

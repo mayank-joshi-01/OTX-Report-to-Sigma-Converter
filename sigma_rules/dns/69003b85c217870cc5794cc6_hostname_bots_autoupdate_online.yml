@@ -1,0 +1,28 @@
+title: OTX hostname IOC - bots.autoupdate.online
+id: 259473a4-aed6-448f-947b-3a33b780c8f4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crypto wasted: BlueNoroff’s
+  ghost mirage of funding and jobs'' (69003b85c217870cc5794cc6).'
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842
+tags:
+- zoomclutch
+- rootroy
+- sysphon
+- silentsiphon
+- sneakmain
+- cosmicdoor
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bots.autoupdate.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

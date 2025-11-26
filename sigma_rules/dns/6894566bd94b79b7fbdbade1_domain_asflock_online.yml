@@ -1,0 +1,20 @@
+title: OTX domain IOC - asflock.online
+id: 1f0e4606-7b33-4103-8a00-a283f15fe615
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asflock.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

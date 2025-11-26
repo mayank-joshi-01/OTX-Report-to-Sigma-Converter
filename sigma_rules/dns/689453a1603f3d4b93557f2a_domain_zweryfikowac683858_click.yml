@@ -1,0 +1,20 @@
+title: OTX domain IOC - zweryfikowac683858.click
+id: 607488ee-f552-4171-951d-5d5d21c9aab4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zweryfikowac683858.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

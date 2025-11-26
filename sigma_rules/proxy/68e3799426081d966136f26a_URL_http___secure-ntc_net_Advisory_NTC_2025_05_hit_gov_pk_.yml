@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://secure-ntc.net/Advisory/NTC/2025/05/hit.gov.pk/
+id: 57d0c076-75bb-40a5-90bd-58076df69a52
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://secure-ntc.net/Advisory/NTC/2025/05/hit.gov.pk/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

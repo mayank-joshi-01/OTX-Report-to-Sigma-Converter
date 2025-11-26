@@ -1,0 +1,25 @@
+title: OTX domain IOC - autoridade-tributaria.com
+id: a74eb5bc-1285-455a-9862-6595eef6aa69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Brazil with
+  Love: New Tactics from Lampion'' (6904825c8b7788f09d0d5ce2).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.bitsight.com/blog/brazil-love-new-tactics-lampion
+tags:
+- lampion
+- clickfix
+- banking trojan
+- lampion stealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: autoridade-tributaria.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

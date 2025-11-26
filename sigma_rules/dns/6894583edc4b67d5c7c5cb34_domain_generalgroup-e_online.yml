@@ -1,0 +1,20 @@
+title: OTX domain IOC - generalgroup-e.online
+id: 33ebc0a8-9331-4e3b-82c9-c4a13f16820f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: generalgroup-e.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

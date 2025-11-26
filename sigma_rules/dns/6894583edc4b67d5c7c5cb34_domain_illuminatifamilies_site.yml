@@ -1,0 +1,20 @@
+title: OTX domain IOC - illuminatifamilies.site
+id: 9a26120f-b8a0-4f3f-831d-27cda4fa980c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: illuminatifamilies.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

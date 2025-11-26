@@ -1,0 +1,20 @@
+title: OTX domain IOC - independentmercantile.store
+id: 53039561-051d-43c5-96e7-f903c7090e39
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: independentmercantile.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

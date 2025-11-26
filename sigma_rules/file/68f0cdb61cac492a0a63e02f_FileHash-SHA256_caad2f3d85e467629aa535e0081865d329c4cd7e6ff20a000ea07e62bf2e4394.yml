@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - caad2f3d85e467629aa535e0081865d329c4cd7e6ff20a000ea07e62bf2e4394
+id: 82325998-bf9c-4c8f-a949-b86786364b72
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Evolving with a new
+  Javascript module' (68f0cdb61cac492a0a63e02f).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://blog.talosintelligence.com/beavertail-and-ottercookie
+tags:
+- vs code extension
+- beavertail
+- north korea
+- dprk
+- cryptocurrency
+- pylangghost
+- chessfi
+- keylogger
+- ottercookie
+- node.js
+- golangghost
+- invisibleferret
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: caad2f3d85e467629aa535e0081865d329c4cd7e6ff20a000ea07e62bf2e4394
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

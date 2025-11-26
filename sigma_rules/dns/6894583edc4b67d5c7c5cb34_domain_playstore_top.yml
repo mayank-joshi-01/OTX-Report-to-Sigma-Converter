@@ -1,0 +1,20 @@
+title: OTX domain IOC - playstore.top
+id: 0d9d094b-fe24-47d9-bdf4-add1df6e9882
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: playstore.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

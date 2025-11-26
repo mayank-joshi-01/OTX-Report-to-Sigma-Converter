@@ -1,0 +1,20 @@
+title: OTX domain IOC - barracudas.site
+id: 41ca7964-18d7-4a32-9070-ae557ec193bb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: barracudas.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

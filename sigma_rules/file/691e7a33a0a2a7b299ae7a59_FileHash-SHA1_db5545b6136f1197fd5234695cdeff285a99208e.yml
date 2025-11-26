@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - db5545b6136f1197fd5234695cdeff285a99208e
+id: 3bb24178-0fbc-4d36-82a4-d6b4ca634f5d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Banking Trojan
+  Identified, Distributed Through WhatsApp' (691e7a33a0a2a7b299ae7a59).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/spiderlabs-ids-new-banking-trojan-distributed-through-whatsapp
+tags:
+- eternidade stealer
+- delphi
+- banking trojan
+- credential theft
+- whatsapp
+- imap
+- brazil
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: db5545b6136f1197fd5234695cdeff285a99208e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

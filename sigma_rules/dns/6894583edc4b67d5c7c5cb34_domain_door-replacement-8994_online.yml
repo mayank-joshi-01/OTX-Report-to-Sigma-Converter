@@ -1,0 +1,20 @@
+title: OTX domain IOC - door-replacement-8994.online
+id: 64ed4a78-5327-497e-8155-8530e4114cf2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: door-replacement-8994.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

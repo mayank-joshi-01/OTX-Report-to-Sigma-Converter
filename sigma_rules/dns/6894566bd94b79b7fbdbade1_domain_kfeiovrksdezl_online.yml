@@ -1,0 +1,20 @@
+title: OTX domain IOC - kfeiovrksdezl.online
+id: 0d487bde-0b41-4609-9e34-9cafe08f0a49
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kfeiovrksdezl.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

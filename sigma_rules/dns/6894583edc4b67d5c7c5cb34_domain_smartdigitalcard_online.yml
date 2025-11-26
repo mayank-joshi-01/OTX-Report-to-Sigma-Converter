@@ -1,0 +1,20 @@
+title: OTX domain IOC - smartdigitalcard.online
+id: 5e8bf58e-3f84-4161-be5d-6a4683202aaf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smartdigitalcard.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

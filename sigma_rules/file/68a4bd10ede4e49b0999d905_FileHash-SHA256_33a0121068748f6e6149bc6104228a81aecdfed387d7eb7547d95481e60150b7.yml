@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 33a0121068748f6e6149bc6104228a81aecdfed387d7eb7547d95481e60150b7
+id: 983e25f2-fe85-4640-8453-32bf4835897c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ransomware incidents
+  in Japan during the first half of 2025' (68a4bd10ede4e49b0999d905).
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://blog.talosintelligence.com/ransomware_incidents_in_japan_during_the_first_half_of_2025/
+tags:
+- kawa4096
+- japan
+- manufacturing
+- encryption
+- kawalocker
+- double-extortion
+- kawalocker 2.0
+- salsa20
+- ransomware
+- small-medium-enterprises
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 33a0121068748f6e6149bc6104228a81aecdfed387d7eb7547d95481e60150b7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - container-gardening-tips-15392.site
+id: f384c023-beb1-4faf-9e04-4b1e48acf3ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: container-gardening-tips-15392.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

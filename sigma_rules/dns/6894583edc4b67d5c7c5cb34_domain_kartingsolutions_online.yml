@@ -1,0 +1,20 @@
+title: OTX domain IOC - kartingsolutions.online
+id: 19835b35-830a-4903-8533-cd4363a3bbeb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kartingsolutions.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

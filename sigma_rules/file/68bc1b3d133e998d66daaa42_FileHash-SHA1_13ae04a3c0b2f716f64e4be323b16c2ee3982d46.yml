@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 13ae04a3c0b2f716f64e4be323b16c2ee3982d46
+id: f2314c34-f054-4f53-a42d-359af03f0e1b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasked: Salat
+  Stealer – A Deep Dive into Its Advanced Persistence Mechanisms and C2 Infrastructure''
+  (68bc1b3d133e998d66daaa42).'
+author: AlienVault
+date: '2025-09-06'
+references:
+- https://www.cyfirma.com/research/unmasked-salat-stealer-a-deep-dive-into-its-advanced-persistence-mechanisms-and-c2-infrastructure
+tags:
+- persistence
+- salat stealer
+- malware-as-a-service
+- web_rat
+- windows
+- infostealer
+- go-based
+- cryptocurrency
+- browser credentials
+- evasion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 13ae04a3c0b2f716f64e4be323b16c2ee3982d46
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

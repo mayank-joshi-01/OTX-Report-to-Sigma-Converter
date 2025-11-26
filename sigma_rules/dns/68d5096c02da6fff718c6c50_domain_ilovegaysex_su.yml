@@ -1,0 +1,40 @@
+title: OTX domain IOC - ilovegaysex.su
+id: 3098133e-2661-458f-b836-eafbaeaffb07
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Most Powerful
+  Ever? Inside the 11.5Tbps-Scale Mega Botnet AISURU' (68d5096c02da6fff718c6c50).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://blog.xlab.qianxin.com/super-large-scale-botnet-aisuru-en
+tags:
+- cve-2017-5259
+- encryption
+- cve-2022-35733
+- cve-2013-5948
+- botnet
+- vulnerabilities
+- firmware
+- aisuru
+- cve-2013-1599
+- cve-2023-28771
+- airashi
+- cve-2022-44149
+- cve-2024-3721
+- cybercrime
+- cve-2013-3307
+- proxy
+- cve-2023-50381
+- ddos
+- router
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ilovegaysex.su
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

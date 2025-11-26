@@ -1,0 +1,20 @@
+title: OTX domain IOC - mpb5fjyiglrk5crdwtrwqmsfmszzw.ee
+id: fa8191a5-67cd-4e90-8a01-59a3ba1b3e0f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mpb5fjyiglrk5crdwtrwqmsfmszzw.ee
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

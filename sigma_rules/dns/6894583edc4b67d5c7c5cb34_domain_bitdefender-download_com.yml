@@ -1,0 +1,20 @@
+title: OTX domain IOC - bitdefender-download.com
+id: eca4f20b-1d6a-420e-b6f6-d7eeb32368ee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bitdefender-download.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

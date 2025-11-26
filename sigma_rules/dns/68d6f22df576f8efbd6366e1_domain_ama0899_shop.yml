@@ -1,0 +1,32 @@
+title: OTX domain IOC - ama0899.shop
+id: 17dc73ce-65b3-4d9a-ba46-83f78dd6c372
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SVG Phishing hits
+  Ukraine with Amatera Stealer, PureMiner' (68d6f22df576f8efbd6366e1).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://www.fortinet.com/blog/threat-research/svg-phishing-hits-ukraine-with-amatera-stealer-pureminer
+tags:
+- pureminer
+- chm
+- countloader
+- hta loader
+- amatera stealer
+- data theft
+- ukraine
+- phishing
+- svg
+- fileless
+- cryptomining
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ama0899.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX domain IOC - ev2sirbd269o5j.org
+id: fb142ea0-1575-4677-b749-e1a231709682
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Bing Search
+  to Ransomware: Bumblebee and AdaptixC2 Deliver Akira'' (68948bbcf88498b35a1a958e).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira
+tags:
+- rustdesk
+- data exfiltration
+- ransomware
+- credential theft
+- seo poisoning
+- lateral movement
+- akira
+- bumblebee
+- it management tools
+- adaptixc2
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ev2sirbd269o5j.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

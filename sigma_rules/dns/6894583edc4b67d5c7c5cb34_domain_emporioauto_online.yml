@@ -1,0 +1,20 @@
+title: OTX domain IOC - emporioauto.online
+id: bede781c-37e6-4eeb-9598-a5b690acc974
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: emporioauto.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

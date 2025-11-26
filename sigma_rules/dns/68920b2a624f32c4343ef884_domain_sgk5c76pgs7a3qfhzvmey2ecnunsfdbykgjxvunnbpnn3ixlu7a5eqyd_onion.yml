@@ -1,0 +1,29 @@
+title: OTX domain IOC - sgk5c76pgs7a3qfhzvmey2ecnunsfdbykgjxvunnbpnn3ixlu7a5eqyd.onion
+id: 5008f77d-f9c1-4e4c-b6c8-880c27058a59
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Raspberry Robin:
+  Latest Updates and Improvements'' (68920b2a624f32c4343ef884).'
+author: AlienVault
+date: '2025-08-05'
+references: []
+tags:
+- encryption
+- roshtyak
+- usb
+- privilege-escalation
+- obfuscation
+- tor
+- raspberry robin
+- cve-2024-38196
+- downloader
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sgk5c76pgs7a3qfhzvmey2ecnunsfdbykgjxvunnbpnn3ixlu7a5eqyd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

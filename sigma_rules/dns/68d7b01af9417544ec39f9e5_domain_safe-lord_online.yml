@@ -1,0 +1,27 @@
+title: OTX domain IOC - safe-lord.online
+id: 347ba322-890b-42f2-b615-1b9281597beb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Hunting on
+  potential APT35 Servers' (68d7b01af9417544ec39f9e5).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.stormshield.com/news/apt35-plays-same-music-again
+tags:
+- typosquatting
+- iranian apt
+- video conferencing
+- threat hunting
+- infrastructure tracking
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: safe-lord.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

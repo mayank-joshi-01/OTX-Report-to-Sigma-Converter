@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - 6da534ee1f9346c4c313d7ea582d1bec
+id: c7a07303-97d2-43f4-9afd-b8fa195d2bf5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Help Wanted: Vietnamese
+  Actors Using Fake Job Posting Campaigns to Deliver Malware and Steal Credentials''
+  (68faa2fed55e8cf11bb533b7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/vietnamese-actors-fake-job-posting-campaigns
+tags:
+- fake job postings
+- credential theft
+- remote access trojans
+- digital advertising
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6da534ee1f9346c4c313d7ea582d1bec
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

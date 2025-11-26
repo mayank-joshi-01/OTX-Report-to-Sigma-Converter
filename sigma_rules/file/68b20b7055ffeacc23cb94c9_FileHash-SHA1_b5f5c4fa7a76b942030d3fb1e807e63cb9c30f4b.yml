@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - b5f5c4fa7a76b942030d3fb1e807e63cb9c30f4b
+id: 880f1d31-5e28-4fe5-bbfe-a3f4aeb3c7b4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Interlock Ransomware
+  Targeting Businesses' (68b20b7055ffeacc23cb94c9).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://asec.ahnlab.com/en/89912
+tags:
+- aes-256-gcm
+- code obfuscation
+- file encryption
+- ransomware
+- openssl
+- north america
+- interlock
+- europe
+- rsa-4096
+- data theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: b5f5c4fa7a76b942030d3fb1e807e63cb9c30f4b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

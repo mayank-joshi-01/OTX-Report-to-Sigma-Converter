@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 97b833c97ee76eaf03cb11e8e375c8d618a6a500
+id: ee1b322f-532e-48ec-8a5c-1af79a525949
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Covert Dual-Mode
+  Backdoor Threat' (68b02e9d16cefad9b2cd22a9).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://blog.xlab.qianxin.com/mystrodx_covert_dual-mode_backdoor_en
+tags:
+- icmp trigger
+- backdoor
+- mystrodx
+- stealth
+- dual-process guardian
+- dns trigger
+- c2 servers
+- passive mode
+- encryption
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 97b833c97ee76eaf03cb11e8e375c8d618a6a500
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

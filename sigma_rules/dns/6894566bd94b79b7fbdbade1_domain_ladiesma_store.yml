@@ -1,0 +1,20 @@
+title: OTX domain IOC - ladiesma.store
+id: a9c671f3-a3e5-418c-881e-d9d7ac8e59fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ladiesma.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

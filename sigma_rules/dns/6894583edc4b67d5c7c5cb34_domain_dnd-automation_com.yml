@@ -1,0 +1,20 @@
+title: OTX domain IOC - dnd-automation.com
+id: 33e6c030-50de-43a2-a8bd-2ad6025a69db
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dnd-automation.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

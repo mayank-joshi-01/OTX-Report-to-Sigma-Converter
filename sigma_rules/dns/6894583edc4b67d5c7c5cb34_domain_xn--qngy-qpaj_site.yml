@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--qngy-qpaj.site
+id: c49e7e13-645a-4651-b201-517e5e6efe78
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--qngy-qpaj.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 46a76b3c7851f30d68ebc6a5584bc099435b0544d8707fff7a9178f46046708b
+id: e29bbc91-ae1f-4605-bb42-cbf1b5b3489b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From ClickFix to
+  Command: A Full PowerShell Attack Chain'' (689a0c58a01e2faa99b998b7).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://www.fortinet.com/blog/threat-research/clickfix-to-command-a-full-powershell-attack-chain
+tags:
+- israeli targets
+- obfuscation
+- social engineering
+- rat
+- c2 communication
+- lateral movement
+- phishing
+- powershell rat
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 46a76b3c7851f30d68ebc6a5584bc099435b0544d8707fff7a9178f46046708b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

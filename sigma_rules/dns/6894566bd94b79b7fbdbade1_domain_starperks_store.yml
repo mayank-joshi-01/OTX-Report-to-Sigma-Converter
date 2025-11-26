@@ -1,0 +1,20 @@
+title: OTX domain IOC - starperks.store
+id: e9584ab3-6a6c-41b6-9625-00dfeb0bda65
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: starperks.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

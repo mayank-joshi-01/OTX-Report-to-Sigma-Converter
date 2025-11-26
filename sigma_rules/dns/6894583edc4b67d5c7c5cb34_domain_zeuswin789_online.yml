@@ -1,0 +1,20 @@
+title: OTX domain IOC - zeuswin789.online
+id: 087a006a-56b5-47a6-9bbd-12eb201e0abe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zeuswin789.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

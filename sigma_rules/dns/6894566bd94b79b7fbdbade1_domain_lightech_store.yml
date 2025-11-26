@@ -1,0 +1,20 @@
+title: OTX domain IOC - lightech.store
+id: 7fa11292-79e7-4d63-8882-12e8a1686234
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lightech.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

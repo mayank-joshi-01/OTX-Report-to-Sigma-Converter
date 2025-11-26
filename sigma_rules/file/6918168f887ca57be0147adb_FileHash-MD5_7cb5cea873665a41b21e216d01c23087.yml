@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - 7cb5cea873665a41b21e216d01c23087
+id: 27b4bb57-ca71-4b38-b23d-9c30da516983
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Digital Doppelgangers:
+  Anatomy of Evolving Impersonation Campaigns Distributing Gh0st RAT'' (6918168f887ca57be0147adb).'
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://unit42.paloaltonetworks.com/impersonation-campaigns-deliver-gh0st-rat/
+tags:
+- chinese-speaking targets
+- multi-stage infection
+- dll side-loading
+- brand impersonation
+- gh0st rat
+- domain generation
+- cloud infrastructure
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 7cb5cea873665a41b21e216d01c23087
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

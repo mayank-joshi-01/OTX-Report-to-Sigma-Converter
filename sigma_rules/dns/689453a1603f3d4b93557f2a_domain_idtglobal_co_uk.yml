@@ -1,0 +1,20 @@
+title: OTX domain IOC - idtglobal.co.uk
+id: 19e0b8f7-fe42-43da-891b-9e3ad6bfc7b4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: idtglobal.co.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

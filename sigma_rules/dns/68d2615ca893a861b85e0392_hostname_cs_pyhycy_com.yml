@@ -1,0 +1,30 @@
+title: OTX hostname IOC - cs.pyhycy.com
+id: e73f6ab5-2bc9-4667-910e-23fbac32d218
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Rewrite:
+  Chinese-Speaking Threat Actors Deploy BadIIS in a Wide Scale SEO Poisoning Campaign''
+  (68d2615ca893a861b85e0392).'
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign/?pdf=print&lg=en&_wpnonce=8cd08de11a
+tags:
+- badiis
+- dragonrank
+- operation rewrite
+- web shells
+- seo poisoning
+- chinese threat actor
+- iis modules
+- group 9
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cs.pyhycy.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

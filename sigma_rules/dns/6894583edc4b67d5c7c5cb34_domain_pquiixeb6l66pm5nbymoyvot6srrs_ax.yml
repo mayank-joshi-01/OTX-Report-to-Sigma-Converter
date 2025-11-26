@@ -1,0 +1,20 @@
+title: OTX domain IOC - pquiixeb6l66pm5nbymoyvot6srrs.ax
+id: 7f4a6453-87a0-4515-a5e6-f5563724bcbc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pquiixeb6l66pm5nbymoyvot6srrs.ax
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

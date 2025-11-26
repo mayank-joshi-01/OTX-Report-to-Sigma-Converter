@@ -1,0 +1,20 @@
+title: OTX domain IOC - clarahouse.site
+id: 12ab101e-7db6-4e7e-bded-9f916e6e6b56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clarahouse.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

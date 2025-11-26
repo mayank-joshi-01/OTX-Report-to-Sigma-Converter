@@ -1,0 +1,25 @@
+title: OTX domain IOC - fixuplink.com
+id: aefea49b-fc82-4954-8c92-647425462645
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From a Teams Call
+  to a Ransomware Threat: Matanbuchus 3.0 MaaS Levels Up'' (687a0d5dc93942c183eddbf5).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.morphisec.com/blog/ransomware-threat-matanbuchus-3-0-maas-levels-up
+tags:
+- Matanbuchus
+- MaaS
+- ransomware
+- Microsoft Teams
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fixuplink.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

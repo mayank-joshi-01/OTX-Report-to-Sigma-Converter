@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 9aff45bce598a65ad3f904f1bda32707
+id: bbe083ef-e648-4e32-9d0f-1feaf5a0eec0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting RapperBot
+  Botnet: From Infection to DDoS & More'' (68b7d8c30d43bf797983c817).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.bitsight.com/blog/rapperbot-infection-ddos-split-second
+tags:
+- infrastructure
+- ddos
+- nvr
+- dns
+- rapperbot
+- botnet
+- iot
+- encryption
+- exploit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9aff45bce598a65ad3f904f1bda32707
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

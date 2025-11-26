@@ -1,0 +1,31 @@
+title: OTX domain IOC - images-searcher.com
+id: 5847d341-c063-4e3c-acf9-168a7311daa5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI brings back real
+  trojan horse malware' (689c6f07a14917dcce906882).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://www.gdatasoftware.com/fileadmin/_processed_/b/2/G_DATA_Blog_TrojanHorsesComeback_Title_EN_b2e3c2cec1.jpg
+- https://feeds.feedblitz.com/~/923165480/0/gdatasecurityblog-en~JustAskJacky-AI-causes-a-Trojan-Horse-Comeback
+- https://www.gdatasoftware.com/blog/2025/08/38247-justaskjacky-ai-trojan-horse-comeback
+tags:
+- justaskjacky
+- virustotal
+- antivirus evasion
+- steganography
+- tamperedchef
+- ai
+- trojan horse
+- llm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: images-searcher.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

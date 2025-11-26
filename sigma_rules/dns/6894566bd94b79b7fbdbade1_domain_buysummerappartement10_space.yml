@@ -1,0 +1,20 @@
+title: OTX domain IOC - buysummerappartement10.space
+id: e088d552-3c8e-47b8-b84f-84ad4c053c20
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: buysummerappartement10.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

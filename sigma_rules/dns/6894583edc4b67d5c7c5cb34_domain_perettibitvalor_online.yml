@@ -1,0 +1,20 @@
+title: OTX domain IOC - perettibitvalor.online
+id: 5614e2d9-bb5b-4928-925c-c60a93b21a47
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: perettibitvalor.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

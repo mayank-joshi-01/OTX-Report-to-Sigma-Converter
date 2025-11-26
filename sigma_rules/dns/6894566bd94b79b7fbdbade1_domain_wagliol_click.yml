@@ -1,0 +1,20 @@
+title: OTX domain IOC - wagliol.click
+id: 1fab553c-7f9a-4207-ba17-1a0462735bfc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wagliol.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - xcsset.sc
+id: 02c4ad54-4a03-4636-93a0-c29582026e68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XCSSET evolves again:
+  Analyzing the latest updates to XCSSET''s inventory'' (68d56d8fd333f7587f39195e).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/09/25/xcsset-evolves-again-analyzing-the-latest-updates-to-xcssets-inventory
+tags:
+- browser targeting
+- xcode
+- persistence
+- applescript
+- macos
+- firefox
+- launchdaemon
+- clipboard hijacking
+- xcsset
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xcsset.sc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

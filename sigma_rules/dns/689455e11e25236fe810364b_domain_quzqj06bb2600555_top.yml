@@ -1,0 +1,20 @@
+title: OTX domain IOC - quzqj06bb2600555.top
+id: ac3a20c2-5381-4a5c-9a9d-8e6d48d51051
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quzqj06bb2600555.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

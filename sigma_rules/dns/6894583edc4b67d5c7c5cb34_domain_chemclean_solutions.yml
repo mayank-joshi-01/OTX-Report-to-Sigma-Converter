@@ -1,0 +1,20 @@
+title: OTX domain IOC - chemclean.solutions
+id: a3e51b31-ab9a-4694-b6c5-ca4a3f4c3465
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chemclean.solutions
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

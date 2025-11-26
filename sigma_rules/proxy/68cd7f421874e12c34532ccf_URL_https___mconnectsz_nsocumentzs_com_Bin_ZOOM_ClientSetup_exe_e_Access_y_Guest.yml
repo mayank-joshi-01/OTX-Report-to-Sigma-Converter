@@ -1,0 +1,32 @@
+title: OTX URL IOC - https://mconnectsz.nsocumentzs.com/Bin/ZOOM.ClientSetup.exe?e=Access&y=Guest
+id: 48b2df2f-d05e-4fee-ac93-0bf013fdc6a3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AsyncRAT Campaigns
+  Uncovered: How Attackers Abuse ScreenConnect and Open Directories'' (68cd7f421874e12c34532ccf).'
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://hunt.io/blog/asyncrat-screenconnect-open-directory-campaigns#ConnectWise_ScreenConnect_Network_Observables_and_Indicators_of_Compromise_IOCs
+tags:
+- phishing
+- open directories
+- screenconnect
+- remote access trojan
+- powershell rat
+- c2 infrastructure
+- payload staging
+- persistence
+- asyncrat
+- cve-2025-3935
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://mconnectsz.nsocumentzs.com/Bin/ZOOM.ClientSetup.exe?e=Access&y=Guest
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

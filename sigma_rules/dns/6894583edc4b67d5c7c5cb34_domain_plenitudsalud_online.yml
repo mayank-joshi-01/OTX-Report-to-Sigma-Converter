@@ -1,0 +1,20 @@
+title: OTX domain IOC - plenitudsalud.online
+id: 6eaceefa-50c1-45ab-9614-3e9ad5111a81
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: plenitudsalud.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dekhosabhinews.site
+id: 05d02a70-9da9-448e-9496-f5538a502791
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dekhosabhinews.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

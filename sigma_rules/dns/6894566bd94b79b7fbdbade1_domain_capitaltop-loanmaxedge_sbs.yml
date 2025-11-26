@@ -1,0 +1,20 @@
+title: OTX domain IOC - capitaltop-loanmaxedge.sbs
+id: da12e369-8aef-4858-b5ca-785f7d703b31
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capitaltop-loanmaxedge.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

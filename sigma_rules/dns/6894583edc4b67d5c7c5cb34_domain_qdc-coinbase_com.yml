@@ -1,0 +1,20 @@
+title: OTX domain IOC - qdc-coinbase.com
+id: 586b5e17-9965-4c21-b4a7-dbf5b2ca6add
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qdc-coinbase.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

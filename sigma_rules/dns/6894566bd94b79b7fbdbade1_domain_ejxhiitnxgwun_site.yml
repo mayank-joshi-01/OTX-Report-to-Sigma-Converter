@@ -1,0 +1,20 @@
+title: OTX domain IOC - ejxhiitnxgwun.site
+id: 910f7fc4-641d-497f-a8c9-f0daf2a9f103
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ejxhiitnxgwun.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

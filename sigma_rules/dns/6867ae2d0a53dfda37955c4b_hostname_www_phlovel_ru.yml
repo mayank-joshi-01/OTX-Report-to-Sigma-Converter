@@ -1,0 +1,25 @@
+title: OTX hostname IOC - www.phlovel.ru
+id: b8169f0d-8204-4997-94b6-cb21b69a48f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gamaredon in 2024:
+  Cranking out spearphishing campaigns against Ukraine with an evolved toolset'' (6867ae2d0a53dfda37955c4b).'
+author: AlienVault
+date: '2025-07-04'
+references:
+- https://web-assets.esetstatic.com/wls/en/papers/white-papers/gamaredon-in-2024.pdf
+tags:
+- powershell
+- cloudflare tunnels
+- spearphishing
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.phlovel.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

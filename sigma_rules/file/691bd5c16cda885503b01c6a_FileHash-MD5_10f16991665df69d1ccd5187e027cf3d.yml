@@ -1,0 +1,40 @@
+title: OTX FileHash-MD5 IOC - 10f16991665df69d1ccd5187e027cf3d
+id: 9b5bc7bd-6ff8-4b4c-a320-96267a5f9ffe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Frontline Intelligence:
+  Analysis of UNC1549 TTPs, Custom Tools, and Malware Targeting the Aerospace and
+  Defense Ecosystem'' (691bd5c16cda885503b01c6a).'
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/analysis-of-unc1549-ttps-targeting-aerospace-defense
+tags:
+- dcsyncer.slick
+- third-party compromise
+- sightgrab
+- aerospace
+- trusttrap
+- lateral movement
+- minibike
+- defense
+- espionage
+- lightrail
+- deeproot
+- crashpad
+- twostroke
+- pollblend
+- custom malware
+- phishing
+- privilege escalation
+- ghostline
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 10f16991665df69d1ccd5187e027cf3d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

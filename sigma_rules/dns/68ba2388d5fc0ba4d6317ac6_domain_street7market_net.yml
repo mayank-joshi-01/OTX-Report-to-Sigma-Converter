@@ -1,0 +1,26 @@
+title: OTX domain IOC - street7market.net
+id: 073ee31a-f73d-44fa-a124-de607031ef6e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Compromised
+  Keys to Phishing Campaigns: Inside a Cloud Email Service Takeover'' (68ba2388d5fc0ba4d6317ac6).'
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.wiz.io/blog/wiz-discovers-cloud-email-abuse-campaign
+tags:
+- cloud security
+- aws
+- sandbox escape
+- phishing
+- email service
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: street7market.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

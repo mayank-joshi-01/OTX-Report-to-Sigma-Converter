@@ -1,0 +1,41 @@
+title: OTX FileHash-SHA256 IOC - 046c011bbf14fa5d187bd4d5ac2a7cf1317f103ae2ba46769a451add5735c8e8
+id: 685d677f-d210-4664-903c-b4df6ef4579b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Statistics Report
+  on Malware Targeting Windows Database Servers in Q2 2025' (68962f0d3f4895c81350d372).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://asec.ahnlab.com/en/88920
+tags:
+- hploader
+- database
+- shadowforce
+- coinminer
+- server security
+- ms-sql
+- q2 2025
+- juicypotato
+- cobaltstrike
+- ahnlab smart defense
+- clrshell
+- anydesk
+- mysql
+- gh0strat
+- mykings
+- netcat
+- attack statistics
+- windows
+- loveminer
+- remcos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 046c011bbf14fa5d187bd4d5ac2a7cf1317f103ae2ba46769a451add5735c8e8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

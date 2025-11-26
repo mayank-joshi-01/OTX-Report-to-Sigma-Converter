@@ -1,0 +1,20 @@
+title: OTX domain IOC - aslicermat.site
+id: d4b34721-3853-40c7-8d98-01d09ed29d8d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aslicermat.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

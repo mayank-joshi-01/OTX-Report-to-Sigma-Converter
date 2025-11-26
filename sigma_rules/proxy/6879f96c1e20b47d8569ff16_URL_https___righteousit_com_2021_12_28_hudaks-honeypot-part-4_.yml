@@ -1,0 +1,25 @@
+title: OTX URL IOC - https://righteousit.com/2021/12/28/hudaks-honeypot-part-4/
+id: 677f163c-15a7-4037-85d6-3ecd1f432171
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Linuxsys Cryptominer'
+  (6879f96c1e20b47d8569ff16).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.vulncheck.com/blog/linuxsys-cryptominer
+tags:
+- cryptomining
+- xmrig
+- linuxsys
+- compromised websites
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://righteousit.com/2021/12/28/hudaks-honeypot-part-4/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

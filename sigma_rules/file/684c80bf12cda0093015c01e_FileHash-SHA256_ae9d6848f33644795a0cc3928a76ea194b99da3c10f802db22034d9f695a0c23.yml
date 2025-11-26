@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - ae9d6848f33644795a0cc3928a76ea194b99da3c10f802db22034d9f695a0c23
+id: 84d9c24f-e964-416b-b460-c23e229173be
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ae9d6848f33644795a0cc3928a76ea194b99da3c10f802db22034d9f695a0c23
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

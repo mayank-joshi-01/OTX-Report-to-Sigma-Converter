@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - d392372928571662e4e59b0e3ff52a0e39a8f062633a4f5bdafc681bcdcdcf22
+id: ae1471bf-d10d-4380-ac7d-21b3184a077a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''PlayPraetor''s evolving
+  threat: How Chinese-speaking actors globally scale an Android RAT'' (68948bfab798d830a4506f28).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.cleafy.com/cleafy-labs/playpraetors-evolving-threat-how-chinese-speaking-actors-globally-scale-an-android-rat
+tags:
+- cryptocurrency
+- playpraetor
+- rat
+- banking
+- android
+- botnet
+- accessibility services
+- maas
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d392372928571662e4e59b0e3ff52a0e39a8f062633a4f5bdafc681bcdcdcf22
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

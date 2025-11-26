@@ -1,0 +1,36 @@
+title: OTX domain IOC - ji57fr53anp7wb44tbbnp72qcgbhqywy4jmbncawdcrejj5amuvh3zqd.onion
+id: 7452aaab-a871-451b-8993-8c552c8d423e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Evolution of Qilin
+  RaaS' (68e69076a95f1726dd5d19eb).
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.sans.org/blog/evolution-qilin-raas
+tags:
+- qilin
+- raas
+- fin12
+- alphvblackcat
+- kela
+- bitcoin
+- nova
+- ryuk
+- ransomware
+- agenda
+- tor
+- onion
+- wikileaks
+- phishing
+- supply chain attack
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ji57fr53anp7wb44tbbnp72qcgbhqywy4jmbncawdcrejj5amuvh3zqd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

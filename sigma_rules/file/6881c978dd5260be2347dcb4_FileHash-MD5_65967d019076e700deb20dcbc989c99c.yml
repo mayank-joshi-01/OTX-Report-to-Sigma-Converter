@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 65967d019076e700deb20dcbc989c99c
+id: 8a5b4133-44da-4836-a7b9-683e76bc9bfb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Cargotalon:
+  Targeting Russian Aerospace Defense Using Eaglet Implant'' (6881c978dd5260be2347dcb4).'
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://www.seqrite.com/blog/operation-cargotalon-ung0901-targets-russian-aerospace-defense-sector-using-eaglet-implant
+tags:
+- spear-phishing
+- dll implant
+- aerospace
+- espionage
+- defense
+- logistics
+- eaglet
+- russia
+- head mare
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 65967d019076e700deb20dcbc989c99c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

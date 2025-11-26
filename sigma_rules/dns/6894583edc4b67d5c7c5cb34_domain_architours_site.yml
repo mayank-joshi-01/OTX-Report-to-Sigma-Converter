@@ -1,0 +1,20 @@
+title: OTX domain IOC - architours.site
+id: 9ad0c707-f383-4c5c-87fc-3bf94e5529c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: architours.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - aldridgeimagery.online
+id: 1ffffd5e-5c9d-4dff-a28f-25bc2722e579
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aldridgeimagery.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

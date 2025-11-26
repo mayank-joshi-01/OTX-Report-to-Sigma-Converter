@@ -1,0 +1,20 @@
+title: OTX domain IOC - glowmartly.online
+id: 06ca7735-69cd-4cf1-bfd4-eae53f2db1ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: glowmartly.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

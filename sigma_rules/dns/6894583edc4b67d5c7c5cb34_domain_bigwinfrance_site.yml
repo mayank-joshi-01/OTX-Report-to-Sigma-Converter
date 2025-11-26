@@ -1,0 +1,20 @@
+title: OTX domain IOC - bigwinfrance.site
+id: b844c98c-19e5-4ba7-8bf9-3bfa5449eaaa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bigwinfrance.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

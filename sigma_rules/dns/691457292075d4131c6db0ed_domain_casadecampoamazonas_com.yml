@@ -1,0 +1,30 @@
+title: OTX domain IOC - casadecampoamazonas.com
+id: ee3541a3-a0fc-454d-851b-04c5c9c0f896
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing the Link
+  Between Two Evolving Brazilian Banking Trojans' (691457292075d4131c6db0ed).
+author: AlienVault
+date: '2025-11-12'
+references:
+- https://www.cyberproof.com/blog/maverick-and-coyote-analyzing-the-link-between-two-evolving-brazilian-banking-trojans/
+tags:
+- maverick
+- whatsapp
+- banking trojan
+- .net
+- powershell
+- multi-stage attack
+- coyote
+- obfuscation
+- brazil
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: casadecampoamazonas.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://195.123.240.233:443/atm
+id: 5a902768-e4d4-4d5c-8a95-153f0f94bf30
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Exploitation of Leaked
+  Machine Keys by Initial Access Broker' (686e6de3779dc49cad71265b).
+author: AlienVault
+date: '2025-07-09'
+references:
+- https://unit42.paloaltonetworks.com/initial-access-broker-exploits-leaked-machine-keys/
+tags:
+- in-memory execution
+- updf
+- privilege escalation
+- initial access broker
+- view state deserialization
+- txportmap
+- machine keys
+- iis
+- post-exploitation
+- asp.net
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://195.123.240.233:443/atm
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 4948caaf5cdc197bd276ca5d8c839518528f5d91
+id: 759b666b-eb3e-4f3a-a53a-5ddaab8b1d34
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Suspected APT-C-00
+  Delivers Havoc Trojan' (68d104b5e6c89dbf695047ce).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507399&idx=1&sn=01bd1443bd6fd0c238014d2246c34039&chksm=f9c1eececeb667d81092f39b7b62807e1617b4629ce3364e427c6112f4300a932a2739a33e58&scene=178&cur_album_id=1955835290309230595&search_click_id=#rd
+tags:
+- process hollowing
+- apt
+- east asia
+- persistence
+- havoc rat
+- dll sideloading
+- trojan
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 4948caaf5cdc197bd276ca5d8c839518528f5d91
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

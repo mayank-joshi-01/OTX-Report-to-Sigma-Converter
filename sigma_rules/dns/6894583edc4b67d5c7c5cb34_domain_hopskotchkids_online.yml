@@ -1,0 +1,20 @@
+title: OTX domain IOC - hopskotchkids.online
+id: efb85faa-7032-4c03-ab6f-76ca89287df9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hopskotchkids.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

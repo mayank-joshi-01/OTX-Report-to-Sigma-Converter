@@ -1,0 +1,20 @@
+title: OTX domain IOC - mountainwhisper.online
+id: 6b33ee37-007b-49d0-bf07-d680c762ffb4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mountainwhisper.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

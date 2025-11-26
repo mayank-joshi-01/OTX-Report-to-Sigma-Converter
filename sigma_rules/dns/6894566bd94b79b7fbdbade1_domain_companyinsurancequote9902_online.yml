@@ -1,0 +1,20 @@
+title: OTX domain IOC - companyinsurancequote9902.online
+id: 3d8c28cc-40f9-4dfa-8e3f-f56d33bc68dc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: companyinsurancequote9902.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

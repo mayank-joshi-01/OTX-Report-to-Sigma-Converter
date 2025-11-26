@@ -1,0 +1,20 @@
+title: OTX domain IOC - silvitaholdingab.online
+id: 98df0580-eae3-4e25-acd2-c038aa8cc601
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: silvitaholdingab.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

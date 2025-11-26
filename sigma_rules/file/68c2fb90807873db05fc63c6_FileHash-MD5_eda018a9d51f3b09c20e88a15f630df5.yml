@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - eda018a9d51f3b09c20e88a15f630df5
+id: ce999e07-cc18-4c6b-b697-2974c19020b2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malware Campaign Leverages
+  SVGs, Email Attachments, and CDNs to Drop XWorm and Remcos via BAT Scripts' (68c2fb90807873db05fc63c6).
+author: AlienVault
+date: '2025-09-11'
+references:
+- https://www.seqrite.com/blog/xworm-remcos-bat-svg-malware-analysis
+tags:
+- bat scripts
+- powershell
+- remcos
+- rat
+- phishing
+- fileless execution
+- evasion techniques
+- svg
+- obfuscation
+- xworm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: eda018a9d51f3b09c20e88a15f630df5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

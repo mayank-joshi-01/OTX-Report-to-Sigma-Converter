@@ -1,0 +1,20 @@
+title: OTX domain IOC - wealthandofocus.site
+id: 2a732244-496b-4755-83f1-0ae6a2d2126a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wealthandofocus.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

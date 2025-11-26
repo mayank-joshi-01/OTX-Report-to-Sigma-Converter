@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1bhkinmaharashtra-in.site
+id: b8a0c1db-93a1-4b1b-abea-675d93cd9213
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1bhkinmaharashtra-in.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

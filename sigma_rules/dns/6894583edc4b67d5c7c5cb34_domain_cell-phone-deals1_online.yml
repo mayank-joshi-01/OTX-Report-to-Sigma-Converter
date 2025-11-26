@@ -1,0 +1,20 @@
+title: OTX domain IOC - cell-phone-deals1.online
+id: 8e5dfdbc-1f6b-4418-a58f-5fd2700b2ea3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cell-phone-deals1.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

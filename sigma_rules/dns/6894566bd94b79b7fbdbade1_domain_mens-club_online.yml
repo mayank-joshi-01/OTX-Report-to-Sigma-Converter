@@ -1,0 +1,20 @@
+title: OTX domain IOC - mens-club.online
+id: a6a8da5b-a881-451b-9f64-946e4e487d41
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mens-club.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

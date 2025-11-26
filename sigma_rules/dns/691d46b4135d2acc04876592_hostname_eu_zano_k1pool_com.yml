@@ -1,0 +1,32 @@
+title: OTX hostname IOC - eu.zano.k1pool.com
+id: 06c97060-486c-4e69-a783-95ec92558157
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ShadowRay 2.0: Active
+  Global Campaign Hijacks Ray AI Infrastructure Into Self-Propagating Botnet'' (691d46b4135d2acc04876592).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.oligo.security/blog/shadowray-2-0-attackers-turn-ai-against-itself-in-global-campaign-that-hijacks-ai-into-self-propagating-botnet
+tags:
+- devops
+- ai infrastructure
+- self-propagation
+- xmrig
+- cve-2023-48022
+- data exfiltration
+- cryptojacking
+- ddos
+- sockstress
+- botnet
+- ray framework
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eu.zano.k1pool.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX domain IOC - culturabva.es
+id: e3fe9eb6-2acd-43d4-b50d-cf6afd4851ae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: culturabva.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

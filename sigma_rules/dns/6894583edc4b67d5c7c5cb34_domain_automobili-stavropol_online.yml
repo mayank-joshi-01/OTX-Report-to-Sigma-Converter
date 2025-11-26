@@ -1,0 +1,20 @@
+title: OTX domain IOC - automobili-stavropol.online
+id: 01f81470-8bc2-4d63-bb4c-3a086d4afbc6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: automobili-stavropol.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

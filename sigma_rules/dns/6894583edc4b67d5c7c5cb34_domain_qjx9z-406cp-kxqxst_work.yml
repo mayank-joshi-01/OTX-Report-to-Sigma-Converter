@@ -1,0 +1,20 @@
+title: OTX domain IOC - qjx9z-406cp-kxqxst.work
+id: c3bf6a64-96d9-4520-8bf4-03042dc65294
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qjx9z-406cp-kxqxst.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

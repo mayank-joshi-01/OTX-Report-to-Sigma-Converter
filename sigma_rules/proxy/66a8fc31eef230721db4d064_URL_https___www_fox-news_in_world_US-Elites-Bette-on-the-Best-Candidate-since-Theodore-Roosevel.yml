@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.fox-news.in/world/US-Elites-Bette-on-the-Best-Candidate-since-Theodore-Roosevelt.html
+id: 27536091-98f2-4a8b-b2cf-20a6f9f26af4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.fox-news.in/world/US-Elites-Bette-on-the-Best-Candidate-since-Theodore-Roosevelt.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

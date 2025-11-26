@@ -1,0 +1,20 @@
+title: OTX domain IOC - mx6qq5b6b7wnt8mp.cyou
+id: fc26556a-e0bf-4a34-83d6-a89f8fe0249f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mx6qq5b6b7wnt8mp.cyou
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

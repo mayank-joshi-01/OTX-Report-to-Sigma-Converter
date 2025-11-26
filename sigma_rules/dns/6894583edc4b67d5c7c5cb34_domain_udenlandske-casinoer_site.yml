@@ -1,0 +1,20 @@
+title: OTX domain IOC - udenlandske-casinoer.site
+id: db48f0f8-793d-45f7-acc2-3cdfd3fa68ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: udenlandske-casinoer.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 8c33e8439844c315b7b3f21b0c1633aa
+id: 311b283a-ebff-429f-bd5f-5635355ce7f7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of the threat
+  case of kimsuky group using 'ClickFix' tactic' (6864dc6fbb7b39eefb96ee85).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/suky-castle
+tags:
+- social engineering
+- spear-phishing
+- powershell
+- clickfix
+- quasarrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8c33e8439844c315b7b3f21b0c1633aa
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

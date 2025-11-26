@@ -1,0 +1,24 @@
+title: OTX domain IOC - verifycaptcha-businessfacebook.com
+id: 88fcb076-bbcd-419e-b2d0-70667b09bf14
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: verifycaptcha-businessfacebook.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

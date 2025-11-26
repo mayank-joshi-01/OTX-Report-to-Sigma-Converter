@@ -1,0 +1,20 @@
+title: OTX domain IOC - nwrp.online
+id: cd9f5b72-6a65-4a31-b2ba-d8bb67077a88
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nwrp.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - thelilydalegeneral.online
+id: 9dd3b046-e15c-4e40-bb3c-1401e6dd33ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thelilydalegeneral.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

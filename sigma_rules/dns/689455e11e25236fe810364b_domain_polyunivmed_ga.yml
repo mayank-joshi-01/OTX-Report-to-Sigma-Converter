@@ -1,0 +1,20 @@
+title: OTX domain IOC - polyunivmed.ga
+id: 6bca4f50-3d36-492e-b123-1dc5d192bbc3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: polyunivmed.ga
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

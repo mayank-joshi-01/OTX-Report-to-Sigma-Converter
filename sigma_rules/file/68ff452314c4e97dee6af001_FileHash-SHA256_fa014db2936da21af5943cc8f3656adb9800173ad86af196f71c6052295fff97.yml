@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - fa014db2936da21af5943cc8f3656adb9800173ad86af196f71c6052295fff97
+id: f8b2a6c5-802b-48dd-b59d-b7a02808711d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Dream Job to
+  Malware: DreamLoaders in Recent Campaign'' (68ff452314c4e97dee6af001).'
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://lab52.io/blog/dreamloaders
+tags:
+- tightvnc
+- dreamloaders
+- dreamjob
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fa014db2936da21af5943cc8f3656adb9800173ad86af196f71c6052295fff97
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

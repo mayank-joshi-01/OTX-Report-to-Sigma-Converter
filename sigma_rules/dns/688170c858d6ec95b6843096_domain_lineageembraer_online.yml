@@ -1,0 +1,29 @@
+title: OTX domain IOC - lineageembraer.online
+id: a498da2b-72af-4eb8-ba19-12fa8f13e2a2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Special Mission
+  to Nowhere' (688170c858d6ec95b6843096).
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.fortinet.com/blog/threat-research/a-special-mission-to-nowhere
+tags:
+- middle east crisis
+- aviation
+- identity theft
+- financial fraud
+- evacuation
+- scam
+- embraer
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lineageembraer.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ramnagoodsglobal.online
+id: bb55c66f-75bd-4053-9e05-572e548cb7b1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ramnagoodsglobal.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

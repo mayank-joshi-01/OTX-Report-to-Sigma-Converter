@@ -1,0 +1,20 @@
+title: OTX domain IOC - gmailservices.com
+id: 4d5020dc-8bb1-4ca7-b340-c0ef4a7cebf7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gmailservices.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,23 @@
+title: OTX domain IOC - esanojinjasvc.com
+id: f6250b64-96d7-4ce3-8dee-e76cd0669167
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bitter (APT-Q-37)
+  uses diverse means to deliver new backdoor components' (68f9e25d901d09154f09b282).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://ti.qianxin.com/blog/articles/bitter-uses-diverse-means-to-deliver-new-backdoor-components-en
+tags:
+- winrar vulnerability
+- apt-q-37
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: esanojinjasvc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - hadleyholdings.online
+id: 7f2c443c-400e-4e18-9fb4-b005f606f63e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hadleyholdings.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

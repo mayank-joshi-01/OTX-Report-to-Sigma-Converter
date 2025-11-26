@@ -1,0 +1,20 @@
+title: OTX domain IOC - duchovnydom.site
+id: 15834d5b-eb77-4efa-a783-505abc9c87ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: duchovnydom.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

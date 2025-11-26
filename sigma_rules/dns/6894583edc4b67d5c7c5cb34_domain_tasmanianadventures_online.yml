@@ -1,0 +1,20 @@
+title: OTX domain IOC - tasmanianadventures.online
+id: 2d88468f-1409-46b0-862b-6d66fbc680a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tasmanianadventures.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX IPv4 IOC - 163.61.102.245
+id: a02cc51c-fe8c-4cdb-9e56-e8fbb9660f8e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of ShadowPad
+  Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)' (691f27745835a7dea5065d99).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91166
+tags:
+- backdoor
+- cve-2025-59287
+- powercat
+- shadowpad
+- remote code execution
+- chinese apt
+- wsus
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 163.61.102.245
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

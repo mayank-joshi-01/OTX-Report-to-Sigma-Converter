@@ -1,0 +1,20 @@
+title: OTX domain IOC - ajithdissanayaka.online
+id: e47f88ab-52f0-4ce5-a30e-9c43a3705802
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ajithdissanayaka.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

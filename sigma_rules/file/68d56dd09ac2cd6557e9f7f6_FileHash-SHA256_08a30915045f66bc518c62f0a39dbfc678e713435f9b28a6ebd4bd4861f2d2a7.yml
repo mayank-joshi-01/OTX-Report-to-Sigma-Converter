@@ -1,0 +1,37 @@
+title: OTX FileHash-SHA256 IOC - 08a30915045f66bc518c62f0a39dbfc678e713435f9b28a6ebd4bd4861f2d2a7
+id: 203af40d-2ac4-4f7c-b325-362098d22b3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DeceptiveDevelopment:
+  From primitive crypto theft to sophisticated AI-based deception'' (68d56dd09ac2cd6557e9f7f6).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception
+- https://github.com/eset/malware-ioc/tree/master/deceptivedevelopment
+tags:
+- north korea
+- weaselstore
+- cryptocurrency
+- social engineering
+- information theft
+- postnaptea
+- ottercookie
+- tropidoor
+- multiplatform
+- tsunamikit
+- job offers
+- remote access
+- beavertail
+- akdoortea
+- invisibleferret
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 08a30915045f66bc518c62f0a39dbfc678e713435f9b28a6ebd4bd4861f2d2a7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

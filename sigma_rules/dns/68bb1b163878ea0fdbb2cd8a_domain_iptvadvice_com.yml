@@ -1,0 +1,30 @@
+title: OTX domain IOC - iptvadvice.com
+id: c639e4dd-7b03-426c-92f1-35d3e1bae44b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Massive IPTV Piracy
+  Network Uncovered' (68bb1b163878ea0fdbb2cd8a).
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.silentpush.com/blog/iptv-piracy/#Sample-IPTV-Piracy-Network-IOFA-List
+tags:
+- cybercrime
+- iptv
+- xuione
+- piracy
+- digital content
+- infrastructure mapping
+- streaming
+- brand protection
+- tiyansoft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iptvadvice.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

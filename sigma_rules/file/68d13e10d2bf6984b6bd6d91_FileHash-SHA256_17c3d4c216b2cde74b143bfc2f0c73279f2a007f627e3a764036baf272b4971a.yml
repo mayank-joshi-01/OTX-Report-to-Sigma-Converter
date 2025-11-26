@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 17c3d4c216b2cde74b143bfc2f0c73279f2a007f627e3a764036baf272b4971a
+id: d0749f0b-f306-4fcf-b812-f660107e1f7b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Infected Steam game
+  "BlockBlasters" downloads crypto stealer malware' (68d13e10d2bf6984b6bd6d91).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://www.gdatasoftware.com/blog/2025/09/38265-steam-blockblasters-game-downloads-malware
+tags:
+- steam
+- blockblasters
+- information theft
+- gaming
+- backdoor
+- patch infection
+- crypto stealer
+- stealc
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 17c3d4c216b2cde74b143bfc2f0c73279f2a007f627e3a764036baf272b4971a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://query.datasophos.com:443
+id: 90352801-1af6-4c5e-b4b2-d1bb031bc13e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malware Identified
+  in Attacks Exploiting Ivanti Connect Secure Vulnerabilities' (6879f8b560d48aaf15291507).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://blogs.jpcert.or.jp/en/2025/07/ivanti_cs.html
+tags:
+- cobalt strike
+- fscan
+- cobalt strike beacon
+- ivanti connect secure
+- vshell
+- mdifyloader
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://query.datasophos.com:443
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

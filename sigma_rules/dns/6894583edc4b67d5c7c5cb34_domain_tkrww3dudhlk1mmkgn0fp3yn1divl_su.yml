@@ -1,0 +1,20 @@
+title: OTX domain IOC - tkrww3dudhlk1mmkgn0fp3yn1divl.su
+id: a30d87be-6dca-4519-8a10-888b4727ae8a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tkrww3dudhlk1mmkgn0fp3yn1divl.su
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bathroom-renovation-contractors-24808.online
+id: 2b4722de-b9db-44ef-843d-16da8af4a113
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bathroom-renovation-contractors-24808.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

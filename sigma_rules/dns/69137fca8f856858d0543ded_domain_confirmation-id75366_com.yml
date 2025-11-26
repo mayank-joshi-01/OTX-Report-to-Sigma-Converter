@@ -1,0 +1,25 @@
+title: OTX domain IOC - confirmation-id75366.com
+id: 17449b6b-52a9-4866-a51c-441526ab3792
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Thousands of Fake
+  Hotel Domains Used in Massive Phishing Campaign' (69137fca8f856858d0543ded).
+author: AlienVault
+date: '2025-11-11'
+references:
+- https://www.netcraft.com/blog/thousands-of-domains-target-hotel-guests-in-massive-phishing-campaign
+- https://raw.githubusercontent.com/netcraftcom/public-iocs/refs/heads/main/2025-11%20hotel%20phishing%20IOCs.csv
+tags:
+- phishing
+- domain registration
+- malspam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: confirmation-id75366.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

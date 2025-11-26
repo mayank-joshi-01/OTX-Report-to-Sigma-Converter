@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - df249727c12741ca176d5f1ccba3ce188a546d28
+id: 76267bd3-7eb5-4abd-98ff-801c29b594d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking The Gentlemen
+  Ransomware: Tactics, Techniques, and Procedures Revealed'' (68c010b430d8015144977323).'
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.trendmicro.com/en_us/research/25/i/unmasking-the-gentlemen-ransomware.html
+tags:
+- ransomware
+- lateral movement
+- the gentlemen ransomware
+- defense evasion
+- custom tools
+- driver abuse
+- data exfiltration
+- group policy manipulation
+- enterprise targeting
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: df249727c12741ca176d5f1ccba3ce188a546d28
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

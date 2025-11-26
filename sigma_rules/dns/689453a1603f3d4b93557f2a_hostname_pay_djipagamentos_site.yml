@@ -1,0 +1,20 @@
+title: OTX hostname IOC - pay.djipagamentos.site
+id: 9a5dac09-c62a-4a08-a74e-0db856fff4cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pay.djipagamentos.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - kinkong778.site
+id: 84a019c8-9c31-426f-a4a9-32bad9825b19
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kinkong778.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

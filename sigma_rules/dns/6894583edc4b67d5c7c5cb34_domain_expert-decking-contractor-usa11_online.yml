@@ -1,0 +1,20 @@
+title: OTX domain IOC - expert-decking-contractor-usa11.online
+id: 6e745643-ae60-41c2-a212-e21d5f9bd376
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: expert-decking-contractor-usa11.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - inkshop.online
+id: fc8b3157-31c2-434b-a5bd-d3ed91088275
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: inkshop.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

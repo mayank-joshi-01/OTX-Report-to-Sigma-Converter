@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 883462f37ad65e0f62fb9957f59a60aaee982ae8
+id: 31d88288-aa78-4902-b487-df83056a965a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TAG-144's Persistent
+  Grip on South American Organizations' (68add0f60282b650edbd7169).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.recordedfuture.com/research/tag-144s-persistent-grip-on-south-american-organizations
+tags:
+- limerat
+- dcrat
+- asyncrat
+- south america
+- xworm
+- bitrat
+- quasarrat
+- remcos rat
+- blotchyquasar
+- njrat
+- TAG-144
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 883462f37ad65e0f62fb9957f59a60aaee982ae8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

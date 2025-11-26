@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://jsonkeeper.com/b/BADWN
+id: 948645b8-ec73-44df-a11b-e529c63ff0b5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  Actors Now Utilize JSON Storage Services for Malware Delivery' (69171fd18d6bf2d291a8c53e).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://blog.nviso.eu/2025/11/13/contagious-interview-actors-now-utilize-json-storage-services-for-malware-delivery/
+tags:
+- ottercookie
+- json storage
+- tsunami payload
+- web3
+- social engineering
+- rat
+- north korea
+- infostealer
+- cryptocurrency
+- invisibleferret
+- trojanized code
+- beavertail
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://jsonkeeper.com/b/BADWN
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dfhdsc6nbhzgvtsuzufrwirsqozhe.gy
+id: d7030e31-ce09-4547-977b-dad24ffbcb0d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dfhdsc6nbhzgvtsuzufrwirsqozhe.gy
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

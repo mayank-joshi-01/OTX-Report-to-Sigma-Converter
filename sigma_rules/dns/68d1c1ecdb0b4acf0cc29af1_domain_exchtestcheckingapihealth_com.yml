@@ -1,0 +1,26 @@
+title: OTX domain IOC - exchtestcheckingapihealth.com
+id: 847fe376-fbe5-40d4-ac08-5d25240b1107
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: exchtestcheckingapihealth.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

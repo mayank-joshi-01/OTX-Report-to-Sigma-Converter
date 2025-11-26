@@ -1,0 +1,29 @@
+title: OTX domain IOC - diecam.top
+id: ed96ab85-0c96-4529-85d7-f768bf38f1dd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Back to Business:
+  Lumma Stealer Returns with Stealthier Methods'' (688096076e36d7d6fea700fa).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html
+tags:
+- malware-as-a-service
+- cracked software
+- information stealer
+- infrastructure
+- evasion tactics
+- lumma stealer
+- social engineering
+- github abuse
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: diecam.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

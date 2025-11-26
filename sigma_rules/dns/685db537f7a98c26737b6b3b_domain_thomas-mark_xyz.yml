@@ -1,0 +1,25 @@
+title: OTX domain IOC - thomas-mark.xyz
+id: 258ba5ab-ac28-416d-b559-1e18c96bf786
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian Educated Manticore
+  Targets Leading Tech Academics' (685db537f7a98c26737b6b3b).
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://research.checkpoint.com/2025/iranian-educated-manticore-targets-leading-tech-academics/
+tags:
+- Educated Manticore
+- Iran
+- APT42
+- Charming Kitten
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thomas-mark.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

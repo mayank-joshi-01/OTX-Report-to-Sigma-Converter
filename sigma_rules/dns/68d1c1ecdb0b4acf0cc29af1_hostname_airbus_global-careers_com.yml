@@ -1,0 +1,26 @@
+title: OTX hostname IOC - airbus.global-careers.com
+id: f0ea8781-b8d1-4f05-9b45-846e31f2eb5e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: airbus.global-careers.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

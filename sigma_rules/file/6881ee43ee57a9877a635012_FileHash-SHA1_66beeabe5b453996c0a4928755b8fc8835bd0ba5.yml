@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - 66beeabe5b453996c0a4928755b8fc8835bd0ba5
+id: 9ac53157-6c17-4a30-b08f-b2882f6d3f46
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Multiplatform Cryptomining
+  Campaign Uses Fake Error Pages to Hide Payload' (6881ee43ee57a9877a635012).
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://www.wiz.io/blog/soco404-multiplatform-cryptomining-campaign-uses-fake-error-pages-to-hide-payload
+tags:
+- process-masquerading
+- multiplatform
+- fake-404-pages
+- cryptomining
+- cve-2025-24813
+- compromised-servers
+- postgresql
+- persistence
+- crypto-scam
+- soco404
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 66beeabe5b453996c0a4928755b8fc8835bd0ba5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

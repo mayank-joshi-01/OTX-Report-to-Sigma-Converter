@@ -1,0 +1,20 @@
+title: OTX domain IOC - eqbkokxmxmyyg.space
+id: c548b9d8-4264-4c20-ae44-50350c0c1212
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eqbkokxmxmyyg.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

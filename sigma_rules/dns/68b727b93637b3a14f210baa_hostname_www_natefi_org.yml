@@ -1,0 +1,29 @@
+title: OTX hostname IOC - www.natefi.org
+id: 5e952617-b9b0-4f86-b588-424b74608d5e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Three Lazarus RATs
+  coming for your cheese' (68b727b93637b3a14f210baa).
+author: AlienVault
+date: '2025-09-02'
+references:
+- https://blog.fox-it.com/2025/09/01/three-lazarus-rats-coming-for-your-cheese/
+tags:
+- social engineering
+- financial
+- remotepe
+- poolrat
+- pondrat
+- rat
+- themeforestrat
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.natefi.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

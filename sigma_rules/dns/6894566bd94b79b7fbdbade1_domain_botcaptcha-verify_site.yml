@@ -1,0 +1,20 @@
+title: OTX domain IOC - botcaptcha-verify.site
+id: b1d91853-9cde-4d77-b9c8-ef20e9166097
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: botcaptcha-verify.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

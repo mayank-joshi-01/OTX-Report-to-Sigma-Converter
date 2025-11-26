@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 2c471e265409763024cdc33579c84d88d5aaf9aea1911266b875d3b7604a0eeb
+id: bfa2d3e6-8c31-44f4-9a70-a267f9130b20
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Solidity Language
+  open-source package was used in a $500,000 crypto heist' (6877cefdf99ce3c2912e8daa).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://securelist.com/open-source-package-for-cursor-ai-turned-into-a-crypto-heist/116908
+tags:
+- open-source
+- cursor ai
+- screenconnect
+- quasar
+- cryptocurrency
+- solidity
+- data theft
+- blockchain
+- vmdetector
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2c471e265409763024cdc33579c84d88d5aaf9aea1911266b875d3b7604a0eeb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

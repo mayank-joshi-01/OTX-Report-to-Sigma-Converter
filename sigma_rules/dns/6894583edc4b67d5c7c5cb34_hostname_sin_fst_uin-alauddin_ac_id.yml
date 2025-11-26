@@ -1,0 +1,20 @@
+title: OTX hostname IOC - sin.fst.uin-alauddin.ac.id
+id: 8d927853-9799-4b14-b10f-4f9ee4601658
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sin.fst.uin-alauddin.ac.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

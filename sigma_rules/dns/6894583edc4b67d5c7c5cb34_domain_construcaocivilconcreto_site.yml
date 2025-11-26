@@ -1,0 +1,20 @@
+title: OTX domain IOC - construcaocivilconcreto.site
+id: 3741f58f-1ff5-46c1-81ee-e0a2af974763
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: construcaocivilconcreto.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

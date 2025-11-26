@@ -1,0 +1,20 @@
+title: OTX domain IOC - dailyboxinfo.site
+id: 35075d8f-5740-42ed-af17-d8c9181fab49
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dailyboxinfo.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+id: b7adb079-d653-44ad-b18a-3faf730e9777
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The terrible, horrible,
+  no good, very bad day' (691667c91137aaa4b6ef2ad8).
+author: AlienVault
+date: '2025-11-13'
+references:
+- https://blog.talosintelligence.com/viasat-and-the-terrible-horrible-no-good-very-bad-day/
+tags:
+- ukraine
+- wiper
+- vpnfilter
+- satellite
+- acidrain
+- infrastructure
+- vpn vulnerability
+- ka-sat
+- cyberattack
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

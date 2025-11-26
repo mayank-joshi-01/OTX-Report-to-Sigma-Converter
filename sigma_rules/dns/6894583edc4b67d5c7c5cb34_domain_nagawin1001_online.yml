@@ -1,0 +1,20 @@
+title: OTX domain IOC - nagawin1001.online
+id: 38a7e47b-3037-4681-913f-bde0dc5450a9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nagawin1001.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

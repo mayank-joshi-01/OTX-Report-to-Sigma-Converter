@@ -1,0 +1,20 @@
+title: OTX domain IOC - reklama-v-nedvizhimosti.online
+id: d863fbe0-4607-48b4-a788-2e20c74ac59b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: reklama-v-nedvizhimosti.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

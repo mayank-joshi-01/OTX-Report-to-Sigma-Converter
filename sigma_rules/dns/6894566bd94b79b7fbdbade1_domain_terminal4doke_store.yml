@@ -1,0 +1,20 @@
+title: OTX domain IOC - terminal4doke.store
+id: 6eff00dd-1712-4554-87b7-a2d46188fa39
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: terminal4doke.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bysolacreative.online
+id: c980fa5f-11f2-4908-b806-9076fb705686
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bysolacreative.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

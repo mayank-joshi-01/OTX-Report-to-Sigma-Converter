@@ -1,0 +1,25 @@
+title: OTX domain IOC - confirmation-id1822.com
+id: a5b8ed66-4ca0-4f50-922b-2b905041b3e0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Thousands of Fake
+  Hotel Domains Used in Massive Phishing Campaign' (69137fca8f856858d0543ded).
+author: AlienVault
+date: '2025-11-11'
+references:
+- https://www.netcraft.com/blog/thousands-of-domains-target-hotel-guests-in-massive-phishing-campaign
+- https://raw.githubusercontent.com/netcraftcom/public-iocs/refs/heads/main/2025-11%20hotel%20phishing%20IOCs.csv
+tags:
+- phishing
+- domain registration
+- malspam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: confirmation-id1822.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

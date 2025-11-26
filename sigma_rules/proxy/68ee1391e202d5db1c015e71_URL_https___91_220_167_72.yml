@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://91.220.167.72
+id: b09f2d7f-a948-4482-aeed-0e9e22061fd9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://91.220.167.72
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

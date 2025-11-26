@@ -1,0 +1,20 @@
+title: OTX domain IOC - eenkllr2wbud3f8busxqprh3hhayp.tr
+id: daabe202-4d47-4316-b82c-6f96f9c4f25f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eenkllr2wbud3f8busxqprh3hhayp.tr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

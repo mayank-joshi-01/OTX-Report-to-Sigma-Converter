@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 0fbd0e1995472f308cf1ac8229a02c277035404426769fa50947a72c95ad7d31
+id: 927bacd7-4e5a-48c9-bb1e-8a7bbeee6ed5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XCSSET evolves again:
+  Analyzing the latest updates to XCSSET''s inventory'' (68d56d8fd333f7587f39195e).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/09/25/xcsset-evolves-again-analyzing-the-latest-updates-to-xcssets-inventory
+tags:
+- browser targeting
+- xcode
+- persistence
+- applescript
+- macos
+- firefox
+- launchdaemon
+- clipboard hijacking
+- xcsset
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0fbd0e1995472f308cf1ac8229a02c277035404426769fa50947a72c95ad7d31
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

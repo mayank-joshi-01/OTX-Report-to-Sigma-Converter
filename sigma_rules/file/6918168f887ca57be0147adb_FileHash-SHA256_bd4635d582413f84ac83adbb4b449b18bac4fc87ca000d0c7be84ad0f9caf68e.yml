@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - bd4635d582413f84ac83adbb4b449b18bac4fc87ca000d0c7be84ad0f9caf68e
+id: 9790d896-7cc9-47b1-a216-b38036076c1e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Digital Doppelgangers:
+  Anatomy of Evolving Impersonation Campaigns Distributing Gh0st RAT'' (6918168f887ca57be0147adb).'
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://unit42.paloaltonetworks.com/impersonation-campaigns-deliver-gh0st-rat/
+tags:
+- chinese-speaking targets
+- multi-stage infection
+- dll side-loading
+- brand impersonation
+- gh0st rat
+- domain generation
+- cloud infrastructure
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bd4635d582413f84ac83adbb4b449b18bac4fc87ca000d0c7be84ad0f9caf68e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - damangamesworld.site
+id: c2ec88c5-f8c3-48e4-9836-3f3fd6bf332e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: damangamesworld.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

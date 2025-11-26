@@ -1,0 +1,20 @@
+title: OTX domain IOC - fergusonelectricalcontracting.online
+id: 22b3325d-603d-4c3b-8c25-521c4fd32159
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fergusonelectricalcontracting.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

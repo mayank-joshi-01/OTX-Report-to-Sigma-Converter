@@ -1,0 +1,20 @@
+title: OTX domain IOC - blocknovaa.site
+id: 8466f9c9-7c26-41cc-a270-a851157e366c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blocknovaa.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

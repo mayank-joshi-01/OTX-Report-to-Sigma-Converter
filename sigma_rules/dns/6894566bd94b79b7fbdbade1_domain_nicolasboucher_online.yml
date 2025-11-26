@@ -1,0 +1,20 @@
+title: OTX domain IOC - nicolasboucher.online
+id: a9c056e7-f3a1-4567-aef5-8e33e03c9f5b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nicolasboucher.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

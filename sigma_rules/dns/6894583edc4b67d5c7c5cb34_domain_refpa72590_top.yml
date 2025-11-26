@@ -1,0 +1,20 @@
+title: OTX domain IOC - refpa72590.top
+id: 46e9e3ec-4c89-4327-8232-f4858fbbba25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: refpa72590.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

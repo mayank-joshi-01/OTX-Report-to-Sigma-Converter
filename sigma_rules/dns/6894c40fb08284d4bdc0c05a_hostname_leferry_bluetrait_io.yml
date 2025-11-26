@@ -1,0 +1,28 @@
+title: OTX hostname IOC - leferry.bluetrait.io
+id: dcc3c484-e6f2-475d-968b-b3ac2c356a25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: leferry.bluetrait.io
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

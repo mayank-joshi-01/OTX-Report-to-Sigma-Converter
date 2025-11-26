@@ -1,0 +1,20 @@
+title: OTX domain IOC - remodeling-companies-near-me-usa.online
+id: f6702f4d-f282-4599-b6a5-5d3aa61c6db5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: remodeling-companies-near-me-usa.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

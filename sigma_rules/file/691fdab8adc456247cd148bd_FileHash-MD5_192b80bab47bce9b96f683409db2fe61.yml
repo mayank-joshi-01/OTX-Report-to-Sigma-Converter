@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - 192b80bab47bce9b96f683409db2fe61
+id: ada961ad-e264-4bf1-b6b4-340964b423ec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Reoccurring Use of
+  Highly Suspicious PDF Editors to Infiltrate Environments' (691fdab8adc456247cd148bd).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://www.truesec.com/hub/blog/reoccurring-use-of-highly-suspicious-pdf-editors-to-infiltrate-environments
+tags:
+- scheduled tasks
+- malicious vector
+- suspicious behavior
+- convertmate
+- pdf converter
+- amaryllis signal ltd
+- pdfeditor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 192b80bab47bce9b96f683409db2fe61
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

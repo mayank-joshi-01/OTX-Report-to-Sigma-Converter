@@ -1,0 +1,29 @@
+title: OTX IPv4 IOC - 77.90.153.30
+id: 272c38be-c609-4155-a5e9-f39a400a1bc4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cat''s Got Your
+  Files: Lynx Ransomware'' (691b65be81167e8300b087de).'
+author: AlienVault
+date: '2025-11-17'
+references:
+- https://thedfirreport.com/2025/11/17/cats-got-your-files-lynx-ransomware
+tags:
+- network reconnaissance
+- lynx ransomware
+- rdp
+- backup deletion
+- credential abuse
+- data exfiltration
+- ransomware
+- lateral movement
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 77.90.153.30
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

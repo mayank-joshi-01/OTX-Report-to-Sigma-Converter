@@ -1,0 +1,20 @@
+title: OTX domain IOC - ubtjzypcluqvj.online
+id: 00a56fc1-c320-4cbe-965e-0480027ef0d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ubtjzypcluqvj.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

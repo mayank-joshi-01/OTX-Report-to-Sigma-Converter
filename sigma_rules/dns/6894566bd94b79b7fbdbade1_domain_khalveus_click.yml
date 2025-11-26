@@ -1,0 +1,20 @@
+title: OTX domain IOC - khalveus.click
+id: 0f2cec65-db80-4205-b4d2-41d70d16779c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: khalveus.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

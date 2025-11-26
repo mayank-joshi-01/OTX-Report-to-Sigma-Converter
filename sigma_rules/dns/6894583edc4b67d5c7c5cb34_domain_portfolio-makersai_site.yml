@@ -1,0 +1,20 @@
+title: OTX domain IOC - portfolio-makersai.site
+id: 43d5afaf-c56f-4840-a501-8b3651fb3e9c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: portfolio-makersai.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

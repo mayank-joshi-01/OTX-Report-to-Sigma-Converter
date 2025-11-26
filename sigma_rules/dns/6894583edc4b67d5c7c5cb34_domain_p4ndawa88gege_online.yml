@@ -1,0 +1,20 @@
+title: OTX domain IOC - p4ndawa88gege.online
+id: 7fc146b3-2c12-4712-8dfb-cf393ea8647c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: p4ndawa88gege.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

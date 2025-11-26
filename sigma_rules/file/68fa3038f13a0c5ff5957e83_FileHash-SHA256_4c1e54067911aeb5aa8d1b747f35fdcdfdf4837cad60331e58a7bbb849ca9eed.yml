@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 4c1e54067911aeb5aa8d1b747f35fdcdfdf4837cad60331e58a7bbb849ca9eed
+id: 5ef6d638-5817-48b3-a806-35064f0a5179
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mirai Botnet Propagation
+  and Exploitation of CVE-2025-24016' (68fa3038f13a0c5ff5957e83).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.akamai.com/blog/security-research/botnets-flaw-mirai-spreads-through-wazuh-vulnerability
+tags:
+- wazuh
+- botnet
+- mirai
+- cve-2025-24016
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4c1e54067911aeb5aa8d1b747f35fdcdfdf4837cad60331e58a7bbb849ca9eed
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

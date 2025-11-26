@@ -1,0 +1,20 @@
+title: OTX domain IOC - epirkpi.click
+id: c5b6d916-c8fb-4c47-bc75-f0c2d3de17a5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: epirkpi.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

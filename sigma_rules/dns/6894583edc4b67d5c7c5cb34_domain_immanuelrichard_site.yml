@@ -1,0 +1,20 @@
+title: OTX domain IOC - immanuelrichard.site
+id: 77d129e4-cce8-4f72-afbe-5e59077a1d35
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: immanuelrichard.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - mullerpeter.hu
+id: b9aa3a78-7276-4648-8ba6-bd16416218b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mullerpeter.hu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

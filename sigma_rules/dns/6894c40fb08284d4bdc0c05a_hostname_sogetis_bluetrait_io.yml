@@ -1,0 +1,28 @@
+title: OTX hostname IOC - sogetis.bluetrait.io
+id: 8f76d683-8b45-47b4-9760-fac451f1201e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sogetis.bluetrait.io
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

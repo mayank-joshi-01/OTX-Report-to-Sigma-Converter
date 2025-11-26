@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 1cb620ea7a2c0dfb9d3779f0b2732b2a877fbc1f
+id: 1253bb9a-8253-4ed0-b514-cf80084320d7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Back to Business:
+  Lumma Stealer Returns with Stealthier Methods'' (688096076e36d7d6fea700fa).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html
+tags:
+- malware-as-a-service
+- cracked software
+- information stealer
+- infrastructure
+- evasion tactics
+- lumma stealer
+- social engineering
+- github abuse
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1cb620ea7a2c0dfb9d3779f0b2732b2a877fbc1f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

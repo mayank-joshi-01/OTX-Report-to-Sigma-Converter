@@ -1,0 +1,20 @@
+title: OTX domain IOC - xxkzme2b6d52b62b.top
+id: 9a8b2703-d9ac-4f58-af48-e7d1ffe87358
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xxkzme2b6d52b62b.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

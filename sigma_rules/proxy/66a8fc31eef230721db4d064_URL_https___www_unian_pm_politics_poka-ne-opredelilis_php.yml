@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.unian.pm/politics/poka-ne-opredelilis.php
+id: 3bc833c3-880c-4f55-b9e5-d7f3a2103ce3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.unian.pm/politics/poka-ne-opredelilis.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

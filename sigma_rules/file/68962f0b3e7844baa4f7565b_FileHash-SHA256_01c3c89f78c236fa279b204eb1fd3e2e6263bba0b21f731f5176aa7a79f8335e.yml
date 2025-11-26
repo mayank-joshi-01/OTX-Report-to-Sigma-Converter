@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 01c3c89f78c236fa279b204eb1fd3e2e6263bba0b21f731f5176aa7a79f8335e
+id: ca441adb-7a11-497f-8143-10ff42a18dfd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '650 Attack Tools,
+  One Coordinated Campaign' (68962f0b3e7844baa4f7565b).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://blog.koi.security/greedy-bear-massive-crypto-wallet-attack-spans-across-multiple-vectors-3e8628831a05
+tags:
+- malware
+- browser extensions
+- extension hollowing
+- luca stealer
+- lummastealer
+- phishing
+- crypto theft
+- scam websites
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 01c3c89f78c236fa279b204eb1fd3e2e6263bba0b21f731f5176aa7a79f8335e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

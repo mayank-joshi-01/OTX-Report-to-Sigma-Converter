@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 85e4809e80e20d9a532267b22d7f898009e74ed0dbf7093bfa9a8d2d5403f3f9
+id: 1e726e17-2dc1-4c9a-9d1c-0c43e5459ac2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Phish and Chips:
+  China-Aligned Espionage Actors Ramp Up Taiwan Semiconductor Industry Targeting''
+  (687957dc6d81747b3ef02228).'
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/phish-china-aligned-espionage-actors-ramp-up-taiwan-semiconductor-targeting
+tags:
+- semiconductor
+- unk_droppitch
+- unk_sparkycarp
+- voldemort
+- cobalt strike
+- sparkrat
+- phishing
+- espionage
+- unk_fistbump
+- healthkick
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 85e4809e80e20d9a532267b22d7f898009e74ed0dbf7093bfa9a8d2d5403f3f9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - kripiwiki.online
+id: c5962eae-81b3-4f57-b02a-a7d4cb1d2b24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kripiwiki.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

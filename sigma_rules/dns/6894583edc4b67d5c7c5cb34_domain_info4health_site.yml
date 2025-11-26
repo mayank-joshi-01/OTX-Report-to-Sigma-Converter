@@ -1,0 +1,20 @@
+title: OTX domain IOC - info4health.site
+id: e6c433bc-1ae2-4f3c-8c87-b7f3281fee30
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: info4health.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

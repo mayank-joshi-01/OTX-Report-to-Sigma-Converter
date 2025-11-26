@@ -1,0 +1,20 @@
+title: OTX domain IOC - azelcorporation.online
+id: 4deb84e7-f09f-47f9-97c9-ac5d908c6b17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: azelcorporation.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

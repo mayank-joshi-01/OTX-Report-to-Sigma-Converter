@@ -1,0 +1,20 @@
+title: OTX domain IOC - 119g2zl1qt.cyou
+id: c9434657-78fa-4685-a446-372693e9252a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 119g2zl1qt.cyou
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

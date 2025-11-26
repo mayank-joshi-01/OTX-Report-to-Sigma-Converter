@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - fe2587dd8d9755b7b3a106b6e46519a1ce0a8191eb20821d2f957326dbf912e9
+id: 1f75a3b5-d968-4197-93d3-b87234851ec1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Paper Werewolf targets
+  Russia with WinRAR zero-day vulnerability' (68a5c0b2d0be1fec9ae696fc).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://bi-zone.medium.com/paper-werewolf-targets-russia-with-winrar-zero-day-vulnerability-0cfdabac8c84?source=rss-3882bedad280------2
+tags:
+- phishing
+- cve-2025-6218
+- directory traversal
+- zero-day
+- shellcode
+- xpsrchvw74.exe
+- winrunapp.exe
+- rar
+- winrar
+- c2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fe2587dd8d9755b7b3a106b6e46519a1ce0a8191eb20821d2f957326dbf912e9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1131sports.live
+id: b71d92d9-850c-4d02-a102-ac8340c4e68c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1131sports.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - professionalpackingservices-ttbc7-asl-us-3.shop
+id: 0ae106a3-143c-403e-b6c5-a72985e8b894
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: professionalpackingservices-ttbc7-asl-us-3.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

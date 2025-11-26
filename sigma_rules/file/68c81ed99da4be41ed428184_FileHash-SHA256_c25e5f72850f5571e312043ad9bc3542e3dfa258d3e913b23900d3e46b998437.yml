@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - c25e5f72850f5571e312043ad9bc3542e3dfa258d3e913b23900d3e46b998437
+id: ccdb6449-86c0-4b8e-9d2b-e863020d59bb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Introducing HybridPetya:
+  Petya/NotPetya copycat with UEFI Secure Boot bypass'' (68c81ed99da4be41ed428184).'
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.welivesecurity.com/en/eset-research/introducing-hybridpetya-petya-notpetya-copycat-uefi-secure-boot-bypass/
+tags:
+- uefi
+- petrwrap
+- mft encryption
+- hybridpetya
+- diskcoder.c
+- secure boot bypass
+- expetr
+- ransomware
+- petya
+- goldeneye
+- bootkit
+- nyetya
+- notpetya
+- cve-2024-7344
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c25e5f72850f5571e312043ad9bc3542e3dfa258d3e913b23900d3e46b998437
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - chatgptitalia.net
+id: 8a1a4fa8-aaa3-4649-ac19-faf69fcb1d8e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Agenda Ransomware
+  Deploys Linux Variant on Windows Systems Through Remote Management Tools and BYOVD
+  Techniques' (68fa32c52d34059b97a7a9f0).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html
+tags:
+- ransomware
+- coroxy
+- byovd
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chatgptitalia.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

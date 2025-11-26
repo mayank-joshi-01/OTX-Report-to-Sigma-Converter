@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - b21c9c5e0a67f7ce3a031d0a6d08926e840af180eb616bee2e54d9c49b2c3da8
+id: 752afac7-0e74-4d65-8af2-95645ab50d58
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NovaStealer - Apple
+  Intelligence is leaving a plist.. it is legit, right?' (69171ae7e2bde9216bb457d4).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://bruceketta.space/posts/nova-script-251110/
+tags:
+- modular
+- bash
+- novastealer
+- macos
+- cryptostealer
+- phishing
+- persistence
+- wallet-targeting
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b21c9c5e0a67f7ce3a031d0a6d08926e840af180eb616bee2e54d9c49b2c3da8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

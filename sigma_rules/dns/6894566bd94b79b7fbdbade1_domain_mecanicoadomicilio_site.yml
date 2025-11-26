@@ -1,0 +1,20 @@
+title: OTX domain IOC - mecanicoadomicilio.site
+id: b84097fe-9a0e-4095-bacf-4df775df5ea7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mecanicoadomicilio.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

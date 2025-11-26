@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - dda9075cf77f230becc3c7bc7d44e0ca
+id: 5ff13324-7bff-4767-84ff-8e5cc6ac1c6f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '650 Attack Tools,
+  One Coordinated Campaign' (68962f0b3e7844baa4f7565b).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://blog.koi.security/greedy-bear-massive-crypto-wallet-attack-spans-across-multiple-vectors-3e8628831a05
+tags:
+- malware
+- browser extensions
+- extension hollowing
+- luca stealer
+- lummastealer
+- phishing
+- crypto theft
+- scam websites
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: dda9075cf77f230becc3c7bc7d44e0ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

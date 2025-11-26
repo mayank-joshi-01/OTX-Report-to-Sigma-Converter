@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://cyberresilience.com/threatonomics/scattered-spider-uk-retail-attacks/
+id: 60176c54-62bb-4b35-91eb-fa9082c9a27a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Auto-Color Backdoor:
+  How a Stealthy Linux Intrusion Was Thwarted'' (688b3fc60fa1eee23ab1b945).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.darktrace.com/blog/auto-color-backdoor-how-darktrace-thwarted-a-stealthy-linux-intrusion
+tags:
+- sap netweaver
+- linux
+- cve-2025-31324
+- backdoor
+- evasion
+- auto-color
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://cyberresilience.com/threatonomics/scattered-spider-uk-retail-attacks/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

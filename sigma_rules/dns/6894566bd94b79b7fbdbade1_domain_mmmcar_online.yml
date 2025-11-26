@@ -1,0 +1,20 @@
+title: OTX domain IOC - mmmcar.online
+id: 84c08fff-9a7a-4533-a3fb-93a6be8aa756
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mmmcar.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

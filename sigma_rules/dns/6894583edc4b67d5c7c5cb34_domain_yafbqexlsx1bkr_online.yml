@@ -1,0 +1,20 @@
+title: OTX domain IOC - yafbqexlsx1bkr.online
+id: 7b12d345-bef8-425a-8b5b-0b1c977baf68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yafbqexlsx1bkr.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

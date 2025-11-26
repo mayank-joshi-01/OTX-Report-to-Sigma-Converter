@@ -1,0 +1,20 @@
+title: OTX domain IOC - 0w1uib.info
+id: fa521ee4-5eb1-44f9-ad7f-eb8284c3077e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 0w1uib.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

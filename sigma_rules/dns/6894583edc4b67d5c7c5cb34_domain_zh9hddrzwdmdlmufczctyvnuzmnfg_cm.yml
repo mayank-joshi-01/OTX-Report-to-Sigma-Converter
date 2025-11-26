@@ -1,0 +1,20 @@
+title: OTX domain IOC - zh9hddrzwdmdlmufczctyvnuzmnfg.cm
+id: c6795865-8357-43dc-bfb2-ca89b1cd7235
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zh9hddrzwdmdlmufczctyvnuzmnfg.cm
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

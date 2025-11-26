@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://dfbdw3tyge.info/tmp/
+id: 5a41514b-b9b1-45ef-8214-c8aaa46d6e1a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of SmokeLoader Version 2025' (68c9199ff5cc9de16f856439).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.zscaler.com/blogs/security-research/smokeloader-rises-ashes
+tags:
+- evasion techniques
+- persistence
+- anti-analysis
+- smoke
+- dofoil
+- smokeloader
+- version 2025
+- malware loader
+- network protocol
+- bug fixes
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://dfbdw3tyge.info/tmp/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

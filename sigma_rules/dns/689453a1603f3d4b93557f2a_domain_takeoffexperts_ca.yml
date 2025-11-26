@@ -1,0 +1,20 @@
+title: OTX domain IOC - takeoffexperts.ca
+id: ff647390-3f77-4e0d-93c3-ef0184ebe663
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: takeoffexperts.ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

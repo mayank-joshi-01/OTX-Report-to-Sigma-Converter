@@ -1,0 +1,20 @@
+title: OTX domain IOC - chrobinson-mall.online
+id: 63e34637-7274-4c5b-bd64-e178f3367b5e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chrobinson-mall.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

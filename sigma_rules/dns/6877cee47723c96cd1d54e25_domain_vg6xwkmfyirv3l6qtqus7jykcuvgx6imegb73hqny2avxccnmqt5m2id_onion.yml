@@ -1,0 +1,30 @@
+title: OTX domain IOC - vg6xwkmfyirv3l6qtqus7jykcuvgx6imegb73hqny2avxccnmqt5m2id.onion
+id: 343b9458-c045-4ecd-afa1-4957457d6783
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Emerging Ransomware-as-a-Service,
+  Supporting AI Driven Negotiation and Mobile Control Panel for Their Affiliates'
+  (6877cee47723c96cd1d54e25).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://blog.eclecticiq.com/global-group-emerging-ransomware-as-a-service
+tags:
+- mobile control panel
+- initial access brokers
+- cross-platform
+- ai-driven negotiation
+- ransomware-as-a-service
+- mamona
+- black lock
+- vpn brute-force
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vg6xwkmfyirv3l6qtqus7jykcuvgx6imegb73hqny2avxccnmqt5m2id.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

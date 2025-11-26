@@ -1,0 +1,20 @@
+title: OTX domain IOC - xxnxd06bfc3de90d.top
+id: 4d024eba-2fd3-42d1-9fee-981209e7e6c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xxnxd06bfc3de90d.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

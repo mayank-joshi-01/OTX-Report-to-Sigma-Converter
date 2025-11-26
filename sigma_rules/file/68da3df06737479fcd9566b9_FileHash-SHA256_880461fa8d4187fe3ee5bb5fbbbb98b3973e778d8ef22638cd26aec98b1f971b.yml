@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - 880461fa8d4187fe3ee5bb5fbbbb98b3973e778d8ef22638cd26aec98b1f971b
+id: 784364cd-ffe9-4ec3-a48d-a7f006ac9b71
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Olymp Loader: A
+  new Malware-as-a-Service written in Assembly'' (68da3df06737479fcd9566b9).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://outpost24.com/blog/olymp-loader-a-new-malware-as-a-service/
+tags:
+- qasarrat
+- stealer
+- malware-as-a-service
+- underground forums
+- telegram
+- loader
+- webrat
+- evasion techniques
+- olymp loader
+- crypter
+- lummac2
+- amadey
+- assembly
+- raccoon
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 880461fa8d4187fe3ee5bb5fbbbb98b3973e778d8ef22638cd26aec98b1f971b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

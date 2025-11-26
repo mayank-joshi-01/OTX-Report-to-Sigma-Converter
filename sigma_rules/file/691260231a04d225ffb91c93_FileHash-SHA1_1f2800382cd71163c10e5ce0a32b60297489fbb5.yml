@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 1f2800382cd71163c10e5ce0a32b60297489fbb5
+id: d53943ac-8baa-47a7-9db4-8390e5e09467
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unauthenticated Remote
+  Access via Triofox Vulnerability CVE-2025-12480' (691260231a04d225ffb91c93).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/triofox-vulnerability-cve-2025-12480
+tags:
+- anti-virus abuse
+- file-sharing
+- cve-2025-12480
+- triofox
+- remote access
+- unauthenticated access
+- host header attack
+- privilege escalation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1f2800382cd71163c10e5ce0a32b60297489fbb5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

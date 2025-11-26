@@ -1,0 +1,20 @@
+title: OTX domain IOC - acidbasechemistry.site
+id: 1031aef5-767d-4e97-86e2-608d3f7f5806
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: acidbasechemistry.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

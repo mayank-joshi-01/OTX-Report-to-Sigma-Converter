@@ -1,0 +1,20 @@
+title: OTX domain IOC - comidaecuatoriana.online
+id: 7c89eecd-e289-4f56-8e40-79977c7d3f59
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: comidaecuatoriana.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

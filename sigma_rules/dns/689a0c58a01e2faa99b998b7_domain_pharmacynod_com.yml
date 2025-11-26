@@ -1,0 +1,30 @@
+title: OTX domain IOC - pharmacynod.com
+id: cab63c8f-f48e-463b-bb8c-3565348a3b22
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From ClickFix to
+  Command: A Full PowerShell Attack Chain'' (689a0c58a01e2faa99b998b7).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://www.fortinet.com/blog/threat-research/clickfix-to-command-a-full-powershell-attack-chain
+tags:
+- israeli targets
+- obfuscation
+- social engineering
+- rat
+- c2 communication
+- lateral movement
+- phishing
+- powershell rat
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pharmacynod.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

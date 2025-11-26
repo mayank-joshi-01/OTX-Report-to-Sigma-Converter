@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9n7677txbp.top
+id: 0bbed5e9-02c1-4d2c-8f37-4f31427af501
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9n7677txbp.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

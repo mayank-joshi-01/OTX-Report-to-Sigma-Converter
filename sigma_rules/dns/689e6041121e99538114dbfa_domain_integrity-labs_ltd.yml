@@ -1,0 +1,36 @@
+title: OTX domain IOC - integrity-labs.ltd
+id: 0e01b1c2-3c2c-47d1-a985-646b9634ec12
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking DevilsTongue
+  Spyware in Multiple Countries' (689e6041121e99538114dbfa).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://www.recordedfuture.com/research/tracking-candirus-devilstongue-spyware
+tags:
+- hungary
+- saudi arabia
+- israel
+- cve-2021-30551
+- zero-day
+- cve-2021-1844
+- mercenary
+- cve-2021-21166
+- chainshot
+- cve-2022-2294
+- devilstongue
+- spyware
+- cve-2021-33742
+- surveillance
+- infrastructure
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: integrity-labs.ltd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

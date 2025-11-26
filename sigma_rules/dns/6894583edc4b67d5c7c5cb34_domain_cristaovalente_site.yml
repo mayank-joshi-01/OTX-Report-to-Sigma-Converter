@@ -1,0 +1,20 @@
+title: OTX domain IOC - cristaovalente.site
+id: d4e55a3a-1087-4dd6-a828-d4aec85f46a6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cristaovalente.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

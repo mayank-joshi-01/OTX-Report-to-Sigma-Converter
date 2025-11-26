@@ -1,0 +1,20 @@
+title: OTX domain IOC - kooora2day.online
+id: 4024d6bd-cb39-4a36-a12e-4b906495da1b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kooora2day.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://q.startimes.me/
+id: 6a43581f-e488-499f-ad18-bacc087b3ae1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How AI Is Fueling
+  a New Wave of Black Friday Scams' (6918053d8bf43ed29f7894cd).
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://www.forcepoint.com/blog/x-labs/black-friday-scams-ai-phishing-guide
+tags:
+- phishing
+- cybersecurity
+- luxury goods
+- e-commerce
+- black friday
+- ai
+- scams
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://q.startimes.me/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

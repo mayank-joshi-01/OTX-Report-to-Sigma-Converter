@@ -1,0 +1,20 @@
+title: OTX domain IOC - fishervseseriiujw.online
+id: a38e9f83-a66e-4ef7-95cc-515f9431b5bc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fishervseseriiujw.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

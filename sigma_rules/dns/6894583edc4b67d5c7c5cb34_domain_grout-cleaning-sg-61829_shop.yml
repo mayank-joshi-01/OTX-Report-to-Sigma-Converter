@@ -1,0 +1,20 @@
+title: OTX domain IOC - grout-cleaning-sg-61829.shop
+id: 6166a94d-8033-4722-af7d-1f4cfdf074d3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: grout-cleaning-sg-61829.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.mondomusicatania.it
+id: e70025ff-f47d-4d96-8324-1b229384c96b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.mondomusicatania.it
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

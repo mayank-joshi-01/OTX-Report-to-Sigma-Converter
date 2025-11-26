@@ -1,0 +1,20 @@
+title: OTX domain IOC - venchagroup.online
+id: ceec8601-ccd8-4db6-9910-a2278bf7dc3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: venchagroup.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

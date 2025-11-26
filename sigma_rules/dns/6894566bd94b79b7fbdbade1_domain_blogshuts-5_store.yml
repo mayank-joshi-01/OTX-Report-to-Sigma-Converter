@@ -1,0 +1,20 @@
+title: OTX domain IOC - blogshuts-5.store
+id: 3b745ffc-d0e0-4d7e-899e-0a808f3465cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blogshuts-5.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

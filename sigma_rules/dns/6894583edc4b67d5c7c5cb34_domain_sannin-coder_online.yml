@@ -1,0 +1,20 @@
+title: OTX domain IOC - sannin-coder.online
+id: 6b07070c-7136-4d1f-b36c-dcd3f9dfd6fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sannin-coder.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

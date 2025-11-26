@@ -1,0 +1,20 @@
+title: OTX domain IOC - zwqttbs83wvcnycvz.online
+id: fa2baffc-6f36-46b2-a045-501963367ab7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zwqttbs83wvcnycvz.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

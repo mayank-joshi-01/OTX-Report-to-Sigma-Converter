@@ -1,0 +1,20 @@
+title: OTX domain IOC - tap01084bu.top
+id: 7685114d-66a1-4f1f-a8fd-e03c44f8782d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tap01084bu.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

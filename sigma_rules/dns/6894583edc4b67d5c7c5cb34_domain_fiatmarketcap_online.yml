@@ -1,0 +1,20 @@
+title: OTX domain IOC - fiatmarketcap.online
+id: 18b81b8a-49e5-4d7a-8b0b-8f2e929706ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fiatmarketcap.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

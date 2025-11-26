@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 4ce4dc04639d673f0627afc678819d1a7f4b654445ba518a151b2e80e910a92c
+id: 7c2fcfda-7d86-4ecf-8e11-7834f7a59b79
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XWorm V6: Exploring
+  Pivotal Plugins'' (68e4116d2907e024806e89fc).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://www.trellix.com/blogs/research/xworm-v6-exploring-pivotal-plugins/
+tags:
+- powershell
+- phishing
+- Xworm
+- rat
+- javascript
+- remote desktop
+- file manager
+- amsi bypass
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4ce4dc04639d673f0627afc678819d1a7f4b654445ba518a151b2e80e910a92c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - beaufortdesign.online
+id: 8f849e04-2a97-4956-be97-1999c9b981f9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beaufortdesign.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

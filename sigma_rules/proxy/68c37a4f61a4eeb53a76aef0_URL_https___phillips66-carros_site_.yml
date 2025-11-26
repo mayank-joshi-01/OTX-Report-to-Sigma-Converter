@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://phillips66-carros.site/
+id: c48896df-50d9-43d0-b55e-2fab9424194a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Inside the 2025
+  Energy Phishing Wave: Chevron, Conoco, PBF, Phillips 66'' (68c37a4f61a4eeb53a76aef0).'
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://hunt.io/blog/us-energy-phishing-wave-report
+tags:
+- energy sector
+- httrack
+- credential harvesting
+- phishing
+- investment scams
+- keitaro
+- website cloning
+- rhadamanthys
+- domain impersonation
+- brand abuse
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://phillips66-carros.site/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

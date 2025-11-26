@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 94b68826818ffe8ceb88884d644ad4fc
+id: a9e8d880-3195-47e0-b6ff-5e12a23b01c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GUNRA RANSOMWARE:
+  What You Don''t Know!'' (68d3c7c3d528d85fd90a9395).'
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://theravenfile.com/2025/09/23/gunra-ransomware-what-you-dont-know/
+tags:
+- windows
+- lumma stealer
+- encryption
+- data leak site
+- phishing
+- negotiation
+- gunra ransomware
+- donot loader
+- linux
+- ransomware
+- double extortion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 94b68826818ffe8ceb88884d644ad4fc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

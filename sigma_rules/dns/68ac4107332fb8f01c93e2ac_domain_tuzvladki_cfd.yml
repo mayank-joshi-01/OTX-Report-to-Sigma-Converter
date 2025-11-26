@@ -1,0 +1,31 @@
+title: OTX domain IOC - tuzvladki.cfd
+id: f94cc8a3-a6b7-4152-9716-5385facd5e99
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android backdoor spies
+  on Russian business employees' (68ac4107332fb8f01c93e2ac).
+author: AlienVault
+date: '2025-08-25'
+references:
+- http://news.drweb.ru/show/?i=15047&lng=ru
+- https://raw.githubusercontent.com/DoctorWebLtd/malware-iocs/refs/heads/master/Android.Backdoor.916.origin/README.adoc
+tags:
+- russian
+- mobile-malware
+- spyware
+- backdoor
+- business
+- android.backdoor.916.origin
+- surveillance
+- android
+- targeted-attack
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tuzvladki.cfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

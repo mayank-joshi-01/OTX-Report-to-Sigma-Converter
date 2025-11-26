@@ -1,0 +1,20 @@
+title: OTX domain IOC - ntxkj1y0zkqatfuywfrtcnzsq93io.lb
+id: 33c9b234-43c2-4218-8f53-93568c91e2fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ntxkj1y0zkqatfuywfrtcnzsq93io.lb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - durasiloriginal.site
+id: 316c7fde-6659-4822-8a95-b9c67b437a19
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: durasiloriginal.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

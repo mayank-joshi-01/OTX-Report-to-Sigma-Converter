@@ -1,0 +1,20 @@
+title: OTX domain IOC - guioauy432dshjnksd89ashbjklkfghij.xyz
+id: 0133522f-f9cd-411c-bf70-b7248cf41d00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guioauy432dshjnksd89ashbjklkfghij.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

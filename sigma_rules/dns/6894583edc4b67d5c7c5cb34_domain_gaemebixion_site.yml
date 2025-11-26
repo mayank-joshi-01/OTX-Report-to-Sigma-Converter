@@ -1,0 +1,20 @@
+title: OTX domain IOC - gaemebixion.site
+id: 4c39ebe7-f214-4c8c-b6f5-d77a6c25fa49
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gaemebixion.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

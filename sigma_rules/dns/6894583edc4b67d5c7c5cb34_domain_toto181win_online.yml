@@ -1,0 +1,20 @@
+title: OTX domain IOC - toto181win.online
+id: d3ffad35-ddca-4392-a378-55659b9a9be1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: toto181win.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

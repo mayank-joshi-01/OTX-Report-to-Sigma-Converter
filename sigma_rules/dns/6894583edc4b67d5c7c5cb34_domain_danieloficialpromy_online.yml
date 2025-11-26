@@ -1,0 +1,20 @@
+title: OTX domain IOC - danieloficialpromy.online
+id: 709a5b90-d2b2-47d9-b4f7-5cd26d830c1d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: danieloficialpromy.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

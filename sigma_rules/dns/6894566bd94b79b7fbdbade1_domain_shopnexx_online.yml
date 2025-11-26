@@ -1,0 +1,20 @@
+title: OTX domain IOC - shopnexx.online
+id: 532a9f51-674c-43e0-b6c1-8f1cf93430b2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shopnexx.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

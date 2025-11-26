@@ -1,0 +1,37 @@
+title: OTX FileHash-SHA256 IOC - f185c91e62ca38494d7f125492058028028769a86ed169bd2fb051e43fd9fb70
+id: 1ed1e0cc-dfde-4bc6-a753-8403e838da50
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Project AK47: Uncovering
+  a Link to the SharePoint Vulnerability Attacks'' (68930f15831806a6887354c8).'
+author: AlienVault
+date: '2025-08-06'
+references:
+- https://unit42.paloaltonetworks.com/ak47-activity-linked-to-sharepoint-vulnerabilities/
+tags:
+- backdoor
+- warlock client
+- cve-2025-53771
+- toolshell
+- ak47 ransomware
+- lockbit 3.0
+- cve-2025-49704
+- x2anylock
+- project ak47
+- warlock
+- ak47c2
+- cve-2025-53770
+- ransomware
+- sharepoint
+- cve-2025-49706
+- lockbit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f185c91e62ca38494d7f125492058028028769a86ed169bd2fb051e43fd9fb70
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

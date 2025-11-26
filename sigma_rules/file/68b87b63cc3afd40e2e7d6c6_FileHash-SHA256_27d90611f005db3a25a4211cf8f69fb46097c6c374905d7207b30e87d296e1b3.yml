@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 27d90611f005db3a25a4211cf8f69fb46097c6c374905d7207b30e87d296e1b3
+id: 6785d0e0-03d5-4b60-a9f7-c9d1f6a4d3d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dire Wolf Ransomware:
+  Threat Combining Data Encryption and Leak Extortion'' (68b87b63cc3afd40e2e7d6c6).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://asec.ahnlab.com/en/89944
+tags:
+- double extortion
+- anti-recovery
+- self-deletion
+- chacha20
+- data leakage
+- dire wolf
+- encryption
+- curve25519
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 27d90611f005db3a25a4211cf8f69fb46097c6c374905d7207b30e87d296e1b3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

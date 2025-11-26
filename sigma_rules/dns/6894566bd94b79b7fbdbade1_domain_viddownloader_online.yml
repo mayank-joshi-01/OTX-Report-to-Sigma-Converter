@@ -1,0 +1,20 @@
+title: OTX domain IOC - viddownloader.online
+id: b9e123cc-05e9-4c2c-9bfc-483b3e08862a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: viddownloader.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 024c6a6cd262b13e1f0438bf89cf84d8
+id: f08e967d-3469-45f2-adc4-3b2d3587b4d7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Not Safe for Work:
+  Tracking and Investigating Stealerium and Phantom Infostealers'' (68b8e464780a54c10f7adc54).'
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers
+tags:
+- data exfiltration
+- infostealer
+- snake keylogger
+- warp stealer
+- cybercrime
+- stealerium
+- phantom stealer
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 024c6a6cd262b13e1f0438bf89cf84d8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - cable1222.top
+id: 0a878329-b6da-481a-9dc4-db6dd0a9acc6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cable1222.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

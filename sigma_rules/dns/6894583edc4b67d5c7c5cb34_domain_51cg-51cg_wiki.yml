@@ -1,0 +1,20 @@
+title: OTX domain IOC - 51cg-51cg.wiki
+id: ba7ae2c9-223c-4e08-be07-be20a8c73e4e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 51cg-51cg.wiki
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

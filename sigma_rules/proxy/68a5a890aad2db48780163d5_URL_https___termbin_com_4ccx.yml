@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://termbin.com/4ccx
+id: 8e786dad-316c-46d0-839a-b346b2bd873c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Attacks Targeting
+  Linux SSH Servers to Install SVF DDoS Bot' (68a5a890aad2db48780163d5).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://asec.ahnlab.com/en/89083
+tags:
+- svf bot
+- proxy servers
+- ssh
+- svf botnet
+- discord
+- dictionary attack
+- ddos
+- brute force
+- linux
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://termbin.com/4ccx
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

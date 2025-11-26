@@ -1,0 +1,20 @@
+title: OTX domain IOC - b2bdataprovider4.online
+id: 25848baa-0227-40ce-ba68-08e636ba89b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: b2bdataprovider4.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

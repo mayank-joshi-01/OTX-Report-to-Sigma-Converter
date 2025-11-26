@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://kuchiku.digital/
+id: e73e1f7e-920e-4e91-8057-31edf704d323
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://kuchiku.digital/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

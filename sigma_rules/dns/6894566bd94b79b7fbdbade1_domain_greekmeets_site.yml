@@ -1,0 +1,20 @@
+title: OTX domain IOC - greekmeets.site
+id: 2963a045-1c06-47ba-a84d-9a26decfabfd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: greekmeets.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

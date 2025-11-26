@@ -1,0 +1,32 @@
+title: OTX domain IOC - oauth.security
+id: bb754a5b-e993-4f1f-8c7b-ccd46206e80f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cybercrime Observations
+  from the Frontlines: UNC6040 Proactive Hardening Recommendations'' (68dd1afb1b0d42961ea3539c).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc6040-proactive-hardening-recommendations
+tags:
+- detection
+- logging
+- identity verification
+- data loader
+- connected apps
+- data exfiltration
+- multi-factor authentication
+- voice phishing
+- access control
+- social engineering
+- salesforce
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: oauth.security
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

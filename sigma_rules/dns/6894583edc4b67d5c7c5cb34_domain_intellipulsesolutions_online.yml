@@ -1,0 +1,20 @@
+title: OTX domain IOC - intellipulsesolutions.online
+id: ec903b9b-8610-49e8-b769-f0dd672fcc39
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: intellipulsesolutions.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

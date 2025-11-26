@@ -1,0 +1,20 @@
+title: OTX domain IOC - correoen.info
+id: c3b97323-ab7f-4d6d-8b32-9dadb97aed5d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: correoen.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

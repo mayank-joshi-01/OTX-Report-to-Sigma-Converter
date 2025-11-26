@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://ntc-06gd0upz.b4a.run/login
+id: 28c06382-2318-48fe-a9d8-489e6b4224c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://ntc-06gd0upz.b4a.run/login
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

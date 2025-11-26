@@ -1,0 +1,20 @@
+title: OTX hostname IOC - lwk.aup.mybluehost.me
+id: e176bb93-7555-4af5-a574-2e0c23bb10ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lwk.aup.mybluehost.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

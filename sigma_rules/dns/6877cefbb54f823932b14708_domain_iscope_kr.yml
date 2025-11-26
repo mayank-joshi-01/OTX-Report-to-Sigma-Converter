@@ -1,0 +1,29 @@
+title: OTX domain IOC - iscope.kr
+id: 170e0b57-8388-4e8d-b42b-0512d69bd68d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'June 2025 APT Attack
+  Trends Report (South Korea)' (6877cefbb54f823932b14708).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://asec.ahnlab.com/en/89028
+tags:
+- rat
+- spear phishing
+- rokrat
+- hwp files
+- south korea
+- xenorat
+- apt
+- lnk files
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iscope.kr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX hostname IOC - srv510786.hstgr.cloud
+id: f636d6b2-04ce-451e-96bd-ef9d548ddde3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Team46 and TaxOff:
+  Two Sides of the Same Coin'' (6901f129a41c174ffad3e746).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://ptsecurity.com/research/pt-esc-threat-intelligence/team46-i-taxoff-dve-storony-odnoi-medali
+tags:
+- trinper
+- cobalt strike
+- dante
+- TaxOff
+- Team46
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: srv510786.hstgr.cloud
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

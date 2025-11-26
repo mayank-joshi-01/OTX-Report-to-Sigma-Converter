@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - d6e1e4cc89c01d5c944ac83b85efa27775103b82fece5a6f83be45e862a4b61e
+id: 52973842-5068-46be-8efc-874059126bfd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ZipLine Phishing Campaign
+  Targets U.S. Manufacturing' (68af58ce8cb7bcf7195c203f).
+author: AlienVault
+date: '2025-08-27'
+references:
+- A sophisticated phishing campaign called ZipLine is targeting U.S. manufacturing
+  companies, especially those in supply chain-critical sectors. The attackers initiate
+  contact through company contact forms, leading to weeks-long email conversations
+  before delivering malicious payloads. They use legitimate-looking business interactions
+  and AI-related pretexts to build trust. The campaign employs a custom malware called
+  MixShell, which uses DNS TXT tunneling for command and control. The attackers utilize
+  domain
+tags:
+- Phishing
+- manufacturing
+- MixShell
+- DNS Tunneling
+- ZipLine
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d6e1e4cc89c01d5c944ac83b85efa27775103b82fece5a6f83be45e862a4b61e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

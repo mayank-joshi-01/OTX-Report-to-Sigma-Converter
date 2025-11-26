@@ -1,0 +1,20 @@
+title: OTX domain IOC - y6g5fyq2f.world
+id: 2c112ad2-de2d-4615-9f8a-ad13bffdb384
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y6g5fyq2f.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

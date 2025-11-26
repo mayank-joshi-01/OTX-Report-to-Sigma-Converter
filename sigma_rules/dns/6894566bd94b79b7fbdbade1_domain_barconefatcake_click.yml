@@ -1,0 +1,20 @@
+title: OTX domain IOC - barconefatcake.click
+id: 21bec3d1-94a5-4a03-bd12-b867ed8ccc3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: barconefatcake.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

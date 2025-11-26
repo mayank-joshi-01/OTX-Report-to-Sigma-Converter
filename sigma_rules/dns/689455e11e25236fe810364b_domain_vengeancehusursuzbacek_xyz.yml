@@ -1,0 +1,20 @@
+title: OTX domain IOC - vengeancehusursuzbacek.xyz
+id: 78325a3f-dca2-4bb5-a42e-8a2285c01a80
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vengeancehusursuzbacek.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

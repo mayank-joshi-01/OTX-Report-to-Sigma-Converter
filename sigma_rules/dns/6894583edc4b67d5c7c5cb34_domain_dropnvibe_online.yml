@@ -1,0 +1,20 @@
+title: OTX domain IOC - dropnvibe.online
+id: 80d9cb74-112a-4c9b-a728-b014744be2eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dropnvibe.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

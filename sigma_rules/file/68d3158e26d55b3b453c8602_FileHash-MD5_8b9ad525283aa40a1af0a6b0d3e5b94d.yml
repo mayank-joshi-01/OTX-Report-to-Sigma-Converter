@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 8b9ad525283aa40a1af0a6b0d3e5b94d
+id: 20b102fc-2295-4e74-a267-b4013ee8b6dd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Artificial Intelligence
+  Exposes the Homoglyph Hustle' (68d3158e26d55b3b453c8602).
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://www.guidepointsecurity.com/blog/ai-exposes-homoglyph-hustle/
+tags:
+- calendaromatic.exe
+- covert channel
+- javascript
+- desktop application
+- homoglyphs
+- unicode
+- ai-assisted investigation
+- neutralinojs
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8b9ad525283aa40a1af0a6b0d3e5b94d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

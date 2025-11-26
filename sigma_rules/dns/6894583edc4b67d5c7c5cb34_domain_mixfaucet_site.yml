@@ -1,0 +1,20 @@
+title: OTX domain IOC - mixfaucet.site
+id: 077eeb0b-4c80-4d45-a5a7-7d8f0de1fe84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mixfaucet.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - fg1vbg80gr.top
+id: d801c9d7-f61d-487f-83a3-af00c2f1865a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fg1vbg80gr.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

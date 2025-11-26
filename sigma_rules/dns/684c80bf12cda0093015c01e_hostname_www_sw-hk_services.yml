@@ -1,0 +1,27 @@
+title: OTX hostname IOC - www.sw-hk.services
+id: 5509b901-42ad-4e1b-8cb7-0e8a924b1734
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.sw-hk.services
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

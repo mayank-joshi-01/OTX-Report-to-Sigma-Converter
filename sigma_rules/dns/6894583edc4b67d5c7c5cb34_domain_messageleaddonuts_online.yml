@@ -1,0 +1,20 @@
+title: OTX domain IOC - messageleaddonuts.online
+id: c4081093-d104-47a8-a127-cf7bca6ef24f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: messageleaddonuts.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

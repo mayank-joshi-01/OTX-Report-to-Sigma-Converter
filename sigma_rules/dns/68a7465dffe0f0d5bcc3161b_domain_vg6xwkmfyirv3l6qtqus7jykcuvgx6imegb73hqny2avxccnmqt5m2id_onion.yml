@@ -1,0 +1,32 @@
+title: OTX domain IOC - vg6xwkmfyirv3l6qtqus7jykcuvgx6imegb73hqny2avxccnmqt5m2id.onion
+id: 9c8d21c6-b7e3-45c9-9bb4-bcb3b95c2bd9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking GLOBAL GROUP
+  Ransomware from Mamona to Market Scale' (68a7465dffe0f0d5bcc3161b).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.picussecurity.com/resource/blog/tracking-global-group-ransomware-from-mamona-to-market-scale
+tags:
+- tor
+- cross-platform
+- golang
+- chacha20-poly1305
+- mamona rip
+- black lock
+- raas
+- ransomware
+- global group
+- initial access brokers
+- ai chatbot
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vg6xwkmfyirv3l6qtqus7jykcuvgx6imegb73hqny2avxccnmqt5m2id.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

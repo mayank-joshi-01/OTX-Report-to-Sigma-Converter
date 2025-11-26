@@ -1,0 +1,20 @@
+title: OTX domain IOC - sowetobynight.online
+id: 30d50b81-42c0-499e-9e8d-9ea44bbf9ca4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sowetobynight.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

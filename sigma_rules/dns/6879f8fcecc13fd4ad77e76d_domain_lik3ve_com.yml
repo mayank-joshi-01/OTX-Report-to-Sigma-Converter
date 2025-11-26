@@ -1,0 +1,25 @@
+title: OTX domain IOC - lik3ve.com
+id: 98f56366-0c1e-4d48-ae54-209550558573
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lik3ve.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

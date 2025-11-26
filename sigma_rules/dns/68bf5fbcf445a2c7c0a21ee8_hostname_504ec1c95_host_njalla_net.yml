@@ -1,0 +1,29 @@
+title: OTX hostname IOC - 504ec1c95.host.njalla.net
+id: 85ee4928-9967-47c4-b436-e443ebd72f69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Blurring the Lines:
+  Intrusion Shows Connection With Three Major Ransomware Gangs'' (68bf5fbcf445a2c7c0a21ee8).'
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://thedfirreport.com/2025/09/08/blurring-the-lines-intrusion-shows-connection-with-three-major-ransomware-gangs/
+tags:
+- data exfiltration
+- grixba
+- systembc
+- multi-group affiliation
+- betruger
+- ransomware
+- lateral movement
+- sectoprat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 504ec1c95.host.njalla.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

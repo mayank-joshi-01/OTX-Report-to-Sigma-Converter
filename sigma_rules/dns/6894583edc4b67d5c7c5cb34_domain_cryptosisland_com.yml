@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptosisland.com
+id: 51df45cd-d3aa-4084-a5a8-0f97094b98f4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptosisland.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

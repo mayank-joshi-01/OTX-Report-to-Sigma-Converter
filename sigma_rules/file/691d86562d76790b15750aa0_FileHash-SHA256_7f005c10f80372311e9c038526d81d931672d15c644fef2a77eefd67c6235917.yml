@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 7f005c10f80372311e9c038526d81d931672d15c644fef2a77eefd67c6235917
+id: c697c54a-891f-4759-98b0-131d8d4b4efb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GPT Trade: Fake
+  Google Play Store drops BTMob Spyware and UASecurity Miner on Android Devices''
+  (691d86562d76790b15750aa0).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.d3lab.net/gpt-trade-fake-google-play-store-drops-btmob-spyware-and-uasecurity-miner-on-android-devices/
+tags:
+- android
+- apk packer
+- dropper
+- btmob
+- uasecurity miner
+- fake app store
+- modular malware
+- social engineering
+- spyware
+- cryptocurrency miner
+- gpt trade
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7f005c10f80372311e9c038526d81d931672d15c644fef2a77eefd67c6235917
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

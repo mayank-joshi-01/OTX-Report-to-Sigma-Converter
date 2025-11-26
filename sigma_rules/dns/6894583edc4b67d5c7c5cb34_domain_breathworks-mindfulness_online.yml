@@ -1,0 +1,20 @@
+title: OTX domain IOC - breathworks-mindfulness.online
+id: 17fd0b97-e8e9-4704-b33d-81be37b8a77f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: breathworks-mindfulness.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

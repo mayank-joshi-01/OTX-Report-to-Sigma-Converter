@@ -1,0 +1,20 @@
+title: OTX domain IOC - order386900.click
+id: 5af43b75-e0c2-4a27-bf19-966d075f7a32
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: order386900.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

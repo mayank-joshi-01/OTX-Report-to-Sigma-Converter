@@ -1,0 +1,20 @@
+title: OTX domain IOC - smart-home-improvement.online
+id: 5b2b2b0e-c44c-4317-bd65-e07e07abd461
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smart-home-improvement.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

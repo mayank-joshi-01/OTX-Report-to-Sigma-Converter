@@ -1,0 +1,28 @@
+title: OTX hostname IOC - agent.fleetdeck.io
+id: 7fdc7d94-496d-40bc-b498-34eff02207e7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: agent.fleetdeck.io
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

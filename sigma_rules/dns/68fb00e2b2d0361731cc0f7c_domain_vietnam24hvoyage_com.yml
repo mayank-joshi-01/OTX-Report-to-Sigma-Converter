@@ -1,0 +1,24 @@
+title: OTX domain IOC - vietnam24hvoyage.com
+id: e9117b97-5fa7-453f-b616-01366cea93e5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vietnam24hvoyage.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

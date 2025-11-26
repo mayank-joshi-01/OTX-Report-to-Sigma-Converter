@@ -1,0 +1,31 @@
+title: OTX domain IOC - discord-giveaway.net
+id: 28870e6e-b1ab-4a79-a535-049f8ca25c3f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Discord Invite Hijacking:
+  How Fake Links Are Delivering Infostealers'' (6855cf0cbbcbda407dae0a8b).'
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://darkatlas.io/blog/discord-invite-hijacking-how-fake-links-are-delivering-infostealers
+tags:
+- chromekatz
+- phishing
+- multi-stage attack
+- cryptocurrency
+- skuld stealer
+- discord
+- invite hijacking
+- social engineering
+- asyncrat
+- wallet injection
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: discord-giveaway.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

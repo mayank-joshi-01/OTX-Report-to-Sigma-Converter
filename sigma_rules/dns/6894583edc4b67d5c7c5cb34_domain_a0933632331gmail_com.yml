@@ -1,0 +1,20 @@
+title: OTX domain IOC - a0933632331gmail.com
+id: 7ce49eef-2028-4287-8b2e-80c8b637ccbd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: a0933632331gmail.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

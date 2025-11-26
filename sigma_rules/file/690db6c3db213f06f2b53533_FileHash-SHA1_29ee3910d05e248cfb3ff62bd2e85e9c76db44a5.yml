@@ -1,0 +1,42 @@
+title: OTX FileHash-SHA1 IOC - 29ee3910d05e248cfb3ff62bd2e85e9c76db44a5
+id: a4212c6e-65b6-4173-b06d-89359bf26822
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cavalry Werewolf hacker
+  group attacks Russian state institutions' (690db6c3db213f06f2b53533).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://news.drweb.com/show/?i=15078&lng=en&c=5
+tags:
+- open-source tools
+- trojan.packed2.49708
+- telegram api
+- data theft
+- backdoor.shellnet.2
+- network infiltration
+- backdoor.reverseshell.10
+- backdoor.tunnel.41
+- trojan.inject5.57968
+- bat.downloader.1138
+- trojan.siggen31.54011
+- backdoor.shellnet.1
+- trojan.filespynet.5
+- reverse-shell
+- backdoor.reverseproxy.1
+- phishing
+- backdoor.rshell.169
+- backdoors
+- russian government
+- backdoor.siggen2.5463
+- trojan.packed2.49862
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 29ee3910d05e248cfb3ff62bd2e85e9c76db44a5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

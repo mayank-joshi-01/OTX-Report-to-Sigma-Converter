@@ -1,0 +1,36 @@
+title: OTX URL IOC - https://document-c.infinityfreeapp.com/execdwn.php?id=aec02d48-92f3-45a5-a003-051369b51928
+id: 23b8a366-ef27-4972-8d15-a4e68ea33df3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ITG05 operations leverage
+  Israel-Hamas conflict lures to deliver Headlace malware' (6579b53c00375a2dcfaaf952).
+author: AlienVault
+date: '2023-12-13'
+references:
+- https://securityintelligence.com/x-force/itg05-ops-leverage-israel-hamas-conflict-lures-to-deliver-headlace-malware/
+tags:
+- itg05
+- september
+- ukraine
+- azerbaijan
+- israel
+- razumkov centre
+- belarus
+- service
+- winrar
+- nishang
+- graphite
+- credomap
+- gootloader
+- wailingcrab
+- mocky
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://document-c.infinityfreeapp.com/execdwn.php?id=aec02d48-92f3-45a5-a003-051369b51928
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

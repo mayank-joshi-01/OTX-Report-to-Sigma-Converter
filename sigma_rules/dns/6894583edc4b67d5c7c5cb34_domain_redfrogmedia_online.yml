@@ -1,0 +1,20 @@
+title: OTX domain IOC - redfrogmedia.online
+id: 73fb9b6c-37ed-4acf-bd1b-6f71ccc6aff2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: redfrogmedia.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

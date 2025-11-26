@@ -1,0 +1,20 @@
+title: OTX domain IOC - pbknxnruccskn.online
+id: 4eef9f56-2c15-41b7-ad7d-7d328b9d61d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pbknxnruccskn.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

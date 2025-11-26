@@ -1,0 +1,29 @@
+title: OTX domain IOC - idkua93dkh9590764478t18822056bck.com
+id: 6ead49bb-8104-4b7b-bc06-9e7d0b4b2474
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MostereRAT Deployed
+  AnyDesk/TightVNC for Covert Full Access' (68bfb1a471409d34dfdf3279).
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.fortinet.com/blog/threat-research/mostererat-deployed-anydesk-tightvnc-for-covert-full-access
+tags:
+- mostererat
+- remote access
+- epl
+- anydesk
+- mtls
+- evasion techniques
+- phishing
+- tightvnc
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: idkua93dkh9590764478t18822056bck.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

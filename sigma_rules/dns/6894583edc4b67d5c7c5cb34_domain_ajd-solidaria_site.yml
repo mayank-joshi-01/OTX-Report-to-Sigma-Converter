@@ -1,0 +1,20 @@
+title: OTX domain IOC - ajd-solidaria.site
+id: 9826f347-c65a-4905-a318-da439939be6c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ajd-solidaria.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

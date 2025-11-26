@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA1 IOC - 0fc40e271fae41bad72e94c021ad54e3bcd28a4c
+id: 00a4dbf1-0201-473c-a980-80752ea6b1b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Behind Random Words:
+  DoubleTrouble Mobile Banking Trojan Revealed'' (688cc930986b98a3ca1be499).'
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://zimperium.com/blog/behind-random-words-doubletrouble-mobile-banking-trojan-revealed
+tags:
+- mobile banking trojan
+- Android
+- Discord
+- keylogger
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0fc40e271fae41bad72e94c021ad54e3bcd28a4c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

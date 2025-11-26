@@ -1,0 +1,20 @@
+title: OTX domain IOC - 090282.com
+id: b81ddae6-14fa-425c-9278-ff37fb774aed
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 090282.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

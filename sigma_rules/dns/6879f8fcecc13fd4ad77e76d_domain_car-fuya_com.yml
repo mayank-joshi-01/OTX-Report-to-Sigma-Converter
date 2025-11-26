@@ -1,0 +1,25 @@
+title: OTX domain IOC - car-fuya.com
+id: 3689a7da-e8cc-44ba-9faf-8fcee3abfeeb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: car-fuya.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

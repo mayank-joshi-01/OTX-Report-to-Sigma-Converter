@@ -1,0 +1,20 @@
+title: OTX hostname IOC - ec2-54-233-24-103.sa-east-1.compute.amazonaws.com
+id: 9ccf2f6e-2485-4275-af00-c01fe24f4dde
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ec2-54-233-24-103.sa-east-1.compute.amazonaws.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

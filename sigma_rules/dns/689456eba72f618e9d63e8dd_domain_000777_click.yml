@@ -1,0 +1,20 @@
+title: OTX domain IOC - 000777.click
+id: 15c14996-6c2b-4f9f-b8df-282570ee38b3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 000777.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

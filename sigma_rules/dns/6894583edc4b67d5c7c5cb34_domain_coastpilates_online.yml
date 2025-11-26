@@ -1,0 +1,20 @@
+title: OTX domain IOC - coastpilates.online
+id: 9077e69f-3b01-4b54-a642-c1cbea60053e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: coastpilates.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

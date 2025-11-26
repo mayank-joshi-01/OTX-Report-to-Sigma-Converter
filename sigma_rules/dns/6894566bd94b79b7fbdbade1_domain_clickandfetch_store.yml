@@ -1,0 +1,20 @@
+title: OTX domain IOC - clickandfetch.store
+id: 87a4116a-d7fa-4cd1-bb9b-fcf152491275
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clickandfetch.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

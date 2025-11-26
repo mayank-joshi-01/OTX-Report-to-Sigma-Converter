@@ -1,0 +1,30 @@
+title: OTX domain IOC - bulam.ru
+id: c5189b3c-f24f-4778-a0a5-9e8ec4df1456
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT-C-53
+  (Gamaredon) Attack on Ukrainian Government Agencies' (68b56d89967a129544d7aa5c).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://mp.weixin.qq.com/s?__biz=MzUyMjk4NzExMA==&mid=2247507351&idx=1&sn=0b8c9e5b3ff9d7b6551b3a69c151f7e0&chksm=f9c1ee9eceb66788c94178eec69e10142c58dc7721874f9e4d3120d7ea952faa230221a6e2cc
+tags:
+- cloudflareworkers
+- ukraine
+- vbscript
+- powershell
+- cyberespionage
+- apt
+- russia
+- dropbox
+- devtunnels
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bulam.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX domain IOC - findcloudflare.com
+id: cea9b9da-57c4-4e5c-9331-8d6da3b486da
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Amazon disrupts watering
+  hole campaign by Russia's APT29' (68b56d5d8b45f7f6c8cb4a3a).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://aws.amazon.com/es/blogs/security/amazon-disrupts-watering-hole-campaign-by-russias-apt29/
+tags:
+- svr
+- watering hole
+- infrastructure adaptation
+- russia
+- credential harvesting
+- javascript injection
+- device authentication
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: findcloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

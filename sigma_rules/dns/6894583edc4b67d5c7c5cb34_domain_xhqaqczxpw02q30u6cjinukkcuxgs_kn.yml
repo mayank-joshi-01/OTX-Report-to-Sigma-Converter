@@ -1,0 +1,20 @@
+title: OTX domain IOC - xhqaqczxpw02q30u6cjinukkcuxgs.kn
+id: 23115c5f-5eb6-4e73-abc4-9936e4004c9d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xhqaqczxpw02q30u6cjinukkcuxgs.kn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

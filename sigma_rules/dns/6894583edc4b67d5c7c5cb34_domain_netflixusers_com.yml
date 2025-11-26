@@ -1,0 +1,20 @@
+title: OTX domain IOC - netflixusers.com
+id: 9b1b7d48-0e26-4939-986f-a98f01c432ca
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: netflixusers.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

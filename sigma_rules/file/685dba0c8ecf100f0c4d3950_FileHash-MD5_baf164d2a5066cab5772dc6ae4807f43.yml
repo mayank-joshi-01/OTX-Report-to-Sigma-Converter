@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - baf164d2a5066cab5772dc6ae4807f43
+id: b5cfa20a-abad-4992-92e7-9ae49b79bf3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting Kimsuky''s
+  Attacks on South Korea: In-Depth Analysis of GitHub-Based Malicious Infrastructure''
+  (685dba0c8ecf100f0c4d3950).'
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://www.enki.co.kr/en/media-center/tech-blog/dissecting-kimsuky-s-attacks-on-south-korea-in-depth-analysis-of-github-based-malicious-infrastructure
+tags:
+- spearphishing
+- north korea
+- dropbox
+- xenorat
+- south korea
+- kimsuky
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: baf164d2a5066cab5772dc6ae4807f43
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

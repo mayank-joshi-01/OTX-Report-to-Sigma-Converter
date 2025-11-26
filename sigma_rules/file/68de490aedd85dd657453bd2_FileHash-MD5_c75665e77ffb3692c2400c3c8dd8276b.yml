@@ -1,0 +1,34 @@
+title: OTX FileHash-MD5 IOC - c75665e77ffb3692c2400c3c8dd8276b
+id: 1d9bcf51-8f3c-4f36-947e-ea7c4ef96cea
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Werewolf raids Russia's
+  public sector with trusted relationship attacks' (68de490aedd85dd657453bd2).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://bi-zone.medium.com/cavalry-werewolf-raids-russias-public-sector-with-trusted-relationship-attacks-e19f7a5c83ef?source=rss-3882bedad280------2
+tags:
+- telegram
+- manufacturing
+- russia
+- phishing
+- energy
+- mining
+- foalshell
+- kyrgyzstan
+- asyncrat
+- rat
+- reverse shell
+- government
+- stallionrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c75665e77ffb3692c2400c3c8dd8276b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

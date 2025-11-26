@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - cce5bbb659a4f5ab6b4d8414b99c80f94513408e
+id: 9d768ea9-045f-4500-80e1-4336feea8555
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RAVEN STEALER UNMASKED:
+  Telegram-Based Data Exfiltration'' (688ca9833437e813c8c6f379).'
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.cyfirma.com/research/raven-stealer-unmasked-telegram-based-data-exfiltration/
+tags:
+- raven stealer
+- data exfiltration
+- octalyn stealer
+- information-stealing
+- credential theft
+- upx packing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: cce5bbb659a4f5ab6b4d8414b99c80f94513408e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

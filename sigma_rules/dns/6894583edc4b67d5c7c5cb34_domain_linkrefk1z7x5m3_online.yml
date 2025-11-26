@@ -1,0 +1,20 @@
+title: OTX domain IOC - linkrefk1z7x5m3.online
+id: fc019d2a-979c-429c-a643-6257d723d1de
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: linkrefk1z7x5m3.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

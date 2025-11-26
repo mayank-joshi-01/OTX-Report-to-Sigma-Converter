@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - 62646632363164386461323836333631
+id: a3d9bdab-37e7-4bb1-8d92-cf523034d0a0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: '62646632363164386461323836333631'
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

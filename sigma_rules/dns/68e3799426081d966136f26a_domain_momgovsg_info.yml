@@ -1,0 +1,27 @@
+title: OTX domain IOC - momgovsg.info
+id: 69aaf58f-cc4e-41d4-8ffa-a9c22c82b48d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: momgovsg.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

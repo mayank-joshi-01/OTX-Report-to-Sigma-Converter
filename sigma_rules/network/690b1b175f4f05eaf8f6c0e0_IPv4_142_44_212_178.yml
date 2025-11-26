@@ -1,0 +1,32 @@
+title: OTX IPv4 IOC - 142.44.212.178
+id: 1d92b0d1-2391-43d3-a139-0c0684f501cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CLOP RANSOMWARE:
+  DISSECTING NETWORK - THE RAVEN FILE'' (690b1b175f4f05eaf8f6c0e0).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://theravenfile.com/2025/11/04/clop-ransomware-dissecting-network/
+tags:
+- cve-2025-61882
+- cve-2023-0669
+- cyclops blink
+- cryptomix
+- infrastructure
+- oracle ebs
+- cve-2023-34362
+- ransomware
+- fingerprints
+- ip addresses
+- network analysis
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 142.44.212.178
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

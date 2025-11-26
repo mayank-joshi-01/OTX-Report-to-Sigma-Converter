@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - aec4f50e1073d3c1fc3dc994be9a0f13
+id: bf85ab89-c2c6-4092-bb53-d33c31aa1a3f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking Akira:
+  The ransomware tactics you can''t afford to ignore'' (68d102f951065675d59e9f7a).'
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://zensec.co.uk/blog/unmasking-akira-the-ransomware-tactics-you-cant-afford-to-ignore/
+tags:
+- backup destruction
+- cve-2024-40766
+- cve-2024-40711
+- encryption
+- data exfiltration
+- cve-2023-27532
+- credential theft
+- cve-2023-20269
+- akira
+- vpn exploitation
+- ransomware
+- double extortion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: aec4f50e1073d3c1fc3dc994be9a0f13
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - alt-bln99.online
+id: a8cf4834-01d5-4bc1-865d-f306a6379e64
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alt-bln99.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - oaanjdfjzjfrq.store
+id: 10ca04ee-9df5-4458-ab6c-7e56933048fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: oaanjdfjzjfrq.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

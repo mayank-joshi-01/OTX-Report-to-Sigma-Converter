@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://213.209.150.18/SoNZ984ijTf8DPr.exe
+id: 6536e7cc-56b1-4086-b675-5db5af8d661e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CVE-2017-11882 Will
+  Never Die' (689c6f069882dc769770ff8e).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://isc.sans.edu/diary/rss/32196
+tags:
+- microsoft office
+- vipkeylogger
+- exploit
+- cve-2017-11882
+- obfuscation
+- keylogger
+- equation editor
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://213.209.150.18/SoNZ984ijTf8DPr.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

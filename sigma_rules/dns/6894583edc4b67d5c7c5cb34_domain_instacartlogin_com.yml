@@ -1,0 +1,20 @@
+title: OTX domain IOC - instacartlogin.com
+id: 03366219-6c35-4c73-b52d-3df6c22cabc8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: instacartlogin.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

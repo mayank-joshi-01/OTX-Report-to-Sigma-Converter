@@ -1,0 +1,20 @@
+title: OTX domain IOC - website-williamhill.com
+id: 34cc5571-af83-4383-9dd9-b5a1c2e929d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: website-williamhill.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

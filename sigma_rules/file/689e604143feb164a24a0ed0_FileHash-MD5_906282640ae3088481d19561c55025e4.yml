@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 906282640ae3088481d19561c55025e4
+id: e2a40b05-f508-4d65-8191-81e0a6500596
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'What happened in Vegas
+  (that you actually want to know about)' (689e604143feb164a24a0ed0).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.talosintelligence.com/what-happened-in-vegas-that-you-actually-want-to-know-about/
+tags:
+- cve-2025-6543
+- embedded security
+- ai guardrails
+- c#
+- powershell
+- ps1bot
+- malvertising
+- incident-response
+- black hat usa
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 906282640ae3088481d19561c55025e4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

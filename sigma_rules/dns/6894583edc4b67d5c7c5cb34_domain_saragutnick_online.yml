@@ -1,0 +1,20 @@
+title: OTX domain IOC - saragutnick.online
+id: 2dcaf3d5-0780-49f4-b1b0-b21554c79c6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saragutnick.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

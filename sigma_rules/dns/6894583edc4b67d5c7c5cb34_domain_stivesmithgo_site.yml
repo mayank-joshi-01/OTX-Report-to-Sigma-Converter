@@ -1,0 +1,20 @@
+title: OTX domain IOC - stivesmithgo.site
+id: aeb8a65b-adf7-493a-9478-26d2e593ab41
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stivesmithgo.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

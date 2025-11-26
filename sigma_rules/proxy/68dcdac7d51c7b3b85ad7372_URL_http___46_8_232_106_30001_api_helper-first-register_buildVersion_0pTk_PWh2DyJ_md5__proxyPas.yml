@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://46.8.232.106:30001/api/helper-first-register?buildVersion=0pTk.PWh2DyJ&md5=&proxyPassword=&proxyUsername=&userId=
+id: 9a70abe5-dcf8-494e-b3f0-8f4cfe05cbe6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GhostSocks: From
+  Initial Access to Residential Proxy'' (68dcdac7d51c7b3b85ad7372).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://synthient.com/blog/ghostsocks-from-initial-access-to-residential-proxy
+tags:
+- socks5
+- c2
+- blackbasta
+- obfuscation
+- ghostsocks
+- maas
+- lummastealer
+- residential proxy
+- double victimization
+- golang
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://46.8.232.106:30001/api/helper-first-register?buildVersion=0pTk.PWh2DyJ&md5=&proxyPassword=&proxyUsername=&userId=
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - keirin-quick.site
+id: 3eee942c-01d5-42d6-b8b5-9eb3f6c9037f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: keirin-quick.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,36 @@
+title: OTX FileHash-MD5 IOC - 2561b457103e7e74f5e6d9dcf703bfe6
+id: 590c4de9-0a73-4f05-aad1-f7808606a6bd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'China-linked Actors
+  Maintain Focus on Organizations Influencing U.S. Policy' (690db61fa9afe4e11ed58ceb).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://www.security.com/threat-intelligence/china-apt-us-policy
+tags:
+- cve-2017-17562
+- deed rat
+- espionage
+- persistence
+- cve-2021-44228
+- cve-2017-9805
+- dcsync
+- policy influence
+- domain controllers
+- space pirates
+- apt41
+- kelp
+- china
+- cve-2022-26134
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2561b457103e7e74f5e6d9dcf703bfe6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

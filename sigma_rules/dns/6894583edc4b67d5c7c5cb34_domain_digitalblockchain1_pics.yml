@@ -1,0 +1,20 @@
+title: OTX domain IOC - digitalblockchain1.pics
+id: c0d7b1c1-fbb0-457c-868e-1556e4b3e3eb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: digitalblockchain1.pics
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

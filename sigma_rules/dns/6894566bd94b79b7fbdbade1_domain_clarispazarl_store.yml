@@ -1,0 +1,20 @@
+title: OTX domain IOC - clarispazarl.store
+id: 9c091a8c-c73f-4e9e-940b-742e8e87fd93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clarispazarl.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

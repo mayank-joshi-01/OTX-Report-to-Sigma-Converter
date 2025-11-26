@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - 799b9aa10e223b13577f9685c7808280
+id: 534543c2-9552-4795-9ff5-6e91c0151a87
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 799b9aa10e223b13577f9685c7808280
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

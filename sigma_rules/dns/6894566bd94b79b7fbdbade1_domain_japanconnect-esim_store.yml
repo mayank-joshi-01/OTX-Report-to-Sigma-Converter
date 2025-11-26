@@ -1,0 +1,20 @@
+title: OTX domain IOC - japanconnect-esim.store
+id: 21cde24b-0794-4401-b69e-abe1656c199c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: japanconnect-esim.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - westernsydneyshoulder.online
+id: 92b1c812-4210-4ab5-a0ff-7bb9c12c7cf9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: westernsydneyshoulder.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

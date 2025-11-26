@@ -1,0 +1,20 @@
+title: OTX domain IOC - snapnshopp.online
+id: 8a000f4f-1693-496a-8e54-b48176ab0554
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: snapnshopp.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

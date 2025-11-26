@@ -1,0 +1,20 @@
+title: OTX domain IOC - expertmowingplus.online
+id: 201fc1ce-563b-4b60-81bc-b6eb61431573
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: expertmowingplus.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

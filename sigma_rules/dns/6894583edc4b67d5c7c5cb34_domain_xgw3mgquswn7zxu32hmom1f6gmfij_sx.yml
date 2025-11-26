@@ -1,0 +1,20 @@
+title: OTX domain IOC - xgw3mgquswn7zxu32hmom1f6gmfij.sx
+id: 0d85b08d-1f84-4351-89a6-84f6c3c90aee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xgw3mgquswn7zxu32hmom1f6gmfij.sx
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

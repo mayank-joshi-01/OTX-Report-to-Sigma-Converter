@@ -1,0 +1,20 @@
+title: OTX domain IOC - renovate-kitchen-uk-16.online
+id: e42c14bc-8a71-46b0-81ab-8a134b7dc0dc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: renovate-kitchen-uk-16.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

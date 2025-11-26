@@ -1,0 +1,20 @@
+title: OTX domain IOC - designshop.site
+id: 1b045a08-5718-4382-982b-478fc7514402
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: designshop.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

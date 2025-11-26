@@ -1,0 +1,20 @@
+title: OTX domain IOC - sololeveling-read.online
+id: 4764a981-e815-486e-95fa-8c98a8f8b78c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sololeveling-read.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

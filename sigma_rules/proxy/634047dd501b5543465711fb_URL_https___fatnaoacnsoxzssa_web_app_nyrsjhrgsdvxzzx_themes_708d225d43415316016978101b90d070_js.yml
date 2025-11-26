@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://fatnaoacnsoxzssa.web.app/nyrsjhrgsdvxzzx/themes/708d225d43415316016978101b90d070.js
+id: e02ad4ec-7d74-40d0-ab53-bb4502863e2c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''HTML File Attachments:
+  Still A Threat'' (634047dd501b5543465711fb).'
+author: AlienVault
+date: '2022-10-07'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/html-file-attachments-still-a-threat/
+tags:
+- trickbot
+- javascript
+- html attachments
+- phishing
+- obfuscation
+- html smuggling
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://fatnaoacnsoxzssa.web.app/nyrsjhrgsdvxzzx/themes/708d225d43415316016978101b90d070.js
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

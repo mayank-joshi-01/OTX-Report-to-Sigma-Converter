@@ -1,0 +1,20 @@
+title: OTX domain IOC - via4d-playnices2.online
+id: 2e3fab04-0701-4672-8b36-6478301c9a48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: via4d-playnices2.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - beantheelf.site
+id: eb78b46e-4082-4ad0-952f-91e4e4f49d01
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beantheelf.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

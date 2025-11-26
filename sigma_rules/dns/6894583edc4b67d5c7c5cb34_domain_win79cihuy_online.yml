@@ -1,0 +1,20 @@
+title: OTX domain IOC - win79cihuy.online
+id: 5deaf140-74ff-4834-82c9-189a4f595925
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: win79cihuy.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - marshmellowflowerscar.info
+id: 56330dc5-5419-49f5-b01d-6253844d6f43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: marshmellowflowerscar.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

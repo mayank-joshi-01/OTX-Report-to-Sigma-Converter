@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 202bf7a4317326b8d0b39f1fa19304c487128c8bd6e52893a6f06f9640e138e6
+id: 6474a450-cd7f-4fdb-a5e6-edcd0c3e2f11
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian linked conglomerate
+  MuddyWater comprised of regionally focused subgroups' (622a1df4039af2610815beff).
+author: AlienVault
+date: '2022-03-10'
+references:
+- https://blog.talosintelligence.com/2022/03/iranian-supergroup-muddywater.html
+tags:
+- APT
+- MuddyWater
+- Iran
+- MalDoc
+- SloughRAT
+- Static Kitten
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 202bf7a4317326b8d0b39f1fa19304c487128c8bd6e52893a6f06f9640e138e6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

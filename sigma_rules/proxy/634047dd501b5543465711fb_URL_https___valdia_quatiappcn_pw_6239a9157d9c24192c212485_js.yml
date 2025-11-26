@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://valdia.quatiappcn.pw/6239a9157d9c24192c212485.js
+id: 31c0ea7b-8771-417f-bb92-fb6da3cda182
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''HTML File Attachments:
+  Still A Threat'' (634047dd501b5543465711fb).'
+author: AlienVault
+date: '2022-10-07'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/html-file-attachments-still-a-threat/
+tags:
+- trickbot
+- javascript
+- html attachments
+- phishing
+- obfuscation
+- html smuggling
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://valdia.quatiappcn.pw/6239a9157d9c24192c212485.js
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

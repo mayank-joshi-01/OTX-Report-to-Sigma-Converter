@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - e9dfde8f8a44b1562bc5e77b965b915562f81202
+id: e018045a-04e9-4bdf-94f0-0524fa609470
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ghost in the Zip |
+  New PXA Stealer and Its Telegram-Powered Ecosystem' (6890dc25c21f8e90f5941c10).
+author: AlienVault
+date: '2025-08-04'
+references:
+- https://www.sentinelone.com/labs/ghost-in-the-zip-new-pxa-stealer-and-its-telegram-powered-ecosystem/
+tags:
+- telegram
+- pxa stealer
+- data theft
+- credential harvesting
+- infostealer
+- python
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: e9dfde8f8a44b1562bc5e77b965b915562f81202
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

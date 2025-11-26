@@ -1,0 +1,31 @@
+title: OTX domain IOC - jamelik.asia
+id: c4ac4802-8ca8-4da8-9109-6fc507c6ba6b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Increase in Lumma
+  Stealer Activity Coincides with Use of Adaptive Browser Fingerprinting Tactics'
+  (691695b683ab8cc0fedbd3fe).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.trendmicro.com/en_us/research/25/k/lumma-stealer-browser-fingerprinting.html
+tags:
+- evasion techniques
+- browser fingerprinting
+- lumma stealer
+- ghostsocks
+- data exfiltration
+- cybercriminal activity
+- process injection
+- command-and-control
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jamelik.asia
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

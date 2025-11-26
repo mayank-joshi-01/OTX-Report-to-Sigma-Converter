@@ -1,0 +1,20 @@
+title: OTX domain IOC - lotusbets365.online
+id: 1173853a-48f0-4e41-b140-1c40f56d145e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lotusbets365.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

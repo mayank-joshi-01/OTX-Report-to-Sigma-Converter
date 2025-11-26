@@ -1,0 +1,29 @@
+title: OTX hostname IOC - www.email.gov.in.indiandefence.work
+id: 7c1ee668-a7e1-4c4c-89ac-eff6b6248fdf
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Indian Infrastructure
+  Targeted with Desktop Lures and Poseidon Backdoor' (688cb39bdc1c258f2b66a6e8).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://hunt.io/blog/apt36-india-infrastructure-attacks
+tags:
+- poseidon backdoor
+- government impersonation
+- mythic framework
+- infrastructure
+- desktop lures
+- phishing
+- poseidon
+- india
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.email.gov.in.indiandefence.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

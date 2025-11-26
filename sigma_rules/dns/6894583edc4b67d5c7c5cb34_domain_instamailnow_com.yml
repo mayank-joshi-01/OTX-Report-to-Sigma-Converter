@@ -1,0 +1,20 @@
+title: OTX domain IOC - instamailnow.com
+id: 5ca1d399-c1ca-4540-b60e-1859fbb6a3d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: instamailnow.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - nhy58awn.top
+id: 1df35b0d-3c8e-4c28-833a-c40c99639bce
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nhy58awn.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

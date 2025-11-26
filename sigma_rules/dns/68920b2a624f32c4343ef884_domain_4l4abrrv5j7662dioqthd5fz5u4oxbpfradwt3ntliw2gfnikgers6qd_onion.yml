@@ -1,0 +1,29 @@
+title: OTX domain IOC - 4l4abrrv5j7662dioqthd5fz5u4oxbpfradwt3ntliw2gfnikgers6qd.onion
+id: 6fd45a6a-9f7a-4405-a1e2-c6c3d2f31bb8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Raspberry Robin:
+  Latest Updates and Improvements'' (68920b2a624f32c4343ef884).'
+author: AlienVault
+date: '2025-08-05'
+references: []
+tags:
+- encryption
+- roshtyak
+- usb
+- privilege-escalation
+- obfuscation
+- tor
+- raspberry robin
+- cve-2024-38196
+- downloader
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4l4abrrv5j7662dioqthd5fz5u4oxbpfradwt3ntliw2gfnikgers6qd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - fast-loan-in-15-minutes-34640.click
+id: 80b024bd-4069-44f0-a7ce-58262fff2ef4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fast-loan-in-15-minutes-34640.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

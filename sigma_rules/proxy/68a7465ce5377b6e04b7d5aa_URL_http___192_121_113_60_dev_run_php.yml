@@ -1,0 +1,31 @@
+title: OTX URL IOC - http://192.121.113.60/dev/run.php
+id: 281402d0-9078-4f29-b61b-98b609b13a70
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MuddyWater Leveraging
+  DCHSpy For Israel-Iran Conflict' (68a7465ce5377b6e04b7d5aa).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.lookout.com/threat-intelligence/article/lookout-discovers-iranian-dchsy-surveillanceware
+tags:
+- dchspy
+- conflict
+- israel
+- iran
+- android
+- surveillanceware
+- vpn
+- telegram
+- sandstrike
+- starlink
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://192.121.113.60/dev/run.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

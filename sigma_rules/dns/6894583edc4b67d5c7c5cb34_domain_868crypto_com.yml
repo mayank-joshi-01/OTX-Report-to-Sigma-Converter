@@ -1,0 +1,20 @@
+title: OTX domain IOC - 868crypto.com
+id: e27a2a98-5813-4dc4-8b38-eb96f125da79
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 868crypto.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

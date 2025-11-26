@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://kickstar-xbloom.info/collect.php
+id: b60b45e4-a26a-4500-a086-c0a2095bddd8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Hidden WordPress Backdoors
+  Creating Admin Accounts' (68d3c86ea0c88315316a69be).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://blog.sucuri.net/2025/09/hidden-wordpress-backdoors-creating-admin-accounts.html
+tags:
+- backdoor
+- credential theft
+- stealth
+- debugmaster pro
+- admin accounts
+- wordpress
+- compromise
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://kickstar-xbloom.info/collect.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

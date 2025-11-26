@@ -1,0 +1,20 @@
+title: OTX domain IOC - t-pixel.store
+id: 920a0582-078c-462c-9e06-102ee3fac5f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: t-pixel.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

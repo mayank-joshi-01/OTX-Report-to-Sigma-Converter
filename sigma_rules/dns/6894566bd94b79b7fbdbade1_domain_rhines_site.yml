@@ -1,0 +1,20 @@
+title: OTX domain IOC - rhines.site
+id: 3e21b2ca-3efa-441b-a464-e3ae78ad7bb3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rhines.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

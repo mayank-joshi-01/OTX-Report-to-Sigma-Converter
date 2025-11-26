@@ -1,0 +1,20 @@
+title: OTX hostname IOC - 167-172-79-24.cprapid.com
+id: 662d5cb1-8195-483f-b40e-cea619edcf07
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 167-172-79-24.cprapid.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

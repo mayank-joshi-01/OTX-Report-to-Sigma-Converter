@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 50b40556aa7461566661d6a8b9486e5829680951b5df5b7584e0ab58f8a7e92f
+id: 76ed696c-a175-4685-a352-c03bd10137a6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Update on Attacks
+  by Threat Group APT-C-60' (690b07d26b6f30fe642910b2).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://blogs.jpcert.or.jp/en/2025/11/APT-C-60_update.html
+tags:
+- github
+- vhdx
+- recruitment
+- spyglace
+- spear-phishing
+- east asia
+- downloader1
+- com hijacking
+- rc4
+- downloader2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 50b40556aa7461566661d6a8b9486e5829680951b5df5b7584e0ab58f8a7e92f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX domain IOC - putty.network
+id: 9db297c3-25cf-41d9-91d9-f3b1032a761e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Like PuTTY in Admin's
+  Hands' (68af30b5c4033492fe0be98f).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://levelblue.com/blogs/security-essentials/like-putty-in-admins-hands
+tags:
+- kerberoasting
+- malvertising
+- oyster
+- putty
+- broomstick
+- trojanized
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: putty.network
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

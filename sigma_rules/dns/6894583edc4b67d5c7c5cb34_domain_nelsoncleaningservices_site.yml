@@ -1,0 +1,20 @@
+title: OTX domain IOC - nelsoncleaningservices.site
+id: 4787add2-6177-442a-9a04-32065d62d9dc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nelsoncleaningservices.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

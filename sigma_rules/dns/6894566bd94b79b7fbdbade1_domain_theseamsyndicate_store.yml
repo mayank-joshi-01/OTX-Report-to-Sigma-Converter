@@ -1,0 +1,20 @@
+title: OTX domain IOC - theseamsyndicate.store
+id: 0466eabd-898d-4b79-ba98-31bbd9ec6975
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theseamsyndicate.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

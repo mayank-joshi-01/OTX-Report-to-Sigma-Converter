@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 667b7220f5df1b31dd2dd3d4aa1fedb4fdd2e8e5926cdacd744da7a7c6635932
+id: 2a98914d-b019-4599-82cb-ac89c22b43a6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Getting to the Crux
+  (Ransomware) of the Matter' (687df719a635fb2a7028cc93).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://www.huntress.com/blog/crux-ransomware
+tags:
+- data exfiltration
+- bcdedit
+- process injection
+- svchost
+- rdp
+- rclone
+- ransomware
+- crux
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 667b7220f5df1b31dd2dd3d4aa1fedb4fdd2e8e5926cdacd744da7a7c6635932
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

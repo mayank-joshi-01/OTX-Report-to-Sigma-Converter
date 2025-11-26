@@ -1,0 +1,20 @@
+title: OTX domain IOC - m7fsp.cyou
+id: 83ebd245-7bbf-488b-9e19-8fcc35858c40
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: m7fsp.cyou
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

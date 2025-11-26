@@ -1,0 +1,20 @@
+title: OTX domain IOC - w2umb1unj5.top
+id: 91fa03c1-58a8-47c4-b431-c965431aff9e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: w2umb1unj5.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

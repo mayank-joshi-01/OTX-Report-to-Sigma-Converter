@@ -1,0 +1,29 @@
+title: OTX hostname IOC - frecil.medicinatramp.beauty
+id: bd44b750-fbdf-4a90-b24a-3d457bb6012d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: frecil.medicinatramp.beauty
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

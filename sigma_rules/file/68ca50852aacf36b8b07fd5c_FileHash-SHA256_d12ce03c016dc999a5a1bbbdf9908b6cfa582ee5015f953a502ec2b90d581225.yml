@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - d12ce03c016dc999a5a1bbbdf9908b6cfa582ee5015f953a502ec2b90d581225
+id: 4874a015-dfc7-488a-9821-278f1d0a5b8f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Going Underground:
+  China-aligned TA415 Conducts U.S.-China Economic Relations Targeting Using VS Code
+  Remote Tunnels'' (68ca50852aacf36b8b07fd5c).'
+author: AlienVault
+date: '2025-09-17'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/going-underground-china-aligned-ta415-conducts-us-china-economic-relations
+tags:
+- economic espionage
+- u.s.-china relations
+- vs code remote tunnels
+- spearphishing
+- whirlcoil
+- python loader
+- lnk files
+- voldemort
+- github authentication
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d12ce03c016dc999a5a1bbbdf9908b6cfa582ee5015f953a502ec2b90d581225
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

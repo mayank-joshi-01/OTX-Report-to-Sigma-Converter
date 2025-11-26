@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - db63ff8f0660d5895d5c62fa67a1346a
+id: 69e96d3b-6099-4b47-85d9-2260f0b3d30c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targeting Companies via UpCrypter' (68acfa712f35ab723b2af3db).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.fortinet.com/blog/threat-research/phishing-campaign-targeting-companies-via-upcrypter
+tags:
+- phishing
+- remote access tools
+- anti-vm
+- purehvnc
+- upcrypter
+- global campaign
+- anti-analysis
+- obfuscation
+- persistence
+- babylon rat
+- dcrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: db63ff8f0660d5895d5c62fa67a1346a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 1ef6c1a4dfdc39b63bfe650ca81ab89510de6c0d3d7c608ac5be80033e559326
+id: 78b9784a-1d59-4160-87df-819c3585bfea
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'June 2025 Security
+  Issues in Korean & Global Financial Sector' (6877ceecfd72cc9e7a2c1603).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://asec.ahnlab.com/en/88936
+tags:
+- financial sector
+- phishing
+- dark web
+- database leak
+- digital payments
+- everest
+- account takeover
+- ransomware
+- cybercrime forums
+- data breach
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1ef6c1a4dfdc39b63bfe650ca81ab89510de6c0d3d7c608ac5be80033e559326
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - 9113f4b245da32c75d61b467ee89e0b7
+id: 8919feee-d1e6-44f6-af09-e3210488df1e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unmasking the new
+  Chaos RaaS group attacks' (68b1c325bd3b4a24b371dd29).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://blog.talosintelligence.com/new-chaos-ransomware/
+tags:
+- RaaS
+- BlackSuit
+- Royal
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9113f4b245da32c75d61b467ee89e0b7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

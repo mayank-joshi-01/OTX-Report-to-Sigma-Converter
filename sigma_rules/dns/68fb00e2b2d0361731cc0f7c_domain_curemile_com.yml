@@ -1,0 +1,24 @@
+title: OTX domain IOC - curemile.com
+id: ae5a96c6-6960-4f15-a0ee-72effba00c10
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: curemile.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

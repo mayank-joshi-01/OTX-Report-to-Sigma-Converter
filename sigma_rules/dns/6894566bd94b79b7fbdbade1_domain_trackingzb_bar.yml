@@ -1,0 +1,20 @@
+title: OTX domain IOC - trackingzb.bar
+id: 9f4176d3-6605-4feb-b5dc-5680ee3a3cf3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trackingzb.bar
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - univermolodyenovyeseriicut.online
+id: 12a0ddfa-359c-48a9-a9be-6f4564b29e7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: univermolodyenovyeseriicut.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

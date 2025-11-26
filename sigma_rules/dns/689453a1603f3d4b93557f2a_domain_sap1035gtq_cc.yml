@@ -1,0 +1,20 @@
+title: OTX domain IOC - sap1035gtq.cc
+id: 5e85c987-2f3a-440e-8c9d-d0a6350d9b23
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sap1035gtq.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

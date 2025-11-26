@@ -1,0 +1,20 @@
+title: OTX domain IOC - 777vulkan-gag.top
+id: 81ba7636-1451-4155-9778-5d06aa67f6c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 777vulkan-gag.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

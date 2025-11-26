@@ -1,0 +1,29 @@
+title: OTX IPv4 IOC - 62.120.71.56
+id: fbbc886d-38a4-4fed-9dcf-9cdbae8be5c0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Banking Trojan
+  Identified, Distributed Through WhatsApp' (691e7a33a0a2a7b299ae7a59).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/spiderlabs-ids-new-banking-trojan-distributed-through-whatsapp
+tags:
+- eternidade stealer
+- delphi
+- banking trojan
+- credential theft
+- whatsapp
+- imap
+- brazil
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 62.120.71.56
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

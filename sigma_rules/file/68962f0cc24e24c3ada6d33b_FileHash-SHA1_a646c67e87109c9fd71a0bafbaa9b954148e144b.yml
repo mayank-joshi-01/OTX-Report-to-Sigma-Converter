@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - a646c67e87109c9fd71a0bafbaa9b954148e144b
+id: b072fc7b-71bd-4221-82c0-6b417c0c78ca
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Statistics Report
+  on Malware Targeting Windows Web Servers in Q2 2025' (68962f0cc24e24c3ada6d33b).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://asec.ahnlab.com/en/88925
+tags:
+- iis
+- wograt
+- windows
+- remote code execution
+- vulnerabilities
+- web servers
+- apache tomcat
+- web shells
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a646c67e87109c9fd71a0bafbaa9b954148e144b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 212.12.178.178
+id: 5d5f63f9-5444-4c47-8b13-8b9266576d82
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT35 Internal Leak
+  of Hacking Campaigns Against Lebanon, Kuwait, Turkey, Saudi Arabia, Korea, and Domestic
+  Iranian Targets' (6921bcca5b00a92c1be4ffcc).
+author: AlienVault
+date: '2025-11-22'
+references:
+- https://dti.domaintools.com/threat-intelligence-report-apt35-internal-leak-of-hacking-campaigns-against-lebanon-kuwait-turkey-saudi-arabia-korea-and-domestic-iranian-targets
+tags:
+- middle east
+- herv phishing kit
+- powershort
+- phishing
+- exchange
+- rat-2ac2
+- intelligence collection
+- iran
+- irgc
+- cyberespionage
+- proxyshell
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 212.12.178.178
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

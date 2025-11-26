@@ -1,0 +1,28 @@
+title: OTX domain IOC - trade4wealth.in
+id: c9fd059a-549c-4348-ab05-d04376af019b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DRAT V2: Updated
+  DRAT Emerges in Arsenal'' (68599b9609a7c9c2dd3baefa).'
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://go.recordedfuture.com/hubfs/reports/cta-2025-0623.pdf
+tags:
+- remote access trojan
+- drat v2
+- c2 obfuscation
+- drat
+- delphi
+- broaderaspect
+- india
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trade4wealth.in
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

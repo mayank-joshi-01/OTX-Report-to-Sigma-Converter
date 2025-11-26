@@ -1,0 +1,35 @@
+title: OTX IPv4 IOC - 192.109.119.113
+id: bec3f4ca-85f0-42b5-9afe-e583737b56c6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'State-Sponsored Remote
+  Wipe Tactics Targeting Android Devices' (6911c911b6b2b40bf3ccf268).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/android
+tags:
+- rat
+- find hub
+- remote wipe
+- apt
+- spear-phishing
+- social engineering
+- lilithrat
+- remcosrat
+- android
+- kakaotalk
+- endrat
+- rftrat
+- quasarrat
+- google account
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 192.109.119.113
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

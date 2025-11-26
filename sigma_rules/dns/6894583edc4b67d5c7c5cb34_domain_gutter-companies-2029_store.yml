@@ -1,0 +1,20 @@
+title: OTX domain IOC - gutter-companies-2029.store
+id: 84e3dec7-9efc-4cb3-860a-ab7e1e9cdf43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gutter-companies-2029.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

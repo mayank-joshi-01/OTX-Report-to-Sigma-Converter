@@ -1,0 +1,34 @@
+title: OTX URL IOC - https://www.brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php
+id: e5852bb2-cc81-4e27-96d3-9b40f9be8548
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68cd617b3eb5b1212d11643d).
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab
+tags:
+- fsb
+- pterographin
+- ukraine
+- pterolnk
+- pteroeffigy
+- apt
+- collaboration
+- pteroodd
+- kazuar
+- pteropaste
+- cyberespionage
+- russia
+- pterostew
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.brannenburger-nagelfluh.de/wp-includes/style-engine/css/index.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

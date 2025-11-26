@@ -1,0 +1,25 @@
+title: OTX hostname IOC - incorporate-two-knowing-inside.trycloudflare.com
+id: 49918b1c-9890-4fbb-8241-ab6fa3215137
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gamaredon in 2024:
+  Cranking out spearphishing campaigns against Ukraine with an evolved toolset'' (6867ae2d0a53dfda37955c4b).'
+author: AlienVault
+date: '2025-07-04'
+references:
+- https://web-assets.esetstatic.com/wls/en/papers/white-papers/gamaredon-in-2024.pdf
+tags:
+- powershell
+- cloudflare tunnels
+- spearphishing
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: incorporate-two-knowing-inside.trycloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

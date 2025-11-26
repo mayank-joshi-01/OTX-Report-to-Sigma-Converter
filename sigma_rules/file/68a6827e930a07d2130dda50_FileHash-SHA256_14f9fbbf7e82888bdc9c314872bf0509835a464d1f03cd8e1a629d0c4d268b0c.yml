@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 14f9fbbf7e82888bdc9c314872bf0509835a464d1f03cd8e1a629d0c4d268b0c
+id: afd17903-e87c-4a65-b455-2eb1811ff9e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''A Cereal Offender:
+  Analyzing the CORNFLAKE.V3 Backdoor'' (68a6827e930a07d2130dda50).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/analyzing-cornflake-v3-backdoor
+tags:
+- cornflake.v3
+- windytwist.sea
+- node.js
+- clickfix
+- backdoor
+- kerberoasting
+- php
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 14f9fbbf7e82888bdc9c314872bf0509835a464d1f03cd8e1a629d0c4d268b0c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

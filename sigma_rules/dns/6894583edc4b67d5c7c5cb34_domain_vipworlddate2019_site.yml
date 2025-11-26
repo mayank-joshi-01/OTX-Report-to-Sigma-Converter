@@ -1,0 +1,20 @@
+title: OTX domain IOC - vipworlddate2019.site
+id: 367fa0e3-a21a-41dd-bd98-f575cc25eedd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vipworlddate2019.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

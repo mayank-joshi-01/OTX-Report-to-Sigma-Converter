@@ -1,0 +1,26 @@
+title: OTX domain IOC - estafetaod.top
+id: aaf81834-5b54-4f18-8686-056d09f95a39
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: estafetaod.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - studiobluoraa.online
+id: 99c2c75f-9fe2-4a62-8619-41302903be24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: studiobluoraa.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

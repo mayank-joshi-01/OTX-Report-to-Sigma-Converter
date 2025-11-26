@@ -1,0 +1,28 @@
+title: OTX domain IOC - trustisimportant.fun
+id: f9656a4e-d17f-4084-8ef3-c573a042ff65
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CryptoJacking is
+  dead: long live CryptoJacking'' (68a5a893d0e6cf5fee6c45a2).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://cside.dev/blog/cryptojacking-is-dead-long-live-cryptojacking
+tags:
+- cryptojacking
+- webassembly
+- monero
+- stealth mining
+- web workers
+- obfuscation
+- websockets
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trustisimportant.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

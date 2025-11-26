@@ -1,0 +1,20 @@
+title: OTX domain IOC - toskovat.online
+id: 9ba5fc94-f63f-4d54-b36a-bd7874aa636c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: toskovat.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

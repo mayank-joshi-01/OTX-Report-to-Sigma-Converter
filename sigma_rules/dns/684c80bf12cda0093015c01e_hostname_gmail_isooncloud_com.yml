@@ -1,0 +1,27 @@
+title: OTX hostname IOC - gmail.isooncloud.com
+id: a13f4bca-e331-4082-8e96-ff8790541a43
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gmail.isooncloud.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

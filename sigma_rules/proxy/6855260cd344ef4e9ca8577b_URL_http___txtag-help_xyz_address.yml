@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://txtag-help.xyz/address
+id: 8addacba-c5c2-41cd-b27d-8bc4f592539c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''TxTag Takedown:
+  Busting Phishing Email Schemes'' (6855260cd344ef4e9ca8577b).'
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://securityboulevard.com/2025/06/txtag-takedown-busting-phishing-email-schemes/
+tags:
+- phishing
+- social engineering
+- txtag
+- credit card fraud
+- toll scam
+- .gov domain
+- govdelivery
+- email security
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://txtag-help.xyz/address
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

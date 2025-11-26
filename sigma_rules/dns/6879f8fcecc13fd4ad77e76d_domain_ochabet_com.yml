@@ -1,0 +1,25 @@
+title: OTX domain IOC - ochabet.com
+id: c9b99a6a-eea8-40d0-92b7-a5cac48b46d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ochabet.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

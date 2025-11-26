@@ -1,0 +1,26 @@
+title: OTX hostname IOC - cloud.appusagestats.com
+id: 943c33bc-f4e2-445c-a23d-afe7f4752191
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Online Speedtest
+  Application' (68d50967331055dd8308adfd).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://security5magics.blogspot.com/2025/09/fake-online-speedtest-application.html
+tags:
+- javascript payload
+- node.js
+- scheduled tasks
+- evilai
+- fake applications
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cloud.appusagestats.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

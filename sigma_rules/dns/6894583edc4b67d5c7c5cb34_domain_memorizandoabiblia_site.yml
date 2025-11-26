@@ -1,0 +1,20 @@
+title: OTX domain IOC - memorizandoabiblia.site
+id: bb734e3a-20ed-4135-bd23-6761bfe6f8cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: memorizandoabiblia.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

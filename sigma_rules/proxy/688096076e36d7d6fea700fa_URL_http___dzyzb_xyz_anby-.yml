@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://dzyzb.xyz/anby-
+id: 6d5322b4-92cd-4ba9-ad8c-f4521d08a8ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Back to Business:
+  Lumma Stealer Returns with Stealthier Methods'' (688096076e36d7d6fea700fa).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html
+tags:
+- malware-as-a-service
+- cracked software
+- information stealer
+- infrastructure
+- evasion tactics
+- lumma stealer
+- social engineering
+- github abuse
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://dzyzb.xyz/anby-
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

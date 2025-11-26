@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 76b6d36e04e367a2334c445b51e1ecce97e4c614e88dfb4f72b104ca0f31235d
+id: 3619a56c-850b-48ab-aa04-c5861b66f49e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Oracle Security Alert
+  Advisory - CVE-2025-61882' (68e376d298efc33781e6cbb9).
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://www.oracle.com/security-alerts/alert-cve-2025-61882.html
+tags:
+- security alert
+- remote code execution
+- oracle e-business suite
+- cve-2025-61882
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 76b6d36e04e367a2334c445b51e1ecce97e4c614e88dfb4f72b104ca0f31235d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

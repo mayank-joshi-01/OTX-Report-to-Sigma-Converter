@@ -1,0 +1,20 @@
+title: OTX domain IOC - neganfoxx.online
+id: e94b3ec5-6e19-4ed6-abfd-34e87fdecf79
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: neganfoxx.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

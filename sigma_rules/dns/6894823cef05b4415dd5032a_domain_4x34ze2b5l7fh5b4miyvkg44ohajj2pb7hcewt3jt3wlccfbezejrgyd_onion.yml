@@ -1,0 +1,31 @@
+title: OTX domain IOC - 4x34ze2b5l7fh5b4miyvkg44ohajj2pb7hcewt3jt3wlccfbezejrgyd.onion
+id: b2505248-0d4a-4db7-9347-c8bb231c6e29
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking Updates to
+  Raspberry Robin' (6894823cef05b4415dd5032a).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.zscaler.com/blogs/security-research/tracking-updates-raspberry-robin
+tags:
+- tor
+- downloader
+- raspberry robin
+- roshtyak
+- encryption
+- cve-2024-38196
+- obfuscation
+- usb-spread
+- evasion
+- privilege-escalation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4x34ze2b5l7fh5b4miyvkg44ohajj2pb7hcewt3jt3wlccfbezejrgyd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

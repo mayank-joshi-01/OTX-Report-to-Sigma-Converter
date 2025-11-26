@@ -1,0 +1,20 @@
+title: OTX domain IOC - sbkgxdiiaxtgx.space
+id: 50b87f90-2d20-4a7f-9519-4dec4364190f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sbkgxdiiaxtgx.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

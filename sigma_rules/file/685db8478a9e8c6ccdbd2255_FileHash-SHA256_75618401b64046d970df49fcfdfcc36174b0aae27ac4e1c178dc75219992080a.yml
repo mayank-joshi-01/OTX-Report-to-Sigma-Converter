@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 75618401b64046d970df49fcfdfcc36174b0aae27ac4e1c178dc75219992080a
+id: 138bdac2-e075-489a-9969-07c2b19bb234
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Checking all the
+  Boxes: LapDogs, The New ORB in Town'' (685db8478a9e8c6ccdbd2255).'
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://securityscorecard.com/wp-content/uploads/2025/06/LapDogs-STRIKE-Report-June-2025.pdf
+tags:
+- orb
+- shortleash
+- tls certificates
+- soho devices
+- southeast asia
+- cve-2017-17663
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 75618401b64046d970df49fcfdfcc36174b0aae27ac4e1c178dc75219992080a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

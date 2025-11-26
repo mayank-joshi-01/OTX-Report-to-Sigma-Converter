@@ -1,0 +1,20 @@
+title: OTX domain IOC - perudiganakw.click
+id: 303bf26e-7657-4ca3-aeff-5279187e8322
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: perudiganakw.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

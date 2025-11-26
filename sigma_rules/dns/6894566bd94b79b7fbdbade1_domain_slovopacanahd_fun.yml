@@ -1,0 +1,20 @@
+title: OTX domain IOC - slovopacanahd.fun
+id: d9469357-2749-4d3d-aef9-6da1f0bdb639
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: slovopacanahd.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

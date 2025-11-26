@@ -1,0 +1,25 @@
+title: OTX domain IOC - fleedy.com
+id: 300b9a96-10c7-48f9-bd7c-f980fa337fdd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fleedy.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

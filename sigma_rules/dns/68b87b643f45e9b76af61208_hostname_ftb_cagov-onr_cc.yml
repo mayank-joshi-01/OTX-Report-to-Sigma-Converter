@@ -1,0 +1,26 @@
+title: OTX hostname IOC - ftb.cagov-onr.cc
+id: 3dd02f41-5fd5-4f92-9daa-c3d46042cd1c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tax refund scam targets
+  Californians' (68b87b643f45e9b76af61208).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.malwarebytes.com/blog/news/2025/09/tax-refund-scam-targets-californians
+tags:
+- california
+- franchise tax board
+- phishing
+- text messages
+- tax refund scam
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ftb.cagov-onr.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

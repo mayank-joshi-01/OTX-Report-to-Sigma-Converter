@@ -1,0 +1,31 @@
+title: OTX domain IOC - getxapp.in
+id: ace6853d-ce35-455a-bafc-eaead7df0740
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android Cryptojacker
+  Masquerades as Banking App to Mine Cryptocurrency on Locked Devices' (687a4623c2156baa43917a90).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.seqrite.com/blog/android-cryptojacker-disguised-as-banking-app-exploits-device-lock-state/
+tags:
+- monero
+- cryptojacking
+- android
+- xmrig
+- phishing
+- device-lock
+- banking
+- battery-drain
+- overheating
+- android.dminer.a
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: getxapp.in
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

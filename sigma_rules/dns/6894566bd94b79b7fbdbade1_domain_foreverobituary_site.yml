@@ -1,0 +1,20 @@
+title: OTX domain IOC - foreverobituary.site
+id: b49f0452-d759-43da-b1f2-65f03903872c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: foreverobituary.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

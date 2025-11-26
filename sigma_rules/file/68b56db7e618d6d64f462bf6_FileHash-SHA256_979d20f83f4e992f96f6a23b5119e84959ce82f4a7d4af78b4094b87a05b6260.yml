@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 979d20f83f4e992f96f6a23b5119e84959ce82f4a7d4af78b4094b87a05b6260
+id: f5848da0-e476-4a95-9568-789c805a7305
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Traps Beneath Fault
+  Repair: Analysis of Recent Attacks Using ClickFix Technique'' (68b56db7e618d6d64f462bf6).'
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://mp.weixin.qq.com/s?__biz=MzI2MDc2MDA4OA==&mid=2247515797&idx=1&sn=63eb2627f65397d704d187273c6cdce4&chksm=ea6649e2dd11c0f497ca57cf52676a9a764f28e587017e14fc850034ca8518c9f4ef46219824
+tags:
+- clickfix
+- node.js
+- beavertail
+- invisibleferret
+- macos
+- apt-q-1
+- social engineering
+- windows
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 979d20f83f4e992f96f6a23b5119e84959ce82f4a7d4af78b4094b87a05b6260
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - brosgoods.store
+id: 3da574c2-c47a-4dd9-ac76-de631a9b7c20
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brosgoods.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

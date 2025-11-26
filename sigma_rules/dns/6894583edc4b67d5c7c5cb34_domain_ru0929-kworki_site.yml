@@ -1,0 +1,20 @@
+title: OTX domain IOC - ru0929-kworki.site
+id: 3988eb7a-9f34-44bd-a168-6c854f709cb2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ru0929-kworki.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

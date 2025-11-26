@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - a93907e77340e4aadcc66e1afb9d342789f0cbd1
+id: 1dd3b246-cb4b-4d2d-bdf4-21a449fe6a89
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI brings back real
+  trojan horse malware' (689c6f07a14917dcce906882).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://www.gdatasoftware.com/fileadmin/_processed_/b/2/G_DATA_Blog_TrojanHorsesComeback_Title_EN_b2e3c2cec1.jpg
+- https://feeds.feedblitz.com/~/923165480/0/gdatasecurityblog-en~JustAskJacky-AI-causes-a-Trojan-Horse-Comeback
+- https://www.gdatasoftware.com/blog/2025/08/38247-justaskjacky-ai-trojan-horse-comeback
+tags:
+- justaskjacky
+- virustotal
+- antivirus evasion
+- steganography
+- tamperedchef
+- ai
+- trojan horse
+- llm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a93907e77340e4aadcc66e1afb9d342789f0cbd1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

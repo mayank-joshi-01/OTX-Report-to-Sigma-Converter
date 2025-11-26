@@ -1,0 +1,20 @@
+title: OTX hostname IOC - parfenov.rtu-tc.ru
+id: 3691c146-0dd0-4294-ab25-fcbd29fbc7a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: parfenov.rtu-tc.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

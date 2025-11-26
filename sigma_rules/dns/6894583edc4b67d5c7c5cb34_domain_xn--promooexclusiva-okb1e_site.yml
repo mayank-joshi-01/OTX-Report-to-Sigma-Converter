@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--promooexclusiva-okb1e.site
+id: 75003f0b-c02e-48d5-92dd-6d8fee4409c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--promooexclusiva-okb1e.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - superwin898.online
+id: a1724450-fdeb-4e85-8160-ee2d04393205
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: superwin898.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

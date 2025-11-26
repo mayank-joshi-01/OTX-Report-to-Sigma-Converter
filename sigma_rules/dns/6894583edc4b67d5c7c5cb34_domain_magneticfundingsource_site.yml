@@ -1,0 +1,20 @@
+title: OTX domain IOC - magneticfundingsource.site
+id: 3f3ac726-04b1-4582-a992-a630de9e1810
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: magneticfundingsource.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

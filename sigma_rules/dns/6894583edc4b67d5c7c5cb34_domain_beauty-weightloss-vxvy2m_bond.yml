@@ -1,0 +1,20 @@
+title: OTX domain IOC - beauty-weightloss-vxvy2m.bond
+id: 34724dd1-f67a-466e-aabf-70aba4c7fd72
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beauty-weightloss-vxvy2m.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

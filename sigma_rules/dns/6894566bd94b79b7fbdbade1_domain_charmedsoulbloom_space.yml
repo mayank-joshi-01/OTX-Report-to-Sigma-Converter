@@ -1,0 +1,20 @@
+title: OTX domain IOC - charmedsoulbloom.space
+id: 0481e83b-b8d6-49c4-882f-92edfae749f5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: charmedsoulbloom.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

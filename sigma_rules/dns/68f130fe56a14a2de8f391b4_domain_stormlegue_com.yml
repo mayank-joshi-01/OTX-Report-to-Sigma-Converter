@@ -1,0 +1,33 @@
+title: OTX domain IOC - stormlegue.com
+id: 40608c62-049b-4bc5-bbf3-fb7169de8af9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Group on the
+  Block: UNC5142 Leverages EtherHiding to Distribute Malware'' (68f130fe56a14a2de8f391b4).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware
+tags:
+- smart contracts
+- blockchain
+- cloudflare pages
+- bnb smart chain
+- atomic
+- lummac.v2
+- vidar
+- infostealers
+- radthief
+- clearshort
+- wordpress
+- etherhiding
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stormlegue.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

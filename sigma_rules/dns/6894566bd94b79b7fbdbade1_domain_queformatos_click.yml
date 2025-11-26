@@ -1,0 +1,20 @@
+title: OTX domain IOC - queformatos.click
+id: d80e3b04-9d34-4897-8747-902552bf45dc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: queformatos.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - greenxeonsr.info
+id: 270ceaa6-a78f-4699-960d-db5bf61f5ae5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: greenxeonsr.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

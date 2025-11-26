@@ -1,0 +1,33 @@
+title: OTX hostname IOC - ok.fish-cloud-jar.us
+id: acd05374-a363-40c6-8abb-548caa53ad45
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Group on the
+  Block: UNC5142 Leverages EtherHiding to Distribute Malware'' (68f130fe56a14a2de8f391b4).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware
+tags:
+- smart contracts
+- blockchain
+- cloudflare pages
+- bnb smart chain
+- atomic
+- lummac.v2
+- vidar
+- infostealers
+- radthief
+- clearshort
+- wordpress
+- etherhiding
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ok.fish-cloud-jar.us
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

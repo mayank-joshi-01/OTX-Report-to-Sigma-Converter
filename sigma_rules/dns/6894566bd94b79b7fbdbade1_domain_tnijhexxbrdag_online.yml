@@ -1,0 +1,20 @@
+title: OTX domain IOC - tnijhexxbrdag.online
+id: 218aa9b9-4f78-45fd-a20a-1e14947a55d5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tnijhexxbrdag.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

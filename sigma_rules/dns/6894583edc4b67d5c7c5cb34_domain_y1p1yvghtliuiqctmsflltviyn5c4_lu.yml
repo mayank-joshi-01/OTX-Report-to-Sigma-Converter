@@ -1,0 +1,20 @@
+title: OTX domain IOC - y1p1yvghtliuiqctmsflltviyn5c4.lu
+id: 88d05ad0-a494-43ed-9546-2b5e458d2433
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y1p1yvghtliuiqctmsflltviyn5c4.lu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

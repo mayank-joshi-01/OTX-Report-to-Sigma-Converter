@@ -1,0 +1,29 @@
+title: OTX domain IOC - fidelityemail.com
+id: 0eec2cef-d4a5-4aab-9c09-6cdaf7eb18a2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Click to Allow" Robot
+  Exposes Online Fraud Empire' (689b8df946fb62b515c0392e).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams
+tags:
+- cryptocurrency fraud
+- scams
+- traffic distribution
+- dating scams
+- cybercrime
+- spam
+- affiliate marketing
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fidelityemail.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - 9b031a44-7158758d.yrqwvevbjcfv.es
+id: ca0f6525-b19a-4a41-b229-391426bf9565
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft OAuth App
+  Impersonation Campaign Leads to MFA Phishing' (688cdfbe7ede50a6ec81f692).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing
+tags:
+- phishing
+- oauth
+- application impersonation
+- aitm
+- microsoft 365
+- tycoon
+- mfa bypass
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9b031a44-7158758d.yrqwvevbjcfv.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

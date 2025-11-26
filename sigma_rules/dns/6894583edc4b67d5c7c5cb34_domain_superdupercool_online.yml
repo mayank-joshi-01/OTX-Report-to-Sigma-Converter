@@ -1,0 +1,20 @@
+title: OTX domain IOC - superdupercool.online
+id: 201e2f40-660b-4baa-9f82-ffca47e7be9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: superdupercool.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

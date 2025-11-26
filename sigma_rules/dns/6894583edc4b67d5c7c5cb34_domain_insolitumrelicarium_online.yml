@@ -1,0 +1,20 @@
+title: OTX domain IOC - insolitumrelicarium.online
+id: 67f688e8-e3c1-41ba-8d0f-fc2ca43f787c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: insolitumrelicarium.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - trxhome.site
+id: f8b608b2-a52b-41a9-9457-446c71de80b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trxhome.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

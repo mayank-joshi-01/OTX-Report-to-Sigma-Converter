@@ -1,0 +1,20 @@
+title: OTX domain IOC - cloudclicker.online
+id: 773694be-803b-46e5-949b-1bd0d0e47a17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cloudclicker.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

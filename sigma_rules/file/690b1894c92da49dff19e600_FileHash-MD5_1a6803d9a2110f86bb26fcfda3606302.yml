@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 1a6803d9a2110f86bb26fcfda3606302
+id: 85e007c9-cd6d-40de-9f55-86fb17c07992
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Evasion and Persistence
+  via Hidden Hyper-V Virtual Machines' (690b1894c92da49dff19e600).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://businessinsights.bitdefender.com/curly-comrades-evasion-persistence-hidden-hyper-v-virtual-machines
+tags:
+- kerberos
+- powershell
+- reverse shell
+- virtualization
+- hyper-v
+- persistence
+- alpine linux
+- evasion
+- lateral movement
+- curlcat
+- curlyshell
+- proxy
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 1a6803d9a2110f86bb26fcfda3606302
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

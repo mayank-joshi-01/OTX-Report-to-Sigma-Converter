@@ -1,0 +1,20 @@
+title: OTX domain IOC - 100persenbonus.site
+id: 63737a70-408a-40c8-89be-2b965e9df66c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 100persenbonus.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

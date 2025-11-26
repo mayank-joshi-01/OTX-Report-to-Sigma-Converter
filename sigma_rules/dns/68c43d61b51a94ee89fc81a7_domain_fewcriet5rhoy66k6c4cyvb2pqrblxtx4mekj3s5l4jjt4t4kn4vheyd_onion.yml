@@ -1,0 +1,30 @@
+title: OTX domain IOC - fewcriet5rhoy66k6c4cyvb2pqrblxtx4mekj3s5l4jjt4t4kn4vheyd.onion
+id: b2ea9c8e-ca6f-437b-8da4-80d9cb109103
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Yurei the New Ransomware
+  Group on the Scene' (68c43d61b51a94ee89fc81a7).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://research.checkpoint.com/2025/yurei-the-ghost-of-open-source-ransomware
+tags:
+- open-source
+- double-extortion
+- morocco
+- satanlockv2
+- shadow copies
+- go
+- ransomware
+- prince-ransomware
+- yurei
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fewcriet5rhoy66k6c4cyvb2pqrblxtx4mekj3s5l4jjt4t4kn4vheyd.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

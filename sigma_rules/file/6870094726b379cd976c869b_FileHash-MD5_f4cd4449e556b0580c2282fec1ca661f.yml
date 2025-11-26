@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - f4cd4449e556b0580c2282fec1ca661f
+id: 25eaf807-4beb-49bc-a1e5-93e500443a64
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT-C-55
+  (Kimsuky) Organization's HappyDoor Backdoor Attack Based on VMP Strong Shell' (6870094726b379cd976c869b).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://mp.weixin.qq.com/s/fDan8ihUQEAF5Kf_6fXATQ
+tags:
+- happydoor
+- information theft
+- backdoor
+- vmp
+- multi-stage attack
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f4cd4449e556b0580c2282fec1ca661f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

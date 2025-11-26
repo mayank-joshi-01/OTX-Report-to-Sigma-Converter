@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 779a8af3b9838a33d1e199da3fc2f02a49e7c13e
+id: 4fbe5465-f10a-4e69-8d35-09172be97793
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ShadowRay 2.0: Active
+  Global Campaign Hijacks Ray AI Infrastructure Into Self-Propagating Botnet'' (691d46b4135d2acc04876592).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.oligo.security/blog/shadowray-2-0-attackers-turn-ai-against-itself-in-global-campaign-that-hijacks-ai-into-self-propagating-botnet
+tags:
+- devops
+- ai infrastructure
+- self-propagation
+- xmrig
+- cve-2023-48022
+- data exfiltration
+- cryptojacking
+- ddos
+- sockstress
+- botnet
+- ray framework
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 779a8af3b9838a33d1e199da3fc2f02a49e7c13e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - tarbarrel.com.au
+id: 13212a53-9eda-4a26-a79e-e3c84c5c1f04
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tarbarrel.com.au
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

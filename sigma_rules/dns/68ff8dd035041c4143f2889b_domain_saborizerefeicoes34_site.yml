@@ -1,0 +1,27 @@
+title: OTX domain IOC - saborizerefeicoes34.site
+id: 5cf55449-7f0f-4c70-bffe-853cd2210512
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saborizerefeicoes34.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

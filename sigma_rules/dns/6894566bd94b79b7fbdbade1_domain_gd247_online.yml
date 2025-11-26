@@ -1,0 +1,20 @@
+title: OTX domain IOC - gd247.online
+id: df771f2c-d1e0-417e-a48a-54ab64ca483a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gd247.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

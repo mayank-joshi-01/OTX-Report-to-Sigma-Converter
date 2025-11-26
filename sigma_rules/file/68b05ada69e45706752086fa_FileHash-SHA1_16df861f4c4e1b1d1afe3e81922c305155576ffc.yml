@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 16df861f4c4e1b1d1afe3e81922c305155576ffc
+id: 5b6eccae-cadd-486c-853f-433eab72068d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 16df861f4c4e1b1d1afe3e81922c305155576ffc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

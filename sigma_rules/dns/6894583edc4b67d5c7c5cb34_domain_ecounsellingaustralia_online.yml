@@ -1,0 +1,20 @@
+title: OTX domain IOC - ecounsellingaustralia.online
+id: 078e0e60-2b5d-4db5-9133-03885a5af7e7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ecounsellingaustralia.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

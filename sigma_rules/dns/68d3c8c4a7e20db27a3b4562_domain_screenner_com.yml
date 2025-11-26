@@ -1,0 +1,30 @@
+title: OTX domain IOC - screenner.com
+id: a25a00b4-2b84-417c-a836-3251a481f9d4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: screenner.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

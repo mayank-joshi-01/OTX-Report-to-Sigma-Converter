@@ -1,0 +1,27 @@
+title: OTX hostname IOC - mofagovnp-bm46fjwo.b4a.run
+id: 73b40bdc-3d01-4fd0-a23d-6569a2fe3be4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mofagovnp-bm46fjwo.b4a.run
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

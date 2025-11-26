@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 6b4d7a63aa2a8b2a5a3fbad6c8e6533e
+id: 2003e3ab-ead1-43b9-a94d-c694ed901d58
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Paper Werewolf targets
+  Russia with WinRAR zero-day vulnerability' (68a5c0b2d0be1fec9ae696fc).
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://bi-zone.medium.com/paper-werewolf-targets-russia-with-winrar-zero-day-vulnerability-0cfdabac8c84?source=rss-3882bedad280------2
+tags:
+- phishing
+- cve-2025-6218
+- directory traversal
+- zero-day
+- shellcode
+- xpsrchvw74.exe
+- winrunapp.exe
+- rar
+- winrar
+- c2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6b4d7a63aa2a8b2a5a3fbad6c8e6533e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

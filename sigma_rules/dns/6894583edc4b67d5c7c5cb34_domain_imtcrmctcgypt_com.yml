@@ -1,0 +1,20 @@
+title: OTX domain IOC - imtcrmctcgypt.com
+id: cc74a1fa-15e5-4458-996c-c7f248aeb849
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: imtcrmctcgypt.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

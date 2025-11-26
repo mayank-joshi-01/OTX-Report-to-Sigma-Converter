@@ -1,0 +1,26 @@
+title: OTX domain IOC - kindreadking.online
+id: e53d7da3-8c46-4395-97a4-bd5efcae2ed7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kindreadking.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

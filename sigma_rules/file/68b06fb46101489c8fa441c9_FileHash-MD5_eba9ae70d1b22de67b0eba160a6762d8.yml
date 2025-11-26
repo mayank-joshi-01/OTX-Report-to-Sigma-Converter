@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - eba9ae70d1b22de67b0eba160a6762d8
+id: 033fefa6-52e2-4823-9f37-4552fd98556d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Countering Chinese
+  State-Sponsored Actors Compromise of Networks Worldwide to Feed Global Espionage
+  System' (68b06fb46101489c8fa441c9).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.cisa.gov/news-events/cybersecurity-advisories/aa25-239a
+tags:
+- Salt Typhoon
+- APT
+- edge devices
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: eba9ae70d1b22de67b0eba160a6762d8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

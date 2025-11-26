@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - bceccc566fe3ae3675f7e20100f979eaf2053d9a4f3a3619a550a496a4268ef5
+id: 1a1d94dc-cdaf-43d4-a763-15f28bad3b43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ZynorRAT technical
+  analysis: Reverse engineering a novel, Turkish Go-based RAT'' (68c12ec5eb851e4417b21f49).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.sysdig.com/blog/zynorrat-technical-analysis-reverse-engineering-a-novel-turkish-go-based-rat
+tags:
+- remote access trojan
+- zynorrat
+- go-based
+- turkish
+- linux
+- telegram
+- windows
+- c2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bceccc566fe3ae3675f7e20100f979eaf2053d9a4f3a3619a550a496a4268ef5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

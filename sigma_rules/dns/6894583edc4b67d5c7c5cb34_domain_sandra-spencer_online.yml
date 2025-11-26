@@ -1,0 +1,20 @@
+title: OTX domain IOC - sandra-spencer.online
+id: 7ee41ba2-efcf-4e60-a978-0cf3da1e2795
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sandra-spencer.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - o6bj022qj9mlze6xf2lk9nukuwslk.tf
+id: 029f4dc6-56d6-4a26-a5b2-d89ca578cb69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: o6bj022qj9mlze6xf2lk9nukuwslk.tf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

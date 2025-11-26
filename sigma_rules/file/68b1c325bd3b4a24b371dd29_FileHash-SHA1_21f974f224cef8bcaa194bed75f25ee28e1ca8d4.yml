@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA1 IOC - 21f974f224cef8bcaa194bed75f25ee28e1ca8d4
+id: ae53264a-cb24-4f82-b922-beb84da48c32
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unmasking the new
+  Chaos RaaS group attacks' (68b1c325bd3b4a24b371dd29).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://blog.talosintelligence.com/new-chaos-ransomware/
+tags:
+- RaaS
+- BlackSuit
+- Royal
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 21f974f224cef8bcaa194bed75f25ee28e1ca8d4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

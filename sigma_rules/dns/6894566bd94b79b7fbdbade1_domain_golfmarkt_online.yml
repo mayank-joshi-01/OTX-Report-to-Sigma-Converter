@@ -1,0 +1,20 @@
+title: OTX domain IOC - golfmarkt.online
+id: e33284e8-7ef5-4643-a954-62943b7ad9fe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: golfmarkt.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

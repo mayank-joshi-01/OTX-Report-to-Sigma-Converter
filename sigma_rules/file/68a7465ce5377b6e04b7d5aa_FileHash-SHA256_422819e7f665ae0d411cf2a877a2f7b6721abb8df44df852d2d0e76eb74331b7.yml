@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 422819e7f665ae0d411cf2a877a2f7b6721abb8df44df852d2d0e76eb74331b7
+id: 171d9294-a9fb-4cff-bc5d-9b1f6ca90c03
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MuddyWater Leveraging
+  DCHSpy For Israel-Iran Conflict' (68a7465ce5377b6e04b7d5aa).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.lookout.com/threat-intelligence/article/lookout-discovers-iranian-dchsy-surveillanceware
+tags:
+- dchspy
+- conflict
+- israel
+- iran
+- android
+- surveillanceware
+- vpn
+- telegram
+- sandstrike
+- starlink
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 422819e7f665ae0d411cf2a877a2f7b6721abb8df44df852d2d0e76eb74331b7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bima138super2.site
+id: 26795e82-02c0-4406-9c46-6f28036a6041
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bima138super2.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

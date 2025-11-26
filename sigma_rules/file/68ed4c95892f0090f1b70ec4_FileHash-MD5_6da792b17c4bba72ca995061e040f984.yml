@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 6da792b17c4bba72ca995061e040f984
+id: 9daa352e-2382-45d7-8c2c-066d6af46a4e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Judicial Notification
+  Phish Targets Colombian Users – .SVG Attachment Deploys Info-stealer Malware' (68ed4c95892f0090f1b70ec4).
+author: AlienVault
+date: '2025-10-13'
+references:
+- https://www.seqrite.com/blog/judicial-notification-phish-colombia-svg-asyncrat/
+tags:
+- asyncrat
+- phishing
+- judicial notification
+- anti-vm
+- .hta
+- .svg
+- powershell
+- data theft
+- colombia
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6da792b17c4bba72ca995061e040f984
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA1 IOC - ed0b087203fbe99717f2be9e93abc0cf9a4200c9
+id: d82f5317-382d-4c71-867c-b5a20c3b90ae
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Distribution of SmartLoader
+  Malware via Github Repository Disguised as a Legitimate Project' (689cb295a9650f353d8f08cd).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://asec.ahnlab.com/en/89551/
+tags:
+- smartloader
+- game-cheats
+- lumma stealer
+- github
+- c2
+- obfuscation
+- software-cracks
+- luascript
+- redline
+- persistence
+- rhadamanthys
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ed0b087203fbe99717f2be9e93abc0cf9a4200c9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

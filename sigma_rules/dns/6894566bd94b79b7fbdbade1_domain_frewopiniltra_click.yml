@@ -1,0 +1,20 @@
+title: OTX domain IOC - frewopiniltra.click
+id: ae2bb8a9-e6ca-47ca-9700-9bbac586eaaa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: frewopiniltra.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

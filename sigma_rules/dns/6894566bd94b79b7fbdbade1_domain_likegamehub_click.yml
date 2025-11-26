@@ -1,0 +1,20 @@
+title: OTX domain IOC - likegamehub.click
+id: d847df5e-6174-4ddf-abbb-184f81c931c6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: likegamehub.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

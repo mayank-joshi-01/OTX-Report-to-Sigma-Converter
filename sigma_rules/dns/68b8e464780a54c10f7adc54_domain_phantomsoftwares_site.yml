@@ -1,0 +1,29 @@
+title: OTX domain IOC - phantomsoftwares.site
+id: a75066f0-5cbc-446b-90cd-36ad494c6505
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Not Safe for Work:
+  Tracking and Investigating Stealerium and Phantom Infostealers'' (68b8e464780a54c10f7adc54).'
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/not-safe-work-tracking-and-investigating-stealerium-and-phantom-infostealers
+tags:
+- data exfiltration
+- infostealer
+- snake keylogger
+- warp stealer
+- cybercrime
+- stealerium
+- phantom stealer
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: phantomsoftwares.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

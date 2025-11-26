@@ -1,0 +1,20 @@
+title: OTX domain IOC - velocity888.online
+id: 65bb2813-1b49-4cf6-8d57-5866f32acaf3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: velocity888.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

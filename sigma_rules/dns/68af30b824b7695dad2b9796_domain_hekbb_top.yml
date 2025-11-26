@@ -1,0 +1,25 @@
+title: OTX domain IOC - hekbb.top
+id: a8df98cf-3306-4768-8413-1c3db53f08b8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hekbb.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

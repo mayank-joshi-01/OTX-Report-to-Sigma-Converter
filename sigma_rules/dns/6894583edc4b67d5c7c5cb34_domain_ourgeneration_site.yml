@@ -1,0 +1,20 @@
+title: OTX domain IOC - ourgeneration.site
+id: 6894b557-3b36-4537-9735-0a60cc0ab527
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ourgeneration.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - frankandfable.online
+id: e1d8ba81-854c-42e4-bede-752842573616
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: frankandfable.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 270fc72074c697ba5921f7b61a6128b968ca6ccbf8906645e796cfc3072d4c43
+id: 59d158aa-7cfa-4077-bc91-1230ec667435
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Auto-Color Backdoor:
+  How a Stealthy Linux Intrusion Was Thwarted'' (688b3fc60fa1eee23ab1b945).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.darktrace.com/blog/auto-color-backdoor-how-darktrace-thwarted-a-stealthy-linux-intrusion
+tags:
+- sap netweaver
+- linux
+- cve-2025-31324
+- backdoor
+- evasion
+- auto-color
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 270fc72074c697ba5921f7b61a6128b968ca6ccbf8906645e796cfc3072d4c43
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

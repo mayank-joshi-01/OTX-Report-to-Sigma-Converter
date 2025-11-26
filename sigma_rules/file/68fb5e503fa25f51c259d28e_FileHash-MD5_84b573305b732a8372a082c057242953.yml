@@ -1,0 +1,23 @@
+title: OTX FileHash-MD5 IOC - 84b573305b732a8372a082c057242953
+id: 336e0a67-c2cf-4948-9fe8-611d39b20dab
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'F5 BIG-IP Source Code
+  Leak Tied to State-Linked Campaigns Using BRICKSTORM Backdoor' (68fb5e503fa25f51c259d28e).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.resecurity.com/blog/article/f5-big-ip-source-code-leak-tied-to-state-linked-campaigns-using-brickstorm-backdoor
+tags:
+- f5 big-ip
+- brickstorm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 84b573305b732a8372a082c057242953
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

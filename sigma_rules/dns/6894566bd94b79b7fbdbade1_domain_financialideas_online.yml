@@ -1,0 +1,20 @@
+title: OTX domain IOC - financialideas.online
+id: 4a9ec75d-2999-4074-804f-9efdcca1f287
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: financialideas.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 7bdbf2766ad55f9a67bfbb97a32d308530e4b5959bb68a9acb22326dfee8f282
+id: 2b82e3ac-96ac-4cb6-91e9-d281479952b0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Critical Langflow
+  Vulnerability (CVE-2025-3248) Actively Exploited to Deliver Flodrix Botnet' (6852fb64e49e359036e6522e).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://www.trendmicro.com/en_us/research/25/f/langflow-vulnerability-flodric-botnet.html#
+tags:
+- rce
+- exploit
+- botnet
+- ddos
+- cve-2025-3248
+- flodrix
+- langflow
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7bdbf2766ad55f9a67bfbb97a32d308530e4b5959bb68a9acb22326dfee8f282
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

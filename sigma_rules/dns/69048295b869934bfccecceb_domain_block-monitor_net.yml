@@ -1,0 +1,24 @@
+title: OTX domain IOC - block-monitor.net
+id: 582c2a4c-726e-4285-bb2d-c2d01e3f92f0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New wave of cyberattacks
+  by APT group Cloud Atlas on Russia's government sector' (69048295b869934bfccecceb).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.ptsecurity.com/research/pt-esc-threat-intelligence/novaya-volna-kiberatak-apt-gruppirovki-cloud-atlas-na-gosudarstvennyj-sektor-rossii/
+tags:
+- bec attacks
+- powershower
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: block-monitor.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://cld.pt/dl/download/0f58f6f3-e3bb-4cbd-a4fb-d9ddfd4e56bf/sapotransfer-640a2b919605fph/Orcamento%20para%20avalicaco%20.zip?download=true
+id: 90337c35-65c8-43c6-86bf-07b37b87d32d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://cld.pt/dl/download/0f58f6f3-e3bb-4cbd-a4fb-d9ddfd4e56bf/sapotransfer-640a2b919605fph/Orcamento%20para%20avalicaco%20.zip?download=true
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

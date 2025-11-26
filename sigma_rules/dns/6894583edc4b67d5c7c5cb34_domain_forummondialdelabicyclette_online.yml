@@ -1,0 +1,20 @@
+title: OTX domain IOC - forummondialdelabicyclette.online
+id: d07e1e54-2df2-4549-9c2a-bd1bb3ea480f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: forummondialdelabicyclette.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

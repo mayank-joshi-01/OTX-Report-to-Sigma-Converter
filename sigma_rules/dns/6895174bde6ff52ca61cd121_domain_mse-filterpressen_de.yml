@@ -1,0 +1,29 @@
+title: OTX domain IOC - mse-filterpressen.de
+id: 9f90472f-db13-426b-afbe-da0067b30f8a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking the SVG
+  Threat: How Hackers Use Vector Graphics for Phishing Attacks'' (6895174bde6ff52ca61cd121).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.seqrite.com/blog/unmasking-the-svg-threat-how-hackers-use-vector-graphics-for-phishing-attacks
+tags:
+- cloud storage
+- javascript
+- phishing
+- credential theft
+- browser execution
+- captcha
+- email attachments
+- svg
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mse-filterpressen.de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

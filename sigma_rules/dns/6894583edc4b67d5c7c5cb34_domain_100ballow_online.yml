@@ -1,0 +1,20 @@
+title: OTX domain IOC - 100ballow.online
+id: f2c9af3c-d8c8-4649-88d9-21aaaea6741c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 100ballow.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

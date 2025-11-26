@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 617be84b21428a5f7e137a95d073e077
+id: de6c0d92-ef8a-455b-a5a4-2fa2d50e5f33
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android Cryptojacker
+  Masquerades as Banking App to Mine Cryptocurrency on Locked Devices' (687a4623c2156baa43917a90).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.seqrite.com/blog/android-cryptojacker-disguised-as-banking-app-exploits-device-lock-state/
+tags:
+- monero
+- cryptojacking
+- android
+- xmrig
+- phishing
+- device-lock
+- banking
+- battery-drain
+- overheating
+- android.dminer.a
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 617be84b21428a5f7e137a95d073e077
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

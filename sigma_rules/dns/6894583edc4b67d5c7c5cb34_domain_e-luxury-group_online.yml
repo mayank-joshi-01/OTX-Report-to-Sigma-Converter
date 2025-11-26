@@ -1,0 +1,20 @@
+title: OTX domain IOC - e-luxury-group.online
+id: 52498373-c561-4534-910e-e61affd1fe9d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: e-luxury-group.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

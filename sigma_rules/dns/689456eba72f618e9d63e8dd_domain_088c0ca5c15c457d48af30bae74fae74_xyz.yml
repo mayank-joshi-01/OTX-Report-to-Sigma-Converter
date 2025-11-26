@@ -1,0 +1,20 @@
+title: OTX domain IOC - 088c0ca5c15c457d48af30bae74fae74.xyz
+id: a451b60c-f44d-45b2-904a-04fb74c1fbac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 088c0ca5c15c457d48af30bae74fae74.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

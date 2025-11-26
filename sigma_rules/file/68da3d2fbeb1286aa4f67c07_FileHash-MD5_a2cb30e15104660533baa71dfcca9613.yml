@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - a2cb30e15104660533baa71dfcca9613
+id: f4dfe86f-46c5-4d7e-8959-adbb91bd9ca1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Potentially Unwanted
+  Applications (PUAs) weaponized for covert delivery' (68da3d2fbeb1286aa4f67c07).
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://fieldeffect.com/blog/potentially-unwanted-applications
+tags:
+- pua
+- neutralinojs
+- imagelooker
+- cve-2025-0411
+- digital-signing
+- trojanized-productivity-tools
+- code-signing-abuse
+- calendaromatic
+- seo-poisoning
+- malvertising
+- 7-zip
+- browser-hijacker
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a2cb30e15104660533baa71dfcca9613
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

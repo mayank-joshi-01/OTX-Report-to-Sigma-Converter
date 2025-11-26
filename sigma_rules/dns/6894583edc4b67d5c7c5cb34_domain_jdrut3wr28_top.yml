@@ -1,0 +1,20 @@
+title: OTX domain IOC - jdrut3wr28.top
+id: 48ca54fa-de0d-40c5-9e55-294d8c03d923
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jdrut3wr28.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

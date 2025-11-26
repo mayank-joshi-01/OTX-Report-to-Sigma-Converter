@@ -1,0 +1,20 @@
+title: OTX domain IOC - kvaris.online
+id: 06ac56ba-796f-476d-8bee-e9c4d70acade
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kvaris.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - snapcrackle.store
+id: 845c2714-78a4-4c02-9d46-c5d87e7ba7ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: snapcrackle.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

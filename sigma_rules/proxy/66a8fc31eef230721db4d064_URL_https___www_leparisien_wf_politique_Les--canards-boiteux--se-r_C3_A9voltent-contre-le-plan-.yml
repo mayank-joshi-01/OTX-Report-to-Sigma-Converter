@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.leparisien.wf/politique/Les--canards-boiteux--se-r%C3%A9voltent-contre-le-plan-am%C3%A9ricain-13-06-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+id: e99531e4-e948-4b9a-9135-9ab3eddcb2b3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.leparisien.wf/politique/Les--canards-boiteux--se-r%C3%A9voltent-contre-le-plan-am%C3%A9ricain-13-06-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX domain IOC - rheinmetallcareers.com
+id: 6c0f6c6e-7071-4dbe-a32e-91c72eff711b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crossed wires: a
+  case study of Iranian espionage and attribution'' (690b9fd420eac5194154bcff).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/crossed-wires-case-study-iranian-espionage-and-attribution
+tags:
+- credential harvesting
+- isl online
+- minibike
+- rmm tools
+- phishing
+- overlapping ttps
+- policy experts targeting
+- minijunk
+- espionage
+- pdqconnect
+- attribution challenges
+- iranian threat actor
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rheinmetallcareers.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

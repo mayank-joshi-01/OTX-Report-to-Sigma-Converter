@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxury-loungewear.online
+id: 5e67a21b-86ba-4c98-bfbe-a3a8cc983c81
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxury-loungewear.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

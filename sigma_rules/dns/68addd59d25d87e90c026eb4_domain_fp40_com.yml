@@ -1,0 +1,25 @@
+title: OTX domain IOC - fp40.com
+id: 4788bf2d-5c04-47a3-9c8b-6c0112ab2f7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Boxing Clever: Uncovering
+  a $1M Task Scam Cluster Exploiting Major Brands'' (68addd59d25d87e90c026eb4).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.netcraft.com/blog/boxing-clever-the-million-dollar-task-scam-cluster
+tags:
+- dominet
+- task scam
+- cryptocurrency
+- brand impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fp40.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

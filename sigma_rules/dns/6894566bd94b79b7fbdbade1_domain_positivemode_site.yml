@@ -1,0 +1,20 @@
+title: OTX domain IOC - positivemode.site
+id: d7aaf7f4-aca6-41e8-b345-03a0e8139c2e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: positivemode.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

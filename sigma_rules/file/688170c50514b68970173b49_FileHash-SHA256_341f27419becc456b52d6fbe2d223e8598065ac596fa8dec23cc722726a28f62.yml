@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 341f27419becc456b52d6fbe2d223e8598065ac596fa8dec23cc722726a28f62
+id: c588b1c2-aabe-4e7c-93d7-2a057ef098d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dropping Elephant
+  APT Group Targets Turkish Defense Industry With New Campaign and Capabilities: LOLBAS,
+  VLC Player, and Encrypted Shellcode'' (688170c50514b68970173b49).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://arcticwolf.com/resources/blog/dropping-elephant-apt-group-targets-turkish-defense-industry
+tags:
+- shellcode
+- vlc player
+- defense industry
+- cyber-espionage
+- dll side-loading
+- turkey
+- powershell
+- dropping elephant rat
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 341f27419becc456b52d6fbe2d223e8598065ac596fa8dec23cc722726a28f62
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

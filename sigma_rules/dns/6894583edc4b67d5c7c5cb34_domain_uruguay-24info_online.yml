@@ -1,0 +1,20 @@
+title: OTX domain IOC - uruguay-24info.online
+id: a941ea11-3d5f-42a5-a5d0-cb90d82877d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uruguay-24info.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

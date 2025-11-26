@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 4147589aa11732438751c2ecf3079fb94fa478a01ac4f08d024fb55f7ffb52f3
+id: 6fd7e240-3c35-4b13-b57a-f945c13dc69f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking LockBit:
+  A Deep Dive into DLL Sideloading and Masquerading Tactics'' (688ca596f04db30f84de0c13).'
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.security.com/threat-intelligence/lockbit-ransomware-attack-techniques
+tags:
+- masquerading
+- dll sideloading
+- persistence
+- encryption
+- evasion
+- ransomware
+- lockbit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4147589aa11732438751c2ecf3079fb94fa478a01ac4f08d024fb55f7ffb52f3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

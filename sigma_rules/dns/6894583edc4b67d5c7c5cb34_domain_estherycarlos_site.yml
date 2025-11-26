@@ -1,0 +1,20 @@
+title: OTX domain IOC - estherycarlos.site
+id: 7261aa98-43f8-447e-b2eb-81cfdf4ef6cf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: estherycarlos.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

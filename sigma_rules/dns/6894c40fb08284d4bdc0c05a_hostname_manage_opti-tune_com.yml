@@ -1,0 +1,28 @@
+title: OTX hostname IOC - manage.opti-tune.com
+id: 7c19c18b-5cff-41af-b304-6740f406d8e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: manage.opti-tune.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

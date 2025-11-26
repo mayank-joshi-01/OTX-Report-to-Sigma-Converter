@@ -1,0 +1,32 @@
+title: OTX domain IOC - webr.at
+id: 1fea3f84-f692-44e5-86b1-8f1a33ebddb5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasked: Salat
+  Stealer – A Deep Dive into Its Advanced Persistence Mechanisms and C2 Infrastructure''
+  (68c12e9f0a9ca3c3ce3cfaab).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.cyfirma.com/research/unmasked-salat-stealer-a-deep-dive-into-its-advanced-persistence-mechanisms-and-c2-infrastructure/
+tags:
+- infostealer
+- cryptocurrency
+- salat stealer
+- evasion
+- persistence
+- go-based
+- maas
+- russian-speaking
+- web_rat
+- windows
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: webr.at
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,39 @@
+title: OTX FileHash-SHA256 IOC - 4e6f65d47a4d7a7a03125322e3cddeeb3165dd872daf55cd078ee2204336789c
+id: c07e7b5e-5179-4314-acff-b35ddd1f4b61
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Remote access, real
+  cargo: cybercriminals targeting trucking and logistics'' (6908bc12c65b2822b687ed79).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/remote-access-real-cargo-cybercriminals-targeting-trucking-and-logistics
+tags:
+- screenconnect
+- lumma stealer
+- phishing
+- simplehelp
+- cargo theft
+- fleetdeck
+- n-able
+- logmein resolve
+- danabot
+- trucking
+- logistics
+- cybercrime
+- netsupport
+- social engineering
+- supply chain
+- stealc
+- remote monitoring tools
+- pdq connect
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4e6f65d47a4d7a7a03125322e3cddeeb3165dd872daf55cd078ee2204336789c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

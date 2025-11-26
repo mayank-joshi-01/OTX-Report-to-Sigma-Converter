@@ -1,0 +1,20 @@
+title: OTX domain IOC - santawine.store
+id: 4bb0e2e7-6a70-4ead-994b-857aa65dcb19
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: santawine.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

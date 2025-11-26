@@ -1,0 +1,20 @@
+title: OTX domain IOC - 912168bbs-xlu2.top
+id: 104a6f3e-8f29-4772-8ba1-6ff23713e947
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 912168bbs-xlu2.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

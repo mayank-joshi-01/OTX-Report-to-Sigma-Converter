@@ -1,0 +1,20 @@
+title: OTX domain IOC - slot50000xkapalgg.online
+id: 42bc8a9e-0635-45da-a7c8-0f58c792a1c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: slot50000xkapalgg.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

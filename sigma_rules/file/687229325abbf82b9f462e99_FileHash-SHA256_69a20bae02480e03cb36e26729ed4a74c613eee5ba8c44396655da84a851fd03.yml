@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 69a20bae02480e03cb36e26729ed4a74c613eee5ba8c44396655da84a851fd03
+id: d694e64b-0009-4c0a-b0ae-51838d419108
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Hybrid Approach
+  with Data Exfiltration and Encryption' (687229325abbf82b9f462e99).
+author: AlienVault
+date: '2025-07-12'
+references:
+- https://www.cybereason.com/blog/blacksuit-data-exfil
+tags:
+- data exfiltration
+- blacksuit
+- ransomware
+- rclone
+- encryption
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 69a20bae02480e03cb36e26729ed4a74c613eee5ba8c44396655da84a851fd03
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

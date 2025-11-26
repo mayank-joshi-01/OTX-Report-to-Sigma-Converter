@@ -1,0 +1,33 @@
+title: OTX domain IOC - zoominfopay.com
+id: ef426208-0c6f-4e0c-bf8a-af909e305575
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cloud Abuse at Scale'
+  (6905dfdab3ef8f05a7bdb858).
+author: AlienVault
+date: '2025-11-01'
+references:
+- https://www.fortinet.com/blog/threat-research/cloud-abuse-at-scale
+tags:
+- identity compromise
+- trufflehog
+- credential abuse
+- cloud infrastructure
+- coroxy
+- systembc
+- aws
+- bec
+- portainer
+- trufflenet
+- xmrig
+- ses
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zoominfopay.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

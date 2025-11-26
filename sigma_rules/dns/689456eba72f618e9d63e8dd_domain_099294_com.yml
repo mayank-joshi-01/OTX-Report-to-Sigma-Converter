@@ -1,0 +1,20 @@
+title: OTX domain IOC - 099294.com
+id: 4b88d6db-0829-4808-9225-1e57cf332d68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 099294.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

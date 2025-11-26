@@ -1,0 +1,20 @@
+title: OTX domain IOC - theunitednews.site
+id: e6d165e3-c6ba-463a-a7fc-1378f7011a6e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theunitednews.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

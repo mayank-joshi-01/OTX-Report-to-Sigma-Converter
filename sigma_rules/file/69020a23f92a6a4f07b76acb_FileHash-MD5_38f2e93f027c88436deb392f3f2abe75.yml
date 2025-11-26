@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - 38f2e93f027c88436deb392f3f2abe75
+id: 855a1cab-f7a8-4969-ae1b-aa2bb994298e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Suspected Nation-State
+  Threat Actor Uses New Airstalk Malware in a Supply Chain Attack' (69020a23f92a6a4f07b76acb).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://unit42.paloaltonetworks.com/new-windows-based-malware-family-airstalk
+tags:
+- nation-state
+- airstalk
+- supply chain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 38f2e93f027c88436deb392f3f2abe75
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

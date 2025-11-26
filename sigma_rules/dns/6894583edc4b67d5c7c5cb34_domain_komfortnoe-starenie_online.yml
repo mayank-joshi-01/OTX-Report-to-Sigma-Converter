@@ -1,0 +1,20 @@
+title: OTX domain IOC - komfortnoe-starenie.online
+id: 0e33f6a0-a509-4be9-95d0-bd5a399c825e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: komfortnoe-starenie.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - internyvsesezonysyg.online
+id: 6a5a4c9a-9d5d-4676-9790-9d7171e7d555
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: internyvsesezonysyg.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - ec2-157-175-176-40.me-south-1.compute.amazonaws.com
+id: 81b48f3c-3ef6-42aa-97d9-ef7e06b6d9fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ec2-157-175-176-40.me-south-1.compute.amazonaws.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

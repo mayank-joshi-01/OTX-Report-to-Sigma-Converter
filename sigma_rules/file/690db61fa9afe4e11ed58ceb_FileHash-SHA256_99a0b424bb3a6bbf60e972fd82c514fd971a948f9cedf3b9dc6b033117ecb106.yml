@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - 99a0b424bb3a6bbf60e972fd82c514fd971a948f9cedf3b9dc6b033117ecb106
+id: 15d13b25-d5d0-4e44-b5f4-2c00fedcffff
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'China-linked Actors
+  Maintain Focus on Organizations Influencing U.S. Policy' (690db61fa9afe4e11ed58ceb).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://www.security.com/threat-intelligence/china-apt-us-policy
+tags:
+- cve-2017-17562
+- deed rat
+- espionage
+- persistence
+- cve-2021-44228
+- cve-2017-9805
+- dcsync
+- policy influence
+- domain controllers
+- space pirates
+- apt41
+- kelp
+- china
+- cve-2022-26134
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 99a0b424bb3a6bbf60e972fd82c514fd971a948f9cedf3b9dc6b033117ecb106
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

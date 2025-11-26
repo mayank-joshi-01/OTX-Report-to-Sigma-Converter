@@ -1,0 +1,20 @@
+title: OTX domain IOC - z3kv7xdp3b.top
+id: f7a5a62d-61c3-4a0b-b06d-0e47fda3f0b4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: z3kv7xdp3b.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

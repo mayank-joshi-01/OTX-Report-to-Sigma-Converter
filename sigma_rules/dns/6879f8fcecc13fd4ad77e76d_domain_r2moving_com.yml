@@ -1,0 +1,25 @@
+title: OTX domain IOC - r2moving.com
+id: 8ce0f502-561a-4d81-a1e2-134c98b3148c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: r2moving.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

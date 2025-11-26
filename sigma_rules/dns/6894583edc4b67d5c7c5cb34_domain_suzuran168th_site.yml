@@ -1,0 +1,20 @@
+title: OTX domain IOC - suzuran168th.site
+id: 848a6d56-ec0a-4e1e-83cf-76b56ee10d82
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: suzuran168th.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

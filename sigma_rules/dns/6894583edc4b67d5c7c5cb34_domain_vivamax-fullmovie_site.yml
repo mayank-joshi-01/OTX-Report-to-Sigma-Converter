@@ -1,0 +1,20 @@
+title: OTX domain IOC - vivamax-fullmovie.site
+id: 3fa3d865-4349-49f8-945a-0fd98883a217
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vivamax-fullmovie.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

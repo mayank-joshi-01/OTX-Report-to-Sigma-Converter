@@ -1,0 +1,20 @@
+title: OTX domain IOC - mitrichvseseriifac.online
+id: dae3d902-fe25-4c3d-b9a5-c746b60786fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mitrichvseseriifac.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX IPv4 IOC - 38.54.88.172
+id: 29397576-1af6-4b3e-b5c6-38457aa8b8f0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'BRONZE BUTLER exploits
+  Japanese asset management software vulnerability' (69041be38572a6da98b3db35).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://news.sophos.com/en-us/2025/10/30/bronze-butler-exploits-japanese-asset-management-software-vulnerability
+tags:
+- havoc
+- oaed loader
+- cve-2025-61932
+- zero-day
+- gokcpdoor
+- lanscope
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 38.54.88.172
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

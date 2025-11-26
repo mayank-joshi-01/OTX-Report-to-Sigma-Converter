@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - b28d57269fe4cd90d1650bde5e9056116de26d211966262e59359d0e2a67d473
+id: 904c7b21-38cc-4af9-9816-fc8216b564a9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ongoing SonicWall
+  Secure Mobile Access (SMA) Exploitation Campaign using the OVERSTEP Backdoor' (6879f91ca3f7a11b698fd127).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/sonicwall-secure-mobile-access-exploitation-overstep-backdoor
+tags:
+- data exfiltration
+- credential theft
+- overstep
+- cve-2021-20038
+- sonicwall
+- rootkit
+- backdoor
+- cve-2024-38475
+- vpn
+- cve-2021-20039
+- cve-2021-20035
+- cve-2025-32819
+- sma
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b28d57269fe4cd90d1650bde5e9056116de26d211966262e59359d0e2a67d473
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

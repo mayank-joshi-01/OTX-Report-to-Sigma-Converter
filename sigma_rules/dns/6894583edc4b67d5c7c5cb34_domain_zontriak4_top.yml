@@ -1,0 +1,20 @@
+title: OTX domain IOC - zontriak4.top
+id: 00c9159a-98a4-4f52-b9e7-caf223a34cae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zontriak4.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

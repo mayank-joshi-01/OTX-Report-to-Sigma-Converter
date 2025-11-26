@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 7d3afaaff4ebcf9c1aea422c3c02efb901e6483dc8f15dc7aa618b692311b293
+id: 17df7d5a-edf5-47e9-8ba5-c21e2831af92
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Variant of ACRStealer
+  Actively Distributed with Modifications' (68a746627dcb5238c0b6cf9b).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://asec.ahnlab.com/en/89128
+tags:
+- acrstealer
+- data encryption
+- anti-analysis
+- infostealer
+- c2 communication
+- amaterastealer
+- detection evasion
+- heaven's gate
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7d3afaaff4ebcf9c1aea422c3c02efb901e6483dc8f15dc7aa618b692311b293
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

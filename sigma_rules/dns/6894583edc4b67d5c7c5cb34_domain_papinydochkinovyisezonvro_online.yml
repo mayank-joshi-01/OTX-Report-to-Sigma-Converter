@@ -1,0 +1,20 @@
+title: OTX domain IOC - papinydochkinovyisezonvro.online
+id: 7d89bc44-9726-4b69-af7d-953d454842c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: papinydochkinovyisezonvro.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

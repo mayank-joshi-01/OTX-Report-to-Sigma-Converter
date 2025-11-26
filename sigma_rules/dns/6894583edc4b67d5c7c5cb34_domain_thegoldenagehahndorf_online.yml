@@ -1,0 +1,20 @@
+title: OTX domain IOC - thegoldenagehahndorf.online
+id: f31d0a36-4e03-474b-a0f7-f1e81ce7e86a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thegoldenagehahndorf.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

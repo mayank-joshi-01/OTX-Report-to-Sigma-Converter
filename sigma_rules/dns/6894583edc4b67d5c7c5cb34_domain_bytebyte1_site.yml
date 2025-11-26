@@ -1,0 +1,20 @@
+title: OTX domain IOC - bytebyte1.site
+id: cda4cc29-bf12-41b9-9e5f-df2fac34f5be
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bytebyte1.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

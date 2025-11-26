@@ -1,0 +1,20 @@
+title: OTX domain IOC - option168.site
+id: 04eda61b-882a-4305-9bba-3577fde1d602
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: option168.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

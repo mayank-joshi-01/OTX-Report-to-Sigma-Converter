@@ -1,0 +1,20 @@
+title: OTX domain IOC - jjjdt18ce2114540.top
+id: 5df857c4-a659-4b8a-8a3f-cf6f8e2c23e7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jjjdt18ce2114540.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

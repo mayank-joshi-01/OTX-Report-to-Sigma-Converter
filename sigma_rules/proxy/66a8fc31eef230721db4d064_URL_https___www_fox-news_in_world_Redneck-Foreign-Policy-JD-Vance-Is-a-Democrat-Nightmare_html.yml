@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.fox-news.in/world/Redneck-Foreign-Policy-JD-Vance-Is-a-Democrat-Nightmare.html
+id: 718969a5-254f-4fde-a8e5-9ac54d2684e3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.fox-news.in/world/Redneck-Foreign-Policy-JD-Vance-Is-a-Democrat-Nightmare.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

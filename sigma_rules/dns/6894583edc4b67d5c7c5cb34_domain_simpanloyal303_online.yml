@@ -1,0 +1,20 @@
+title: OTX domain IOC - simpanloyal303.online
+id: 98d5f47d-80c3-43c9-97b0-3b50d08dd624
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: simpanloyal303.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

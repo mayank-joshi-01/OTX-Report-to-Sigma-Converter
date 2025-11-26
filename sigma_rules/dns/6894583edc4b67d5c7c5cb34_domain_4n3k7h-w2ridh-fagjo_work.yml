@@ -1,0 +1,20 @@
+title: OTX domain IOC - 4n3k7h-w2ridh-fagjo.work
+id: 3c9dbd62-9226-48b0-b108-5671c2e0cb4d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4n3k7h-w2ridh-fagjo.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

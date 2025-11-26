@@ -1,0 +1,31 @@
+title: OTX domain IOC - fileripple.com
+id: 1c98c77a-944d-46b6-b148-47d29c0c7ba6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Mac malware identified
+  that evades detection through fake PDF conversion tool' (68b20b6fce80c3addd5e54a3).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://9to5mac.com/2025/08/27/mosyle-identifies-new-mac-malware-that-evades-detection-through-fake-pdf-conversion-tool
+tags:
+- chrome hijacking
+- apple security
+- mac
+- jscorerunner
+- mosyle
+- zero-day threat
+- two-stage infection
+- fileripple.com
+- pdf conversion
+- browser redirection
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fileripple.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

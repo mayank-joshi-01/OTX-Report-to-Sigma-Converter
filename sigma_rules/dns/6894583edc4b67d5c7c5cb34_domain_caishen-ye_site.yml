@@ -1,0 +1,20 @@
+title: OTX domain IOC - caishen-ye.site
+id: 8881de1c-c527-4f78-a8d5-83a0f0a30cf6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: caishen-ye.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

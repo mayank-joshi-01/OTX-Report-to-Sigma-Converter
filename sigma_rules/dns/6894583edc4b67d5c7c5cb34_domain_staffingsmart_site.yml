@@ -1,0 +1,20 @@
+title: OTX domain IOC - staffingsmart.site
+id: 9510de3f-ff5a-4633-9643-54ebf9f2b17c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: staffingsmart.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - nextflyaz.com
+id: 3d42867b-1c12-4b58-8be0-fde68c1b2f93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nextflyaz.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

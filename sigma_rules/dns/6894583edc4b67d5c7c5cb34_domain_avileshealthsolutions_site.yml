@@ -1,0 +1,20 @@
+title: OTX domain IOC - avileshealthsolutions.site
+id: 42ef82d5-9702-4c86-8f5f-01b7e29409d7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: avileshealthsolutions.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

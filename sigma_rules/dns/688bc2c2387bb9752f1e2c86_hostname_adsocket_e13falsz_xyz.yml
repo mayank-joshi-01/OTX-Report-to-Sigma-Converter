@@ -1,0 +1,31 @@
+title: OTX hostname IOC - adsocket.e13falsz.xyz
+id: 45ba02eb-b3c0-4062-86b5-670ad848927c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RedHook: A New Android
+  Banking Trojan Targeting Users In Vietnam'' (688bc2c2387bb9752f1e2c86).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://cyble.com/blog/redhook-new-android-banking-targeting-in-vietnam/
+tags:
+- banking trojan
+- keylogging
+- chinese-language
+- websocket
+- android
+- redhook
+- rat
+- aws s3
+- vietnam
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adsocket.e13falsz.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

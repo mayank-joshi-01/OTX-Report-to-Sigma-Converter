@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - 4ce39fff27a92ee40932290fb73d61cd9805b011
+id: f4ec8249-f955-4a51-8c96-fa2794958dd2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Tools and Techniques
+  of ToddyCat APT' (69207948196fee16fcb9b0af).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://securelist.com/toddycat-apt-steals-email-data-from-outlook/118044/
+tags:
+- browser
+- oauth
+- data theft
+- outlook
+- xstreader
+- powershell
+- email
+- apt
+- tcsectorcopy
+- tomberbil
+- sharptokenfinder
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 4ce39fff27a92ee40932290fb73d61cd9805b011
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

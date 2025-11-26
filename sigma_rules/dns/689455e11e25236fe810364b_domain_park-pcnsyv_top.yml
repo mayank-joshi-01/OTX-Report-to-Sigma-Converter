@@ -1,0 +1,20 @@
+title: OTX domain IOC - park-pcnsyv.top
+id: 78904e6b-14f3-4e0b-a036-ff29297823a5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: park-pcnsyv.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

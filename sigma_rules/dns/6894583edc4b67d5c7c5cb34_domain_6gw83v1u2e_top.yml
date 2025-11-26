@@ -1,0 +1,20 @@
+title: OTX domain IOC - 6gw83v1u2e.top
+id: 7ee221b7-9614-4259-9958-0f628d201884
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 6gw83v1u2e.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

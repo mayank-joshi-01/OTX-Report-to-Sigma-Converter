@@ -1,0 +1,20 @@
+title: OTX domain IOC - netbet-casino.online
+id: 9534b950-b861-4538-968f-5465d7dad1b2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: netbet-casino.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

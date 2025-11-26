@@ -1,0 +1,20 @@
+title: OTX domain IOC - software-demo.site
+id: 84688ba4-8c1d-4870-8226-22695af79207
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: software-demo.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

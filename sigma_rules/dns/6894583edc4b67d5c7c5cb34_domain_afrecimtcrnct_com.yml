@@ -1,0 +1,20 @@
+title: OTX domain IOC - afrecimtcrnct.com
+id: 5afe2293-2de9-46a2-9f10-c70a18f0a765
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: afrecimtcrnct.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 167b387005d6d2a55ad282273c58d1786a2ee0fa3e7e0cb361d4d61d8618ee5f
+id: 3708526f-1d8a-4ee2-ab36-8b28a182608e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Phishing Attack:
+  Deploying Malware on Indian Defense BOSS Linux'' (68962f0efb122a6feb479f83).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.cyfirma.com/research/phishing-attack-deploying-malware-on-indian-defense-boss-linux
+tags:
+- transparent tribe
+- .desktop file
+- cyber-espionage
+- boss linux
+- phishing
+- apt36
+- indian defense
+- elf binary
+- boss.elf
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 167b387005d6d2a55ad282273c58d1786a2ee0fa3e7e0cb361d4d61d8618ee5f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

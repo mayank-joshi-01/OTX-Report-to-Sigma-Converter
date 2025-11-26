@@ -1,0 +1,20 @@
+title: OTX domain IOC - mj-maxwin.site
+id: fcc117c8-03fe-4834-b8f5-70d3e2c586cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mj-maxwin.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

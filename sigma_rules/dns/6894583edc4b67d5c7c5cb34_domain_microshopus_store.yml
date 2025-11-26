@@ -1,0 +1,20 @@
+title: OTX domain IOC - microshopus.store
+id: 06cc69fa-1a18-44fa-8869-896a81e6374a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: microshopus.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

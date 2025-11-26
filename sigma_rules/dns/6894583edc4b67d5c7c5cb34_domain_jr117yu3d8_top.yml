@@ -1,0 +1,20 @@
+title: OTX domain IOC - jr117yu3d8.top
+id: d66ea989-4ffb-4d26-ab4f-35e053344737
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jr117yu3d8.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

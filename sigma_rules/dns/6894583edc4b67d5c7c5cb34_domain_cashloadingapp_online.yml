@@ -1,0 +1,20 @@
+title: OTX domain IOC - cashloadingapp.online
+id: 954fbc40-394d-4f70-8a92-da3a3665c2e0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cashloadingapp.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

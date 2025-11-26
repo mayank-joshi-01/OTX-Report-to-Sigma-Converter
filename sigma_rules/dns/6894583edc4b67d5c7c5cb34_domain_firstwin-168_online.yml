@@ -1,0 +1,20 @@
+title: OTX domain IOC - firstwin-168.online
+id: 2f2cbe67-c850-491e-938a-e17955db1377
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: firstwin-168.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

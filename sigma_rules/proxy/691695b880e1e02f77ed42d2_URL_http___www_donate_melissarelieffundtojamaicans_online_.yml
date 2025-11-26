@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://www.donate.melissarelieffundtojamaicans.online/
+id: c9e41032-b872-439e-b6ce-5aee9de33c17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hurricane Melissa
+  Relief Scams: How Criminals Exploit Disaster'' (691695b880e1e02f77ed42d2).'
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.netcraft.com/blog/hurricane-melissa-jamaica-relief-scams
+tags:
+- phishing
+- cryptocurrency
+- social engineering
+- fake charities
+- hurricane
+- domain spoofing
+- disaster relief
+- scams
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://www.donate.melissarelieffundtojamaicans.online/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

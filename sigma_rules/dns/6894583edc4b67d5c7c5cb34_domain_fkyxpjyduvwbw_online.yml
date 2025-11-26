@@ -1,0 +1,20 @@
+title: OTX domain IOC - fkyxpjyduvwbw.online
+id: 85e23ca2-6e52-4fab-993a-b9e22b9d5e36
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fkyxpjyduvwbw.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

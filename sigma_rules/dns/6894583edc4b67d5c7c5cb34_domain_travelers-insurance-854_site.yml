@@ -1,0 +1,20 @@
+title: OTX domain IOC - travelers-insurance-854.site
+id: 661e65f6-97b0-4959-bfcc-9791776449a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: travelers-insurance-854.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

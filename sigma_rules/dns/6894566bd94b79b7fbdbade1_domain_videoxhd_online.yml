@@ -1,0 +1,20 @@
+title: OTX domain IOC - videoxhd.online
+id: fae166d2-ac42-4392-99d5-ea61ca6f626f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: videoxhd.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

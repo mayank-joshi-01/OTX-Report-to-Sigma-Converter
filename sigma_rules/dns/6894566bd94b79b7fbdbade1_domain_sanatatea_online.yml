@@ -1,0 +1,20 @@
+title: OTX domain IOC - sanatatea.online
+id: 72beca98-0eee-43e1-b954-26c58cf2bfd5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sanatatea.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

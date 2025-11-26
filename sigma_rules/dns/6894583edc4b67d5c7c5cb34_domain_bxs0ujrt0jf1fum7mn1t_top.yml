@@ -1,0 +1,20 @@
+title: OTX domain IOC - bxs0ujrt0jf1fum7mn1t.top
+id: f64c254b-ae4a-444b-985f-64b82303aa6b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bxs0ujrt0jf1fum7mn1t.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

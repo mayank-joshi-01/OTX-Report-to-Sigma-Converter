@@ -1,0 +1,20 @@
+title: OTX domain IOC - pmperformance.store
+id: 6f83af74-a4ac-4fbf-984c-d2c8aad487e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pmperformance.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

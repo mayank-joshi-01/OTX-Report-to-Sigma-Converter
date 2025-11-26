@@ -1,0 +1,27 @@
+title: OTX domain IOC - antspam-mail.services
+id: 991888e2-d888-4185-b093-b996c3197d0f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: antspam-mail.services
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

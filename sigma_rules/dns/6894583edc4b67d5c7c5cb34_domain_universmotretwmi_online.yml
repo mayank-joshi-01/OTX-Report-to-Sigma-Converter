@@ -1,0 +1,20 @@
+title: OTX domain IOC - universmotretwmi.online
+id: bcd0404d-66db-4e62-8b40-5156c5c5a22a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: universmotretwmi.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

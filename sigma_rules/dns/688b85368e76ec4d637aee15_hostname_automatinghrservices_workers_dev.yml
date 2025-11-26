@@ -1,0 +1,24 @@
+title: OTX hostname IOC - automatinghrservices.workers.dev
+id: 5c3fd69b-8b28-4bec-8228-f28c5f7243cb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GOLD BLADE remote
+  DLL sideloading attack deploys RedLoader' (688b85368e76ec4d637aee15).
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://news.sophos.com/en-us/2025/07/29/gold-blade-remote-dll-sideloading-attack-deploys-redloader/
+tags:
+- RedLoader
+- DLL sideloading
+- WebDAV
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: automatinghrservices.workers.dev
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 24-hour-plumber-1543.online
+id: ef74e20b-5157-4f4b-a2c1-a8a67695f442
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 24-hour-plumber-1543.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

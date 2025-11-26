@@ -1,0 +1,20 @@
+title: OTX domain IOC - grupoaval-creditos.site
+id: 78bcba33-74da-4158-9d57-2e6f0cc8c236
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: grupoaval-creditos.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

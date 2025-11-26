@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 54b9576aad25d54d703adb9a26feaa5d80f44b94731ff8ecff7cf1ebc15cf3ff
+id: 6f4e7860-38e3-4ba9-b27a-ee6ae7fabf67
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Atomic macOS Stealer
+  includes a backdoor for persistent access' (687008ea5fb6ba9739b411f1).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://moonlock.com/amos-backdoor-persistent-access/
+tags:
+- command-and-control
+- macos
+- cryptocurrency
+- backdoor
+- data exfiltration
+- persistent access
+- amos
+- spear-phishing
+- atomic macos stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 54b9576aad25d54d703adb9a26feaa5d80f44b94731ff8ecff7cf1ebc15cf3ff
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

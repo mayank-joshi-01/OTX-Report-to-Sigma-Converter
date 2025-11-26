@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://paste.ee/d/oAqRiS3g
+id: 2cdcdecf-09eb-4e1a-a2b4-7bf78415c520
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DCRAT Impersonating
+  the Colombian Government' (68654eff7ba38f77505ba8c5).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.fortinet.com/blog/threat-research/dcrat-impersonating-the-columbian-government
+tags:
+- remote access trojan
+- obfuscation
+- credential harvesting
+- phishing
+- colombia
+- dcrat
+- persistence
+- steganography
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://paste.ee/d/oAqRiS3g
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

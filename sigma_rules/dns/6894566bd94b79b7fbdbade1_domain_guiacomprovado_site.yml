@@ -1,0 +1,20 @@
+title: OTX domain IOC - guiacomprovado.site
+id: 5a4624bd-97dc-4b15-a8a1-46be1e4b0e30
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guiacomprovado.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

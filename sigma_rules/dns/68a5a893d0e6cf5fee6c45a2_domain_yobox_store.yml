@@ -1,0 +1,28 @@
+title: OTX domain IOC - yobox.store
+id: b8876b14-0b68-4e47-a7f6-ad16d6410dd0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CryptoJacking is
+  dead: long live CryptoJacking'' (68a5a893d0e6cf5fee6c45a2).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://cside.dev/blog/cryptojacking-is-dead-long-live-cryptojacking
+tags:
+- cryptojacking
+- webassembly
+- monero
+- stealth mining
+- web workers
+- obfuscation
+- websockets
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yobox.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

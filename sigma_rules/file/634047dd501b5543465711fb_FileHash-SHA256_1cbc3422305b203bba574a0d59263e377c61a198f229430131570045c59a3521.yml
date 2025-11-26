@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 1cbc3422305b203bba574a0d59263e377c61a198f229430131570045c59a3521
+id: b04bd35a-6843-45ec-95de-cd60436c4c7e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''HTML File Attachments:
+  Still A Threat'' (634047dd501b5543465711fb).'
+author: AlienVault
+date: '2022-10-07'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/html-file-attachments-still-a-threat/
+tags:
+- trickbot
+- javascript
+- html attachments
+- phishing
+- obfuscation
+- html smuggling
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1cbc3422305b203bba574a0d59263e377c61a198f229430131570045c59a3521
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

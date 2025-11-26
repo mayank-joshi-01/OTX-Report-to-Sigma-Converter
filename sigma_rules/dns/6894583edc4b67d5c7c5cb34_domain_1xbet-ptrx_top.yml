@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1xbet-ptrx.top
+id: 787c4a75-e2f5-4c5f-9d43-9a20a49334ac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1xbet-ptrx.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

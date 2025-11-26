@@ -1,0 +1,20 @@
+title: OTX domain IOC - csplayer259.online
+id: 0af078c5-17ff-4c43-aac3-2595a1e7fbc3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: csplayer259.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

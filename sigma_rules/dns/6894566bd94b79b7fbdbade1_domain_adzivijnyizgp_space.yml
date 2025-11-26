@@ -1,0 +1,20 @@
+title: OTX domain IOC - adzivijnyizgp.space
+id: 96e5eea0-aa52-4f5b-8a9d-9ee9068cf481
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adzivijnyizgp.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

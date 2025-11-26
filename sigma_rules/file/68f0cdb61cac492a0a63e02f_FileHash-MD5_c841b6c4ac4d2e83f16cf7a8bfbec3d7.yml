@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - c841b6c4ac4d2e83f16cf7a8bfbec3d7
+id: 14f08075-fc1d-4957-b469-03dd12af5474
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Evolving with a new
+  Javascript module' (68f0cdb61cac492a0a63e02f).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://blog.talosintelligence.com/beavertail-and-ottercookie
+tags:
+- vs code extension
+- beavertail
+- north korea
+- dprk
+- cryptocurrency
+- pylangghost
+- chessfi
+- keylogger
+- ottercookie
+- node.js
+- golangghost
+- invisibleferret
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c841b6c4ac4d2e83f16cf7a8bfbec3d7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

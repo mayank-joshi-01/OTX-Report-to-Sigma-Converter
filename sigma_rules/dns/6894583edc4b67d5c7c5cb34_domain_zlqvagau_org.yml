@@ -1,0 +1,20 @@
+title: OTX domain IOC - zlqvagau.org
+id: c4c24bc9-6df3-485a-96af-89d02c6b5d46
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zlqvagau.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

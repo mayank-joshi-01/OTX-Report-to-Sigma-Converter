@@ -1,0 +1,32 @@
+title: OTX domain IOC - wcsset.com
+id: e729d5ab-5d35-4b03-9f6d-5174ebe80939
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PlushDaemon compromises
+  network devices for adversary-in-the-middle attacks' (691e322b7508a5264ba48186).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-network-devices-for-adversary-in-the-middle-attacks
+tags:
+- slowstepper
+- apt
+- china
+- littledaemon
+- software update hijacking
+- adversary-in-the-middle
+- edgestepper
+- espionage
+- network implant
+- dns hijacking
+- daemoniclogistics
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wcsset.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

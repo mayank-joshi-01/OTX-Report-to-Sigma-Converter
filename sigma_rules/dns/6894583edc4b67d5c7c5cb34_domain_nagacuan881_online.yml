@@ -1,0 +1,20 @@
+title: OTX domain IOC - nagacuan881.online
+id: 3bd4d242-6a69-48ac-8256-a463bd7a1a6e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nagacuan881.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

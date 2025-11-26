@@ -1,0 +1,20 @@
+title: OTX domain IOC - ritualshop.site
+id: cb1b2719-92ee-4f7e-8471-90219c73ede1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ritualshop.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

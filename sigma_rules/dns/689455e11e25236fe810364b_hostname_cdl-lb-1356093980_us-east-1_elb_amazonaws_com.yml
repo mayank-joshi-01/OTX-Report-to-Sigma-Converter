@@ -1,0 +1,20 @@
+title: OTX hostname IOC - cdl-lb-1356093980.us-east-1.elb.amazonaws.com
+id: 1787f5aa-9ac9-4dde-b202-b9ec280396da
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cdl-lb-1356093980.us-east-1.elb.amazonaws.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

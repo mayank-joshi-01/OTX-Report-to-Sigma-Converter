@@ -1,0 +1,20 @@
+title: OTX domain IOC - jomphoelubekg.site
+id: 877d5dc7-d6fb-4b82-bc22-687fc03acace
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jomphoelubekg.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

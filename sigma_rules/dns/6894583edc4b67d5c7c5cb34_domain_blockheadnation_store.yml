@@ -1,0 +1,20 @@
+title: OTX domain IOC - blockheadnation.store
+id: 1e799bf4-5f6a-4d56-b925-bb468f7325e3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blockheadnation.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - gfimporting.online
+id: df98cb0b-f2ae-4f40-9e1b-1caf63ae2ccb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gfimporting.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

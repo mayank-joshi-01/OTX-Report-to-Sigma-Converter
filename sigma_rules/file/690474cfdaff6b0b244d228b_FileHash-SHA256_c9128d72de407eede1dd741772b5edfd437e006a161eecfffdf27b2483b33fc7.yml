@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - c9128d72de407eede1dd741772b5edfd437e006a161eecfffdf27b2483b33fc7
+id: 8655c597-016a-4d67-9b8d-7faadf15831c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC6384 Weaponizes
+  ZDI-CAN-25373 Vulnerability to Deploy PlugX Against Hungarian and Belgian Diplomatic
+  Entities' (690474cfdaff6b0b244d228b).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://arcticwolf.com/resources/blog/unc6384-weaponizes-zdi-can-25373-vulnerability-to-deploy-plugx
+tags:
+- canonstager
+- dll side-loading
+- spearphishing
+- plugx
+- diplomatic targeting
+- zdi-can-25373
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c9128d72de407eede1dd741772b5edfd437e006a161eecfffdf27b2483b33fc7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

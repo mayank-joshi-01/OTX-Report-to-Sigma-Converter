@@ -1,0 +1,25 @@
+title: OTX domain IOC - show-verify.xyz
+id: 05c6c589-338d-457c-9e2f-1d3137c69629
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian Educated Manticore
+  Targets Leading Tech Academics' (685db537f7a98c26737b6b3b).
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://research.checkpoint.com/2025/iranian-educated-manticore-targets-leading-tech-academics/
+tags:
+- Educated Manticore
+- Iran
+- APT42
+- Charming Kitten
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: show-verify.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

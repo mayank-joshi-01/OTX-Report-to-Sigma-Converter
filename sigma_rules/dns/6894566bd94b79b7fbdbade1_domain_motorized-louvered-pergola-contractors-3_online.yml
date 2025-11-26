@@ -1,0 +1,20 @@
+title: OTX domain IOC - motorized-louvered-pergola-contractors-3.online
+id: f7f43f5e-1546-4eeb-972f-051170131ad9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: motorized-louvered-pergola-contractors-3.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

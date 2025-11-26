@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 2755de59ef87f9f38c236ed860a1f6f41a1d864126f54c4c0a7f87d4b4f63b20
+id: 61bb460e-2a5b-41f8-b770-1190b2a8e0e1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How a new PlugX variant
+  abuses DLL search order hijacking' (68d31c0c8c90127096487d05).
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://blog.talosintelligence.com/how-rainyday-turian-and-a-new-plugx-variant-abuse-dll-search-order-hijacking/
+tags:
+- telecommunications
+- manufacturing
+- plugx
+- rainyday
+- backdoordiplomacy
+- naikon
+- turian
+- chinese apt
+- dll hijacking
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2755de59ef87f9f38c236ed860a1f6f41a1d864126f54c4c0a7f87d4b4f63b20
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

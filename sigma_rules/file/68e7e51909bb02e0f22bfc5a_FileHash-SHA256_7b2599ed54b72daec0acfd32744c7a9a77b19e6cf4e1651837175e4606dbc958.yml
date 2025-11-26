@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 7b2599ed54b72daec0acfd32744c7a9a77b19e6cf4e1651837175e4606dbc958
+id: 3d743a7b-9190-4543-81aa-adfcb4f73a67
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Crown Prince,
+  Nezha: A New Tool Favored by China-Nexus Threat Actors'' (68e7e51909bb02e0f22bfc5a).'
+author: AlienVault
+date: '2025-10-09'
+references:
+- https://www.huntress.com/blog/nezha-china-nexus-threat-actor-tool
+tags:
+- log poisoning
+- nezha
+- web shell
+- china chopper
+- server monitoring
+- ghost rat
+- antsword
+- remote access trojan
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7b2599ed54b72daec0acfd32744c7a9a77b19e6cf4e1651837175e4606dbc958
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

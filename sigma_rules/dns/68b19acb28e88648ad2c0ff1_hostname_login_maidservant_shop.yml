@@ -1,0 +1,28 @@
+title: OTX hostname IOC - login.maidservant.shop
+id: 3e50163e-869f-4b3b-9c70-38b2b9b8bee2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hunting Laundry
+  Bear: Infrastructure Analysis Guide and Findings'' (68b19acb28e88648ad2c0ff1).'
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.validin.com/blog/laundry_bear_infrastructure_analysis
+tags:
+- infrastructure analysis
+- russian threat actor
+- domain typosquatting
+- ukraine targets
+- apt
+- spear-phishing
+- nato targets
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: login.maidservant.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

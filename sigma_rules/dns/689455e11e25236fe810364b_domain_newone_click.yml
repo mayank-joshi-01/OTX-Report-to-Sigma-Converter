@@ -1,0 +1,20 @@
+title: OTX domain IOC - newone.click
+id: f86af565-2194-42db-843e-1bcc5104cb4b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: newone.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

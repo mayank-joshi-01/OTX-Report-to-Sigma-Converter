@@ -1,0 +1,20 @@
+title: OTX domain IOC - coach-247.online
+id: 569889bb-b3a2-4fba-be1c-4c3046209ba3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: coach-247.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - qmainwjxeremn.online
+id: 54f638f7-d307-4bc6-982a-67fd5fe6d6ae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qmainwjxeremn.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

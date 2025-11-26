@@ -1,0 +1,20 @@
+title: OTX domain IOC - wandinelectrics.online
+id: a39f2eb4-5292-4957-90ea-91815a2d8c97
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wandinelectrics.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

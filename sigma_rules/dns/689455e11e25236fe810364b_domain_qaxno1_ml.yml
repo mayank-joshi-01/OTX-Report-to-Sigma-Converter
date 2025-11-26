@@ -1,0 +1,20 @@
+title: OTX domain IOC - qaxno1.ml
+id: 167fbd2e-96c9-4cab-ba7c-b6e86d86f64c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qaxno1.ml
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

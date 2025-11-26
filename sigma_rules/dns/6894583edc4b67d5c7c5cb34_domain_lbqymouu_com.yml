@@ -1,0 +1,20 @@
+title: OTX domain IOC - lbqymouu.com
+id: 98d6c324-fca7-4137-93e6-2339165c6913
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lbqymouu.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

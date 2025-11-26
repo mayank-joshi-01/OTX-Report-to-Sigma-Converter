@@ -1,0 +1,20 @@
+title: OTX domain IOC - glossnest.online
+id: 430091c7-4d12-420b-a306-cbd17e5d0bdb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: glossnest.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

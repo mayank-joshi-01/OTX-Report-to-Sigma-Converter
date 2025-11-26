@@ -1,0 +1,20 @@
+title: OTX domain IOC - itstars2.com
+id: 6f4c532e-a2fa-49d4-8358-34a0e06bba17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: itstars2.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

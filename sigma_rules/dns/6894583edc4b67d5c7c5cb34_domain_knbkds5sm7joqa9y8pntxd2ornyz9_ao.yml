@@ -1,0 +1,20 @@
+title: OTX domain IOC - knbkds5sm7joqa9y8pntxd2ornyz9.ao
+id: cb742ee2-a8ac-4686-845e-838eeb9dadfb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: knbkds5sm7joqa9y8pntxd2ornyz9.ao
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

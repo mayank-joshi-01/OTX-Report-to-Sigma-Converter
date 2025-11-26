@@ -1,0 +1,20 @@
+title: OTX domain IOC - tuttipagamenti.online
+id: 9ba2fd7a-2b98-4706-b6a9-f91a58241d37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tuttipagamenti.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

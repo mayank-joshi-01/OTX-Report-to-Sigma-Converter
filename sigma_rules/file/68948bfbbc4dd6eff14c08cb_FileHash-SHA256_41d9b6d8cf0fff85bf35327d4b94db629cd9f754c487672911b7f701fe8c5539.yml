@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 41d9b6d8cf0fff85bf35327d4b94db629cd9f754c487672911b7f701fe8c5539
+id: 03a59aae-0567-421e-80d1-7027684e62ce
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RoKRAT Shellcode
+  and Steganographic Threats: Analysis and EDR Response Strategies'' (68948bfbbc4dd6eff14c08cb).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/rokrat_shellcode_steganographic
+tags:
+- rokrat
+- xor
+- injection
+- edr
+- cloud
+- dropbox
+- shellcode
+- fileless
+- steganography
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 41d9b6d8cf0fff85bf35327d4b94db629cd9f754c487672911b7f701fe8c5539
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

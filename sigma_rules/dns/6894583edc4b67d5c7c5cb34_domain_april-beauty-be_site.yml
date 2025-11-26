@@ -1,0 +1,20 @@
+title: OTX domain IOC - april-beauty-be.site
+id: 1fca6c7f-889e-4747-ae02-933b085d6c4a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: april-beauty-be.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

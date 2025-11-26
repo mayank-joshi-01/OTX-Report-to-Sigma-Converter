@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 4d4f6ea7ebdc0fbf237a7e385885d51434fd2e115d6ea62baa218073729f5249
+id: 649755f1-1d32-46fb-b1b8-e7e346e77778
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CVE-2025-31324:
+  Critical SAP Vulnerability & How to Protect Your Enterprise'' (68c1d255ec99b294b7238365).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.seqrite.com/blog/cve-2025-31324-sap-vulnerability-protection/
+tags:
+- vulnerability
+- netweaver
+- metadatauploader
+- exploit
+- sap
+- remote code execution
+- cve-2025-31324
+- auto-color
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4d4f6ea7ebdc0fbf237a7e385885d51434fd2e115d6ea62baa218073729f5249
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

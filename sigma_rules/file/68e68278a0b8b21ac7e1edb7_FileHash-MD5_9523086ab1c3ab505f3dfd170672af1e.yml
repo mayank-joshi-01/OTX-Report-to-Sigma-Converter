@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 9523086ab1c3ab505f3dfd170672af1e
+id: 98b450b3-e3d4-424b-ad0d-846f7cefbc98
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Shuyal Stealer:
+  Advanced Infostealer Targeting 19 Browsers'' (68e68278a0b8b21ac7e1edb7).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.pointwild.com/threat-intelligence/shuyal-stealer-advanced-infostealer-targeting-19-browsers
+tags:
+- evasion
+- browser targeting
+- system reconnaissance
+- data exfiltration
+- telegram bot
+- persistence
+- shuyal stealer
+- infostealer
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9523086ab1c3ab505f3dfd170672af1e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

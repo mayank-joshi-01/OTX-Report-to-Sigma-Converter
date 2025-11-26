@@ -1,0 +1,20 @@
+title: OTX domain IOC - xszgbcyu8t287ey6w92qhw8097823t7ut.shop
+id: d70befc6-7bf1-4b3b-9ec2-98e152ab51a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xszgbcyu8t287ey6w92qhw8097823t7ut.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

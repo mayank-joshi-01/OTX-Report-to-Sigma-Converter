@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - b2692128faa0481ff94ed61c73f76a67
+id: 047de4ec-0822-4dec-9d77-dfe22bfb7084
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Generated Code
+  and Fake Apps Used for Far-Reaching Attacks' (68c3ce085d8c1f8ab4b66b02).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://www.trendmicro.com/en_us/research/25/i/evilai.html
+tags:
+- ai-generated code
+- node.js
+- evilai
+- credential theft
+- fake applications
+- persistence
+- trojan
+- command and control
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: b2692128faa0481ff94ed61c73f76a67
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - gregcoopermusic.online
+id: 0f43c80c-12e1-49e9-9e09-b9a1b2c15436
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gregcoopermusic.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

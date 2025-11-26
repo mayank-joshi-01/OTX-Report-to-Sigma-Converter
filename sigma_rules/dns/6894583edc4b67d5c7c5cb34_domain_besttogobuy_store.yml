@@ -1,0 +1,20 @@
+title: OTX domain IOC - besttogobuy.store
+id: e0b216a1-8165-408f-b5c5-de7195dcc1da
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: besttogobuy.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

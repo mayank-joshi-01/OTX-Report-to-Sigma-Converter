@@ -1,0 +1,20 @@
+title: OTX domain IOC - ampersandsalon.online
+id: fae58da8-c4e1-4d6c-a1fa-c256995ce281
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ampersandsalon.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

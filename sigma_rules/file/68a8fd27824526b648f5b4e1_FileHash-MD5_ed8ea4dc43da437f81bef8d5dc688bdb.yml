@@ -1,0 +1,34 @@
+title: OTX FileHash-MD5 IOC - ed8ea4dc43da437f81bef8d5dc688bdb
+id: e1879ead-2f7b-4d2f-8362-36377412ec4f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Android Document
+  Readers and Deception: Tracking the Latest Updates to Anatsa'' (68a8fd27824526b648f5b4e1).'
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://www.zscaler.com/blogs/security-research/android-document-readers-and-deception-tracking-latest-updates-anatsa
+tags:
+- coper
+- harly
+- joker
+- financial institutions
+- banking trojan
+- facestealer
+- evasion techniques
+- credential theft
+- android
+- cryptocurrency
+- teabot
+- anatsa
+- google play store
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ed8ea4dc43da437f81bef8d5dc688bdb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

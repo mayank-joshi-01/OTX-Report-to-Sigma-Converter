@@ -1,0 +1,20 @@
+title: OTX domain IOC - mvdis-ptw.online
+id: 4d25f7ee-83e2-4ece-9821-62c5afc942d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mvdis-ptw.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

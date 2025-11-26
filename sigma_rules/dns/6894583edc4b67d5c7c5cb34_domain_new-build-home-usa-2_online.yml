@@ -1,0 +1,20 @@
+title: OTX domain IOC - new-build-home-usa-2.online
+id: 9bd2c877-6342-4af8-b003-c9ff505420c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: new-build-home-usa-2.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - holisticcareservices.online
+id: bf9d358d-c0da-4f98-a9d2-b5d7ac771344
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: holisticcareservices.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

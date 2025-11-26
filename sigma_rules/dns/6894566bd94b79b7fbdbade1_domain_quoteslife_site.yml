@@ -1,0 +1,20 @@
+title: OTX domain IOC - quoteslife.site
+id: 4c47ff09-8c2f-4a23-9be3-6e36abb215da
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quoteslife.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

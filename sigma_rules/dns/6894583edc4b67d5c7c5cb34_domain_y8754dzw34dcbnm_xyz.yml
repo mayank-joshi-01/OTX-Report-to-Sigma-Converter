@@ -1,0 +1,20 @@
+title: OTX domain IOC - y8754dzw34dcbnm.xyz
+id: ddc81e88-08dd-4d5f-b5ca-f980a7aaa1f5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y8754dzw34dcbnm.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - a186f6b7ec6d3b6a31b7158082b9a0fa
+id: 915ce508-6ba6-4200-baca-69fb23113ba8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''''Blue Locker''
+  Analysis: Ransomware Targeting Oil & Gas Sector in Pakistan'' (689f27de103cef61ad777375).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://www.resecurity.com/blog/article/blue-locker-analysis-ransomware-targeting-oil-gas-sector-in-pakistan
+tags:
+- ransomware
+- phishing
+- pakistan
+- oil and gas
+- ncert
+- cybersecurity
+- proton
+- encryption
+- shinra
+- blue locker
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a186f6b7ec6d3b6a31b7158082b9a0fa
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

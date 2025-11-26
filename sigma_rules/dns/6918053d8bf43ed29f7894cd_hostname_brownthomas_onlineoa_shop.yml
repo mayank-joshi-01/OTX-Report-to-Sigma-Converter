@@ -1,0 +1,29 @@
+title: OTX hostname IOC - brownthomas.onlineoa.shop
+id: a3ab4cdd-f74c-42cc-8ac5-e40c87b9fe34
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How AI Is Fueling
+  a New Wave of Black Friday Scams' (6918053d8bf43ed29f7894cd).
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://www.forcepoint.com/blog/x-labs/black-friday-scams-ai-phishing-guide
+tags:
+- phishing
+- cybersecurity
+- luxury goods
+- e-commerce
+- black friday
+- ai
+- scams
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brownthomas.onlineoa.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

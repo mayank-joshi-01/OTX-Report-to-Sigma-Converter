@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - b2e6fd5f9662c4215f89240c8c960977
+id: ad52ab39-adde-4e07-b81d-f6ebeede7534
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Crypto Phishing Applications
+  On The Play Store' (6855b5c6ea3a7d971baf5551).
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://cyble.com/blog/crypto-phishing-applications-on-the-play-store
+tags:
+- cryptocurrency
+- phishing
+- webview
+- android
+- google play store
+- mnemonic phrases
+- median framework
+- wallet impersonation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: b2e6fd5f9662c4215f89240c8c960977
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

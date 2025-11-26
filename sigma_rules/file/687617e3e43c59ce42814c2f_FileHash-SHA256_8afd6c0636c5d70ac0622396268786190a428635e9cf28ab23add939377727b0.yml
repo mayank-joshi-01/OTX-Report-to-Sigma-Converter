@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 8afd6c0636c5d70ac0622396268786190a428635e9cf28ab23add939377727b0
+id: 5c44c21b-663c-4f46-bcef-70bb8d28ac6b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'KongTuke FileFix Leads
+  to New Interlock RAT Variant' (687617e3e43c59ce42814c2f).
+author: AlienVault
+date: '2025-07-15'
+references:
+- https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant
+tags:
+- web-inject
+- interlock rat
+- kongtuke
+- filefix
+- nodesnake
+- cloudflare tunnel
+- reconnaissance
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8afd6c0636c5d70ac0622396268786190a428635e9cf28ab23add939377727b0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

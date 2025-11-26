@@ -1,0 +1,20 @@
+title: OTX domain IOC - piano-teacher-9775.online
+id: 47b1ddb1-79ab-4b23-9b0a-eb927b08510b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: piano-teacher-9775.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

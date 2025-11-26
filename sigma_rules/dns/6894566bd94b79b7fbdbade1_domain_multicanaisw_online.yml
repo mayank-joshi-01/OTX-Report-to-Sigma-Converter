@@ -1,0 +1,20 @@
+title: OTX domain IOC - multicanaisw.online
+id: 8cf65c57-5b75-4368-9cd6-a9bf0cafa8ca
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: multicanaisw.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

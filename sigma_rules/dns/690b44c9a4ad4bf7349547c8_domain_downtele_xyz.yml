@@ -1,0 +1,31 @@
+title: OTX domain IOC - downtele.xyz
+id: 4863c87a-6428-482b-8b31-763951226722
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Dragon
+  Breath (APT-Q-27): Dimensional Reduction Attack Against the Gambling Industry''
+  (690b44c9a4ad4bf7349547c8).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.ctfiot.com/40522.html
+tags:
+- telegram
+- miuuti group
+- ghost
+- gambling industry
+- msi installer
+- golden eye dog
+- southeast asia
+- watering hole
+- chinese communities
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: downtele.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

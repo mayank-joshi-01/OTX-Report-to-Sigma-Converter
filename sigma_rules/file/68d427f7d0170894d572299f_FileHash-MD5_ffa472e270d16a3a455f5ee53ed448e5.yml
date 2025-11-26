@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - ffa472e270d16a3a455f5ee53ed448e5
+id: 7d0bf642-1a6a-4565-8c44-99acc9aaebdb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Targets Government,
+  Defense, and Technology Organizations' (68d427f7d0170894d572299f).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://www.recordedfuture.com/research/rednovember-targets-government-defense-and-technology-organizations
+tags:
+- cyber-espionage
+- sparkrat
+- aerospace
+- defense
+- technology
+- leslieloader
+- cobalt strike
+- perimeter appliances
+- pantegana
+- chinese state-sponsored
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ffa472e270d16a3a455f5ee53ed448e5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 55100-55100-tz01.com
+id: 24013c39-a7b0-495f-86fe-4f0811f97ba8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 55100-55100-tz01.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

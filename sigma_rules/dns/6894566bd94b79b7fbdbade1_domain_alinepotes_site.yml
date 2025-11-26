@@ -1,0 +1,20 @@
+title: OTX domain IOC - alinepotes.site
+id: 76556839-ab06-4c23-8a07-1ceaea2dc35b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alinepotes.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

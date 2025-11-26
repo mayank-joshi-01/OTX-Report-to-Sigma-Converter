@@ -1,0 +1,26 @@
+title: OTX domain IOC - egt9l7gpf.top
+id: 9e30e325-c3dc-4720-a2ee-d935efbe51e8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: egt9l7gpf.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,60 @@
+title: OTX domain IOC - vonie.net
+id: 23c13113-d165-4b95-839e-1b9684c9aa6a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Infrastructure
+  Finds Stability with aurologic GmbH' (690cee4f0a00b80c63983535).
+author: AlienVault
+date: '2025-11-06'
+references:
+- https://www.recordedfuture.com/research/malicious-infrastructure-finds-stability-with-aurologic-gmbh
+- https://www.recordedfuture.com/research/media_1bfe9de2bfeea34dcb206c1c308f99a7b25b68b32.gif?width=1200&format=pjpg&optimize=medium
+tags:
+- castleloader
+- neutrality
+- systembc
+- transit
+- cybercrime
+- lumma
+- redline stealer
+- phorpiex
+- disinformation
+- dcrat
+- asyncrat
+- sanctions
+- meduza stealer
+- cobalt strike
+- thc hydra
+- amadey
+- stealc
+- hosting
+- infrastructure
+- remcos rat
+- upstream
+- tinyloader
+- abuse
+- moobot
+- bianlian
+- aurologic
+- destiny stealer
+- quasarrat
+- latrodectus
+- svcstealer
+- rhadamanthys stealer
+- darkcomet
+- vidar
+- dark crystal rat
+- risepro stealer
+- aurotun
+- castlerat
+- sliver
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vonie.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

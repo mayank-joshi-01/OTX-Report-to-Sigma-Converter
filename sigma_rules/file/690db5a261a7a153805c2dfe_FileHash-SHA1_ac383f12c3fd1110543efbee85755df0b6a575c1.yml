@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - ac383f12c3fd1110543efbee85755df0b6a575c1
+id: c14386be-c3f7-469c-9be0-b4fae078e4cd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LeakyInjector and
+  LeakyStealer Duo Hunts For Crypto and Browser History' (690db5a261a7a153805c2dfe).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://hybrid-analysis.blogspot.com/2025/11/leakyinjector-and-leakystealer-duo.html
+tags:
+- cryptocurrency
+- persistence
+- two-stage
+- injection
+- polymorphic
+- leakystealer
+- data-exfiltration
+- browser-history
+- leakyinjector
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ac383f12c3fd1110543efbee85755df0b6a575c1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

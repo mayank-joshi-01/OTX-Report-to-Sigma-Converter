@@ -1,0 +1,20 @@
+title: OTX domain IOC - onsitedieselmechanics.online
+id: 63774bd2-0ace-4d61-9b57-ba31cb7c1ecf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onsitedieselmechanics.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - a697eb3ec924fb80718ccf2e7f45891d
+id: 19a396ca-e379-40ff-b8b5-7332a16648f5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a697eb3ec924fb80718ccf2e7f45891d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - auausspl.com.aumx2.sspl.com.au
+id: c7ac0eda-9b54-4bfb-8b62-56f72f1dd5dd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: auausspl.com.aumx2.sspl.com.au
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

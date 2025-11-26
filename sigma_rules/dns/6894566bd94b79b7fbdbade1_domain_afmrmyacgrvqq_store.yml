@@ -1,0 +1,20 @@
+title: OTX domain IOC - afmrmyacgrvqq.store
+id: 1ceed067-2450-43d7-ae91-2e3e62c7cde4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: afmrmyacgrvqq.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - moviezgalaxy.online
+id: 8bafe917-8abf-489e-9e8e-ec39a0f93a9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: moviezgalaxy.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

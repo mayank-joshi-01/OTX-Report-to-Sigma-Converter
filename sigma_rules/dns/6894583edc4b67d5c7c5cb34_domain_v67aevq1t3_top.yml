@@ -1,0 +1,20 @@
+title: OTX domain IOC - v67aevq1t3.top
+id: ed78bc65-e1dd-43aa-9b2e-f9db56a8d7cb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: v67aevq1t3.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

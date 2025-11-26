@@ -1,0 +1,20 @@
+title: OTX domain IOC - celectr.pics
+id: 77e61d75-6da8-4440-b6fc-8b5418b5205b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: celectr.pics
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

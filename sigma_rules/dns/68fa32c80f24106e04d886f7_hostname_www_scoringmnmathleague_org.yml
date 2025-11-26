@@ -1,0 +1,24 @@
+title: OTX hostname IOC - www.scoringmnmathleague.org
+id: d3fbc31b-2271-4408-9fe0-944ca534199f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gotta fly: Lazarus
+  targets the UAV sector'' (68fa32c80f24106e04d886f7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector
+tags:
+- scoringmathtea
+- quanpinloader
+- operation dreamjob
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.scoringmnmathleague.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

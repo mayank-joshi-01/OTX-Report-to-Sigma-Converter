@@ -1,0 +1,20 @@
+title: OTX domain IOC - blockchainhome.site
+id: e68eb62d-d03f-4da7-8863-2750e1f26782
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blockchainhome.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

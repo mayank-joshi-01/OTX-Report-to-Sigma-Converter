@@ -1,0 +1,26 @@
+title: OTX domain IOC - onlinespeedtestservice.com
+id: e06a1245-9b1a-4056-9a58-1d100df2acae
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Online Speedtest
+  Application' (68d50967331055dd8308adfd).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://security5magics.blogspot.com/2025/09/fake-online-speedtest-application.html
+tags:
+- javascript payload
+- node.js
+- scheduled tasks
+- evilai
+- fake applications
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onlinespeedtestservice.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

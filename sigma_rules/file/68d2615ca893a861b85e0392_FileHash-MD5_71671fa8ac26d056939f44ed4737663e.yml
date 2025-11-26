@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 71671fa8ac26d056939f44ed4737663e
+id: 997b7d81-46c1-40ee-a06f-2e374c5509b5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Rewrite:
+  Chinese-Speaking Threat Actors Deploy BadIIS in a Wide Scale SEO Poisoning Campaign''
+  (68d2615ca893a861b85e0392).'
+author: AlienVault
+date: '2025-09-23'
+references:
+- https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign/?pdf=print&lg=en&_wpnonce=8cd08de11a
+tags:
+- badiis
+- dragonrank
+- operation rewrite
+- web shells
+- seo poisoning
+- chinese threat actor
+- iis modules
+- group 9
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 71671fa8ac26d056939f44ed4737663e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

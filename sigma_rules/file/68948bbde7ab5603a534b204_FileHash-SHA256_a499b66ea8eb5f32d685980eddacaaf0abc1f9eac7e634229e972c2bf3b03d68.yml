@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - a499b66ea8eb5f32d685980eddacaaf0abc1f9eac7e634229e972c2bf3b03d68
+id: f6912199-e10b-4fec-82fc-925b8d60ed19
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Reconnaissance
+  to Control: The Operational Blueprint of Kimsuky APT for Cyber Espionage'' (68948bbde7ab5603a534b204).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.aryaka.com/docs/reports/aryaka-kimsuky-apt-operational-blueprint.pdf
+tags:
+- data exfiltration
+- reflective dll injection
+- powershell
+- apt43
+- keylogging
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a499b66ea8eb5f32d685980eddacaaf0abc1f9eac7e634229e972c2bf3b03d68
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

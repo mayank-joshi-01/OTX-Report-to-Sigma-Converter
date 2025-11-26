@@ -1,0 +1,20 @@
+title: OTX domain IOC - a5x31ui1z9.top
+id: ec682155-6903-4f1a-95f5-8ebf4839ffc8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: a5x31ui1z9.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

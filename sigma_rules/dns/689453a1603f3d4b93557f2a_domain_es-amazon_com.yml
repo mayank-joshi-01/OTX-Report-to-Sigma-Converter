@@ -1,0 +1,20 @@
+title: OTX domain IOC - es-amazon.com
+id: 2a3bb98c-aabb-4855-9a08-ad9533e3b44b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: es-amazon.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

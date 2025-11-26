@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 61d092e5c7c8200377a8bd9c10288c2766186a11153dcaa04ae9d1200db7b1c5
+id: 8e306423-bcf6-4eb5-87eb-34da8e3a1aae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Threat Actor Profile:
+  Interlock Ransomware'' (689f8d13d92fa7802f9dd44a).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://arcticwolf.com/resources/blog/threat-actor-profile-interlock-ransomware
+tags:
+- ransomware
+- social engineering
+- interlock rat
+- systembc
+- compromised websites
+- nodesnake rat
+- cobalt strike
+- double extortion
+- trycloudflare
+- clickfix
+- powershell
+- remote access trojan
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 61d092e5c7c8200377a8bd9c10288c2766186a11153dcaa04ae9d1200db7b1c5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

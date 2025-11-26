@@ -1,0 +1,34 @@
+title: OTX domain IOC - ingas.rs
+id: 73b4655a-da95-4040-8336-ca83e78e5873
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68cd617b3eb5b1212d11643d).
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab
+tags:
+- fsb
+- pterographin
+- ukraine
+- pterolnk
+- pteroeffigy
+- apt
+- collaboration
+- pteroodd
+- kazuar
+- pteropaste
+- cyberespionage
+- russia
+- pterostew
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ingas.rs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

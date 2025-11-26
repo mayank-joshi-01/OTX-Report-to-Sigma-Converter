@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 47ecaab5cd6b26fe18d9759a9392bce81ba379817c53a3a468fe9060a076f8ca
+id: ed170b53-fcf5-46d5-9386-787760fa9c5c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Link up, lift up,
+  level up' (68b0eaf610ccc95f5992dca8).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://blog.talosintelligence.com/link-up-lift-up-level-up/
+tags:
+- education
+- promptlock
+- networking
+- conferences
+- ransomware
+- community
+- cybersecurity
+- vulnerabilities
+- professional development
+- cve-2025-48384
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 47ecaab5cd6b26fe18d9759a9392bce81ba379817c53a3a468fe9060a076f8ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

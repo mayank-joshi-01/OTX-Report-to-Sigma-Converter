@@ -1,0 +1,20 @@
+title: OTX domain IOC - aprovadorastreio.site
+id: 36a40963-b3d1-4f48-86cc-e4339aa08374
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aprovadorastreio.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

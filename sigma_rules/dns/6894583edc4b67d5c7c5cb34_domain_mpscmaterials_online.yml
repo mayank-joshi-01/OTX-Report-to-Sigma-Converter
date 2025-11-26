@@ -1,0 +1,20 @@
+title: OTX domain IOC - mpscmaterials.online
+id: 7a16b7b7-5487-455b-86e5-5174968d848e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mpscmaterials.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

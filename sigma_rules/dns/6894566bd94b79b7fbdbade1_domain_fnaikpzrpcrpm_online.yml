@@ -1,0 +1,20 @@
+title: OTX domain IOC - fnaikpzrpcrpm.online
+id: d286f29a-7d60-4fb3-a255-829b9cf8eb16
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fnaikpzrpcrpm.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

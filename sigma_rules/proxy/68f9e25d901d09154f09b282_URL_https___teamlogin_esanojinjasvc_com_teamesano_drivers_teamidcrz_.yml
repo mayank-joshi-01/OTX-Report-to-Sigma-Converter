@@ -1,0 +1,23 @@
+title: OTX URL IOC - https://teamlogin.esanojinjasvc.com/teamesano/drivers/teamidcrz/
+id: 8b80999d-60a3-4901-8d9a-4e4df490b5b0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bitter (APT-Q-37)
+  uses diverse means to deliver new backdoor components' (68f9e25d901d09154f09b282).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://ti.qianxin.com/blog/articles/bitter-uses-diverse-means-to-deliver-new-backdoor-components-en
+tags:
+- winrar vulnerability
+- apt-q-37
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://teamlogin.esanojinjasvc.com/teamesano/drivers/teamidcrz/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

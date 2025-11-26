@@ -1,0 +1,30 @@
+title: OTX domain IOC - reward-aave.us
+id: 1d838498-1dec-4486-99d6-a62b0a28f651
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cybercriminals Abuse
+  AI Website Creation App For Phishing' (68a66a49869588c8cfb1af6a).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing
+tags:
+- ai-generated websites
+- malware delivery
+- cryptocurrency
+- tycoon
+- credential theft
+- doiloader
+- zgrat
+- phishing
+- lovable platform
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: reward-aave.us
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

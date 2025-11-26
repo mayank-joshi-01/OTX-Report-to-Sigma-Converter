@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - c1cdca4f765f38675a4c4dfc5e5f7e59
+id: 86dacd07-c91a-4b46-85ff-b2dc558a6290
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A New Threat Actor
+  Targeting Geopolitical Hotbeds' (689b565c2e425682d6ad72ef).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://businessinsights.bitdefender.com/curly-comrades-new-threat-actor-targeting-geopolitical-hotbeds
+tags:
+- georgia
+- clsid hijacking
+- moldova
+- mucoragent
+- backdoor
+- resocks
+- proxy tools
+- lateral movement
+- credential theft
+- russia
+- geopolitical
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c1cdca4f765f38675a4c4dfc5e5f7e59
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

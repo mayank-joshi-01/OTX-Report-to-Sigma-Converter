@@ -1,0 +1,20 @@
+title: OTX domain IOC - corporatefinanceadvisors.site
+id: 185ecac4-5d99-40b9-8f8c-e2c5396ce834
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: corporatefinanceadvisors.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

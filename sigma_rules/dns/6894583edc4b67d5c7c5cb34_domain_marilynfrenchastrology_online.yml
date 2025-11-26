@@ -1,0 +1,20 @@
+title: OTX domain IOC - marilynfrenchastrology.online
+id: 45afeeb5-527b-43f9-8a70-72e30f98eea3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: marilynfrenchastrology.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

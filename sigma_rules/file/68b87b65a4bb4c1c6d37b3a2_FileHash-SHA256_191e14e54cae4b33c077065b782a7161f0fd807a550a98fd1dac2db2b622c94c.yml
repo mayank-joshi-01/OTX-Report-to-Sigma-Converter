@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 191e14e54cae4b33c077065b782a7161f0fd807a550a98fd1dac2db2b622c94c
+id: 94a9e3fc-20dd-4d01-b3a1-51ea392138c7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Three Lazarus RATs
+  coming for your cheese' (68b87b65a4bb4c1c6d37b3a2).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://blog.fox-it.com/2025/09/01/three-lazarus-rats-coming-for-your-cheese
+tags:
+- financial
+- rat
+- themeforestrat
+- zero-day
+- remotepe
+- poolrat
+- pondrat
+- cryptocurrency
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 191e14e54cae4b33c077065b782a7161f0fd807a550a98fd1dac2db2b622c94c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

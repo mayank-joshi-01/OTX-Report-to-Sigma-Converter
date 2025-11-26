@@ -1,0 +1,20 @@
+title: OTX domain IOC - yoxffovtpvwtr.online
+id: dc635714-e8dd-4ff8-ac2c-77ad1fcf3522
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yoxffovtpvwtr.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

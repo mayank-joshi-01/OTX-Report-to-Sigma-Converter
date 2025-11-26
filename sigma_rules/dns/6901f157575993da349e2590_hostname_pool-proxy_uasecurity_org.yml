@@ -1,0 +1,26 @@
+title: OTX hostname IOC - pool-proxy.uasecurity.org
+id: 48b2532c-2437-470d-9772-fe5e2278f197
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GHOSTGRAB ANDROID
+  MALWARE' (6901f157575993da349e2590).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://www.cyfirma.com/research/ghostgrab-android-malware
+tags:
+- ghostgrab
+- cryptocurrency mining
+- banking trojan
+- sms interception
+- android
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pool-proxy.uasecurity.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

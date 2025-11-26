@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - a45ab1a9dec488278ee9682735d42d61dfc38b9e
+id: bbe8041f-9eb6-4c43-a35a-9dcc574bb14e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Closer Look at Outlook
+  Macros and More' (6918053de7168eb74ccc9461).
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://www.splunk.com/en_us/blog/security/notdoor-insights-a-closer-look-at-outlook-macros-and-more.html
+tags:
+- backdoor
+- c2
+- powershell
+- registry modification
+- notdoor
+- dll sideloading
+- outlook macros
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a45ab1a9dec488278ee9682735d42d61dfc38b9e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

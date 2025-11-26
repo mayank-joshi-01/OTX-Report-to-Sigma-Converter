@@ -1,0 +1,20 @@
+title: OTX domain IOC - ytt9s8g9y1.live
+id: a32bea7a-a761-4ed6-896c-7b8dddcc0381
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ytt9s8g9y1.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

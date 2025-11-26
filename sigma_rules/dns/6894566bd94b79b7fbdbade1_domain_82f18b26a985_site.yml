@@ -1,0 +1,20 @@
+title: OTX domain IOC - 82f18b26a985.site
+id: 4ea985c8-fc7d-4994-b6f5-768740239df7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 82f18b26a985.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

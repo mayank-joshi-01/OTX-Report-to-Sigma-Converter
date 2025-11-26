@@ -1,0 +1,20 @@
+title: OTX domain IOC - bespokewireandrope.online
+id: 2ab1d3d9-2623-4d4a-a8bc-0db5df5d4342
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bespokewireandrope.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

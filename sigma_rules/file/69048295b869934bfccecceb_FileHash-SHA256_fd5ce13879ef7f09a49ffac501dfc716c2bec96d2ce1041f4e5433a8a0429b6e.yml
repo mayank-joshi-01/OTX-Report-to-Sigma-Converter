@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - fd5ce13879ef7f09a49ffac501dfc716c2bec96d2ce1041f4e5433a8a0429b6e
+id: 427b1b43-9b0a-43ff-9cef-82483e984be8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New wave of cyberattacks
+  by APT group Cloud Atlas on Russia's government sector' (69048295b869934bfccecceb).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.ptsecurity.com/research/pt-esc-threat-intelligence/novaya-volna-kiberatak-apt-gruppirovki-cloud-atlas-na-gosudarstvennyj-sektor-rossii/
+tags:
+- bec attacks
+- powershower
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fd5ce13879ef7f09a49ffac501dfc716c2bec96d2ce1041f4e5433a8a0429b6e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

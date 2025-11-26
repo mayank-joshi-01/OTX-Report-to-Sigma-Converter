@@ -1,0 +1,20 @@
+title: OTX domain IOC - vs4muqblew9pkih7r9wyutlxmdkbg.ax
+id: 82be2b6f-35b7-43b0-b2eb-32566858b417
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vs4muqblew9pkih7r9wyutlxmdkbg.ax
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

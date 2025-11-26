@@ -1,0 +1,25 @@
+title: OTX URL IOC - http://shumoizolyaciya.12volt.ua
+id: daa69797-5c2e-4726-be83-21031304b114
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Linuxsys Cryptominer'
+  (6879f96c1e20b47d8569ff16).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.vulncheck.com/blog/linuxsys-cryptominer
+tags:
+- cryptomining
+- xmrig
+- linuxsys
+- compromised websites
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://shumoizolyaciya.12volt.ua
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

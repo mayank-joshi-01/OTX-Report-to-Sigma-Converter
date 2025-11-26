@@ -1,0 +1,25 @@
+title: OTX domain IOC - megha.top
+id: 986e2c42-de41-4727-88d9-56b8b8142308
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: megha.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

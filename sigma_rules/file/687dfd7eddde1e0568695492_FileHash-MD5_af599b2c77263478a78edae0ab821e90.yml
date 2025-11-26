@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - af599b2c77263478a78edae0ab821e90
+id: 962deb10-8d49-4d3e-b34f-2d907a7c11d4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ghost Crypt Powers
+  PureRAT with Hypnosis' (687dfd7eddde1e0568695492).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://github.com/eSentire/iocs/blob/main/PureRAT/PureRAT_IOCs_27-06-2025.txt
+- https://www.esentire.com/blog/ghost-crypt-powers-purerat-with-hypnosis
+tags:
+- remote access trojan
+- purerat
+- ghostcrypt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: af599b2c77263478a78edae0ab821e90
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

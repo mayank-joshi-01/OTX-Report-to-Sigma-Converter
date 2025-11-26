@@ -1,0 +1,20 @@
+title: OTX domain IOC - ramenmura.site
+id: 5f29e8c8-1a55-4815-a71f-7836e8b3f156
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ramenmura.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX IPv4 IOC - 8.212.132.120
+id: a969e5d1-0536-48db-b87f-b2c21e65f9e2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PlushDaemon compromises
+  network devices for adversary-in-the-middle attacks' (691e322b7508a5264ba48186).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/plushdaemon-compromises-network-devices-for-adversary-in-the-middle-attacks
+tags:
+- slowstepper
+- apt
+- china
+- littledaemon
+- software update hijacking
+- adversary-in-the-middle
+- edgestepper
+- espionage
+- network implant
+- dns hijacking
+- daemoniclogistics
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 8.212.132.120
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

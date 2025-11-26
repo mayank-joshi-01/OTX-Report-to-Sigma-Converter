@@ -1,0 +1,20 @@
+title: OTX domain IOC - rcdesignfolio.online
+id: 65e33524-ed69-43de-9189-1ad3b0bcbaaf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rcdesignfolio.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lovexbtar.click
+id: dc9f5277-752e-44f6-aa2d-126b18b1242b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lovexbtar.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

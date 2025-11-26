@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptocards.online
+id: 4f8c6f31-0cb3-4a5a-b012-d52b061ce033
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptocards.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,23 @@
+title: OTX URL IOC - https://modgovindia.com/CDS
+id: 769df2cb-bcf6-40d0-b71e-e4a85a42c6ed
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TransparentTribe Targets
+  Indian Military with DeskRAT Malware' (68faa2fc3b968f29851e7255).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://blog.sekoia.io/transparenttribe-targets-indian-military-organisations-with-deskrat
+tags:
+- deskrat
+- government
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://modgovindia.com/CDS
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

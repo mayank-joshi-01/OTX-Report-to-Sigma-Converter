@@ -1,0 +1,20 @@
+title: OTX domain IOC - rfuxra.net
+id: 82cb3a5d-1e4e-41d5-9b0e-a76c7f77a0cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rfuxra.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

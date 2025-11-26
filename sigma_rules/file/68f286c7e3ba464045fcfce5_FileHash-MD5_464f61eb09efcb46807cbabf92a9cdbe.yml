@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 464f61eb09efcb46807cbabf92a9cdbe
+id: 519d5374-5390-43f7-b25d-120d8119254c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Tracking Malware
+  and Attack Expansion: A Hacker Group''s Journey across Asia'' (68f286c7e3ba464045fcfce5).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://www.fortinet.com/blog/threat-research/tracking-malware-and-attack-expansion-a-hacker-groups-journey-across-asia
+tags:
+- winos
+- phishing
+- task scheduler
+- multi-stage attack
+- holdinghands
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 464f61eb09efcb46807cbabf92a9cdbe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

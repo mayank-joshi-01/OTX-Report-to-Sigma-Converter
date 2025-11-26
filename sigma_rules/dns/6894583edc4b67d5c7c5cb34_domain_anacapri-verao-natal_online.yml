@@ -1,0 +1,20 @@
+title: OTX domain IOC - anacapri-verao-natal.online
+id: a01342d0-093a-4790-a1e7-49b6451df888
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: anacapri-verao-natal.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 29y7rzpxb5j5vcq6.shop
+id: a78f7411-59ee-493c-ac46-9a598c361d4a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 29y7rzpxb5j5vcq6.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

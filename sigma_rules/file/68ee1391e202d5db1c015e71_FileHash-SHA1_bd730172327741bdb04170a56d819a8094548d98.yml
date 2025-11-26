@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - bd730172327741bdb04170a56d819a8094548d98
+id: 353fdc2b-5a7d-43ff-ab16-70fe4ea6b817
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: bd730172327741bdb04170a56d819a8094548d98
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

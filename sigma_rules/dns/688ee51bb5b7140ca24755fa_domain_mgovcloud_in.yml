@@ -1,0 +1,30 @@
+title: OTX domain IOC - mgovcloud.in
+id: 72c41eb0-a19a-4eaf-92f0-8ad302552920
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Phishing Campaign
+  Targeting Indian Government Entities' (688ee51bb5b7140ca24755fa).
+author: AlienVault
+date: '2025-08-03'
+references:
+- https://www.cyfirma.com/research/apt36-a-phishing-campaign-targeting-indian-government-entities
+tags:
+- typosquatting
+- phishing
+- government
+- kavach
+- otp
+- defense
+- india
+- pakistan
+- credential-harvesting
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mgovcloud.in
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

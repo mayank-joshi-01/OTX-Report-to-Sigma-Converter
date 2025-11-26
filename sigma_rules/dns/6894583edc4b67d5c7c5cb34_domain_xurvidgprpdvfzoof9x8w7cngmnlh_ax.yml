@@ -1,0 +1,20 @@
+title: OTX domain IOC - xurvidgprpdvfzoof9x8w7cngmnlh.ax
+id: e7d92ca7-c780-4142-978f-322b0ccd612a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xurvidgprpdvfzoof9x8w7cngmnlh.ax
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

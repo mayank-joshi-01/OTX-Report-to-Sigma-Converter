@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 388a8af43039f5f16a0673a6e342fa6ae2402e63ba7569d20d9ba4894dc0ba59
+id: e63d8f7a-5f15-4eb2-9413-d3f60126a8a5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mem3nt0 mori – The
+  Hacking Team is back!' (68ff293ee20a0d1e342936c8).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://securelist.com/forumtroll-apt-hacking-team-dante-spyware/117851/
+tags:
+- zero-day
+- sandbox escape
+- dante
+- leetagent
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 388a8af43039f5f16a0673a6e342fa6ae2402e63ba7569d20d9ba4894dc0ba59
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

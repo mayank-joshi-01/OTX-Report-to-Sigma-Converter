@@ -1,0 +1,20 @@
+title: OTX domain IOC - pelisimg.online
+id: 5ab606c4-267a-4aed-90a9-733a15317e8b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pelisimg.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

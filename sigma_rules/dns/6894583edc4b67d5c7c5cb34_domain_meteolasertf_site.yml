@@ -1,0 +1,20 @@
+title: OTX domain IOC - meteolasertf.site
+id: f129e427-be1a-43c4-b9ed-00d827e5e36e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: meteolasertf.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://microsofstlive.fare.com.de/JmJfd
+id: 4406f8db-0d03-4e00-8e8f-df3fe415f0ae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://microsofstlive.fare.com.de/JmJfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bellylife.store
+id: 5a90952f-1f59-434a-9952-d11df066ea17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bellylife.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

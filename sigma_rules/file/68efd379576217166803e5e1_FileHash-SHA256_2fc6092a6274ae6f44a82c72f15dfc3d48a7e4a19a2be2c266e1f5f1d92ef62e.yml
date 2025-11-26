@@ -1,0 +1,37 @@
+title: OTX FileHash-SHA256 IOC - 2fc6092a6274ae6f44a82c72f15dfc3d48a7e4a19a2be2c266e1f5f1d92ef62e
+id: 643f0521-c15d-459f-973f-efe5b47ed9f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Mysterious Elephant
+  APT: TTPs and tools'' (68efd379576217166803e5e1).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://securelist.com/mysterious-elephant-apt-ttps-and-tools/117596/
+tags:
+- custom tools
+- babshell
+- stom exfiltrator
+- foreign affairs
+- memloader hidendesk
+- whatsapp exploitation
+- memloader edge
+- uplo exfiltrator
+- government targets
+- remcos
+- chromestealer exfiltrator
+- vrat
+- exfiltration
+- apt
+- asia-pacific
+- spear phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2fc6092a6274ae6f44a82c72f15dfc3d48a7e4a19a2be2c266e1f5f1d92ef62e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - socialenterprise.academy
+id: 8f80b6b1-db30-4631-a70d-f67ed15c6adb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: socialenterprise.academy
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

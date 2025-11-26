@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://marketplace24ei.ru/790628.php
+id: d6aa0eac-950e-4274-ab8d-5e7e45c6e512
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://marketplace24ei.ru/790628.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

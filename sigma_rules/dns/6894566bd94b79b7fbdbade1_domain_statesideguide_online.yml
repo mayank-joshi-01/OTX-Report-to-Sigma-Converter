@@ -1,0 +1,20 @@
+title: OTX domain IOC - statesideguide.online
+id: f9e187d6-9cf1-455e-967f-8cf1c781ea9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: statesideguide.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

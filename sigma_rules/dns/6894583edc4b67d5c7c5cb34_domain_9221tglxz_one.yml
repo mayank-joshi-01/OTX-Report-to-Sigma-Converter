@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9221tglxz.one
+id: 506a590a-9f8f-4c0e-bbdb-a2d12f6bcffb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9221tglxz.one
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

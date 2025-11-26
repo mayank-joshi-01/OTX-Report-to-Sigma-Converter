@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - abd73e21cabebdfecfff7294a6f8e4abf9de08cd
+id: 4fc5ecc1-fe35-46f2-a28c-e8e5ef0de5bd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Kimsuky Malware
+  "EndClient RAT": Technical Report and IOCs'' (690db706163c92798ce1bef9).'
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://www.0x0v1.com/endclientrat/
+tags:
+- north korea
+- human rights defenders
+- persistence
+- code signing
+- remote access trojan
+- c2 protocol
+- autoit
+- endclient rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: abd73e21cabebdfecfff7294a6f8e4abf9de08cd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

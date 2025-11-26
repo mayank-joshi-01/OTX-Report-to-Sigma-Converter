@@ -1,0 +1,20 @@
+title: OTX domain IOC - polaverino.site
+id: 2224d950-b711-4e6f-9fd6-63f7dfc12f9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: polaverino.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - base64converter.site
+id: 8401b879-87e3-48e6-8962-7fa0cc3ab326
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: base64converter.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

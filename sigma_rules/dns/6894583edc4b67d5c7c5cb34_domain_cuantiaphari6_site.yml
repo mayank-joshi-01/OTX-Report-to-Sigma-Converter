@@ -1,0 +1,20 @@
+title: OTX domain IOC - cuantiaphari6.site
+id: 855cb0c0-6e19-49e4-814c-fb069d48a80a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cuantiaphari6.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - res4ev7oy1.online
+id: 225d9f89-9a53-4136-9b54-abc5d0d72199
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: res4ev7oy1.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - bcgrt.top
+id: e9c39c1c-207f-49af-8ba0-2c7d22954631
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bcgrt.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

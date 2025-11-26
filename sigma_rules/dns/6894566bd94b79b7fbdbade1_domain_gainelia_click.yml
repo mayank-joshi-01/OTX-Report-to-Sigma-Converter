@@ -1,0 +1,20 @@
+title: OTX domain IOC - gainelia.click
+id: 67c4cb88-2a2e-41b8-aa9b-d66d9e34f89e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gainelia.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

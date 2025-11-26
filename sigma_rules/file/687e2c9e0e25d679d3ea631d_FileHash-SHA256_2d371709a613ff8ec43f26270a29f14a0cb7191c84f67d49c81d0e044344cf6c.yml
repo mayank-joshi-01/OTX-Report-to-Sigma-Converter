@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 2d371709a613ff8ec43f26270a29f14a0cb7191c84f67d49c81d0e044344cf6c
+id: f918b3ae-6834-4ca0-9b1f-f5eb1dc09945
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Wave of SquidLoader
+  Malware Targeting Financial Institutions' (687e2c9e0e25d679d3ea631d).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://www.trellix.com/blogs/research/threat-analysis-squidLoader-still-swimming-under-the-radar/
+tags:
+- squidloader
+- cobalt strike
+- cobalt strike beacon
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2d371709a613ff8ec43f26270a29f14a0cb7191c84f67d49c81d0e044344cf6c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

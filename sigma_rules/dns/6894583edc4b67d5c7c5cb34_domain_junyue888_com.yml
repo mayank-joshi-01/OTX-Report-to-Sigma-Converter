@@ -1,0 +1,20 @@
+title: OTX domain IOC - junyue888.com
+id: d7c874dc-0c16-4129-9942-772135e879a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: junyue888.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 04b5e068e6f0079c2c205a42df8a3a84
+id: 3cb1f529-08d7-4e7c-bc14-03203d3c8b6f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Windows Targeted with
+  Rust Backdoor and Python Loader' (68beeb2264c6088bd05c00a3).
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://www.zscaler.com/blogs/security-research/apt37-targets-windows-rust-backdoor-and-python-loader
+tags:
+- data exfiltration
+- rust backdoor
+- spear phishing
+- surveillance
+- rustonotto
+- fadestealer
+- code injection
+- chinotto
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 04b5e068e6f0079c2c205a42df8a3a84
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

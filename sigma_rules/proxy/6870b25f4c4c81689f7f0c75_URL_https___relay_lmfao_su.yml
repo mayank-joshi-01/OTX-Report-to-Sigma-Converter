@@ -1,0 +1,32 @@
+title: OTX URL IOC - https://relay.lmfao.su
+id: 9bfb7bce-99fb-4e60-b309-d1662bfaacb7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Solidity Language
+  open-source package was used in a $500,000 crypto heist' (6870b25f4c4c81689f7f0c75).
+author: AlienVault
+date: '2025-07-11'
+references:
+- https://securelist.com/open-source-package-for-cursor-ai-turned-into-a-crypto-heist/116908/
+tags:
+- developers
+- heur:trojan-psw.msil.purelogs.gen
+- blockchain
+- open-source
+- vmdetector
+- solidity
+- cursor ai
+- cryptocurrency
+- quasar
+- malicious extension
+- data theft
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://relay.lmfao.su
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

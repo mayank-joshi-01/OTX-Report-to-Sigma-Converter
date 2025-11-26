@@ -1,0 +1,20 @@
+title: OTX domain IOC - synapsey.site
+id: c30b9bc1-29cf-4254-90d0-8a4687a92dba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: synapsey.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ecembroidery.online
+id: a496591b-51b5-4616-a43e-3136b1c77f66
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ecembroidery.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

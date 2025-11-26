@@ -1,0 +1,20 @@
+title: OTX domain IOC - shineleadsforyou.site
+id: d78e0781-4201-4527-a6a9-aebdf28ee05b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shineleadsforyou.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

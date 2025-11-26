@@ -1,0 +1,20 @@
+title: OTX domain IOC - urlfy.me
+id: f384aaee-099b-401a-9e5f-68b73f3a2302
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: urlfy.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

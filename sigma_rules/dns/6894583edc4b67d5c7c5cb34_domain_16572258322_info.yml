@@ -1,0 +1,20 @@
+title: OTX domain IOC - 16572258322.info
+id: ace0b20b-e851-486e-9444-0cc21081705e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 16572258322.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

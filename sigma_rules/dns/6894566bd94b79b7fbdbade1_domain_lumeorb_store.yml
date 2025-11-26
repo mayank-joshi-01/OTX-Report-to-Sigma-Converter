@@ -1,0 +1,20 @@
+title: OTX domain IOC - lumeorb.store
+id: f7442a50-49d9-45ce-a0bd-46da6e7e6f72
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lumeorb.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

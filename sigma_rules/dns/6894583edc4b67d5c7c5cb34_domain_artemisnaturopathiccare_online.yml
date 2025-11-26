@@ -1,0 +1,20 @@
+title: OTX domain IOC - artemisnaturopathiccare.online
+id: 67371aa7-a5d6-4eff-9a23-4f6df7ec1248
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: artemisnaturopathiccare.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

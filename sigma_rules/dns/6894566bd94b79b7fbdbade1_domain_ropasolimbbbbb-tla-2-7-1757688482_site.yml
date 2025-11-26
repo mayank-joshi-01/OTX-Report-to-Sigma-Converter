@@ -1,0 +1,20 @@
+title: OTX domain IOC - ropasolimbbbbb-tla-2-7-1757688482.site
+id: 176350b9-a6b4-43c8-bcd9-0ca61193e212
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ropasolimbbbbb-tla-2-7-1757688482.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - home-renovation-1525.online
+id: 15881f28-3e9e-486d-9c22-a3fd482f302c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: home-renovation-1525.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxe-jewelry.online
+id: bfd55522-f7e3-4d57-9e30-b1d7546ba4c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxe-jewelry.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

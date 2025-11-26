@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 497ed5bca59fa6c01f80d55c5f528a40daff4e4afddfbe58dbd452c45d4866a3
+id: afd0cd65-d446-4240-ad04-422de883f00e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Potentially Unwanted
+  Applications (PUAs) weaponized for covert delivery' (68da3d2fbeb1286aa4f67c07).
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://fieldeffect.com/blog/potentially-unwanted-applications
+tags:
+- pua
+- neutralinojs
+- imagelooker
+- cve-2025-0411
+- digital-signing
+- trojanized-productivity-tools
+- code-signing-abuse
+- calendaromatic
+- seo-poisoning
+- malvertising
+- 7-zip
+- browser-hijacker
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 497ed5bca59fa6c01f80d55c5f528a40daff4e4afddfbe58dbd452c45d4866a3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

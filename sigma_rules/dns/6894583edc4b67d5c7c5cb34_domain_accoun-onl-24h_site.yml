@@ -1,0 +1,20 @@
+title: OTX domain IOC - accoun-onl-24h.site
+id: 53744c73-4e29-4235-8c46-3067c23f950a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: accoun-onl-24h.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

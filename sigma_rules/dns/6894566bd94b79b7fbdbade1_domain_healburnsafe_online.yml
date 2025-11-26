@@ -1,0 +1,20 @@
+title: OTX domain IOC - healburnsafe.online
+id: 64e8863f-c1ed-4eef-a750-bd7e51f1a395
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: healburnsafe.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

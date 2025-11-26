@@ -1,0 +1,20 @@
+title: OTX domain IOC - y71hem8g7x.top
+id: 17cc5756-3eb4-4bd0-8973-7337f0c30225
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y71hem8g7x.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

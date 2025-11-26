@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 003ea91e9f52ecfdc3aadb2732e9b54c
+id: a8c7631f-d4cc-4f73-b9b9-ad862fed5fc7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kimsuky's Ongoing
+  Evolution of KimJongRAT and Expanding Threats' (6924489d963d7a76a737f173).
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.enki.co.kr/en/media-center/blog/kimsuky-s-ongoing-evolution-of-kimjongrat-and-expanding-threats
+tags:
+- spear-phishing
+- browser credentials
+- north korea
+- babyshark
+- kimjongrat
+- powershell
+- pe executable
+- keylogging
+- data exfiltration
+- credential theft
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 003ea91e9f52ecfdc3aadb2732e9b54c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

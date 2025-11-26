@@ -1,0 +1,26 @@
+title: OTX IPv4 IOC - 139.99.85.213
+id: 4c1a8fe5-7ff8-4e79-bd35-79d7f6502212
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Loader Executing
+  TorNet and PureHVNC' (6904820b4fdb3fddd4d310fd).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://sect.iij.ad.jp/en/2025/10/loader-executing-tornet-and-purehvnc/
+tags:
+- purehvnc
+- loader
+- murmurhash2
+- code injection
+- tornet
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 139.99.85.213
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - clothingonline0809.online
+id: 3ed63df9-3a85-4892-8624-258d65b574f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clothingonline0809.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

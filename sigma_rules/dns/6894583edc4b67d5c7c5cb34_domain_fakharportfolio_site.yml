@@ -1,0 +1,20 @@
+title: OTX domain IOC - fakharportfolio.site
+id: 4f511025-e435-4c42-8973-3f692db1a264
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fakharportfolio.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

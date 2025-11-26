@@ -1,0 +1,30 @@
+title: OTX hostname IOC - www.p9-car.com
+id: 649cb4fa-948f-4a94-8f03-e86e003a1cd3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT24  Pivot to Multi-Vector
+  Attacks' (691f6f351b8c5d05831416d7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/apt24-pivot-to-multi-vector-attacks
+tags:
+- badaudio
+- phishing
+- obfuscation
+- cobalt strike
+- cobalt strike beacon
+- china
+- strategic web compromise
+- cyber espionage
+- supply chain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.p9-car.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

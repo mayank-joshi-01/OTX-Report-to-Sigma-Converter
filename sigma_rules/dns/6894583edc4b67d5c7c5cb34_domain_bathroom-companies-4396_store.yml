@@ -1,0 +1,20 @@
+title: OTX domain IOC - bathroom-companies-4396.store
+id: d872535b-39d4-488b-8ed3-497233c41bc5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bathroom-companies-4396.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

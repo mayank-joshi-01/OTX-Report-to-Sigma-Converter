@@ -1,0 +1,20 @@
+title: OTX domain IOC - cinta777yes.site
+id: 0e8cf05d-8052-4f9f-89b8-01f5f25299c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cinta777yes.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

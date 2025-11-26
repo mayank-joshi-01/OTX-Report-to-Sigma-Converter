@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 8082956ace8b016ae8ce16e4a777fe347c7f80f8a576a6f935f9d636a30204e7
+id: cb23c7af-d881-42c1-8ecb-dcb7d8a2e221
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'WinRAR Directory Traversal
+  & NTFS ADS Vulnerabilities (CVE-2025-6218 & CVE-2025-8088)' (68aca47585bdf707090e4290).
+author: AlienVault
+date: '2025-08-25'
+references:
+- https://www.seqrite.com/blog/winrar-directory-traversal-ntfs-ads-vulnerabilities-cve-2025-6218-cve-2025-8088/
+tags:
+- remote code execution
+- zero-day
+- cve-2025-6218
+- winrar
+- cve-2025-8088
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8082956ace8b016ae8ce16e4a777fe347c7f80f8a576a6f935f9d636a30204e7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

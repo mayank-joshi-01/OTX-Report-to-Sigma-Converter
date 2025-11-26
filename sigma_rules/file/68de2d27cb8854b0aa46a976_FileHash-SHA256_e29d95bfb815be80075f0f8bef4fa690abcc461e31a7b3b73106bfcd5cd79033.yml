@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - e29d95bfb815be80075f0f8bef4fa690abcc461e31a7b3b73106bfcd5cd79033
+id: 3dde3065-a3bd-4295-99b0-b5dee778afee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Analysis: AI-powered
+  Ransomware from APT Group'' (68de2d27cb8854b0aa46a976).'
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://any.run/cybersecurity-blog/funklocker-malware-analysis/
+tags:
+- ai-assisted
+- funklocker
+- powershell
+- encryption
+- process-disruption
+- ransomware
+- system-abuse
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: e29d95bfb815be80075f0f8bef4fa690abcc461e31a7b3b73106bfcd5cd79033
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

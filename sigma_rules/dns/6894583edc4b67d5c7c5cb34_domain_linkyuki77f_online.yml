@@ -1,0 +1,20 @@
+title: OTX domain IOC - linkyuki77f.online
+id: 7aa0f2e6-61e3-4702-82b4-32032546e267
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: linkyuki77f.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

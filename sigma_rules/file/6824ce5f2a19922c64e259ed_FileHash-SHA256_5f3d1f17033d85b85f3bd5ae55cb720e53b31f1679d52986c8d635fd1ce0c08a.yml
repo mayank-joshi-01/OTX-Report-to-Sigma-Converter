@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - 5f3d1f17033d85b85f3bd5ae55cb720e53b31f1679d52986c8d635fd1ce0c08a
+id: 481f16cb-a84c-40de-8325-a8dac6be5ca1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'China-Nexus Nation
+  State Actors Exploit SAP NetWeaver (CVE-2025-31324) to Target Critical Infrastructures'
+  (6824ce5f2a19922c64e259ed).
+author: AlienVault
+date: '2025-05-14'
+references:
+- https://blog.eclecticiq.com/china-nexus-nation-state-actors-exploit-sap-netweaver-cve-2025-31324-to-target-critical-infrastructures
+tags:
+- sap netweaver
+- unc5174
+- vshell
+- clsta0048
+- webshell
+- snowlight
+- cve202531324
+- sliver
+- azure ad
+- sta-0048
+- apt
+- china-nexus
+- krustyloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5f3d1f17033d85b85f3bd5ae55cb720e53b31f1679d52986c8d635fd1ce0c08a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

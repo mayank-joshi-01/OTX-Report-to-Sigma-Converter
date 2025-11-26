@@ -1,0 +1,23 @@
+title: OTX domain IOC - seeconnectionalive.website
+id: bb5f61f6-cb7b-45e6-b3fb-b00f677d0159
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TransparentTribe Targets
+  Indian Military with DeskRAT Malware' (68faa2fc3b968f29851e7255).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://blog.sekoia.io/transparenttribe-targets-indian-military-organisations-with-deskrat
+tags:
+- deskrat
+- government
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: seeconnectionalive.website
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

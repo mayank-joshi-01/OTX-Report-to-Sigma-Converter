@@ -1,0 +1,28 @@
+title: OTX domain IOC - christianlouboutin2017.top
+id: 34f7396e-fda8-416a-a489-1547a4f9be8d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deploying NetSupport
+  RAT via WordPress & ClickFix' (6870355e6a5f2386068698a0).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://www.cybereason.com/blog/net-support-rat-wordpress-clickfix/
+tags:
+- post-exploitation
+- netsupport rat
+- fake captcha
+- dom manipulation
+- phishing
+- wordpress
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: christianlouboutin2017.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

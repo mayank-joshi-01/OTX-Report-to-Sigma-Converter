@@ -1,0 +1,20 @@
+title: OTX domain IOC - ydoekexzpcxdf.online
+id: 0b70709e-00ee-45eb-a807-0dbd5267c439
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ydoekexzpcxdf.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

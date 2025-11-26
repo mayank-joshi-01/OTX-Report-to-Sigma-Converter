@@ -1,0 +1,20 @@
+title: OTX domain IOC - zjqip5a1da562f02.top
+id: 33989950-1ff1-4cb3-bb14-8a3d61cf329f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zjqip5a1da562f02.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

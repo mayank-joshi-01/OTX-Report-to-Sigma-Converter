@@ -1,0 +1,27 @@
+title: OTX hostname IOC - news.1ds.me
+id: df862c9d-b34f-4ac5-b2ce-86a0a9d2cd5f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Private Contractor
+  Linked to Multiple Chinese State-Sponsored Groups' (684c80bf12cda0093015c01e).
+author: AlienVault
+date: '2025-06-13'
+references:
+- https://www.recordedfuture.com/ko/research/attributing-i-soon-private-contractor-linked-chinese-state-sponsored-groups
+tags:
+- poison carp
+- contractor
+- redhotel
+- redalpha
+- state-sponsored
+- i-SOON
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: news.1ds.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

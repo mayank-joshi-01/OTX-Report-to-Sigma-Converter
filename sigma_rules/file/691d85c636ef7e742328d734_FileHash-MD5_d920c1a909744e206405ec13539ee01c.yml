@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - d920c1a909744e206405ec13539ee01c
+id: c44fb97d-0eaa-4682-a402-e4aeb728f0df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RONINGLOADER: DragonBreath''s
+  New Path to PPL Abuse'' (691d85c636ef7e742328d734).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.elastic.co/security-labs/roningloader
+tags:
+- driver abuse
+- ppl abuse
+- wdac
+- gh0st rat
+- thread-pool injection
+- apt
+- chinese edr evasion
+- roningloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d920c1a909744e206405ec13539ee01c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

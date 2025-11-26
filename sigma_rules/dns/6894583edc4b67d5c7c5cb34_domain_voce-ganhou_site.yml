@@ -1,0 +1,20 @@
+title: OTX domain IOC - voce-ganhou.site
+id: 45cb92de-669a-4230-b9d1-b87bab60a3da
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: voce-ganhou.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - ca8646dfc88423bb9fffda811160cebe
+id: 9d3f543a-37f6-45e3-b2cc-c3bfd3e2c51a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Bing Search
+  to Ransomware: Bumblebee and AdaptixC2 Deliver Akira'' (68948bbcf88498b35a1a958e).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira
+tags:
+- rustdesk
+- data exfiltration
+- ransomware
+- credential theft
+- seo poisoning
+- lateral movement
+- akira
+- bumblebee
+- it management tools
+- adaptixc2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ca8646dfc88423bb9fffda811160cebe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

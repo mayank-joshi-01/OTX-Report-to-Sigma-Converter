@@ -1,0 +1,20 @@
+title: OTX domain IOC - mysuru247x.online
+id: 43ee68f3-9a4e-44a1-a2b6-37a48ff884c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mysuru247x.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

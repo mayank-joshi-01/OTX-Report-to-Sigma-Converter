@@ -1,0 +1,20 @@
+title: OTX domain IOC - easqtrsqh.org
+id: affbcbd8-0ed8-4e66-b8e8-e4b0280da976
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: easqtrsqh.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - docsreviewsecurelogin-microsoftverify.icu
+id: 44c8ab78-1e09-48d2-a4b3-1557f4df0278
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: docsreviewsecurelogin-microsoftverify.icu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

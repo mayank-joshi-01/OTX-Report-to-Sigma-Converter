@@ -1,0 +1,28 @@
+title: OTX hostname IOC - download02.apdft.online
+id: 0594b2ad-4347-44ff-9c6d-040770b24c6b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: download02.apdft.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

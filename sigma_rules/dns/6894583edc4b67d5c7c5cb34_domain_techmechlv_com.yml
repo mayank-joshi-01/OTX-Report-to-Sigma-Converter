@@ -1,0 +1,20 @@
+title: OTX domain IOC - techmechlv.com
+id: a7782a6b-c027-44d7-9f55-1b965f007bc0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: techmechlv.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

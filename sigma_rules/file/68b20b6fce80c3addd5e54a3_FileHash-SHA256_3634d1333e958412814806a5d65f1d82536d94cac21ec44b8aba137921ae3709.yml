@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 3634d1333e958412814806a5d65f1d82536d94cac21ec44b8aba137921ae3709
+id: 2bbffd25-131d-4067-a371-b082ee30eb57
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Mac malware identified
+  that evades detection through fake PDF conversion tool' (68b20b6fce80c3addd5e54a3).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://9to5mac.com/2025/08/27/mosyle-identifies-new-mac-malware-that-evades-detection-through-fake-pdf-conversion-tool
+tags:
+- chrome hijacking
+- apple security
+- mac
+- jscorerunner
+- mosyle
+- zero-day threat
+- two-stage infection
+- fileripple.com
+- pdf conversion
+- browser redirection
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3634d1333e958412814806a5d65f1d82536d94cac21ec44b8aba137921ae3709
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

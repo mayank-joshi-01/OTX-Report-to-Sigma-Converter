@@ -1,0 +1,20 @@
+title: OTX domain IOC - njemacka-austria.online
+id: 28ca95c8-e225-4d35-9194-19ac25c9e2dd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: njemacka-austria.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

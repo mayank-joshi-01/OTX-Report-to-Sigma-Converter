@@ -1,0 +1,33 @@
+title: OTX domain IOC - ferntier.com
+id: c81c0782-d86e-4251-bc34-1e71bafaadc0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Proxyware Malware
+  Being Distributed on YouTube Video Download Site' (68a84f04510bd6992ad887e0).
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://asec.ahnlab.com/en/89787
+tags:
+- youtube
+- digitalpulse
+- task scheduler
+- bandwidth
+- downloader
+- c&c
+- nodejs
+- honeygain
+- proxyware
+- javascript
+- infatica
+- malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ferntier.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

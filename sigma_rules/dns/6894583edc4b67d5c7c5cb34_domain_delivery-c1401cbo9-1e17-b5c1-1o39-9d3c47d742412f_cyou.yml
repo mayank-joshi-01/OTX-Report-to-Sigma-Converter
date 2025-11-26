@@ -1,0 +1,20 @@
+title: OTX domain IOC - delivery-c1401cbo9-1e17-b5c1-1o39-9d3c47d742412f.cyou
+id: 3ce671e4-51be-4343-afc4-b355e48c4076
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: delivery-c1401cbo9-1e17-b5c1-1o39-9d3c47d742412f.cyou
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

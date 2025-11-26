@@ -1,0 +1,20 @@
+title: OTX domain IOC - apperi.space
+id: 13ce3bec-b7c6-437d-859e-c1a0fd4ab36d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: apperi.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,38 @@
+title: OTX FileHash-MD5 IOC - 0867745cbc4568e97d050b905a4caa0b
+id: 2a94bb8e-9378-4d34-b880-fdf7d3357dc7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Phantom Taurus:
+  A New Chinese Nexus APT and the Discovery of the NET-STAR Malware Suite'' (68dc119747c51064f96051fc).'
+author: AlienVault
+date: '2025-09-30'
+references:
+- https://unit42.paloaltonetworks.com/phantom-taurus/
+tags:
+- specter
+- telecommunications
+- africa
+- iiservercore
+- chinese apt
+- assemblyexecuter
+- ntospy
+- china chopper
+- gh0st rat
+- asia
+- espionage
+- government
+- middle east
+- plugx
+- net-star
+- iis backdoor
+- database targeting
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0867745cbc4568e97d050b905a4caa0b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

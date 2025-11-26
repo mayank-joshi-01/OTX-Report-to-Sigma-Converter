@@ -1,0 +1,20 @@
+title: OTX domain IOC - cuerpolatiino.store
+id: 585f69a6-31b5-481b-bf18-7e395177e4fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cuerpolatiino.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

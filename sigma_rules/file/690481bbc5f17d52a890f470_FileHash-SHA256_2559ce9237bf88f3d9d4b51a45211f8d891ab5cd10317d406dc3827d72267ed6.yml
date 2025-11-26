@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 2559ce9237bf88f3d9d4b51a45211f8d891ab5cd10317d406dc3827d72267ed6
+id: b3cf9fe6-4669-498a-aef4-df054e13595f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Case of ActiveMQ Vulnerability
+  Exploitation to Install Sharpire (Kinsing)' (690481bbc5f17d52a890f470).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://asec.ahnlab.com/en/90811/
+tags:
+- cryptocurrency mining
+- sharpire
+- xmrig
+- h2miner
+- activemq
+- powershell empire
+- cobaltstrike
+- cve-2023-46604
+- meterpreter
+- vulnerability exploitation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2559ce9237bf88f3d9d4b51a45211f8d891ab5cd10317d406dc3827d72267ed6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

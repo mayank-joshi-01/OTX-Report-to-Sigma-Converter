@@ -1,0 +1,20 @@
+title: OTX domain IOC - lifestyle-finance.online
+id: 32290288-7eff-4108-8f15-398198742c91
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lifestyle-finance.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dog-executive.online
+id: 1c056db9-c563-4a7a-b952-03df79b0ab45
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dog-executive.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

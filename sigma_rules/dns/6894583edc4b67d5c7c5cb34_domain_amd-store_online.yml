@@ -1,0 +1,20 @@
+title: OTX domain IOC - amd-store.online
+id: 8456e984-d94a-4cd7-b52d-5c9883af5b20
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amd-store.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

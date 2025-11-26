@@ -1,0 +1,20 @@
+title: OTX domain IOC - jeetbuzzapk.site
+id: 17a1de44-6ed9-4fb1-8d0d-9ba21c677c31
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jeetbuzzapk.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

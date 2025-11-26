@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptoincomeclub.com
+id: 9c6f926f-e6a9-4795-8b50-50373ae0218a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptoincomeclub.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

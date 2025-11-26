@@ -1,0 +1,24 @@
+title: OTX domain IOC - validate-api.com
+id: 9bf557c3-b6f3-4dfa-b347-0866295b5e82
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: validate-api.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

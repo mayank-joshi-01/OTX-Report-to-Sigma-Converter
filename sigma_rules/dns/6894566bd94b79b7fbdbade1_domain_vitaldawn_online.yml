@@ -1,0 +1,20 @@
+title: OTX domain IOC - vitaldawn.online
+id: a76ac9cc-c7c7-43b5-b253-6b93c8105658
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vitaldawn.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

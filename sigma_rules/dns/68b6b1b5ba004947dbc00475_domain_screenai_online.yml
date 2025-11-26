@@ -1,0 +1,28 @@
+title: OTX domain IOC - screenai.online
+id: 1ce97703-77c4-4626-9708-54e1e8e56e56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CTI Analysis: Malicious
+  Email Campaign'' (68b6b1b5ba004947dbc00475).'
+author: AlienVault
+date: '2025-09-02'
+references:
+- https://dreamgroup.com/blog-cti/
+tags:
+- reconnaissance
+- diplomatic targets
+- iran-nexus
+- oman mfa
+- anti-analysis
+- spear-phishing
+- vba macro
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: screenai.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

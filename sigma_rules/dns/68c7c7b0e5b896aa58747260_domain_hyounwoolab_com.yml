@@ -1,0 +1,30 @@
+title: OTX domain IOC - hyounwoolab.com
+id: aa54356d-092f-49e4-975e-66b4c5effe7d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Driven Deepfake
+  Military ID Fraud Campaign' (68c7c7b0e5b896aa58747260).
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/deepfake
+tags:
+- ai
+- apt
+- deepfake
+- obfuscation
+- south korea
+- spear-phishing
+- autoit
+- chatgpt
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hyounwoolab.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

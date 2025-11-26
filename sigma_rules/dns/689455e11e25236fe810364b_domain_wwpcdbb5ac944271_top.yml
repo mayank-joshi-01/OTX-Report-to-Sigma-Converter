@@ -1,0 +1,20 @@
+title: OTX domain IOC - wwpcdbb5ac944271.top
+id: 7b39013f-f414-446c-b96c-f5a84e123e8c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wwpcdbb5ac944271.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

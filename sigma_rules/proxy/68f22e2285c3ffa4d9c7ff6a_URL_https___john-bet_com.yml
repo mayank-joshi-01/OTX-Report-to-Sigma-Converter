@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://john-bet.com
+id: fa60635d-2f65-46c3-98f8-d8d9db8d3b29
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://john-bet.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX domain IOC - chillchad.xyz
+id: f082ea56-9853-4c6e-8684-805e41a94939
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targets Indian Defense Using Credential-Stealing Malware' (6856c6ec76846d013ef77cc6).
+author: AlienVault
+date: '2025-06-21'
+references:
+- https://www.cyfirma.com/research/apt36-phishing-campaign-targets-indian-defense-using-credential-stealing-malware
+tags:
+- indian defense
+- transparent tribe
+- pdf
+- phishing
+- cyber espionage
+- pakistan
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chillchad.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

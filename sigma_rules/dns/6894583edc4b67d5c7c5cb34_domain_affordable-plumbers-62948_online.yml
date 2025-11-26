@@ -1,0 +1,20 @@
+title: OTX domain IOC - affordable-plumbers-62948.online
+id: 775336df-c4b2-4ae3-bfa9-2b5b2ab97b43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: affordable-plumbers-62948.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 8c893331a5e01e0c99a7ad0f7f1cbb9418a86d4a
+id: ca9bd0ab-8822-4c42-96c3-e407052f26b8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'FAKE TELEGRAM PREMIUM
+  SITE DISTRIBUTES NEW LUMMA STEALER VARIANT' (688ee51c244879cbcd8b5826).
+author: AlienVault
+date: '2025-08-03'
+references:
+- https://www.cyfirma.com/research/fake-telegram-premium-site-distributes-new-lumma-stealer-variant
+tags:
+- windows
+- infostealer
+- brand impersonation
+- telegram premium
+- credential theft
+- lumma stealer
+- drive-by download
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 8c893331a5e01e0c99a7ad0f7f1cbb9418a86d4a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

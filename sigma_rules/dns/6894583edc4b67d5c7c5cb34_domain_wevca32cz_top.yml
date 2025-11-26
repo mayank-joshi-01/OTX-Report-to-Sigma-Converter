@@ -1,0 +1,20 @@
+title: OTX domain IOC - wevca32cz.top
+id: 77c6536b-36ac-4cb4-b3c6-7cf1833fbba0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wevca32cz.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

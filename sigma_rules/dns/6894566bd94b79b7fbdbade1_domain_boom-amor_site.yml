@@ -1,0 +1,20 @@
+title: OTX domain IOC - boom-amor.site
+id: cfe16c81-71f1-43f6-9238-e70800a92c39
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: boom-amor.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

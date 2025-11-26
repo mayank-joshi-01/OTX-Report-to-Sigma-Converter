@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - fa3b5be98f3aacabf7952e4255c1e4835cee1faf66358d2cfe241df7d9231f27
+id: de3e41c9-32e2-4762-91f8-bd4f17e0cf21
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fa3b5be98f3aacabf7952e4255c1e4835cee1faf66358d2cfe241df7d9231f27
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

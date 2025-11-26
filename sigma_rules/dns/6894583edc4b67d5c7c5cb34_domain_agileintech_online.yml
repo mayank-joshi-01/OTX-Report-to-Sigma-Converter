@@ -1,0 +1,20 @@
+title: OTX domain IOC - agileintech.online
+id: 7388ee57-e5e8-4a56-924a-4f2b977b2839
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: agileintech.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

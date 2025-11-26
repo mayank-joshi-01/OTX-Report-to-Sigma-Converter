@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - bdca9849d7263d508b7ed4dbbf86bd628932b117b45933cb28a7e78171d05cdd
+id: c295d372-99c9-4403-90f7-5a6d3a9bd960
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LATAM baited into
+  the delivery of PureHVNC' (6904821fa7d50264deb316a4).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.ibm.com/think/x-force/latam-baited-into-delivery-of-purehvnc
+tags:
+- purehvnc
+- hijackloader
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bdca9849d7263d508b7ed4dbbf86bd628932b117b45933cb28a7e78171d05cdd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

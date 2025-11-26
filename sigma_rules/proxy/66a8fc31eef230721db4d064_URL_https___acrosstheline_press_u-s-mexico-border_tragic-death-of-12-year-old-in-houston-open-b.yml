@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://acrosstheline.press/u-s-mexico-border/tragic-death-of-12-year-old-in-houston-open-borders-policy-to-blame
+id: 39889be1-713f-4aa3-9468-12f4a70f1a27
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://acrosstheline.press/u-s-mexico-border/tragic-death-of-12-year-old-in-houston-open-borders-policy-to-blame
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

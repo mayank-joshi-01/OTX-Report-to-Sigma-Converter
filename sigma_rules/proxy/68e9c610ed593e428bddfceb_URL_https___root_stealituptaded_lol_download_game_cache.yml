@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://root.stealituptaded.lol/download/game_cache
+id: 249ea7fd-1cfa-490f-b1fa-590032456a8b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://root.stealituptaded.lol/download/game_cache
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

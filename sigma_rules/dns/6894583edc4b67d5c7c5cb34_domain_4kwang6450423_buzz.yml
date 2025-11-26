@@ -1,0 +1,20 @@
+title: OTX domain IOC - 4kwang6450423.buzz
+id: 5b85f26b-32d4-46d3-baa3-ad551fcd4704
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4kwang6450423.buzz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

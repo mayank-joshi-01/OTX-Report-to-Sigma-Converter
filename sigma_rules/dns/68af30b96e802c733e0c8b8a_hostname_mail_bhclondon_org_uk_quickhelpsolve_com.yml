@@ -1,0 +1,29 @@
+title: OTX hostname IOC - mail.bhclondon.org.uk.quickhelpsolve.com
+id: 3b2d140c-f2bd-4337-9a09-6fcc12c6e242
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mail.bhclondon.org.uk.quickhelpsolve.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

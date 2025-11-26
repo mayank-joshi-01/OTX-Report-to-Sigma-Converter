@@ -1,0 +1,20 @@
+title: OTX domain IOC - wangwangdui.top
+id: 92cf8231-6b3d-44fc-9921-8529e0a42a7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wangwangdui.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

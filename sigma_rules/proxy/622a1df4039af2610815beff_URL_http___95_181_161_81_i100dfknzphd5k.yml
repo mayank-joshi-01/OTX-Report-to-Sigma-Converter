@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://95.181.161.81/i100dfknzphd5k
+id: 31dcfc07-d685-46e2-998b-eec3fbd1fdf5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian linked conglomerate
+  MuddyWater comprised of regionally focused subgroups' (622a1df4039af2610815beff).
+author: AlienVault
+date: '2022-03-10'
+references:
+- https://blog.talosintelligence.com/2022/03/iranian-supergroup-muddywater.html
+tags:
+- APT
+- MuddyWater
+- Iran
+- MalDoc
+- SloughRAT
+- Static Kitten
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://95.181.161.81/i100dfknzphd5k
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

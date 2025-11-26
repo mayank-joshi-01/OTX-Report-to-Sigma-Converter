@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://support.ms-live.us/update/02583235891M49FYUN57
+id: c4fa4ff0-7e8b-41d7-ac38-b061dc31d381
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crypto wasted: BlueNoroff’s
+  ghost mirage of funding and jobs'' (69003b85c217870cc5794cc6).'
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://securelist.com/bluenoroff-apt-campaigns-ghostcall-and-ghosthire/117842
+tags:
+- zoomclutch
+- rootroy
+- sysphon
+- silentsiphon
+- sneakmain
+- cosmicdoor
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://support.ms-live.us/update/02583235891M49FYUN57
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

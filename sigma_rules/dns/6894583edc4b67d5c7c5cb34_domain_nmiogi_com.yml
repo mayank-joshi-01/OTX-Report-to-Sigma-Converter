@@ -1,0 +1,20 @@
+title: OTX domain IOC - nmiogi.com
+id: 7d046180-3d1a-4c8d-9d59-45c99eb8abc9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nmiogi.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - avemcapital.site
+id: 56862728-00b6-4956-9bec-d6873dd901fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: avemcapital.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

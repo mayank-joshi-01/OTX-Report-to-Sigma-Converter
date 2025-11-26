@@ -1,0 +1,20 @@
+title: OTX domain IOC - cqxgjpgjd0dj8ji5qtivgskjhmzge.no
+id: d38a6f2e-c98d-4475-927a-a2a83d74277e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cqxgjpgjd0dj8ji5qtivgskjhmzge.no
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

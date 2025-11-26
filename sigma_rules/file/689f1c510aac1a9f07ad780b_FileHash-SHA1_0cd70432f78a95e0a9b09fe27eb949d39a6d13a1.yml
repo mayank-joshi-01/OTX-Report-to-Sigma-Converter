@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 0cd70432f78a95e0a9b09fe27eb949d39a6d13a1
+id: 083c747a-0b70-4cd2-a6e2-8e4705d4d3ca
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Threat Bulletin:
+  Fire in the Woods – A New Variant of FireWood'' (689f1c510aac1a9f07ad780b).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://intezer.com/blog/threat-bulletin-firewood
+tags:
+- kernel rootkit
+- rat
+- project wood
+- backdoor
+- tea encryption
+- linux
+- firewood
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0cd70432f78a95e0a9b09fe27eb949d39a6d13a1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

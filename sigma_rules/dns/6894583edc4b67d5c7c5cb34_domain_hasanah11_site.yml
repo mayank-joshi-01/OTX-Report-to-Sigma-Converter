@@ -1,0 +1,20 @@
+title: OTX domain IOC - hasanah11.site
+id: 800209f6-d12b-4666-beff-3252209fac6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hasanah11.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - reversegstcalculator.online
+id: 39969672-5b66-440a-a5a2-fa98999f4bdb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: reversegstcalculator.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

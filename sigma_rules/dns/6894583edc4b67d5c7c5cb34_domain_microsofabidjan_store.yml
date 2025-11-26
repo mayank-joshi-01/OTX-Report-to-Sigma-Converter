@@ -1,0 +1,20 @@
+title: OTX domain IOC - microsofabidjan.store
+id: eee7d967-b4cd-4127-9b85-e64e2ffe5d58
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: microsofabidjan.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

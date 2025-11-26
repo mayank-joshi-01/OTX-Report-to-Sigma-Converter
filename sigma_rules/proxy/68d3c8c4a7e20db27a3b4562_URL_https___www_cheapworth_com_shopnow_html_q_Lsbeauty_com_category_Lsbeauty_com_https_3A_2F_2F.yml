@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://www.cheapworth.com/shopnow.html?q=Lsbeauty.com&category=Lsbeauty.com#https%3A%2F%2Fus-go.kelkoogroup.net%2FsitesearchGo%3F.ts%3D1756728361063%26.sig%3DIRkylki8Vem3kFBDybvJQfPwScs-%26affiliationId%3D96981971%26comId%3D100578990%26country%3Dus%26offerId%3Dc9f49c048c5b110774b'
+id: c43bf6f7-861b-4513-92b7-79dc5ab3f08d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.cheapworth.com/shopnow.html?q=Lsbeauty.com&category=Lsbeauty.com#https%3A%2F%2Fus-go.kelkoogroup.net%2FsitesearchGo%3F.ts%3D1756728361063%26.sig%3DIRkylki8Vem3kFBDybvJQfPwScs-%26affiliationId%3D96981971%26comId%3D100578990%26country%3Dus%26offerId%3Dc9f49c048c5b110774b'
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

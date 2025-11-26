@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 1263280c916464c2aa755a81b0f947e769c8a735a74a172157257fca340e1cf4
+id: 49f88809-c943-4dee-8718-27f80eae4c8e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''YUREI RANSOMWARE:
+  THE DIGITAL GHOST'' (68e0e75b99d8512eaf923024).'
+author: AlienVault
+date: '2025-10-04'
+references:
+- https://www.cyfirma.com/research/yurei-ransomware-the-digital-ghost
+tags:
+- yurei
+- ransomware
+- double-extortion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1263280c916464c2aa755a81b0f947e769c8a735a74a172157257fca340e1cf4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

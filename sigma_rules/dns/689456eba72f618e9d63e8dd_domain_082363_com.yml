@@ -1,0 +1,20 @@
+title: OTX domain IOC - 082363.com
+id: e579edb6-59df-42c4-83c7-7116764f8336
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 082363.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

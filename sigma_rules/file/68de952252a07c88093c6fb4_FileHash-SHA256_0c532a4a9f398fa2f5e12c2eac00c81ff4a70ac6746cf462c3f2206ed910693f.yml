@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 0c532a4a9f398fa2f5e12c2eac00c81ff4a70ac6746cf462c3f2206ed910693f
+id: d9b488f0-1794-4f40-a8ff-08f5150f819d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''UAT-8099: Chinese-speaking
+  cybercrime group targets high-value IIS for SEO fraud'' (68de952252a07c88093c6fb4).'
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://blog.talosintelligence.com/uat-8099-chinese-speaking-cybercrime-group-seo-fraud/
+- https://github.com/Cisco-Talos/IOCs/blob/main/2025/09/uat-8099-chinese-speaking-cybercrime-group-seo-fraud.txt
+tags:
+- chinese-speaking
+- web shells
+- data theft
+- seo fraud
+- badiis
+- cybercrime
+- iis servers
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0c532a4a9f398fa2f5e12c2eac00c81ff4a70ac6746cf462c3f2206ed910693f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

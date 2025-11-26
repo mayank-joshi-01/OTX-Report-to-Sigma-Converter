@@ -1,0 +1,20 @@
+title: OTX domain IOC - 5wb7xhpkjh.top
+id: 624804dd-c50e-4a3b-8262-1f0b9c7625aa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 5wb7xhpkjh.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

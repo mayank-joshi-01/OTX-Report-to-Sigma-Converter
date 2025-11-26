@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - cb10953f39723427d697d06550fae2a330d7fff8fc42e034821e4a4c55f5a667
+id: 3a448b61-aa91-47cf-a7b6-2ff4c1b8b47f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''PhantomCard: New
+  NFC-driven Android malware emerging in Brazil'' (689dfd7bcdd65dfb01307de4).'
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://www.threatfabric.com/blogs/phantomcard-new-nfc-driven-android-malware-emerging-in-brazil
+tags:
+- btmob
+- brazil
+- phantomcard
+- malware-as-a-service
+- banking fraud
+- ghostspy
+- card protection
+- android trojan
+- nfc relay
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: cb10953f39723427d697d06550fae2a330d7fff8fc42e034821e4a4c55f5a667
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

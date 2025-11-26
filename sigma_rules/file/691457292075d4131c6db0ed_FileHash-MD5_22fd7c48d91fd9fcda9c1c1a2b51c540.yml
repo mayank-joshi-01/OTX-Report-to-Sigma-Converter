@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 22fd7c48d91fd9fcda9c1c1a2b51c540
+id: 717e81be-d9d8-4d12-8ae6-91de31e2607f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing the Link
+  Between Two Evolving Brazilian Banking Trojans' (691457292075d4131c6db0ed).
+author: AlienVault
+date: '2025-11-12'
+references:
+- https://www.cyberproof.com/blog/maverick-and-coyote-analyzing-the-link-between-two-evolving-brazilian-banking-trojans/
+tags:
+- maverick
+- whatsapp
+- banking trojan
+- .net
+- powershell
+- multi-stage attack
+- coyote
+- obfuscation
+- brazil
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 22fd7c48d91fd9fcda9c1c1a2b51c540
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

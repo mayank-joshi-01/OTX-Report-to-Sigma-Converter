@@ -1,0 +1,20 @@
+title: OTX domain IOC - nxmfff5d77d85bd0.top
+id: 77f40a85-4bef-46ea-840f-268216b0492d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nxmfff5d77d85bd0.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

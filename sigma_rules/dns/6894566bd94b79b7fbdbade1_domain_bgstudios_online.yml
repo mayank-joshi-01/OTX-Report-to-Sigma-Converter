@@ -1,0 +1,20 @@
+title: OTX domain IOC - bgstudios.online
+id: eae20959-39be-449a-9dbd-d874d65d7ff4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bgstudios.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

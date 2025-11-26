@@ -1,0 +1,20 @@
+title: OTX domain IOC - finalizar-compra-con-seguridad.online
+id: f2d384d6-85d8-4c49-a4f4-e429f9f8dd24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: finalizar-compra-con-seguridad.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

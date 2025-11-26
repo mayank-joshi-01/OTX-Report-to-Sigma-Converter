@@ -1,0 +1,20 @@
+title: OTX domain IOC - elegantz.store
+id: a5a68413-a767-4955-bb4d-61d0c062590f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: elegantz.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

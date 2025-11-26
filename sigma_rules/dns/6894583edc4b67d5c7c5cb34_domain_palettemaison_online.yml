@@ -1,0 +1,20 @@
+title: OTX domain IOC - palettemaison.online
+id: 202e9d75-736f-4bbb-a203-6c69ba79f141
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: palettemaison.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

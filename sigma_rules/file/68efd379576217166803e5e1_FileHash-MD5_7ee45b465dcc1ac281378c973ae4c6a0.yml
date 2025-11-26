@@ -1,0 +1,37 @@
+title: OTX FileHash-MD5 IOC - 7ee45b465dcc1ac281378c973ae4c6a0
+id: b43a8513-c3c4-4ae6-b0bd-51ac030b1e5f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Mysterious Elephant
+  APT: TTPs and tools'' (68efd379576217166803e5e1).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://securelist.com/mysterious-elephant-apt-ttps-and-tools/117596/
+tags:
+- custom tools
+- babshell
+- stom exfiltrator
+- foreign affairs
+- memloader hidendesk
+- whatsapp exploitation
+- memloader edge
+- uplo exfiltrator
+- government targets
+- remcos
+- chromestealer exfiltrator
+- vrat
+- exfiltration
+- apt
+- asia-pacific
+- spear phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 7ee45b465dcc1ac281378c973ae4c6a0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

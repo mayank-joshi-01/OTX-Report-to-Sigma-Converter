@@ -1,0 +1,30 @@
+title: OTX hostname IOC - www.cheapworth.com
+id: bb1e17e1-fd3f-4df4-92d4-276ab86c2932
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.cheapworth.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

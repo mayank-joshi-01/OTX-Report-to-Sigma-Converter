@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 86ffd411b42d8d06bdb294f48e79393adeea586c56c5c75c1a68ce6315932881
+id: e1d42acb-3869-49bb-9718-a4cac6d1fc98
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of Zloader Updates' (68d1a617f335188fccdd1b72).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://www.zscaler.com/blogs/security-research/technical-analysis-zloader-updates
+tags:
+- zeus
+- dns-tunneling
+- ransomware
+- zeus-based
+- websockets
+- evasion
+- banking
+- ldap
+- obfuscation
+- zloader
+- trojan
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 86ffd411b42d8d06bdb294f48e79393adeea586c56c5c75c1a68ce6315932881
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

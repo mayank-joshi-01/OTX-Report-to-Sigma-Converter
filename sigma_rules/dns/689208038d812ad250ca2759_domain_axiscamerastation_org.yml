@@ -1,0 +1,30 @@
+title: OTX domain IOC - axiscamerastation.org
+id: 3c5e3175-c610-4735-ab0a-b8aae10ea37f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bumblebee Malware
+  SEO Poisoning Campaign Leads to Akira Ransomware Deployment' (689208038d812ad250ca2759).
+author: AlienVault
+date: '2025-08-05'
+references:
+- https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira/
+tags:
+- lateral movement
+- bumblebee
+- seo poisoning
+- akira ransomware
+- data exfiltration
+- trojanized installers
+- credential dumping
+- akira
+- initial access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: axiscamerastation.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

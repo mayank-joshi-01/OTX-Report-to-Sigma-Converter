@@ -1,0 +1,20 @@
+title: OTX domain IOC - wizio.store
+id: 665d24d0-13fb-4018-bf8a-7d6db6c516da
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wizio.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

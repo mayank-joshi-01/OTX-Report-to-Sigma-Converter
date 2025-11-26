@@ -1,0 +1,20 @@
+title: OTX domain IOC - palmettoshoppingmallus.shop
+id: e6cc3a92-d8f6-4a40-8cb0-839a35e6cb1a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: palmettoshoppingmallus.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

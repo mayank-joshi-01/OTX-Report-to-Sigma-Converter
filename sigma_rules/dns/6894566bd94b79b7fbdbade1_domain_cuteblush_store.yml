@@ -1,0 +1,20 @@
+title: OTX domain IOC - cuteblush.store
+id: 634823db-9d98-45aa-b02d-3544c9910b5e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cuteblush.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

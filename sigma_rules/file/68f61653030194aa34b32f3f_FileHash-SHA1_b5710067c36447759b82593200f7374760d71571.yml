@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA1 IOC - b5710067c36447759b82593200f7374760d71571
+id: 0d596348-4259-4fef-8d7a-c1fa23f5450d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Lunar Spider Expands
+  their Web via FakeCaptcha' (68f61653030194aa34b32f3f).
+author: AlienVault
+date: '2025-10-20'
+references:
+- https://blog.nviso.eu/2025/10/01/lunar-spider-expands-their-web-via-fakecaptcha
+tags:
+- fakecaptcha
+- icedid
+- msi downloader
+- latrodectus
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: b5710067c36447759b82593200f7374760d71571
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

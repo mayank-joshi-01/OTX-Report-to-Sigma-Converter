@@ -1,0 +1,20 @@
+title: OTX hostname IOC - lamaite17.warkloom31.coastview-luxury.com
+id: 7e4fb8e2-7bd6-47a9-8dd5-d9739ca10e87
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lamaite17.warkloom31.coastview-luxury.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - coolbeansclub.site
+id: 69019dcb-4738-4f50-bce6-ce7f57b2b204
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: coolbeansclub.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

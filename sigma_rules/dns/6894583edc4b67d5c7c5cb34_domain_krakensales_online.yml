@@ -1,0 +1,20 @@
+title: OTX domain IOC - krakensales.online
+id: 5caa7e25-43ed-4ee0-9b23-7afb0e2474d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: krakensales.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

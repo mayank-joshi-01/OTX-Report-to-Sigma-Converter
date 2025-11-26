@@ -1,0 +1,20 @@
+title: OTX domain IOC - beautifulfascinators.online
+id: 1540dc67-3b06-40fb-b663-9fec12015a00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: beautifulfascinators.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

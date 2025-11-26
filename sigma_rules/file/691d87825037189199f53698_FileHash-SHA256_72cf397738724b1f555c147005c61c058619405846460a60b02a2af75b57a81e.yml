@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 72cf397738724b1f555c147005c61c058619405846460a60b02a2af75b57a81e
+id: c4e0e6b9-215d-49d2-bcb3-8f882925fd00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''WEBJACK: Evolving
+  IIS Hijacking Campaign Abuses SEO for Fraud and Monetization'' (691d87825037189199f53698).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://labs.withsecure.com/publications/webjack
+tags:
+- badiis
+- latin america
+- chinese threat actor
+- xlanyloader
+- iis hijacking
+- seo poisoning
+- southeast asia
+- m0yv
+- cobalt strike
+- iis modules
+- gambling redirection
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 72cf397738724b1f555c147005c61c058619405846460a60b02a2af75b57a81e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

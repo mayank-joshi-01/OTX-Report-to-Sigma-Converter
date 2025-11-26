@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptozorg.com
+id: 9cc8ed9b-0edd-4764-bbe0-300d24b12b81
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptozorg.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

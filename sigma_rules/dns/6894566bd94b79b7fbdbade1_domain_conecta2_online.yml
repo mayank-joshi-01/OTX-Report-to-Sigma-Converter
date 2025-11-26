@@ -1,0 +1,20 @@
+title: OTX domain IOC - conecta2.online
+id: 70856f8e-750a-4f93-a867-a10e072e45a7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: conecta2.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

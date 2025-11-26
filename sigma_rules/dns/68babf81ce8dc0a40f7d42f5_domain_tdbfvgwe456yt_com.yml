@@ -1,0 +1,29 @@
+title: OTX domain IOC - tdbfvgwe456yt.com
+id: c06fccc5-8064-476c-8d51-83a4f0446626
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Botnet Emerges
+  from the Shadows: NightshadeC2'' (68babf81ce8dc0a40f7d42f5).'
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.esentire.com/blog/new-botnet-emerges-from-the-shadows-nightshadec2
+tags:
+- c2 communication
+- trojanized software
+- uac bypass
+- nightshadec2
+- lumma stealer
+- sandbox evasion
+- keylogging
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tdbfvgwe456yt.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

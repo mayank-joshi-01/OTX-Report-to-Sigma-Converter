@@ -1,0 +1,20 @@
+title: OTX domain IOC - axskltzhgkzrm.online
+id: 422b5e9c-c037-49f6-b0e7-6aae6d9f055e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: axskltzhgkzrm.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

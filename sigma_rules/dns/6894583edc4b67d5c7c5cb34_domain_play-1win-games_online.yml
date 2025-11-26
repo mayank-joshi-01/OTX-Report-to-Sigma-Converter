@@ -1,0 +1,20 @@
+title: OTX domain IOC - play-1win-games.online
+id: 16a74318-ab4f-41c9-a8cc-7d912643a10b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: play-1win-games.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

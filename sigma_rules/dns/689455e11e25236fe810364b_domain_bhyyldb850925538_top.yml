@@ -1,0 +1,20 @@
+title: OTX domain IOC - bhyyldb850925538.top
+id: 5689d0e7-205f-41c5-8e19-dc91e71bc137
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bhyyldb850925538.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX domain IOC - techwisenetwork.com
+id: f2072854-edc4-4bd1-b66a-5a2ce9c24089
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Actors Leverage
+  SEO Poisoning and Malicious Ads to Distribute Backdoored Microsoft Teams Installers'
+  (68de52ef382d67c8bdc97094).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://blackpointcyber.com/blog/malicious-teams-installers-drop-oyster-malware/
+tags:
+- persistence
+- seo poisoning
+- malvertising
+- oyster backdoor
+- microsoft teams
+- c2 communication
+- dll sideloading
+- trojanized installer
+- broomstick
+- oyster
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: techwisenetwork.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

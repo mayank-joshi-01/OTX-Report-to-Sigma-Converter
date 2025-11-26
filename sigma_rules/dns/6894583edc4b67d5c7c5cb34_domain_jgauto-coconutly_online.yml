@@ -1,0 +1,20 @@
+title: OTX domain IOC - jgauto-coconutly.online
+id: 442aba64-f137-4d55-95c0-f30d4b6c4a3d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jgauto-coconutly.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

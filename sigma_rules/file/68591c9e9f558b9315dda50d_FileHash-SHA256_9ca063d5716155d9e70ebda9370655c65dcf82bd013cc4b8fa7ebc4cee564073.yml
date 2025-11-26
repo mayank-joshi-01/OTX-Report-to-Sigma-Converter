@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 9ca063d5716155d9e70ebda9370655c65dcf82bd013cc4b8fa7ebc4cee564073
+id: 8fc05482-6478-4f7e-90a7-41e961f19d18
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The new SparkKitty
+  Trojan spy in the App Store and Google Play' (68591c9e9f558b9315dda50d).
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://securelist.com/sparkkitty-ios-android-malware/116793
+tags:
+- sparkcat
+- china
+- ios
+- southeast asia
+- sparkkitty
+- android
+- cryptocurrency
+- spyware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 9ca063d5716155d9e70ebda9370655c65dcf82bd013cc4b8fa7ebc4cee564073
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

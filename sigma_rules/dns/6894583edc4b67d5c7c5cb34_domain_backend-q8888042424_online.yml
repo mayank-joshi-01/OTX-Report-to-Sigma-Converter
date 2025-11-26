@@ -1,0 +1,20 @@
+title: OTX domain IOC - backend-q8888042424.online
+id: 5d042bdf-1936-499f-887f-3492daf8e795
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: backend-q8888042424.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

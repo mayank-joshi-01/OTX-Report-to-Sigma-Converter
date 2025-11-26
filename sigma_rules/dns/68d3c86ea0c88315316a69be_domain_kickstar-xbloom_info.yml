@@ -1,0 +1,28 @@
+title: OTX domain IOC - kickstar-xbloom.info
+id: a6375543-b068-45cc-aaca-60489d022c35
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Hidden WordPress Backdoors
+  Creating Admin Accounts' (68d3c86ea0c88315316a69be).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://blog.sucuri.net/2025/09/hidden-wordpress-backdoors-creating-admin-accounts.html
+tags:
+- backdoor
+- credential theft
+- stealth
+- debugmaster pro
+- admin accounts
+- wordpress
+- compromise
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kickstar-xbloom.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

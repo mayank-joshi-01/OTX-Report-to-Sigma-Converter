@@ -1,0 +1,41 @@
+title: OTX domain IOC - yyinfo8999.fit
+id: b91b4e94-4282-48d6-b5ee-4c016ab3bd25
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Statistics Report
+  on Malware Targeting Windows Database Servers in Q2 2025' (68962f0d3f4895c81350d372).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://asec.ahnlab.com/en/88920
+tags:
+- hploader
+- database
+- shadowforce
+- coinminer
+- server security
+- ms-sql
+- q2 2025
+- juicypotato
+- cobaltstrike
+- ahnlab smart defense
+- clrshell
+- anydesk
+- mysql
+- gh0strat
+- mykings
+- netcat
+- attack statistics
+- windows
+- loveminer
+- remcos
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yyinfo8999.fit
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

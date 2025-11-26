@@ -1,0 +1,20 @@
+title: OTX domain IOC - plumbfixco.space
+id: 91500933-8d5f-4397-a127-1d4ae3a311c6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: plumbfixco.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

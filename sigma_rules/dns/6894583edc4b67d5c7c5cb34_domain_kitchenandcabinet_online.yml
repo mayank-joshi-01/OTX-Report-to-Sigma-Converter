@@ -1,0 +1,20 @@
+title: OTX domain IOC - kitchenandcabinet.online
+id: 5da5dfc1-af39-4e05-acab-1c23746f0f7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kitchenandcabinet.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

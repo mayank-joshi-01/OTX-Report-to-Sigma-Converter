@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - bdb1b9e37f6467b5f98d151a43f280f319bacf18198b22f55722292a832933ab
+id: 681e771f-0262-4e6b-88c1-95b57e3e7a5f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AdaptixC2: A New
+  Open-Source Framework Leveraged in Real-World Attacks'' (68c1a962edea5cd8c728d65c).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://unit42.paloaltonetworks.com/adaptixc2-post-exploitation-framework/
+tags:
+- data exfiltration
+- c2 framework
+- open-source
+- adaptixc2
+- tunneling
+- ai-generated scripts
+- foggyweb
+- social engineering
+- adversarial emulation
+- post-exploitation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bdb1b9e37f6467b5f98d151a43f280f319bacf18198b22f55722292a832933ab
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

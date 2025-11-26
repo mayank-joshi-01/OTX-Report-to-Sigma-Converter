@@ -1,0 +1,20 @@
+title: OTX domain IOC - femalehealthcare.click
+id: 6df221cb-e29a-4424-94c8-d04bf9a6274b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: femalehealthcare.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

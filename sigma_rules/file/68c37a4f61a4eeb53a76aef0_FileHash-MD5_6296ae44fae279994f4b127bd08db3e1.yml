@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 6296ae44fae279994f4b127bd08db3e1
+id: fd180380-399b-4601-8adf-54c359a4ce33
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Inside the 2025
+  Energy Phishing Wave: Chevron, Conoco, PBF, Phillips 66'' (68c37a4f61a4eeb53a76aef0).'
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://hunt.io/blog/us-energy-phishing-wave-report
+tags:
+- energy sector
+- httrack
+- credential harvesting
+- phishing
+- investment scams
+- keitaro
+- website cloning
+- rhadamanthys
+- domain impersonation
+- brand abuse
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6296ae44fae279994f4b127bd08db3e1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

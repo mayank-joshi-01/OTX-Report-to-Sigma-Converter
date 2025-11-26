@@ -1,0 +1,20 @@
+title: OTX domain IOC - interjcstaffing.online
+id: 92d0513c-48c5-40d7-b176-0023e65eb1c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: interjcstaffing.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

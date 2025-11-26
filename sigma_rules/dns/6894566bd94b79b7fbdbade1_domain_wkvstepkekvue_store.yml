@@ -1,0 +1,20 @@
+title: OTX domain IOC - wkvstepkekvue.store
+id: 0412793a-bf6c-4af4-ae28-f24b1fbb433b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wkvstepkekvue.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX domain IOC - 59292406.xyz
+id: 99b0c328-e36c-41e8-b963-c67584e3ba9a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targets Indian Defense Using Credential-Stealing Malware' (6856c6ec76846d013ef77cc6).
+author: AlienVault
+date: '2025-06-21'
+references:
+- https://www.cyfirma.com/research/apt36-phishing-campaign-targets-indian-defense-using-credential-stealing-malware
+tags:
+- indian defense
+- transparent tribe
+- pdf
+- phishing
+- cyber espionage
+- pakistan
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 59292406.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

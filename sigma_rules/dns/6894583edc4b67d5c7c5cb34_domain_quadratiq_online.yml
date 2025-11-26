@@ -1,0 +1,20 @@
+title: OTX domain IOC - quadratiq.online
+id: 7f8f2f93-a84f-48cc-8a23-615dc9067a39
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quadratiq.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

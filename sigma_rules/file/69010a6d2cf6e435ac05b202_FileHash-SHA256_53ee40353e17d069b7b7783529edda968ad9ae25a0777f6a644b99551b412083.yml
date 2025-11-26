@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 53ee40353e17d069b7b7783529edda968ad9ae25a0777f6a644b99551b412083
+id: d9e16dba-166f-4917-b570-3aa0ebaee0f7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Android Malware
+  Mimics Human Behavior to Evade Detection' (69010a6d2cf6e435ac05b202).
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://www.threatfabric.com/blogs/new-android-malware-herodotus-mimics-human-behaviour-to-evade-detection
+tags:
+- banking trojan
+- mqtt
+- behavior mimicry
+- herodotus
+- remote control
+- device takeover
+- octo
+- brokewell
+- credential theft
+- hook
+- android
+- malware-as-a-service
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 53ee40353e17d069b7b7783529edda968ad9ae25a0777f6a644b99551b412083
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

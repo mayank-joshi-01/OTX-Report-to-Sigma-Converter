@@ -1,0 +1,20 @@
+title: OTX hostname IOC - demo.etlworks.com
+id: bf4ad5a5-dc1a-4932-ae56-1ddfb3f39211
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: demo.etlworks.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

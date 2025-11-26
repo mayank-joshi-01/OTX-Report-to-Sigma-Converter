@@ -1,0 +1,20 @@
+title: OTX domain IOC - singaporebackache.click
+id: 8c134f37-aaee-40b2-a228-bcd04359888e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: singaporebackache.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

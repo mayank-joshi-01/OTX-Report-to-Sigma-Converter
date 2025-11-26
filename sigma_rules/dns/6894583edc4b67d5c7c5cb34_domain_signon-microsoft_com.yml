@@ -1,0 +1,20 @@
+title: OTX domain IOC - signon-microsoft.com
+id: b6ee9598-225a-4274-a4c4-746a25651903
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: signon-microsoft.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

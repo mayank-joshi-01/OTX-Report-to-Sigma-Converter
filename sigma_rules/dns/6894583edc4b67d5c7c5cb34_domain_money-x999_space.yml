@@ -1,0 +1,20 @@
+title: OTX domain IOC - money-x999.space
+id: 716421e5-4948-4925-ad27-86d5a3fefde4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: money-x999.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

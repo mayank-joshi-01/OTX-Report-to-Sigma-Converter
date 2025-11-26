@@ -1,0 +1,20 @@
+title: OTX domain IOC - gcrpppsn89sa02reh521c7micrbqz.cg
+id: a5c03a0d-ea0a-420c-a6b2-258b848938dd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gcrpppsn89sa02reh521c7micrbqz.cg
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - rimcomdlelvago.com
+id: f4426472-855f-4ddd-b924-2d970a4dca0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rimcomdlelvago.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

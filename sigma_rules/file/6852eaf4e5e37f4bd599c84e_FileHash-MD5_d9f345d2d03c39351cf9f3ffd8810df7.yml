@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - d9f345d2d03c39351cf9f3ffd8810df7
+id: 20b1cc5a-a7de-4f3c-ba5e-f32fc8c317ff
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Minecraft mods
+  distributed by the Stargazers Ghost Network to steal gamers’ data' (6852eaf4e5e37f4bd599c84e).
+author: AlienVault
+date: '2025-06-18'
+references: []
+tags:
+- Minecraft
+- infostealer
+- Stargazers Ghost Network
+- Java malware
+- Minecraft mods
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d9f345d2d03c39351cf9f3ffd8810df7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

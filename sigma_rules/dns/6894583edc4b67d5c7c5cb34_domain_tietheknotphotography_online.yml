@@ -1,0 +1,20 @@
+title: OTX domain IOC - tietheknotphotography.online
+id: b4691953-ed29-4e6c-8fa0-01c10a37aa3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tietheknotphotography.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

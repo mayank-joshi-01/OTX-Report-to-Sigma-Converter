@@ -1,0 +1,25 @@
+title: OTX domain IOC - sadazaid.com
+id: 8dae3cc2-eea5-41c0-8127-93a293d142a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sadazaid.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

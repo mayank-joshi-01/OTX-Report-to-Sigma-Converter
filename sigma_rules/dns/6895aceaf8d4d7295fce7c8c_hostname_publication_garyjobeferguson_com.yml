@@ -1,0 +1,36 @@
+title: OTX hostname IOC - publication.garyjobeferguson.com
+id: b4455e00-b9d5-4872-b32b-3bb4e8349424
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking SocGholish:
+  Untangling the Malware Web Behind the ''Pioneer of Fake Updates'' and Its Operator''
+  (6895aceaf8d4d7295fce7c8c).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.silentpush.com/blog/socgholish/
+tags:
+- wastedlocker
+- socgholish
+- netsupportrat
+- malware-as-a-service
+- fake updates
+- traffic distribution system
+- domain shadowing
+- hades
+- mintsloader
+- raspberry robin
+- lockbit
+- ransomware
+- dridex
+- initial access broker
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: publication.garyjobeferguson.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

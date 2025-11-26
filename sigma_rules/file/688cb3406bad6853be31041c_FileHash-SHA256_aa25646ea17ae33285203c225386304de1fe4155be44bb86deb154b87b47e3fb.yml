@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - aa25646ea17ae33285203c225386304de1fe4155be44bb86deb154b87b47e3fb
+id: 6c7d9826-7499-4535-8569-d6be4ae638c9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Exploring Storm-2603's
+  Previous Ransomware Operations' (688cb3406bad6853be31041c).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://research.checkpoint.com/2025/before-toolshell-exploring-storm-2603s-previous-ransomware-operations/
+tags:
+- storm2603
+- microsoft
+- lockbit black
+- toolshell
+- io control
+- virustotal
+- iocs
+- windows
+- dllhijacking
+- psexec
+- april
+- lockbit
+- warlock
+- ransomware
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: aa25646ea17ae33285203c225386304de1fe4155be44bb86deb154b87b47e3fb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

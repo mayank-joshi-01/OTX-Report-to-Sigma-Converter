@@ -1,0 +1,20 @@
+title: OTX domain IOC - nexttshopper.online
+id: ffbc0a50-abc5-4775-9879-d378863e7e8b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nexttshopper.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

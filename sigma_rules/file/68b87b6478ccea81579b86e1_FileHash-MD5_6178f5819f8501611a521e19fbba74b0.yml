@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - 6178f5819f8501611a521e19fbba74b0
+id: b9bf6cba-5e8f-4af6-81c2-403a1ffc16c5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Campaign
+  Targeting Diplomatic Assets' (68b87b6478ccea81579b86e1).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://dreamgroup.com/wp-content/uploads/2025/08/Dream_CTI_Analysis_Malicious_Campaign_by_MOIS_Targeting_Diplomatic_Assets.pdf
+tags:
+- spear-phishing
+- oman mfa
+- vba macros
+- iran
+- espionage
+- sysprocupdate
+- diplomacy
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6178f5819f8501611a521e19fbba74b0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

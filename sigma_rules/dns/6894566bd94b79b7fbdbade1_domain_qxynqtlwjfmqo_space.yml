@@ -1,0 +1,20 @@
+title: OTX domain IOC - qxynqtlwjfmqo.space
+id: 5e2773b5-bb33-4ca4-9ad1-3b3e283d0832
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qxynqtlwjfmqo.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

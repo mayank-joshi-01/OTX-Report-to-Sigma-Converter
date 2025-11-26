@@ -1,0 +1,20 @@
+title: OTX domain IOC - ceny-prepravy-tovaru.online
+id: d7d99ce4-c95d-4716-8461-1756ea4ae838
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ceny-prepravy-tovaru.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - r5m8c-6fuhq-iesykt.work
+id: 90ba1d14-9346-45df-9a0d-2cab52fe5910
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: r5m8c-6fuhq-iesykt.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

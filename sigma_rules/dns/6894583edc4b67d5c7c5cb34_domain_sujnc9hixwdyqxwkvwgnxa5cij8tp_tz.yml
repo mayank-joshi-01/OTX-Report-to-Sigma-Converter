@@ -1,0 +1,20 @@
+title: OTX domain IOC - sujnc9hixwdyqxwkvwgnxa5cij8tp.tz
+id: 476d0bce-ddf8-4d68-802c-998f980ee110
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sujnc9hixwdyqxwkvwgnxa5cij8tp.tz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

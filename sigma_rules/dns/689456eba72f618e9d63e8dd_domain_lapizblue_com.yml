@@ -1,0 +1,20 @@
+title: OTX domain IOC - lapizblue.com
+id: ae38c9f5-c0b6-4263-9ff8-85f9fcfbe348
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lapizblue.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - alllfec.net
+id: af3865e0-2329-490f-8e9e-8a29dc2a17a8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alllfec.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

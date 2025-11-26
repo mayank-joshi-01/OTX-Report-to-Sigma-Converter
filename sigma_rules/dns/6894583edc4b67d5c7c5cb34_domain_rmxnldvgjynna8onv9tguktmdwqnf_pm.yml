@@ -1,0 +1,20 @@
+title: OTX domain IOC - rmxnldvgjynna8onv9tguktmdwqnf.pm
+id: 0546003e-0d05-488c-9091-1f68ddf5393c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rmxnldvgjynna8onv9tguktmdwqnf.pm
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

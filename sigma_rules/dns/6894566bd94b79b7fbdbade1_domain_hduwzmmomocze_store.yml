@@ -1,0 +1,20 @@
+title: OTX domain IOC - hduwzmmomocze.store
+id: 6b3dfa12-a1bf-47d9-af41-3489a59bdf82
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hduwzmmomocze.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

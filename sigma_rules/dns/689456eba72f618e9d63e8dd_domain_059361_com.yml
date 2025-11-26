@@ -1,0 +1,20 @@
+title: OTX domain IOC - 059361.com
+id: 67a7bad8-31a4-408c-8d75-cc202c15d1c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 059361.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

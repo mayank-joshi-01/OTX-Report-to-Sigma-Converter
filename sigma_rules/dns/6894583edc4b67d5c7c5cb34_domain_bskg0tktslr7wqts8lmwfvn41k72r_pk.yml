@@ -1,0 +1,20 @@
+title: OTX domain IOC - bskg0tktslr7wqts8lmwfvn41k72r.pk
+id: ee8dc2c5-ae69-4ec5-803e-bb442cc8ffae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bskg0tktslr7wqts8lmwfvn41k72r.pk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - buildndevelop.online
+id: 806643aa-1eec-4326-9316-0b450c5a11c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: buildndevelop.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

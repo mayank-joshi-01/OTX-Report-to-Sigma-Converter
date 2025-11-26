@@ -1,0 +1,20 @@
+title: OTX domain IOC - geloragamingtimes.site
+id: 630e7c04-6ebd-4cec-9b7c-0fb3d9f033fe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: geloragamingtimes.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

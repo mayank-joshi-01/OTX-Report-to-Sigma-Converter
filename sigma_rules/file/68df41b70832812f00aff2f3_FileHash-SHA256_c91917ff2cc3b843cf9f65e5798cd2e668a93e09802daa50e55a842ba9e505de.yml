@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - c91917ff2cc3b843cf9f65e5798cd2e668a93e09802daa50e55a842ba9e505de
+id: bc635592-0653-4cb9-91e0-26e537ce129f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c91917ff2cc3b843cf9f65e5798cd2e668a93e09802daa50e55a842ba9e505de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

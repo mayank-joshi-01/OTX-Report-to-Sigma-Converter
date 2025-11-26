@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - d74ca6016bdde3df525d7c7651747336
+id: 3097eab8-45b8-4652-ab2e-5f856fb0591b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DarkComet RAT Malware
+  Hidden Inside Fake Bitcoin Tool' (69171bf900fb2aed178f3e3b).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.pointwild.com/threat-intelligence/darkcomet-rat-malware-hidden-inside-fake-bitcoin-tool
+tags:
+- c2 communication
+- cryptocurrency
+- darkcomet rat
+- bitcoin
+- keylogging
+- rat
+- darkcomet
+- upx packing
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: d74ca6016bdde3df525d7c7651747336
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

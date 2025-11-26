@@ -1,0 +1,20 @@
+title: OTX hostname IOC - servactlvity.nice-try-firs.info
+id: 9e27a7c2-5925-4673-a036-1b119e91f5fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: servactlvity.nice-try-firs.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

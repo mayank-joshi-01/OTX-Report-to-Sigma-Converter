@@ -1,0 +1,20 @@
+title: OTX domain IOC - istqb-practice.site
+id: 8cbf5ac0-f36d-4ad7-91f1-0a02f1fbef76
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: istqb-practice.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

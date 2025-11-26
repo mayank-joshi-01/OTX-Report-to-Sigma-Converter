@@ -1,0 +1,20 @@
+title: OTX domain IOC - millersflat.online
+id: ef60abec-b48b-40c6-91ca-cd9ef702b456
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: millersflat.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - vinodelynovyisezondxn.online
+id: b76d9cd8-28c4-45f1-9454-0d4573369dcc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vinodelynovyisezondxn.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

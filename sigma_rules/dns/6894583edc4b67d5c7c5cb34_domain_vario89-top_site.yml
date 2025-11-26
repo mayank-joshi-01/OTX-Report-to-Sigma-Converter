@@ -1,0 +1,20 @@
+title: OTX domain IOC - vario89-top.site
+id: 2188d4ed-f9ac-4f7f-acf2-d5feceea4bb2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vario89-top.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

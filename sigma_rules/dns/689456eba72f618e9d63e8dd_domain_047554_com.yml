@@ -1,0 +1,20 @@
+title: OTX domain IOC - 047554.com
+id: ee6490f4-60e6-473c-93cf-35507e4656bf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 047554.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - oportalrevigorato.site
+id: 022671dd-2f85-4e86-9314-56ed2d0e747c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: oportalrevigorato.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - iqscorio.site
+id: 219f8300-99a0-4a61-827c-8314b9eec1c6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iqscorio.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

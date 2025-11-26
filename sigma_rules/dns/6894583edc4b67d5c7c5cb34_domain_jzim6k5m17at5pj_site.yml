@@ -1,0 +1,20 @@
+title: OTX domain IOC - jzim6k5m17at5pj.site
+id: 71b0ec56-569a-4a97-9d97-cacca2e759e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jzim6k5m17at5pj.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

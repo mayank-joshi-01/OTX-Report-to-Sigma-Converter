@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://derstatus.at/politik/wende-im-mainstream-jetzt-spricht-man-von-exit-strategie-fur-ukraine-krieg-2680.html
+id: 3d607004-4394-4dda-9bac-ffaaa8b4db07
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://derstatus.at/politik/wende-im-mainstream-jetzt-spricht-man-von-exit-strategie-fur-ukraine-krieg-2680.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

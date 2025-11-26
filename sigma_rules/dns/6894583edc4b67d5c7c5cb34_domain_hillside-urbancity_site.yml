@@ -1,0 +1,20 @@
+title: OTX domain IOC - hillside-urbancity.site
+id: 25d89357-b3f8-4361-9b11-84c8faf39390
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hillside-urbancity.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

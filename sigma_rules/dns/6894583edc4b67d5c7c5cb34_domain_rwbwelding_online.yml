@@ -1,0 +1,20 @@
+title: OTX domain IOC - rwbwelding.online
+id: 1c4e9f9b-9bc5-446c-9bfe-576b99fd433e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rwbwelding.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

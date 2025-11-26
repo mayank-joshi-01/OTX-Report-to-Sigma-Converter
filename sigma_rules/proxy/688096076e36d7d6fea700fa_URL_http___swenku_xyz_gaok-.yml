@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://swenku.xyz/gaok-
+id: bbe6e966-311b-4a51-85aa-76de4adb65a8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Back to Business:
+  Lumma Stealer Returns with Stealthier Methods'' (688096076e36d7d6fea700fa).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html
+tags:
+- malware-as-a-service
+- cracked software
+- information stealer
+- infrastructure
+- evasion tactics
+- lumma stealer
+- social engineering
+- github abuse
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://swenku.xyz/gaok-
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

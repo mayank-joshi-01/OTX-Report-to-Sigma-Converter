@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 091f9db54382708327f5bb1831a4626897b6710ffe11d835724be5c224a0cf83
+id: b99bffba-2dc6-46a6-8eaf-b9ff1679f39b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''New Group on the
+  Block: UNC5142 Leverages EtherHiding to Distribute Malware'' (68f130fe56a14a2de8f391b4).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/unc5142-etherhiding-distribute-malware
+tags:
+- smart contracts
+- blockchain
+- cloudflare pages
+- bnb smart chain
+- atomic
+- lummac.v2
+- vidar
+- infostealers
+- radthief
+- clearshort
+- wordpress
+- etherhiding
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 091f9db54382708327f5bb1831a4626897b6710ffe11d835724be5c224a0cf83
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

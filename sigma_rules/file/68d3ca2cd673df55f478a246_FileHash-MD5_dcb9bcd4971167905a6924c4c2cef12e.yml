@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - dcb9bcd4971167905a6924c4c2cef12e
+id: fcb08fd1-2567-4936-8a3b-f89d2fcb7d81
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kimsuky Attack Disguised
+  as Sex Offender Notification Information' (68d3ca2cd673df55f478a246).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://logpresso.com/ko/blog/2025-09-18-Kimsuky-Attack
+tags:
+- north korea
+- apt
+- data exfiltration
+- anti-vm
+- spear-phishing
+- browser hijacking
+- cryptocurrency theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: dcb9bcd4971167905a6924c4c2cef12e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

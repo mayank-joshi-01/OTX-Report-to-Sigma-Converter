@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 68366ced818508de187167d8f9106be7801b8dcf1f03ae169459c7336d6e69de
+id: 1c63dd5a-166a-4f8f-b4c8-60dbf1bc4b8a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Interlock ransomware
+  evolving under the radar' (67ffb7eba715b936a2c4c2a8).
+author: AlienVault
+date: '2025-04-16'
+references:
+- https://blog.sekoia.io/interlock-ransomware-evolving-under-the-radar
+tags:
+- berserkstealer
+- clickfix
+- interlock rat
+- double extortion
+- ransomware
+- remote access trojan
+- interlock ransomware
+- credential stealer
+- fake updaters
+- powershell backdoor
+- lumma
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 68366ced818508de187167d8f9106be7801b8dcf1f03ae169459c7336d6e69de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

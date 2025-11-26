@@ -1,0 +1,20 @@
+title: OTX domain IOC - hotbien.site
+id: 6b453724-fc9b-4558-bc4b-9b8e6669c7ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hotbien.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

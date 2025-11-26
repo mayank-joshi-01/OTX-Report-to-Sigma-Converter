@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - a0b5d6ea1f8be6dbdbf3c5bb469b111bd0228bc8928ed23f3ecc3dc4a2c1f480
+id: 522b90f8-89a5-479f-9a1c-d35b4e50b30b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Illusory Wishes:
+  China-nexus APT Targets the Tibetan Community'' (688102de8dd7f5be86b60306).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.zscaler.com/blogs/security-research/illusory-wishes-china-nexus-apt-targets-tibetan-community
+tags:
+- ghost rat
+- phantomnet
+- multi-stage attack
+- dll sideloading
+- web compromise
+- tibetan community
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a0b5d6ea1f8be6dbdbf3c5bb469b111bd0228bc8928ed23f3ecc3dc4a2c1f480
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

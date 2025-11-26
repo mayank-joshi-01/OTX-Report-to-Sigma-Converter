@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 47e017b40d418374c0889e4d22aa48633b1d41b16b61b1f2897a39112a435d30
+id: 8fac19a3-9c62-4ae5-a570-0ed49c811ba8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  | North Korean Threat Actors Reveal Plans and Ops by Abusing Cyber Intel Platforms'
+  (68b9d266a57b122998115dc6).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.sentinelone.com/labs/contagious-interview-threat-actors-scout-cyber-intel-platforms-reveal-plans-and-ops
+tags:
+- cyber espionage
+- social engineering
+- north korea
+- job seeker targeting
+- clickfix
+- lazarus
+- infrastructure monitoring
+- cryptocurrency
+- contagiousdrop
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 47e017b40d418374c0889e4d22aa48633b1d41b16b61b1f2897a39112a435d30
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

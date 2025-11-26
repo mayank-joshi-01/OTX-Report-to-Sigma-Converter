@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://allons-y.social/crime-de-guerre-en-crimee-la-responsabilite-des-etats-unis-engagee/
+id: bbf631f0-65ac-4059-a906-fca6fdbcf248
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://allons-y.social/crime-de-guerre-en-crimee-la-responsabilite-des-etats-unis-engagee/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

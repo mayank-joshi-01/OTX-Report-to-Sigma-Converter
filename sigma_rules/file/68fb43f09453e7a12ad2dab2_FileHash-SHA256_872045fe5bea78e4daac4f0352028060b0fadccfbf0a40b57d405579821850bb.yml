@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 872045fe5bea78e4daac4f0352028060b0fadccfbf0a40b57d405579821850bb
+id: 4d0f0199-ab93-4149-970f-de664e6ee268
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Jewelbug: Chinese
+  APT Group Widens Reach to Russia'' (68fb43f09453e7a12ad2dab2).'
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.security.com/threat-intelligence/jewelbug-apt-russia
+tags:
+- squidoor
+- byovd
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 872045fe5bea78e4daac4f0352028060b0fadccfbf0a40b57d405579821850bb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

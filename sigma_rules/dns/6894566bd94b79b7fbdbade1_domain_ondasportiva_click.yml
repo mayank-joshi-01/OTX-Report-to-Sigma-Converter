@@ -1,0 +1,20 @@
+title: OTX domain IOC - ondasportiva.click
+id: 4edab6a0-ab4e-4012-9e3b-ba2315216a91
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ondasportiva.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

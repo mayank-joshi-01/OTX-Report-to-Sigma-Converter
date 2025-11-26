@@ -1,0 +1,20 @@
+title: OTX domain IOC - businessoffashion.online
+id: c0caecf9-550b-47a5-8da4-0d39211b0ce4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: businessoffashion.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - qaazjz06a73rdkempzdjw7cce8e.useushippinginc.com
+id: bf2598ef-5fa0-4f7e-a6f0-c4aecdef8ed6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qaazjz06a73rdkempzdjw7cce8e.useushippinginc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

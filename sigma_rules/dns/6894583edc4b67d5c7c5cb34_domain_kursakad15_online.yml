@@ -1,0 +1,20 @@
+title: OTX domain IOC - kursakad15.online
+id: 0b4b040e-9ea2-4fb9-8231-c4874f14145a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kursakad15.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

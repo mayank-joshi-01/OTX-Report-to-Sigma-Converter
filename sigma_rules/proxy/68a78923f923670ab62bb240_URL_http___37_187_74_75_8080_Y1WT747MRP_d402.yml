@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://37.187.74.75:8080/Y1WT747MRP/d402
+id: 67f63f3c-6e87-4a2c-a6d3-27fd447d3a97
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Your Connection,
+  Their Cash: Threat Actors Misuse SDKs to Sell Your Bandwidth'' (68a78923f923670ab62bb240).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://unit42.paloaltonetworks.com/attackers-sell-your-bandwidth-using-sdks/
+tags:
+- ip address
+- jxpath
+- dart
+- cve202436401
+- geoserver
+- persistence
+- apache
+- sdk
+- CVE-2024-36401
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://37.187.74.75:8080/Y1WT747MRP/d402
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

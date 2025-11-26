@@ -1,0 +1,20 @@
+title: OTX domain IOC - construction-software-in-br.online
+id: ee5ec248-a486-4542-8246-814d8312e9c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: construction-software-in-br.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

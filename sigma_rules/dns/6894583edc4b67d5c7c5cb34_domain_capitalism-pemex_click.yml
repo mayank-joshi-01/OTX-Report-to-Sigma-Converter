@@ -1,0 +1,20 @@
+title: OTX domain IOC - capitalism-pemex.click
+id: 56177cad-2912-4c2d-8d1b-148d63c392f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capitalism-pemex.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

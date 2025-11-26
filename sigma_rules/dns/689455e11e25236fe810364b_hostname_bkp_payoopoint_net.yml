@@ -1,0 +1,20 @@
+title: OTX hostname IOC - bkp.payoopoint.net
+id: ae4c5a25-8e13-4c53-94b7-1b0a2e6b96a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bkp.payoopoint.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

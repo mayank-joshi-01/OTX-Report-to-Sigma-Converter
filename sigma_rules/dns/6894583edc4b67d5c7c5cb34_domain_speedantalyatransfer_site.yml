@@ -1,0 +1,20 @@
+title: OTX domain IOC - speedantalyatransfer.site
+id: e678641f-6fc0-4ca6-ba69-c4b1a79413b2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: speedantalyatransfer.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

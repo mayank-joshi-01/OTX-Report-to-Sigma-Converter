@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 0875b075f3a9da3d345e0a2b922a134baa0cbf2eaf5754da2a75d2dab2341d13
+id: cde55592-8452-4398-9944-e591c080bc4d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0875b075f3a9da3d345e0a2b922a134baa0cbf2eaf5754da2a75d2dab2341d13
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

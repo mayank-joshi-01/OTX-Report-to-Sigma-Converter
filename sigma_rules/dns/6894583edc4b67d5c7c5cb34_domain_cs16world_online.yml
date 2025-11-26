@@ -1,0 +1,20 @@
+title: OTX domain IOC - cs16world.online
+id: 47d57b27-8f56-41f0-8d74-1f1013fc27c2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cs16world.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

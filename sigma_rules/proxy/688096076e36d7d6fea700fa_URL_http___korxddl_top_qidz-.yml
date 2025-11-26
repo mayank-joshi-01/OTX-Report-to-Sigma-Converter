@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://korxddl.top/qidz-
+id: aa1a9b39-7167-435d-b72f-c6ae85a142e9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Back to Business:
+  Lumma Stealer Returns with Stealthier Methods'' (688096076e36d7d6fea700fa).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/lumma-stealer-returns.html
+tags:
+- malware-as-a-service
+- cracked software
+- information stealer
+- infrastructure
+- evasion tactics
+- lumma stealer
+- social engineering
+- github abuse
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://korxddl.top/qidz-
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

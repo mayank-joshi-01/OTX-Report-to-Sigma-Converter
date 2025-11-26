@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 47262571a87e70238bd6afd376560e9cfdc94bfacae72f36b6aa9fb6e769eb9c
+id: 6e2c4def-89ad-4e99-8da9-ab661683efa6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Rainbow Hyena strikes
+  again: new backdoor and shift in tactics'' (6876bc94560fb5bc92a8936f).'
+author: AlienVault
+date: '2025-07-15'
+references:
+- https://bi-zone.medium.com/rainbow-hyena-strikes-again-new-backdoor-and-shift-in-tactics-2dd99a10aea9?source=rss-3882bedad280------2
+tags:
+- phantomremote
+- phishing
+- backdoor
+- lnk files
+- Rainbow Hyena
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 47262571a87e70238bd6afd376560e9cfdc94bfacae72f36b6aa9fb6e769eb9c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

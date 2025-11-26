@@ -1,0 +1,20 @@
+title: OTX domain IOC - ufa888-autos.online
+id: d9e24d98-fd9b-4d66-9aa9-9485a18d3273
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ufa888-autos.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

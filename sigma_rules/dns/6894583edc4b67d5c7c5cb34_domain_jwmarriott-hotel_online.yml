@@ -1,0 +1,20 @@
+title: OTX domain IOC - jwmarriott-hotel.online
+id: 63537042-fa24-481c-91d6-a798eca3ed85
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jwmarriott-hotel.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

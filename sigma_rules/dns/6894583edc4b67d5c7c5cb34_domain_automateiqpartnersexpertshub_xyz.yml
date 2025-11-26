@@ -1,0 +1,20 @@
+title: OTX domain IOC - automateiqpartnersexpertshub.xyz
+id: abd6f1c1-e109-4494-ba6c-0bff3b6ab98b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: automateiqpartnersexpertshub.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

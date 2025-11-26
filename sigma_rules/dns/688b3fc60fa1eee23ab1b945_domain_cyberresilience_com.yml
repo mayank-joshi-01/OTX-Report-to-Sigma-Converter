@@ -1,0 +1,28 @@
+title: OTX domain IOC - cyberresilience.com
+id: 77517930-4ceb-4998-bb78-c041cac3c239
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Auto-Color Backdoor:
+  How a Stealthy Linux Intrusion Was Thwarted'' (688b3fc60fa1eee23ab1b945).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.darktrace.com/blog/auto-color-backdoor-how-darktrace-thwarted-a-stealthy-linux-intrusion
+tags:
+- sap netweaver
+- linux
+- cve-2025-31324
+- backdoor
+- evasion
+- auto-color
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cyberresilience.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

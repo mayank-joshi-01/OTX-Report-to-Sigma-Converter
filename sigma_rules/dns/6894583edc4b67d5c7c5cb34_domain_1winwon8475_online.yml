@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1winwon8475.online
+id: bef3bc43-9651-4ed3-b3ae-b381a9531b5d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1winwon8475.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

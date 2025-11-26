@@ -1,0 +1,20 @@
+title: OTX domain IOC - saudemental24horas.site
+id: d3d88924-7ece-4504-9153-fe2776ec97ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saudemental24horas.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

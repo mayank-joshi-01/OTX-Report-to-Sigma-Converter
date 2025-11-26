@@ -1,0 +1,20 @@
+title: OTX domain IOC - hilfe17764.world
+id: 316f3f02-bc38-4c22-b7d8-a1183cb80d00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hilfe17764.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

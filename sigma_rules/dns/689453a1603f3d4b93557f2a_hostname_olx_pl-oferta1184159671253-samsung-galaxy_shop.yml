@@ -1,0 +1,20 @@
+title: OTX hostname IOC - olx.pl-oferta1184159671253-samsung-galaxy.shop
+id: 5f7029d7-9ea3-480c-8bd9-eb5405db4ea1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: olx.pl-oferta1184159671253-samsung-galaxy.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - mx-chillbet.online
+id: 00b9db7b-4770-4b03-881e-c31bfbea8072
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mx-chillbet.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

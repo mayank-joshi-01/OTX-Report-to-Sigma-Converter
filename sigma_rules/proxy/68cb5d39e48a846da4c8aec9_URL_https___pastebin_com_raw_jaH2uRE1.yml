@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://pastebin.com/raw/jaH2uRE1
+id: 236e2458-e1ff-4c2c-8c1d-3ff66c0526bc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious PyPI Packages
+  Deliver SilentSync RAT' (68cb5d39e48a846da4c8aec9).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.zscaler.com/blogs/security-research/malicious-pypi-packages-deliver-silentsync-rat
+tags:
+- data-exfiltration
+- supply-chain-attack
+- silentsync
+- pypi
+- browser-data-theft
+- python
+- rat
+- typosquatting
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://pastebin.com/raw/jaH2uRE1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

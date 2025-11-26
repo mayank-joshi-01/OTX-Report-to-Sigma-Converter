@@ -1,0 +1,20 @@
+title: OTX domain IOC - fun88ednath.online
+id: 2173b80a-5e3f-4c30-add3-a4ff88808bc0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fun88ednath.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

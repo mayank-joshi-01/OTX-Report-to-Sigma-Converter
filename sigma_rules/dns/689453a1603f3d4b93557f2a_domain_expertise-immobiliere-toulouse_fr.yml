@@ -1,0 +1,20 @@
+title: OTX domain IOC - expertise-immobiliere-toulouse.fr
+id: 64f01aa6-864c-4b9c-9241-680f1fc4be96
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: expertise-immobiliere-toulouse.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

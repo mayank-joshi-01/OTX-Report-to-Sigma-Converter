@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 9de430ab142b87e55e31a628c0225c96
+id: 57ce8d5a-c6c1-4b61-8564-19c394d5fc96
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Scripts to
+  Systems: A Comprehensive Look at Tangerine Turkey Operations'' (69025ee928e599316086e029).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://www.cybereason.com/blog/tangerine-turkey?hs_amp=true
+tags:
+- vbscript
+- living-off-the-land
+- xmrig
+- defense-evasion
+- worm
+- persistence
+- cryptomining
+- usb
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9de430ab142b87e55e31a628c0225c96
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - anapa-extrim.online
+id: a92ad396-77dd-4b1d-a725-079bf1248eb0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: anapa-extrim.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

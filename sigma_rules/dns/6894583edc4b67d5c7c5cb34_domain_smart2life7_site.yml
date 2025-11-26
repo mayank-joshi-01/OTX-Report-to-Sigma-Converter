@@ -1,0 +1,20 @@
+title: OTX domain IOC - smart2life7.site
+id: 26d44a71-8d4a-4d2e-807b-905cbc6743e8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: smart2life7.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

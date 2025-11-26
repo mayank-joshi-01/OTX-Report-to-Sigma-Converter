@@ -1,0 +1,20 @@
+title: OTX domain IOC - feminapause.store
+id: 13b11b2d-975b-4460-936c-2b5bcf2fdf25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: feminapause.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

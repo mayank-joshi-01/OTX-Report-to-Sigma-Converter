@@ -1,0 +1,20 @@
+title: OTX domain IOC - hervitalities.store
+id: 0520d35b-4af5-48b0-96d6-f464770c4986
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hervitalities.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

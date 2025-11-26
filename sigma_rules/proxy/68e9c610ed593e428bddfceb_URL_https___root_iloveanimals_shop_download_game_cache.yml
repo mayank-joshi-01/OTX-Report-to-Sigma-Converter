@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://root.iloveanimals.shop/download/game_cache
+id: 5cd80528-4353-4f71-bf18-63097089fe9b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://root.iloveanimals.shop/download/game_cache
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

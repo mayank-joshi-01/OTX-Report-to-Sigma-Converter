@@ -1,0 +1,20 @@
+title: OTX domain IOC - asia328top58n.site
+id: b1ea8197-3a32-419d-9157-356c2e61c2b4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asia328top58n.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

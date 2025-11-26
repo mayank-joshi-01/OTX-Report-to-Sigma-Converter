@@ -1,0 +1,20 @@
+title: OTX domain IOC - muvosongh5.online
+id: 5de3512c-7c6b-4dd1-9724-4ea2bf02beb4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: muvosongh5.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

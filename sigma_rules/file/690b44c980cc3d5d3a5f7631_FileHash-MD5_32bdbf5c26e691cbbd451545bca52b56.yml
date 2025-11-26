@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 32bdbf5c26e691cbbd451545bca52b56
+id: 2483e4cb-859b-4a70-8c23-e1289d9b87ff
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Weaponized Military
+  Documents Deliver Advanced SSH-Tor Backdoor' (690b44c980cc3d5d3a5f7631).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://cyble.com/blog/weaponized-military-documents-deliver-backdoor
+tags:
+- tor hidden service
+- defense sector
+- openssh
+- military lure
+- obfs4
+- uav operations
+- ssh-tor backdoor
+- belarusian air force
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 32bdbf5c26e691cbbd451545bca52b56
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 0143efc2dd05d7ce2a6c1d2672bc86c3b3381f8e
+id: 0a18d227-0362-4e2e-b2e7-6ee2a0360686
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RONINGLOADER: DragonBreath''s
+  New Path to PPL Abuse'' (691d85c636ef7e742328d734).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.elastic.co/security-labs/roningloader
+tags:
+- driver abuse
+- ppl abuse
+- wdac
+- gh0st rat
+- thread-pool injection
+- apt
+- chinese edr evasion
+- roningloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0143efc2dd05d7ce2a6c1d2672bc86c3b3381f8e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

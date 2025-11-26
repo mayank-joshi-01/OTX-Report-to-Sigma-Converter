@@ -1,0 +1,20 @@
+title: OTX domain IOC - admiralx-shj.site
+id: 405e84ae-feb4-4cc5-a641-d64647e74285
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: admiralx-shj.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

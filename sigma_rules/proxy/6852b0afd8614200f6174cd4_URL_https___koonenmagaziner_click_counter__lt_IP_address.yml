@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://koonenmagaziner.click/counter/&lt;IP_address
+id: 48ea15bd-0ead-481b-b16f-8c0d600e94a6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From ClickFix deception
+  to information stealer deployment' (6852b0afd8614200f6174cd4).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://www.elastic.co/security-labs/a-wretch-client
+tags:
+- lumma
+- ghostpulse
+- eddiestealer
+- clickfix
+- multi-stage attack
+- arechclient2
+- infostealer
+- remote access trojan
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://koonenmagaziner.click/counter/&lt;IP_address
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

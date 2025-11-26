@@ -1,0 +1,20 @@
+title: OTX domain IOC - theperinatalhub.online
+id: 4817b2f9-6173-49ab-850c-e03df658cc0c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theperinatalhub.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

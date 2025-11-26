@@ -1,0 +1,34 @@
+title: OTX URL IOC - http://15.235.172.219/vmeo/getlink?id=dcaathur
+id: 285966c8-cc7d-4286-b8b4-70484b562faa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Noodlophile Stealer
+  Evolves: Targeted Copyright Phishing Hits Enterprises with Social Media Footprints''
+  (68a4f2609ccc8bd3337dfda6).'
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://www.morphisec.com/blog/noodlophile-stealer-evolves-targeted-copyright-phishing-hits-enterprises-with-social-media-footprints/
+tags:
+- facebook
+- select
+- morphisec
+- ai video
+- noodlophile
+- dll sideloading
+- web data
+- new noodlophile
+- telegram
+- spear
+- persistence
+- python
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://15.235.172.219/vmeo/getlink?id=dcaathur
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

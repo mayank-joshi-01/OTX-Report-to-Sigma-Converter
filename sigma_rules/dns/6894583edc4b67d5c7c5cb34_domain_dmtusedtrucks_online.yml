@@ -1,0 +1,20 @@
+title: OTX domain IOC - dmtusedtrucks.online
+id: 46067c32-94dc-4f24-9dac-4739f71a0be9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dmtusedtrucks.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

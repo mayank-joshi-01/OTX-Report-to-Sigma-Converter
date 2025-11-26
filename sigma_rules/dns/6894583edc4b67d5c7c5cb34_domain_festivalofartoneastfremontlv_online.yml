@@ -1,0 +1,20 @@
+title: OTX domain IOC - festivalofartoneastfremontlv.online
+id: 9896e0c1-d4bf-4308-82af-3cf9c69a80d9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: festivalofartoneastfremontlv.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

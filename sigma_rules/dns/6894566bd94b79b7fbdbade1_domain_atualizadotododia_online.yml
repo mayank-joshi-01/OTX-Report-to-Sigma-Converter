@@ -1,0 +1,20 @@
+title: OTX domain IOC - atualizadotododia.online
+id: 45bd9e79-58a2-47b2-962f-8470026ce278
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: atualizadotododia.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

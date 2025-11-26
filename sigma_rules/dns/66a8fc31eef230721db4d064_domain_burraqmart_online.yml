@@ -1,0 +1,26 @@
+title: OTX domain IOC - burraqmart.online
+id: c2abb3f3-747b-42cd-aa7b-4da5331c2bda
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: burraqmart.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

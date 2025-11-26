@@ -1,0 +1,20 @@
+title: OTX domain IOC - constructlinkzimbabwe.online
+id: bc538c53-645e-433d-beab-f237b8fdf8f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: constructlinkzimbabwe.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

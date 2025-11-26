@@ -1,0 +1,20 @@
+title: OTX domain IOC - saludsiempre.online
+id: da23b993-4276-451f-9a99-804d71fb20d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saludsiempre.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

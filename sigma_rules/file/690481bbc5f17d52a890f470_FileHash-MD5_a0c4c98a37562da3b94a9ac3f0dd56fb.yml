@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - a0c4c98a37562da3b94a9ac3f0dd56fb
+id: b8bfa0a9-9f8c-443c-8919-e6caa743f871
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Case of ActiveMQ Vulnerability
+  Exploitation to Install Sharpire (Kinsing)' (690481bbc5f17d52a890f470).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://asec.ahnlab.com/en/90811/
+tags:
+- cryptocurrency mining
+- sharpire
+- xmrig
+- h2miner
+- activemq
+- powershell empire
+- cobaltstrike
+- cve-2023-46604
+- meterpreter
+- vulnerability exploitation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: a0c4c98a37562da3b94a9ac3f0dd56fb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

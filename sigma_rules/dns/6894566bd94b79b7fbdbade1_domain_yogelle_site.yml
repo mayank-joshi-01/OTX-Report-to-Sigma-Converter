@@ -1,0 +1,20 @@
+title: OTX domain IOC - yogelle.site
+id: 28b24381-d79a-4220-9d15-ff95e3d32d74
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yogelle.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

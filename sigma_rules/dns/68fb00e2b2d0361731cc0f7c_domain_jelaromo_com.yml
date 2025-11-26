@@ -1,0 +1,24 @@
+title: OTX domain IOC - jelaromo.com
+id: d736b409-3388-4379-a3b5-d2fcf626b55d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jelaromo.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - amlogenplugin.site
+id: b9edd504-d258-4d0a-a346-b76c6474ae5b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amlogenplugin.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

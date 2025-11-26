@@ -1,0 +1,20 @@
+title: OTX domain IOC - digitalglobo.online
+id: cb6a0a4f-2d06-4e26-99f3-3180c497a4d9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: digitalglobo.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

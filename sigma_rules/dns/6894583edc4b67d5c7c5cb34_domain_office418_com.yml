@@ -1,0 +1,20 @@
+title: OTX domain IOC - office418.com
+id: c751a5fe-f68b-40fc-af60-2b4817e289d9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: office418.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

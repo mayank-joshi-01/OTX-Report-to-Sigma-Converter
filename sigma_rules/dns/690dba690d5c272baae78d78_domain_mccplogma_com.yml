@@ -1,0 +1,28 @@
+title: OTX domain IOC - mccplogma.com
+id: 42a340a0-26f3-4632-91e4-a3c6e50d89d2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Booking.com Phishing
+  Campaign Targeting Hotels and Customers' (690dba690d5c272baae78d78).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://blog.sekoia.io/phishing-campaigns-i-paid-twice-targeting-booking-com-hotels-and-customers/
+tags:
+- phishing
+- social engineering
+- clickfix
+- hospitality
+- booking.com
+- purerat
+- cybercrime
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mccplogma.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

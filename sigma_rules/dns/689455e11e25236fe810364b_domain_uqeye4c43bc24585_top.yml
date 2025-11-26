@@ -1,0 +1,20 @@
+title: OTX domain IOC - uqeye4c43bc24585.top
+id: 35668651-6adc-47aa-b227-5b2d72070913
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uqeye4c43bc24585.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

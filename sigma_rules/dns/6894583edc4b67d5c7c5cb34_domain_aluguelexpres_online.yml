@@ -1,0 +1,20 @@
+title: OTX domain IOC - aluguelexpres.online
+id: 800dc6b1-139f-4ffd-ae3c-95b5de4b4266
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aluguelexpres.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

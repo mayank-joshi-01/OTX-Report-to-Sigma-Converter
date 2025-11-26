@@ -1,0 +1,35 @@
+title: OTX FileHash-MD5 IOC - baba1728a03c8c05b13b57c909778c0a
+id: b9968788-ee55-4aa3-9407-1022c5480747
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Introducing HybridPetya:
+  Petya/NotPetya copycat with UEFI Secure Boot bypass'' (68c81ed99da4be41ed428184).'
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.welivesecurity.com/en/eset-research/introducing-hybridpetya-petya-notpetya-copycat-uefi-secure-boot-bypass/
+tags:
+- uefi
+- petrwrap
+- mft encryption
+- hybridpetya
+- diskcoder.c
+- secure boot bypass
+- expetr
+- ransomware
+- petya
+- goldeneye
+- bootkit
+- nyetya
+- notpetya
+- cve-2024-7344
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: baba1728a03c8c05b13b57c909778c0a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

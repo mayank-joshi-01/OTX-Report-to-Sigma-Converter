@@ -1,0 +1,28 @@
+title: OTX hostname IOC - ranked-accordingly-ab-hired.trycloudflare.com
+id: d7714df4-eca9-4ba8-b847-4c31061ddfa4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'KongTuke FileFix Leads
+  to New Interlock RAT Variant' (687617e3e43c59ce42814c2f).
+author: AlienVault
+date: '2025-07-15'
+references:
+- https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant
+tags:
+- web-inject
+- interlock rat
+- kongtuke
+- filefix
+- nodesnake
+- cloudflare tunnel
+- reconnaissance
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ranked-accordingly-ab-hired.trycloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 99a0b424bb3a6bbf60e972fd82c514fd971a948f9cedf3b9dc6b033117ecb106
+id: b886f747-cd3a-4a7b-a5ab-707b939ec929
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DeedRAT Backdoor Enhanced
+  with Advanced Capabilities' (687e17c60ec35a8df8a7ad9d).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://lab52.io/blog/deedrat-backdoor-enhanced-by-chinese-apts-with-advanced-capabilities/
+tags:
+- backdoor
+- dll side-loading
+- persistence
+- obfuscation
+- antivirus exploitation
+- deedrat
+- phishing
+- netagent
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 99a0b424bb3a6bbf60e972fd82c514fd971a948f9cedf3b9dc6b033117ecb106
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

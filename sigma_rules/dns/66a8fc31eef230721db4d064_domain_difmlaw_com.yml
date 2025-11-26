@@ -1,0 +1,26 @@
+title: OTX domain IOC - difmlaw.com
+id: a232f702-a70c-492e-ab55-cb8cb9f80bbd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: difmlaw.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

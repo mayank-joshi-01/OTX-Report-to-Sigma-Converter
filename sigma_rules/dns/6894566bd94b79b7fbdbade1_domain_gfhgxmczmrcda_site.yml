@@ -1,0 +1,20 @@
+title: OTX domain IOC - gfhgxmczmrcda.site
+id: 2c3017be-c01a-40e9-8f07-dc746becdb3d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gfhgxmczmrcda.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

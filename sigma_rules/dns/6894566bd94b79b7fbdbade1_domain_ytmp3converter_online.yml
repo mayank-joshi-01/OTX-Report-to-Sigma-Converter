@@ -1,0 +1,20 @@
+title: OTX domain IOC - ytmp3converter.online
+id: d22caf26-07d4-4fc1-82c4-bc4385730862
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ytmp3converter.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

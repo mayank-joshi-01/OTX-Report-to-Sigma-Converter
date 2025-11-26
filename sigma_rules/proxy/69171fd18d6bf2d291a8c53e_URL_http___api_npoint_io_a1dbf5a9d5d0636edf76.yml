@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://api.npoint.io/a1dbf5a9d5d0636edf76
+id: 2fb81b90-04eb-42d9-af20-e1ddd0b4b111
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  Actors Now Utilize JSON Storage Services for Malware Delivery' (69171fd18d6bf2d291a8c53e).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://blog.nviso.eu/2025/11/13/contagious-interview-actors-now-utilize-json-storage-services-for-malware-delivery/
+tags:
+- ottercookie
+- json storage
+- tsunami payload
+- web3
+- social engineering
+- rat
+- north korea
+- infostealer
+- cryptocurrency
+- invisibleferret
+- trojanized code
+- beavertail
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://api.npoint.io/a1dbf5a9d5d0636edf76
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - lisesblog.com
+id: 96a67c66-94eb-4ed4-b42e-7b8e4927eb1a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lisesblog.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

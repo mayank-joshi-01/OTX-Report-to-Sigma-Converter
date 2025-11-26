@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://www.twex.exchange/
+id: 81cc7cd7-8dc6-4d72-8821-5813332d46a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Sealed Chain of
+  Deception: Actors leveraging Node.JS to Launch JSCeal'' (688b3d58e80e0edcd1cb1e22).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://research.checkpoint.com/2025/jsceal-targets-crypto-apps/
+tags:
+- fake apps
+- stealer
+- cryptocurrency
+- malvertising
+- multi-stage
+- node.js
+- evasion
+- jsceal
+- jsc
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.twex.exchange/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

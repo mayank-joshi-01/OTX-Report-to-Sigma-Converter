@@ -1,0 +1,20 @@
+title: OTX domain IOC - gulfgoodies.site
+id: 79a03f76-3965-48f9-9a8a-f35d2860bc7b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gulfgoodies.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+id: 50407985-b2f2-416b-8ab6-a25109cfb0eb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Beaches and breaches'
+  (68c363ac32fdee7609ee6f8c).
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://blog.talosintelligence.com/beaches-and-breaches/
+tags:
+- identity attacks
+- nefilim
+- saas security
+- oauth tokens
+- data breaches
+- cybersecurity trends
+- lockergoga
+- megacortex
+- supply chain attacks
+- cyber threat intelligence
+- cti-cmm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX hostname IOC - gj23j4jg.google-firebase.digital
+id: 9e9a040f-bdf5-4329-a1aa-6e351bd0242a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Android Malware
+  Mimics Human Behavior to Evade Detection' (69010a6d2cf6e435ac05b202).
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://www.threatfabric.com/blogs/new-android-malware-herodotus-mimics-human-behaviour-to-evade-detection
+tags:
+- banking trojan
+- mqtt
+- behavior mimicry
+- herodotus
+- remote control
+- device takeover
+- octo
+- brokewell
+- credential theft
+- hook
+- android
+- malware-as-a-service
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gj23j4jg.google-firebase.digital
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

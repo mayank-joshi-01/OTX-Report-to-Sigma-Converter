@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - cbdfd0de5b3cda140b2213213218993e
+id: 2713a1f2-da7e-43ef-8f12-f5ef54695ba3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XWorm V6: Exploring
+  Pivotal Plugins'' (68e4116d2907e024806e89fc).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://www.trellix.com/blogs/research/xworm-v6-exploring-pivotal-plugins/
+tags:
+- powershell
+- phishing
+- Xworm
+- rat
+- javascript
+- remote desktop
+- file manager
+- amsi bypass
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: cbdfd0de5b3cda140b2213213218993e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

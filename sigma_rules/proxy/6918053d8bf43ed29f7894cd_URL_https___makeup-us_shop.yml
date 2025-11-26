@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://makeup-us.shop
+id: 74d7b4ba-14d4-47cc-bb6e-5c1292670cd0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How AI Is Fueling
+  a New Wave of Black Friday Scams' (6918053d8bf43ed29f7894cd).
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://www.forcepoint.com/blog/x-labs/black-friday-scams-ai-phishing-guide
+tags:
+- phishing
+- cybersecurity
+- luxury goods
+- e-commerce
+- black friday
+- ai
+- scams
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://makeup-us.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

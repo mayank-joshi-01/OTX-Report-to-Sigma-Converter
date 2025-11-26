@@ -1,0 +1,20 @@
+title: OTX domain IOC - dainiknews71patrika.online
+id: e91deaa4-13cf-4faf-a378-9791143b2c67
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dainiknews71patrika.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

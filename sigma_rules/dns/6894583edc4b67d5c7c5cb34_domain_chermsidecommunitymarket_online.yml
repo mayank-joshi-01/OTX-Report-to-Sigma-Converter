@@ -1,0 +1,20 @@
+title: OTX domain IOC - chermsidecommunitymarket.online
+id: 75502560-5543-4532-b7d9-c92a1526395e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chermsidecommunitymarket.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

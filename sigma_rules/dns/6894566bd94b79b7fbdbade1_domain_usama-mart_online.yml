@@ -1,0 +1,20 @@
+title: OTX domain IOC - usama-mart.online
+id: 8df1b70d-f75d-4a05-8277-03caf7cad430
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: usama-mart.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

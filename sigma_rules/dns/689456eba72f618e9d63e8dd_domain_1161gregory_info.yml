@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1161gregory.info
+id: 2e833b8b-0d87-440c-8390-3426fc9900e2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1161gregory.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

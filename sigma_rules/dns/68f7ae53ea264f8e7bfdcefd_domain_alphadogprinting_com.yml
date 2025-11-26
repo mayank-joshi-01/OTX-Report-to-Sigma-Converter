@@ -1,0 +1,28 @@
+title: OTX domain IOC - alphadogprinting.com
+id: a54b8c3d-52d1-409c-a4d3-6a5063631ae3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alphadogprinting.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

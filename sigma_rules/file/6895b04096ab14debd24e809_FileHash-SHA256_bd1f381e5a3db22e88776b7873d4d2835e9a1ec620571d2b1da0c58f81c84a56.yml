@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - bd1f381e5a3db22e88776b7873d4d2835e9a1ec620571d2b1da0c58f81c84a56
+id: 95afb7c5-dad1-496c-9356-fdc88ad0d421
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Observed Malicious
+  Driver Use Associated with Akira SonicWall Campaign' (6895b04096ab14debd24e809).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.guidepointsecurity.com/blog/gritrep-akira-sonicwall/
+tags:
+- zero-day
+- akira
+- vpn
+- sonicwall
+- byovd
+- drivers
+- av/edr evasion
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bd1f381e5a3db22e88776b7873d4d2835e9a1ec620571d2b1da0c58f81c84a56
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

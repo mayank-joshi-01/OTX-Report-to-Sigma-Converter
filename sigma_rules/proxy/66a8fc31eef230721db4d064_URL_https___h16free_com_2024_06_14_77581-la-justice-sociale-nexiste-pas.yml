@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://h16free.com/2024/06/14/77581-la-justice-sociale-nexiste-pas
+id: e2020f8c-9f81-42e8-a775-41efbded9347
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://h16free.com/2024/06/14/77581-la-justice-sociale-nexiste-pas
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

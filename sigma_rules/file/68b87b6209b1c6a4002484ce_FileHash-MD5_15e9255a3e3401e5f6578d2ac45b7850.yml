@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 15e9255a3e3401e5f6578d2ac45b7850
+id: 4c238120-b322-4318-a70a-2424fd0bafbc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Analyzing NotDoor:
+  Inside APT28''s Expanding Arsenal'' (68b87b6209b1c6a4002484ce).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://lab52.io/blog/analyzing-notdoor-inside-apt28s-expanding-arsenal
+tags:
+- vba macro
+- outlook
+- exfiltration
+- nato
+- obfuscation
+- persistence
+- dll side-loading
+- backdoor
+- notdoor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 15e9255a3e3401e5f6578d2ac45b7850
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

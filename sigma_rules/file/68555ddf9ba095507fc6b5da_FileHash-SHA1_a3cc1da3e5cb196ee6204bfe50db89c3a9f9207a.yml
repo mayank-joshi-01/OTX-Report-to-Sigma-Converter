@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - a3cc1da3e5cb196ee6204bfe50db89c3a9f9207a
+id: 2a3ebf46-9542-4f28-b5ef-1598122991cb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Resurgence of the
+  Prometei Botnet' (68555ddf9ba095507fc6b5da).
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://unit42.paloaltonetworks.com/prometei-botnet-2025-activity
+tags:
+- linux
+- credential theft
+- prometei
+- dga
+- cryptominer
+- botnet
+- backdoor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a3cc1da3e5cb196ee6204bfe50db89c3a9f9207a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

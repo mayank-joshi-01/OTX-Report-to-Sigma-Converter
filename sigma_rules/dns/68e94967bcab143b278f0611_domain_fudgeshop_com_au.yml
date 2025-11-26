@@ -1,0 +1,33 @@
+title: OTX domain IOC - fudgeshop.com.au
+id: 70a4a106-6187-4078-aac7-66289cd4bb3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The ClickFix Factory:
+  First Exposure of IUAM ClickFix Generator'' (68e94967bcab143b278f0611).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://unit42.paloaltonetworks.com/clickfix-generator-first-of-its-kind/
+tags:
+- ClickFix
+- clipboard
+- phishing
+- deerstealer
+- rat
+- remote access
+- captcha
+- odyssey
+- infostealer
+- iuam
+- clickfix generator
+- macos
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fudgeshop.com.au
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

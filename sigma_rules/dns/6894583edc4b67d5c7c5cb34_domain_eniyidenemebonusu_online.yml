@@ -1,0 +1,20 @@
+title: OTX domain IOC - eniyidenemebonusu.online
+id: 70da70c5-548f-4cd2-a6ad-24468cd4ee69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eniyidenemebonusu.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

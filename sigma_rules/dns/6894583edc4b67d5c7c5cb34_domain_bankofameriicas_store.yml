@@ -1,0 +1,20 @@
+title: OTX domain IOC - bankofameriicas.store
+id: c8866e5b-d7d0-4d5d-824f-18b6d4fd9d3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bankofameriicas.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

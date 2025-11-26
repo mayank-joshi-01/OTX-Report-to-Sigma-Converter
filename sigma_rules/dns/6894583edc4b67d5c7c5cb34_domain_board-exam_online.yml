@@ -1,0 +1,20 @@
+title: OTX domain IOC - board-exam.online
+id: 7cf9323e-44e1-4293-a654-ab844c38d5b7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: board-exam.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

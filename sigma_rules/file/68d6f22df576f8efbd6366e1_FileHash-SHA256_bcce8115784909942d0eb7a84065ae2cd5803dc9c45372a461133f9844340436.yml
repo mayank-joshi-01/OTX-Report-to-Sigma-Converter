@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - bcce8115784909942d0eb7a84065ae2cd5803dc9c45372a461133f9844340436
+id: c3fc4dea-5ebe-4718-aedd-794ce515f333
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SVG Phishing hits
+  Ukraine with Amatera Stealer, PureMiner' (68d6f22df576f8efbd6366e1).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://www.fortinet.com/blog/threat-research/svg-phishing-hits-ukraine-with-amatera-stealer-pureminer
+tags:
+- pureminer
+- chm
+- countloader
+- hta loader
+- amatera stealer
+- data theft
+- ukraine
+- phishing
+- svg
+- fileless
+- cryptomining
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: bcce8115784909942d0eb7a84065ae2cd5803dc9c45372a461133f9844340436
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

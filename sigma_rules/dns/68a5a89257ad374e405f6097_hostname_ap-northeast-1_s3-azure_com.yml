@@ -1,0 +1,32 @@
+title: OTX hostname IOC - ap-northeast-1.s3-azure.com
+id: 1d730573-1030-4a34-8a7b-c2c4d5e42c90
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SOC files: an APT41
+  attack on government IT services in Africa'' (68a5a89257ad374e405f6097).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://securelist.com/apt41-in-africa/116986
+tags:
+- targeted attack
+- africa
+- checkout
+- dll sideloading
+- lateral movement
+- sharepoint
+- mimikatz
+- pillager
+- data exfiltration
+- government
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ap-northeast-1.s3-azure.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

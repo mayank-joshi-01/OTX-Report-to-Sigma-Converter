@@ -1,0 +1,20 @@
+title: OTX domain IOC - theprovoca.site
+id: dd92eaeb-4a6c-4d74-9963-265a878a9333
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theprovoca.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

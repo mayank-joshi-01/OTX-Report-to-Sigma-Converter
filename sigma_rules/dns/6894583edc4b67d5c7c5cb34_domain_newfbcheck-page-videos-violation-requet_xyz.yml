@@ -1,0 +1,20 @@
+title: OTX domain IOC - newfbcheck-page-videos-violation-requet.xyz
+id: dc4baedf-e3c1-47c1-b7f9-0e1b536a77ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: newfbcheck-page-videos-violation-requet.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

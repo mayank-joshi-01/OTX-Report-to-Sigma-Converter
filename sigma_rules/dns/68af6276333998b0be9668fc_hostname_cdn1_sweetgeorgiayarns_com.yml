@@ -1,0 +1,30 @@
+title: OTX hostname IOC - cdn1.sweetgeorgiayarns.com
+id: ccdc56d3-2cb0-4234-8140-e379e17e473f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UAC-0057 Keeps Pressure
+  on Ukraine and Poland' (68af6276333998b0be9668fc).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland/#tid_chains_sim
+tags:
+- ukraine
+- confuserex
+- cobalt strike
+- poland
+- cyber espionage
+- upx
+- downloaders
+- vba macros
+- domain impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cdn1.sweetgeorgiayarns.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9q76q8zfw.world
+id: 3c188ac9-37d0-46cd-941c-d185b4e23b96
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9q76q8zfw.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

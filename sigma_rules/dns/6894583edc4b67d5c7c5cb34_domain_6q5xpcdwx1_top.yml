@@ -1,0 +1,20 @@
+title: OTX domain IOC - 6q5xpcdwx1.top
+id: ff665c60-dc0a-4cd7-8ae0-05edde4999d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 6q5xpcdwx1.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

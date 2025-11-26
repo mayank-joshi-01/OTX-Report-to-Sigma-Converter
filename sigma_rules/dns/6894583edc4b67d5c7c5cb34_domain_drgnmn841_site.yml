@@ -1,0 +1,20 @@
+title: OTX domain IOC - drgnmn841.site
+id: ecd7cb3e-2bd2-4890-94e8-8a0f8a04bd5c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: drgnmn841.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

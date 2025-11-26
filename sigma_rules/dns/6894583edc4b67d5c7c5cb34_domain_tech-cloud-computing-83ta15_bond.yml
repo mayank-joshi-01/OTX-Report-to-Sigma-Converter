@@ -1,0 +1,20 @@
+title: OTX domain IOC - tech-cloud-computing-83ta15.bond
+id: 7ca8aa58-29ad-49f4-94a2-0b18a97a4b84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tech-cloud-computing-83ta15.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

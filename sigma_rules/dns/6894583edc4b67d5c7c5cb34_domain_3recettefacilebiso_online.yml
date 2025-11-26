@@ -1,0 +1,20 @@
+title: OTX domain IOC - 3recettefacilebiso.online
+id: 6145510f-93b2-4a04-aebb-1e1d31f730de
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 3recettefacilebiso.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

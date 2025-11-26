@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - 90b760ed1d0dcb3ef0f2b6d6195c9d852bcb65eca293578982a8c4b64f51b035
+id: 6a0bdafb-3c46-4668-b8ac-b8489a677f2e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Another BRICKSTORM:
+  Stealthy Backdoor Enabling Espionage into Tech and Legal Sectors'' (68e681878d2b2b236757c808).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/brickstorm-espionage-campaign/
+tags:
+- windows
+- brickstorm
+- vpxd
+- backup scan
+- linux
+- sentinel
+- silk typhoon
+- systemconfiguration
+- unc5221
+- zero-day
+- socks proxy
+- ssh
+- vcenter
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 90b760ed1d0dcb3ef0f2b6d6195c9d852bcb65eca293578982a8c4b64f51b035
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

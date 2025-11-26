@@ -1,0 +1,20 @@
+title: OTX domain IOC - x7bet-online.top
+id: 04d766c0-df63-4726-a68e-fb07d2a807df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: x7bet-online.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

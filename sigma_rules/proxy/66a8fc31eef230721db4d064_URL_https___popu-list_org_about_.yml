@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://popu-list.org/about/
+id: 8611e999-d318-4e8c-8484-12c5cf47db42
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://popu-list.org/about/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

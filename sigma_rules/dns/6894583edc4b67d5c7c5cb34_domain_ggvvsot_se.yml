@@ -1,0 +1,20 @@
+title: OTX domain IOC - ggvvsot.se
+id: 021f05f4-d6e1-4b89-8ee3-2842904d9044
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ggvvsot.se
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

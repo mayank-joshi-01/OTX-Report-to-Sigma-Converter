@@ -1,0 +1,20 @@
+title: OTX domain IOC - n7vascmn85s7mkctjbd4bw1gunw2n.il
+id: 26ba38ec-c5e9-4739-8d5c-b3e309db3570
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: n7vascmn85s7mkctjbd4bw1gunw2n.il
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

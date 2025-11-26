@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 7cac63e7dd0c72224324fb6cbc3fb6c41915d60f7f11b38de99ee09a2a3811c5
+id: 61bc856d-496f-4ffe-95d4-7cf7fd1f11e9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NKNShell Malware Distributed
+  via VPN Website' (691f29a24b6ccf92e10ec97a).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91139
+tags:
+- nknshell
+- nkn
+- backdoor
+- mqtt
+- powershell
+- vpn
+- sparkrat
+- gs-netcat
+- south korea
+- sqlmap
+- sliver
+- meshagent
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7cac63e7dd0c72224324fb6cbc3fb6c41915d60f7f11b38de99ee09a2a3811c5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

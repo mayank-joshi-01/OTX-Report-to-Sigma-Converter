@@ -1,0 +1,20 @@
+title: OTX domain IOC - 0919748107.com
+id: c3fd9c8a-8d5d-4374-b2df-2f898a0beb3f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 0919748107.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

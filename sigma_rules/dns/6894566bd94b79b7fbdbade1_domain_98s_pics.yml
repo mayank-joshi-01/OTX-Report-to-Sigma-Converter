@@ -1,0 +1,20 @@
+title: OTX domain IOC - 98s.pics
+id: 1590fb02-f5d0-49eb-95ec-2f23084776ac
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 98s.pics
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

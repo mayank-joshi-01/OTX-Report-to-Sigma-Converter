@@ -1,0 +1,20 @@
+title: OTX domain IOC - 464xinv105kyveeogdotc.shop
+id: 16a55d4f-0e7a-4e8c-b782-7d9fff0681e5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 464xinv105kyveeogdotc.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

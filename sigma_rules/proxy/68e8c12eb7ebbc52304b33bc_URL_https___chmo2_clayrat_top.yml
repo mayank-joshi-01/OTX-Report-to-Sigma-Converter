@@ -1,0 +1,25 @@
+title: OTX URL IOC - https://chmo2.clayrat.top
+id: d8f87c4c-5a04-4980-bde4-e26b8bcfb0a7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClayRat: A New Android
+  Spyware Targeting Russia'' (68e8c12eb7ebbc52304b33bc).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://zimperium.com/blog/clayrat-a-new-android-spyware-targeting-russia
+tags:
+- ClayRat
+- Spyware
+- phishing
+- SMS
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://chmo2.clayrat.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

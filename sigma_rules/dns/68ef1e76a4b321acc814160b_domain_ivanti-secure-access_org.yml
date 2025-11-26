@@ -1,0 +1,29 @@
+title: OTX domain IOC - ivanti-secure-access.org
+id: d66f37ef-52d2-4bd8-b328-e71217dbecbe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Search, Click, Steal:
+  The Hidden Threat of Spoofed Ivanti VPN Client Sites'' (68ef1e76a4b321acc814160b).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://www.zscaler.com/blogs/security-research/spoofed-ivanti-vpn-client-sites
+tags:
+- ivanti
+- credential theft
+- trojanized installer
+- akira
+- vpn
+- seo poisoning
+- akira ransomware
+- pulse secure
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ivanti-secure-access.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - luckyspinworld.site
+id: 981b4057-b022-43a2-a157-7c84408d59d0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luckyspinworld.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 2915b3f8b703eb744fc54c81f4a9c67f
+id: 4cddb848-f805-4b93-8a6d-6aeb6d6ae502
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Link up, lift up,
+  level up' (68b0eaf610ccc95f5992dca8).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://blog.talosintelligence.com/link-up-lift-up-level-up/
+tags:
+- education
+- promptlock
+- networking
+- conferences
+- ransomware
+- community
+- cybersecurity
+- vulnerabilities
+- professional development
+- cve-2025-48384
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2915b3f8b703eb744fc54c81f4a9c67f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

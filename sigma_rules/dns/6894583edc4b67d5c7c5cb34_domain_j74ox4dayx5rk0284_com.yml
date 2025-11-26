@@ -1,0 +1,20 @@
+title: OTX domain IOC - j74ox4dayx5rk0284.com
+id: 894127f6-bf0b-473d-adcd-8ddcb4f172d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: j74ox4dayx5rk0284.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

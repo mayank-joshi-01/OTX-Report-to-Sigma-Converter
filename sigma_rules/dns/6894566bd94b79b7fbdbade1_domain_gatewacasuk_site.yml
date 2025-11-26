@@ -1,0 +1,20 @@
+title: OTX domain IOC - gatewacasuk.site
+id: 5ce9957e-47a5-4d3e-a37f-221c1e29ec55
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gatewacasuk.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX hostname IOC - ccerrado10.con-ip.com
+id: f1cc72d8-e350-48a6-9a4f-0959d2ad5092
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TAG-144's Persistent
+  Grip on South American Organizations' (68add0f60282b650edbd7169).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.recordedfuture.com/research/tag-144s-persistent-grip-on-south-american-organizations
+tags:
+- limerat
+- dcrat
+- asyncrat
+- south america
+- xworm
+- bitrat
+- quasarrat
+- remcos rat
+- blotchyquasar
+- njrat
+- TAG-144
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ccerrado10.con-ip.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

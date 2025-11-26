@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 16a6a8fa735eaff4f3781c9025fc0289
+id: 0f1cd0bb-e089-4549-912d-a38191484207
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'August 2025 Trends
+  Report on Phishing Emails' (68c968ecee455f25f422b9f9).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://asec.ahnlab.com/en/90158
+tags:
+- script attachments
+- fakepage
+- phishing
+- email attachments
+- purecrypter
+- malware
+- cve-2017-11882
+- korean language
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 16a6a8fa735eaff4f3781c9025fc0289
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

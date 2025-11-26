@@ -1,0 +1,24 @@
+title: OTX URL IOC - http://39.107.156.136/api/v1/namespaces/kube-system/services
+id: 58a5be0e-c135-4bb8-aedb-fb5d27ddb828
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Wave of SquidLoader
+  Malware Targeting Financial Institutions' (687e2c9e0e25d679d3ea631d).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://www.trellix.com/blogs/research/threat-analysis-squidLoader-still-swimming-under-the-radar/
+tags:
+- squidloader
+- cobalt strike
+- cobalt strike beacon
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://39.107.156.136/api/v1/namespaces/kube-system/services
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

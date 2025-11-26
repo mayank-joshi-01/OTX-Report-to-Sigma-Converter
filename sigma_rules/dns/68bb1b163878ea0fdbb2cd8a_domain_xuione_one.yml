@@ -1,0 +1,30 @@
+title: OTX domain IOC - xuione.one
+id: a156b159-9b5e-45ab-9f67-ae775cc0d4f6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Massive IPTV Piracy
+  Network Uncovered' (68bb1b163878ea0fdbb2cd8a).
+author: AlienVault
+date: '2025-09-05'
+references:
+- https://www.silentpush.com/blog/iptv-piracy/#Sample-IPTV-Piracy-Network-IOFA-List
+tags:
+- cybercrime
+- iptv
+- xuione
+- piracy
+- digital content
+- infrastructure mapping
+- streaming
+- brand protection
+- tiyansoft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xuione.one
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

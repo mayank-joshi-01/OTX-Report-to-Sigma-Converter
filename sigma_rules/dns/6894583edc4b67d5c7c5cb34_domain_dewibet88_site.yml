@@ -1,0 +1,20 @@
+title: OTX domain IOC - dewibet88.site
+id: f7ab9d33-4c64-436f-898f-a1483e278079
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dewibet88.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

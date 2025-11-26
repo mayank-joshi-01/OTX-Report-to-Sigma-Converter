@@ -1,0 +1,20 @@
+title: OTX domain IOC - ohgbefqegvejj.store
+id: b31c1a8f-9bcc-44a2-9f48-8fe18a9fe94f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ohgbefqegvejj.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

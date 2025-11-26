@@ -1,0 +1,20 @@
+title: OTX domain IOC - xxinxiing78954654689.com
+id: 6a7ee648-0cee-4d9d-b600-9bbbbc519a1f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xxinxiing78954654689.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX hostname IOC - hvmeyq.viewdns.net
+id: 10dc87aa-21d0-4a1b-825f-8cfeee7b3995
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Reconnaissance
+  to Control: The Operational Blueprint of Kimsuky APT for Cyber Espionage'' (68948bbde7ab5603a534b204).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.aryaka.com/docs/reports/aryaka-kimsuky-apt-operational-blueprint.pdf
+tags:
+- data exfiltration
+- reflective dll injection
+- powershell
+- apt43
+- keylogging
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hvmeyq.viewdns.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

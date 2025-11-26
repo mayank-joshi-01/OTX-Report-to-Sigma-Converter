@@ -1,0 +1,36 @@
+title: OTX hostname IOC - cpanel.santechplumbing.com
+id: 09de430f-5456-4ee7-b4a2-9150707ef36b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking SocGholish:
+  Untangling the Malware Web Behind the ''Pioneer of Fake Updates'' and Its Operator''
+  (6895aceaf8d4d7295fce7c8c).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.silentpush.com/blog/socgholish/
+tags:
+- wastedlocker
+- socgholish
+- netsupportrat
+- malware-as-a-service
+- fake updates
+- traffic distribution system
+- domain shadowing
+- hades
+- mintsloader
+- raspberry robin
+- lockbit
+- ransomware
+- dridex
+- initial access broker
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cpanel.santechplumbing.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

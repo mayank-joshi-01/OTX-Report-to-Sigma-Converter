@@ -1,0 +1,20 @@
+title: OTX domain IOC - construction-software-tur.online
+id: 60b0af4d-db46-4cd2-a2b1-4f84b17977d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: construction-software-tur.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

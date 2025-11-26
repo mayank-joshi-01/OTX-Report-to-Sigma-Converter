@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 6e487be8e3d547850ffae48148d40e52059463b8395063561489955064e77534
+id: abd07c64-3751-4267-b5b0-60ce685cb10c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'October 2025 Trends
+  Report on Phishing Emails' (691f29a13e05e0fd549183e7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91060
+tags:
+- email attachments
+- rar compression
+- trojans
+- remcos rat
+- korean phishing
+- ole objects
+- phishing
+- js files
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6e487be8e3d547850ffae48148d40e52059463b8395063561489955064e77534
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

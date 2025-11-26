@@ -1,0 +1,20 @@
+title: OTX domain IOC - rdekonink.nl
+id: 39d6b3b5-606c-4153-8bb8-ef7fe8ec61d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rdekonink.nl
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

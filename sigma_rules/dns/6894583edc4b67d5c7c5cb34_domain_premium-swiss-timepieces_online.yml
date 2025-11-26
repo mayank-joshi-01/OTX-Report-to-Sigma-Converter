@@ -1,0 +1,20 @@
+title: OTX domain IOC - premium-swiss-timepieces.online
+id: c586c5e7-01af-448b-98af-2e65d8ec4b37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: premium-swiss-timepieces.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

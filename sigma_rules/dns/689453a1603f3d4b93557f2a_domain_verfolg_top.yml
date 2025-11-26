@@ -1,0 +1,20 @@
+title: OTX domain IOC - verfolg.top
+id: 0b6acca7-901f-41ba-9c39-8a2da3893191
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: verfolg.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://api.jsonsilo.com/public/942acd98-8c8c-47d8-8648-0456b740ef8b
+id: 56942eae-c879-4fce-a069-bab47c1c3eb5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Contagious Interview
+  Actors Now Utilize JSON Storage Services for Malware Delivery' (69171fd18d6bf2d291a8c53e).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://blog.nviso.eu/2025/11/13/contagious-interview-actors-now-utilize-json-storage-services-for-malware-delivery/
+tags:
+- ottercookie
+- json storage
+- tsunami payload
+- web3
+- social engineering
+- rat
+- north korea
+- infostealer
+- cryptocurrency
+- invisibleferret
+- trojanized code
+- beavertail
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://api.jsonsilo.com/public/942acd98-8c8c-47d8-8648-0456b740ef8b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

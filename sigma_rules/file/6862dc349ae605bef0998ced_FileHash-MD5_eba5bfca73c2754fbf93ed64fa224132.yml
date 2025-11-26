@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - eba5bfca73c2754fbf93ed64fa224132
+id: 3ab6257c-c008-4a5e-bc09-7a07a01fddba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hide Your RDP: Password
+  Spray Leads to RansomHub Deployment'' (6862dc349ae605bef0998ced).'
+author: AlienVault
+date: '2025-06-30'
+references:
+- https://thedfirreport.com/2025/06/30/hide-your-rdp-password-spray-leads-to-ransomhub-deployment/
+tags:
+- rdp
+- password spray
+- mimikatz
+- ransomhub
+- living-off-the-land
+- data exfiltration
+- credential theft
+- ransomware
+- lateral movement
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: eba5bfca73c2754fbf93ed64fa224132
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

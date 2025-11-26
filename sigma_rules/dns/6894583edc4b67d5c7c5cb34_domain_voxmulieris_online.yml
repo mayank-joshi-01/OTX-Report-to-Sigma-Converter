@@ -1,0 +1,20 @@
+title: OTX domain IOC - voxmulieris.online
+id: f63e03ba-65a4-411b-8230-1bd9a5ca9af8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: voxmulieris.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

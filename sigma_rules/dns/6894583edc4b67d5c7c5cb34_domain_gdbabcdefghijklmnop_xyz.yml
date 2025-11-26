@@ -1,0 +1,20 @@
+title: OTX domain IOC - gdbabcdefghijklmnop.xyz
+id: 3110fa02-7f8e-4bbe-9e0b-11a0e7ba81b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gdbabcdefghijklmnop.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

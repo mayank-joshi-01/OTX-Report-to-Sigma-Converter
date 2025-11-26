@@ -1,0 +1,20 @@
+title: OTX domain IOC - inpost-go.click
+id: 1f82a41b-8e00-49c1-b218-d8c4e321d218
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: inpost-go.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

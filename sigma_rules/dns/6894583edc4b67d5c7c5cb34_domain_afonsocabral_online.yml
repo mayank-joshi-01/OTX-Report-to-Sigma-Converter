@@ -1,0 +1,20 @@
+title: OTX domain IOC - afonsocabral.online
+id: 80e5edbb-ecf5-4d1b-b709-9a2d774b5e7f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: afonsocabral.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

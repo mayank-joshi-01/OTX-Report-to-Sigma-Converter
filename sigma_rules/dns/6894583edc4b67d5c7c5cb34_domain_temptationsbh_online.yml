@@ -1,0 +1,20 @@
+title: OTX domain IOC - temptationsbh.online
+id: 516a9f46-4585-404a-b6ef-0daa8c5d6c56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: temptationsbh.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

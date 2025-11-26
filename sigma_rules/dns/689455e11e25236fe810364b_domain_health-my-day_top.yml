@@ -1,0 +1,20 @@
+title: OTX domain IOC - health-my-day.top
+id: 92b8e1e5-1e1b-4f14-94b6-7f3ba41845c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: health-my-day.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

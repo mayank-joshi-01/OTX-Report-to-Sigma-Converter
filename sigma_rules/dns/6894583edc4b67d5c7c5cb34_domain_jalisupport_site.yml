@@ -1,0 +1,20 @@
+title: OTX domain IOC - jalisupport.site
+id: 96fc1491-6d18-48c8-a1e3-355c9751c0d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jalisupport.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

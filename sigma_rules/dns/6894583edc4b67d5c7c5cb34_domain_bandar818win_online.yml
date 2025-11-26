@@ -1,0 +1,20 @@
+title: OTX domain IOC - bandar818win.online
+id: cd13294c-c8a5-4952-ac54-eef39b952753
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bandar818win.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

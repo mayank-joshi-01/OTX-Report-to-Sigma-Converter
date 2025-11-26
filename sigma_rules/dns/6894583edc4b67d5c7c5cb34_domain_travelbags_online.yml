@@ -1,0 +1,20 @@
+title: OTX domain IOC - travelbags.online
+id: 45d601be-9b65-4789-bab4-b37d31d61b0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: travelbags.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

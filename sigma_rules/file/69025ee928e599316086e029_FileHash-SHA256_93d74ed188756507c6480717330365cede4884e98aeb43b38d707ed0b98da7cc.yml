@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 93d74ed188756507c6480717330365cede4884e98aeb43b38d707ed0b98da7cc
+id: c1a0f137-e696-49e3-b428-d14d55e47c6e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Scripts to
+  Systems: A Comprehensive Look at Tangerine Turkey Operations'' (69025ee928e599316086e029).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://www.cybereason.com/blog/tangerine-turkey?hs_amp=true
+tags:
+- vbscript
+- living-off-the-land
+- xmrig
+- defense-evasion
+- worm
+- persistence
+- cryptomining
+- usb
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 93d74ed188756507c6480717330365cede4884e98aeb43b38d707ed0b98da7cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

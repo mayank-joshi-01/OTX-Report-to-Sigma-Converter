@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 2aae8e206dd068135b16ff87dfbb816053fc247a222aad0d34c9227e6ecf7b5b
+id: ad2acdd3-0d60-435f-be53-d15ad42bf0e0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking FileFix,
+  Shadow Vector, and SideWinder' (6912121cec3120ad4ee5928c).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://www.acronis.com/en/tru/posts/acronis-tru-alliance-virustotal-tracking-filefix-shadow-vector-and-sidewinder
+tags:
+- virustotal
+- svg
+- clipboard manipulation
+- cve-2017-11882
+- filefix
+- yara
+- clickfix
+- cve-2017-0199
+- colombia
+- south asia
+- shadow vector
+- document-based attacks
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 2aae8e206dd068135b16ff87dfbb816053fc247a222aad0d34c9227e6ecf7b5b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

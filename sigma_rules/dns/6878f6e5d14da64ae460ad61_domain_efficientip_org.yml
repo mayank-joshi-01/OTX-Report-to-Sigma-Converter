@@ -1,0 +1,29 @@
+title: OTX domain IOC - efficientip.org
+id: 3c19327a-7031-486b-beb6-6e2006406ea6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DNS: A Small but
+  Effective C2 system'' (6878f6e5d14da64ae460ad61).'
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://blogs.infoblox.com/security/dns-a-small-but-effective-c2-system
+tags:
+- dnscat2
+- command-and-control
+- dns exfiltrator
+- iodine
+- weasel
+- cobalt strike
+- sliver
+- dns tunneling
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: efficientip.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

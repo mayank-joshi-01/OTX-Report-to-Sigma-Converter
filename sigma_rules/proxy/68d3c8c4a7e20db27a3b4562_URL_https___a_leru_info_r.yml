@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://a.leru.info/r
+id: 59301be9-f134-43e5-a5f2-0d80c5f75c9e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://a.leru.info/r
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

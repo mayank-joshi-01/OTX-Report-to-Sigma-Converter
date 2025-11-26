@@ -1,0 +1,20 @@
+title: OTX domain IOC - parksidefamily.top
+id: 91ad8c2b-5fc2-46bf-a386-f72640cc993d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: parksidefamily.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - roofer-company9.click
+id: 82fde3be-83b2-4d21-ac6c-a9084ad42acc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: roofer-company9.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

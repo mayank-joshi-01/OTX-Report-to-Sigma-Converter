@@ -1,0 +1,20 @@
+title: OTX hostname IOC - deguo1.silkhers.com
+id: 96cd1e7f-5bc6-4e71-b536-bcef8d769579
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: deguo1.silkhers.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

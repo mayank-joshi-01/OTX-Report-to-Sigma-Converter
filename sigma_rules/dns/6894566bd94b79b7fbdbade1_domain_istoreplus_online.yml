@@ -1,0 +1,20 @@
+title: OTX domain IOC - istoreplus.online
+id: 59507eac-f25c-45f2-8fa1-6ab5a52106b1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: istoreplus.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

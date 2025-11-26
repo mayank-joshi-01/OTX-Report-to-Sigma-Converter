@@ -1,0 +1,20 @@
+title: OTX domain IOC - mczuvukgzbj.net
+id: be584f22-af69-4303-9a79-f5c53b0aa2ef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mczuvukgzbj.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 0af46f150e0ffa678d20fcbe5e145576
+id: d70f6b1b-4cb8-410b-9514-5449c6ae2ed8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Proxyware Malware
+  Being Distributed on YouTube Video Download Site' (68a84f04510bd6992ad887e0).
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://asec.ahnlab.com/en/89787
+tags:
+- youtube
+- digitalpulse
+- task scheduler
+- bandwidth
+- downloader
+- c&c
+- nodejs
+- honeygain
+- proxyware
+- javascript
+- infatica
+- malware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0af46f150e0ffa678d20fcbe5e145576
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - capitolsealsignings.com
+id: a8f2ad99-60be-4558-86a3-dcce21c29130
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capitolsealsignings.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

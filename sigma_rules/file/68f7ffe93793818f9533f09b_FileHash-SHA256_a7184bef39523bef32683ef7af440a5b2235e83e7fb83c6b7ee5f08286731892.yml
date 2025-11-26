@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - a7184bef39523bef32683ef7af440a5b2235e83e7fb83c6b7ee5f08286731892
+id: 374597ec-5fc0-4e08-a41a-bdcf0ddcebd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Tykit Analysis:
+  New Phishing Kit Stealing Hundreds of Microsoft Accounts in Finance'' (68f7ffe93793818f9533f09b).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://any.run/cybersecurity-blog/tykit-technical-analysis
+tags:
+- svg
+- microsoft 365
+- phishing
+- multi-stage attack
+- credential theft
+- cloudflare turnstile
+- tykit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a7184bef39523bef32683ef7af440a5b2235e83e7fb83c6b7ee5f08286731892
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

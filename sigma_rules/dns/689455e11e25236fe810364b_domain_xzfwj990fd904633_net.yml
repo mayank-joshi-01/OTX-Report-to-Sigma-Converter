@@ -1,0 +1,20 @@
+title: OTX domain IOC - xzfwj990fd904633.net
+id: d7f039ea-63d9-49a2-8b6c-7f89f9786d6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xzfwj990fd904633.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

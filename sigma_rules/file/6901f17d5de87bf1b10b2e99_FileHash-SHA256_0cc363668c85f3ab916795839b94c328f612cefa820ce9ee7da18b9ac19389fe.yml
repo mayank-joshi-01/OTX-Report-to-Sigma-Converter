@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 0cc363668c85f3ab916795839b94c328f612cefa820ce9ee7da18b9ac19389fe
+id: d441e963-1e46-4608-9a37-0706070c59b1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of Trigona
+  Threat Actor's Latest Attack Cases' (6901f17d5de87bf1b10b2e99).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://asec.ahnlab.com/en/90793/
+tags:
+- remote-control
+- ransomware
+- trigona
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0cc363668c85f3ab916795839b94c328f612cefa820ce9ee7da18b9ac19389fe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

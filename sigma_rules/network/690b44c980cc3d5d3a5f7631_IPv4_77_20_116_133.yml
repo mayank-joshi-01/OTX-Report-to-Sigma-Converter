@@ -1,0 +1,29 @@
+title: OTX IPv4 IOC - 77.20.116.133
+id: 5e0b0393-2f18-441d-9692-bad1e3597a93
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Weaponized Military
+  Documents Deliver Advanced SSH-Tor Backdoor' (690b44c980cc3d5d3a5f7631).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://cyble.com/blog/weaponized-military-documents-deliver-backdoor
+tags:
+- tor hidden service
+- defense sector
+- openssh
+- military lure
+- obfs4
+- uav operations
+- ssh-tor backdoor
+- belarusian air force
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 77.20.116.133
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

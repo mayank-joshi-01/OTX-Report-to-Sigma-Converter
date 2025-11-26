@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - aa6d071d787ea8e8d054f7a699301f732cf73552d1df09a0155a5307b43df293
+id: 1472fe79-1329-42d3-9838-4a6a32986fd3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CLOP RANSOMWARE:
+  DISSECTING NETWORK - THE RAVEN FILE'' (690b1b175f4f05eaf8f6c0e0).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://theravenfile.com/2025/11/04/clop-ransomware-dissecting-network/
+tags:
+- cve-2025-61882
+- cve-2023-0669
+- cyclops blink
+- cryptomix
+- infrastructure
+- oracle ebs
+- cve-2023-34362
+- ransomware
+- fingerprints
+- ip addresses
+- network analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: aa6d071d787ea8e8d054f7a699301f732cf73552d1df09a0155a5307b43df293
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

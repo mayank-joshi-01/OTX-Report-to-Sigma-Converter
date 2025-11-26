@@ -1,0 +1,20 @@
+title: OTX domain IOC - cozy-vesta-ricin.site
+id: 1cc6f96c-81bd-46c6-b275-277cb4658b40
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cozy-vesta-ricin.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

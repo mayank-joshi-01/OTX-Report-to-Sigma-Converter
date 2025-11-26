@@ -1,0 +1,20 @@
+title: OTX domain IOC - mitchellrehab.online
+id: cf00d9a9-54ca-40b4-9e33-0c459f6f7bd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mitchellrehab.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

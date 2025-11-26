@@ -1,0 +1,20 @@
+title: OTX domain IOC - elephantstechnology.online
+id: 37db6790-2cf5-481b-9ad1-fb9846e64587
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: elephantstechnology.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

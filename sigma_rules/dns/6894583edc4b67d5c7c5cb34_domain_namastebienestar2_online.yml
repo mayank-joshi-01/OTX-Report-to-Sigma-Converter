@@ -1,0 +1,20 @@
+title: OTX domain IOC - namastebienestar2.online
+id: c1eb460e-f599-4411-99d3-72a982588653
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: namastebienestar2.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

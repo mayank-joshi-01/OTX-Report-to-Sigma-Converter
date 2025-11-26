@@ -1,0 +1,20 @@
+title: OTX domain IOC - diplom-center-24.online
+id: 47362c53-4101-49fe-85d9-9e8b73eb2668
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: diplom-center-24.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX domain IOC - my-sharepoint-inc.com
+id: a8dba3bc-9863-433f-aec5-062004e0b16b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT MuddyWater Targets
+  CFOs with Multi-Stage Phishing & NetBird Abuse' (68a6cc4ca8c0e77008166455).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://hunt.io/blog/apt-muddywater-deploys-multi-stage-phishing-to-target-cfos
+tags:
+- multi-stage
+- spear-phishing
+- cfo
+- remote-access
+- vbs
+- ateraagent
+- finance
+- firebase
+- netbird
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: my-sharepoint-inc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

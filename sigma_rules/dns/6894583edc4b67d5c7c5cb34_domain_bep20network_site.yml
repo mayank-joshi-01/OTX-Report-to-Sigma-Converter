@@ -1,0 +1,20 @@
+title: OTX domain IOC - bep20network.site
+id: 6477b75a-e296-49b3-8b3d-e49810dc8180
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bep20network.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

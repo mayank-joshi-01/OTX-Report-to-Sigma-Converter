@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - adf675ffc1acb357f2d9f1a94e016f52
+id: c61a6e96-a3f6-4df8-9356-167d2270621b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''License to Encrypt:
+  Make Their Move'' (691d846bee2607ac565b349a).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.cybereason.com/blog/the-gentlemen-ransomware
+tags:
+- linux
+- raas
+- encryption
+- windows
+- esxi
+- the gentlemen
+- persistence
+- ransomware
+- dual-extortion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: adf675ffc1acb357f2d9f1a94e016f52
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

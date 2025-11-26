@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 381022e5fd0cede7146f9922e1ed30a3
+id: 6b78fd10-92c3-4ee3-8e76-5a3f3bd54628
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Supply Chain Risk
+  in Python: Termcolor and Colorama Explained'' (689fe4b4890a6b508d564827).'
+author: AlienVault
+date: '2025-08-16'
+references:
+- https://www.zscaler.com/blogs/security-research/supply-chain-risk-python-termncolor-and-colorinal-explained
+tags:
+- c2-communication
+- zulip
+- termncolor
+- dll-sideloading
+- pypi
+- supply-chain
+- python
+- persistence
+- colorinal
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 381022e5fd0cede7146f9922e1ed30a3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

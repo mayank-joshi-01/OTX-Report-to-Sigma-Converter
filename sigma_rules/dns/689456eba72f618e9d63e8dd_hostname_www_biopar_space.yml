@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.biopar.space
+id: 5f24db14-8327-4b8f-bdeb-b7adaaf437d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.biopar.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

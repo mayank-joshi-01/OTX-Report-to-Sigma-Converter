@@ -1,0 +1,20 @@
+title: OTX domain IOC - pylmffbimiurq.online
+id: e142139b-3ab4-4604-b197-e7a016b6a155
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pylmffbimiurq.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

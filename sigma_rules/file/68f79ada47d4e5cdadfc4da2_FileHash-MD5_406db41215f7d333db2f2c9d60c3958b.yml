@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 406db41215f7d333db2f2c9d60c3958b
+id: 68a3d761-c3fa-4a58-b5ba-73ff15c9921a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cyberespionage campaign
+  PassiveNeuron targets machines running Windows Server' (68f79ada47d4e5cdadfc4da2).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://securelist.com/passiveneuron-campaign-with-apt-implants-and-cobalt-strike/117745/
+tags:
+- cyberespionage
+- multi-stage loading
+- c2 communication
+- attribution challenges
+- cobalt strike
+- sql exploitation
+- server security
+- neuralexecutor
+- passiveneuron
+- windows server
+- neursite
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 406db41215f7d333db2f2c9d60c3958b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

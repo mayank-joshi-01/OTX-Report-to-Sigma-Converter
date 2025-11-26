@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 2db32339fa151276d5a40781bc8d5eaa
+id: 2649be7d-0d2c-4169-a815-d2cfcdfd4d78
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Actors Lure
+  Victims Into Downloading .HTA Files Using ClickFix To Spread Epsilon Red Ransomware'
+  (68835c6e2b2796aec0bd0a60).
+author: AlienVault
+date: '2025-07-25'
+references:
+- https://www.cloudsek.com/blog/threat-actors-lure-victims-into-downloading-hta-files-using-clickfix-to-spread-epsilon-red-ransomware
+tags:
+- drive-by download
+- activex
+- social engineering
+- clickfix
+- hta files
+- phishing
+- impersonation
+- epsilon red
+- quasar rat
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2db32339fa151276d5a40781bc8d5eaa
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

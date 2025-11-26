@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 64dfcdd8f511f4c71d19f5a58139f2c0
+id: b30bc366-932a-48d9-91e1-cd1e58624a23
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gh0st RAT-based GodRAT
+  attacks financial organizations' (68a4a146413d549dcd9b3dac).
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://securelist.com/godrat/117119
+tags:
+- steganography
+- password-stealer
+- financial-sector
+- awesomepuppet
+- gh0st rat
+- ms edge password stealer
+- skype
+- godrat
+- chrome password stealer
+- asyncrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 64dfcdd8f511f4c71d19f5a58139f2c0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

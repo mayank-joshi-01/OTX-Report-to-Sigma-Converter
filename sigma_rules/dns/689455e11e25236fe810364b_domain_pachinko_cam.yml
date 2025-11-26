@@ -1,0 +1,20 @@
+title: OTX domain IOC - pachinko.cam
+id: ca3aea0e-79b7-45e6-b420-bf108ac92cb1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pachinko.cam
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX hostname IOC - blog.sekoia.io
+id: 58ecc650-3fed-4dcd-a8da-35fda28b891b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Smoking Gun Uncovered:
+  RPX Relay at PolarEdge''s Core Exposed'' (69025eeb36a0f5fdf2f85765).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://blog.xlab.qianxin.com/smoking-gun-uncovered-rpx-relay-at-polaredges-core-exposed
+tags:
+- proxy
+- infrastructure
+- orb
+- vps
+- polaredge
+- command execution
+- iot
+- cve-2023-20118
+- evasion
+- rpx_server
+- rpx_client
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blog.sekoia.io
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

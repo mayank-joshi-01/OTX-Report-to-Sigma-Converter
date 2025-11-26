@@ -1,0 +1,26 @@
+title: OTX domain IOC - myblogreviews.online
+id: 868345d4-c611-4de1-939c-c0d8350bee35
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: myblogreviews.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

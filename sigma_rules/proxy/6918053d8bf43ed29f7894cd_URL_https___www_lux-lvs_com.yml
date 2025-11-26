@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://www.lux-lvs.com
+id: 045e6c4b-813e-49fc-ade5-d13f7b61a9b5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'How AI Is Fueling
+  a New Wave of Black Friday Scams' (6918053d8bf43ed29f7894cd).
+author: AlienVault
+date: '2025-11-15'
+references:
+- https://www.forcepoint.com/blog/x-labs/black-friday-scams-ai-phishing-guide
+tags:
+- phishing
+- cybersecurity
+- luxury goods
+- e-commerce
+- black friday
+- ai
+- scams
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.lux-lvs.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - guide-to-stock-trading13.click
+id: 56e274fe-cd4e-4963-bd27-3004f33e2e27
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guide-to-stock-trading13.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

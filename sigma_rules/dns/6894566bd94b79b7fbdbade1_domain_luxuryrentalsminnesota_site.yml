@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxuryrentalsminnesota.site
+id: 8505bf2d-aa3e-4dd8-a975-83446a8741d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxuryrentalsminnesota.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

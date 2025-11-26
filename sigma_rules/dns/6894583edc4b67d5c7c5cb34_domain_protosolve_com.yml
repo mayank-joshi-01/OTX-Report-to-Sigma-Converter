@@ -1,0 +1,20 @@
+title: OTX domain IOC - protosolve.com
+id: 858a608d-d905-4793-bceb-237b3fe00dae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: protosolve.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

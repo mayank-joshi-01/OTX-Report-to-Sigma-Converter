@@ -1,0 +1,20 @@
+title: OTX domain IOC - vrajitoareamamaelena.online
+id: 989b7a8c-15a9-464c-ab28-3905da5fff7d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vrajitoareamamaelena.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

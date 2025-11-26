@@ -1,0 +1,29 @@
+title: OTX domain IOC - adilsonralfadvocaciad.com
+id: 4686f6b7-d683-408f-961b-09316d3bdd98
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Banking Trojan
+  Identified, Distributed Through WhatsApp' (691e7a33a0a2a7b299ae7a59).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/spiderlabs-ids-new-banking-trojan-distributed-through-whatsapp
+tags:
+- eternidade stealer
+- delphi
+- banking trojan
+- credential theft
+- whatsapp
+- imap
+- brazil
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adilsonralfadvocaciad.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

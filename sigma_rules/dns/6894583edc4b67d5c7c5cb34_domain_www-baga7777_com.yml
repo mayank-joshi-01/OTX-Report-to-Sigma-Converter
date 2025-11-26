@@ -1,0 +1,20 @@
+title: OTX domain IOC - www-baga7777.com
+id: 7177c38f-3e4b-4d80-af74-6ed1d80e12ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www-baga7777.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

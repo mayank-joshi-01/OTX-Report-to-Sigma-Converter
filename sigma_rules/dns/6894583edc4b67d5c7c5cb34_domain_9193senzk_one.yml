@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9193senzk.one
+id: 1980e6a2-65f0-4a2d-9e2c-89e4233dd646
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9193senzk.one
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

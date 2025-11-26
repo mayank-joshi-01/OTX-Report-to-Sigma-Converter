@@ -1,0 +1,25 @@
+title: OTX domain IOC - i4tools8.com
+id: d1a3c3f9-9218-465a-94a3-ff864e293889
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: i4tools8.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

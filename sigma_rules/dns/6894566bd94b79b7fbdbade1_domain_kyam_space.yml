@@ -1,0 +1,20 @@
+title: OTX domain IOC - kyam.space
+id: 7912fc0b-bdab-4ec2-a101-21827efc1f81
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kyam.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

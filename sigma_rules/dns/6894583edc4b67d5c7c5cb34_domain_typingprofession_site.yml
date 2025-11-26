@@ -1,0 +1,20 @@
+title: OTX domain IOC - typingprofession.site
+id: 73625d0d-7c48-4573-b1eb-af36644eab23
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: typingprofession.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

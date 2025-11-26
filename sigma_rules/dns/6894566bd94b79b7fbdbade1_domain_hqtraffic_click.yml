@@ -1,0 +1,20 @@
+title: OTX domain IOC - hqtraffic.click
+id: 91c9d70f-7dd9-426e-ad36-2d0d54bb0ae9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hqtraffic.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

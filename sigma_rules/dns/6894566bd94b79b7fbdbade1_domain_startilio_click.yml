@@ -1,0 +1,20 @@
+title: OTX domain IOC - startilio.click
+id: 413edd04-5644-45ce-ade8-34f7075ef99a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: startilio.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

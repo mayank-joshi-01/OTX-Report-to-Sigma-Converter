@@ -1,0 +1,20 @@
+title: OTX domain IOC - vistaalegresm.online
+id: 99a94c5b-c0cf-4ea6-b395-11228e9a8686
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vistaalegresm.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

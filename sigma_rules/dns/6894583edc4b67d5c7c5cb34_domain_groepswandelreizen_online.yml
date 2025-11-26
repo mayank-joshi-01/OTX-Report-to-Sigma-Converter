@@ -1,0 +1,20 @@
+title: OTX domain IOC - groepswandelreizen.online
+id: 14d49731-d482-4fe5-b1bd-fa28abba3713
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: groepswandelreizen.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - etherealdream.top
+id: 896c43fd-d06d-45a1-8f15-eb16ac2abbb7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: etherealdream.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

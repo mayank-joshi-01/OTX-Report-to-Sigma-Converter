@@ -1,0 +1,29 @@
+title: OTX domain IOC - meteorasp.ru
+id: 59c44b29-6950-4bc5-bcd5-8936c6632207
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Crypto Phishing Applications
+  On The Play Store' (6855b5c6ea3a7d971baf5551).
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://cyble.com/blog/crypto-phishing-applications-on-the-play-store
+tags:
+- cryptocurrency
+- phishing
+- webview
+- android
+- google play store
+- mnemonic phrases
+- median framework
+- wallet impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: meteorasp.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

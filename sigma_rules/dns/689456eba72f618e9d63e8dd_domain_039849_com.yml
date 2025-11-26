@@ -1,0 +1,20 @@
+title: OTX domain IOC - 039849.com
+id: 41a4a748-0abc-4586-b31f-4b0862d1d971
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 039849.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

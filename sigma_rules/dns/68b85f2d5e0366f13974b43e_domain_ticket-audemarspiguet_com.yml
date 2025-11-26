@@ -1,0 +1,29 @@
+title: OTX domain IOC - ticket-audemarspiguet.com
+id: 52384f27-1586-4054-8187-1a6509e0be49
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Google Salesforce
+  Breach: A Deep dive into the chain and extent of the compromise'' (68b85f2d5e0366f13974b43e).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.seqrite.com/blog/google-salesforce-breach-unc6040-threat-research/
+tags:
+- salesforce
+- vishing
+- tor
+- saas security
+- cloud security
+- data exfiltration
+- oauth
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ticket-audemarspiguet.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

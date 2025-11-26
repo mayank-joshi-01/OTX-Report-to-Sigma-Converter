@@ -1,0 +1,20 @@
+title: OTX domain IOC - ncquickpassmx.top
+id: e6dfd1d1-e88e-4fb4-a437-8d67604a1670
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ncquickpassmx.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

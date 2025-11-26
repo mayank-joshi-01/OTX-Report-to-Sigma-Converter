@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://stayathomeclasses.com/slpw/up.php
+id: 2aced24b-5f59-4eae-9aed-6dd047f8eb3b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing LAMEHUG'
+  (68aaf606d8672c8f521ecc79).
+author: AlienVault
+date: '2025-08-24'
+references:
+- https://www.catonetworks.com/blog/cato-ctrl-threat-research-analyzing-lamehug
+tags:
+- apt28
+- proof-of-concept
+- ukraine
+- reconnaissance
+- lamehug
+- phishing
+- llm
+- ai-generated commands
+- exfiltration
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://stayathomeclasses.com/slpw/up.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - theworldsbestbarber.site
+id: 0d34424b-6c1d-489d-895c-5bd6ec59ad66
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: theworldsbestbarber.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

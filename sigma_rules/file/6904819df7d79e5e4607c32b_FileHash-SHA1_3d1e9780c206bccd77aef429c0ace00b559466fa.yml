@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA1 IOC - 3d1e9780c206bccd77aef429c0ace00b559466fa
+id: 805e75aa-5960-477e-81dc-97280fa41b03
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Investigation Report:
+  Android/BankBot-YNRK Mobile Banking Trojan'' (6904819df7d79e5e4607c32b).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.cyfirma.com/research/investigation-report-android-bankbot-ynrk-mobile-banking-trojan/
+tags:
+- overlay attacks
+- cryptocurrency theft
+- android/bankbot-ynrk
+- banking trojan
+- android
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 3d1e9780c206bccd77aef429c0ace00b559466fa
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

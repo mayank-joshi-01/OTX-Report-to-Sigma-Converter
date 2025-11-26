@@ -1,0 +1,20 @@
+title: OTX domain IOC - bitcoin-casino.win
+id: 6b8eef12-1162-4364-9b75-47ae73b71823
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bitcoin-casino.win
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

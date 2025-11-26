@@ -1,0 +1,20 @@
+title: OTX domain IOC - sanitation-liberia.com
+id: 9d0656e5-f669-4df0-b18e-c2807ff6cb48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sanitation-liberia.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

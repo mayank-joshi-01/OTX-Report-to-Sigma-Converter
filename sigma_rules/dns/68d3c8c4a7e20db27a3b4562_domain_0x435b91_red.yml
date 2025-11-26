@@ -1,0 +1,30 @@
+title: OTX domain IOC - 0x435b91.red
+id: fbe1fd53-a3f4-4cde-b8cb-3169e91ebe60
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 0x435b91.red
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

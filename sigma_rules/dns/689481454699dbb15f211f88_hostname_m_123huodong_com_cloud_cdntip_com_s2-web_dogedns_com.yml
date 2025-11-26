@@ -1,0 +1,29 @@
+title: OTX hostname IOC - m.123huodong.com.cloud.cdntip.com.s2-web.dogedns.com
+id: cc16148d-65c8-4361-b81b-a69e0fddc976
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SLOW#TEMPEST Cobalt
+  Strike Loader' (689481454699dbb15f211f88).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://dmpdump.github.io/posts/CobaltStrike_HK/
+tags:
+- entry-point-patching
+- beacon
+- chinese-targets
+- anti-analysis
+- cobalt strike
+- cobalt-strike
+- iso-image
+- dll-sideloading
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: m.123huodong.com.cloud.cdntip.com.s2-web.dogedns.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

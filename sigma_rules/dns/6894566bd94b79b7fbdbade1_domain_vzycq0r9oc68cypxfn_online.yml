@@ -1,0 +1,20 @@
+title: OTX domain IOC - vzycq0r9oc68cypxfn.online
+id: 7c8bdef1-00dd-42ac-abc4-4dbd116dd9f2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vzycq0r9oc68cypxfn.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

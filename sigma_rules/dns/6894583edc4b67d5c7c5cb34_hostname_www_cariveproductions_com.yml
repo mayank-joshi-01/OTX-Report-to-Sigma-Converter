@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.cariveproductions.com
+id: fabcd647-120e-4b41-9ae6-d2efadf95a1d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.cariveproductions.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

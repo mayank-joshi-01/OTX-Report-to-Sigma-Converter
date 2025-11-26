@@ -1,0 +1,20 @@
+title: OTX domain IOC - netempresatopaz.site
+id: 3a54dd57-ff00-4ecb-b317-8b1da71c3c75
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: netempresatopaz.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

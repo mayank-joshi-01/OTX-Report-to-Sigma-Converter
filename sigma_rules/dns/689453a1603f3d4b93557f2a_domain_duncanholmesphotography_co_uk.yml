@@ -1,0 +1,20 @@
+title: OTX domain IOC - duncanholmesphotography.co.uk
+id: 1db8ffee-7294-41af-8959-e3061b54dec2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: duncanholmesphotography.co.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

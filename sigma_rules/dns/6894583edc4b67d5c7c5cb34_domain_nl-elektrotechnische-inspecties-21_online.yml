@@ -1,0 +1,20 @@
+title: OTX domain IOC - nl-elektrotechnische-inspecties-21.online
+id: c83da40c-1023-4af5-bcad-010133d7bd18
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nl-elektrotechnische-inspecties-21.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

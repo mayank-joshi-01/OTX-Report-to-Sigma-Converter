@@ -1,0 +1,20 @@
+title: OTX domain IOC - saiibumokii246.site
+id: 99efc577-3d82-4d39-ac3d-a460b4e102b8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: saiibumokii246.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

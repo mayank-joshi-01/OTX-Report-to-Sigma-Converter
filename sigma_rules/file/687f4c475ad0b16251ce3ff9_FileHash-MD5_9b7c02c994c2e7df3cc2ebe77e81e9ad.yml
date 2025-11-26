@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 9b7c02c994c2e7df3cc2ebe77e81e9ad
+id: 811d3071-e277-4db1-a06f-6937453ebb84
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Exploitation
+  of Microsoft SharePoint Vulnerabilities' (687f4c475ad0b16251ce3ff9).
+author: AlienVault
+date: '2025-07-22'
+references:
+- https://unit42.paloaltonetworks.com/microsoft-sharepoint-cve-2025-49704-cve-2025-49706-cve-2025-53770/
+tags:
+- education
+- cve-2025-49704
+- exploitation
+- microsoft sharepoint
+- government
+- on-premises
+- cve
+- cve-2025-53770
+- cve-2025-49706
+- cve-2025-53771
+- healthcare
+- vulnerability
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9b7c02c994c2e7df3cc2ebe77e81e9ad
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

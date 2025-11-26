@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://yfews.mailhubsec.com/comm/vpwepi.hta
+id: ab85d9a7-cfcb-4c07-ae98-3cd807cd96a6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kimsuky Attack Disguised
+  as Sex Offender Notification Information' (68d3ca2cd673df55f478a246).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://logpresso.com/ko/blog/2025-09-18-Kimsuky-Attack
+tags:
+- north korea
+- apt
+- data exfiltration
+- anti-vm
+- spear-phishing
+- browser hijacking
+- cryptocurrency theft
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://yfews.mailhubsec.com/comm/vpwepi.hta
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

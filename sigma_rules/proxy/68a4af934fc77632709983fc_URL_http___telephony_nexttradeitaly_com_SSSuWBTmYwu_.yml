@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://telephony.nexttradeitaly.com/SSSuWBTmYwu/
+id: e1fb62b9-c6d7-40c6-affc-eaa9e7c89c80
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Salty 2FA: Undetected
+  PhaaS Hitting US and EU Industries'' (68a4af934fc77632709983fc).'
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://any.run/cybersecurity-blog/salty2fa-technical-analysis
+tags:
+- salty 2fa
+- storm-1575
+- domain pattern
+- behavioral detection
+- 2fa bypass
+- multi-stage execution
+- phaas
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://telephony.nexttradeitaly.com/SSSuWBTmYwu/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

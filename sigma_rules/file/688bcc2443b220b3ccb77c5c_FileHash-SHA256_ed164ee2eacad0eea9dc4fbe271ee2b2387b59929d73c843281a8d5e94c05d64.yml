@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - ed164ee2eacad0eea9dc4fbe271ee2b2387b59929d73c843281a8d5e94c05d64
+id: ed525842-9906-46cf-a68c-5862130b8046
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''MaaS Appeal: An
+  Infostealer Rises From The Ashes'' (688bcc2443b220b3ccb77c5c).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.elastic.co/security-labs/maas-appeal-an-infostealer-rises-from-the-ashes
+tags:
+- maas
+- obfuscation
+- nova sentinel
+- data exfiltration
+- malicord
+- credential theft
+- novablight
+- nodejs
+- anti-analysis
+- infostealer
+- electron
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ed164ee2eacad0eea9dc4fbe271ee2b2387b59929d73c843281a8d5e94c05d64
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

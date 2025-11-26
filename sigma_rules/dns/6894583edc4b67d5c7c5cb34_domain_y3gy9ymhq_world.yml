@@ -1,0 +1,20 @@
+title: OTX domain IOC - y3gy9ymhq.world
+id: 49b9b357-8267-49ff-8aa0-e6d78421c52f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: y3gy9ymhq.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

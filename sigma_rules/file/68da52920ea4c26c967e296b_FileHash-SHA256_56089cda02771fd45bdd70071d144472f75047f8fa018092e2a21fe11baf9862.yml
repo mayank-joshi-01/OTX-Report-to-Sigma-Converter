@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 56089cda02771fd45bdd70071d144472f75047f8fa018092e2a21fe11baf9862
+id: d64aa4fb-235a-498b-b4e8-9872ff9ef857
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Eye of the Storm:
+  Analyzing DarkCloud''s Latest Capabilities'' (68da52920ea4c26c967e296b).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://www.esentire.com/blog/eye-of-the-storm-analyzing-darkclouds-latest-capabilities
+tags:
+- crypto-wallet targeting
+- information stealer
+- vb6
+- darkcloud
+- exfiltration
+- evasion techniques
+- spear-phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 56089cda02771fd45bdd70071d144472f75047f8fa018092e2a21fe11baf9862
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - handymanservicesllc.online
+id: 14e89ee0-2d33-489f-a26b-84a5bae068bc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: handymanservicesllc.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

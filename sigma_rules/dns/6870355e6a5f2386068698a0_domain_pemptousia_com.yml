@@ -1,0 +1,28 @@
+title: OTX domain IOC - pemptousia.com
+id: 10299d74-b889-4838-a8ba-a94a8b50cc4d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deploying NetSupport
+  RAT via WordPress & ClickFix' (6870355e6a5f2386068698a0).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://www.cybereason.com/blog/net-support-rat-wordpress-clickfix/
+tags:
+- post-exploitation
+- netsupport rat
+- fake captcha
+- dom manipulation
+- phishing
+- wordpress
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pemptousia.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

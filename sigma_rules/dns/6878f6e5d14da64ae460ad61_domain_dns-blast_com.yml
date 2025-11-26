@@ -1,0 +1,29 @@
+title: OTX domain IOC - dns-blast.com
+id: 47aece13-7d69-4f1b-b468-1922b0494ccc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DNS: A Small but
+  Effective C2 system'' (6878f6e5d14da64ae460ad61).'
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://blogs.infoblox.com/security/dns-a-small-but-effective-c2-system
+tags:
+- dnscat2
+- command-and-control
+- dns exfiltrator
+- iodine
+- weasel
+- cobalt strike
+- sliver
+- dns tunneling
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dns-blast.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

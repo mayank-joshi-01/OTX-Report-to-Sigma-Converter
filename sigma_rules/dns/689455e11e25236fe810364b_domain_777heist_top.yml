@@ -1,0 +1,20 @@
+title: OTX domain IOC - 777heist.top
+id: 6b2bf3f1-de6d-4047-bd6a-df4f8f22d293
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 777heist.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

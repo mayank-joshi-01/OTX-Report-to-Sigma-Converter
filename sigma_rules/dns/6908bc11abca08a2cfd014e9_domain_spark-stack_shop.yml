@@ -1,0 +1,29 @@
+title: OTX domain IOC - spark-stack.shop
+id: a4664aed-96f1-4467-a2f0-7fe32ea73a68
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Leveraging Generative
+  AI to Reverse Engineer XLoader' (6908bc11abca08a2cfd014e9).
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://research.checkpoint.com/2025/generative-ai-for-reverse-engineering
+tags:
+- generative ai
+- reverse engineering
+- chatgpt
+- xloader
+- encryption
+- obfuscation
+- ioc extraction
+- malware analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: spark-stack.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

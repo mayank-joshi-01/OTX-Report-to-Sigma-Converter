@@ -1,0 +1,20 @@
+title: OTX domain IOC - ouropm777.top
+id: 607d556a-109d-45da-805c-2c08d99eaeae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ouropm777.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

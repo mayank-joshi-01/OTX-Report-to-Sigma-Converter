@@ -1,0 +1,20 @@
+title: OTX domain IOC - zaehobuvi.store
+id: 60f952ce-2b5d-4308-9d8c-36da68564094
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zaehobuvi.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

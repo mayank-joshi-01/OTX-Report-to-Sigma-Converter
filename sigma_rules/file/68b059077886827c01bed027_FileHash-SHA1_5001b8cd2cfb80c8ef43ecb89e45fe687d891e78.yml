@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 5001b8cd2cfb80c8ef43ecb89e45fe687d891e78
+id: fc8896d8-14e8-4919-9e4b-c7711388be81
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chasing the Silver
+  Fox: Cat & Mouse in Kernel Shadows'' (68b059077886827c01bed027).'
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://research.checkpoint.com/2025/silver-fox-apt-vulnerable-drivers/
+tags:
+- driver abuse
+- kernel exploitation
+- signature manipulation
+- valleyrat
+- byovd
+- process termination
+- vulnerable driver
+- edr evasion
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 5001b8cd2cfb80c8ef43ecb89e45fe687d891e78
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

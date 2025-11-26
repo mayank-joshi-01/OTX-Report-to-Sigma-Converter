@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 9a092bbfc5325cbfca2f9807d074616a
+id: 9c9fed82-ddfb-4e20-abe5-db3cff1f0078
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious PyPI Packages
+  Deliver SilentSync RAT' (68cd7f4ac828ce64182a78ea).
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://www.zscaler.com/blogs/security-research/malicious-pypi-packages-deliver-silentsync-rat#indicators-of-compromise--iocs-
+tags:
+- rat
+- silentsync
+- supply chain
+- python packages
+- typosquatting
+- pypi
+- remote access
+- data theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9a092bbfc5325cbfca2f9807d074616a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

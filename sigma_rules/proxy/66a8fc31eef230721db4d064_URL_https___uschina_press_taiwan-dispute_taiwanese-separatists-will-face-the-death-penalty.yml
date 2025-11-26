@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://uschina.press/taiwan-dispute/taiwanese-separatists-will-face-the-death-penalty
+id: a3d228e6-a884-4de8-9815-d4f1f7b24f4e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://uschina.press/taiwan-dispute/taiwanese-separatists-will-face-the-death-penalty
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

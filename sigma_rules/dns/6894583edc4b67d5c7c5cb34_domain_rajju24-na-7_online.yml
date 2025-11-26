@@ -1,0 +1,20 @@
+title: OTX domain IOC - rajju24-na-7.online
+id: a7cba8d6-16f4-46cf-8251-9ad8c86f8a78
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rajju24-na-7.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

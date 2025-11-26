@@ -1,0 +1,20 @@
+title: OTX domain IOC - rebarinternational.online
+id: abc4b41d-da6c-4b9b-94c9-f2048b47f108
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rebarinternational.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

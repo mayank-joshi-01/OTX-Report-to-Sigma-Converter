@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - 4af4c15092110057cb0a97df626c4ef4
+id: 745dd5b1-ba9a-4cd8-8364-c3aeabefa3e9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of Trigona
+  Threat Actor's Latest Attack Cases' (6901f17d5de87bf1b10b2e99).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://asec.ahnlab.com/en/90793/
+tags:
+- remote-control
+- ransomware
+- trigona
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 4af4c15092110057cb0a97df626c4ef4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

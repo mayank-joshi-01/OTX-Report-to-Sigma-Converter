@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 3746217c25d96bb7efe790fa78a73c6a61d4a99a8e51ae4c613efbb5be18c7b4
+id: 5ea59770-d4aa-446a-a0f9-d91246b6ff64
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GPUGate Malware:
+  Malicious GitHub Desktop Implants Use Hardware-Specific Decryption, Abuse Google
+  Ads to Target Western Europe'' (68bea34dbeedfdb8c3139638).'
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://arcticwolf.com/resources/blog/gpugate-malware-malicious-github-desktop-implants-use-hardware-specific-decryption-abuse-google-ads-target-western-europe/
+tags:
+- gpugate
+- malvertising
+- gpu-gated decryption
+- amos stealer
+- opencl
+- anti-analysis
+- western europe
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3746217c25d96bb7efe790fa78a73c6a61d4a99a8e51ae4c613efbb5be18c7b4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

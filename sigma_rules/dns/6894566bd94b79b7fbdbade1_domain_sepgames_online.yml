@@ -1,0 +1,20 @@
+title: OTX domain IOC - sepgames.online
+id: 5ec2c70d-1391-4b09-955b-17f97e7d54f3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sepgames.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

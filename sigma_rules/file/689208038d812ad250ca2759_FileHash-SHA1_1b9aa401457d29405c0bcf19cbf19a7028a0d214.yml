@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 1b9aa401457d29405c0bcf19cbf19a7028a0d214
+id: 3e57ffc2-8e65-480f-98e9-0ba051a721cc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bumblebee Malware
+  SEO Poisoning Campaign Leads to Akira Ransomware Deployment' (689208038d812ad250ca2759).
+author: AlienVault
+date: '2025-08-05'
+references:
+- https://thedfirreport.com/2025/08/05/from-bing-search-to-ransomware-bumblebee-and-adaptixc2-deliver-akira/
+tags:
+- lateral movement
+- bumblebee
+- seo poisoning
+- akira ransomware
+- data exfiltration
+- trojanized installers
+- credential dumping
+- akira
+- initial access
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1b9aa401457d29405c0bcf19cbf19a7028a0d214
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

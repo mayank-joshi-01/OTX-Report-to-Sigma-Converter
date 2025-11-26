@@ -1,0 +1,20 @@
+title: OTX domain IOC - ingameavecjesus.online
+id: 92b3ff01-3c66-4b74-9c06-771cfcc31f03
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ingameavecjesus.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

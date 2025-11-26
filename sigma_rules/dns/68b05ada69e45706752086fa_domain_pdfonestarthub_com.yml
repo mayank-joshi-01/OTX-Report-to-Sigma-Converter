@@ -1,0 +1,28 @@
+title: OTX domain IOC - pdfonestarthub.com
+id: 0ece1e65-1d7d-4a3f-a2e5-3b23e23e51b2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pdfonestarthub.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

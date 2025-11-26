@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - abe531e9f1e642c47260fac40dc41f59
+id: 371cce46-ec01-4cf3-a2e7-6b8da790f1f3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing LAMEHUG'
+  (68aaf606d8672c8f521ecc79).
+author: AlienVault
+date: '2025-08-24'
+references:
+- https://www.catonetworks.com/blog/cato-ctrl-threat-research-analyzing-lamehug
+tags:
+- apt28
+- proof-of-concept
+- ukraine
+- reconnaissance
+- lamehug
+- phishing
+- llm
+- ai-generated commands
+- exfiltration
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: abe531e9f1e642c47260fac40dc41f59
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

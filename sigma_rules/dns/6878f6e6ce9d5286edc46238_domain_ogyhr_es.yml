@@ -1,0 +1,28 @@
+title: OTX domain IOC - ogyhr.es
+id: 159f49b3-1982-4b4f-a9c5-43667bc1db91
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SVG Smuggling - Image
+  Embedded JavaScript Redirect Attacks' (6878f6e6ce9d5286edc46238).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.ontinue.com/resource/blog-svg-smuggling
+tags:
+- obfuscation
+- redirect
+- phishing
+- xor encryption
+- email spoofing
+- svg
+- javascript
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ogyhr.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX hostname IOC - ruben.findinit.com
+id: 1a4b0c75-63ea-4f4c-8aa0-af5c236b055e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Like PuTTY in Admin's
+  Hands' (68af30b5c4033492fe0be98f).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://levelblue.com/blogs/security-essentials/like-putty-in-admins-hands
+tags:
+- kerberoasting
+- malvertising
+- oyster
+- putty
+- broomstick
+- trojanized
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ruben.findinit.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - cloud.file.pdf.updatemind52.com
+id: c7d1a560-7dca-42b5-a54e-086106b82258
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cloud.file.pdf.updatemind52.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

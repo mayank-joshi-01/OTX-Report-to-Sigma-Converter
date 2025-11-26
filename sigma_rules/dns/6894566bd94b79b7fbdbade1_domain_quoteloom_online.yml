@@ -1,0 +1,20 @@
+title: OTX domain IOC - quoteloom.online
+id: 2e652e83-0ba8-4677-a2f2-70bf91f6a11c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quoteloom.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - db473cd04562bb838be2faa7db83d918
+id: 03e60bf6-3a2c-4cb9-87da-6ea19ac47a1c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Email-Delivered
+  RMM: Abusing PDFs for Silent Initial Access'' (6894c40fb08284d4bdc0c05a).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://labs.withsecure.com/publications/email-delivered-rmm
+tags:
+- phishing
+- pdf
+- initial access
+- rmm
+- social engineering
+- france
+- luxembourg
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: db473cd04562bb838be2faa7db83d918
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

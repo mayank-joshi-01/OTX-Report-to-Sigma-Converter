@@ -1,0 +1,26 @@
+title: OTX domain IOC - thedigitalmarketing.live
+id: e0a71dee-34d9-4103-bb2d-f0905ba5f66e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thedigitalmarketing.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://172.86.64.67/api/service/process/
+id: c969b05e-f28f-4d26-b947-d6e98a0ab932
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Uncovering a Web3
+  Interview Scam' (689c7d9c70e5cba54257d1a9).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://slowmist.medium.com/threat-intelligence-uncovering-a-web3-interview-scam-bb366694b7f3
+tags:
+- redux-ace
+- rtk-logger
+- data theft
+- web3
+- npm package
+- cryptocurrency
+- github
+- malware
+- interview scam
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://172.86.64.67/api/service/process/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

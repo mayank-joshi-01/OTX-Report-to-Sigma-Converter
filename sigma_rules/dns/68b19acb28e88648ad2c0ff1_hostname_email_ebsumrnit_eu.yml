@@ -1,0 +1,28 @@
+title: OTX hostname IOC - email.ebsumrnit.eu
+id: 2b13c94f-c9be-4d0a-bfa5-1276fad9ef98
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hunting Laundry
+  Bear: Infrastructure Analysis Guide and Findings'' (68b19acb28e88648ad2c0ff1).'
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.validin.com/blog/laundry_bear_infrastructure_analysis
+tags:
+- infrastructure analysis
+- russian threat actor
+- domain typosquatting
+- ukraine targets
+- apt
+- spear-phishing
+- nato targets
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: email.ebsumrnit.eu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

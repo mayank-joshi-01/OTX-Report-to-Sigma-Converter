@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - f92b491d63bb77ed3b4c7741c8c15bdb7c44409f1f850c08dce170f5c8712d55
+id: c4a2b0dd-faf5-4f20-8191-cad7141e9b32
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From ClickFix deception
+  to information stealer deployment' (6852b0afd8614200f6174cd4).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://www.elastic.co/security-labs/a-wretch-client
+tags:
+- lumma
+- ghostpulse
+- eddiestealer
+- clickfix
+- multi-stage attack
+- arechclient2
+- infostealer
+- remote access trojan
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f92b491d63bb77ed3b4c7741c8c15bdb7c44409f1f850c08dce170f5c8712d55
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

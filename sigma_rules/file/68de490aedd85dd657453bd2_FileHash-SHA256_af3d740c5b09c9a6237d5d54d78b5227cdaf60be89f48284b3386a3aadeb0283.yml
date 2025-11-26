@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - af3d740c5b09c9a6237d5d54d78b5227cdaf60be89f48284b3386a3aadeb0283
+id: 99bf5558-77ae-4d3d-a604-6185681820ec
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Werewolf raids Russia's
+  public sector with trusted relationship attacks' (68de490aedd85dd657453bd2).
+author: AlienVault
+date: '2025-10-02'
+references:
+- https://bi-zone.medium.com/cavalry-werewolf-raids-russias-public-sector-with-trusted-relationship-attacks-e19f7a5c83ef?source=rss-3882bedad280------2
+tags:
+- telegram
+- manufacturing
+- russia
+- phishing
+- energy
+- mining
+- foalshell
+- kyrgyzstan
+- asyncrat
+- rat
+- reverse shell
+- government
+- stallionrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: af3d740c5b09c9a6237d5d54d78b5227cdaf60be89f48284b3386a3aadeb0283
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

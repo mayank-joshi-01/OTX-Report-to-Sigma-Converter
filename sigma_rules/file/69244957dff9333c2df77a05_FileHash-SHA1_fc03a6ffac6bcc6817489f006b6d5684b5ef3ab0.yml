@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - fc03a6ffac6bcc6817489f006b6d5684b5ef3ab0
+id: fe49a76b-ec99-4553-aef3-ba3da27e5fd3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Brazilian Campaign:
+  Spreading the Malware via WhatsApp'' (69244957dff9333c2df77a05).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://labs.k7computing.com/index.php/brazilian-campaign-spreading-the-malware-via-whatsapp/
+tags:
+- selenium
+- whatsapp
+- banking trojan
+- in-memory execution
+- brazil
+- autoit
+- phishing
+- water-saci
+- sorvepotel
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: fc03a6ffac6bcc6817489f006b6d5684b5ef3ab0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

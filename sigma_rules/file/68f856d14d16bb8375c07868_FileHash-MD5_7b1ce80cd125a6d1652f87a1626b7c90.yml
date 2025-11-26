@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 7b1ce80cd125a6d1652f87a1626b7c90
+id: 2f1c1d01-9c97-4407-805c-74c8b3289b50
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Brazilian Caminho
+  Loader Employs LSB Steganography and Fileless Execution to Deliver Multiple Malware
+  Families Across South America, Africa, and Eastern Europe' (68f856d14d16bb8375c07868).
+author: AlienVault
+date: '2025-10-22'
+references:
+- https://arcticwolf.com/resources/blog/brazilian-caminho-loader-employs-lsb-steganography-to-deliver-multiple-malware-families
+tags:
+- africa
+- eastern europe
+- steganography
+- loader-as-a-service
+- katz stealer
+- brazil
+- south america
+- remcos rat
+- xworm
+- fileless execution
+- caminho loader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 7b1ce80cd125a6d1652f87a1626b7c90
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

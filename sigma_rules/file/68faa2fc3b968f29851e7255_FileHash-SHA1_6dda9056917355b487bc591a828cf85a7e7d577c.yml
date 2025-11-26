@@ -1,0 +1,23 @@
+title: OTX FileHash-SHA1 IOC - 6dda9056917355b487bc591a828cf85a7e7d577c
+id: bf0d7d5b-ad11-4aa2-abb3-5081373c31c2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TransparentTribe Targets
+  Indian Military with DeskRAT Malware' (68faa2fc3b968f29851e7255).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://blog.sekoia.io/transparenttribe-targets-indian-military-organisations-with-deskrat
+tags:
+- deskrat
+- government
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 6dda9056917355b487bc591a828cf85a7e7d577c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

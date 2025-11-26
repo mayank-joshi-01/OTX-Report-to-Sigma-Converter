@@ -1,0 +1,20 @@
+title: OTX domain IOC - xeajyphfvmxpc.store
+id: 574ca559-f8b5-4b7f-ad35-bea99efe5fd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xeajyphfvmxpc.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

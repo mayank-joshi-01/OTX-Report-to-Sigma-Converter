@@ -1,0 +1,29 @@
+title: OTX domain IOC - dropmicis.info
+id: 35f63cea-e1f1-4c67-a565-2135199df01f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dropmicis.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

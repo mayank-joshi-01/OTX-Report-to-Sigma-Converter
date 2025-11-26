@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://miportuarios.com/sisti/api.ps1
+id: 6c27b5a4-d606-4809-b1a7-b583d76c28f1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://miportuarios.com/sisti/api.ps1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

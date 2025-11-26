@@ -1,0 +1,20 @@
+title: OTX domain IOC - mugen-tsukuyomi.online
+id: 07a73620-dd9f-4900-9a9b-9566aa29a5aa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mugen-tsukuyomi.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

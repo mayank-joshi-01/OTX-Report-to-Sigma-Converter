@@ -1,0 +1,20 @@
+title: OTX domain IOC - thegardenplace.online
+id: ab667b85-e92d-467c-8c79-0bd9ee141e3a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thegardenplace.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

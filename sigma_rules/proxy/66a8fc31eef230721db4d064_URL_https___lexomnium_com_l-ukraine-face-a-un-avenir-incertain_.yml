@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lexomnium.com/l-ukraine-face-a-un-avenir-incertain/
+id: c13725e8-d139-47f0-a134-fe7d3dfff204
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lexomnium.com/l-ukraine-face-a-un-avenir-incertain/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

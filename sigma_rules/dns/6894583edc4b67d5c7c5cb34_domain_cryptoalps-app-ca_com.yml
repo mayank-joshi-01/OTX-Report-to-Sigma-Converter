@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptoalps-app-ca.com
+id: 110fc798-db6b-4f00-b9f3-5896f1267a54
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptoalps-app-ca.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

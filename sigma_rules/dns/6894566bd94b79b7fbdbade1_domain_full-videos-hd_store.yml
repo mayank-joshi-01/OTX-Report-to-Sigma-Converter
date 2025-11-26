@@ -1,0 +1,20 @@
+title: OTX domain IOC - full-videos-hd.store
+id: 3f8f5bc8-bb11-48d9-a7bd-0953904cd615
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: full-videos-hd.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

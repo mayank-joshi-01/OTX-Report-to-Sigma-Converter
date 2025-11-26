@@ -1,0 +1,32 @@
+title: OTX URL IOC - http://webrat.in/login/
+id: 3875d7be-f296-491b-8e1a-942868cb3e68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasked: Salat
+  Stealer – A Deep Dive into Its Advanced Persistence Mechanisms and C2 Infrastructure''
+  (68c12e9f0a9ca3c3ce3cfaab).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.cyfirma.com/research/unmasked-salat-stealer-a-deep-dive-into-its-advanced-persistence-mechanisms-and-c2-infrastructure/
+tags:
+- infostealer
+- cryptocurrency
+- salat stealer
+- evasion
+- persistence
+- go-based
+- maas
+- russian-speaking
+- web_rat
+- windows
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://webrat.in/login/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

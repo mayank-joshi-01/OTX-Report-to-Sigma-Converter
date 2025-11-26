@@ -1,0 +1,20 @@
+title: OTX domain IOC - logivance.online
+id: 79b5d6a1-3a59-45dc-b2f9-18152bd54b5c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: logivance.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

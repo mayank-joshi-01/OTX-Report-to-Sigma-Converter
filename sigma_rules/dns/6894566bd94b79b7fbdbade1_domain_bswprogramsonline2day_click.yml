@@ -1,0 +1,20 @@
+title: OTX domain IOC - bswprogramsonline2day.click
+id: 7bf02b4b-0186-4e01-bb63-ed20187dbafa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bswprogramsonline2day.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX hostname IOC - c.mid.al
+id: fc55da65-45ed-4e60-aefe-9d571b941911
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Crown Prince,
+  Nezha: A New Tool Favored by China-Nexus Threat Actors'' (68e7e51909bb02e0f22bfc5a).'
+author: AlienVault
+date: '2025-10-09'
+references:
+- https://www.huntress.com/blog/nezha-china-nexus-threat-actor-tool
+tags:
+- log poisoning
+- nezha
+- web shell
+- china chopper
+- server monitoring
+- ghost rat
+- antsword
+- remote access trojan
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: c.mid.al
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

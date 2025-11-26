@@ -1,0 +1,20 @@
+title: OTX domain IOC - qc58uq1exh.top
+id: 8b6d715c-a391-423b-9d9c-0acb4ddfe7fd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qc58uq1exh.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

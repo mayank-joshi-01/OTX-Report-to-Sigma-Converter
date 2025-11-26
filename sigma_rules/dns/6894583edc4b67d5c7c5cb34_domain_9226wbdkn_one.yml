@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9226wbdkn.one
+id: 6ff27b31-7f6d-4cae-a6f3-b6a31d459b45
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9226wbdkn.one
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

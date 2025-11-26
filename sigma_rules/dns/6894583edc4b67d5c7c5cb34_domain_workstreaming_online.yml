@@ -1,0 +1,20 @@
+title: OTX domain IOC - workstreaming.online
+id: 88577354-22d3-4bfe-91b2-fbe2bebf5683
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: workstreaming.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

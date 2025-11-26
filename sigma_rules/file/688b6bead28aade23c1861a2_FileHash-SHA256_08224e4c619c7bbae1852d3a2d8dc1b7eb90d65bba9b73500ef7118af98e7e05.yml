@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 08224e4c619c7bbae1852d3a2d8dc1b7eb90d65bba9b73500ef7118af98e7e05
+id: 1086c9b5-4022-4218-9f59-77c07d4a9e06
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Qilin Ransomware and
+  the Hidden Dangers of BYOVD' (688b6bead28aade23c1861a2).
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://blackpointcyber.com/blog/qilin-ransomware-and-the-hidden-dangers-of-byovd/
+tags:
+- Qilin
+- BYOVD
+- RaaS
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 08224e4c619c7bbae1852d3a2d8dc1b7eb90d65bba9b73500ef7118af98e7e05
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

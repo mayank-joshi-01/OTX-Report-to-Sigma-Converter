@@ -1,0 +1,20 @@
+title: OTX domain IOC - geloubebidas.online
+id: 79b6274f-f7a4-4248-8add-ca2ea704f5ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: geloubebidas.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

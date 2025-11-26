@@ -1,0 +1,20 @@
+title: OTX domain IOC - jc-pojectgroup.site
+id: 50e0d783-7c4f-40bb-821e-b96f8e96ff9a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jc-pojectgroup.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

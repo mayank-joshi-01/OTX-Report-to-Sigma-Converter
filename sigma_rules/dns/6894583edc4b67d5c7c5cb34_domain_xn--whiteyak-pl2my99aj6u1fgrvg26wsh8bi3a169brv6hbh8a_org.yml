@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--whiteyak-pl2my99aj6u1fgrvg26wsh8bi3a169brv6hbh8a.org
+id: 2a4cd425-d4a0-4235-9d3b-2b3ef1499783
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--whiteyak-pl2my99aj6u1fgrvg26wsh8bi3a169brv6hbh8a.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

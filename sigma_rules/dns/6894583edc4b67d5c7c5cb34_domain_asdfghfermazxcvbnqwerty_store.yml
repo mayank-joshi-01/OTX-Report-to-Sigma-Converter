@@ -1,0 +1,20 @@
+title: OTX domain IOC - asdfghfermazxcvbnqwerty.store
+id: ff5e538c-0b5d-402c-a055-28e6d309422c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asdfghfermazxcvbnqwerty.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,25 @@
+title: OTX domain IOC - spaceboos.com
+id: 1bc8c635-1c61-4459-b740-2f943ec3d8cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: spaceboos.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

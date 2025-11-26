@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 01fd153bfb4be440dd46cea7bebe8eb61b1897596523f6f6d1a507a708b17cc7
+id: a56c1c56-79e7-4f8f-9bc0-ee20fafcf42c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DPRK Adopts EtherHiding:
+  Nation-State Malware Hiding on Blockchains'' (68f130fd1a3aa569d5aeccbd).'
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/dprk-adopts-etherhiding
+tags:
+- invisibleferret
+- smart contracts
+- blockchain
+- lumastealer
+- etherhiding
+- cryptocurrency theft
+- beavertail
+- social engineering
+- jadesnow
+- north korea
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 01fd153bfb4be440dd46cea7bebe8eb61b1897596523f6f6d1a507a708b17cc7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - mxzicore.click
+id: 52729cc3-3969-48b8-bcd4-0bc046855b1a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mxzicore.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

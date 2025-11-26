@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 9c0231da175516a5939a970507908ed3
+id: 345644c3-18c1-4c53-8b0e-f72dc86a6b0e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The ClickFix Factory:
+  First Exposure of IUAM ClickFix Generator'' (68e94967bcab143b278f0611).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://unit42.paloaltonetworks.com/clickfix-generator-first-of-its-kind/
+tags:
+- ClickFix
+- clipboard
+- phishing
+- deerstealer
+- rat
+- remote access
+- captcha
+- odyssey
+- infostealer
+- iuam
+- clickfix generator
+- macos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9c0231da175516a5939a970507908ed3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

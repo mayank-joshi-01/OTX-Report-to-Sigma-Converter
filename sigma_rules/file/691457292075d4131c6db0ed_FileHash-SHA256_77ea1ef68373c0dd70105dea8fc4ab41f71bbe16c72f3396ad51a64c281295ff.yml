@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 77ea1ef68373c0dd70105dea8fc4ab41f71bbe16c72f3396ad51a64c281295ff
+id: 30ad44e3-1d9a-4224-9882-5152b11f4518
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analyzing the Link
+  Between Two Evolving Brazilian Banking Trojans' (691457292075d4131c6db0ed).
+author: AlienVault
+date: '2025-11-12'
+references:
+- https://www.cyberproof.com/blog/maverick-and-coyote-analyzing-the-link-between-two-evolving-brazilian-banking-trojans/
+tags:
+- maverick
+- whatsapp
+- banking trojan
+- .net
+- powershell
+- multi-stage attack
+- coyote
+- obfuscation
+- brazil
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 77ea1ef68373c0dd70105dea8fc4ab41f71bbe16c72f3396ad51a64c281295ff
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

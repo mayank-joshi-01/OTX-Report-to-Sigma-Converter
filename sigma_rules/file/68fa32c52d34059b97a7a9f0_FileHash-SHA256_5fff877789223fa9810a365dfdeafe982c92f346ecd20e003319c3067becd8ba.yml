@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 5fff877789223fa9810a365dfdeafe982c92f346ecd20e003319c3067becd8ba
+id: e61ca05e-fd7b-4d10-ba25-74818cb5b597
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Agenda Ransomware
+  Deploys Linux Variant on Windows Systems Through Remote Management Tools and BYOVD
+  Techniques' (68fa32c52d34059b97a7a9f0).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html
+tags:
+- ransomware
+- coroxy
+- byovd
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5fff877789223fa9810a365dfdeafe982c92f346ecd20e003319c3067becd8ba
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

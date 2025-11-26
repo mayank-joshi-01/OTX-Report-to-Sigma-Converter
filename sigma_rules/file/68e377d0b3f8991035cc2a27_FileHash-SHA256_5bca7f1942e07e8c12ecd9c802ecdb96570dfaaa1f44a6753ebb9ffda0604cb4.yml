@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 5bca7f1942e07e8c12ecd9c802ecdb96570dfaaa1f44a6753ebb9ffda0604cb4
+id: 929c0d7b-6e2c-4b8a-a589-e5a537e1ce62
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''WARMCOOKIE One Year
+  Later: New Features and Fresh Insights'' (68e377d0b3f8991035cc2a27).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://www.elastic.co/security-labs/revisiting-warmcookie
+tags:
+- warmcookie
+- malware-as-a-service
+- castlebot
+- backdoor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 5bca7f1942e07e8c12ecd9c802ecdb96570dfaaa1f44a6753ebb9ffda0604cb4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

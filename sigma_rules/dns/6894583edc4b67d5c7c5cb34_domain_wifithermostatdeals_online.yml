@@ -1,0 +1,20 @@
+title: OTX domain IOC - wifithermostatdeals.online
+id: 6a86216b-7a1b-4bb8-8af3-a32c3a4055a4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wifithermostatdeals.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

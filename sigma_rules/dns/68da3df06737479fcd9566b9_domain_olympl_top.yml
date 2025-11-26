@@ -1,0 +1,35 @@
+title: OTX domain IOC - olympl.top
+id: 8ff3f8e7-4821-4d48-b479-a76143c99b66
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Olymp Loader: A
+  new Malware-as-a-Service written in Assembly'' (68da3df06737479fcd9566b9).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://outpost24.com/blog/olymp-loader-a-new-malware-as-a-service/
+tags:
+- qasarrat
+- stealer
+- malware-as-a-service
+- underground forums
+- telegram
+- loader
+- webrat
+- evasion techniques
+- olymp loader
+- crypter
+- lummac2
+- amadey
+- assembly
+- raccoon
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: olympl.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

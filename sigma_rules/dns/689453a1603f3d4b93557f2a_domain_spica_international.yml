@@ -1,0 +1,20 @@
+title: OTX domain IOC - spica.international
+id: ed9299ef-805c-4ff0-a64b-a6210953332f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: spica.international
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

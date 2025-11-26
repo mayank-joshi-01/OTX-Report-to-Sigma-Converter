@@ -1,0 +1,20 @@
+title: OTX domain IOC - mintthaimassage.online
+id: ef39c29d-b29d-40e3-97e2-2c1e989a0af5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mintthaimassage.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

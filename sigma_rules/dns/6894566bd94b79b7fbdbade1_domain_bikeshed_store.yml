@@ -1,0 +1,20 @@
+title: OTX domain IOC - bikeshed.store
+id: 65cad91f-89f9-45f8-91b8-df17e4947dd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bikeshed.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

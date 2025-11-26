@@ -1,0 +1,20 @@
+title: OTX domain IOC - quitsmokingpermanently1811.site
+id: 34ccdcb9-5662-4b8a-8a46-8ecd65e46345
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quitsmokingpermanently1811.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

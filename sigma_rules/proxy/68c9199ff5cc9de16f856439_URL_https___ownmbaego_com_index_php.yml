@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://ownmbaego.com/index.php
+id: c849e85e-1939-4d69-8dd9-3497e4fa5b2a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of SmokeLoader Version 2025' (68c9199ff5cc9de16f856439).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.zscaler.com/blogs/security-research/smokeloader-rises-ashes
+tags:
+- evasion techniques
+- persistence
+- anti-analysis
+- smoke
+- dofoil
+- smokeloader
+- version 2025
+- malware loader
+- network protocol
+- bug fixes
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://ownmbaego.com/index.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

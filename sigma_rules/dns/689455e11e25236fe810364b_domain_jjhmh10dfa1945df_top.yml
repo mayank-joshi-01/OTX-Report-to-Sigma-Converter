@@ -1,0 +1,20 @@
+title: OTX domain IOC - jjhmh10dfa1945df.top
+id: 57258200-5933-4682-a85e-d2de989e90fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jjhmh10dfa1945df.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

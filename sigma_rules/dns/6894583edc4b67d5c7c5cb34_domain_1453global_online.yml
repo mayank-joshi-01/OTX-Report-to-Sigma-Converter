@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1453global.online
+id: 07c0412b-fd0a-44fb-9ad7-a2ee23bb0c9e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1453global.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

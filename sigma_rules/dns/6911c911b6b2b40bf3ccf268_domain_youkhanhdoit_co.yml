@@ -1,0 +1,35 @@
+title: OTX domain IOC - youkhanhdoit.co
+id: 6cf9d70a-6c7f-414a-9702-5b62fca0ef42
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'State-Sponsored Remote
+  Wipe Tactics Targeting Android Devices' (6911c911b6b2b40bf3ccf268).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/android
+tags:
+- rat
+- find hub
+- remote wipe
+- apt
+- spear-phishing
+- social engineering
+- lilithrat
+- remcosrat
+- android
+- kakaotalk
+- endrat
+- rftrat
+- quasarrat
+- google account
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: youkhanhdoit.co
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://185.100.157.74/payload.exe
+id: 27870f12-0889-4a81-83b2-6887eb2b3681
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'BERT Ransomware Group
+  Targets Asia and Europe on Multiple Platforms' (686bb6597ce02f8f4a33b453).
+author: AlienVault
+date: '2025-07-07'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/bert-ransomware-group-targets-asia-and-europe-on-multiple-platforms.html
+tags:
+- asia
+- esxi
+- powershell
+- ransomware
+- europe
+- encryption
+- linux
+- bert
+- windows
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://185.100.157.74/payload.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

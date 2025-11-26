@@ -1,0 +1,20 @@
+title: OTX domain IOC - moneymate.space
+id: cdfb7c30-18fc-4da7-9f15-ef3d438f9bb5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: moneymate.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

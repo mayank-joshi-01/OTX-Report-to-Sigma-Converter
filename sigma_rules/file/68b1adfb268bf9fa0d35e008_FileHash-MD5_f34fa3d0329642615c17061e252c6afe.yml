@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - f34fa3d0329642615c17061e252c6afe
+id: e24507c8-ebb7-4bbe-a845-9069472611b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation HanKook
+  Phantom: Spear-Phishing Campaign'' (68b1adfb268bf9fa0d35e008).'
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.seqrite.com/blog/operation-hankook-phantom-north-korean-apt37-targeting-south-korea/
+tags:
+- powershell
+- cloud services
+- data exfiltration
+- lnk files
+- north korea
+- espionage
+- fileless
+- rokrat
+- spear-phishing
+- south korea
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f34fa3d0329642615c17061e252c6afe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

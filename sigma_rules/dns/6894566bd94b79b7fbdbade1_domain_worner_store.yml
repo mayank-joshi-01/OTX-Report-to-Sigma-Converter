@@ -1,0 +1,20 @@
+title: OTX domain IOC - worner.store
+id: 8865a423-9cad-4280-a2f3-3650f54f8bef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: worner.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

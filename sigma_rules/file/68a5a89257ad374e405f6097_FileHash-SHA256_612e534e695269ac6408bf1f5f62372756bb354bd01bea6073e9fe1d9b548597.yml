@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 612e534e695269ac6408bf1f5f62372756bb354bd01bea6073e9fe1d9b548597
+id: f6df90cf-9e8d-4062-a419-9513bd585647
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SOC files: an APT41
+  attack on government IT services in Africa'' (68a5a89257ad374e405f6097).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://securelist.com/apt41-in-africa/116986
+tags:
+- targeted attack
+- africa
+- checkout
+- dll sideloading
+- lateral movement
+- sharepoint
+- mimikatz
+- pillager
+- data exfiltration
+- government
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 612e534e695269ac6408bf1f5f62372756bb354bd01bea6073e9fe1d9b548597
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

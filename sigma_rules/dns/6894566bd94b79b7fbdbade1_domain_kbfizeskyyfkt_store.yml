@@ -1,0 +1,20 @@
+title: OTX domain IOC - kbfizeskyyfkt.store
+id: 6361401f-72b4-4a52-b3dc-2d3e029037d0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kbfizeskyyfkt.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

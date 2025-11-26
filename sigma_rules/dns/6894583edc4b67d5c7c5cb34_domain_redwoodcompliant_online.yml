@@ -1,0 +1,20 @@
+title: OTX domain IOC - redwoodcompliant.online
+id: 09b99dce-90bc-4694-b60f-37aca24d513d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: redwoodcompliant.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

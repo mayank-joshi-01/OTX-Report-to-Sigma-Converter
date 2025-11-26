@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 76746b48a78a3828b64924f4aedca2e4c49b6735
+id: 1f1ef3de-7ed9-428c-bd19-bada1b4c5ba3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Defending Against
+  ToolShell: SharePoint''s Latest Critical Vulnerability'' (688170c6105566470aa2189d).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.sentinelone.com/blog/defending-against-toolshell-sharepoints-latest-critical-vulnerability
+tags:
+- cve-2025-53770
+- remote code execution
+- threat detection
+- zero-day
+- sharepoint
+- toolshell
+- vulnerability
+- patch
+- cybersecurity
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 76746b48a78a3828b64924f4aedca2e4c49b6735
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

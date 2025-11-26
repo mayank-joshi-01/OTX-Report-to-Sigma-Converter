@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514
+id: d7384255-03a7-4bf1-96ce-092d066a5fd8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ToolShell Exploit:
+  Critical SharePoint Zero-Day Threatens Global Enterprises'' (689e604111a440e0f4a15f30).'
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://www.recordedfuture.com/blog/toolshell-exploit-chain-thousands-sharepoint-servers-risk
+tags:
+- in-memory payload
+- cve-2025-53770
+- cryptographic keys
+- chinese threat actors
+- zero-day
+- cve-2025-53771
+- cve-2025-49706
+- toolshell
+- cve-2025-49704
+- exploit chain
+- sharepoint
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 92bb4ddb98eeaf11fc15bb32e71d0a63256a0ed826a03ba293ce3a8bf057a514
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

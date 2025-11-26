@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 129a40e38ef075c7d33d8517b268eb023093c765a32e406b58f39fab6cc6a040
+id: a0a0d8f2-05b3-40b3-89fd-774125b8ebb5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Crossed wires: a
+  case study of Iranian espionage and attribution'' (690b9fd420eac5194154bcff).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/crossed-wires-case-study-iranian-espionage-and-attribution
+tags:
+- credential harvesting
+- isl online
+- minibike
+- rmm tools
+- phishing
+- overlapping ttps
+- policy experts targeting
+- minijunk
+- espionage
+- pdqconnect
+- attribution challenges
+- iranian threat actor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 129a40e38ef075c7d33d8517b268eb023093c765a32e406b58f39fab6cc6a040
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

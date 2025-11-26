@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - 1531f13142fc0ebfb7b406d99a02ec6441fc9e40725fe2d2ac11119780995cd3
+id: 59d9f4bf-44bb-4277-af5b-2d82d72ae903
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Peek-a-Baku:
+  APT Targets Dushanbe with Espionage Campaign'' (6908b60c924632fc25bf0506).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://www.seqrite.com/blog/operation-peek-a-baku-silent-lynx-apt-dushanbe-espionage/
+tags:
+- china
+- russia
+- powershell
+- tajikistan
+- espionage
+- reverse shell
+- apt
+- silent loader
+- central asia
+- laplas
+- silentsweeper
+- ligolo-ng
+- github
+- azerbaijan
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1531f13142fc0ebfb7b406d99a02ec6441fc9e40725fe2d2ac11119780995cd3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

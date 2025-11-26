@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - ff7a1388fa59a9e1b43c5c88a1ee30e4abcec21a39882812a045aa9d9b865170
+id: 4f1cef41-c989-4340-840b-f67134ef868d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Beyond Signatures:
+  Detecting Lumma Stealer with an ML-Powered Sandbox'' (68d5ce750be50aef2715a20b).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.netskope.com/blog/beyond-signatures-detecting-lumma-stealer-with-an-ml-powered-sandbox
+tags:
+- evasion techniques
+- sandbox
+- anti-analysis
+- lumma stealer
+- nsis
+- machine learning
+- autoit
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ff7a1388fa59a9e1b43c5c88a1ee30e4abcec21a39882812a045aa9d9b865170
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

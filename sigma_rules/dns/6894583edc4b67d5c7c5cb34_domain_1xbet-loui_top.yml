@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1xbet-loui.top
+id: 61d2bdc0-606e-4f9a-8c7d-c976a1ca4557
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1xbet-loui.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

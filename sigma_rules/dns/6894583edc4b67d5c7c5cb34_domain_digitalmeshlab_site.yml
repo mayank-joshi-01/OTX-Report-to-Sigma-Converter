@@ -1,0 +1,20 @@
+title: OTX domain IOC - digitalmeshlab.site
+id: 0ae4625b-d7b1-4f82-b6dc-e5dd3d4e7e13
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: digitalmeshlab.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

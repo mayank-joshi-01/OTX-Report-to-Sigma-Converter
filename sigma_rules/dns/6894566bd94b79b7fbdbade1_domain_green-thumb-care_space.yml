@@ -1,0 +1,20 @@
+title: OTX domain IOC - green-thumb-care.space
+id: 644330ae-7bad-4c18-9ed4-63cd45d0ae1b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: green-thumb-care.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - revolutioncasino.site
+id: 8fd34340-a5ec-40ad-ad9b-5bc35b4e3943
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: revolutioncasino.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

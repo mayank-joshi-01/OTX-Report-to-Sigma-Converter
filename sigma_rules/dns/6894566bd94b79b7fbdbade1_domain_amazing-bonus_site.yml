@@ -1,0 +1,20 @@
+title: OTX domain IOC - amazing-bonus.site
+id: 0599b6ad-69ad-451e-b08f-240b8a77971c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amazing-bonus.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

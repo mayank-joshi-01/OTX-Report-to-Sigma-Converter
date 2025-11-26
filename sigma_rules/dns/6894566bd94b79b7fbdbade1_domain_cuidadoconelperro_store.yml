@@ -1,0 +1,20 @@
+title: OTX domain IOC - cuidadoconelperro.store
+id: 0f380cf0-7326-4a29-9e88-23c86225dc01
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cuidadoconelperro.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

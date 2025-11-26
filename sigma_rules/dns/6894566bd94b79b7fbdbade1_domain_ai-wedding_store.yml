@@ -1,0 +1,20 @@
+title: OTX domain IOC - ai-wedding.store
+id: 27c86466-8418-4bc3-9466-fe2efebebe0b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ai-wedding.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - akunbos77.online
+id: 8ea9b9d6-7c1f-448d-8c11-f74514a2f66d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: akunbos77.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - 1900346185266ae49ae893b0b69dfcfd
+id: 70890a62-263c-43a3-a605-65c170d49e52
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Threat Bulletin:
+  Fire in the Woods – A New Variant of FireWood'' (689f1c510aac1a9f07ad780b).'
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://intezer.com/blog/threat-bulletin-firewood
+tags:
+- kernel rootkit
+- rat
+- project wood
+- backdoor
+- tea encryption
+- linux
+- firewood
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 1900346185266ae49ae893b0b69dfcfd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

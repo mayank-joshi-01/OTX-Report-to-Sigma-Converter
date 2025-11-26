@@ -1,0 +1,20 @@
+title: OTX domain IOC - ec-inclusion-mies.site
+id: 440ccf3c-4b7a-4ab1-bae6-307e11e00b37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ec-inclusion-mies.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

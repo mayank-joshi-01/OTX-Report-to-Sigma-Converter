@@ -1,0 +1,35 @@
+title: OTX FileHash-MD5 IOC - f7363c5cfd6fa24a86e542fcd05283e8
+id: a9d6a662-7d1e-436d-aaf5-ac9bc4970720
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'State-Sponsored Remote
+  Wipe Tactics Targeting Android Devices' (6911c911b6b2b40bf3ccf268).
+author: AlienVault
+date: '2025-11-10'
+references:
+- https://www.genians.co.kr/en/blog/threat_intelligence/android
+tags:
+- rat
+- find hub
+- remote wipe
+- apt
+- spear-phishing
+- social engineering
+- lilithrat
+- remcosrat
+- android
+- kakaotalk
+- endrat
+- rftrat
+- quasarrat
+- google account
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f7363c5cfd6fa24a86e542fcd05283e8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

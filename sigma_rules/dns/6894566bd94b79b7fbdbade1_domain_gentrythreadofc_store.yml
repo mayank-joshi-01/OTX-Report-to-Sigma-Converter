@@ -1,0 +1,20 @@
+title: OTX domain IOC - gentrythreadofc.store
+id: a7ad1889-758c-4029-b057-f5d0d1a9fd61
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gentrythreadofc.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

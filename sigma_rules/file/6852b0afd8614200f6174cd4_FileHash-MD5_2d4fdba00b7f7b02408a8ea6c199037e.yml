@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 2d4fdba00b7f7b02408a8ea6c199037e
+id: cb6ffacb-f5ef-41ba-84f6-5cca7a91ca32
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From ClickFix deception
+  to information stealer deployment' (6852b0afd8614200f6174cd4).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://www.elastic.co/security-labs/a-wretch-client
+tags:
+- lumma
+- ghostpulse
+- eddiestealer
+- clickfix
+- multi-stage attack
+- arechclient2
+- infostealer
+- remote access trojan
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2d4fdba00b7f7b02408a8ea6c199037e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

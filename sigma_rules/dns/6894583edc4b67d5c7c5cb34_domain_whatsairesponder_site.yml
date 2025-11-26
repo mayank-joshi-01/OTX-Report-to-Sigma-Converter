@@ -1,0 +1,20 @@
+title: OTX domain IOC - whatsairesponder.site
+id: 9f1f4fac-8acb-4100-89ce-0301bb959c70
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whatsairesponder.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

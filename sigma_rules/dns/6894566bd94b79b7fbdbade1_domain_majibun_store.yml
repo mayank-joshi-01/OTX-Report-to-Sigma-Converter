@@ -1,0 +1,20 @@
+title: OTX domain IOC - majibun.store
+id: 8aa3ed4e-2cbf-439a-a145-53dc729a88af
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: majibun.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

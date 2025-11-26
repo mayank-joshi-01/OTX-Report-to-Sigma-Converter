@@ -1,0 +1,20 @@
+title: OTX domain IOC - meriksiceger.top
+id: bc60ed19-06f3-479a-96cd-b7009cc9cd91
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: meriksiceger.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - clubedarecarga.online
+id: ae4e3685-13aa-4a49-b319-7a44e7d0dfdd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clubedarecarga.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

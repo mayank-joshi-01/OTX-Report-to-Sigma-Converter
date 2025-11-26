@@ -1,0 +1,20 @@
+title: OTX domain IOC - whoscheckin.online
+id: c31a57a0-05bc-4ec2-aaa2-5da58af0f0e0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whoscheckin.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

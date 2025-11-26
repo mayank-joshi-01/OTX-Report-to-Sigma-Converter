@@ -1,0 +1,20 @@
+title: OTX domain IOC - dtftprivatelimited.online
+id: b2595117-b672-4d8f-995d-20e2593c5ba8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dtftprivatelimited.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

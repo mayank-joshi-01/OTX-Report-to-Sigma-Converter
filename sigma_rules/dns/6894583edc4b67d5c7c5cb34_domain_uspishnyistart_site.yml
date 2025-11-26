@@ -1,0 +1,20 @@
+title: OTX domain IOC - uspishnyistart.site
+id: 4d04d172-7959-4372-a791-c4fb7d39a9b5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uspishnyistart.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

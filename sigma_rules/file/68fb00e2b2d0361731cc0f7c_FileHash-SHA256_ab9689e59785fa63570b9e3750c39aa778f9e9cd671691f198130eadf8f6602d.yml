@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - ab9689e59785fa63570b9e3750c39aa778f9e9cd671691f198130eadf8f6602d
+id: 3d9a7bfe-dc39-4dc1-97fa-15d338974f02
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ab9689e59785fa63570b9e3750c39aa778f9e9cd671691f198130eadf8f6602d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

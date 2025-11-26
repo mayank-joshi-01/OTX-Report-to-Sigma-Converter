@@ -1,0 +1,20 @@
+title: OTX domain IOC - 10mail10.online
+id: 77ff9a52-82b9-4185-8ad1-5c3ad2fef484
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 10mail10.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

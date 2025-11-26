@@ -1,0 +1,25 @@
+title: OTX IPv4 IOC - 38.54.105.114
+id: 33af689d-dd28-4179-be7d-8940bad69530
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Earth Entries alive
+  and kicking' (690032a10721de5f05a42a01).
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://bartblaze.blogspot.com/2025/10/earth-estries-alive-and-kicking.html
+tags:
+- cve-2025-8088
+- shadowpad
+- snappybee
+- winrar
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 38.54.105.114
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - newsamazon01.com
+id: 7034495f-19be-4fe0-b6ab-29e4ec0cf623
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: newsamazon01.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

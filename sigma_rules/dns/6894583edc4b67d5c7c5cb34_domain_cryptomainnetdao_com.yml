@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptomainnetdao.com
+id: 8f6a6a9c-c53f-4286-b6fb-e5793fab7c8c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptomainnetdao.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

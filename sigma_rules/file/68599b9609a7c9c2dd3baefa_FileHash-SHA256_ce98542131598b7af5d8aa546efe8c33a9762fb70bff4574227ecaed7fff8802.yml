@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - ce98542131598b7af5d8aa546efe8c33a9762fb70bff4574227ecaed7fff8802
+id: 3f61d0cf-4137-430d-b096-b9f5a12f15e8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''DRAT V2: Updated
+  DRAT Emerges in Arsenal'' (68599b9609a7c9c2dd3baefa).'
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://go.recordedfuture.com/hubfs/reports/cta-2025-0623.pdf
+tags:
+- remote access trojan
+- drat v2
+- c2 obfuscation
+- drat
+- delphi
+- broaderaspect
+- india
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ce98542131598b7af5d8aa546efe8c33a9762fb70bff4574227ecaed7fff8802
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

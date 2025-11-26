@@ -1,0 +1,20 @@
+title: OTX domain IOC - pqthctoaotsik.online
+id: e1de0adf-804c-407d-8429-0cff3c38c2af
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pqthctoaotsik.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX hostname IOC - udefined30.domainofhonour40.xyz
+id: afd84a88-db63-438f-9e61-b537778e8790
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Sophisticated Tuoni
+  C2 Attack on U.S. Real Estate Firm Thwarted' (691d85353673c34fb2746158).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.morphisec.com/blog/morphisec-thwarts-sophisticated-tuoni-c2-attack-on-us-real-estate-firm/
+tags:
+- tuoni c2
+- real estate
+- steganography
+- prevention
+- powershell
+- amtd
+- tuoni
+- ai-assisted
+- in-memory execution
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: udefined30.domainofhonour40.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

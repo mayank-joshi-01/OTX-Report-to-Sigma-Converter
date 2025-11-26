@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 591d60c1d356da827a26f4141fa431d3663af91746d5371014695b1c89bac2b2
+id: d7ac714d-8bee-4f17-994b-0243f91e71ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Malware Analysis
+  Report: UMBRELLA STAND - Malware targeting Fortinet devices'' (68593bc9c284f1baf4623782).'
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://www.ncsc.gov.uk/static-assets/documents/malware-analysis-reports/umbrella-stand/ncsc-mar-umbrella_stand.pdf
+tags:
+- process injection
+- persistence
+- firewall
+- shoe rack
+- defense evasion
+- remote shell
+- umbrella stand
+- fortinet
+- aes encryption
+- c2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 591d60c1d356da827a26f4141fa431d3663af91746d5371014695b1c89bac2b2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - salthimalayan.online
+id: 3647ff28-e526-4a8d-b170-4c0044c0d7e0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: salthimalayan.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

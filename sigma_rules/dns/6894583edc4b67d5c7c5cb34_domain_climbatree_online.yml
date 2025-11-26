@@ -1,0 +1,20 @@
+title: OTX domain IOC - climbatree.online
+id: 288930a9-9ad1-4130-8c5a-3f7f96addca2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: climbatree.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

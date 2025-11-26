@@ -1,0 +1,28 @@
+title: OTX hostname IOC - blutrecheshetrubler.highbourg.my.id
+id: 1f169cac-1e4f-45a0-9801-b62660c8fdeb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blutrecheshetrubler.highbourg.my.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

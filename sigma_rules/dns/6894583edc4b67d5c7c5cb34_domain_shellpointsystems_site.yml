@@ -1,0 +1,20 @@
+title: OTX domain IOC - shellpointsystems.site
+id: 0d484ab6-a9a8-49b4-841e-45945a9ce5f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shellpointsystems.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

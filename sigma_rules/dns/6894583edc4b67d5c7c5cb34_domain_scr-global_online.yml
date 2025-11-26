@@ -1,0 +1,20 @@
+title: OTX domain IOC - scr-global.online
+id: b8e86722-d9ad-4d1d-9785-1e6df72357df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: scr-global.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

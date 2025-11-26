@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 2bb0a91c93034f671696da64a2cf6191a60a79c5
+id: 76740182-8960-4136-a165-29af5f89e7e3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GhostContainer backdoor
+  for Exchange servers' (68790fea4a8a9331ee6ff876).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://securelist.com/ghostcontainer/116953/
+tags:
+- asia
+- backdoor
+- apt
+- ghostcontainer
+- proxy
+- evasion
+- exchange
+- open-source
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 2bb0a91c93034f671696da64a2cf6191a60a79c5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

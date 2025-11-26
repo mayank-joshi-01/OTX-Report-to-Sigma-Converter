@@ -1,0 +1,20 @@
+title: OTX domain IOC - texmachinecidacoser.online
+id: 0d47e602-4880-4874-a26e-205ae1535743
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: texmachinecidacoser.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

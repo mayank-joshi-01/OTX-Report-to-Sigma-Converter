@@ -1,0 +1,20 @@
+title: OTX domain IOC - luckatron.online
+id: 4413aaa9-1c6a-42bf-b84a-5f35a6175df6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luckatron.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

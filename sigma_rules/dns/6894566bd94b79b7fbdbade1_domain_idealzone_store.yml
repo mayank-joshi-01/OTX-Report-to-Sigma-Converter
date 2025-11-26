@@ -1,0 +1,20 @@
+title: OTX domain IOC - idealzone.store
+id: bd4b2355-e55b-487d-9fd2-4b87fd68ed17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: idealzone.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - paymentslearning.online
+id: bc0481fc-49f1-4d64-b7c9-1184ee9254b0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: paymentslearning.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

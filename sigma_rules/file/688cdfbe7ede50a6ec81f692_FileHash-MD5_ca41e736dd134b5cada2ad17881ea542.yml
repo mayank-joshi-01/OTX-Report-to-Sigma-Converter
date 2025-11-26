@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - ca41e736dd134b5cada2ad17881ea542
+id: dd273eae-16c1-481d-98c2-7fc36ae91052
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft OAuth App
+  Impersonation Campaign Leads to MFA Phishing' (688cdfbe7ede50a6ec81f692).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing
+tags:
+- phishing
+- oauth
+- application impersonation
+- aitm
+- microsoft 365
+- tycoon
+- mfa bypass
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ca41e736dd134b5cada2ad17881ea542
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

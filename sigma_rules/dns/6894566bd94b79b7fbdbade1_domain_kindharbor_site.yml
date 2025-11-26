@@ -1,0 +1,20 @@
+title: OTX domain IOC - kindharbor.site
+id: 3b5fc2a7-52d2-49bc-aa3f-90e8b1226e14
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kindharbor.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

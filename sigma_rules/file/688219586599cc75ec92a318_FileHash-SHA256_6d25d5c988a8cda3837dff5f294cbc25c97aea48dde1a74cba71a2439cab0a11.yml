@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 6d25d5c988a8cda3837dff5f294cbc25c97aea48dde1a74cba71a2439cab0a11
+id: 57ab7ed8-3e51-4f87-93ac-99acf80e81fd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gunra Ransomware Emerges
+  with New DLS' (688219586599cc75ec92a318).
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://asec.ahnlab.com/en/89206
+tags:
+- volume shadow copy
+- encryption
+- conti
+- gunra
+- ransomware
+- dls
+- chacha20
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6d25d5c988a8cda3837dff5f294cbc25c97aea48dde1a74cba71a2439cab0a11
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

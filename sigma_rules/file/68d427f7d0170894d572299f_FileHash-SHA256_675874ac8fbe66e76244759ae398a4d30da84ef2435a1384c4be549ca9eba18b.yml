@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 675874ac8fbe66e76244759ae398a4d30da84ef2435a1384c4be549ca9eba18b
+id: b4b2c157-d16b-4bc6-b274-137380c81e55
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Targets Government,
+  Defense, and Technology Organizations' (68d427f7d0170894d572299f).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://www.recordedfuture.com/research/rednovember-targets-government-defense-and-technology-organizations
+tags:
+- cyber-espionage
+- sparkrat
+- aerospace
+- defense
+- technology
+- leslieloader
+- cobalt strike
+- perimeter appliances
+- pantegana
+- chinese state-sponsored
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 675874ac8fbe66e76244759ae398a4d30da84ef2435a1384c4be549ca9eba18b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - b993ed994502fd7be6312e53aed7395b6c5485f2
+id: 018bf0ab-28c7-4c8b-9d90-9a4ce67af678
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: b993ed994502fd7be6312e53aed7395b6c5485f2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

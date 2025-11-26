@@ -1,0 +1,20 @@
+title: OTX domain IOC - opalcentre.online
+id: 06fc4573-381e-4c3a-806c-9c4e8e4af026
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: opalcentre.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

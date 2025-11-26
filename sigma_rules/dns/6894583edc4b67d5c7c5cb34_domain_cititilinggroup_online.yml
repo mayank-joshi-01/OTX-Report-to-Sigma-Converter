@@ -1,0 +1,20 @@
+title: OTX domain IOC - cititilinggroup.online
+id: 42fa9a8f-cf07-4eb9-8d1d-a5d8e531a001
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cititilinggroup.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

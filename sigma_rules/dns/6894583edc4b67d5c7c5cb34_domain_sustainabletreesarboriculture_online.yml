@@ -1,0 +1,20 @@
+title: OTX domain IOC - sustainabletreesarboriculture.online
+id: 8ff8e727-2088-4f50-84fb-a167259e1b06
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sustainabletreesarboriculture.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

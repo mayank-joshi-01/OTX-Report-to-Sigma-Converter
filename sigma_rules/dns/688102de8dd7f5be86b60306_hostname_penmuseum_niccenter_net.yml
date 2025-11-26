@@ -1,0 +1,28 @@
+title: OTX hostname IOC - penmuseum.niccenter.net
+id: 17249590-e98a-452d-9257-db6e856cd49e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Illusory Wishes:
+  China-nexus APT Targets the Tibetan Community'' (688102de8dd7f5be86b60306).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.zscaler.com/blogs/security-research/illusory-wishes-china-nexus-apt-targets-tibetan-community
+tags:
+- ghost rat
+- phantomnet
+- multi-stage attack
+- dll sideloading
+- web compromise
+- tibetan community
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: penmuseum.niccenter.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

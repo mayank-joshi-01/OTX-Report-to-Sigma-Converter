@@ -1,0 +1,33 @@
+title: OTX hostname IOC - proxy.wingram.org
+id: cb4fe24b-4f4e-4190-875b-b63dfc6c2f63
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NKNShell Malware Distributed
+  via VPN Website' (691f29a24b6ccf92e10ec97a).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91139
+tags:
+- nknshell
+- nkn
+- backdoor
+- mqtt
+- powershell
+- vpn
+- sparkrat
+- gs-netcat
+- south korea
+- sqlmap
+- sliver
+- meshagent
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: proxy.wingram.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

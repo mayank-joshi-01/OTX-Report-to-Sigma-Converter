@@ -1,0 +1,20 @@
+title: OTX domain IOC - d8fpy9gm6m.top
+id: c967e2b9-dcfa-4098-b63c-164467c4a420
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: d8fpy9gm6m.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

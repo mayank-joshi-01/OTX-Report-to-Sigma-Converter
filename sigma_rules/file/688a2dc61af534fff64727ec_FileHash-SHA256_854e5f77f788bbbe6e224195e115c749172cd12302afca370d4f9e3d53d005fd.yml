@@ -1,0 +1,24 @@
+title: OTX FileHash-SHA256 IOC - 854e5f77f788bbbe6e224195e115c749172cd12302afca370d4f9e3d53d005fd
+id: fc501f75-3dc5-4a96-8724-b3c171afcfb5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gunra Ransomware Group
+  Unveils Efficient Linux Variant' (688a2dc61af534fff64727ec).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/gunra-ransomware-linux-variant.html
+tags:
+- ransomware
+- linux
+- chacha20
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 854e5f77f788bbbe6e224195e115c749172cd12302afca370d4f9e3d53d005fd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

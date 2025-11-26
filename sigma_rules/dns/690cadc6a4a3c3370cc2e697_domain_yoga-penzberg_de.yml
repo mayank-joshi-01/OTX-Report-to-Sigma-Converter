@@ -1,0 +1,36 @@
+title: OTX domain IOC - yoga-penzberg.de
+id: c9164cc0-f7f0-4fcf-bd1e-5a35f219f296
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gootloader Returns:
+  What Goodies Did They Bring?'' (690cadc6a4a3c3370cc2e697).'
+author: AlienVault
+date: '2025-11-06'
+references:
+- https://www.huntress.com/blog/gootloader-threat-detection-woff2-obfuscation
+tags:
+- vanilla tempest
+- lateral movement
+- noberus
+- ransomware
+- obfuscation
+- gootloader
+- quantum locker
+- seo poisoning
+- rhysida
+- wordpress exploitation
+- zeppelin
+- javascript
+- blackcat
+- alphv
+- supper socks5 backdoor
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yoga-penzberg.de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

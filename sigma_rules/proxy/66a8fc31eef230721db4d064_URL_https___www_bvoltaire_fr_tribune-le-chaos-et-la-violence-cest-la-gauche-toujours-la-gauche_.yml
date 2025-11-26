@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.bvoltaire.fr/tribune-le-chaos-et-la-violence-cest-la-gauche-toujours-la-gauche/
+id: 9302a567-4e84-46a2-a635-82158df0173e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.bvoltaire.fr/tribune-le-chaos-et-la-violence-cest-la-gauche-toujours-la-gauche/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

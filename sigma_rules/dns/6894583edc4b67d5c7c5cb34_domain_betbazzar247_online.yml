@@ -1,0 +1,20 @@
+title: OTX domain IOC - betbazzar247.online
+id: 0098b91c-b1aa-4c1a-b38b-66484e20b27c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: betbazzar247.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

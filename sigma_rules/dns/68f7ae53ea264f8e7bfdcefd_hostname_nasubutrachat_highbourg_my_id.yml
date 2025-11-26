@@ -1,0 +1,28 @@
+title: OTX hostname IOC - nasubutrachat.highbourg.my.id
+id: 55acb17d-503a-4ac4-8793-78599adff2ab
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nasubutrachat.highbourg.my.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

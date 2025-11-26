@@ -1,0 +1,20 @@
+title: OTX domain IOC - 02discount.click
+id: deb6d7ce-dc39-4f55-a286-430737ed4563
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 02discount.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX IPv4 IOC - 198.55.98.133
+id: 6a8b1488-0dd0-4e81-982b-53de6033c5de
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of Trigona
+  Threat Actor's Latest Attack Cases' (6901f17d5de87bf1b10b2e99).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://asec.ahnlab.com/en/90793/
+tags:
+- remote-control
+- ransomware
+- trigona
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 198.55.98.133
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

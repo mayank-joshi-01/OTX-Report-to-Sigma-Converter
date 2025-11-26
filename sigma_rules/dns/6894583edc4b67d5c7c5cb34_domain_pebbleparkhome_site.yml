@@ -1,0 +1,20 @@
+title: OTX domain IOC - pebbleparkhome.site
+id: f8ee47a8-68a4-4e2d-a23a-09530cdc215b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pebbleparkhome.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

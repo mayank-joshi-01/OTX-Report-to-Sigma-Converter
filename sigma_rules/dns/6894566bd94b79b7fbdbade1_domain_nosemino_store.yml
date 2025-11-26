@@ -1,0 +1,20 @@
+title: OTX domain IOC - nosemino.store
+id: 1f90d298-59d5-4c93-b64c-645b440e7b5e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nosemino.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

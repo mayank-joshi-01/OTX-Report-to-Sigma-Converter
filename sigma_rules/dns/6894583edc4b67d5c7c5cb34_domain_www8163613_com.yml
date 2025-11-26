@@ -1,0 +1,20 @@
+title: OTX domain IOC - www8163613.com
+id: 6fbc7967-dfcf-4675-a848-2a048407b373
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www8163613.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

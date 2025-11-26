@@ -1,0 +1,20 @@
+title: OTX domain IOC - globalshopper.club
+id: 2897c203-a413-4b42-8b8f-3d828a2b19c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: globalshopper.club
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

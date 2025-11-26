@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://my.toruftuiov.com/9397b37a-50c4-48c0-899d-f5e87a24088d
+id: ea64db62-041a-4bbb-b4f2-8147bb9d77c9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://my.toruftuiov.com/9397b37a-50c4-48c0-899d-f5e87a24088d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

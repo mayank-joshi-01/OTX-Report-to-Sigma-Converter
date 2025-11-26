@@ -1,0 +1,20 @@
+title: OTX domain IOC - desafiofrifas.site
+id: 77cdcfec-045d-4227-8045-38b3041be688
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: desafiofrifas.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 38c47d338a9c5ab7ccef7413edb7b2112bdfc56f
+id: 768a174d-c579-453c-811a-c38ea049fc69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hunting Laundry
+  Bear: Infrastructure Analysis Guide and Findings'' (68b19acb28e88648ad2c0ff1).'
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.validin.com/blog/laundry_bear_infrastructure_analysis
+tags:
+- infrastructure analysis
+- russian threat actor
+- domain typosquatting
+- ukraine targets
+- apt
+- spear-phishing
+- nato targets
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 38c47d338a9c5ab7ccef7413edb7b2112bdfc56f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

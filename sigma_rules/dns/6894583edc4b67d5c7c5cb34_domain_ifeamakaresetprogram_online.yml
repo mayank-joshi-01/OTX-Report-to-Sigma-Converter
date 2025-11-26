@@ -1,0 +1,20 @@
+title: OTX domain IOC - ifeamakaresetprogram.online
+id: 53f4e434-02b0-49ca-8643-fd70e6526b91
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ifeamakaresetprogram.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

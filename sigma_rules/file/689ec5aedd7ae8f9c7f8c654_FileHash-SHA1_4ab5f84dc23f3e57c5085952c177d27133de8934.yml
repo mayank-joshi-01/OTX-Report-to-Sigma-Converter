@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 4ab5f84dc23f3e57c5085952c177d27133de8934
+id: 3e352761-244c-4944-8aa7-c86435283c76
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Kawabunga, Dude, You've
+  Been Ransomed!' (689ec5aedd7ae8f9c7f8c654).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://www.huntress.com/blog/kawalocker-ransomware-deployed
+tags:
+- rdp
+- psexec
+- hrsword
+- ransomware
+- kawalocker
+- kawa4096
+- encryption
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 4ab5f84dc23f3e57c5085952c177d27133de8934
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

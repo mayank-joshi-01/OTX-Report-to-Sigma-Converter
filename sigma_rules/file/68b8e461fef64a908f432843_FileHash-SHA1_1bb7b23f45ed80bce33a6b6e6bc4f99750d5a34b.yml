@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 1bb7b23f45ed80bce33a6b6e6bc4f99750d5a34b
+id: e248dfb6-dd91-4bff-be11-2d290a97bf3d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ethereum smart contracts
+  used to push malicious code on npm' (68b8e461fef64a908f432843).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.reversinglabs.com/blog/ethereum-contracts-malicious-code
+tags:
+- social engineering
+- smart contracts
+- ethereum
+- colortoolsv2
+- supply chain attack
+- cryptocurrency
+- mimelib2
+- npm
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1bb7b23f45ed80bce33a6b6e6bc4f99750d5a34b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

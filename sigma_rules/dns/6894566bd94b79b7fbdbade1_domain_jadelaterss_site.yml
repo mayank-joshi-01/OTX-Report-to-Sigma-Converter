@@ -1,0 +1,20 @@
+title: OTX domain IOC - jadelaterss.site
+id: 19c2ae51-dc6f-402b-ac26-460ca062d000
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jadelaterss.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - ed229f3442f2d45f6fdd4f3a4c552c1c
+id: 8f1bfb06-c210-429c-a72e-6593adb41e77
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The First AI-Powered
+  Ransomware & How It Works' (68b1adfad2b4f175757d71b2).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.welivesecurity.com/en/ransomware/first-known-ai-powered-ransomware-uncovered-eset-research/
+tags:
+- proof-of-concept
+- speck encryption
+- filesystem scanning
+- dynamic ransom notes
+- ai-powered
+- ransomware
+- cross-platform
+- promptlock
+- ollama api
+- lua scripts
+- go language
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ed229f3442f2d45f6fdd4f3a4c552c1c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - charcutebri.online
+id: 1a97a793-d7e6-4b02-898d-64f3b6b35762
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: charcutebri.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

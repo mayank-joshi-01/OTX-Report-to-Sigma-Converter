@@ -1,0 +1,29 @@
+title: OTX hostname IOC - www.centralized-email-system-np.com
+id: 9471efc0-bd84-4656-a11a-f63629f5a8a0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.centralized-email-system-np.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

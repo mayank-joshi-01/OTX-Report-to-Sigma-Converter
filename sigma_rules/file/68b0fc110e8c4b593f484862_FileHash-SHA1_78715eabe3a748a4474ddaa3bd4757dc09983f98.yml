@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 78715eabe3a748a4474ddaa3bd4757dc09983f98
+id: c5c3802b-6a27-42d3-b8cd-8311f11bd375
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Loophole allows threat
+  actors to claim VS Code extension names' (68b0fc110e8c4b593f484862).
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.reversinglabs.com/blog/malware-vs-code-extension-names
+tags:
+- vulnerability
+- vs code
+- loophole
+- extension
+- software supply chain
+- cybersecurity
+- open-source
+- package names
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 78715eabe3a748a4474ddaa3bd4757dc09983f98
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

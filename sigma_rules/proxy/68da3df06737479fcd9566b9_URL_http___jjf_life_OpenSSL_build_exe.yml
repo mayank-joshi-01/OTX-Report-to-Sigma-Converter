@@ -1,0 +1,35 @@
+title: OTX URL IOC - http://jjf.life/OpenSSL/build.exe
+id: 9517b679-adde-48d2-8151-fd133ab7348c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Olymp Loader: A
+  new Malware-as-a-Service written in Assembly'' (68da3df06737479fcd9566b9).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://outpost24.com/blog/olymp-loader-a-new-malware-as-a-service/
+tags:
+- qasarrat
+- stealer
+- malware-as-a-service
+- underground forums
+- telegram
+- loader
+- webrat
+- evasion techniques
+- olymp loader
+- crypter
+- lummac2
+- amadey
+- assembly
+- raccoon
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://jjf.life/OpenSSL/build.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

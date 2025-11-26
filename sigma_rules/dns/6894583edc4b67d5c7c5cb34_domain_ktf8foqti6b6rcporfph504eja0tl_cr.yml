@@ -1,0 +1,20 @@
+title: OTX domain IOC - ktf8foqti6b6rcporfph504eja0tl.cr
+id: 7e49ca84-d408-46c7-a4ec-7cdcb7f984c3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ktf8foqti6b6rcporfph504eja0tl.cr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

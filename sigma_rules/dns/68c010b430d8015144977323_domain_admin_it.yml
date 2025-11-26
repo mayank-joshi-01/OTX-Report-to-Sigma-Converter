@@ -1,0 +1,30 @@
+title: OTX domain IOC - admin.it
+id: 20180d0e-bb7a-4393-b6ca-f0497a6d73ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking The Gentlemen
+  Ransomware: Tactics, Techniques, and Procedures Revealed'' (68c010b430d8015144977323).'
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.trendmicro.com/en_us/research/25/i/unmasking-the-gentlemen-ransomware.html
+tags:
+- ransomware
+- lateral movement
+- the gentlemen ransomware
+- defense evasion
+- custom tools
+- driver abuse
+- data exfiltration
+- group policy manipulation
+- enterprise targeting
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: admin.it
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

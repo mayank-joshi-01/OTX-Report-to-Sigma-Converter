@@ -1,0 +1,20 @@
+title: OTX domain IOC - florava.online
+id: 76579c25-22da-43a2-a88c-48a072c45f83
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: florava.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

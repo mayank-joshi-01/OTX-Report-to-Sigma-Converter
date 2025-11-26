@@ -1,0 +1,29 @@
+title: OTX domain IOC - serverseistemasatu.com
+id: 639b6930-0f90-4cb1-aa15-fecdb9159b49
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Banking Trojan
+  Identified, Distributed Through WhatsApp' (691e7a33a0a2a7b299ae7a59).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/spiderlabs-ids-new-banking-trojan-distributed-through-whatsapp
+tags:
+- eternidade stealer
+- delphi
+- banking trojan
+- credential theft
+- whatsapp
+- imap
+- brazil
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: serverseistemasatu.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

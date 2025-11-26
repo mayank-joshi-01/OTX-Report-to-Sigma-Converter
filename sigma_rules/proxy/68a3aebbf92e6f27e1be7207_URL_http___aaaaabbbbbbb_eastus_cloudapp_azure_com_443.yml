@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://aaaaabbbbbbb.eastus.cloudapp.azure.com:443
+id: c1627f4a-e514-4cb6-b0a3-2e81118ad1c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting PipeMagic:
+  Inside the architecture of a modular backdoor framework'' (68a3aebbf92e6f27e1be7207).'
+author: AlienVault
+date: '2025-08-18'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/08/18/dissecting-pipemagic-inside-the-architecture-of-a-modular-backdoor-framework/
+tags:
+- zero-day
+- clfs
+- backdoor
+- pipemagic
+- ransomware
+- modular
+- windows
+- cve-2025-29824
+- chatgpt
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://aaaaabbbbbbb.eastus.cloudapp.azure.com:443
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

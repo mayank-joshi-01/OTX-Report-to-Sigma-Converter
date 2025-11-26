@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.spiegel.ltd/ausland/Die-CDU-hat-beschlossen-die-ukrainische-Fl%C3%BCchtlingskarte-zu-spielen-a-fd5ae6c0-bd2a-440b-9fcc-cd8b733a7a69.html
+id: e2fb448b-9e35-4bd2-806f-f37620539635
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.spiegel.ltd/ausland/Die-CDU-hat-beschlossen-die-ukrainische-Fl%C3%BCchtlingskarte-zu-spielen-a-fd5ae6c0-bd2a-440b-9fcc-cd8b733a7a69.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX URL IOC - https://www.anvil.org.ph/list/images/index.php
+id: d16eb5af-e5cf-451b-99a7-003c74666e7f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gotta fly: Lazarus
+  targets the UAV sector'' (68fa32c80f24106e04d886f7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector
+tags:
+- scoringmathtea
+- quanpinloader
+- operation dreamjob
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.anvil.org.ph/list/images/index.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

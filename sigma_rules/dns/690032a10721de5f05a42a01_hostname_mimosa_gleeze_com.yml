@@ -1,0 +1,25 @@
+title: OTX hostname IOC - mimosa.gleeze.com
+id: 57866fb7-0416-449d-839f-836292a17b89
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Earth Entries alive
+  and kicking' (690032a10721de5f05a42a01).
+author: AlienVault
+date: '2025-10-28'
+references:
+- https://bartblaze.blogspot.com/2025/10/earth-estries-alive-and-kicking.html
+tags:
+- cve-2025-8088
+- shadowpad
+- snappybee
+- winrar
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mimosa.gleeze.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

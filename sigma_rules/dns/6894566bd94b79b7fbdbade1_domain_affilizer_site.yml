@@ -1,0 +1,20 @@
+title: OTX domain IOC - affilizer.site
+id: 30a53301-f563-4bc6-a3d2-302248a92de7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: affilizer.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

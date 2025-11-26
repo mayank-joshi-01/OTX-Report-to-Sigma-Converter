@@ -1,0 +1,20 @@
+title: OTX hostname IOC - cas.illbelucky.site
+id: 95ea1444-7a4f-402e-a17f-bacf4f7b1d1f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cas.illbelucky.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

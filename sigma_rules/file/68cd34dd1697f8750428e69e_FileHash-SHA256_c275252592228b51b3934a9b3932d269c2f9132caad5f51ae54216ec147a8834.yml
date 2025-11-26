@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - c275252592228b51b3934a9b3932d269c2f9132caad5f51ae54216ec147a8834
+id: f39b7d1a-e404-40f8-bddc-7d17c994aeb9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Empire Podcast
+  Invites Target Crypto Industry with macOS AMOS Stealer' (68cd34dd1697f8750428e69e).
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://hackread.com/fake-empire-podcast-invites-crypto-macos-amos-stealer/
+tags:
+- huddle
+- crypto
+- macos
+- empire podcast
+- amos stealer
+- phishing
+- fake interviews
+- streamyard
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c275252592228b51b3934a9b3932d269c2f9132caad5f51ae54216ec147a8834
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

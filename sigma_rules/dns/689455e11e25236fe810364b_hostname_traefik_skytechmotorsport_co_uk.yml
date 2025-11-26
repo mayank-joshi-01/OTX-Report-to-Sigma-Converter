@@ -1,0 +1,20 @@
+title: OTX hostname IOC - traefik.skytechmotorsport.co.uk
+id: e70ddcaf-a136-4d7a-a351-ff2dc2f2fbec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: traefik.skytechmotorsport.co.uk
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

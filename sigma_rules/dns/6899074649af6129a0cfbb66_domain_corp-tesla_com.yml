@@ -1,0 +1,26 @@
+title: OTX domain IOC - corp-tesla.com
+id: 4da82c6f-1e88-4aea-8496-cc0c1ebc7661
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Tesla Websites
+  Scams' (6899074649af6129a0cfbb66).
+author: AlienVault
+date: '2025-08-10'
+references:
+- https://isc.sans.edu/diary/rss/32186
+tags:
+- tesla
+- phishing
+- fake websites
+- scam
+- google ads
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: corp-tesla.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

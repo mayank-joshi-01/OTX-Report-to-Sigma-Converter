@@ -1,0 +1,20 @@
+title: OTX domain IOC - cowzycup.store
+id: cb07a380-c440-4e4c-807c-d2d032ca2b79
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cowzycup.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

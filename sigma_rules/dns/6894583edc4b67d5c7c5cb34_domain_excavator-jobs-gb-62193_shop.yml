@@ -1,0 +1,20 @@
+title: OTX domain IOC - excavator-jobs-gb-62193.shop
+id: a8e84ec5-0dee-42b5-b1f9-9e472577412b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: excavator-jobs-gb-62193.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

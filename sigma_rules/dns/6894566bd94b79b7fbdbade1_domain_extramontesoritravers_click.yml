@@ -1,0 +1,20 @@
+title: OTX domain IOC - extramontesoritravers.click
+id: 39d9612a-fd22-4309-9b3d-2bbb097c4c4e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: extramontesoritravers.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

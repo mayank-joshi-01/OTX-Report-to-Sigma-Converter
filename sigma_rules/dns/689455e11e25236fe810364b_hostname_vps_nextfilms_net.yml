@@ -1,0 +1,20 @@
+title: OTX hostname IOC - vps.nextfilms.net
+id: f3395008-9cd2-4ba9-a0db-31664c25d7e4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vps.nextfilms.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

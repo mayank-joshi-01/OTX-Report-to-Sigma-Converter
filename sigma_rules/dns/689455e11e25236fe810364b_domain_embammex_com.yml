@@ -1,0 +1,20 @@
+title: OTX domain IOC - embammex.com
+id: ec71dc5c-32e1-4589-81c1-4bb79c55815c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: embammex.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - garkyo.com
+id: 754e45b1-be56-4da6-9fd1-999dc85ca39d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'June 2025 APT Attack
+  Trends Report (South Korea)' (6877cefbb54f823932b14708).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://asec.ahnlab.com/en/89028
+tags:
+- rat
+- spear phishing
+- rokrat
+- hwp files
+- south korea
+- xenorat
+- apt
+- lnk files
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: garkyo.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

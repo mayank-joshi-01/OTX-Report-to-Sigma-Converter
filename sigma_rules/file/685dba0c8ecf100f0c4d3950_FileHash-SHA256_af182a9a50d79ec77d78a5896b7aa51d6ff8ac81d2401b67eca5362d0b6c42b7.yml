@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - af182a9a50d79ec77d78a5896b7aa51d6ff8ac81d2401b67eca5362d0b6c42b7
+id: c48c9ab1-3d0a-4893-b36b-d20e29b4ba4f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Dissecting Kimsuky''s
+  Attacks on South Korea: In-Depth Analysis of GitHub-Based Malicious Infrastructure''
+  (685dba0c8ecf100f0c4d3950).'
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://www.enki.co.kr/en/media-center/tech-blog/dissecting-kimsuky-s-attacks-on-south-korea-in-depth-analysis-of-github-based-malicious-infrastructure
+tags:
+- spearphishing
+- north korea
+- dropbox
+- xenorat
+- south korea
+- kimsuky
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: af182a9a50d79ec77d78a5896b7aa51d6ff8ac81d2401b67eca5362d0b6c42b7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

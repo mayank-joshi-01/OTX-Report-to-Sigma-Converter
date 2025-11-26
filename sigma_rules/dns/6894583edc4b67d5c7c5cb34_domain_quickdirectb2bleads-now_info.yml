@@ -1,0 +1,20 @@
+title: OTX domain IOC - quickdirectb2bleads-now.info
+id: d6d56522-da22-4fc2-af57-7f98431e9dd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quickdirectb2bleads-now.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

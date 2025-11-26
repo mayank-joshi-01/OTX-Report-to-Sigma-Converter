@@ -1,0 +1,20 @@
+title: OTX domain IOC - btazhd4e59484262.top
+id: 7e1459d1-83ad-46a0-a4b6-14caccd5972a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: btazhd4e59484262.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

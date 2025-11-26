@@ -1,0 +1,20 @@
+title: OTX hostname IOC - emv1.nglocalhost.com
+id: c408a001-9c20-49dc-a377-0055f567ec3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: emv1.nglocalhost.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

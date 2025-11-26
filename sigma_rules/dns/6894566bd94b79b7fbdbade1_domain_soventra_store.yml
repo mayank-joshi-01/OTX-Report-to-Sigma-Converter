@@ -1,0 +1,20 @@
+title: OTX domain IOC - soventra.store
+id: 963bd289-fb4f-4f19-b51a-6156a935c281
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: soventra.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

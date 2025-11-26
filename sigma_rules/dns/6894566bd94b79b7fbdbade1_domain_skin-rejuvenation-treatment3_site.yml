@@ -1,0 +1,20 @@
+title: OTX domain IOC - skin-rejuvenation-treatment3.site
+id: 3d46b82d-a89b-42fd-823b-7d584589a879
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: skin-rejuvenation-treatment3.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 41dc5b08632cd0247b0ada4ed36f2b68
+id: 7ca01f8a-aa7b-42ba-b3b9-3600ec2eb802
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GhostSocks: From
+  Initial Access to Residential Proxy'' (68dcdac7d51c7b3b85ad7372).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://synthient.com/blog/ghostsocks-from-initial-access-to-residential-proxy
+tags:
+- socks5
+- c2
+- blackbasta
+- obfuscation
+- ghostsocks
+- maas
+- lummastealer
+- residential proxy
+- double victimization
+- golang
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 41dc5b08632cd0247b0ada4ed36f2b68
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

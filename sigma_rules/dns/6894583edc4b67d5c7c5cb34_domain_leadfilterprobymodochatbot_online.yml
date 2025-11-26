@@ -1,0 +1,20 @@
+title: OTX domain IOC - leadfilterprobymodochatbot.online
+id: 0a1b5a56-8636-4a64-9ba7-c6409e82e7ff
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: leadfilterprobymodochatbot.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

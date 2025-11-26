@@ -1,0 +1,20 @@
+title: OTX domain IOC - platforma-tranzactionare-actiuni-ro-20.online
+id: ace7ebb0-5ade-4d26-bc9c-273072b72d97
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: platforma-tranzactionare-actiuni-ro-20.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

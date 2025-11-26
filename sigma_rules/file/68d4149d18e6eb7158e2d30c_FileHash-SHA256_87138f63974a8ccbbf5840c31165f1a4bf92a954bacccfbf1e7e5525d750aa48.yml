@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 87138f63974a8ccbbf5840c31165f1a4bf92a954bacccfbf1e7e5525d750aa48
+id: aea74e32-a4be-4b36-a71f-f38666e601e8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Updates Arsenal with
+  BAITSWITCH and SIMPLEFIX' (68d4149d18e6eb7158e2d30c).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://www.zscaler.com/blogs/security-research/coldriver-updates-arsenal-baitswitch-and-simplefix
+tags:
+- baitswitch
+- powershell
+- apt
+- russia
+- social engineering
+- backdoor
+- clickfix
+- simplefix
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 87138f63974a8ccbbf5840c31165f1a4bf92a954bacccfbf1e7e5525d750aa48
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

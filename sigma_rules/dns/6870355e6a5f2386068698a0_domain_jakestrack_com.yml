@@ -1,0 +1,28 @@
+title: OTX domain IOC - jakestrack.com
+id: fd162550-3631-4c17-b3bf-fe3ed212c61a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deploying NetSupport
+  RAT via WordPress & ClickFix' (6870355e6a5f2386068698a0).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://www.cybereason.com/blog/net-support-rat-wordpress-clickfix/
+tags:
+- post-exploitation
+- netsupport rat
+- fake captcha
+- dom manipulation
+- phishing
+- wordpress
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jakestrack.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

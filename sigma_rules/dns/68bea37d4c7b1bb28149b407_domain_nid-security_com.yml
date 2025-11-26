@@ -1,0 +1,31 @@
+title: OTX domain IOC - nid-security.com
+id: ba90c4d0-d8b8-4ca3-b479-d100c8246fc6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Inside the Kimsuky
+  Leak: How the ''Kim'' Dump Exposed North Korea''s Credential Theft Playbook'' (68bea37d4c7b1bb28149b407).'
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://dti.domaintools.com/inside-the-kimsuky-leak-how-the-kim-dump-exposed-north-koreas-credential-theft-playbook/
+tags:
+- north korea
+- hybrid attribution
+- phishing
+- rootkit
+- vmmisc.ko
+- credential theft
+- south korea
+- gpki
+- ocr
+- taiwan
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nid-security.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

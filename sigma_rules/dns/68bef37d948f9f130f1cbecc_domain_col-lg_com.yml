@@ -1,0 +1,26 @@
+title: OTX domain IOC - col-lg.com
+id: 9e1a6675-eb25-4aab-9703-5cc70ece6192
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Significant Risk and
+  Proactive Defense' (68bef37d948f9f130f1cbecc).
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://www.silentpush.com/blog/salt-typhoon-2025/
+tags:
+- telecommunications
+- persistent threat
+- domain infrastructure
+- long-term access
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: col-lg.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

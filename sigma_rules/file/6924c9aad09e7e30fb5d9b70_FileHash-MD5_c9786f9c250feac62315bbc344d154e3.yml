@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - c9786f9c250feac62315bbc344d154e3
+id: ecbdb24c-3e26-4c51-8245-fedaea0b1574
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Stories from the
+  SOC: Mystery of the postponed proxyware install'' (6924c9aad09e7e30fb5d9b70).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://expel.com/blog/stories-from-the-soc-mystery-of-the-postponed-proxyware-install
+tags:
+- download cradle
+- node.js
+- unauthorized software
+- in-memory execution
+- c2 server
+- disk-cleaning utility
+- proxyware
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c9786f9c250feac62315bbc344d154e3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

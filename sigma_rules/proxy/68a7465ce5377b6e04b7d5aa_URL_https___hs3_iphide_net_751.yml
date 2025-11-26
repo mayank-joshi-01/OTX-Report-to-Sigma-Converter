@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://hs3.iphide.net:751
+id: f39696e3-2d48-461d-aee7-7b55a6d4c661
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'MuddyWater Leveraging
+  DCHSpy For Israel-Iran Conflict' (68a7465ce5377b6e04b7d5aa).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.lookout.com/threat-intelligence/article/lookout-discovers-iranian-dchsy-surveillanceware
+tags:
+- dchspy
+- conflict
+- israel
+- iran
+- android
+- surveillanceware
+- vpn
+- telegram
+- sandstrike
+- starlink
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://hs3.iphide.net:751
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

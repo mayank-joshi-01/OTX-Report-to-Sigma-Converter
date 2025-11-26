@@ -1,0 +1,29 @@
+title: OTX domain IOC - maintenancesat.com
+id: e5d317b7-a8ce-4388-b4c7-2fcef2c52b69
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Stories from the
+  SOC: Mystery of the postponed proxyware install'' (6924c9aad09e7e30fb5d9b70).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://expel.com/blog/stories-from-the-soc-mystery-of-the-postponed-proxyware-install
+tags:
+- download cradle
+- node.js
+- unauthorized software
+- in-memory execution
+- c2 server
+- disk-cleaning utility
+- proxyware
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: maintenancesat.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - bridemadebooks.online
+id: de9b3f6c-a1b6-4e8c-9071-7ff597671ef8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bridemadebooks.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

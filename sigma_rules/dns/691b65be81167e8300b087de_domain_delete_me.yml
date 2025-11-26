@@ -1,0 +1,29 @@
+title: OTX domain IOC - delete.me
+id: 57aa9d09-9c9c-49e6-bfed-f559d96e20e6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cat''s Got Your
+  Files: Lynx Ransomware'' (691b65be81167e8300b087de).'
+author: AlienVault
+date: '2025-11-17'
+references:
+- https://thedfirreport.com/2025/11/17/cats-got-your-files-lynx-ransomware
+tags:
+- network reconnaissance
+- lynx ransomware
+- rdp
+- backup deletion
+- credential abuse
+- data exfiltration
+- ransomware
+- lateral movement
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: delete.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

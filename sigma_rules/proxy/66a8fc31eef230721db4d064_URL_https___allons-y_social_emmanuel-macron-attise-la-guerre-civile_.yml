@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://allons-y.social/emmanuel-macron-attise-la-guerre-civile/
+id: e6e79465-c6f0-4b74-bc0e-6c3fb657f2c0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://allons-y.social/emmanuel-macron-attise-la-guerre-civile/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

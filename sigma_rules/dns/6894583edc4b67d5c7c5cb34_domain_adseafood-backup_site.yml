@@ -1,0 +1,20 @@
+title: OTX domain IOC - adseafood-backup.site
+id: 448894ff-be36-48f9-9303-7af0e38bdaee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adseafood-backup.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

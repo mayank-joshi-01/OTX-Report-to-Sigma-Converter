@@ -1,0 +1,20 @@
+title: OTX domain IOC - nhspperkjwbzr.online
+id: 51ac1a0a-eeec-47f7-aa5e-0e48f2e74bab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nhspperkjwbzr.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

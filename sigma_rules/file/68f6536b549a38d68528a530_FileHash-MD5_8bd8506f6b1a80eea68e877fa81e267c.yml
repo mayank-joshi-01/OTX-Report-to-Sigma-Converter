@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 8bd8506f6b1a80eea68e877fa81e267c
+id: 9085bdfa-3a9f-453d-9ca4-91852ffa6854
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A view on a recent
+  Salt Typhoon intrusion' (68f6536b549a38d68528a530).
+author: AlienVault
+date: '2025-10-20'
+references:
+- https://www.darktrace.com/blog/salty-much-darktraces-view-on-a-recent-salt-typhoon-intrusion
+tags:
+- snappybee
+- citrix
+- telecommunications
+- cve-2024-40766
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 8bd8506f6b1a80eea68e877fa81e267c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

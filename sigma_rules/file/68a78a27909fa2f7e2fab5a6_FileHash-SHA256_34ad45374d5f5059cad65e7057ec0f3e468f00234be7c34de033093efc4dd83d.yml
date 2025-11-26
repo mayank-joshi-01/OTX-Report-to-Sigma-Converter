@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - 34ad45374d5f5059cad65e7057ec0f3e468f00234be7c34de033093efc4dd83d
+id: 6f6d76b0-132b-4e1b-8fb3-dcc6874c2f33
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT36 Malware Campaign
+  Using Desktop Entry Files and Google Drive Payload Delivery' (68a78a27909fa2f7e2fab5a6).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.cloudsek.com/blog/investigation-report-apt36-malware-campaign-using-desktop-entry-files-and-google-drive-payload-delivery
+tags:
+- apt36
+- icon data
+- ctfuft
+- linux desktop
+- stealth server
+- websocket
+- google drive
+- unix timestamp
+- stealth
+- persistence
+- syscall
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 34ad45374d5f5059cad65e7057ec0f3e468f00234be7c34de033093efc4dd83d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

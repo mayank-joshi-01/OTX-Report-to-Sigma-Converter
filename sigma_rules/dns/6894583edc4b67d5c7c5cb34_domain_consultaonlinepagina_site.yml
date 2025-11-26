@@ -1,0 +1,20 @@
+title: OTX domain IOC - consultaonlinepagina.site
+id: 83dd3fd9-0d1a-44be-952c-96abadecec48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: consultaonlinepagina.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

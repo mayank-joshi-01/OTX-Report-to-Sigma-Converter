@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - f9e18687a38e968811b93351e9fca089
+id: 6d951bbb-874c-4535-ac51-c138a59db638
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Traps Beneath Fault
+  Repair: Analysis of Recent Attacks Using ClickFix Technique'' (68b56db7e618d6d64f462bf6).'
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://mp.weixin.qq.com/s?__biz=MzI2MDc2MDA4OA==&mid=2247515797&idx=1&sn=63eb2627f65397d704d187273c6cdce4&chksm=ea6649e2dd11c0f497ca57cf52676a9a764f28e587017e14fc850034ca8518c9f4ef46219824
+tags:
+- clickfix
+- node.js
+- beavertail
+- invisibleferret
+- macos
+- apt-q-1
+- social engineering
+- windows
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f9e18687a38e968811b93351e9fca089
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - peaceandchill.site
+id: b77b3953-3f6c-4154-9fcd-8c454703a112
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: peaceandchill.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

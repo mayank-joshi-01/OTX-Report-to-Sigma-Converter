@@ -1,0 +1,20 @@
+title: OTX domain IOC - kushkasino1.top
+id: b49d7c2f-9e36-47cc-b659-6c5d592e4b71
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kushkasino1.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

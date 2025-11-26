@@ -1,0 +1,20 @@
+title: OTX domain IOC - rainbowgiftboxes.online
+id: c5be7b27-cfad-4f9c-9bee-e90228bd76cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rainbowgiftboxes.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

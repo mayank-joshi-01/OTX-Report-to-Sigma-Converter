@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://33eq8.oquvzop.es/CFTvqhHpUgs@x/
+id: cc07f05a-2aca-4f91-99e0-a1e202e76c8f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cybercriminals Abuse
+  AI Website Creation App For Phishing' (68a66a49869588c8cfb1af6a).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing
+tags:
+- ai-generated websites
+- malware delivery
+- cryptocurrency
+- tycoon
+- credential theft
+- doiloader
+- zgrat
+- phishing
+- lovable platform
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://33eq8.oquvzop.es/CFTvqhHpUgs@x/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

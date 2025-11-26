@@ -1,0 +1,20 @@
+title: OTX domain IOC - honeytrickformemory.online
+id: faa9d2f0-eaf8-445b-8095-a3999fdb7bd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: honeytrickformemory.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

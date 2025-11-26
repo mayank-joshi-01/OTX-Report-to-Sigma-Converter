@@ -1,0 +1,20 @@
+title: OTX domain IOC - k303-klepon.site
+id: 0ddcd9bd-9c3b-49cc-b67c-f0324c3657ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: k303-klepon.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

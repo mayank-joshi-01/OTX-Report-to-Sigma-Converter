@@ -1,0 +1,20 @@
+title: OTX domain IOC - systemdomain.online
+id: 0234c2e1-13ec-49cb-8a34-8ce27421fe46
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: systemdomain.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

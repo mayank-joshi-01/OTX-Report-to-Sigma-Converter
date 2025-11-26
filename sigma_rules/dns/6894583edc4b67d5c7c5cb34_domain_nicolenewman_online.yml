@@ -1,0 +1,20 @@
+title: OTX domain IOC - nicolenewman.online
+id: 74c70536-2e89-4cf4-b8d3-18f977d10698
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nicolenewman.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

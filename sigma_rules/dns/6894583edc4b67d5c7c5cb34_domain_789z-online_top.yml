@@ -1,0 +1,20 @@
+title: OTX domain IOC - 789z-online.top
+id: d10eee0e-0b5b-4644-be47-d531f2e977fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 789z-online.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

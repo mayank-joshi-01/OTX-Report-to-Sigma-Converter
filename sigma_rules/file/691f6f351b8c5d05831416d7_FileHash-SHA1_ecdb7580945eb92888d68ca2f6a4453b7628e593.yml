@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - ecdb7580945eb92888d68ca2f6a4453b7628e593
+id: 5d4a36fe-6ded-409f-bf1e-56910712919b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT24  Pivot to Multi-Vector
+  Attacks' (691f6f351b8c5d05831416d7).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/apt24-pivot-to-multi-vector-attacks
+tags:
+- badaudio
+- phishing
+- obfuscation
+- cobalt strike
+- cobalt strike beacon
+- china
+- strategic web compromise
+- cyber espionage
+- supply chain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: ecdb7580945eb92888d68ca2f6a4453b7628e593
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

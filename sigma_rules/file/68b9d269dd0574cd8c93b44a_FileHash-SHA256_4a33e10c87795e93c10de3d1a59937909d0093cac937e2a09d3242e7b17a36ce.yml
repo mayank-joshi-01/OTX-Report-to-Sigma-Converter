@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 4a33e10c87795e93c10de3d1a59937909d0093cac937e2a09d3242e7b17a36ce
+id: 10dbf9e9-6bb8-4399-aff7-a74029c4c0a8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'An Analysis of the
+  AMOS Stealer Campaign Targeting macOS via 'Cracked' Apps' (68b9d269dd0574cd8c93b44a).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.trendmicro.com/en_us/research/25/i/an-mdr-analysis-of-the-amos-stealer-campaign.html
+tags:
+- social engineering
+- atomic macos stealer
+- cracked apps
+- gatekeeper bypass
+- persistence
+- stealer
+- data exfiltration
+- macos
+- amos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4a33e10c87795e93c10de3d1a59937909d0093cac937e2a09d3242e7b17a36ce
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

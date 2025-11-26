@@ -1,0 +1,20 @@
+title: OTX domain IOC - allrubbishgone.online
+id: 1570446a-8986-4fcd-a511-bfc81d28a8df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: allrubbishgone.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

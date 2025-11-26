@@ -1,0 +1,20 @@
+title: OTX domain IOC - intan77bersinarselalu.site
+id: 39b3d4a9-8099-4661-85ac-c64c5f9f9b98
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: intan77bersinarselalu.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lindusdrycleaners.online
+id: 904b29ad-a5f7-4a6c-9fc5-1d0e43ecb3ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lindusdrycleaners.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - bpzxjty7k.localto.net
+id: e31bd7ed-6410-46e8-9a9c-c82b345f5d13
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bpzxjty7k.localto.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

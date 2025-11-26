@@ -1,0 +1,20 @@
+title: OTX domain IOC - energyfusionwealth.online
+id: 47047e2b-7e86-48f9-aff4-7ae42752b901
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: energyfusionwealth.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

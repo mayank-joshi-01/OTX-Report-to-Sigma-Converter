@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 6065407484f1e22e814dfa00bd1fae06
+id: a1fadc49-a9cf-462b-b037-3266f51428b1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Indian Infrastructure
+  Targeted with Desktop Lures and Poseidon Backdoor' (688cb39bdc1c258f2b66a6e8).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://hunt.io/blog/apt36-india-infrastructure-attacks
+tags:
+- poseidon backdoor
+- government impersonation
+- mythic framework
+- infrastructure
+- desktop lures
+- phishing
+- poseidon
+- india
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6065407484f1e22e814dfa00bd1fae06
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

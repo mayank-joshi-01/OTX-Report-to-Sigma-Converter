@@ -1,0 +1,20 @@
+title: OTX domain IOC - top-saudi.site
+id: 6cede3f5-a058-405c-b619-5c684b68403e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: top-saudi.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

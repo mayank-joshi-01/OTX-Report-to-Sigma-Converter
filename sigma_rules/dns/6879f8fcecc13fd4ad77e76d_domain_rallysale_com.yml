@@ -1,0 +1,25 @@
+title: OTX domain IOC - rallysale.com
+id: 8fd39ec8-d256-4199-b8f9-06a8bfb9a4c4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rallysale.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

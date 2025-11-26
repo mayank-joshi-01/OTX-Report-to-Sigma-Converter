@@ -1,0 +1,20 @@
+title: OTX domain IOC - headcount.site
+id: 822e42ac-2d95-46b1-9cda-4d8603bf8ed2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: headcount.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

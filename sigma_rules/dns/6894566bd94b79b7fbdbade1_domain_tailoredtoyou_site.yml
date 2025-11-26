@@ -1,0 +1,20 @@
+title: OTX domain IOC - tailoredtoyou.site
+id: 3fe08c80-826f-4211-82df-ee482ea42891
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tailoredtoyou.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

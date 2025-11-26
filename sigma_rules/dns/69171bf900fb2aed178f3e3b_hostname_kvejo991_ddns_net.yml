@@ -1,0 +1,30 @@
+title: OTX hostname IOC - kvejo991.ddns.net
+id: d6640100-9ed6-406f-90b7-5c95ac15be80
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DarkComet RAT Malware
+  Hidden Inside Fake Bitcoin Tool' (69171bf900fb2aed178f3e3b).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.pointwild.com/threat-intelligence/darkcomet-rat-malware-hidden-inside-fake-bitcoin-tool
+tags:
+- c2 communication
+- cryptocurrency
+- darkcomet rat
+- bitcoin
+- keylogging
+- rat
+- darkcomet
+- upx packing
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kvejo991.ddns.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

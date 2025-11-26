@@ -1,0 +1,20 @@
+title: OTX domain IOC - orderviewdocs.online
+id: 6bed37f9-6ce0-468b-ab4a-ccd2bb5cabdc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: orderviewdocs.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

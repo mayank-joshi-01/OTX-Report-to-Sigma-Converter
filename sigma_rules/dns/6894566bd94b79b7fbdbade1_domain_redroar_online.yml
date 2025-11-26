@@ -1,0 +1,20 @@
+title: OTX domain IOC - redroar.online
+id: 32fa5ca0-e622-46f1-82c5-fa3290bcae45
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: redroar.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

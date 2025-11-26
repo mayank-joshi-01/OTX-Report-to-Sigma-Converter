@@ -1,0 +1,42 @@
+title: OTX FileHash-MD5 IOC - c75665e77ffb3692c2400c3c8dd8276b
+id: 302f4d35-fd02-4f80-aea0-e603c911fb2c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cavalry Werewolf hacker
+  group attacks Russian state institutions' (690db6c3db213f06f2b53533).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://news.drweb.com/show/?i=15078&lng=en&c=5
+tags:
+- open-source tools
+- trojan.packed2.49708
+- telegram api
+- data theft
+- backdoor.shellnet.2
+- network infiltration
+- backdoor.reverseshell.10
+- backdoor.tunnel.41
+- trojan.inject5.57968
+- bat.downloader.1138
+- trojan.siggen31.54011
+- backdoor.shellnet.1
+- trojan.filespynet.5
+- reverse-shell
+- backdoor.reverseproxy.1
+- phishing
+- backdoor.rshell.169
+- backdoors
+- russian government
+- backdoor.siggen2.5463
+- trojan.packed2.49862
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c75665e77ffb3692c2400c3c8dd8276b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

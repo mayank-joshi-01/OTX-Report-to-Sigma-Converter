@@ -1,0 +1,20 @@
+title: OTX domain IOC - atomsportv146.site
+id: 0bddba5c-0380-418d-885a-5a5dfd16ce33
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: atomsportv146.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

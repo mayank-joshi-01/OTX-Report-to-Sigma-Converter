@@ -1,0 +1,20 @@
+title: OTX domain IOC - primorsky.site
+id: 5a2d43a5-2af7-4a50-aaa6-aa61cff5c2b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: primorsky.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - q3bet-entrar.top
+id: f2f425b3-f7d3-4b71-9930-ac2a19373881
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: q3bet-entrar.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

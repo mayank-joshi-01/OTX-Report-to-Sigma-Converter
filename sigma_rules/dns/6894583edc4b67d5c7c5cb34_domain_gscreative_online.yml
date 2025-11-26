@@ -1,0 +1,20 @@
+title: OTX domain IOC - gscreative.online
+id: d98e04ed-34ce-4cc4-bb55-1816c47971b6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gscreative.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - trendy-pick.store
+id: 244fad62-5f8e-4b9c-863b-88b4e02749bf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: trendy-pick.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - itbeams.store
+id: 4ca9af88-fb3b-4e2d-8a2b-47412a932ac8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: itbeams.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

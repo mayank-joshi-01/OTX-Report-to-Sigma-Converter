@@ -1,0 +1,20 @@
+title: OTX domain IOC - e1jfb762vv.top
+id: 8c49dc3e-f2f3-4c11-9b98-89975dcf7eb9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: e1jfb762vv.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

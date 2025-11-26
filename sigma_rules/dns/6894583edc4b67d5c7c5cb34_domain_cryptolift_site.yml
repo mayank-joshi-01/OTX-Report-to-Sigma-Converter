@@ -1,0 +1,20 @@
+title: OTX domain IOC - cryptolift.site
+id: 714d6280-2545-49c0-b848-5a7c57764b29
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cryptolift.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

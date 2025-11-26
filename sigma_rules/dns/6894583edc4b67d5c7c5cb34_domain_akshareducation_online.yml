@@ -1,0 +1,20 @@
+title: OTX domain IOC - akshareducation.online
+id: 2a08cbcc-60f9-45b6-b691-68f8b872432b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: akshareducation.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

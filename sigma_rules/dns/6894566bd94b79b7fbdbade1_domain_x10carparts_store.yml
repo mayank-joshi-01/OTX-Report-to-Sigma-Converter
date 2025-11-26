@@ -1,0 +1,20 @@
+title: OTX domain IOC - x10carparts.store
+id: bc97ae53-68ab-4c3e-8d98-39e59717a6f0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: x10carparts.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - gamebai2024.online
+id: 6b2069cb-a4a6-4f7c-b59d-d1de1c6c6298
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gamebai2024.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

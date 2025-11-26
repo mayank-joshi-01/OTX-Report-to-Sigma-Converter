@@ -1,0 +1,20 @@
+title: OTX domain IOC - softsphere.store
+id: eea99aec-fcd2-4695-b01f-37ec8eb3aad0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: softsphere.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

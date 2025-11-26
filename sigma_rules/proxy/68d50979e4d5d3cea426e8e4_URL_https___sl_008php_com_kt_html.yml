@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://sl.008php.com/kt.html
+id: fd5e165d-972e-40c9-8126-1725506b95cf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Rewrite:
+  Chinese-Speaking Threat Actors Deploy BadIIS in a Wide Scale SEO Poisoning Campaign''
+  (68d50979e4d5d3cea426e8e4).'
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://unit42.paloaltonetworks.com/operation-rewrite-seo-poisoning-campaign
+tags:
+- dragonrank
+- iis module
+- seo poisoning
+- group 9
+- chinese-speaking
+- vietnam
+- web shells
+- badiis
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://sl.008php.com/kt.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

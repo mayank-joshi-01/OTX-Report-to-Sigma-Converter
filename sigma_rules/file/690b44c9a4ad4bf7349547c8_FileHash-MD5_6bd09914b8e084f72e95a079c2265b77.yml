@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 6bd09914b8e084f72e95a079c2265b77
+id: 2a20f1bd-e0f8-4762-83ca-f8c2ee9d181c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Dragon
+  Breath (APT-Q-27): Dimensional Reduction Attack Against the Gambling Industry''
+  (690b44c9a4ad4bf7349547c8).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.ctfiot.com/40522.html
+tags:
+- telegram
+- miuuti group
+- ghost
+- gambling industry
+- msi installer
+- golden eye dog
+- southeast asia
+- watering hole
+- chinese communities
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6bd09914b8e084f72e95a079c2265b77
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

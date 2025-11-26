@@ -1,0 +1,20 @@
+title: OTX domain IOC - 12fa9a0051023.beer
+id: 237d8662-2e30-4612-8025-31c3aa909d64
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 12fa9a0051023.beer
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

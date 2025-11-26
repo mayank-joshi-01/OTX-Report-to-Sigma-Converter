@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://144.172.96.35/api/service/makelog
+id: 2934a67d-a703-419c-8664-8871559e268a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Evolving with a new
+  Javascript module' (68f0cdb61cac492a0a63e02f).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://blog.talosintelligence.com/beavertail-and-ottercookie
+tags:
+- vs code extension
+- beavertail
+- north korea
+- dprk
+- cryptocurrency
+- pylangghost
+- chessfi
+- keylogger
+- ottercookie
+- node.js
+- golangghost
+- invisibleferret
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://144.172.96.35/api/service/makelog
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

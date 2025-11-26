@@ -1,0 +1,20 @@
+title: OTX domain IOC - consecratedwomeninc.online
+id: cc612529-e0ab-48e5-8953-886c3d7fca48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: consecratedwomeninc.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

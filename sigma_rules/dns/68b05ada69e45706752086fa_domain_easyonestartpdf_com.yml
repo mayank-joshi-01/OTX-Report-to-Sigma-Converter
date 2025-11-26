@@ -1,0 +1,28 @@
+title: OTX domain IOC - easyonestartpdf.com
+id: eaa81d6c-9332-4987-b498-a7eab93508d4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: easyonestartpdf.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

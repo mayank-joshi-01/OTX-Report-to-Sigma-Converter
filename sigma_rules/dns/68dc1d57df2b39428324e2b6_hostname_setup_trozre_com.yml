@@ -1,0 +1,27 @@
+title: OTX hostname IOC - setup.trozre.com
+id: 085787ef-220e-4014-ac64-01d39eb9964a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Disallow: /security-research?
+  Crypto Phishing Sites'' Failed Attempt to Block Investigators'' (68dc1d57df2b39428324e2b6).'
+author: AlienVault
+date: '2025-09-30'
+references:
+- https://censys.com/blog/disallow-security-research-crypto-phishing-sites-failed-attempt-to-block-investigators
+tags:
+- hardware wallets
+- cloudflare pages
+- phishing
+- robots.txt
+- github
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: setup.trozre.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

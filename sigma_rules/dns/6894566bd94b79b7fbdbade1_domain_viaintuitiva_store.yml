@@ -1,0 +1,20 @@
+title: OTX domain IOC - viaintuitiva.store
+id: cea7ba49-55ab-4e7a-8dce-dae76d4e06bd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: viaintuitiva.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

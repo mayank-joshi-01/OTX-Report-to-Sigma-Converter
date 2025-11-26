@@ -1,0 +1,20 @@
+title: OTX domain IOC - zy-chemo-treatment-side-effects.site
+id: 63484e54-454f-464f-92d9-4c1a9483a189
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zy-chemo-treatment-side-effects.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

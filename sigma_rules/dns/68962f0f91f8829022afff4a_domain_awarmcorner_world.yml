@@ -1,0 +1,29 @@
+title: OTX domain IOC - awarmcorner.world
+id: 0a3108fe-b412-4a1c-a34f-63fe44061cd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Exposed JDWP Exploited
+  in the Wild: What Happens When Debug Ports Are Left Open'' (68962f0f91f8829022afff4a).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.wiz.io/blog/exposed-jdwp-exploited-in-the-wild
+tags:
+- cryptomining
+- remote code execution
+- jdwp
+- debugging
+- teamcity
+- xmrig
+- java
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: awarmcorner.world
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

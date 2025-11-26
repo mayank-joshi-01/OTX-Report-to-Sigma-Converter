@@ -1,0 +1,20 @@
+title: OTX domain IOC - bgamer.site
+id: 8a054308-34d2-4793-8728-696a88b80564
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bgamer.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

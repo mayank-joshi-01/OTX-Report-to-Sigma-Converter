@@ -1,0 +1,20 @@
+title: OTX domain IOC - pinkpineapple.space
+id: e4188b8c-6792-4711-ac99-e4ad6ed1d0be
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pinkpineapple.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

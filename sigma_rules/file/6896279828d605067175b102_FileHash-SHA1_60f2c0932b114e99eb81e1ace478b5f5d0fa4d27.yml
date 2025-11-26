@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 60f2c0932b114e99eb81e1ace478b5f5d0fa4d27
+id: 88a9e32b-f44d-4bf7-bea3-66fe282942a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Frozen in transit:
+  Secret Blizzard''s AiTM campaign against diplomats'' (6896279828d605067175b102).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/07/31/frozen-in-transit-secret-blizzards-aitm-campaign-against-diplomats/
+tags:
+- russia
+- apolloshadow
+- root certificates
+- aitm
+- isp
+- embassies
+- diplomats
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 60f2c0932b114e99eb81e1ace478b5f5d0fa4d27
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

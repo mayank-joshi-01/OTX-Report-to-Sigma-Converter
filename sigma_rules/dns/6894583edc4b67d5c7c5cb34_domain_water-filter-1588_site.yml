@@ -1,0 +1,20 @@
+title: OTX domain IOC - water-filter-1588.site
+id: d20ebb09-60a4-4272-a98e-91d1b2db8461
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: water-filter-1588.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 02cce1811ed8ac074b211717e404fbadffa91b0881627e090da97769f616c434
+id: 4db21778-0460-4450-9966-cb1c9691643a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Technical Analysis
+  of kkRAT' (68c1c8444a5c5767a5310a3d).
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.zscaler.com/blogs/security-research/technical-analysis-kkrat
+tags:
+- kkrat
+- fatalrat
+- ghost rat
+- byovd
+- remote access trojan
+- valleyrat
+- big bad wolf
+- chinese-speaking
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 02cce1811ed8ac074b211717e404fbadffa91b0881627e090da97769f616c434
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX FileHash-MD5 IOC - 7fa5fb15098efdf76e4c016e2e17bb38
+id: 02762727-9df5-480c-8c06-778b2a261077
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Smoking Gun Uncovered:
+  RPX Relay at PolarEdge''s Core Exposed'' (69025eeb36a0f5fdf2f85765).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://blog.xlab.qianxin.com/smoking-gun-uncovered-rpx-relay-at-polaredges-core-exposed
+tags:
+- proxy
+- infrastructure
+- orb
+- vps
+- polaredge
+- command execution
+- iot
+- cve-2023-20118
+- evasion
+- rpx_server
+- rpx_client
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 7fa5fb15098efdf76e4c016e2e17bb38
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - superwinslots.site
+id: 4e39a9a2-e8c3-46a2-b31b-dfd2512cd6e3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: superwinslots.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

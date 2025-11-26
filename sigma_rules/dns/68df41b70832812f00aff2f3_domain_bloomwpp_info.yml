@@ -1,0 +1,29 @@
+title: OTX domain IOC - bloomwpp.info
+id: b602aa2a-a89a-4c09-b580-618e3a221338
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Confucius Espionage:
+  From Stealer to Backdoor'' (68df41b70832812f00aff2f3).'
+author: AlienVault
+date: '2025-10-03'
+references:
+- https://www.fortinet.com/blog/threat-research/confucius-espionage-from-stealer-to-backdoor
+tags:
+- anondoor
+- south asia
+- python backdoor
+- pakistan
+- cyber-espionage
+- obfuscation
+- lnk files
+- wooperstealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bloomwpp.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX domain IOC - oauthcaptcha-metaquest.com
+id: 5fac62ee-2662-466e-9422-761f94202699
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IOCs for phishing
+  campaign using BitM pages' (68d6996d3fa5189b9e5bce76).
+author: AlienVault
+date: '2025-09-26'
+references:
+- https://github.com/PaloAltoNetworks/Unit42-timely-threat-intel/blob/main/2025-09-23-IOCs-for-phishing-campaign-using-BitM-pages.txt
+tags:
+- browser-in-the-middle
+- phishing
+- bitm
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: oauthcaptcha-metaquest.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

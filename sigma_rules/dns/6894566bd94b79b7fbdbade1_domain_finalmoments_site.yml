@@ -1,0 +1,20 @@
+title: OTX domain IOC - finalmoments.site
+id: 17ec4622-d9a6-4260-ba2b-2733f4eaf9e6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: finalmoments.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

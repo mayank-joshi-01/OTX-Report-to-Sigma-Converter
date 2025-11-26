@@ -1,0 +1,20 @@
+title: OTX domain IOC - rtochallan05735376.online
+id: f7d4e14a-9f72-4cd3-b7d1-46e844acbd6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rtochallan05735376.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

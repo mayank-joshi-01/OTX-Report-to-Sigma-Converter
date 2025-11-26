@@ -1,0 +1,20 @@
+title: OTX domain IOC - nigax41ou6.online
+id: ea4a8214-52fa-41d7-bb7c-50c93385fde7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nigax41ou6.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - fikom.esaunggul.ac.id.stbvip.vipop.biz.id
+id: 4b46fa1e-a9bc-45e3-9d12-b3cd71d37cef
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fikom.esaunggul.ac.id.stbvip.vipop.biz.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

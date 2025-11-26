@@ -1,0 +1,20 @@
+title: OTX domain IOC - milustore.online
+id: 8059a94a-4201-497a-8cce-f6aeab1426cb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: milustore.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

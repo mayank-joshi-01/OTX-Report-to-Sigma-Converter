@@ -1,0 +1,20 @@
+title: OTX domain IOC - anekaplaymax.online
+id: 549fe590-6987-412b-80e9-ae723648909d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: anekaplaymax.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - f08676eeb489087bc0e47bd08a3f7c4b57ef5941698bc09d30857c650763859c
+id: 21d3e33d-937d-4617-95c6-3f8a3d5b0d66
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Discord Invite Hijacking:
+  How Fake Links Are Delivering Infostealers'' (6855cf0cbbcbda407dae0a8b).'
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://darkatlas.io/blog/discord-invite-hijacking-how-fake-links-are-delivering-infostealers
+tags:
+- chromekatz
+- phishing
+- multi-stage attack
+- cryptocurrency
+- skuld stealer
+- discord
+- invite hijacking
+- social engineering
+- asyncrat
+- wallet injection
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f08676eeb489087bc0e47bd08a3f7c4b57ef5941698bc09d30857c650763859c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX hostname IOC - frosty-wright.3-87-0-221.plesk.page
+id: dd2782c4-6ec0-4308-abe8-da167bfc4ded
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: frosty-wright.3-87-0-221.plesk.page
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

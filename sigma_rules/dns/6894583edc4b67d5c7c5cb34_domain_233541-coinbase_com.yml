@@ -1,0 +1,20 @@
+title: OTX domain IOC - 233541-coinbase.com
+id: cfe36ac5-ae42-4e84-9072-4995a72b37ae
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 233541-coinbase.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

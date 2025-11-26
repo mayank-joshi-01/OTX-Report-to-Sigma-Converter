@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - cd8302542f494f4d8fbcb2d21425b316
+id: 5bbbcd02-6c80-4028-bdf7-2380d4198aec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClickFix Gets Creative:
+  Malware Buried in Images'' (6924c9a94b1c7374cf444b82).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.huntress.com/blog/clickfix-malware-buried-in-images
+tags:
+- multi-stage
+- social engineering
+- steganography
+- infostealer
+- rhadamanthys
+- lummac2
+- clickfix
+- windows update
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: cd8302542f494f4d8fbcb2d21425b316
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

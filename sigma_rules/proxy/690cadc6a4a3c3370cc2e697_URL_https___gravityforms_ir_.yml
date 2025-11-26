@@ -1,0 +1,36 @@
+title: OTX URL IOC - https://gravityforms.ir/
+id: 4cb5b2ed-3355-4b01-ad1f-8d61e6818cfa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gootloader Returns:
+  What Goodies Did They Bring?'' (690cadc6a4a3c3370cc2e697).'
+author: AlienVault
+date: '2025-11-06'
+references:
+- https://www.huntress.com/blog/gootloader-threat-detection-woff2-obfuscation
+tags:
+- vanilla tempest
+- lateral movement
+- noberus
+- ransomware
+- obfuscation
+- gootloader
+- quantum locker
+- seo poisoning
+- rhysida
+- wordpress exploitation
+- zeppelin
+- javascript
+- blackcat
+- alphv
+- supper socks5 backdoor
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://gravityforms.ir/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - openai-pidor-with-ai.com
+id: 0e83ddcd-faca-4927-a41d-224764ca7558
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Dissecting YouTube's
+  Malware Distribution Network' (68fa32c7a4263ce24950835d).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://research.checkpoint.com/2025/youtube-ghost-network
+tags:
+- compromised accounts
+- redline
+- rhadamanthys
+- lumma
+- 0debug
+- stealc
+- ghost network
+- hijackloader
+- youtube
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: openai-pidor-with-ai.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

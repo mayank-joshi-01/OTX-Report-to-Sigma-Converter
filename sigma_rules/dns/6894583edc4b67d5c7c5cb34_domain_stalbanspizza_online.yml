@@ -1,0 +1,20 @@
+title: OTX domain IOC - stalbanspizza.online
+id: 48d1e2b9-91be-4adc-8c5e-d30f2a70b5d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stalbanspizza.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

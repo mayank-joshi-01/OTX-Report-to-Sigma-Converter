@@ -1,0 +1,27 @@
+title: OTX domain IOC - zerontwoposh.live
+id: a192ba1d-8488-405b-a626-b7d4a235c322
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zerontwoposh.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

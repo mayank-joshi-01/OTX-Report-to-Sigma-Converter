@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 0538e73fc195c3b4441721d4c60d0b96
+id: 1b3ed4d3-59ef-4661-9b1f-bcc0e04d9548
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'PRC-Nexus Espionage
+  Campaign Hijacks Web Traffic to Target Diplomats' (68acfa70f85ead1f5b1f64d3).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/prc-nexus-espionage-targets-diplomats
+tags:
+- prc-nexus
+- social engineering
+- in-memory execution
+- espionage
+- canonstager
+- sogu.sec
+- digital signatures
+- staticplugin
+- captive portal
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0538e73fc195c3b4441721d4c60d0b96
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

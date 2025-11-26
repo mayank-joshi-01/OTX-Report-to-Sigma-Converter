@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - 0384733cfcdd32b008642391da7e439c390e7ce8d16e6d9d3bdcbc720b330b84
+id: c8ecea83-202c-4bf2-8205-bd5539ebf6b2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TOATH Campaign Exploits
+  End-of-Support Software to Target Traditional Chinese Users and Dissidents' (68b06d0bccbf428e203613d6).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.trendmicro.com/en_us/research/25/h/taoth-campaign.html
+tags:
+- reconnaissance
+- apt
+- sogou zhuyin
+- merlin
+- targeted attacks
+- gtelam
+- information theft
+- desfy
+- cobeacon
+- c6door
+- eastern asia
+- spear-phishing
+- toshis
+- TAOTH
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0384733cfcdd32b008642391da7e439c390e7ce8d16e6d9d3bdcbc720b330b84
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lesifflet.net/sports-et-esports/comment-les-etats-unis-transforment-les-jeunes-europeens-en-terroristes
+id: 51299a0b-12f3-4c3f-a8f1-cdc58cba70e1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lesifflet.net/sports-et-esports/comment-les-etats-unis-transforment-les-jeunes-europeens-en-terroristes
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

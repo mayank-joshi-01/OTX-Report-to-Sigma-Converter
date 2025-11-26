@@ -1,0 +1,20 @@
+title: OTX domain IOC - fvwuy.net
+id: 53af521d-33d7-47ec-92ec-62946c0458d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fvwuy.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

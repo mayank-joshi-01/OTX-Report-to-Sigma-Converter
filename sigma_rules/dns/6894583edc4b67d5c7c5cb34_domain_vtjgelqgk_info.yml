@@ -1,0 +1,20 @@
+title: OTX domain IOC - vtjgelqgk.info
+id: 4cb641e7-36c4-47e2-8160-8b5ca979020c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vtjgelqgk.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

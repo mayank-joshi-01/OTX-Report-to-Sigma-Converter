@@ -1,0 +1,20 @@
+title: OTX domain IOC - casadoperdao.com
+id: 3d2af4dd-3ee0-4301-b734-3b3ea2328152
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: casadoperdao.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

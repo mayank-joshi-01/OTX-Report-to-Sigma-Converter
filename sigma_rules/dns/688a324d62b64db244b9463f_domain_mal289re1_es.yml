@@ -1,0 +1,30 @@
+title: OTX domain IOC - mal289re1.es
+id: bce66221-ac21-4ff6-8216-aa107ba5c82d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LNK Trojan delivers
+  REMCOS' (688a324d62b64db244b9463f).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.pointwild.com/threat-intelligence/trojan-winlnk-powershell-runner
+tags:
+- base64 encoding
+- multi-stage attack
+- remcos
+- keylogger
+- c2 communication
+- backdoor
+- pif file
+- powershell
+- lnk file
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mal289re1.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

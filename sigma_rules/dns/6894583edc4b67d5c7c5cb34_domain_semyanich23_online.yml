@@ -1,0 +1,20 @@
+title: OTX domain IOC - semyanich23.online
+id: 51cbb46c-c24b-46d6-aaa7-d21737f3df06
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: semyanich23.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

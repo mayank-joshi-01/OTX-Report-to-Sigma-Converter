@@ -1,0 +1,20 @@
+title: OTX domain IOC - studycanberra.online
+id: e7860e98-ae54-44ea-82c9-934d4c83df43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: studycanberra.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

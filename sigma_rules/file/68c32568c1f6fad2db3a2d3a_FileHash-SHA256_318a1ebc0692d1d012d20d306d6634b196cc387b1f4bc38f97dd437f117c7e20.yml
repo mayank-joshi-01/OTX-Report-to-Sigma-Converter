@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 318a1ebc0692d1d012d20d306d6634b196cc387b1f4bc38f97dd437f117c7e20
+id: 387a96ed-c794-49b1-85c7-d16b59b87e57
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Updated Toneshell
+  backdoor and novel SnakeDisk USB worm dropped' (68c32568c1f6fad2db3a2d3a).
+author: AlienVault
+date: '2025-09-11'
+references:
+- https://www.ibm.com/think/x-force/hive0154-drops-updated-toneshell-backdoor
+tags:
+- espionage
+- usb worm
+- yokai
+- china
+- thailand
+- toneshell
+- pubload
+- backdoor
+- snakedisk
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 318a1ebc0692d1d012d20d306d6634b196cc387b1f4bc38f97dd437f117c7e20
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

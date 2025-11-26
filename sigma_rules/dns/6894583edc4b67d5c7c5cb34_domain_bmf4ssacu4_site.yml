@@ -1,0 +1,20 @@
+title: OTX domain IOC - bmf4ssacu4.site
+id: 9b54a612-43af-433b-9e9b-5cca89c3404c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bmf4ssacu4.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

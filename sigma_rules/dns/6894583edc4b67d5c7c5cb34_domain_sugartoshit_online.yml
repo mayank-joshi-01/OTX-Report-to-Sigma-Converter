@@ -1,0 +1,20 @@
+title: OTX domain IOC - sugartoshit.online
+id: 50dd033b-554c-4d04-a2f4-65572bd64c44
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sugartoshit.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - casalingatours.online
+id: 27475fe3-ce8e-4baf-8e79-7d281cc627fe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: casalingatours.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,28 @@
+title: OTX domain IOC - ctrlcapaserc.com
+id: a22206e4-fdca-48e3-ab91-04a1a24565a0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Booking.com Phishing
+  Campaign Targeting Hotels and Customers' (690dba690d5c272baae78d78).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://blog.sekoia.io/phishing-campaigns-i-paid-twice-targeting-booking-com-hotels-and-customers/
+tags:
+- phishing
+- social engineering
+- clickfix
+- hospitality
+- booking.com
+- purerat
+- cybercrime
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ctrlcapaserc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

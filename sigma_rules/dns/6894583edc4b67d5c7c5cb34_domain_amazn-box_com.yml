@@ -1,0 +1,20 @@
+title: OTX domain IOC - amazn-box.com
+id: 451c286f-c623-4076-919f-5d4e4d338f6c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amazn-box.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

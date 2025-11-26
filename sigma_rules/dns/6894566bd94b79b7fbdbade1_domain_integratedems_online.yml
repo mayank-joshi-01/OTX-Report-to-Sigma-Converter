@@ -1,0 +1,20 @@
+title: OTX domain IOC - integratedems.online
+id: b5f0fdda-a25f-4c16-ba14-b3275a474896
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: integratedems.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

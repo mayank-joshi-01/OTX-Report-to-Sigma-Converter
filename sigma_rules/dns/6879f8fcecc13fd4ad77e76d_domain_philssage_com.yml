@@ -1,0 +1,25 @@
+title: OTX domain IOC - philssage.com
+id: 4bf35288-4d18-4380-bfac-75ec8c8e513b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: philssage.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

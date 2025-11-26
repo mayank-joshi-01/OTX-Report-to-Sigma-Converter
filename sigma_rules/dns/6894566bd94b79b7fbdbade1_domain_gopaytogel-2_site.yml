@@ -1,0 +1,20 @@
+title: OTX domain IOC - gopaytogel-2.site
+id: abbcb811-c83b-4e25-b3f7-f33a5b770df3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gopaytogel-2.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

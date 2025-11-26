@@ -1,0 +1,20 @@
+title: OTX domain IOC - h9986.com
+id: f77d6340-876e-4dcb-9836-8dd9df06d714
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: h9986.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

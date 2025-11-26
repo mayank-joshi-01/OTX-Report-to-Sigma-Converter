@@ -1,0 +1,20 @@
+title: OTX domain IOC - pue9lab2509.online
+id: 8d6b721c-5fbc-419d-aa1c-7952e48427cd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pue9lab2509.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

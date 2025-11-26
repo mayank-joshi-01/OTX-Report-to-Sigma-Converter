@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.jobsincrete.gr
+id: 8c765d04-0481-46cb-a3e3-907c10c51a02
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.jobsincrete.gr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

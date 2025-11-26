@@ -1,0 +1,20 @@
+title: OTX domain IOC - harrisonandcoevents.online
+id: 3b33e1b6-2302-48ee-8ae2-e596ed6bab91
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: harrisonandcoevents.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

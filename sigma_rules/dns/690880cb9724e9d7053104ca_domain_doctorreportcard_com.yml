@@ -1,0 +1,28 @@
+title: OTX domain IOC - doctorreportcard.com
+id: 3a3e787d-f4f5-4b8b-a8d8-aa5b2504761a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Certified OysterLoader:
+  Tracking Rhysida ransomware gang activity via code-signing certificates'' (690880cb9724e9d7053104ca).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://expel.com/blog/certified-oysterloader-tracking-rhysida-ransomware-gang-activity-via-code-signing-certificates/
+tags:
+- latrodectus
+- initial access
+- microsoft trusted signing
+- oysterloader
+- code-signing
+- ransomware
+- malvertising
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: doctorreportcard.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

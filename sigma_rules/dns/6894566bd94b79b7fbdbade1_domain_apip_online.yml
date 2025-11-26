@@ -1,0 +1,20 @@
+title: OTX domain IOC - apip.online
+id: 39689169-b2e8-4643-ae84-1ed4ed12ae05
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: apip.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

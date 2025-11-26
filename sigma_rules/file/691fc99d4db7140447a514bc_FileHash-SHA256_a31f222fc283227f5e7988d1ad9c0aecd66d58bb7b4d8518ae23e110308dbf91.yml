@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - a31f222fc283227f5e7988d1ad9c0aecd66d58bb7b4d8518ae23e110308dbf91
+id: 13a2054a-431d-46eb-95e9-53fafe08ec71
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'It's not personal,
+  it's just business' (691fc99d4db7140447a514bc).
+author: AlienVault
+date: '2025-11-21'
+references:
+- https://blog.talosintelligence.com/its-not-personal-its-just-business/
+tags:
+- threat landscape
+- force enabler
+- cyber crime
+- honeypot systems
+- defensive strategies
+- ai-orchestrated campaign
+- agentic ai
+- cybersecurity
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a31f222fc283227f5e7988d1ad9c0aecd66d58bb7b4d8518ae23e110308dbf91
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - vodka78492.click
+id: 5b25051b-31ed-4789-bfbd-8a054645e949
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vodka78492.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

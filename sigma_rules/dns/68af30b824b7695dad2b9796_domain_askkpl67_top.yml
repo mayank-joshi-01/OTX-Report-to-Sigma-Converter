@@ -1,0 +1,25 @@
+title: OTX domain IOC - askkpl67.top
+id: 29003467-7072-4748-83fe-5cd5a5b79b54
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: askkpl67.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

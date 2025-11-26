@@ -1,0 +1,20 @@
+title: OTX domain IOC - addtechservices.online
+id: 2b0d776d-0cc0-487f-80d8-f3c9c6258389
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: addtechservices.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX IPv4 IOC - 45.140.169.16
+id: f29b8706-e49c-4064-ba4a-b55aa01b2e2b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New wave of cyberattacks
+  by APT group Cloud Atlas on Russia's government sector' (69048295b869934bfccecceb).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.ptsecurity.com/research/pt-esc-threat-intelligence/novaya-volna-kiberatak-apt-gruppirovki-cloud-atlas-na-gosudarstvennyj-sektor-rossii/
+tags:
+- bec attacks
+- powershower
+- apt
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 45.140.169.16
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

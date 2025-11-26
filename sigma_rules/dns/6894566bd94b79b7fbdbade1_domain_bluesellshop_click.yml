@@ -1,0 +1,20 @@
+title: OTX domain IOC - bluesellshop.click
+id: c01ef2d1-e0cb-4378-931c-a781c53534cf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bluesellshop.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

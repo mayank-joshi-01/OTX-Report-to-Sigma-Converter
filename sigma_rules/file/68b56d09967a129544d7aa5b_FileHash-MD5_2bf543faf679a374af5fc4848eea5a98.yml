@@ -1,0 +1,27 @@
+title: OTX FileHash-MD5 IOC - 2bf543faf679a374af5fc4848eea5a98
+id: 70a4c836-d0c2-4620-974f-0eccb908e41f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Warning About NightSpire
+  Ransomware Following Cases of Damage in South Korea' (68b56d09967a129544d7aa5b).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://asec.ahnlab.com/en/89913/
+tags:
+- ransomware
+- double-extortion
+- south korea
+- nightspire
+- encryption
+- dedicated leak site
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 2bf543faf679a374af5fc4848eea5a98
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

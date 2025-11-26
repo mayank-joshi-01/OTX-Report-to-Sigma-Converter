@@ -1,0 +1,20 @@
+title: OTX domain IOC - www-01022.com
+id: ca942477-62eb-4c8e-9cf3-2977e7cfabb4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www-01022.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

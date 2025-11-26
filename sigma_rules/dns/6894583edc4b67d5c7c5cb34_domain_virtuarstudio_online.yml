@@ -1,0 +1,20 @@
+title: OTX domain IOC - virtuarstudio.online
+id: 071eacbd-df52-4130-8c52-5865a51b793b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: virtuarstudio.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

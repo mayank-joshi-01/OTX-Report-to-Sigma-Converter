@@ -1,0 +1,20 @@
+title: OTX domain IOC - 44jili-ph.online
+id: 7b57a636-7433-45a6-94c9-03e7a8fb0766
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 44jili-ph.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lucky1661.top
+id: 30b41fe7-721f-41e9-be70-690ca614c165
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lucky1661.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

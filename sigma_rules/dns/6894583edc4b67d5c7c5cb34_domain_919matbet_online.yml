@@ -1,0 +1,20 @@
+title: OTX domain IOC - 919matbet.online
+id: f83244b7-adda-4320-9550-010d9cea4f30
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 919matbet.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

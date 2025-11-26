@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://lesfrontieres.media/hauts-de-seine-une-fille-de-12-ans-violee-parce-que-juive-par-3-adolescents
+id: 94f1d007-4a7f-4208-9707-c56a41aeb078
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lesfrontieres.media/hauts-de-seine-une-fille-de-12-ans-violee-parce-que-juive-par-3-adolescents
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

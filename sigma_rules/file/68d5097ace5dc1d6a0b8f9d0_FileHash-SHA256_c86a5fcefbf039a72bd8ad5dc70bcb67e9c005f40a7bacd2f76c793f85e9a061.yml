@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - c86a5fcefbf039a72bd8ad5dc70bcb67e9c005f40a7bacd2f76c793f85e9a061
+id: 91ada4da-0cc5-416c-bb9a-f76354728e2c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Prompts as Code &
+  Embedded Keys | The Hunt for LLM-Enabled Malware' (68d5097ace5dc1d6a0b8f9d0).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.sentinelone.com/labs/prompts-as-code-embedded-keys-the-hunt-for-llm-enabled-malware
+tags:
+- promptlock
+- rkor
+- llm-enabled malware
+- offensive tools
+- api keys
+- lamehug
+- threat hunting
+- malterminal
+- prompts
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c86a5fcefbf039a72bd8ad5dc70bcb67e9c005f40a7bacd2f76c793f85e9a061
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

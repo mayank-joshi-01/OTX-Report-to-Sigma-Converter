@@ -1,0 +1,20 @@
+title: OTX domain IOC - cobnews.site
+id: 2e314a96-3808-4c2d-a66b-f593afcdb7e7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cobnews.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

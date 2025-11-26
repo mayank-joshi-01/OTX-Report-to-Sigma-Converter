@@ -1,0 +1,20 @@
+title: OTX domain IOC - fitrolekase.online
+id: b14598f0-f448-49de-b0f8-497e80a17c04
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fitrolekase.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

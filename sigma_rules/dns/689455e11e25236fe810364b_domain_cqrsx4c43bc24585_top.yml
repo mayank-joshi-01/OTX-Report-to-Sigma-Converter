@@ -1,0 +1,20 @@
+title: OTX domain IOC - cqrsx4c43bc24585.top
+id: be0ef07f-43d5-464d-869f-4060c21c4cfa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cqrsx4c43bc24585.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

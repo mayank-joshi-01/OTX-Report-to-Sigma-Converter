@@ -1,0 +1,20 @@
+title: OTX hostname IOC - ns1.hotdepo.space
+id: dded1756-6546-4bfe-bc9c-3b3551025d67
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ns1.hotdepo.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

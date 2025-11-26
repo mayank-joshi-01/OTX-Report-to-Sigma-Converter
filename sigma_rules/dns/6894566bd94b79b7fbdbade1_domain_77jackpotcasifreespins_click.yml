@@ -1,0 +1,20 @@
+title: OTX domain IOC - 77jackpotcasifreespins.click
+id: 6d76994e-e327-4e89-bc12-7372cdb57a35
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 77jackpotcasifreespins.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

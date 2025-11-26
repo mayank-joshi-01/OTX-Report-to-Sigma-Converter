@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://tbelement.niccenter.net/Download/TBElement.zip.
+id: 9b63a81b-4537-49a3-b4e6-8b90ba5fe435
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Illusory Wishes:
+  China-nexus APT Targets the Tibetan Community'' (688102de8dd7f5be86b60306).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.zscaler.com/blogs/security-research/illusory-wishes-china-nexus-apt-targets-tibetan-community
+tags:
+- ghost rat
+- phantomnet
+- multi-stage attack
+- dll sideloading
+- web compromise
+- tibetan community
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://tbelement.niccenter.net/Download/TBElement.zip.
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

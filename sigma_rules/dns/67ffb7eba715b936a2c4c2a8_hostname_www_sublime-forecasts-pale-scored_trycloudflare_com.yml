@@ -1,0 +1,32 @@
+title: OTX hostname IOC - www.sublime-forecasts-pale-scored.trycloudflare.com
+id: 3af53504-50be-495f-a3dd-e25e3bae6a49
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Interlock ransomware
+  evolving under the radar' (67ffb7eba715b936a2c4c2a8).
+author: AlienVault
+date: '2025-04-16'
+references:
+- https://blog.sekoia.io/interlock-ransomware-evolving-under-the-radar
+tags:
+- berserkstealer
+- clickfix
+- interlock rat
+- double extortion
+- ransomware
+- remote access trojan
+- interlock ransomware
+- credential stealer
+- fake updaters
+- powershell backdoor
+- lumma
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.sublime-forecasts-pale-scored.trycloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

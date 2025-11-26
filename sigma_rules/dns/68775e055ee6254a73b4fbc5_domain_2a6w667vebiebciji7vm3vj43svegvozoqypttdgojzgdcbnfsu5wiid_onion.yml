@@ -1,0 +1,25 @@
+title: OTX domain IOC - 2a6w667vebiebciji7vm3vj43svegvozoqypttdgojzgdcbnfsu5wiid.onion
+id: 92565646-8691-4323-9569-29d7c9043177
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of Secp0
+  Ransomware' (68775e055ee6254a73b4fbc5).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://blog.lexfo.fr/analysis-of-secp0-ransomware.html
+tags:
+- secp0
+- ransomware
+- encryption
+- double-extortion
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 2a6w667vebiebciji7vm3vj43svegvozoqypttdgojzgdcbnfsu5wiid.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

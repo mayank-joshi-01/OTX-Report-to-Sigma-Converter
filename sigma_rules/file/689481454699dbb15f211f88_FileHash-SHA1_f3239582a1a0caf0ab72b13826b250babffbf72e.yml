@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - f3239582a1a0caf0ab72b13826b250babffbf72e
+id: 55c40e57-2ea1-4e8f-80c0-5f7a4957ca42
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SLOW#TEMPEST Cobalt
+  Strike Loader' (689481454699dbb15f211f88).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://dmpdump.github.io/posts/CobaltStrike_HK/
+tags:
+- entry-point-patching
+- beacon
+- chinese-targets
+- anti-analysis
+- cobalt strike
+- cobalt-strike
+- iso-image
+- dll-sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: f3239582a1a0caf0ab72b13826b250babffbf72e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - 5cd2bae9ff1e3ac864a54432f115eda5541acfb7
+id: 858af374-3280-4b77-8f88-d1e0434bc8a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Resurgence of
+  IoT Malware: Inside the Mirai-Based "Gayfemboy" Botnet Campaign'' (68ac55a0870e18ee1e15bda5).'
+author: AlienVault
+date: '2025-08-25'
+references:
+- https://www.fortinet.com/blog/threat-research/iot-malware-gayfemboy-mirai-based-botnet-campaign
+tags:
+- obfuscation
+- mirai
+- botnet
+- evasion
+- iot
+- ddos
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 5cd2bae9ff1e3ac864a54432f115eda5541acfb7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

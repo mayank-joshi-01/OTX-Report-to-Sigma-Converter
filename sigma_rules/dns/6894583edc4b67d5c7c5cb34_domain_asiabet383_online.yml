@@ -1,0 +1,20 @@
+title: OTX domain IOC - asiabet383.online
+id: 00277d31-5c8a-4b72-b1ae-97fe18db3239
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asiabet383.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

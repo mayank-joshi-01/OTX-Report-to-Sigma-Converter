@@ -1,0 +1,20 @@
+title: OTX domain IOC - yrkz7viej32uaevzkinrni38afvkn.jo
+id: e7701c79-b412-4c3b-9846-f31e8776ee5f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yrkz7viej32uaevzkinrni38afvkn.jo
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

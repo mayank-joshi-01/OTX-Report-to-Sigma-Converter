@@ -1,0 +1,26 @@
+title: OTX IPv4 IOC - 85.239.34.91
+id: 72361214-7343-49ba-94c3-357d66930c89
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Uncovering Qilin attack
+  methods exposed through multiple cases' (68ff293c6892fe669c7aa472).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://blog.talosintelligence.com/uncovering-qilin-attack-methods-exposed-through-multiple-cases/
+tags:
+- manufacturing
+- ransomware
+- systembc
+- cobalt strike
+- qilin
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 85.239.34.91
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

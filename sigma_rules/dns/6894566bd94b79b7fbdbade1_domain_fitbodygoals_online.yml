@@ -1,0 +1,20 @@
+title: OTX domain IOC - fitbodygoals.online
+id: 5a76c1f1-32da-49b0-be00-9d714d4c2edd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fitbodygoals.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

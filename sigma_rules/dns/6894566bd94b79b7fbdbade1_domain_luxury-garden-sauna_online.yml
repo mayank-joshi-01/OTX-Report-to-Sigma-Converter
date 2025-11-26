@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxury-garden-sauna.online
+id: 20b70e51-5c28-428d-88ea-cd9dbab7fc72
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxury-garden-sauna.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

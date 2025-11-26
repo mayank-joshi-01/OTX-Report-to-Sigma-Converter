@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://shipping-hr.ro/m/r/r.txt
+id: 385ecd1f-fde5-4229-9ac1-91f90e107e67
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'LNK Trojan delivers
+  REMCOS' (688a324d62b64db244b9463f).
+author: AlienVault
+date: '2025-07-30'
+references:
+- https://www.pointwild.com/threat-intelligence/trojan-winlnk-powershell-runner
+tags:
+- base64 encoding
+- multi-stage attack
+- remcos
+- keylogger
+- c2 communication
+- backdoor
+- pif file
+- powershell
+- lnk file
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://shipping-hr.ro/m/r/r.txt
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

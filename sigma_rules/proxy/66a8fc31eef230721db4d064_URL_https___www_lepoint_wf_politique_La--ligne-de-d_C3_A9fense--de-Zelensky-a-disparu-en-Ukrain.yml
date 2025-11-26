@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.lepoint.wf/politique/La--ligne-de-d%C3%A9fense--de-Zelensky-a-disparu-en-Ukraine-17-05-2024-2528358_20.php
+id: 3bd7ddf2-8a86-41e0-9969-8d7dc8311049
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.lepoint.wf/politique/La--ligne-de-d%C3%A9fense--de-Zelensky-a-disparu-en-Ukraine-17-05-2024-2528358_20.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

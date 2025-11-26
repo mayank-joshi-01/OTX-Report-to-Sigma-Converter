@@ -1,0 +1,20 @@
+title: OTX domain IOC - barsukotvseseriivkq.online
+id: 113e6515-95d9-4cc1-8600-2e02c66a40a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: barsukotvseseriivkq.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

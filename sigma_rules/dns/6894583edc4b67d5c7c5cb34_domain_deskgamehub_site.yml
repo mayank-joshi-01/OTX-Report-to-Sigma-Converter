@@ -1,0 +1,20 @@
+title: OTX domain IOC - deskgamehub.site
+id: 9fb658b6-3016-4706-9b79-9578224e116c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: deskgamehub.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

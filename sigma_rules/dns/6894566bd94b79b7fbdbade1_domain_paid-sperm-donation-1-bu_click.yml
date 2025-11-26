@@ -1,0 +1,20 @@
+title: OTX domain IOC - paid-sperm-donation-1-bu.click
+id: 2fc9b94f-c90f-4181-939a-8976e2ae63f5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: paid-sperm-donation-1-bu.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - episode88d.online
+id: 0cc0355c-48a2-4fe1-bacb-4014f250eff4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: episode88d.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

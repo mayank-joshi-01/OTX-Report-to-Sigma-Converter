@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--rhqx00c95nv9a.xyz
+id: fc5a39b3-d651-42ea-b5a7-41a9a2d899b4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--rhqx00c95nv9a.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

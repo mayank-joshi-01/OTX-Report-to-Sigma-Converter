@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 331f9e123696007a9b2cc962dfb86d12
+id: 8e6838d2-bade-466c-b95a-f28ff1d60b3a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of Encryption
+  Structure of Yurei Ransomware Go-based Builder' (69171d813a530356d4732351).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://asec.ahnlab.com/en/90975/
+tags:
+- darkweb
+- chacha20-poly1305
+- secp256k1-ecies
+- go-based
+- yurei
+- corporate networks
+- ransomware
+- encryption
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 331f9e123696007a9b2cc962dfb86d12
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

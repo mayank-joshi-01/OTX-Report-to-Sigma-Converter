@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - cb25b1664a856f0c3e71a318f3e35eef8b331e047acaf8c53320439c3c23ef7c
+id: fe5de907-535d-47ae-b93d-04cae6d683cd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Sneaky" new Android
+  malware takes over your phone, hiding in fake news and ID apps' (690b44c702073b45e11e8005).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.malwarebytes.com/blog/news/2025/11/sneaky-new-android-malware-takes-over-your-phone-hiding-in-fake-news-and-id-apps
+tags:
+- cryptocurrency
+- android
+- trojan
+- banking malware
+- android/trojan.spy.banker.aur9b9b491bc44
+- accessibility services
+- southeast asia
+- overlay attack
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: cb25b1664a856f0c3e71a318f3e35eef8b331e047acaf8c53320439c3c23ef7c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

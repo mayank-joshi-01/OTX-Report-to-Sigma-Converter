@@ -1,0 +1,20 @@
+title: OTX domain IOC - homeowners2day.click
+id: ec28e69e-5b05-4e05-9ffb-5ea6b5ebf60b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: homeowners2day.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

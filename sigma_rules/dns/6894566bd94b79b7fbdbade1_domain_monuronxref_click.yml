@@ -1,0 +1,20 @@
+title: OTX domain IOC - monuronxref.click
+id: cf1e2e67-bb49-406e-b5d5-a2012ce3471a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: monuronxref.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

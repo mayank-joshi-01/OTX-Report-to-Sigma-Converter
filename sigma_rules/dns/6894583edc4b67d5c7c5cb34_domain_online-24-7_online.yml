@@ -1,0 +1,20 @@
+title: OTX domain IOC - online-24-7.online
+id: 28a05ec0-2a7d-4892-a753-06c1d9500edc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: online-24-7.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

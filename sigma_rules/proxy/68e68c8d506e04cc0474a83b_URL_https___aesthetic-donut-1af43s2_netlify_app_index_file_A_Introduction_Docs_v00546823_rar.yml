@@ -1,0 +1,33 @@
+title: OTX URL IOC - https://aesthetic-donut-1af43s2.netlify.app/index/file/A_Introduction_Docs_v00546823.rar
+id: a93f7505-fcef-4c44-83de-36fe563e05d2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''APT Meets GPT: Targeted
+  Operations with Untamed LLMs'' (68e68c8d506e04cc0474a83b).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.volexity.com/blog/2025/10/08/apt-meets-gpt-targeted-operations-with-untamed-llms/
+tags:
+- uta0388
+- govershell
+- llms
+- powershell
+- randomdir8char
+- websocket
+- persistence
+- govershell c2
+- archive file
+- zip
+- rar
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://aesthetic-donut-1af43s2.netlify.app/index/file/A_Introduction_Docs_v00546823.rar
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

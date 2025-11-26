@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 0440e05dba1a202a1e5683fb6134d53c
+id: 0f3687ab-518f-4ec7-8dcf-ffabb5e8f642
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'May 2025 APT Group
+  Trends (South Korea)' (6852fb631fbf46af0b21acb2).
+author: AlienVault
+date: '2025-06-18'
+references:
+- https://asec.ahnlab.com/en/88472
+tags:
+- apt
+- lnk files
+- obfuscation
+- python scripts
+- south korea
+- spear phishing
+- task scheduler
+- decoy documents
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0440e05dba1a202a1e5683fb6134d53c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

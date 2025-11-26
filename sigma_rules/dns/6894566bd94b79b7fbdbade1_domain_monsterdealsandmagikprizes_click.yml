@@ -1,0 +1,20 @@
+title: OTX domain IOC - monsterdealsandmagikprizes.click
+id: 4b5c07d6-28eb-402b-ba73-b49cf6ecaab7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: monsterdealsandmagikprizes.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

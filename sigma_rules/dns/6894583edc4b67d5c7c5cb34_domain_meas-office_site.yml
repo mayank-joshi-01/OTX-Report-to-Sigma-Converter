@@ -1,0 +1,20 @@
+title: OTX domain IOC - meas-office.site
+id: d350d6d1-5b95-4822-a21c-8c706b605a64
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: meas-office.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

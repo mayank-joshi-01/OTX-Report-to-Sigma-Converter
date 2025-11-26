@@ -1,0 +1,20 @@
+title: OTX domain IOC - eu1quant.site
+id: a188fd17-4d09-466f-afe8-ea4bb553efaf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eu1quant.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

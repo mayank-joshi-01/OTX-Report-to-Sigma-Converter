@@ -1,0 +1,20 @@
+title: OTX domain IOC - sauna-inus3.click
+id: d97eac8b-5330-4613-ac0e-bb8d1a86c893
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sauna-inus3.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

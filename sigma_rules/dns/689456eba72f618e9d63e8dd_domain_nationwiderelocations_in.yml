@@ -1,0 +1,20 @@
+title: OTX domain IOC - nationwiderelocations.in
+id: 91498dd5-9070-44e9-b6cd-07b4de08ddc2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nationwiderelocations.in
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

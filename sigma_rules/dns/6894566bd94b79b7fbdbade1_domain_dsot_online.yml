@@ -1,0 +1,20 @@
+title: OTX domain IOC - dsot.online
+id: 28733f7e-663f-46a2-b630-3e6c3d7f9bd1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dsot.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

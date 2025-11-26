@@ -1,0 +1,20 @@
+title: OTX domain IOC - high-end-living.store
+id: 9cebd693-51c4-4aec-9bab-355be2627871
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: high-end-living.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

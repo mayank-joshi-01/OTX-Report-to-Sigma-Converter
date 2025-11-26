@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA1 IOC - 3e6cd9d07b8ece706697f332ac9f32de5ecaf086
+id: fd9c3e1b-c5ae-4bfd-838f-0ab5a7eaf4d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Unmasking AsyncRAT:
+  Navigating the labyrinth of forks'' (689b15fe20990164171b8068).'
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://www.welivesecurity.com/en/eset-research/unmasking-asyncrat-navigating-labyrinth-forks/
+tags:
+- asyncrat
+- quasar rat
+- santarat
+- boratrat
+- remote access trojan
+- xiebrorat
+- noneuclid rat
+- venomrat
+- jasonrat
+- evasion techniques
+- dcrat
+- malware forks
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 3e6cd9d07b8ece706697f332ac9f32de5ecaf086
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

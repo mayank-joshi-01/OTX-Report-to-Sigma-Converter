@@ -1,0 +1,20 @@
+title: OTX domain IOC - slovo-patcana-6-seriya.site
+id: 7da86450-1490-4da8-b44c-a390d8a0c5a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: slovo-patcana-6-seriya.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - kirrileesunderland.online
+id: eece6395-a3ff-461a-a23b-02a66627dbed
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kirrileesunderland.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

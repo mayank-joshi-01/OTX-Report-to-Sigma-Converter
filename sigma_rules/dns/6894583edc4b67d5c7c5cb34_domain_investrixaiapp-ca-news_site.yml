@@ -1,0 +1,20 @@
+title: OTX domain IOC - investrixaiapp-ca-news.site
+id: b5b50e85-6efe-4ead-aad0-a190dc980020
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: investrixaiapp-ca-news.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

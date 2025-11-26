@@ -1,0 +1,20 @@
+title: OTX domain IOC - fun88pluss.site
+id: 42520d81-54db-4583-a0ea-a41a99179313
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fun88pluss.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

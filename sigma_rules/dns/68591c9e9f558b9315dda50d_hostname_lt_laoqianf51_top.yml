@@ -1,0 +1,29 @@
+title: OTX hostname IOC - lt.laoqianf51.top
+id: d48b4df3-17d9-42e3-aec0-7c986d9b8bcc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The new SparkKitty
+  Trojan spy in the App Store and Google Play' (68591c9e9f558b9315dda50d).
+author: AlienVault
+date: '2025-06-23'
+references:
+- https://securelist.com/sparkkitty-ios-android-malware/116793
+tags:
+- sparkcat
+- china
+- ios
+- southeast asia
+- sparkkitty
+- android
+- cryptocurrency
+- spyware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lt.laoqianf51.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

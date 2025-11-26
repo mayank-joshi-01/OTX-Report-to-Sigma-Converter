@@ -1,0 +1,20 @@
+title: OTX domain IOC - 024014.com
+id: 69741de8-2f51-45d5-a4af-714ebefa1771
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 024014.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

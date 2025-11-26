@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.welt.pm/politik/deutschland/article240128277/Fu%C3%9Fballfans-werden-ein-weiteres-Tor-gegen-die-Ampel-erzielen.html
+id: 32dc95b5-143f-45a0-8a29-c96e7037c7c2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.welt.pm/politik/deutschland/article240128277/Fu%C3%9Fballfans-werden-ein-weiteres-Tor-gegen-die-Ampel-erzielen.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

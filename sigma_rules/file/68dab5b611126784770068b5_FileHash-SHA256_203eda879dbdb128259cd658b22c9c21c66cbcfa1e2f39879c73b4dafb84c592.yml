@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 203eda879dbdb128259cd658b22c9c21c66cbcfa1e2f39879c73b4dafb84c592
+id: 25e12044-aaec-4c09-9ccd-3290bdbca405
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From a Single Click:
+  How Lunar Spider Enabled a Near Two-Month Intrusion'' (68dab5b611126784770068b5).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/
+tags:
+- cobalt strike
+- backconnect
+- credential-harvesting
+- javascript
+- cobalt-strike
+- data-exfiltration
+- brute-ratel
+- lateral-movement
+- latrodectus
+- brute ratel c4
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 203eda879dbdb128259cd658b22c9c21c66cbcfa1e2f39879c73b4dafb84c592
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

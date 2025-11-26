@@ -1,0 +1,25 @@
+title: OTX URL IOC - https://blog.imunify360.com/critical-unauthenticated-command-injection-in-chamilo-lms-exploited-in-the-wild
+id: b052f432-32d2-4f4f-bad4-4d42e66eebcd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Linuxsys Cryptominer'
+  (6879f96c1e20b47d8569ff16).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.vulncheck.com/blog/linuxsys-cryptominer
+tags:
+- cryptomining
+- xmrig
+- linuxsys
+- compromised websites
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://blog.imunify360.com/critical-unauthenticated-command-injection-in-chamilo-lms-exploited-in-the-wild
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

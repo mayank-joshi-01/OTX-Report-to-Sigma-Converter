@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://api.telegram.org/bot7522684505:AAEODeii83B_nlpLi0bUQTnOtVdjc8yHfjQ/sendDocument?chat_id=-1002503889864]
+id: b8961166-28f9-4113-966d-54163a666698
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Shuyal Stealer:
+  Advanced Infostealer Targeting 19 Browsers'' (68e68278a0b8b21ac7e1edb7).'
+author: AlienVault
+date: '2025-10-08'
+references:
+- https://www.pointwild.com/threat-intelligence/shuyal-stealer-advanced-infostealer-targeting-19-browsers
+tags:
+- evasion
+- browser targeting
+- system reconnaissance
+- data exfiltration
+- telegram bot
+- persistence
+- shuyal stealer
+- infostealer
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://api.telegram.org/bot7522684505:AAEODeii83B_nlpLi0bUQTnOtVdjc8yHfjQ/sendDocument?chat_id=-1002503889864]
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

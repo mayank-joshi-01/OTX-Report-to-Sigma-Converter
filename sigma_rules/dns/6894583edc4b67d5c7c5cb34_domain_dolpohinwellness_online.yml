@@ -1,0 +1,20 @@
+title: OTX domain IOC - dolpohinwellness.online
+id: 99cca5a8-3c47-476f-aa84-6d1a775b43f0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dolpohinwellness.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

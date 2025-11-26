@@ -1,0 +1,20 @@
+title: OTX domain IOC - marcuspitt.site
+id: 5561e5fd-9a2a-4a55-b1c8-cbbaf3ddc651
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: marcuspitt.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX URL IOC - https://www.pizzeria-mercy.de/wp-includes/images/media/bar/index.php
+id: d74d2d41-5881-48fb-b8b7-bff820a3b2e0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68d7619adf1da670a581d376).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/
+tags:
+- pterographin
+- pteroodd
+- pteroeffigy
+- pterostew
+- backdoor
+- ukraine
+- pteropaste
+- apt
+- collaboration
+- kazuar
+- fsb
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.pizzeria-mercy.de/wp-includes/images/media/bar/index.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

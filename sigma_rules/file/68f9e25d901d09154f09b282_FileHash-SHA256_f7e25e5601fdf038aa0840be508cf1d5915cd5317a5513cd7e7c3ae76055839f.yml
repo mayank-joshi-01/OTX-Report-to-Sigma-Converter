@@ -1,0 +1,23 @@
+title: OTX FileHash-SHA256 IOC - f7e25e5601fdf038aa0840be508cf1d5915cd5317a5513cd7e7c3ae76055839f
+id: 40659b64-aae3-492c-b8a7-61742e7ce454
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Bitter (APT-Q-37)
+  uses diverse means to deliver new backdoor components' (68f9e25d901d09154f09b282).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://ti.qianxin.com/blog/articles/bitter-uses-diverse-means-to-deliver-new-backdoor-components-en
+tags:
+- winrar vulnerability
+- apt-q-37
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f7e25e5601fdf038aa0840be508cf1d5915cd5317a5513cd7e7c3ae76055839f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

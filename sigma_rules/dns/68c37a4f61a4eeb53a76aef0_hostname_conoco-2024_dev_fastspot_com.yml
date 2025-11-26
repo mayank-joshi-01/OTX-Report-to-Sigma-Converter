@@ -1,0 +1,31 @@
+title: OTX hostname IOC - conoco-2024.dev.fastspot.com
+id: ca127707-d08e-4080-95b7-a1cb025a8342
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Inside the 2025
+  Energy Phishing Wave: Chevron, Conoco, PBF, Phillips 66'' (68c37a4f61a4eeb53a76aef0).'
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://hunt.io/blog/us-energy-phishing-wave-report
+tags:
+- energy sector
+- httrack
+- credential harvesting
+- phishing
+- investment scams
+- keitaro
+- website cloning
+- rhadamanthys
+- domain impersonation
+- brand abuse
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: conoco-2024.dev.fastspot.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

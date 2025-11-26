@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - cdb9fb87dcb44d8f3040f4fb87d89508
+id: 4bb22b02-5ef5-4bf1-bcc3-d4016d1f582a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targets Indian Defense Using Credential-Stealing Malware' (6856c6ec76846d013ef77cc6).
+author: AlienVault
+date: '2025-06-21'
+references:
+- https://www.cyfirma.com/research/apt36-phishing-campaign-targets-indian-defense-using-credential-stealing-malware
+tags:
+- indian defense
+- transparent tribe
+- pdf
+- phishing
+- cyber espionage
+- pakistan
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: cdb9fb87dcb44d8f3040f4fb87d89508
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

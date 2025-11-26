@@ -1,0 +1,20 @@
+title: OTX domain IOC - 10moka138.click
+id: ed6e39b1-e7ac-43be-a3ab-4532ab66dee7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 10moka138.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

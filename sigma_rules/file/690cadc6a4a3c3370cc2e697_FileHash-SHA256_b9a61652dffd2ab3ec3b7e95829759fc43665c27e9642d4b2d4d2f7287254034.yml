@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - b9a61652dffd2ab3ec3b7e95829759fc43665c27e9642d4b2d4d2f7287254034
+id: 16f4bf68-807d-4059-b72c-c4d61f236862
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gootloader Returns:
+  What Goodies Did They Bring?'' (690cadc6a4a3c3370cc2e697).'
+author: AlienVault
+date: '2025-11-06'
+references:
+- https://www.huntress.com/blog/gootloader-threat-detection-woff2-obfuscation
+tags:
+- vanilla tempest
+- lateral movement
+- noberus
+- ransomware
+- obfuscation
+- gootloader
+- quantum locker
+- seo poisoning
+- rhysida
+- wordpress exploitation
+- zeppelin
+- javascript
+- blackcat
+- alphv
+- supper socks5 backdoor
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b9a61652dffd2ab3ec3b7e95829759fc43665c27e9642d4b2d4d2f7287254034
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

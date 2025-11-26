@@ -1,0 +1,20 @@
+title: OTX domain IOC - cheap-bitcoin.online
+id: 3979e7ed-9cf6-4f36-bee4-4c29d1b40de6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cheap-bitcoin.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

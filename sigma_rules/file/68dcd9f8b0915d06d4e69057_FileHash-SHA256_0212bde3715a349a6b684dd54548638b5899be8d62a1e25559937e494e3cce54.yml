@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 0212bde3715a349a6b684dd54548638b5899be8d62a1e25559937e494e3cce54
+id: feb302e2-8631-463c-bffd-45458c4407e6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'XiebroC2 Identified
+  in MS-SQL Server Attack Cases' (68dcd9f8b0915d06d4e69057).
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://asec.ahnlab.com/en/90369/
+tags:
+- dictionary attack
+- juicypotato
+- privilege escalation
+- ms-sql
+- c2 framework
+- coinminer
+- brute force
+- xiebroc2
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0212bde3715a349a6b684dd54548638b5899be8d62a1e25559937e494e3cce54
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

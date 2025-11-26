@@ -1,0 +1,20 @@
+title: OTX domain IOC - j789f99l49.pics
+id: fe8b757e-b502-4edf-8085-1f09f6718ba3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: j789f99l49.pics
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

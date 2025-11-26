@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 1f7e01a3355b52cbc92c908a61abf643
+id: 424b04c1-0ae8-47b0-a409-f5fb78b4c380
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Ransomware attacks
+  and how victims respond' (68f17b7538fd086633cf3fa2).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://blog.talosintelligence.com/ransomware-attacks-and-how-victims-respond/
+tags:
+- incident response
+- small businesses
+- ransomware
+- psychological impact
+- cryptocurrency theft
+- job seekers
+- credential theft
+- beavertail
+- ottercookie
+- north korea
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 1f7e01a3355b52cbc92c908a61abf643
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

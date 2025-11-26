@@ -1,0 +1,20 @@
+title: OTX domain IOC - freecourses16.online
+id: 2c9b745c-ca09-42a9-b510-0b77bd167c34
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: freecourses16.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

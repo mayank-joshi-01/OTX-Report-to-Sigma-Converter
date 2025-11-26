@@ -1,0 +1,20 @@
+title: OTX domain IOC - santander-bank.site
+id: 7193882f-75d9-4037-8e0b-3e5bb78b902e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: santander-bank.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

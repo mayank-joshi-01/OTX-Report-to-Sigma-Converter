@@ -1,0 +1,20 @@
+title: OTX domain IOC - havenbarleymartllc.site
+id: fe073826-bb09-4fcd-85e2-b7650f745628
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: havenbarleymartllc.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

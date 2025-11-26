@@ -1,0 +1,20 @@
+title: OTX domain IOC - voice-controlled-automation.online
+id: d674cddf-1110-4769-94aa-52b8678444f2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: voice-controlled-automation.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

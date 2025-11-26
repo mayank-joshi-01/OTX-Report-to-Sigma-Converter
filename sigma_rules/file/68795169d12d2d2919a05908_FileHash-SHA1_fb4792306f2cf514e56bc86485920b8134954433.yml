@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - fb4792306f2cf514e56bc86485920b8134954433
+id: b8de1345-6faf-49b5-8f21-c1cd43b099f8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Powerful MaaS On the
+  Prowl for Credentials and Crypto Assets' (68795169d12d2d2919a05908).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.sentinelone.com/blog/katz-stealer-powerful-maas-on-the-prowl-for-credentials-and-crypto-assets/
+tags:
+- credential theft
+- browser injection
+- evasion techniques
+- infostealer
+- cryptocurrency
+- maas
+- data exfiltration
+- katz stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: fb4792306f2cf514e56bc86485920b8134954433
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

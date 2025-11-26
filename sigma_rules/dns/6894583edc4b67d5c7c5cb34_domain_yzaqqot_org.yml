@@ -1,0 +1,20 @@
+title: OTX domain IOC - yzaqqot.org
+id: 87588348-32a0-4f35-88f2-2f677a9247b7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yzaqqot.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

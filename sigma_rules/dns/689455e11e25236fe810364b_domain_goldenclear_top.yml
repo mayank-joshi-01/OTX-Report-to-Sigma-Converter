@@ -1,0 +1,20 @@
+title: OTX domain IOC - goldenclear.top
+id: 96228e0c-ee8a-4333-9d96-da13e5705ec6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: goldenclear.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

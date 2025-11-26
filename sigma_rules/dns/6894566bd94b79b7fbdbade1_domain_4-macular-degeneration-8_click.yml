@@ -1,0 +1,20 @@
+title: OTX domain IOC - 4-macular-degeneration-8.click
+id: be6a6c69-987b-49d0-90f0-f4cdf19ec687
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 4-macular-degeneration-8.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

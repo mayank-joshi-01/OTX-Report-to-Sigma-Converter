@@ -1,0 +1,20 @@
+title: OTX domain IOC - stairlift-140925.site
+id: 366d9a87-54a4-4618-87d2-8bb872a0cf37
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stairlift-140925.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

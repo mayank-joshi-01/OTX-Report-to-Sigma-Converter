@@ -1,0 +1,34 @@
+title: OTX hostname IOC - ekrn.ydns.eu
+id: d2f32800-b918-44c6-b807-ed05184475ae
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68cd617b3eb5b1212d11643d).
+author: AlienVault
+date: '2025-09-19'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab
+tags:
+- fsb
+- pterographin
+- ukraine
+- pterolnk
+- pteroeffigy
+- apt
+- collaboration
+- pteroodd
+- kazuar
+- pteropaste
+- cyberespionage
+- russia
+- pterostew
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ekrn.ydns.eu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

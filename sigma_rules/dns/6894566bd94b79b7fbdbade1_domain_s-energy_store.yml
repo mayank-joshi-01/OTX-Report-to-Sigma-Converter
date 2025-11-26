@@ -1,0 +1,20 @@
+title: OTX domain IOC - s-energy.store
+id: b786b880-3ae2-4d2c-8504-30c6e6781eec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: s-energy.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

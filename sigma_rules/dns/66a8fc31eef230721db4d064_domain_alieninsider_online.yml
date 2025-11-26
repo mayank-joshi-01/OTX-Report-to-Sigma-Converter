@@ -1,0 +1,26 @@
+title: OTX domain IOC - alieninsider.online
+id: 376d1432-c4e7-45a4-8f6c-390d4241c9a8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alieninsider.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

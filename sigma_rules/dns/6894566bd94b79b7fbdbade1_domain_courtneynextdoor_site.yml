@@ -1,0 +1,20 @@
+title: OTX domain IOC - courtneynextdoor.site
+id: 91923ad7-dcee-4c94-ab54-f68ed1179117
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: courtneynextdoor.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - nihitgroup.site
+id: 5dd0c303-c843-49a5-9d35-13b75dec1e1e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nihitgroup.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX domain IOC - wseo99.com
+id: 9342064c-d7b2-4644-a6fe-87a0179a5086
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'IIS servers owned
+  by RudePanda like it's 2003' (68f92a4430a24cc42a46608c).
+author: AlienVault
+date: '2025-10-22'
+references:
+- https://harfanglab.io/insidethelab/rudepanda-owns-iis-servers-like-2003
+tags:
+- remote command execution
+- rootkit
+- wingtbcli
+- hijackserver
+- asp .net
+- iis
+- cryptocurrency
+- hijackdrivermanager
+- seo
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wseo99.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

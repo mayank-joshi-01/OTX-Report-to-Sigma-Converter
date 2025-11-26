@@ -1,0 +1,20 @@
+title: OTX domain IOC - skillupnow.site
+id: 3b08e1e2-848a-4c08-bc42-da3f681363bd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: skillupnow.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dunnart.space
+id: 8561d0e1-e906-4181-af15-24a0789dc2e3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dunnart.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

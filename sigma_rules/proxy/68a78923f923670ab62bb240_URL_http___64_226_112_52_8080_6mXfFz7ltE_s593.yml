@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://64.226.112.52:8080/6mXfFz7ltE/s593
+id: 9862df9f-3519-4082-89ff-24e1e17f441e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Your Connection,
+  Their Cash: Threat Actors Misuse SDKs to Sell Your Bandwidth'' (68a78923f923670ab62bb240).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://unit42.paloaltonetworks.com/attackers-sell-your-bandwidth-using-sdks/
+tags:
+- ip address
+- jxpath
+- dart
+- cve202436401
+- geoserver
+- persistence
+- apache
+- sdk
+- CVE-2024-36401
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://64.226.112.52:8080/6mXfFz7ltE/s593
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

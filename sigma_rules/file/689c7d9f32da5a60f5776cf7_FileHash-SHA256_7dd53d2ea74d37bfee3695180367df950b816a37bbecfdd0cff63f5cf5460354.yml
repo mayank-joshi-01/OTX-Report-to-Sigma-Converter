@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 7dd53d2ea74d37bfee3695180367df950b816a37bbecfdd0cff63f5cf5460354
+id: dd280155-34b8-4e15-b79c-7ef415a2b39f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Watcher:
+  Dissecting Cmimai Stealer''s VBS Payload'' (689c7d9f32da5a60f5776cf7).'
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://labs.k7computing.com/index.php/silent-watcher-dissecting-cmimai-stealers-vbs-payload
+tags:
+- vbs
+- infostealer
+- powershell
+- discord
+- browser-data
+- wmi
+- exfiltration
+- windows
+- screenshot
+- cmimai stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 7dd53d2ea74d37bfee3695180367df950b816a37bbecfdd0cff63f5cf5460354
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

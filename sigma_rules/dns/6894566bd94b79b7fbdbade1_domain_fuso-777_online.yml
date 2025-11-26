@@ -1,0 +1,20 @@
+title: OTX domain IOC - fuso-777.online
+id: eaa587e8-2b79-4af3-aeb6-c5b1ec5d9317
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fuso-777.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

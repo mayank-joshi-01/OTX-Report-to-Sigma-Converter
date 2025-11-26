@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA1 IOC - 1f5ae3b51b2dbf9419f4b7d51725a49023abc81c
+id: e9c71f2b-0c9f-4261-955c-813206cf73aa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The DragonForce
+  Cartel: Scattered Spider at the gate'' (690b1a8fb4a0df0cf6a16178).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.acronis.com/en/tru/posts/the-dragonforce-cartel-scattered-spider-at-the-gate/
+tags:
+- conti
+- dragonforce
+- social engineering
+- global
+- scattered spider
+- ransomware
+- cartel
+- byovd
+- encryption
+- mamona
+- devman
+- affiliate program
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 1f5ae3b51b2dbf9419f4b7d51725a49023abc81c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

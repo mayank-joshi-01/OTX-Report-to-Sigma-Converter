@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - fa598e761201582d41a73d174eb5edad10f709238d99e0bf698da1601c71d1ca
+id: 5099a7d4-53cc-4a83-aaee-9f5322010620
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Infection Chain
+  and ConfuserEx-Based Obfuscation for DarkCloud Stealer' (6895aeaa72538302a5d75512).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://unit42.paloaltonetworks.com/new-darkcloud-stealer-infection-chain/
+tags:
+- visual basic 6
+- anti-analysis
+- darkcloud stealer
+- confuserex
+- obfuscation
+- infostealer
+- process hollowing
+- infection chain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fa598e761201582d41a73d174eb5edad10f709238d99e0bf698da1601c71d1ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

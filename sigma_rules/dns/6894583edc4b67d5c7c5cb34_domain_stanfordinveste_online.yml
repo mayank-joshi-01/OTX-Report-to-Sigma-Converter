@@ -1,0 +1,20 @@
+title: OTX domain IOC - stanfordinveste.online
+id: 4282ebcb-88df-4146-ae7f-dcc533d17aaa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stanfordinveste.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

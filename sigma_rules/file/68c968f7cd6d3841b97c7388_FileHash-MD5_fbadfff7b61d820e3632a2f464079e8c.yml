@@ -1,0 +1,36 @@
+title: OTX FileHash-MD5 IOC - fbadfff7b61d820e3632a2f464079e8c
+id: c2860665-e739-4727-b061-9258c019b868
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A new RevengeHotels
+  campaign targets Latin America' (68c968f7cd6d3841b97c7388).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://securelist.com/revengehotels-attacks-with-ai-and-venomrat-across-latin-america/117493
+tags:
+- latin america
+- ai-generated code
+- venomrat
+- procc
+- njrat
+- phishing
+- quasarrat
+- revengerat
+- hospitality
+- stealth techniques
+- xworm
+- 888 rat
+- usb spreading
+- nanocorerat
+- desckvbrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: fbadfff7b61d820e3632a2f464079e8c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

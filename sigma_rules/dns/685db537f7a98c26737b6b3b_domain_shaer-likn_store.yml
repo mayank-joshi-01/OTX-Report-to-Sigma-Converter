@@ -1,0 +1,25 @@
+title: OTX domain IOC - shaer-likn.store
+id: c38ecf36-02d5-490b-93d9-19dcb28cc5a0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Iranian Educated Manticore
+  Targets Leading Tech Academics' (685db537f7a98c26737b6b3b).
+author: AlienVault
+date: '2025-06-26'
+references:
+- https://research.checkpoint.com/2025/iranian-educated-manticore-targets-leading-tech-academics/
+tags:
+- Educated Manticore
+- Iran
+- APT42
+- Charming Kitten
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shaer-likn.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

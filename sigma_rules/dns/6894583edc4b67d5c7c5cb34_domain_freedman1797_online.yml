@@ -1,0 +1,20 @@
+title: OTX domain IOC - freedman1797.online
+id: 63d08ad9-6ba8-4733-9418-1767b4cb7c55
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: freedman1797.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

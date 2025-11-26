@@ -1,0 +1,20 @@
+title: OTX domain IOC - cvmrmpaepcmpa.site
+id: 5f0ab584-6866-455c-841e-31b6bb0f9819
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cvmrmpaepcmpa.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

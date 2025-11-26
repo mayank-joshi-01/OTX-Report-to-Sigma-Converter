@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - c10c4b3d550d05daceefa7d61f5d34fb
+id: 29e09785-a5c5-48f6-ae2d-58d9c54de99c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'This 'SAP Ariba Quote'
+  Isn't What It Seems—It's Ransomware' (689f1c5275008bae8b2aa1b1).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://cofense.com/blog/this-sap-ariba-quote-isn-t-what-it-seems-it-s-ransomware
+tags:
+- bitcoin
+- ransomware
+- phishing
+- sap ariba
+- social engineering
+- keylogger
+- data exfiltration
+- encryption
+- leeme ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c10c4b3d550d05daceefa7d61f5d34fb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 77db3fdccda60b00dd6610656f7fc001948cdcf410efe8d571df91dd84ae53e1
+id: 724921a5-4d5c-4b16-8999-8c9c6a04c8c2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Leveraging Generative
+  AI to Reverse Engineer XLoader' (6908bc11abca08a2cfd014e9).
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://research.checkpoint.com/2025/generative-ai-for-reverse-engineering
+tags:
+- generative ai
+- reverse engineering
+- chatgpt
+- xloader
+- encryption
+- obfuscation
+- ioc extraction
+- malware analysis
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 77db3fdccda60b00dd6610656f7fc001948cdcf410efe8d571df91dd84ae53e1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

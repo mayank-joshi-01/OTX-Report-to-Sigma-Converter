@@ -1,0 +1,20 @@
+title: OTX domain IOC - app.click
+id: c7848f45-6e3b-4d2b-872e-1b2621cb4df3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: app.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

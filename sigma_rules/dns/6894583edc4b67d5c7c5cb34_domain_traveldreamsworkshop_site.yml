@@ -1,0 +1,20 @@
+title: OTX domain IOC - traveldreamsworkshop.site
+id: 61bbc2cf-25ce-4aa3-9644-d813b24a1b14
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: traveldreamsworkshop.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

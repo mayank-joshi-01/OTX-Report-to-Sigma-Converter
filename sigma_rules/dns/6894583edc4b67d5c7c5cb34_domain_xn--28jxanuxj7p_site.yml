@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--28jxanuxj7p.site
+id: fc0a554d-2484-49d1-ace3-526eb8ae7a1c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--28jxanuxj7p.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

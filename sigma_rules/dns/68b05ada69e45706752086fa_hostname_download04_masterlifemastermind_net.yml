@@ -1,0 +1,28 @@
+title: OTX hostname IOC - download04.masterlifemastermind.net
+id: 4017b369-1e60-4040-9b73-3d8294561f47
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious Appsuite
+  PDF Editor Spreads Tamperedchef Malware' (68b05ada69e45706752086fa).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://www.truesec.com/hub/blog/tamperedchef-the-bad-pdf-editor
+tags:
+- google advertising
+- information stealer
+- obfuscation
+- credential theft
+- tamperedchef
+- appsuite pdf editor
+- trojanized software
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: download04.masterlifemastermind.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

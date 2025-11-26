@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 06fc70aa08756a752546198ceb9770068a2776c5b898e5ff24af9ed4a823fd9d
+id: 78c0c38d-f05b-4c35-830e-11ff51abb952
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Vietnamese threat
+  actor's shift from PXA Stealer to PureRAT' (68e8c2e51d4e583ce113cce3).
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://www.huntress.com/blog/purerat-threat-actor-evolution
+tags:
+- remote access trojan
+- purerat
+- purecrypter
+- pureclipper
+- pureminer
+- vietnamese threat actor
+- pxa stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 06fc70aa08756a752546198ceb9770068a2776c5b898e5ff24af9ed4a823fd9d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

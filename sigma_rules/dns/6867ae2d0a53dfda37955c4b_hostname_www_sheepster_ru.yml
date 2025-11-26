@@ -1,0 +1,25 @@
+title: OTX hostname IOC - www.sheepster.ru
+id: 7174e4d7-48f0-4115-b63c-3a9456e1456f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gamaredon in 2024:
+  Cranking out spearphishing campaigns against Ukraine with an evolved toolset'' (6867ae2d0a53dfda37955c4b).'
+author: AlienVault
+date: '2025-07-04'
+references:
+- https://web-assets.esetstatic.com/wls/en/papers/white-papers/gamaredon-in-2024.pdf
+tags:
+- powershell
+- cloudflare tunnels
+- spearphishing
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.sheepster.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

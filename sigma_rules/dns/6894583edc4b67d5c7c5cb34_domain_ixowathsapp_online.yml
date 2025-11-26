@@ -1,0 +1,20 @@
+title: OTX domain IOC - ixowathsapp.online
+id: 5c93e004-b0fe-4e1e-946b-8251d7d94c23
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ixowathsapp.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,24 @@
+title: OTX URL IOC - https://coralsunmarine.com/wp-content/themes/flatsome/inc/functions/function-hand.php
+id: 15b46f2a-fe74-46c5-b786-ddb8696f018b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Gotta fly: Lazarus
+  targets the UAV sector'' (68fa32c80f24106e04d886f7).'
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.welivesecurity.com/en/eset-research/gotta-fly-lazarus-targets-uav-sector
+tags:
+- scoringmathtea
+- quanpinloader
+- operation dreamjob
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://coralsunmarine.com/wp-content/themes/flatsome/inc/functions/function-hand.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

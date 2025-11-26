@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 4c2429fc8b8ec61da41cbba1b8184ec45fa93a9841b4ca48094bba7741b826b8
+id: db09e3e7-0f2a-49a3-b45c-7be1dc36a2b9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''RondoDox Unveiled:
+  Breaking Down a New Botnet Threat'' (6877cefe5b0c5cbde2f82d94).'
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://www.fortinet.com/blog/threat-research/rondobox-unveiled-breaking-down-a-botnet-threat
+tags:
+- persistence
+- evasion
+- traffic mimicry
+- ddos
+- cve-2024-3721
+- linux
+- cve-2024-12856
+- rondodox
+- vulnerabilities
+- botnet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4c2429fc8b8ec61da41cbba1b8184ec45fa93a9841b4ca48094bba7741b826b8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

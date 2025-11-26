@@ -1,0 +1,20 @@
+title: OTX hostname IOC - www.newssummedup.com
+id: 2f089538-3097-4ee0-a49f-9bf335e8e71d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.newssummedup.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

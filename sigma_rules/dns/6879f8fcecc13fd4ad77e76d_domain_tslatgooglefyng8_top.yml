@@ -1,0 +1,25 @@
+title: OTX domain IOC - tslatgooglefyng8.top
+id: dfb17584-a986-43b0-9875-dde8f215c674
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tslatgooglefyng8.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - iptvjungle.online
+id: ee43d0d2-a915-4d9c-94ad-187435ae3d7f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iptvjungle.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

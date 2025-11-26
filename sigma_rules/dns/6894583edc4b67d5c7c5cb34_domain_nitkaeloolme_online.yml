@@ -1,0 +1,20 @@
+title: OTX domain IOC - nitkaeloolme.online
+id: 4d19daea-8605-4798-9fb7-6172e8a74bf3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nitkaeloolme.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

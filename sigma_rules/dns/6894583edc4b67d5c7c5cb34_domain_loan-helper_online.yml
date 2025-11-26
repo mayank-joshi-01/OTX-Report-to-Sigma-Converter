@@ -1,0 +1,20 @@
+title: OTX domain IOC - loan-helper.online
+id: cbd05ce2-3eae-4492-ab8f-4f092b047c11
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: loan-helper.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

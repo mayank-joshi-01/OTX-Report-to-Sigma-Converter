@@ -1,0 +1,39 @@
+title: OTX domain IOC - car-hauling.com
+id: 626a02e9-31e7-4564-9f7b-11a9741061a8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Remote access, real
+  cargo: cybercriminals targeting trucking and logistics'' (6908bc12c65b2822b687ed79).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/remote-access-real-cargo-cybercriminals-targeting-trucking-and-logistics
+tags:
+- screenconnect
+- lumma stealer
+- phishing
+- simplehelp
+- cargo theft
+- fleetdeck
+- n-able
+- logmein resolve
+- danabot
+- trucking
+- logistics
+- cybercrime
+- netsupport
+- social engineering
+- supply chain
+- stealc
+- remote monitoring tools
+- pdq connect
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: car-hauling.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - bfa02f822acc4adfa627913e7157928d66081bc9
+id: 826440e2-2175-4241-9a79-7dec031884cd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Oracle E-Business
+  Suite Zero-Day Exploited in Widespread Extortion Campaign' (68e826492c3a91b3abe8c6b9).
+author: AlienVault
+date: '2025-10-09'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/oracle-ebusiness-suite-zero-day-exploitation
+tags:
+- goldvein.java
+- cve-2025-61882
+- sagegift
+- sagewave
+- oracle e-business suite
+- goldvein
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: bfa02f822acc4adfa627913e7157928d66081bc9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

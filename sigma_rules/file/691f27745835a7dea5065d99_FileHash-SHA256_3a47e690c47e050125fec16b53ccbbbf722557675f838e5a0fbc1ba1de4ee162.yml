@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 3a47e690c47e050125fec16b53ccbbbf722557675f838e5a0fbc1ba1de4ee162
+id: de595d19-2a23-4cd9-9726-2cb13b8eff47
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of ShadowPad
+  Attack Exploiting WSUS Remote Code Execution Vulnerability (CVE-2025-59287)' (691f27745835a7dea5065d99).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91166
+tags:
+- backdoor
+- cve-2025-59287
+- powercat
+- shadowpad
+- remote code execution
+- chinese apt
+- wsus
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3a47e690c47e050125fec16b53ccbbbf722557675f838e5a0fbc1ba1de4ee162
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

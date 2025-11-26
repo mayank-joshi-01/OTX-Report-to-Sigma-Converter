@@ -1,0 +1,20 @@
+title: OTX domain IOC - gyeongsanmasaji.online
+id: feb62804-b40a-4f2f-a569-40cb049c6800
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gyeongsanmasaji.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

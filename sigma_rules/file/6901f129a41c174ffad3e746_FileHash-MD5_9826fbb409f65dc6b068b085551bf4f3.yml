@@ -1,0 +1,26 @@
+title: OTX FileHash-MD5 IOC - 9826fbb409f65dc6b068b085551bf4f3
+id: e56715c6-9336-418b-8823-1e5b53d87476
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Team46 and TaxOff:
+  Two Sides of the Same Coin'' (6901f129a41c174ffad3e746).'
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://ptsecurity.com/research/pt-esc-threat-intelligence/team46-i-taxoff-dve-storony-odnoi-medali
+tags:
+- trinper
+- cobalt strike
+- dante
+- TaxOff
+- Team46
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 9826fbb409f65dc6b068b085551bf4f3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

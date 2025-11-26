@@ -1,0 +1,30 @@
+title: OTX hostname IOC - 2fus-go.kelkoogroup.net
+id: 309d3afd-d4f7-4cc4-8628-73af19a9b17e
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'NodeJS backdoors delivering
+  proxyware and monetization schemes' (68d3c8c4a7e20db27a3b4562).
+author: AlienVault
+date: '2025-09-24'
+references:
+- https://medium.com/walmartglobaltech/nodejs-backdoors-delivering-proxyware-and-monetization-schemes-1562917ed107
+tags:
+- powershell
+- nodejs
+- infatica
+- packetlab
+- backdoor
+- proxyware
+- browser extension
+- monetization
+- honeygain
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 2fus-go.kelkoogroup.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

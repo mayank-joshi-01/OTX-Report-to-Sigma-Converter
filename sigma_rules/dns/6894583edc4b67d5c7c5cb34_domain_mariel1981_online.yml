@@ -1,0 +1,20 @@
+title: OTX domain IOC - mariel1981.online
+id: dda1c3a7-5b97-4efe-a449-678f7197e449
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mariel1981.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

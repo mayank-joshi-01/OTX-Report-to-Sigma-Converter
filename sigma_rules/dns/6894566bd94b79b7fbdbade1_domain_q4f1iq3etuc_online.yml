@@ -1,0 +1,20 @@
+title: OTX domain IOC - q4f1iq3etuc.online
+id: 4a5268a4-d9d9-4e7f-9fe1-7751c9bb1e30
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: q4f1iq3etuc.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

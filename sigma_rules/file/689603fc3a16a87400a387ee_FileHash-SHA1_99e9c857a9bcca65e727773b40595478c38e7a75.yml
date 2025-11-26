@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 99e9c857a9bcca65e727773b40595478c38e7a75
+id: 005c4ae2-ce62-4a31-bc71-3e879ffdf02c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Efimer Trojan delivered
+  via email and hacked WordPress websites' (689603fc3a16a87400a387ee).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://securelist.com/efimer-trojan/117148
+tags:
+- wordpress
+- torrent
+- clipbanker
+- cryptocurrency
+- efimer
+- email campaign
+- tor
+- brute-force
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 99e9c857a9bcca65e727773b40595478c38e7a75
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

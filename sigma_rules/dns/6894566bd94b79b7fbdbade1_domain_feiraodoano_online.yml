@@ -1,0 +1,20 @@
+title: OTX domain IOC - feiraodoano.online
+id: 24e86b36-8de4-4260-ade3-74bb31a57294
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: feiraodoano.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

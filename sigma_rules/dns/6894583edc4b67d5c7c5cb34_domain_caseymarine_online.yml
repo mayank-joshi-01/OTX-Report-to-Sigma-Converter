@@ -1,0 +1,20 @@
+title: OTX domain IOC - caseymarine.online
+id: 5af200d1-abdc-49c2-bd64-e5e7c1e7b747
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: caseymarine.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

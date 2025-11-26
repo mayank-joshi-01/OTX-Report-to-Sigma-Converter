@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 98e09a8f01980d11177549eea9598ffd573e1be355a05ef7d31b85c6be9a38ce
+id: 05ef873f-4851-423b-9dd1-c1756c32485b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Rise of RatOn:
+  From NFC heists to remote control and ATS'' (68c096c49912f691ea8eb3d0).'
+author: AlienVault
+date: '2025-09-09'
+references:
+- https://www.threatfabric.com/blogs/the-rise-of-raton-from-nfc-heists-to-remote-control-and-ats
+tags:
+- cryptocurrency
+- nfskate
+- banking trojan
+- android
+- overlay attacks
+- ats
+- nfc relay
+- raton
+- rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 98e09a8f01980d11177549eea9598ffd573e1be355a05ef7d31b85c6be9a38ce
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

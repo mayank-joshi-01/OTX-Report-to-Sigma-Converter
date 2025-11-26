@@ -1,0 +1,20 @@
+title: OTX domain IOC - icfylmvlgk.es
+id: ab9e6f47-23f5-4528-b452-7d9227a1803a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: icfylmvlgk.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

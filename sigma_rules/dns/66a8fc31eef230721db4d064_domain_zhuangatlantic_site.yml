@@ -1,0 +1,26 @@
+title: OTX domain IOC - zhuangatlantic.site
+id: 7793f311-c54c-410a-aba3-4215bd910990
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zhuangatlantic.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

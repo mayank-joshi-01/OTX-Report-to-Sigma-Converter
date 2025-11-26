@@ -1,0 +1,20 @@
+title: OTX domain IOC - vjjnvhk.life
+id: e2fb9fea-c0bc-46d7-aef4-71f305cf6f85
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vjjnvhk.life
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

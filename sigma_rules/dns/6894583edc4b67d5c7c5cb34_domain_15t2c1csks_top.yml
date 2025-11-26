@@ -1,0 +1,20 @@
+title: OTX domain IOC - 15t2c1csks.top
+id: e9338b80-1fc3-4ded-bd8e-0620aa9bfd92
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 15t2c1csks.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

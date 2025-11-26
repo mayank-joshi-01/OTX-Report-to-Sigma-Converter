@@ -1,0 +1,20 @@
+title: OTX domain IOC - 3636008bbs-xlu3.top
+id: 2375b1c7-0f44-41a0-80d1-3df3c07849a1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 3636008bbs-xlu3.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - movieflixz.online
+id: 6cc41a2e-4520-42ff-ba30-6449e1f98abc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: movieflixz.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

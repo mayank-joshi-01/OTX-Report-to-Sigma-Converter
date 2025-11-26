@@ -1,0 +1,28 @@
+title: OTX FileHash-MD5 IOC - 957b34952d92510e95df02e3600b8b21
+id: 527db620-c021-4953-b560-6a5723b2d826
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CAPI Backdoor: .NET
+  Stealer Targeting Russian Auto-Commerce'' (68f267d7f3f461fba8d4f189).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://www.seqrite.com/blog/seqrite-capi-backdoor-dotnet-stealer-russian-auto-commerce-oct-2025/
+tags:
+- phishing
+- campaign
+- backdoor
+- russia
+- capi
+- .net implant
+- lolbin
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 957b34952d92510e95df02e3600b8b21
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

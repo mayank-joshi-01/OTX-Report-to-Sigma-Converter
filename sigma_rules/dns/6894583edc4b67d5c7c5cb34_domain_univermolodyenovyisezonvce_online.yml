@@ -1,0 +1,20 @@
+title: OTX domain IOC - univermolodyenovyisezonvce.online
+id: 2789a5b1-f356-4413-94d6-d82860df9d1e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: univermolodyenovyisezonvce.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

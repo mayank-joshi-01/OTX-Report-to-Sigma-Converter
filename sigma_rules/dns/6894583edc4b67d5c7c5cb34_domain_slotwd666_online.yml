@@ -1,0 +1,20 @@
+title: OTX domain IOC - slotwd666.online
+id: 9ad21fe3-fe1e-4cc3-b7c3-12ad54d6a91a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: slotwd666.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

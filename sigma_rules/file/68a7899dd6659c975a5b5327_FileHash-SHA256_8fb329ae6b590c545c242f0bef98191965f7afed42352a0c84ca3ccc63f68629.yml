@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - 8fb329ae6b590c545c242f0bef98191965f7afed42352a0c84ca3ccc63f68629
+id: e30e6854-1813-4194-a3e4-390dd7b5620d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Think before you
+  Click(Fix): Analyzing the ClickFix social engineering technique'' (68a7899dd6659c975a5b5327).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/08/21/think-before-you-clickfix-analyzing-the-clickfix-social-engineering-technique
+tags:
+- social engineering
+- remote access tool
+- malvertising
+- mintsloader
+- screenconnect
+- darkgate
+- obfuscation
+- phishing
+- macos
+- infostealer
+- atomic macos stealer (amos)
+- latrodectus
+- windows run dialog
+- lampion
+- lumma stealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 8fb329ae6b590c545c242f0bef98191965f7afed42352a0c84ca3ccc63f68629
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

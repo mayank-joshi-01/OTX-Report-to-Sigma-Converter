@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - b2124d1ba4377ed283fc261fe14a3d49
+id: a12f2069-fc2b-4c71-8582-fd31b883dc7e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Caught in the Act:
+  Uncovering SpyNote in Unexpected Places'' (6855b5cab3eba6db222aa167).'
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://hunt.io/blog/caught-in-the-act-uncovering-spynote-in-unexpected-places
+tags:
+- open directories
+- spynote
+- data exfiltration
+- spyware
+- device administrator
+- android
+- accessibility services
+- c2 infrastructure
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: b2124d1ba4377ed283fc261fe14a3d49
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

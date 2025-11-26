@@ -1,0 +1,20 @@
+title: OTX domain IOC - bet321438.com
+id: 02e901c1-0568-4425-b2c9-dab05dcddb58
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bet321438.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

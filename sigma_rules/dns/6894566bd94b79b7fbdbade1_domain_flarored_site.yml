@@ -1,0 +1,20 @@
+title: OTX domain IOC - flarored.site
+id: eb7071d7-3bd3-42b0-8151-2f5d5d5f20a5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: flarored.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

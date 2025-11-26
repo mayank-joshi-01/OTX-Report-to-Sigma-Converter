@@ -1,0 +1,20 @@
+title: OTX domain IOC - bortolottitrader.site
+id: 6db27bc2-7de4-49f4-81f5-71fc32d6b9cc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bortolottitrader.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

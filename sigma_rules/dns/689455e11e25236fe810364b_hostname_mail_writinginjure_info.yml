@@ -1,0 +1,20 @@
+title: OTX hostname IOC - mail.writinginjure.info
+id: 2b326700-b69b-476b-8181-45ddb211ea00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mail.writinginjure.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

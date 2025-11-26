@@ -1,0 +1,20 @@
+title: OTX domain IOC - zq1e0d-p1.store
+id: 7aba1085-ee9d-4769-b695-3e14480ecd93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zq1e0d-p1.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

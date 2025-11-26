@@ -1,0 +1,20 @@
+title: OTX domain IOC - blumina.store
+id: eb7eed56-4fa0-440c-8460-4048b645ce68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: blumina.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

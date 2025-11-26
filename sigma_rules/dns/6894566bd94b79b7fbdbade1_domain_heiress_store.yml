@@ -1,0 +1,20 @@
+title: OTX domain IOC - heiress.store
+id: 6341fc04-d3c6-4c80-9844-7dc2cc53b553
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: heiress.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

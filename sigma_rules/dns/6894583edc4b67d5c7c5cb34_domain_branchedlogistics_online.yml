@@ -1,0 +1,20 @@
+title: OTX domain IOC - branchedlogistics.online
+id: 9c98f8ed-70c6-4c7e-bb1a-b7782df08e6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: branchedlogistics.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - fernhotelsofficial.site
+id: 04ac07fc-95f3-4c08-b6d8-87077f6c9c98
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fernhotelsofficial.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

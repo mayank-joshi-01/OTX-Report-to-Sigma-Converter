@@ -1,0 +1,20 @@
+title: OTX domain IOC - rudiplomx-24.online
+id: 37c8456e-4788-48c7-81b0-32db5fcf8789
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rudiplomx-24.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

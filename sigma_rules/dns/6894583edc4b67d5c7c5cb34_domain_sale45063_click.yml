@@ -1,0 +1,20 @@
+title: OTX domain IOC - sale45063.click
+id: 5bff30e3-6205-4ac0-8fbd-d032e5c71171
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sale45063.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

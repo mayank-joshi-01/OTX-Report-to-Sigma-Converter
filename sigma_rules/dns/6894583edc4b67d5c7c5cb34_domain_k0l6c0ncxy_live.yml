@@ -1,0 +1,20 @@
+title: OTX domain IOC - k0l6c0ncxy.live
+id: 52ef0ec0-cb60-4435-a8ea-27771cd1a1fb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: k0l6c0ncxy.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

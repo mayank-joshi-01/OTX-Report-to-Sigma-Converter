@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA1 IOC - a1035aaa714de9f7b59b08769b70e39810d7f7e1
+id: f9684c02-2415-40fc-9655-d270eb837c6d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Increase in Lumma
+  Stealer Activity Coincides with Use of Adaptive Browser Fingerprinting Tactics'
+  (691695b683ab8cc0fedbd3fe).
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.trendmicro.com/en_us/research/25/k/lumma-stealer-browser-fingerprinting.html
+tags:
+- evasion techniques
+- browser fingerprinting
+- lumma stealer
+- ghostsocks
+- data exfiltration
+- cybercriminal activity
+- process injection
+- command-and-control
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: a1035aaa714de9f7b59b08769b70e39810d7f7e1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

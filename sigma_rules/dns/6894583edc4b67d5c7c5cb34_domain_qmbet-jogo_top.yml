@@ -1,0 +1,20 @@
+title: OTX domain IOC - qmbet-jogo.top
+id: b4bf6dc9-f2b0-4e98-8348-ce9bd32428de
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qmbet-jogo.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

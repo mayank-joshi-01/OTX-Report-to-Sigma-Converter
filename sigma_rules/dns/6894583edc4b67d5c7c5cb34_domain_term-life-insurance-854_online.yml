@@ -1,0 +1,20 @@
+title: OTX domain IOC - term-life-insurance-854.online
+id: c748d2d3-ff85-42cd-aee0-53d73a60e72b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: term-life-insurance-854.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

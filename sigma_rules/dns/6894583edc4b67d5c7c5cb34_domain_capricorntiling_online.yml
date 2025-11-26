@@ -1,0 +1,20 @@
+title: OTX domain IOC - capricorntiling.online
+id: 993ba0bb-ee5b-4906-9f64-c98c9904e3c0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: capricorntiling.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

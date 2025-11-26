@@ -1,0 +1,26 @@
+title: OTX hostname IOC - airbus.germanywork.org
+id: a261af3b-9d38-4ce9-83b4-1fa99be7e96d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: airbus.germanywork.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

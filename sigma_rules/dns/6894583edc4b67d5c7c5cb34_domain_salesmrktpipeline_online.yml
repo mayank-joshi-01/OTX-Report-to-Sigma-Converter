@@ -1,0 +1,20 @@
+title: OTX domain IOC - salesmrktpipeline.online
+id: 104a46fe-8700-4f94-86f8-d2de08025329
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: salesmrktpipeline.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

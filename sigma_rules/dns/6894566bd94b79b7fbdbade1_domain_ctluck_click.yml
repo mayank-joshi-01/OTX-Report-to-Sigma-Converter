@@ -1,0 +1,20 @@
+title: OTX domain IOC - ctluck.click
+id: b79860e8-34b2-4f96-a87b-f15173433bb2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ctluck.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

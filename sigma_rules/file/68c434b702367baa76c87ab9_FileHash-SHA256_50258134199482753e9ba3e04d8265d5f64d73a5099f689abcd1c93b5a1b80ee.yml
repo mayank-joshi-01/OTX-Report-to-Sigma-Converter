@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 50258134199482753e9ba3e04d8265d5f64d73a5099f689abcd1c93b5a1b80ee
+id: 41202132-12e7-429f-a6d8-9dba84532e3a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Deconstructing a
+  Cyber Deception: An Analysis of the Clickfix HijackLoader Phishing Campaign'' (68c434b702367baa76c87ab9).'
+author: AlienVault
+date: '2025-09-12'
+references:
+- https://www.seqrite.com/blog/deconstructing-a-cyber-deception-an-analysis-of-the-clickfix-hijackloader-phishing-campaign/
+tags:
+- phishing
+- infostealer
+- castleloader
+- lumma
+- hijackloader
+- castlebot
+- anti-vm
+- obfuscation
+- nekostealer
+- powershell
+- multi-stage
+- deerstealer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 50258134199482753e9ba3e04d8265d5f64d73a5099f689abcd1c93b5a1b80ee
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

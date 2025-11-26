@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - fef69f8747c368979a9e4c62f4648ea233314b5f41981d9c01c1cdd96fb07365
+id: 0196c824-0ea5-4d00-8fac-bcf4ed5b94ba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation DRAGONCLONE:
+  Chinese Telecom Targeted by Malware'' (6842f45696f96557e5f757b1).'
+author: AlienVault
+date: '2025-06-06'
+references:
+- https://www.seqrite.com/blog/operation-dragonclone-chinese-telecom-veletrix-vshell-malware/
+- https://0x0d4y.blog/telecommunications-supply-chain-china-nexus-threat-technical-analysis-of-veletrix-loaders-strategic-infrastructure-positioning/
+tags:
+- china-nexus
+- veletrix
+- dll sideloading
+- earth lamia
+- asset lighthouse system
+- unc5174
+- cve-2024-1709
+- supershell
+- cve-2025-31324
+- cobalt strike
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: fef69f8747c368979a9e4c62f4648ea233314b5f41981d9c01c1cdd96fb07365
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

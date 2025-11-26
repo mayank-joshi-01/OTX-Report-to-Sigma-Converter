@@ -1,0 +1,20 @@
+title: OTX domain IOC - hendricksranch.online
+id: b9937b93-4970-4e1f-a22b-bfcb21806bf5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hendricksranch.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - freecasinogames.online
+id: a9fe32e8-d28b-4de8-86ac-f6f145b1c36f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: freecasinogames.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,35 @@
+title: OTX FileHash-MD5 IOC - f3ce5cf045783c8c25aeff93e472cda1
+id: dd1179b1-bb1f-42d5-9a96-e22c762a97d4
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'China-Nexus Nation
+  State Actors Exploit SAP NetWeaver (CVE-2025-31324) to Target Critical Infrastructures'
+  (6824ce5f2a19922c64e259ed).
+author: AlienVault
+date: '2025-05-14'
+references:
+- https://blog.eclecticiq.com/china-nexus-nation-state-actors-exploit-sap-netweaver-cve-2025-31324-to-target-critical-infrastructures
+tags:
+- sap netweaver
+- unc5174
+- vshell
+- clsta0048
+- webshell
+- snowlight
+- cve202531324
+- sliver
+- azure ad
+- sta-0048
+- apt
+- china-nexus
+- krustyloader
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: f3ce5cf045783c8c25aeff93e472cda1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

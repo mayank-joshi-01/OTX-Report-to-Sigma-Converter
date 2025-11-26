@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - e8248393039bd6e1c7cdcf768c52efbf
+id: d2a4e1a6-89bc-4937-b9ea-12488cc13958
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'EVALUSION Campaign
+  Delivers Amatera Stealer and NetSupport...' (691cf085ce463d915d5c5dc8).
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://www.esentire.com/blog/evalusion-campaign-delivers-amatera-stealer-and-netsupport-rat
+tags:
+- crypto-wallets
+- evasion techniques
+- information theft
+- amatera stealer
+- acr stealer
+- clickfix
+- netsupport rat
+- c2 communication
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: e8248393039bd6e1c7cdcf768c52efbf
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

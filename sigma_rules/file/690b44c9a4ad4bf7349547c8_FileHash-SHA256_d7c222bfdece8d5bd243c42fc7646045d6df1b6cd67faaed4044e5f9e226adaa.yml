@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - d7c222bfdece8d5bd243c42fc7646045d6df1b6cd67faaed4044e5f9e226adaa
+id: e3c0e7e1-0cb4-4f67-b313-409e265b2e83
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Dragon
+  Breath (APT-Q-27): Dimensional Reduction Attack Against the Gambling Industry''
+  (690b44c9a4ad4bf7349547c8).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.ctfiot.com/40522.html
+tags:
+- telegram
+- miuuti group
+- ghost
+- gambling industry
+- msi installer
+- golden eye dog
+- southeast asia
+- watering hole
+- chinese communities
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d7c222bfdece8d5bd243c42fc7646045d6df1b6cd67faaed4044e5f9e226adaa
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

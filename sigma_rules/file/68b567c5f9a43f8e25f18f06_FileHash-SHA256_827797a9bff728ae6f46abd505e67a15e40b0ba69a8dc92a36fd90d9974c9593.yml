@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 827797a9bff728ae6f46abd505e67a15e40b0ba69a8dc92a36fd90d9974c9593
+id: b0ec5ad7-af6c-40ed-b178-d831d99778e9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A look at PolarEdge
+  Adjacent Infrastructure' (68b567c5f9a43f8e25f18f06).
+author: AlienVault
+date: '2025-09-01'
+references:
+- https://censys.com/blog/pondering-my-orb-a-look-at-polaredge-adjacent-infrastructure
+tags:
+- certificate analysis
+- polaredge
+- infrastructure
+- proxy management
+- trojan-protocol
+- socks5
+- reverse-connect
+- iot botnet
+- cve-2023-20118
+- rpx server
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 827797a9bff728ae6f46abd505e67a15e40b0ba69a8dc92a36fd90d9974c9593
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 92c26a15336f96325e4a3a96d4206d6a5844e6a735af663ba81cf3f39fd6bdfe
+id: 8016cf11-02e4-462b-a999-1bd9cafd9abc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Dissecting YouTube's
+  Malware Distribution Network' (68fa32c7a4263ce24950835d).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://research.checkpoint.com/2025/youtube-ghost-network
+tags:
+- compromised accounts
+- redline
+- rhadamanthys
+- lumma
+- 0debug
+- stealc
+- ghost network
+- hijackloader
+- youtube
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 92c26a15336f96325e4a3a96d4206d6a5844e6a735af663ba81cf3f39fd6bdfe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - earthcore.site
+id: cefe62fd-2b24-4688-932e-6261309ac77a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: earthcore.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

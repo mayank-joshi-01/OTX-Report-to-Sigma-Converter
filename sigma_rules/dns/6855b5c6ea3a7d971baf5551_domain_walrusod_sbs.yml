@@ -1,0 +1,29 @@
+title: OTX domain IOC - walrusod.sbs
+id: bb96dc52-78f9-491f-aaf1-2945903202c6
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Crypto Phishing Applications
+  On The Play Store' (6855b5c6ea3a7d971baf5551).
+author: AlienVault
+date: '2025-06-20'
+references:
+- https://cyble.com/blog/crypto-phishing-applications-on-the-play-store
+tags:
+- cryptocurrency
+- phishing
+- webview
+- android
+- google play store
+- mnemonic phrases
+- median framework
+- wallet impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: walrusod.sbs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

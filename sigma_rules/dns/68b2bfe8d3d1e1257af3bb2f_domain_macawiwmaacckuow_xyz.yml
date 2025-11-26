@@ -1,0 +1,28 @@
+title: OTX domain IOC - macawiwmaacckuow.xyz
+id: a976613d-7536-4519-9714-3664bbeb571d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From a Fake AnyDesk
+  Installer to MetaStealer' (68b2bfe8d3d1e1257af3bb2f).
+author: AlienVault
+date: '2025-08-30'
+references:
+- https://www.huntress.com/blog/fake-anydesk-clickfix-metastealer-malware
+tags:
+- windows file explorer
+- social engineering
+- clickfix
+- filefix
+- anydesk
+- metastealer
+- cloudflare turnstile
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: macawiwmaacckuow.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

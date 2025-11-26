@@ -1,0 +1,20 @@
+title: OTX hostname IOC - gs.0x60e4d786628fea6478f785a6d7e704777c86a7c6.info
+id: 7c3b9f32-7411-456a-8e08-d722e595def5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gs.0x60e4d786628fea6478f785a6d7e704777c86a7c6.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

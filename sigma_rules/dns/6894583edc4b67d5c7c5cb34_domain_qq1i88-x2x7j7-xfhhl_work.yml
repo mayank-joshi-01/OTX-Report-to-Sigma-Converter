@@ -1,0 +1,20 @@
+title: OTX domain IOC - qq1i88-x2x7j7-xfhhl.work
+id: a83ae9b7-e780-4b61-b5eb-dfdb0b36f731
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qq1i88-x2x7j7-xfhhl.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

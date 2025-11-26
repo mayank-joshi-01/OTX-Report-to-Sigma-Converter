@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--gumenergtico-ieb.site
+id: acd92360-fca4-4688-a951-4682e1c8f770
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--gumenergtico-ieb.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - essayclever-guinea.online
+id: b8d91bc5-97ce-4263-858e-12a02ca8c32e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: essayclever-guinea.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

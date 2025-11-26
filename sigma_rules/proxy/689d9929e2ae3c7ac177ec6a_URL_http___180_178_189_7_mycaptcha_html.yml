@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://180.178.189.7/mycaptcha.html
+id: 1c0431b1-a94f-4bcd-8f3c-e32255d03863
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious JavaScript
+  Injects Fullscreen Iframe On a WordPress Website' (689d9929e2ae3c7ac177ec6a).
+author: AlienVault
+date: '2025-08-14'
+references:
+- https://blog.sucuri.net/2025/08/malicious-javascript-injects-fullscreen-iframe-on-a-wordpress-website.html
+tags:
+- wordpress
+- iframe injection
+- javascript
+- wpcode plugin
+- powershell exploitation
+- anti-debugging
+- fullscreen overlay
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://180.178.189.7/mycaptcha.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

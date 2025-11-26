@@ -1,0 +1,20 @@
+title: OTX domain IOC - amazonoon.co
+id: fc806a1d-63a0-495e-be91-f051e8b7b810
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amazonoon.co
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - mailgun.fun
+id: 3a847654-3d6c-43a0-8b52-3ed2d357b749
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Click to Allow" Robot
+  Exposes Online Fraud Empire' (689b8df946fb62b515c0392e).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blogs.infoblox.com/threat-intelligence/vextrio-unmasked-a-legacy-of-spam-and-homegrown-scams
+tags:
+- cryptocurrency fraud
+- scams
+- traffic distribution
+- dating scams
+- cybercrime
+- spam
+- affiliate marketing
+- malicious apps
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mailgun.fun
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

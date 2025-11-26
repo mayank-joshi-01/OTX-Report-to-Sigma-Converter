@@ -1,0 +1,20 @@
+title: OTX domain IOC - h8uiying28aj.site
+id: c7b90557-42c4-4743-a793-b90dfb21b669
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: h8uiying28aj.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

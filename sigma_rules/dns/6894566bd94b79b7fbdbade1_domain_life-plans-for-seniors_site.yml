@@ -1,0 +1,20 @@
+title: OTX domain IOC - life-plans-for-seniors.site
+id: 25b48cf8-97ce-4ab8-8469-8e12d18cb986
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: life-plans-for-seniors.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

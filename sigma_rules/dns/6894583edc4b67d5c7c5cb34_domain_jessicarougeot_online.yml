@@ -1,0 +1,20 @@
+title: OTX domain IOC - jessicarougeot.online
+id: fab28f53-6388-40c1-baf6-eef69f4805f7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jessicarougeot.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

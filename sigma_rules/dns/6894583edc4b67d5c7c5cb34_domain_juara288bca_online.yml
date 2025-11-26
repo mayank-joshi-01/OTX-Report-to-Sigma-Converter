@@ -1,0 +1,20 @@
+title: OTX domain IOC - juara288bca.online
+id: 5c4f186b-12a7-4679-927f-6a800a7eaae8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: juara288bca.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

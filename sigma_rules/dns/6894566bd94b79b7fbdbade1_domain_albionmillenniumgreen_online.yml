@@ -1,0 +1,20 @@
+title: OTX domain IOC - albionmillenniumgreen.online
+id: 559eb91e-8bdb-4a83-9a19-1b88b6491c4c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: albionmillenniumgreen.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - l2sapproval.com
+id: 5d12b06b-89f6-4ff3-a30f-db32d5173128
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: l2sapproval.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

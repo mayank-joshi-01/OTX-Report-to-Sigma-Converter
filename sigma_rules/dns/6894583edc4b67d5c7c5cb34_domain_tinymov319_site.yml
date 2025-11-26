@@ -1,0 +1,20 @@
+title: OTX domain IOC - tinymov319.site
+id: 2c9b3bf6-293a-452d-89f6-acbcc7c1a3fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tinymov319.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

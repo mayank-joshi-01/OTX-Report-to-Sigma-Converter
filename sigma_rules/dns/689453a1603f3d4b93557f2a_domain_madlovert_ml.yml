@@ -1,0 +1,20 @@
+title: OTX domain IOC - madlovert.ml
+id: d6eaeba5-7003-4dd2-a01f-12526b089cd7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: madlovert.ml
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

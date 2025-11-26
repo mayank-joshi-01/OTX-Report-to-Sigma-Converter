@@ -1,0 +1,20 @@
+title: OTX domain IOC - iitazqaajeeui.site
+id: 1011c3d9-e8e5-47dc-a2d2-df9d1f9b0d6e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iitazqaajeeui.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

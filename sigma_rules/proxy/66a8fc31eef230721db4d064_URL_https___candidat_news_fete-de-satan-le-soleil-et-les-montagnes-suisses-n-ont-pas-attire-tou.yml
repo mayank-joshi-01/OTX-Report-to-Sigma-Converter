@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://candidat.news/fete-de-satan-le-soleil-et-les-montagnes-suisses-n-ont-pas-attire-tout-le-monde/
+id: cb420b10-41d0-4044-ac65-38c652248328
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://candidat.news/fete-de-satan-le-soleil-et-les-montagnes-suisses-n-ont-pas-attire-tout-le-monde/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

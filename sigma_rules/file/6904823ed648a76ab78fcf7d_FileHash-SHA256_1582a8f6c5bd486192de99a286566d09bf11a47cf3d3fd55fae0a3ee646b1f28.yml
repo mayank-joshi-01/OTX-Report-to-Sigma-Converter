@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 1582a8f6c5bd486192de99a286566d09bf11a47cf3d3fd55fae0a3ee646b1f28
+id: 673ea6da-7d1c-4337-82b2-f9b594bfa2dd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Tracking an evolving
+  Discord-based RAT family' (6904823ed648a76ab78fcf7d).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.reversinglabs.com/blog/tracking-discord-rat-family
+tags:
+- std rat
+- propionanilide
+- uwudisrat
+- minecraft rat
+- propionanilide rat
+- discord
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1582a8f6c5bd486192de99a286566d09bf11a47cf3d3fd55fae0a3ee646b1f28
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

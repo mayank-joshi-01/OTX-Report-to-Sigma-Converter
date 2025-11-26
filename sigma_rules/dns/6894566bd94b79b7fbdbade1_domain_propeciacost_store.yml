@@ -1,0 +1,20 @@
+title: OTX domain IOC - propeciacost.store
+id: 9e1cbba6-e4df-465e-9f4d-956b180e01ee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: propeciacost.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

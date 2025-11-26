@@ -1,0 +1,20 @@
+title: OTX domain IOC - adapta.online
+id: bddc4f15-c7cc-484e-be0c-179da1079b80
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: adapta.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

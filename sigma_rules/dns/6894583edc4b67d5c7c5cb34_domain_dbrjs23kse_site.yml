@@ -1,0 +1,20 @@
+title: OTX domain IOC - dbrjs23kse.site
+id: 83cfe4bf-11ea-45fe-8ab7-da16f842eb6a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dbrjs23kse.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

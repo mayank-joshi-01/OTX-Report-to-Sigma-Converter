@@ -1,0 +1,20 @@
+title: OTX domain IOC - iuh3f8437.click
+id: 3d98ffb8-bcca-449e-8693-e1083d385cba
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: iuh3f8437.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - livingthesovereignlife.site
+id: c61cc2af-003d-4dd2-a85c-c0271079df93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: livingthesovereignlife.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - hgsa767-uvw120-heqp120.site
+id: 068a6846-94e2-4feb-803b-1d45c77e4405
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hgsa767-uvw120-heqp120.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

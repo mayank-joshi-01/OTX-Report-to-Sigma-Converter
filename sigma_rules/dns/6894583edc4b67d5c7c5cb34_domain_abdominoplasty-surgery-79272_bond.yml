@@ -1,0 +1,20 @@
+title: OTX domain IOC - abdominoplasty-surgery-79272.bond
+id: d40d0497-994a-4ec0-82c1-9e84474a66aa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: abdominoplasty-surgery-79272.bond
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

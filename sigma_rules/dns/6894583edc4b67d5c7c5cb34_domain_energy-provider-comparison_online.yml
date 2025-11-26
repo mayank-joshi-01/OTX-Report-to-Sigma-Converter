@@ -1,0 +1,20 @@
+title: OTX domain IOC - energy-provider-comparison.online
+id: 2d4dc2f9-b6cb-4081-86e0-2c9860778ae1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: energy-provider-comparison.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

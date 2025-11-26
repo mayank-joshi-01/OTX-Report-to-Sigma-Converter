@@ -1,0 +1,20 @@
+title: OTX domain IOC - zerkalo-leonbets-qwmln.xyz
+id: d1862d41-ebd3-47b4-825f-de59923fcad0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zerkalo-leonbets-qwmln.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

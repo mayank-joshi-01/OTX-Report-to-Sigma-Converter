@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 7c8b761ec97551d76198ae527c77bfb2
+id: 473c1139-f323-499f-bc90-592768acfd4b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Major October 2025
+  Cyber Attacks Your SOC Can't Ignore' (69025ee7917597f98b6a8309).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-october-2025
+tags:
+- clickup
+- lockbit 5.0
+- phishing
+- google careers
+- cloud abuse
+- tykit
+- credential theft
+- figma
+- ransomware
+- lockbit
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 7c8b761ec97551d76198ae527c77bfb2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

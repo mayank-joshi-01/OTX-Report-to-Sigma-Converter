@@ -1,0 +1,20 @@
+title: OTX domain IOC - guiaancestral.site
+id: 851e8d2e-1e47-4fa0-af55-8fd896f8b81a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: guiaancestral.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

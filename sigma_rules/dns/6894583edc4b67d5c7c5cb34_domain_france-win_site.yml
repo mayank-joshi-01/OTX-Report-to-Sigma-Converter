@@ -1,0 +1,20 @@
+title: OTX domain IOC - france-win.site
+id: dab1374d-d982-47fe-b72c-4b6399160f09
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: france-win.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

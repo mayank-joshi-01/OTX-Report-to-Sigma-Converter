@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://codeshare.io/0bV94e
+id: d7201511-66a3-4d14-ab88-cdcefac64ff2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Smart Contract Scams
+  | Ethereum Drainers Pose as Trading Bots to Steal Crypto' (68920576f9eb8ffee00c41fe).
+author: AlienVault
+date: '2025-08-05'
+references:
+- https://www.sentinelone.com/labs/smart-contract-scams-ethereum-drainers-pose-as-trading-bots-to-steal-crypto/
+tags:
+- cryptocurrency
+- solidity
+- obfuscation
+- mev bot
+- smart contract
+- scam
+- ethereum
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://codeshare.io/0bV94e
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

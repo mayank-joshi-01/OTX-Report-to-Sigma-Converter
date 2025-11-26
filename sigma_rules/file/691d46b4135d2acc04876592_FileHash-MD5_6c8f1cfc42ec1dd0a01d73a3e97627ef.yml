@@ -1,0 +1,32 @@
+title: OTX FileHash-MD5 IOC - 6c8f1cfc42ec1dd0a01d73a3e97627ef
+id: fdc8cf14-97a6-4fcc-a89f-2d938ec91ace
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ShadowRay 2.0: Active
+  Global Campaign Hijacks Ray AI Infrastructure Into Self-Propagating Botnet'' (691d46b4135d2acc04876592).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.oligo.security/blog/shadowray-2-0-attackers-turn-ai-against-itself-in-global-campaign-that-hijacks-ai-into-self-propagating-botnet
+tags:
+- devops
+- ai infrastructure
+- self-propagation
+- xmrig
+- cve-2023-48022
+- data exfiltration
+- cryptojacking
+- ddos
+- sockstress
+- botnet
+- ray framework
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6c8f1cfc42ec1dd0a01d73a3e97627ef
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

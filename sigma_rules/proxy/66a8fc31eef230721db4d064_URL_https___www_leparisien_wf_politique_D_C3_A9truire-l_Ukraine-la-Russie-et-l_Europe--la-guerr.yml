@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.leparisien.wf/politique/D%C3%A9truire-l'Ukraine-la-Russie-et-l'Europe--la-guerre-totale-am%C3%A9ricaine-03-07-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+id: 434f6ee4-8574-4e1d-8d19-31f20d9d5717
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.leparisien.wf/politique/D%C3%A9truire-l'Ukraine-la-Russie-et-l'Europe--la-guerre-totale-am%C3%A9ricaine-03-07-2024-OBOKEOSPR5EIMELFXPWCZGYEXI.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

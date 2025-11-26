@@ -1,0 +1,20 @@
+title: OTX domain IOC - bettacarelectrics.online
+id: e9bfb422-4f5c-40b6-8c57-ce0eecf365cf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bettacarelectrics.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

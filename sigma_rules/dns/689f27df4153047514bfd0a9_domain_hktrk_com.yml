@@ -1,0 +1,29 @@
+title: OTX domain IOC - hktrk.com
+id: a8909917-c69e-4b93-88a9-f40a371bd886
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Hidden Infrastructure
+  Behind VexTrio's TDS' (689f27df4153047514bfd0a9).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://blogs.infoblox.com/threat-intelligence/inside-the-robot-deconstructing-vextrios-affiliate-advertising-platform
+tags:
+- binom
+- devops
+- content delivery network
+- adtech
+- traffic distribution system
+- cloaking
+- infrastructure
+- tracking
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: hktrk.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

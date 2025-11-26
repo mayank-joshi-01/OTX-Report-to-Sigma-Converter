@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://reward-aave.us/web3/
+id: 2b2ea921-815c-415f-8536-d8d060f34da0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cybercriminals Abuse
+  AI Website Creation App For Phishing' (68a66a49869588c8cfb1af6a).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/cybercriminals-abuse-ai-website-creation-app-phishing
+tags:
+- ai-generated websites
+- malware delivery
+- cryptocurrency
+- tycoon
+- credential theft
+- doiloader
+- zgrat
+- phishing
+- lovable platform
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://reward-aave.us/web3/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - young-rider-insurance.space
+id: 945e7b12-d989-4332-8e4d-f69cbf355b41
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: young-rider-insurance.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

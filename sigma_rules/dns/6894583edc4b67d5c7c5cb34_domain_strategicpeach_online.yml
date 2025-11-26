@@ -1,0 +1,20 @@
+title: OTX domain IOC - strategicpeach.online
+id: da52e67c-e288-49a3-95e2-57c4af78213f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: strategicpeach.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

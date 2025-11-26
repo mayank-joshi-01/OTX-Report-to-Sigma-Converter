@@ -1,0 +1,20 @@
+title: OTX domain IOC - benallataxiservice.online
+id: 23169a80-d260-4d1e-b5a4-ce01eaabc23b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: benallataxiservice.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

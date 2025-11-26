@@ -1,0 +1,20 @@
+title: OTX domain IOC - equallifeinstitute.online
+id: 90ee211e-5f13-4a8f-8816-a81fdaa7680c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: equallifeinstitute.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

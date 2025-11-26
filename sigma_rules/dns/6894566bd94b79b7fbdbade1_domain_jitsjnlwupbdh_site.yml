@@ -1,0 +1,20 @@
+title: OTX domain IOC - jitsjnlwupbdh.site
+id: 054c2f61-a917-4232-b009-e9a3511182e5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jitsjnlwupbdh.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

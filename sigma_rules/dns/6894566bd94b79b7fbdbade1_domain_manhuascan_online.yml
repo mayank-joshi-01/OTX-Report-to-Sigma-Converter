@@ -1,0 +1,20 @@
+title: OTX domain IOC - manhuascan.online
+id: 792e1dab-e7ef-4701-aed5-381d5d0b3bd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: manhuascan.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

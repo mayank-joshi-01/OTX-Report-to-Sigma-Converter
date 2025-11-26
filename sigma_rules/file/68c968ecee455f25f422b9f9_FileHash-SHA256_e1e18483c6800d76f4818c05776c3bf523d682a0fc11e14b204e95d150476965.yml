@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - e1e18483c6800d76f4818c05776c3bf523d682a0fc11e14b204e95d150476965
+id: 3ba43be6-5dee-4fd6-b188-ba67511267ae
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'August 2025 Trends
+  Report on Phishing Emails' (68c968ecee455f25f422b9f9).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://asec.ahnlab.com/en/90158
+tags:
+- script attachments
+- fakepage
+- phishing
+- email attachments
+- purecrypter
+- malware
+- cve-2017-11882
+- korean language
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: e1e18483c6800d76f4818c05776c3bf523d682a0fc11e14b204e95d150476965
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

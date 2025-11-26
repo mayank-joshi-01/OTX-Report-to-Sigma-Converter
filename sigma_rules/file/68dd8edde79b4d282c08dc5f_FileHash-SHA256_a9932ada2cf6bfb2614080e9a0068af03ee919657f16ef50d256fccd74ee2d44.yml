@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - a9932ada2cf6bfb2614080e9a0068af03ee919657f16ef50d256fccd74ee2d44
+id: 3583a242-e7ce-4194-a16f-7076beb030e5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Rhadamanthys 0.9.x
+  - walk through the updates' (68dd8edde79b4d282c08dc5f).
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://research.checkpoint.com/2025/rhadamanthys-0-9-x-walk-through-the-updates
+tags:
+- evasion
+- encryption
+- configurability
+- rhadamanthys
+- stealer
+- png payload
+- custom formats
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a9932ada2cf6bfb2614080e9a0068af03ee919657f16ef50d256fccd74ee2d44
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

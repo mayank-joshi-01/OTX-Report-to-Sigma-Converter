@@ -1,0 +1,20 @@
+title: OTX domain IOC - xewwew.click
+id: e4a37108-791a-4f98-b704-2a5e6e0be059
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xewwew.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

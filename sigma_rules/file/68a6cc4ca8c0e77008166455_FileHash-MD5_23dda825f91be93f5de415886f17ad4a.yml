@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 23dda825f91be93f5de415886f17ad4a
+id: 972e532f-06f4-480c-8c7d-4a2be0b0e664
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT MuddyWater Targets
+  CFOs with Multi-Stage Phishing & NetBird Abuse' (68a6cc4ca8c0e77008166455).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://hunt.io/blog/apt-muddywater-deploys-multi-stage-phishing-to-target-cfos
+tags:
+- multi-stage
+- spear-phishing
+- cfo
+- remote-access
+- vbs
+- ateraagent
+- finance
+- firebase
+- netbird
+- apt
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 23dda825f91be93f5de415886f17ad4a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

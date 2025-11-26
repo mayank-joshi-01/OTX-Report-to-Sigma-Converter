@@ -1,0 +1,20 @@
+title: OTX domain IOC - emprestimosatendimento.site
+id: 815d0a70-78e4-4859-b842-778e359fb856
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: emprestimosatendimento.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

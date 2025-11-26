@@ -1,0 +1,20 @@
+title: OTX domain IOC - einstructionaldesignacademy.online
+id: 1b35d9d9-b824-427b-826f-4d73b62bb1d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: einstructionaldesignacademy.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

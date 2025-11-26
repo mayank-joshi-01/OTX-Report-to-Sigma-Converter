@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://kupaoquan.com/files/update-web-kupaoquan.com.ps1.
+id: a35334d4-ed03-4818-8562-53ed409baf01
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Sophisticated Tuoni
+  C2 Attack on U.S. Real Estate Firm Thwarted' (691d85353673c34fb2746158).
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.morphisec.com/blog/morphisec-thwarts-sophisticated-tuoni-c2-attack-on-us-real-estate-firm/
+tags:
+- tuoni c2
+- real estate
+- steganography
+- prevention
+- powershell
+- amtd
+- tuoni
+- ai-assisted
+- in-memory execution
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://kupaoquan.com/files/update-web-kupaoquan.com.ps1.
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

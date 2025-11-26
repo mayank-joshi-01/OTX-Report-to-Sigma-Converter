@@ -1,0 +1,28 @@
+title: OTX hostname IOC - deadly-programming-attorneys-our.trycloudflare.com
+id: effa1b53-bba0-46c4-aa98-51bc56c4e4fb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'KongTuke FileFix Leads
+  to New Interlock RAT Variant' (687617e3e43c59ce42814c2f).
+author: AlienVault
+date: '2025-07-15'
+references:
+- https://thedfirreport.com/2025/07/14/kongtuke-filefix-leads-to-new-interlock-rat-variant
+tags:
+- web-inject
+- interlock rat
+- kongtuke
+- filefix
+- nodesnake
+- cloudflare tunnel
+- reconnaissance
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: deadly-programming-attorneys-our.trycloudflare.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

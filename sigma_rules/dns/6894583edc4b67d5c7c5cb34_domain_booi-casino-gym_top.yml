@@ -1,0 +1,20 @@
+title: OTX domain IOC - booi-casino-gym.top
+id: 09ff4c32-32dd-4a5a-994d-93563e13f7ce
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: booi-casino-gym.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

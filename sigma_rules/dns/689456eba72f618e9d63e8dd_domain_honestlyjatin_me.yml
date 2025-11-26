@@ -1,0 +1,20 @@
+title: OTX domain IOC - honestlyjatin.me
+id: d60d6a08-bf75-4471-8d90-079d5f30fc15
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: honestlyjatin.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

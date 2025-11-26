@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - 0ba36c80167919a98cffc002cf6819d3f5e117207e901aebd13e3ea54387e51f
+id: 31100a86-9216-472b-973a-270f922cebd8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Noodlophile Stealer
+  Evolves: Targeted Copyright Phishing Hits Enterprises with Social Media Footprints''
+  (68a4f2609ccc8bd3337dfda6).'
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://www.morphisec.com/blog/noodlophile-stealer-evolves-targeted-copyright-phishing-hits-enterprises-with-social-media-footprints/
+tags:
+- facebook
+- select
+- morphisec
+- ai video
+- noodlophile
+- dll sideloading
+- web data
+- new noodlophile
+- telegram
+- spear
+- persistence
+- python
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0ba36c80167919a98cffc002cf6819d3f5e117207e901aebd13e3ea54387e51f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

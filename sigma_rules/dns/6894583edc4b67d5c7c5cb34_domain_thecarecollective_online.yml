@@ -1,0 +1,20 @@
+title: OTX domain IOC - thecarecollective.online
+id: c607e056-5dfe-44ba-a314-71f528df0a83
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thecarecollective.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

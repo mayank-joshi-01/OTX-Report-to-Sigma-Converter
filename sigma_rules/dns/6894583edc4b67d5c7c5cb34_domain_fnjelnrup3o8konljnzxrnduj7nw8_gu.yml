@@ -1,0 +1,20 @@
+title: OTX domain IOC - fnjelnrup3o8konljnzxrnduj7nw8.gu
+id: 93100eb0-81b7-4331-8fc9-a7b142063af0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fnjelnrup3o8konljnzxrnduj7nw8.gu
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

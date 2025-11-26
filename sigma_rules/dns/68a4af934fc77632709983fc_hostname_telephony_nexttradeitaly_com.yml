@@ -1,0 +1,28 @@
+title: OTX hostname IOC - telephony.nexttradeitaly.com
+id: 024db91a-df60-4074-b6c9-a085359c6c02
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Salty 2FA: Undetected
+  PhaaS Hitting US and EU Industries'' (68a4af934fc77632709983fc).'
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://any.run/cybersecurity-blog/salty2fa-technical-analysis
+tags:
+- salty 2fa
+- storm-1575
+- domain pattern
+- behavioral detection
+- 2fa bypass
+- multi-stage execution
+- phaas
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: telephony.nexttradeitaly.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

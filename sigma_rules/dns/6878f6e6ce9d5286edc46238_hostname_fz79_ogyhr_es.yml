@@ -1,0 +1,28 @@
+title: OTX hostname IOC - fz79.ogyhr.es
+id: b1e350f6-25d8-4e53-9aee-e65f45bc4ef8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SVG Smuggling - Image
+  Embedded JavaScript Redirect Attacks' (6878f6e6ce9d5286edc46238).
+author: AlienVault
+date: '2025-07-17'
+references:
+- https://www.ontinue.com/resource/blog-svg-smuggling
+tags:
+- obfuscation
+- redirect
+- phishing
+- xor encryption
+- email spoofing
+- svg
+- javascript
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fz79.ogyhr.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

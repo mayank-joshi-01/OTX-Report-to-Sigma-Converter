@@ -1,0 +1,20 @@
+title: OTX domain IOC - whatsbest.online
+id: 2e4ca73f-d754-43f3-834e-7e7fdc10d288
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whatsbest.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

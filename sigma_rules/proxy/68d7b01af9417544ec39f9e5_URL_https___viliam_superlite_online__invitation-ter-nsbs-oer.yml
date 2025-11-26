@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://viliam.superlite.online/?invitation-ter-nsbs-oer
+id: a44da342-dac0-4e1d-ad44-9a0d95808490
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Hunting on
+  potential APT35 Servers' (68d7b01af9417544ec39f9e5).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.stormshield.com/news/apt35-plays-same-music-again
+tags:
+- typosquatting
+- iranian apt
+- video conferencing
+- threat hunting
+- infrastructure tracking
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://viliam.superlite.online/?invitation-ter-nsbs-oer
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

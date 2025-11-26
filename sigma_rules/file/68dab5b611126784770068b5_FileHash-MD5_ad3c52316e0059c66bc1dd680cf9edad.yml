@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - ad3c52316e0059c66bc1dd680cf9edad
+id: 993ee24d-07a3-486b-824b-d7546c79dece
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From a Single Click:
+  How Lunar Spider Enabled a Near Two-Month Intrusion'' (68dab5b611126784770068b5).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://thedfirreport.com/2025/09/29/from-a-single-click-how-lunar-spider-enabled-a-near-two-month-intrusion/
+tags:
+- cobalt strike
+- backconnect
+- credential-harvesting
+- javascript
+- cobalt-strike
+- data-exfiltration
+- brute-ratel
+- lateral-movement
+- latrodectus
+- brute ratel c4
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: ad3c52316e0059c66bc1dd680cf9edad
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - g8z4a8u4x5.com
+id: 9d2375f6-51d7-4da5-b251-958376f0cb25
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: g8z4a8u4x5.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

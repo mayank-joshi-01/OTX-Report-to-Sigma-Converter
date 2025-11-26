@@ -1,0 +1,25 @@
+title: OTX domain IOC - kav-certificates.info
+id: f21d692f-e771-4111-9511-00e90303296e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Frozen in transit:
+  Secret Blizzard''s AiTM campaign against diplomats'' (688cdfbc83ce0b286295d859).'
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.microsoft.com/en-us/security/blog/2025/07/31/frozen-in-transit-secret-blizzards-aitm-campaign-against-diplomats
+tags:
+- root certificates
+- cyberespionage
+- aitm
+- apolloshadow
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kav-certificates.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

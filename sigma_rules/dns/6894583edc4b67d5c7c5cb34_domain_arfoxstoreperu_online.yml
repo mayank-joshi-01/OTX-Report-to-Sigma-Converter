@@ -1,0 +1,20 @@
+title: OTX domain IOC - arfoxstoreperu.online
+id: 0e84de96-aca5-4b26-9c87-3eb55f47abe7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: arfoxstoreperu.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

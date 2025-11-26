@@ -1,0 +1,26 @@
+title: OTX domain IOC - thebaitlounge.com
+id: ab38ae54-3b92-4db6-821a-58dbe99fcc43
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thebaitlounge.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

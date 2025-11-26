@@ -1,0 +1,20 @@
+title: OTX domain IOC - decorahub.store
+id: 0049677d-a96b-4a23-91fc-35f34d7c1e3a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: decorahub.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

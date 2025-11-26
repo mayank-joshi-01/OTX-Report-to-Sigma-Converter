@@ -1,0 +1,20 @@
+title: OTX domain IOC - myelli.store
+id: 75591f3d-8550-46aa-ad3b-fa656191c11f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: myelli.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

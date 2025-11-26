@@ -1,0 +1,20 @@
+title: OTX domain IOC - rowdymustanginc.online
+id: 08bfab41-4d9b-4540-beec-5a6d99b4ea0a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rowdymustanginc.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

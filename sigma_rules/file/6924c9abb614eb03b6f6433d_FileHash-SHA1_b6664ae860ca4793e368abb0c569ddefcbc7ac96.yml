@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - b6664ae860ca4793e368abb0c569ddefcbc7ac96
+id: 7b0e429b-3d45-4f0e-8c27-d1a65b951494
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Build script exposes
+  PyPI to domain takeover attacks' (6924c9abb614eb03b6f6433d).
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.reversinglabs.com/blog/build-script-exposes-pypi-to-domain-takeover-attacks
+tags:
+- vulnerability
+- packaging
+- legacy code
+- python
+- supply chain
+- domain takeover
+- cve-2023-45311
+- bootstrap script
+- pypi
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: b6664ae860ca4793e368abb0c569ddefcbc7ac96
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

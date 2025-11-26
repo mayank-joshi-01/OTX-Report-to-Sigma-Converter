@@ -1,0 +1,20 @@
+title: OTX domain IOC - turok-tv19x.online
+id: c6089d3a-7308-41d6-989e-2a8a2eacb6e5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: turok-tv19x.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

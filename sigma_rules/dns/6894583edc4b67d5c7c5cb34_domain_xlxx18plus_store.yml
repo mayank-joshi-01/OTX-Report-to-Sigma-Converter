@@ -1,0 +1,20 @@
+title: OTX domain IOC - xlxx18plus.store
+id: 751e0d73-d019-49a5-8607-0114a0fe181f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xlxx18plus.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

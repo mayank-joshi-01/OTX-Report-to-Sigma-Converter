@@ -1,0 +1,20 @@
+title: OTX domain IOC - fodi-social.store
+id: 54f3c263-8ae5-4e2b-ba5e-7c705670cfed
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fodi-social.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

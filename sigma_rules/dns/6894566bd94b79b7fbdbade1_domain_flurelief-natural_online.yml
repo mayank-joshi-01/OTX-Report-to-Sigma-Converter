@@ -1,0 +1,20 @@
+title: OTX domain IOC - flurelief-natural.online
+id: 3b5e43ee-ecd8-4d9a-a58f-4ef57acbd440
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: flurelief-natural.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

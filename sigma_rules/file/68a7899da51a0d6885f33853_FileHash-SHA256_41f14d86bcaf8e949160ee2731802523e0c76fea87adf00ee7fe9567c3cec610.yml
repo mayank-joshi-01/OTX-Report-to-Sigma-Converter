@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+id: 1d8390b7-6271-4330-b4b4-0067f4cc4c10
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Cherry pie, Douglas
+  firs and the last trip of the summer' (68a7899da51a0d6885f33853).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://blog.talosintelligence.com/cherry-pie-douglas-firs-and-the-last-trip-of-the-summer
+tags:
+- network vulnerabilities
+- cisco devices
+- state-sponsored threats
+- cve-2018-0171
+- cybersecurity precautions
+- travel security
+- ps1bot
+- device protection
+- unpatched systems
+- data breaches
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 41f14d86bcaf8e949160ee2731802523e0c76fea87adf00ee7fe9567c3cec610
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

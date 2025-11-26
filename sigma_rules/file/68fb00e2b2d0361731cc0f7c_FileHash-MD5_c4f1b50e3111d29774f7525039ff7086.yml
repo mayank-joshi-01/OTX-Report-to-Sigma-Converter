@@ -1,0 +1,24 @@
+title: OTX FileHash-MD5 IOC - c4f1b50e3111d29774f7525039ff7086
+id: e2875ad5-f789-490b-af94-a055bed27df3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Unpacking NetSupport
+  RAT Loaders Delivered via ClickFix' (68fb00e2b2d0361731cc0f7c).
+author: AlienVault
+date: '2025-10-24'
+references:
+- https://www.esentire.com/blog/unpacking-netsupport-rat-loaders-delivered-via-clickfix
+tags:
+- remote administration tools
+- clickfix
+- netsupport rat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: c4f1b50e3111d29774f7525039ff7086
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

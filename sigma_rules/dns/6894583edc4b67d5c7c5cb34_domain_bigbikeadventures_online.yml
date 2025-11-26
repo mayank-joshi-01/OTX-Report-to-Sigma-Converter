@@ -1,0 +1,20 @@
+title: OTX domain IOC - bigbikeadventures.online
+id: 50e05d4b-9c36-41a1-bdf0-c4dcce7c11f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bigbikeadventures.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ckalert5434.online
+id: 085d29a0-c55d-4f8a-906f-442f9f613aee
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ckalert5434.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

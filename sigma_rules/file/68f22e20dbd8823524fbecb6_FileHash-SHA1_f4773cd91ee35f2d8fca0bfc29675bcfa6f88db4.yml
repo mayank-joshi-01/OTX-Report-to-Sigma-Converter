@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA1 IOC - f4773cd91ee35f2d8fca0bfc29675bcfa6f88db4
+id: e242a660-5316-4d35-aa71-45a2e429dbe1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malicious package
+  with AdaptixC2 framework agent found in npm registry' (68f22e20dbd8823524fbecb6).
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/adaptixc2-agent-found-in-an-npm-package/117784/
+tags:
+- adaptixc2
+- post-exploitation
+- npm
+- multi-platform
+- supply-chain
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: f4773cd91ee35f2d8fca0bfc29675bcfa6f88db4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

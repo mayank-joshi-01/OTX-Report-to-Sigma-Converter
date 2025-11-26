@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 0f2d98464cdaa2211a27977596c0c0652862302a
+id: c2c7143c-ecb8-462e-9112-4b9968f5584c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Self-replicating Shai-hulud
+  worm spreads token stealing malware on npm' (68c9d89d1c51a61c77ee8581).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.reversinglabs.com/blog/shai-hulud-worm-npm
+tags:
+- worm
+- supply-chain
+- npm
+- self-replicating
+- shai-hulud
+- open-source
+- package-compromise
+- token-stealing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 0f2d98464cdaa2211a27977596c0c0652862302a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

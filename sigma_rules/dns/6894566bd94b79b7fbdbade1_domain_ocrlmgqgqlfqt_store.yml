@@ -1,0 +1,20 @@
+title: OTX domain IOC - ocrlmgqgqlfqt.store
+id: 13292c2b-c59e-4392-a16c-b8fb846b8ebb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ocrlmgqgqlfqt.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

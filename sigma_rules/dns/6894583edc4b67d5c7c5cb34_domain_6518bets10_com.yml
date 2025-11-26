@@ -1,0 +1,20 @@
+title: OTX domain IOC - 6518bets10.com
+id: 661a33c4-da70-4502-b5d3-43592d79e687
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 6518bets10.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

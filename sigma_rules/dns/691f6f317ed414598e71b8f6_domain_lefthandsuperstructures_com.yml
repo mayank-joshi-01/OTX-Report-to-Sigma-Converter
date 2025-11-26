@@ -1,0 +1,30 @@
+title: OTX domain IOC - lefthandsuperstructures.com
+id: 1164d803-3396-4184-9018-b86b53313f2f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'WhatsApp compromise
+  leads to Astaroth deployment' (691f6f317ed414598e71b8f6).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://news.sophos.com/en-us/2025/11/20/whatsapp-compromise-leads-to-astaroth-deployment
+tags:
+- persistence
+- guildma
+- banking trojan
+- brazil
+- session hijacking
+- astaroth
+- whatsapp
+- maverick
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lefthandsuperstructures.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

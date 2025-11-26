@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 5ac660ecbbde66ba9d46f37f9ddbc904e4c5d9e8
+id: 21b5b2ee-1801-46e9-86b9-b084a7cb4418
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''PhantomCaptcha:
+  Multi-Stage WebSocket RAT Targets Ukraine in Single-Day Spearphishing Operation''
+  (68f9344f3414613f13b09ef2).'
+author: AlienVault
+date: '2025-10-22'
+references:
+- https://www.sentinelone.com/labs/phantomcaptcha-multi-stage-websocket-rat-targets-ukraine-in-single-day-spearphishing-operation/
+tags:
+- android
+- coldriver
+- websocket rat
+- ukraine
+- powershell
+- ngos
+- spearphishing
+- captcha
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 5ac660ecbbde66ba9d46f37f9ddbc904e4c5d9e8
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

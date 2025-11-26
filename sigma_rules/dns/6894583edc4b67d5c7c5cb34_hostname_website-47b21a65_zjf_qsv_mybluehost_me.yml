@@ -1,0 +1,20 @@
+title: OTX hostname IOC - website-47b21a65.zjf.qsv.mybluehost.me
+id: 3aad2bf7-720b-4ef3-aa5b-5e60932d8a7c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: website-47b21a65.zjf.qsv.mybluehost.me
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

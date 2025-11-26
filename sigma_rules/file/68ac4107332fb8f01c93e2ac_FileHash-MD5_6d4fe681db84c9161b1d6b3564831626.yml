@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 6d4fe681db84c9161b1d6b3564831626
+id: 4aa538dc-e269-49f2-a648-9909e003ff6f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Android backdoor spies
+  on Russian business employees' (68ac4107332fb8f01c93e2ac).
+author: AlienVault
+date: '2025-08-25'
+references:
+- http://news.drweb.ru/show/?i=15047&lng=ru
+- https://raw.githubusercontent.com/DoctorWebLtd/malware-iocs/refs/heads/master/Android.Backdoor.916.origin/README.adoc
+tags:
+- russian
+- mobile-malware
+- spyware
+- backdoor
+- business
+- android.backdoor.916.origin
+- surveillance
+- android
+- targeted-attack
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 6d4fe681db84c9161b1d6b3564831626
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

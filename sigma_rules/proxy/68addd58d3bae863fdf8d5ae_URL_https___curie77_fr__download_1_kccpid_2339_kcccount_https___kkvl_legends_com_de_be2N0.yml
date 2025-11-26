@@ -1,0 +1,27 @@
+title: OTX URL IOC - https://curie77.fr/?download=1&kccpid=2339&kcccount=https://kkvl.legends.com.de/be2N0
+id: d54dba50-6623-4253-8660-679990ef4fd9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Major August 2025
+  Cyber Attacks: 7-Stage Tycoon2FA Phishing, New ClickFix Campaign, and Salty2FA''
+  (68addd58d3bae863fdf8d5ae).'
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-august-2025
+tags:
+- rhadamanthys stealer
+- phishing
+- tycoon2fa
+- salty2fa
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://curie77.fr/?download=1&kccpid=2339&kcccount=https://kkvl.legends.com.de/be2N0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

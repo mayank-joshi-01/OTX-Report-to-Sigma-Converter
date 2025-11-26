@@ -1,0 +1,20 @@
+title: OTX domain IOC - jacques-voitures.org
+id: f2667b3b-9cda-464c-8f0c-6c7648c84996
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jacques-voitures.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

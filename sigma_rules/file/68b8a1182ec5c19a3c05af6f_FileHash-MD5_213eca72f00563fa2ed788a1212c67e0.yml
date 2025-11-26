@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 213eca72f00563fa2ed788a1212c67e0
+id: 83437d4b-c894-4902-bb50-eed9457c9a45
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New malware campaign
+  discovered via ManualFinder' (68b8a1182ec5c19a3c05af6f).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.ncsc.nl/actueel/nieuws/2025/08/29/nieuwe-malwarecampagne-ontdekt-via-manualfinder
+tags:
+- onestart browser
+- certificate abuse
+- pdf-editor
+- javascript
+- manualfinder
+- trojan:win64/infostealer!msr
+- trojan:win32/malgent!msr
+- windows
+- residential proxy
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 213eca72f00563fa2ed788a1212c67e0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

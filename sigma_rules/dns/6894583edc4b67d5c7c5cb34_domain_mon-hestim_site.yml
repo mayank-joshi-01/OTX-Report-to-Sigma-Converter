@@ -1,0 +1,20 @@
+title: OTX domain IOC - mon-hestim.site
+id: a11e636e-05cd-4e32-b6bc-3656884370ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mon-hestim.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

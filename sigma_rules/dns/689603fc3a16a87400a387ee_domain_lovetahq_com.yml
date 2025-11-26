@@ -1,0 +1,29 @@
+title: OTX domain IOC - lovetahq.com
+id: 761a273a-87c9-4328-9ef1-9f7c8b290978
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Efimer Trojan delivered
+  via email and hacked WordPress websites' (689603fc3a16a87400a387ee).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://securelist.com/efimer-trojan/117148
+tags:
+- wordpress
+- torrent
+- clipbanker
+- cryptocurrency
+- efimer
+- email campaign
+- tor
+- brute-force
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lovetahq.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

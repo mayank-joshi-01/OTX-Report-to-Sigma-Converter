@@ -1,0 +1,20 @@
+title: OTX domain IOC - build-ease.site
+id: ce57c3a7-f59a-416c-8ec6-d4cfc509954f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: build-ease.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

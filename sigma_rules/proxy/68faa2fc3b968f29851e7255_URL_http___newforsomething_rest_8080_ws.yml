@@ -1,0 +1,23 @@
+title: OTX URL IOC - http://newforsomething.rest:8080/ws
+id: 84700c3b-3506-4f72-8b9f-338004fbe493
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TransparentTribe Targets
+  Indian Military with DeskRAT Malware' (68faa2fc3b968f29851e7255).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://blog.sekoia.io/transparenttribe-targets-indian-military-organisations-with-deskrat
+tags:
+- deskrat
+- government
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://newforsomething.rest:8080/ws
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

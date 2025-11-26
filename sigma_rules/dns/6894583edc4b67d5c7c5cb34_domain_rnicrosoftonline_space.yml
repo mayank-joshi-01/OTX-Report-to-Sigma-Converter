@@ -1,0 +1,20 @@
+title: OTX domain IOC - rnicrosoftonline.space
+id: 1c0c3d01-b787-4e70-8265-35baf5e44101
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: rnicrosoftonline.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

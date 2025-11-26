@@ -1,0 +1,20 @@
+title: OTX domain IOC - granat88yes.online
+id: 45e50f56-5d8e-410b-aed7-d7686e5b3209
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: granat88yes.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

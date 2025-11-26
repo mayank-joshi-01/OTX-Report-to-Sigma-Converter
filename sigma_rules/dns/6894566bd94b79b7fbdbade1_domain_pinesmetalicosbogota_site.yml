@@ -1,0 +1,20 @@
+title: OTX domain IOC - pinesmetalicosbogota.site
+id: 6837f271-1b7b-47cd-8d83-bb84086b4488
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pinesmetalicosbogota.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

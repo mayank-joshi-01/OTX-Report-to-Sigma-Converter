@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 453b0a62e414e9b40185c63842546fc96e8e1ab3f77d3230b02988dd8834c555
+id: 2b846505-eb9c-4ce2-84eb-9e4963f82e19
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Datzbro: RAT Hiding
+  Behind Senior Travel Scams'' (68dbc723efac718f1d90b6de).'
+author: AlienVault
+date: '2025-09-30'
+references:
+- https://www.threatfabric.com/blogs/datzbro-rat-hiding-behind-senior-travel-scams
+tags:
+- android trojan
+- facebook groups
+- remote access
+- banking malware
+- zombinder
+- social engineering
+- datzbro
+- senior scams
+- spyware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 453b0a62e414e9b40185c63842546fc96e8e1ab3f77d3230b02988dd8834c555
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

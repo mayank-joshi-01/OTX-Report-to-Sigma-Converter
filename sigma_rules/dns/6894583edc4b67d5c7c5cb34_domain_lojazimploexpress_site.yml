@@ -1,0 +1,20 @@
+title: OTX domain IOC - lojazimploexpress.site
+id: 52a9e86c-a8a4-48b9-927d-5256b199a5d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lojazimploexpress.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

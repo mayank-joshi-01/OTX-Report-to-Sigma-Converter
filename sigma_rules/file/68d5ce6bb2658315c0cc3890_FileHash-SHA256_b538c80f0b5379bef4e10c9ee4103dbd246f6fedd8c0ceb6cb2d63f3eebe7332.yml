@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - b538c80f0b5379bef4e10c9ee4103dbd246f6fedd8c0ceb6cb2d63f3eebe7332
+id: c483322c-f94c-4af4-8fcf-2b7b0b864115
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Botnet Loader-as-a-Service
+  Infrastructure Distributing RondoDoX and Mirai Payloads' (68d5ce6bb2658315c0cc3890).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://www.cloudsek.com/blog/botnet-loader-as-a-service-infrastructure-distributing-rondodox-and-mirai-payloads
+tags:
+- morte
+- cve-2012-1823
+- soho routers
+- cve-2019-17574
+- cve-2019-16759
+- botnet
+- mirai
+- iot
+- cryptomining
+- loader-as-a-service
+- command injection
+- rondodox
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b538c80f0b5379bef4e10c9ee4103dbd246f6fedd8c0ceb6cb2d63f3eebe7332
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

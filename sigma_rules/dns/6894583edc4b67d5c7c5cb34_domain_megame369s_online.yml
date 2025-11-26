@@ -1,0 +1,20 @@
+title: OTX domain IOC - megame369s.online
+id: 0cf150f8-f3f0-4ee8-9dbc-b2ca3d715f84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: megame369s.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

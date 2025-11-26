@@ -1,0 +1,20 @@
+title: OTX domain IOC - wallpaperss.site
+id: 3503b3d9-5b1c-4b3d-b106-5f17f967d20c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wallpaperss.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

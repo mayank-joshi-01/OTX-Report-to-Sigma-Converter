@@ -1,0 +1,20 @@
+title: OTX domain IOC - yasashii-crypto.site
+id: 2901f72f-142c-4fc3-a60e-73e93b809704
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: yasashii-crypto.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

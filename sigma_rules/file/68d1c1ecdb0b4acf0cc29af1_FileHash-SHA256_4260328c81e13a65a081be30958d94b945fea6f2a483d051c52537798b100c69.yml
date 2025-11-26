@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 4260328c81e13a65a081be30958d94b945fea6f2a483d051c52537798b100c69
+id: dae0583f-a235-4d49-9674-29ab93ce2922
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Nimbus Manticore Deploys
+  New Malware Targeting Europe' (68d1c1ecdb0b4acf0cc29af1).
+author: AlienVault
+date: '2025-09-22'
+references:
+- https://research.checkpoint.com/2025/nimbus-manticore-deploys-new-malware-targeting-europe/
+tags:
+- APT
+- telecommunications
+- spear-phishing
+- DLL sideloading
+- obfuscation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4260328c81e13a65a081be30958d94b945fea6f2a483d051c52537798b100c69
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

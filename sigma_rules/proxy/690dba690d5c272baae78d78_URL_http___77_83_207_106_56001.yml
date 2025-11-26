@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://77.83.207.106:56001
+id: 52438b1c-4c22-493c-8237-c3b76ab82bda
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Booking.com Phishing
+  Campaign Targeting Hotels and Customers' (690dba690d5c272baae78d78).
+author: AlienVault
+date: '2025-11-07'
+references:
+- https://blog.sekoia.io/phishing-campaigns-i-paid-twice-targeting-booking-com-hotels-and-customers/
+tags:
+- phishing
+- social engineering
+- clickfix
+- hospitality
+- booking.com
+- purerat
+- cybercrime
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://77.83.207.106:56001
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

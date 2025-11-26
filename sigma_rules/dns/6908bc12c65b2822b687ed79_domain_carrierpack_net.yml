@@ -1,0 +1,39 @@
+title: OTX domain IOC - carrierpack.net
+id: f83dadea-42d4-4257-bab6-835e823a1152
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Remote access, real
+  cargo: cybercriminals targeting trucking and logistics'' (6908bc12c65b2822b687ed79).'
+author: AlienVault
+date: '2025-11-03'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/remote-access-real-cargo-cybercriminals-targeting-trucking-and-logistics
+tags:
+- screenconnect
+- lumma stealer
+- phishing
+- simplehelp
+- cargo theft
+- fleetdeck
+- n-able
+- logmein resolve
+- danabot
+- trucking
+- logistics
+- cybercrime
+- netsupport
+- social engineering
+- supply chain
+- stealc
+- remote monitoring tools
+- pdq connect
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: carrierpack.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

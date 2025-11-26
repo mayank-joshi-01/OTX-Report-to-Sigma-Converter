@@ -1,0 +1,20 @@
+title: OTX domain IOC - home-furniture-1583.site
+id: bf285ed0-6a2d-4c28-979d-0d3f42529887
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: home-furniture-1583.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

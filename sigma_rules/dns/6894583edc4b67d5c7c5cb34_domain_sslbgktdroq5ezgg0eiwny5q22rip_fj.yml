@@ -1,0 +1,20 @@
+title: OTX domain IOC - sslbgktdroq5ezgg0eiwny5q22rip.fj
+id: d2ab59e2-d814-4ae5-a918-bbc6e91f8bed
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sslbgktdroq5ezgg0eiwny5q22rip.fj
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

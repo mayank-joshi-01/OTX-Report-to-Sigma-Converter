@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://rrn.media/fr/video-pas-de-gagnants-dans-les-legislatives-en-france/
+id: 872995fa-b4bb-4df0-ba8a-11652d91f85f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://rrn.media/fr/video-pas-de-gagnants-dans-les-legislatives-en-france/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

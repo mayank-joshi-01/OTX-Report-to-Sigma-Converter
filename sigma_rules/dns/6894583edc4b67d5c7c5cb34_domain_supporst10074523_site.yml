@@ -1,0 +1,20 @@
+title: OTX domain IOC - supporst10074523.site
+id: 9991f2bb-1cdc-432b-b439-147c8a1dd9a5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: supporst10074523.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

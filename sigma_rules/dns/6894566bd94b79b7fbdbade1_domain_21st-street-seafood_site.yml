@@ -1,0 +1,20 @@
+title: OTX domain IOC - 21st-street-seafood.site
+id: 43ed7b78-63b7-4c1b-a5cc-bc6040e612bc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 21st-street-seafood.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

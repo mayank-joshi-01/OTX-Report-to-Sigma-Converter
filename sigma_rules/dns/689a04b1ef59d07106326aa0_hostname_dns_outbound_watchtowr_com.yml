@@ -1,0 +1,29 @@
+title: OTX hostname IOC - dns.outbound.watchtowr.com
+id: ee98bd08-8c10-4c13-8c63-4c55976e5bc4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Keys to the Kingdom:
+  Erlang/OTP SSH Vulnerability Analysis and Exploits Observed in the Wild'' (689a04b1ef59d07106326aa0).'
+author: AlienVault
+date: '2025-08-11'
+references:
+- https://unit42.paloaltonetworks.com/erlang-otp-cve-2025-32433
+tags:
+- critical infrastructure
+- erlang/otp
+- ssh
+- vulnerability
+- operational technology
+- cve-2025-32433
+- remote code execution
+- exploit
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dns.outbound.watchtowr.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

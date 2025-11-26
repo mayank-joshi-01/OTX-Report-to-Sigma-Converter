@@ -1,0 +1,20 @@
+title: OTX domain IOC - diplom-manh.online
+id: 72ff6441-4cd7-46ec-b0d0-b59877d67c43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: diplom-manh.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,33 @@
+title: OTX domain IOC - contirec7nchr45rx6ympez5rjldibnqzh7lsa56lvjvaeywhvoj3wad.onion
+id: 2033949e-1444-4d21-8c03-ab97152519a6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Threat Profile:
+  Conti Ransomware Group'' (68db677b189fbc5307a5a270).'
+author: AlienVault
+date: '2025-09-30'
+references:
+- https://darkatlas.io/blog/threat-profile-conti-ransomware-group
+tags:
+- education
+- double extortion
+- healthcare
+- conti
+- ransomware
+- critical infrastructure
+- cobalt strike
+- wizard spider
+- government
+- russia-based
+- trickbot
+- ryuk
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: contirec7nchr45rx6ympez5rjldibnqzh7lsa56lvjvaeywhvoj3wad.onion
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

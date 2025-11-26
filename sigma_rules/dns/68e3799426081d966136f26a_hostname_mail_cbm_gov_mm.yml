@@ -1,0 +1,27 @@
+title: OTX hostname IOC - mail.cbm.gov.mm
+id: 9fa7f591-dc9a-4020-b9b8-4e36620fc02b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation SouthNet:
+  SideWinder Expands Phishing and Malware Operations in South Asia'' (68e3799426081d966136f26a).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://hunt.io/blog/operation-southnet-sidewinder-south-asia-maritime-phishing
+tags:
+- south asia
+- apt
+- government
+- phishing
+- credential harvesting
+- military
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mail.cbm.gov.mm
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

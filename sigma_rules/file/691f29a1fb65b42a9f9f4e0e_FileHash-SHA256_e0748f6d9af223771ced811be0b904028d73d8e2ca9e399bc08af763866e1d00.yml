@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - e0748f6d9af223771ced811be0b904028d73d8e2ca9e399bc08af763866e1d00
+id: cc06a33e-ae53-43e3-8d9c-7ff49fdf2105
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'October 2025 Infostealer
+  Trend Report' (691f29a1fb65b42a9f9f4e0e).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91062
+tags:
+- seo poisoning
+- rhadamanthys
+- acrstealer
+- lummac2
+- infostealer
+- loader
+- phishing
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: e0748f6d9af223771ced811be0b904028d73d8e2ca9e399bc08af763866e1d00
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

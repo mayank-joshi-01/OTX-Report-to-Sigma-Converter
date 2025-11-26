@@ -1,0 +1,20 @@
+title: OTX domain IOC - vjuwf83489.click
+id: 4fbba377-dcad-4b33-8944-a8ee9e2bc998
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vjuwf83489.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

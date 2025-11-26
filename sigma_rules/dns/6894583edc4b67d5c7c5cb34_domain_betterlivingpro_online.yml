@@ -1,0 +1,20 @@
+title: OTX domain IOC - betterlivingpro.online
+id: df9b72e9-30b7-489c-ab67-fd63f0b04d7c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: betterlivingpro.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

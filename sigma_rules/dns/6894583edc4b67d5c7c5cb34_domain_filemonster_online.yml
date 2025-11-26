@@ -1,0 +1,20 @@
+title: OTX domain IOC - filemonster.online
+id: f0a349aa-46d8-4ae2-b02e-5645b4cb5970
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: filemonster.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

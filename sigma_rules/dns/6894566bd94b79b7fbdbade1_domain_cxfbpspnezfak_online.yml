@@ -1,0 +1,20 @@
+title: OTX domain IOC - cxfbpspnezfak.online
+id: d20d5475-fc4a-469b-9d2d-9152e9cff0fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cxfbpspnezfak.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - gossip-1.store
+id: 784fe3c4-c8e7-4fc9-9bbf-84600997eb0d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gossip-1.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

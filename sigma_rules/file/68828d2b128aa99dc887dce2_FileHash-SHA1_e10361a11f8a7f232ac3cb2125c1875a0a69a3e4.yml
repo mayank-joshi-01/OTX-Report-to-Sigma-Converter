@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA1 IOC - e10361a11f8a7f232ac3cb2125c1875a0a69a3e4
+id: 77508893-e55b-4171-b8a5-b19db81bfe3a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pausing for a "Sanctuary
+  Moon" marathon' (68828d2b128aa99dc887dce2).
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://blog.talosintelligence.com/brb-pausing-for-a-sanctuary-moon-marathon
+tags:
+- sharepoint vulnerability
+- chaos
+- machine learning
+- cve-2025-53770
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: e10361a11f8a7f232ac3cb2125c1875a0a69a3e4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

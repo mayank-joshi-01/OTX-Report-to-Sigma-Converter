@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1000clothing.com
+id: 2dbe5a6b-1e6c-49f2-8207-aabc606a5f17
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1000clothing.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

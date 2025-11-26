@@ -1,0 +1,20 @@
+title: OTX domain IOC - quickchoicevetavirtual.site
+id: 7ac962d7-734d-4ff7-9063-c937a1ef1da1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quickchoicevetavirtual.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

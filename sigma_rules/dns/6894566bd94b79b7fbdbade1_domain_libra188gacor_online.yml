@@ -1,0 +1,20 @@
+title: OTX domain IOC - libra188gacor.online
+id: 126d4c6e-084c-49aa-b7c0-b19b415ff277
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: libra188gacor.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

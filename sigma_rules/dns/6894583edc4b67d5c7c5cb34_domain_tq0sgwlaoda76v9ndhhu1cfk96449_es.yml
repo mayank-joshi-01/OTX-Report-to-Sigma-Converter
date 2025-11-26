@@ -1,0 +1,20 @@
+title: OTX domain IOC - tq0sgwlaoda76v9ndhhu1cfk96449.es
+id: 69d14192-8fe5-4e79-9038-5f02d1c4b5d1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tq0sgwlaoda76v9ndhhu1cfk96449.es
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ninawertz.pl
+id: ff3481de-b416-47d8-8f89-3795a6cc3c5c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ninawertz.pl
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

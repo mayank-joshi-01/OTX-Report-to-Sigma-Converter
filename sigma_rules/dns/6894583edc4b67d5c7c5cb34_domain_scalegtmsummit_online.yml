@@ -1,0 +1,20 @@
+title: OTX domain IOC - scalegtmsummit.online
+id: 453b9fe0-c8d5-443d-884c-9d16af7f6cec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: scalegtmsummit.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

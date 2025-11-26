@@ -1,0 +1,20 @@
+title: OTX hostname IOC - shogun-dark.duckdns.org
+id: f4f7ad22-2b88-44a5-9f8e-466453e18bb0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shogun-dark.duckdns.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

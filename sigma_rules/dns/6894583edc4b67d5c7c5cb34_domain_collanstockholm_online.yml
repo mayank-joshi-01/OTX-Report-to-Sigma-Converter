@@ -1,0 +1,20 @@
+title: OTX domain IOC - collanstockholm.online
+id: 4304cda9-7fa8-4e89-9f8c-87f4b18eb215
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: collanstockholm.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

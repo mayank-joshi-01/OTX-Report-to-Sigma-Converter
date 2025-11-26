@@ -1,0 +1,20 @@
+title: OTX domain IOC - 084e1fb642e3.site
+id: d07e968a-fb5c-4bf8-80ab-3e141f65abd5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 084e1fb642e3.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

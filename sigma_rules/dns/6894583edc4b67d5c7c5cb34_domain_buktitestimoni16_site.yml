@@ -1,0 +1,20 @@
+title: OTX domain IOC - buktitestimoni16.site
+id: 3792b20d-1642-4e53-add8-70a430c359bb
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: buktitestimoni16.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

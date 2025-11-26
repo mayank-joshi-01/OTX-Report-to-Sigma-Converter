@@ -1,0 +1,36 @@
+title: OTX FileHash-SHA256 IOC - 16bcd167162e4ded71b8c7e9a2587be821d3a752c71fcbb2ae64cf1088b62fc0
+id: 3cf7bf9a-7847-4dee-8f18-992569ab45f8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ITG05 operations leverage
+  Israel-Hamas conflict lures to deliver Headlace malware' (6579b53c00375a2dcfaaf952).
+author: AlienVault
+date: '2023-12-13'
+references:
+- https://securityintelligence.com/x-force/itg05-ops-leverage-israel-hamas-conflict-lures-to-deliver-headlace-malware/
+tags:
+- itg05
+- september
+- ukraine
+- azerbaijan
+- israel
+- razumkov centre
+- belarus
+- service
+- winrar
+- nishang
+- graphite
+- credomap
+- gootloader
+- wailingcrab
+- mocky
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 16bcd167162e4ded71b8c7e9a2587be821d3a752c71fcbb2ae64cf1088b62fc0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

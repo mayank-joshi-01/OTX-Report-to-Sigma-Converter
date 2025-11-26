@@ -1,0 +1,25 @@
+title: OTX domain IOC - at-portal-das-financas.com
+id: 5e3be0d9-5fc9-432b-a19c-4f654e48a5c8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''From Brazil with
+  Love: New Tactics from Lampion'' (6904825c8b7788f09d0d5ce2).'
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://www.bitsight.com/blog/brazil-love-new-tactics-lampion
+tags:
+- lampion
+- clickfix
+- banking trojan
+- lampion stealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: at-portal-das-financas.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

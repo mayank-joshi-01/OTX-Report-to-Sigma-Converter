@@ -1,0 +1,20 @@
+title: OTX hostname IOC - bakrie.ac.id.stbvip.vipop.biz.id
+id: 92cd92c3-d4b3-4ddc-ad78-e3706a337147
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bakrie.ac.id.stbvip.vipop.biz.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

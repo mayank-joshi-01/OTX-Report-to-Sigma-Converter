@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://mypride.press/disney-is-controlling-the-minds-of-americans
+id: c825149c-e7be-4420-a3c8-3aca6f6bd998
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://mypride.press/disney-is-controlling-the-minds-of-americans
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

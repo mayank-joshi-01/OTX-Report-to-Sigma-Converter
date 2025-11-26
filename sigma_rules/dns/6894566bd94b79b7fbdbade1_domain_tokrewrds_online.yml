@@ -1,0 +1,20 @@
+title: OTX domain IOC - tokrewrds.online
+id: 128c1afe-accc-4360-8f2a-9c99dfeb5bfe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tokrewrds.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

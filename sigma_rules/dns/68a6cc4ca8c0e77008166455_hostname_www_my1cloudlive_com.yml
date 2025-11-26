@@ -1,0 +1,31 @@
+title: OTX hostname IOC - www.my1cloudlive.com
+id: 7f94e876-57c7-441c-8d13-2adc097febbd
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'APT MuddyWater Targets
+  CFOs with Multi-Stage Phishing & NetBird Abuse' (68a6cc4ca8c0e77008166455).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://hunt.io/blog/apt-muddywater-deploys-multi-stage-phishing-to-target-cfos
+tags:
+- multi-stage
+- spear-phishing
+- cfo
+- remote-access
+- vbs
+- ateraagent
+- finance
+- firebase
+- netbird
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.my1cloudlive.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

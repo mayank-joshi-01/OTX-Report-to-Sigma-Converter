@@ -1,0 +1,20 @@
+title: OTX domain IOC - gamacasino88.online
+id: 7cfe4d82-571e-4021-a09e-40c435e9e766
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gamacasino88.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

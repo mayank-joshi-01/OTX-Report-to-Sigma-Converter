@@ -1,0 +1,20 @@
+title: OTX domain IOC - 6fmusfiam.top
+id: c2f179d6-910d-4e2d-8b02-b056d622f73e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 6fmusfiam.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

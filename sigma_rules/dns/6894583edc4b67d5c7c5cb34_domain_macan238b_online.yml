@@ -1,0 +1,20 @@
+title: OTX domain IOC - macan238b.online
+id: c11ec6d5-7f5f-4fa9-aa61-55053d19c476
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: macan238b.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

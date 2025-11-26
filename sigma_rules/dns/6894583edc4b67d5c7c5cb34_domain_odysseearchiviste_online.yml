@@ -1,0 +1,20 @@
+title: OTX domain IOC - odysseearchiviste.online
+id: 3d0675e6-d393-409b-8ab6-1bee54577b74
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: odysseearchiviste.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

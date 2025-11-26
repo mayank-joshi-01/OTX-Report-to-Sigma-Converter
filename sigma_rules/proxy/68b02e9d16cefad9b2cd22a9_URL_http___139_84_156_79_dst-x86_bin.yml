@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://139.84.156.79/dst-x86.bin
+id: b9cd8709-ac90-43df-a664-b84d309e0649
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'The Covert Dual-Mode
+  Backdoor Threat' (68b02e9d16cefad9b2cd22a9).
+author: AlienVault
+date: '2025-08-28'
+references:
+- https://blog.xlab.qianxin.com/mystrodx_covert_dual-mode_backdoor_en
+tags:
+- icmp trigger
+- backdoor
+- mystrodx
+- stealth
+- dual-process guardian
+- dns trigger
+- c2 servers
+- passive mode
+- encryption
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://139.84.156.79/dst-x86.bin
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

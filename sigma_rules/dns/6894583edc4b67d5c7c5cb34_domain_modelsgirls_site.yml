@@ -1,0 +1,20 @@
+title: OTX domain IOC - modelsgirls.site
+id: 929e3779-2859-49c9-855a-fa884c5fbef7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: modelsgirls.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

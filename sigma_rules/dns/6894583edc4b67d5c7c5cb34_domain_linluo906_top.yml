@@ -1,0 +1,20 @@
+title: OTX domain IOC - linluo906.top
+id: 8567ca50-56c0-44f0-9752-852137f20385
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: linluo906.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

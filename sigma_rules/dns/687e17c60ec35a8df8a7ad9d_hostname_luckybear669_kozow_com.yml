@@ -1,0 +1,29 @@
+title: OTX hostname IOC - luckybear669.kozow.com
+id: 009d30c3-e88f-4930-ad7d-7e15dcf177ea
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'DeedRAT Backdoor Enhanced
+  with Advanced Capabilities' (687e17c60ec35a8df8a7ad9d).
+author: AlienVault
+date: '2025-07-21'
+references:
+- https://lab52.io/blog/deedrat-backdoor-enhanced-by-chinese-apts-with-advanced-capabilities/
+tags:
+- backdoor
+- dll side-loading
+- persistence
+- obfuscation
+- antivirus exploitation
+- deedrat
+- phishing
+- netagent
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luckybear669.kozow.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

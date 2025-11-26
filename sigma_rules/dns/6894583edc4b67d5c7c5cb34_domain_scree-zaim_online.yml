@@ -1,0 +1,20 @@
+title: OTX domain IOC - scree-zaim.online
+id: 51931a3a-9549-4c6e-9929-a5a9a3cc7416
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: scree-zaim.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

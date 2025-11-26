@@ -1,0 +1,20 @@
+title: OTX domain IOC - zixtcgkovehow.store
+id: 7723121f-e300-41ad-a360-c3b390102d24
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: zixtcgkovehow.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.hamodia.in/2024/06/18/If-Not-Blinken-Then-Baerbock--US-Tries-to-Pressure-Israel-Through-Its-Satellites.html
+id: 4180d3ff-022f-4a27-a5fc-857e7afda3f1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.hamodia.in/2024/06/18/If-Not-Blinken-Then-Baerbock--US-Tries-to-Pressure-Israel-Through-Its-Satellites.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

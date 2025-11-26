@@ -1,0 +1,20 @@
+title: OTX domain IOC - goodman99.info
+id: 5d49b6b1-ab9d-47f3-970b-324c15b1911d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: goodman99.info
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

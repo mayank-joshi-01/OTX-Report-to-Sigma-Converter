@@ -1,0 +1,29 @@
+title: OTX domain IOC - cupertujo.com
+id: d5b3b1d7-e8db-48aa-8cfe-d3d9ea75f5ac
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Greedy Sponge Targets
+  Mexico with AllaKore RAT and SystemBC' (68a7465fd6fcc8556c5059d2).
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://arcticwolf.com/resources/blog/greedy-sponge-targets-mexico-with-allakore-rat-and-systembc
+tags:
+- credential theft
+- spear-phishing
+- drive-by download
+- financial fraud
+- allakore rat
+- systembc
+- geofencing
+- mexico
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cupertujo.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

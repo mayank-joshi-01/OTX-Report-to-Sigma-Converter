@@ -1,0 +1,20 @@
+title: OTX domain IOC - mqueikwmkeigwsgg.xyz
+id: bc1801ad-920c-4c76-a4a2-63ad17fdf53c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mqueikwmkeigwsgg.xyz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

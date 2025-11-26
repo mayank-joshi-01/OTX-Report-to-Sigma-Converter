@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - ccb6ca4cb385db50dad2e3b7c68a90ddee62398edb0fd41afdb793287cfbe8e6
+id: 13e4e035-91d6-4848-ae5c-f77bba1b49d7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation HanKook
+  Phantom: Spear-Phishing Campaign'' (68b1adfb268bf9fa0d35e008).'
+author: AlienVault
+date: '2025-08-29'
+references:
+- https://www.seqrite.com/blog/operation-hankook-phantom-north-korean-apt37-targeting-south-korea/
+tags:
+- powershell
+- cloud services
+- data exfiltration
+- lnk files
+- north korea
+- espionage
+- fileless
+- rokrat
+- spear-phishing
+- south korea
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: ccb6ca4cb385db50dad2e3b7c68a90ddee62398edb0fd41afdb793287cfbe8e6
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

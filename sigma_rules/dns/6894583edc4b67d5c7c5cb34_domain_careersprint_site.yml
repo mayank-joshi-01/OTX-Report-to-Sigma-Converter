@@ -1,0 +1,20 @@
+title: OTX domain IOC - careersprint.site
+id: e2132295-32ad-4f85-ae2c-a1b98aa4af65
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: careersprint.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX URL IOC - http://5.tcp.ngrok.io:22934
+id: af6e278a-d212-4a69-ae07-b3dc60d4d2c0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Banking Trojan Abusing
+  GitHub for Resilience' (68ee1391e202d5db1c015e71).
+author: AlienVault
+date: '2025-10-14'
+references: []
+tags:
+- guildma
+- github abuse
+- banking trojan
+- cryptocurrency
+- steganography
+- keylogging
+- astaroth
+- south america
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://5.tcp.ngrok.io:22934
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

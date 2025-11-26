@@ -1,0 +1,28 @@
+title: OTX URL IOC - https://1kickbet1.com/
+id: eb81fd7b-492a-41cd-b11a-99136e8a07dc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hidden links: why
+  your website traffic is declining'' (68f22e2285c3ffa4d9c7ff6a).'
+author: AlienVault
+date: '2025-10-17'
+references:
+- https://securelist.com/seo-spam-hidden-links/117782/
+tags:
+- seo spam
+- website security
+- content management systems
+- web vulnerabilities
+- search engine rankings
+- hidden links
+- black hat seo
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://1kickbet1.com/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

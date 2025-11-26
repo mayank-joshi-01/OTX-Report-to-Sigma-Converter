@@ -1,0 +1,20 @@
+title: OTX domain IOC - eichsfelder-postkarten.online
+id: ea91b6f4-08bb-4e83-b9b2-b8d59b9e9fe6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: eichsfelder-postkarten.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

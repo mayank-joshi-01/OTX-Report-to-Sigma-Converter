@@ -1,0 +1,20 @@
+title: OTX domain IOC - drfrancischai.online
+id: 3fdf8306-161f-4d18-8f3b-072b10909d1a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: drfrancischai.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

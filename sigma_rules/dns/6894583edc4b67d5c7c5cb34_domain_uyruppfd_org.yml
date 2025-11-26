@@ -1,0 +1,20 @@
+title: OTX domain IOC - uyruppfd.org
+id: 5b35f498-d36a-4e8a-83c4-dd237b06c8fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uyruppfd.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

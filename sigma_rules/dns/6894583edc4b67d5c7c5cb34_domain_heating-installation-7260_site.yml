@@ -1,0 +1,20 @@
+title: OTX domain IOC - heating-installation-7260.site
+id: fac9d548-d90a-47c8-969e-a42a432a74d0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: heating-installation-7260.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

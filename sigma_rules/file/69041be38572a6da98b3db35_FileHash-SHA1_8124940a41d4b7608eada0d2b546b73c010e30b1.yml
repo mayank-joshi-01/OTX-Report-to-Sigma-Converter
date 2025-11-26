@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - 8124940a41d4b7608eada0d2b546b73c010e30b1
+id: 9e7958d6-9659-426d-ba9d-8749d2a69c68
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'BRONZE BUTLER exploits
+  Japanese asset management software vulnerability' (69041be38572a6da98b3db35).
+author: AlienVault
+date: '2025-10-31'
+references:
+- https://news.sophos.com/en-us/2025/10/30/bronze-butler-exploits-japanese-asset-management-software-vulnerability
+tags:
+- havoc
+- oaed loader
+- cve-2025-61932
+- zero-day
+- gokcpdoor
+- lanscope
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 8124940a41d4b7608eada0d2b546b73c010e30b1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

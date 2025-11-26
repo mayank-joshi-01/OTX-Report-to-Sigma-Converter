@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA256 IOC - f2633ef3030c28238727892d1f2fcb669d23a803e035a5c37fd8b07dce442f17
+id: 6675a941-1cc7-432c-918c-4f143ef273f9
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Phishing Campaign
+  Targeting Companies via UpCrypter' (68acfa712f35ab723b2af3db).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.fortinet.com/blog/threat-research/phishing-campaign-targeting-companies-via-upcrypter
+tags:
+- phishing
+- remote access tools
+- anti-vm
+- purehvnc
+- upcrypter
+- global campaign
+- anti-analysis
+- obfuscation
+- persistence
+- babylon rat
+- dcrat
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: f2633ef3030c28238727892d1f2fcb669d23a803e035a5c37fd8b07dce442f17
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

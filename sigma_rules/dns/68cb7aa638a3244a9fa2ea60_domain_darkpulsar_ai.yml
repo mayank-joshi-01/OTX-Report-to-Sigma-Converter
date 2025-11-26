@@ -1,0 +1,29 @@
+title: OTX domain IOC - darkpulsar.ai
+id: da48abb8-cd9d-4f16-bdb9-c5a68ffa99e5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deepens Its Playbook
+  with New Websites and Targets' (68cb7aa638a3244a9fa2ea60).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets
+tags:
+- elections
+- deepfakes
+- ai-generated content
+- ukraine
+- political fragmentation
+- social media
+- disinformation
+- russian influence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: darkpulsar.ai
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

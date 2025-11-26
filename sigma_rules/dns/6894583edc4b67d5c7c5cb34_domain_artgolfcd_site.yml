@@ -1,0 +1,20 @@
+title: OTX domain IOC - artgolfcd.site
+id: 6574b4e7-0387-415e-9219-a9638db470a5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: artgolfcd.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

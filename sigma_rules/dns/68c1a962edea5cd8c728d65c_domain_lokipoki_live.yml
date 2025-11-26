@@ -1,0 +1,31 @@
+title: OTX domain IOC - lokipoki.live
+id: 3083c6c2-6ec0-48a9-bc8c-f262d9909275
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''AdaptixC2: A New
+  Open-Source Framework Leveraged in Real-World Attacks'' (68c1a962edea5cd8c728d65c).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://unit42.paloaltonetworks.com/adaptixc2-post-exploitation-framework/
+tags:
+- data exfiltration
+- c2 framework
+- open-source
+- adaptixc2
+- tunneling
+- ai-generated scripts
+- foggyweb
+- social engineering
+- adversarial emulation
+- post-exploitation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lokipoki.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - shibodema544.site
+id: ca72435c-1b5e-4969-a8bd-5c905eede004
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: shibodema544.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

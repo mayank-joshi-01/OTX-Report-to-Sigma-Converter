@@ -1,0 +1,33 @@
+title: OTX IPv4 IOC - 194.87.245.239
+id: 9e6208e2-edd2-4d15-a963-e0f0485a05fe
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Evasion and Persistence
+  via Hidden Hyper-V Virtual Machines' (690b1894c92da49dff19e600).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://businessinsights.bitdefender.com/curly-comrades-evasion-persistence-hidden-hyper-v-virtual-machines
+tags:
+- kerberos
+- powershell
+- reverse shell
+- virtualization
+- hyper-v
+- persistence
+- alpine linux
+- evasion
+- lateral movement
+- curlcat
+- curlyshell
+- proxy
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 194.87.245.239
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

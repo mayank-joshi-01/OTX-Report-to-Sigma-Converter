@@ -1,0 +1,20 @@
+title: OTX domain IOC - kisscartoon.online
+id: 6b435e70-d9df-462b-8ab6-d05072efb252
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kisscartoon.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

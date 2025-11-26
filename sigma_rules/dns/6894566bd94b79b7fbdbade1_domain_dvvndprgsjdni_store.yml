@@ -1,0 +1,20 @@
+title: OTX domain IOC - dvvndprgsjdni.store
+id: 1ca6b1b5-d692-4dee-b52e-dd2cc3187896
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dvvndprgsjdni.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

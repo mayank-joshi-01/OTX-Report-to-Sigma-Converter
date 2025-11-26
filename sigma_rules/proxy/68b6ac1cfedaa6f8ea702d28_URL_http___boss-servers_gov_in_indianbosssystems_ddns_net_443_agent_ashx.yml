@@ -1,0 +1,28 @@
+title: OTX URL IOC - http://boss-servers.gov.in.indianbosssystems.ddns.net:443/agent.ashx
+id: 4e6fc5d8-c163-4721-a855-bab3b8865c27
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Sindoor Dropper:
+  New Phishing Campaign'' (68b6ac1cfedaa6f8ea702d28).'
+author: AlienVault
+date: '2025-09-02'
+references:
+- https://www.nextron-systems.com/2025/08/29/sindoor-dropper-new-phishing-campaign/
+tags:
+- obfuscation
+- linux
+- apt36
+- sindoor
+- phishing
+- meshagent
+- spear-phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://boss-servers.gov.in.indianbosssystems.ddns.net:443/agent.ashx
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

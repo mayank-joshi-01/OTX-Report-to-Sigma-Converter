@@ -1,0 +1,20 @@
+title: OTX domain IOC - finproapp.click
+id: 6544d8d2-ec02-4272-b475-19f497b636a3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: finproapp.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--escritriomalheiros-v1b.online
+id: f7280a21-08b9-4f9a-821a-76132f1295d4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--escritriomalheiros-v1b.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

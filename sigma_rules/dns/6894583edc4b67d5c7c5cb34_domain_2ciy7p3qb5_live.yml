@@ -1,0 +1,20 @@
+title: OTX domain IOC - 2ciy7p3qb5.live
+id: 22f7dc79-2a71-4346-96ea-cdbce76c014d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 2ciy7p3qb5.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

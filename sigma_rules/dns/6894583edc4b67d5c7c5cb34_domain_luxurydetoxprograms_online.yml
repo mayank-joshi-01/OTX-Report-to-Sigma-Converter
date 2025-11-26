@@ -1,0 +1,20 @@
+title: OTX domain IOC - luxurydetoxprograms.online
+id: a0271a78-21c7-4b96-a350-e0c0651d5b84
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: luxurydetoxprograms.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

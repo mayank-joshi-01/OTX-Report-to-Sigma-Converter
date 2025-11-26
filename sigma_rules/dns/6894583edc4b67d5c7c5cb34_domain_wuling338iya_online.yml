@@ -1,0 +1,20 @@
+title: OTX domain IOC - wuling338iya.online
+id: 08089d2c-22cc-4f11-91eb-d22489eb5f72
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wuling338iya.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

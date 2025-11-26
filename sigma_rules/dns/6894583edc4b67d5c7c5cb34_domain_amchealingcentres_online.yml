@@ -1,0 +1,20 @@
+title: OTX domain IOC - amchealingcentres.online
+id: a1c8a3c1-dbdf-464a-ba86-f125c760d978
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: amchealingcentres.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

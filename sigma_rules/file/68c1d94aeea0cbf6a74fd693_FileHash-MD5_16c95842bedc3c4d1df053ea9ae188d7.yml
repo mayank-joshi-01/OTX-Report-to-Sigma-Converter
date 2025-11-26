@@ -1,0 +1,38 @@
+title: OTX FileHash-MD5 IOC - 16c95842bedc3c4d1df053ea9ae188d7
+id: 1fb9285a-e413-4196-8f8e-a385d7dc8a8a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''EggStreme Malware:
+  Unpacking a New APT Framework Targeting a Philippine Military Company'' (68c1d94aeea0cbf6a74fd693).'
+author: AlienVault
+date: '2025-09-10'
+references:
+- https://www.bitdefender.com/en-us/blog/businessinsights/eggstreme-fileless-malware-cyberattack-apac
+- ''
+tags:
+- eggstremefuel
+- eggstremereflectiveloader
+- stowaway
+- military
+- apt
+- espionage
+- eggstreme
+- eggstremewizard
+- philippines
+- backdoor
+- eggstremeloader
+- dll sideloading
+- keylogger
+- fileless malware
+- eggstremekeylogger
+- eggstremeagent
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 16c95842bedc3c4d1df053ea9ae188d7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

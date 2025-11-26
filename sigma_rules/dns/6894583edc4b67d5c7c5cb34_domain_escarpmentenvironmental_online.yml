@@ -1,0 +1,20 @@
+title: OTX domain IOC - escarpmentenvironmental.online
+id: 85cd46d5-15eb-4399-99b2-bb5718071b3c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: escarpmentenvironmental.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

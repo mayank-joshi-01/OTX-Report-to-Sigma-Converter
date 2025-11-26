@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 71cd466073bf23b43111dbc68ccaf1064e737f3f9ffebfec9a6f5146af6a34b9
+id: 1c3fc546-e376-4103-827f-c54d7f882c13
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 71cd466073bf23b43111dbc68ccaf1064e737f3f9ffebfec9a6f5146af6a34b9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

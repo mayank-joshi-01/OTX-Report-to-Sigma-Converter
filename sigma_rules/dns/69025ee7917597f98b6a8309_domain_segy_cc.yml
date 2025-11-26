@@ -1,0 +1,31 @@
+title: OTX domain IOC - segy.cc
+id: d7d9772b-94f0-4752-b1fe-b8e5b373b787
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Major October 2025
+  Cyber Attacks Your SOC Can't Ignore' (69025ee7917597f98b6a8309).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://any.run/cybersecurity-blog/cyber-attacks-october-2025
+tags:
+- clickup
+- lockbit 5.0
+- phishing
+- google careers
+- cloud abuse
+- tykit
+- credential theft
+- figma
+- ransomware
+- lockbit
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: segy.cc
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

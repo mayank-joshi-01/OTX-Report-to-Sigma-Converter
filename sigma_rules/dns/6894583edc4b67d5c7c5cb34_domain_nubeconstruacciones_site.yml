@@ -1,0 +1,20 @@
+title: OTX domain IOC - nubeconstruacciones.site
+id: aafd56f0-fd73-46da-9e59-aad4d9444197
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nubeconstruacciones.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

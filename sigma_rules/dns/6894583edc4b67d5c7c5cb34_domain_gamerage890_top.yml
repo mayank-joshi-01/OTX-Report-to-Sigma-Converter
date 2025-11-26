@@ -1,0 +1,20 @@
+title: OTX domain IOC - gamerage890.top
+id: bcc8202f-5908-47d9-bf79-ac8b3a558216
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gamerage890.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

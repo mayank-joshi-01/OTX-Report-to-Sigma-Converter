@@ -1,0 +1,33 @@
+title: OTX domain IOC - cloudnetpr.com
+id: 29d12719-9f3a-42ae-b706-57a780fb220b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Proxyware Malware
+  Being Distributed on YouTube Video Download Site' (68a84f04510bd6992ad887e0).
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://asec.ahnlab.com/en/89787
+tags:
+- youtube
+- digitalpulse
+- task scheduler
+- bandwidth
+- downloader
+- c&c
+- nodejs
+- honeygain
+- proxyware
+- javascript
+- infatica
+- malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cloudnetpr.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

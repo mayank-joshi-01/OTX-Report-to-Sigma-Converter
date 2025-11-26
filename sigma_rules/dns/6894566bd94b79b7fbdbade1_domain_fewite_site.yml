@@ -1,0 +1,20 @@
+title: OTX domain IOC - fewite.site
+id: db8baba7-190f-4d7d-a957-bd7711f10f68
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fewite.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

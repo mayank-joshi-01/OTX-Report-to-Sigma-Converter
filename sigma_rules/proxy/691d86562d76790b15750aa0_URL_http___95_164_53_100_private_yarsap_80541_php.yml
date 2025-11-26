@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://95.164.53.100/private/yarsap_80541.php
+id: d6c07f85-2387-4793-9f23-15f5634fea43
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GPT Trade: Fake
+  Google Play Store drops BTMob Spyware and UASecurity Miner on Android Devices''
+  (691d86562d76790b15750aa0).'
+author: AlienVault
+date: '2025-11-19'
+references:
+- https://www.d3lab.net/gpt-trade-fake-google-play-store-drops-btmob-spyware-and-uasecurity-miner-on-android-devices/
+tags:
+- android
+- apk packer
+- dropper
+- btmob
+- uasecurity miner
+- fake app store
+- modular malware
+- social engineering
+- spyware
+- cryptocurrency miner
+- gpt trade
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://95.164.53.100/private/yarsap_80541.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

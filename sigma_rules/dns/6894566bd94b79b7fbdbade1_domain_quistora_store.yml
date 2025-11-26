@@ -1,0 +1,20 @@
+title: OTX domain IOC - quistora.store
+id: 73cdc033-21f2-4217-887d-cb8c64f534a0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: quistora.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

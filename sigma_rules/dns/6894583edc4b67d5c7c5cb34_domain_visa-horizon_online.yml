@@ -1,0 +1,20 @@
+title: OTX domain IOC - visa-horizon.online
+id: bc3176d1-67b9-4253-abc2-b0a5a9599177
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: visa-horizon.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

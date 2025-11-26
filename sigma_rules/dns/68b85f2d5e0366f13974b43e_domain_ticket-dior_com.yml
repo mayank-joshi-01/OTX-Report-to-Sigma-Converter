@@ -1,0 +1,29 @@
+title: OTX domain IOC - ticket-dior.com
+id: 3a616ab8-a045-4820-bd78-304531502381
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Google Salesforce
+  Breach: A Deep dive into the chain and extent of the compromise'' (68b85f2d5e0366f13974b43e).'
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.seqrite.com/blog/google-salesforce-breach-unc6040-threat-research/
+tags:
+- salesforce
+- vishing
+- tor
+- saas security
+- cloud security
+- data exfiltration
+- oauth
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ticket-dior.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

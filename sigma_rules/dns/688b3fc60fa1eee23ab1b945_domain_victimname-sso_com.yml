@@ -1,0 +1,28 @@
+title: OTX domain IOC - victimname-sso.com
+id: e9e35e6d-6aac-48d5-92b0-54ca67ed5a53
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Auto-Color Backdoor:
+  How a Stealthy Linux Intrusion Was Thwarted'' (688b3fc60fa1eee23ab1b945).'
+author: AlienVault
+date: '2025-07-31'
+references:
+- https://www.darktrace.com/blog/auto-color-backdoor-how-darktrace-thwarted-a-stealthy-linux-intrusion
+tags:
+- sap netweaver
+- linux
+- cve-2025-31324
+- backdoor
+- evasion
+- auto-color
+- persistence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: victimname-sso.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

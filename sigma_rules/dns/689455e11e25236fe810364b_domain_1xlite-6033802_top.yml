@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1xlite-6033802.top
+id: b063b54d-a0b8-4fa5-8a41-204a24fd3b78
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1xlite-6033802.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

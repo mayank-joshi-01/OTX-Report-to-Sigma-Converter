@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - 41f6932a56de7a4f0e4f53cc14f5a71bfca6439e0a1726885e77b41416eddcc3
+id: df8a60c5-83da-44ce-ad1d-217d9ded7b2e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClayRat: A New Android
+  Spyware Targeting Russia'' (68e8c12eb7ebbc52304b33bc).'
+author: AlienVault
+date: '2025-10-10'
+references:
+- https://zimperium.com/blog/clayrat-a-new-android-spyware-targeting-russia
+tags:
+- ClayRat
+- Spyware
+- phishing
+- SMS
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 41f6932a56de7a4f0e4f53cc14f5a71bfca6439e0a1726885e77b41416eddcc3
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

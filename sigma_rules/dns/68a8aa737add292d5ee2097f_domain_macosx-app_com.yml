@@ -1,0 +1,29 @@
+title: OTX domain IOC - macosx-app.com
+id: 5c580d55-d249-4464-b225-8cdcb7a22cb5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Clickfix on macOS:
+  AppleScript Stealer, Terminal Phishing, and C2 Infrastructure'' (68a8aa737add292d5ee2097f).'
+author: AlienVault
+date: '2025-08-22'
+references:
+- https://hunt.io/blog/macos-clickfix-applescript-terminal-phishing
+tags:
+- cryptowallet
+- macos
+- phishing
+- data theft
+- applescript
+- terminal commands
+- c2 infrastructure
+- clickfix
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: macosx-app.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

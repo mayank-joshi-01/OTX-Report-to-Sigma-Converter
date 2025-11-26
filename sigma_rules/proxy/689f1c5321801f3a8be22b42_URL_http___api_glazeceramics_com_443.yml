@@ -1,0 +1,30 @@
+title: OTX URL IOC - http://api.glazeceramics.com:443
+id: c7241e2d-45cc-4f01-967f-2c6385464777
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'CrossC2 Expanding
+  Cobalt Strike Beacon to Cross-Platform Attacks' (689f1c5321801f3a8be22b42).
+author: AlienVault
+date: '2025-08-15'
+references:
+- https://blogs.jpcert.or.jp/en/2025/08/crossc2.html
+tags:
+- readnimeloader
+- systembc
+- crossc2
+- ad
+- linux
+- macos
+- cobalt strike
+- psexec
+- odinldr
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://api.glazeceramics.com:443
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - 9195wbkuc.one
+id: d64e987e-3ed1-485e-bd11-4ced74244b5b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 9195wbkuc.one
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

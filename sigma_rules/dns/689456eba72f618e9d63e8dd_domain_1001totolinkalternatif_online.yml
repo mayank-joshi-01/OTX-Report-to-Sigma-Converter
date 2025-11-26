@@ -1,0 +1,20 @@
+title: OTX domain IOC - 1001totolinkalternatif.online
+id: 25b2d4db-bb89-45ca-8a6e-b0a78b779bf8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 1001totolinkalternatif.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

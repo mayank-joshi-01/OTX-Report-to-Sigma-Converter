@@ -1,0 +1,20 @@
+title: OTX domain IOC - mqeoobaa07bc0fee.top
+id: 7690e062-3d75-4b8e-881b-66d82faaf602
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mqeoobaa07bc0fee.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - onemorething.site
+id: b021c396-c3ce-4d05-b736-f17e29d1316a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: onemorething.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

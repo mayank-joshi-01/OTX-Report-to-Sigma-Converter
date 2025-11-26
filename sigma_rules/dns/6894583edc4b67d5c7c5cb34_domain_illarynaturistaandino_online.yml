@@ -1,0 +1,20 @@
+title: OTX domain IOC - illarynaturistaandino.online
+id: 761f3f49-59a5-4f14-b1ef-210e0338db2d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: illarynaturistaandino.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

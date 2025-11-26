@@ -1,0 +1,20 @@
+title: OTX domain IOC - 0jctsadu9j.site
+id: 301a9e80-fb36-432c-9d2b-0d8ea8170f94
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 0jctsadu9j.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

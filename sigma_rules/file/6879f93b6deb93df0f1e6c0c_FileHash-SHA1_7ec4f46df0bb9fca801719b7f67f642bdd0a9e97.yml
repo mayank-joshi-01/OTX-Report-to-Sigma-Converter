@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA1 IOC - 7ec4f46df0bb9fca801719b7f67f642bdd0a9e97
+id: 55518e17-8b3f-44ba-9f35-3a5a588182d8
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Chinese Mobile Forensic
+  Tooling Discovered' (6879f93b6deb93df0f1e6c0c).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://www.lookout.com/threat-intelligence/article/massistant-chinese-mobile-forensics
+tags:
+- travel security
+- law enforcement
+- data collection
+- mobile forensics
+- mfsocket
+- surveillance
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 7ec4f46df0bb9fca801719b7f67f642bdd0a9e97
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

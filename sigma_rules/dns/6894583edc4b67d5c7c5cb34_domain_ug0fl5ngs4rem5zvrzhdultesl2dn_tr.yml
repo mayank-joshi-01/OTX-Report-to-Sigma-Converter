@@ -1,0 +1,20 @@
+title: OTX domain IOC - ug0fl5ngs4rem5zvrzhdultesl2dn.tr
+id: a7092d0d-1cd5-40f1-8bd3-e616bee9d57b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ug0fl5ngs4rem5zvrzhdultesl2dn.tr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

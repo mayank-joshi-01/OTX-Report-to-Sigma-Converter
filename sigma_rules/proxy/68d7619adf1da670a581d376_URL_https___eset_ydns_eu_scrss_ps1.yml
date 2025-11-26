@@ -1,0 +1,33 @@
+title: OTX URL IOC - https://eset.ydns.eu/scrss.ps1
+id: be26ce49-f424-45b7-815c-43e38a732093
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Gamaredon X Turla
+  collaboration' (68d7619adf1da670a581d376).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.welivesecurity.com/en/eset-research/gamaredon-x-turla-collab/
+tags:
+- pterographin
+- pteroodd
+- pteroeffigy
+- pterostew
+- backdoor
+- ukraine
+- pteropaste
+- apt
+- collaboration
+- kazuar
+- fsb
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://eset.ydns.eu/scrss.ps1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

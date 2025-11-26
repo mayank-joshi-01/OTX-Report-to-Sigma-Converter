@@ -1,0 +1,20 @@
+title: OTX domain IOC - home-improvement-ideas.site
+id: 631f6eed-c6f8-43f4-84a4-1b7721ec2cf4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: home-improvement-ideas.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

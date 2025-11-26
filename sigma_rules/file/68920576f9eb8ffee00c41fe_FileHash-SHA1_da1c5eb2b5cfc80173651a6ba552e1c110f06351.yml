@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - da1c5eb2b5cfc80173651a6ba552e1c110f06351
+id: 483e3164-de95-4045-8c06-40077da9c6f7
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Smart Contract Scams
+  | Ethereum Drainers Pose as Trading Bots to Steal Crypto' (68920576f9eb8ffee00c41fe).
+author: AlienVault
+date: '2025-08-05'
+references:
+- https://www.sentinelone.com/labs/smart-contract-scams-ethereum-drainers-pose-as-trading-bots-to-steal-crypto/
+tags:
+- cryptocurrency
+- solidity
+- obfuscation
+- mev bot
+- smart contract
+- scam
+- ethereum
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: da1c5eb2b5cfc80173651a6ba552e1c110f06351
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

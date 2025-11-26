@@ -1,0 +1,32 @@
+title: OTX hostname IOC - mono2024.kozow.com
+id: 75710bf7-31e4-4ebd-bedb-753dd361061a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'TAG-144's Persistent
+  Grip on South American Organizations' (68add0f60282b650edbd7169).
+author: AlienVault
+date: '2025-08-26'
+references:
+- https://www.recordedfuture.com/research/tag-144s-persistent-grip-on-south-american-organizations
+tags:
+- limerat
+- dcrat
+- asyncrat
+- south america
+- xworm
+- bitrat
+- quasarrat
+- remcos rat
+- blotchyquasar
+- njrat
+- TAG-144
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mono2024.kozow.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

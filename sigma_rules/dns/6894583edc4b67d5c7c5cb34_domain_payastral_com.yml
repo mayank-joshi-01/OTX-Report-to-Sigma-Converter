@@ -1,0 +1,20 @@
+title: OTX domain IOC - payastral.com
+id: 5b2271a7-8357-41a8-b954-b57791be6d03
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: payastral.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

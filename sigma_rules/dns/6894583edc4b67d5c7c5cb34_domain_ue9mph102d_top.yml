@@ -1,0 +1,20 @@
+title: OTX domain IOC - ue9mph102d.top
+id: 3f6e86b2-8715-43dc-bc7e-99f363c466fc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ue9mph102d.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

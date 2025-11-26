@@ -1,0 +1,25 @@
+title: OTX domain IOC - kkmi3.top
+id: 8476518c-6b90-4988-a1a2-01216f6f6c86
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kkmi3.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

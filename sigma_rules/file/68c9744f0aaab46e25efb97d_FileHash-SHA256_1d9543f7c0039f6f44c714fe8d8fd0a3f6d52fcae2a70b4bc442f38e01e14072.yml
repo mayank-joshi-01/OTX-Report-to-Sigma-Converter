@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 1d9543f7c0039f6f44c714fe8d8fd0a3f6d52fcae2a70b4bc442f38e01e14072
+id: 318b620e-1577-4517-849c-68ad12c09371
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'FileFix in the wild!
+  New FileFix campaign goes beyond POC and leverages steganography' (68c9744f0aaab46e25efb97d).
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://www.acronis.com/en/tru/posts/filefix-in-the-wild-new-filefix-campaign-goes-beyond-poc-and-leverages-steganography/
+tags:
+- stealc
+- phishing
+- infostealer
+- obfuscation
+- filefix
+- social engineering
+- multistage payload
+- steganography
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1d9543f7c0039f6f44c714fe8d8fd0a3f6d52fcae2a70b4bc442f38e01e14072
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

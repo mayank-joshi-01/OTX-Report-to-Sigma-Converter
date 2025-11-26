@@ -1,0 +1,20 @@
+title: OTX hostname IOC - otp-silent-cn.heytapdownload.com.ctdns.cn
+id: 4c20c779-e332-481f-9bbd-51c4f4bd4ea0
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: otp-silent-cn.heytapdownload.com.ctdns.cn
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - intlin.site
+id: bb1101e5-d470-4338-9fbc-0eb8e1f5de04
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: intlin.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

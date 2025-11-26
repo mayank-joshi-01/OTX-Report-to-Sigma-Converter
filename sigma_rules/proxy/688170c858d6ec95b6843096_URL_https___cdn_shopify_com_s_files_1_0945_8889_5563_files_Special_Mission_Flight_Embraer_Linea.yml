@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://cdn.shopify.com/s/files/1/0945/8889/5563/files/Special_Mission_Flight_Embraer_Lineage_1000E.pdf?v=1750688015
+id: e5943b40-2f79-45dc-9f54-df910bacfec2
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A Special Mission
+  to Nowhere' (688170c858d6ec95b6843096).
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.fortinet.com/blog/threat-research/a-special-mission-to-nowhere
+tags:
+- middle east crisis
+- aviation
+- identity theft
+- financial fraud
+- evacuation
+- scam
+- embraer
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://cdn.shopify.com/s/files/1/0945/8889/5563/files/Special_Mission_Flight_Embraer_Lineage_1000E.pdf?v=1750688015
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

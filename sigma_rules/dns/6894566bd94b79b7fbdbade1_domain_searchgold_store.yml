@@ -1,0 +1,20 @@
+title: OTX domain IOC - searchgold.store
+id: b332f9ad-7558-4fc7-b298-bc0ece11ffd1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: searchgold.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX domain IOC - mailbox3-inbox1-bd.com
+id: eeba11e9-eef8-4a63-b077-324b975abf60
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mailbox3-inbox1-bd.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

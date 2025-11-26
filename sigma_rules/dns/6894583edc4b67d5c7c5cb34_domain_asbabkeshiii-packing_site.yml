@@ -1,0 +1,20 @@
+title: OTX domain IOC - asbabkeshiii-packing.site
+id: 5659207b-0502-48f7-8ec9-9009c8af0f8b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: asbabkeshiii-packing.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

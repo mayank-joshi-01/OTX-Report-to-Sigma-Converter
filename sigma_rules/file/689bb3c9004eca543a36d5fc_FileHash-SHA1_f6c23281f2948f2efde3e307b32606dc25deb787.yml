@@ -1,0 +1,32 @@
+title: OTX FileHash-SHA1 IOC - f6c23281f2948f2efde3e307b32606dc25deb787
+id: 506499dd-ffd2-47d8-91ed-1559e773903b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malvertising campaign
+  leads to PS1Bot, a multi-stage malware framework' (689bb3c9004eca543a36d5fc).
+author: AlienVault
+date: '2025-08-12'
+references:
+- https://blog.talosintelligence.com/ps1bot-malvertising-campaign/
+tags:
+- information stealer
+- ahk bot
+- cryptocurrency
+- multi-stage
+- ps1bot
+- powershell
+- in-memory execution
+- malvertising
+- c#
+- modular
+- skitnet
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: f6c23281f2948f2efde3e307b32606dc25deb787
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

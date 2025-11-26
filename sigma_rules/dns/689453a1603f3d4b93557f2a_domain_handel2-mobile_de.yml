@@ -1,0 +1,20 @@
+title: OTX domain IOC - handel2-mobile.de
+id: 94f214d3-1bb8-4a2c-8f40-e1923ef07e32
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: handel2-mobile.de
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

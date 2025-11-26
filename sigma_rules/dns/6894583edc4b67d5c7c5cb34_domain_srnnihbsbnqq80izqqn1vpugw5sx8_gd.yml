@@ -1,0 +1,20 @@
+title: OTX domain IOC - srnnihbsbnqq80izqqn1vpugw5sx8.gd
+id: 412fc81b-ef23-4fce-b4c3-3a64754e927b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: srnnihbsbnqq80izqqn1vpugw5sx8.gd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

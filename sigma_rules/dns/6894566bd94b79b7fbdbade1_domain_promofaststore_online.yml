@@ -1,0 +1,20 @@
+title: OTX domain IOC - promofaststore.online
+id: 51c52b6b-dece-428a-9a07-91a2ed37e155
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: promofaststore.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

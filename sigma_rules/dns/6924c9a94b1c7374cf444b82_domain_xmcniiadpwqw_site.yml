@@ -1,0 +1,29 @@
+title: OTX domain IOC - xmcniiadpwqw.site
+id: 28673549-979b-4d1c-9db1-66f3e303ebfe
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''ClickFix Gets Creative:
+  Malware Buried in Images'' (6924c9a94b1c7374cf444b82).'
+author: AlienVault
+date: '2025-11-24'
+references:
+- https://www.huntress.com/blog/clickfix-malware-buried-in-images
+tags:
+- multi-stage
+- social engineering
+- steganography
+- infostealer
+- rhadamanthys
+- lummac2
+- clickfix
+- windows update
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xmcniiadpwqw.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - e33ecds.store
+id: aa8626f6-9897-4571-b0c1-30069ee028bc
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: e33ecds.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

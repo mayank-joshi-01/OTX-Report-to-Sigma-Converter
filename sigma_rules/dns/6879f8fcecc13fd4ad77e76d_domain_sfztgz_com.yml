@@ -1,0 +1,25 @@
+title: OTX domain IOC - sfztgz.com
+id: 1f9645ac-2e20-4cda-b12f-fb4d643218a9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Chinese Malware
+  Delivery Domains: Part III'' (6879f8fcecc13fd4ad77e76d).'
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://dti.domaintools.com/chinese-malware-delivery-domains-part-iii
+tags:
+- fake-updates
+- windows
+- phishing
+- cryptocurrency
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sfztgz.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

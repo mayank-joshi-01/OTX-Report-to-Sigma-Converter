@@ -1,0 +1,20 @@
+title: OTX domain IOC - uqxrzf8a4a120f40.top
+id: ed6b67c7-f30f-4188-92f9-6aacf4225a6c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: uqxrzf8a4a120f40.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

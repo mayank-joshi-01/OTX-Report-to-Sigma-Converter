@@ -1,0 +1,20 @@
+title: OTX domain IOC - us1.site
+id: c59cd523-55ee-48a6-b001-c5d402c05325
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: us1.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

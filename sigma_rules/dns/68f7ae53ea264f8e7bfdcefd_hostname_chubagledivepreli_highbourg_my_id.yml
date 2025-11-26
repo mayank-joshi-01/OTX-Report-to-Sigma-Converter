@@ -1,0 +1,28 @@
+title: OTX hostname IOC - chubagledivepreli.highbourg.my.id
+id: 32aeb522-7c25-4779-80b2-f653badb58ef
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft Branding
+  Used in New Tech Support Scam' (68f7ae53ea264f8e7bfdcefd).
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/weaponized-trust-microsoft-s-logo-as-a-gateway-to-tech-support-scams
+tags:
+- microsoft impersonation
+- browser manipulation
+- tech support scam
+- payment lure
+- social engineering
+- phishing
+- fake captcha
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: chubagledivepreli.highbourg.my.id
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

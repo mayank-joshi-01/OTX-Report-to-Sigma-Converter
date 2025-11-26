@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://webhook.site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7
+id: b0c430ea-e5da-47c1-b64a-77d0782fe635
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '"Shai-Hulud" Worm
+  Compromises npm Ecosystem in Supply Chain Attack' (68cb5d39b043cd92b8527cff).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://unit42.paloaltonetworks.com/wp-content/uploads/2025/09/06_Malware_Category_1920x900.jpg
+- https://unit42.paloaltonetworks.com/npm-supply-chain-attack/
+tags:
+- credential harvesting
+- phishing
+- supply chain
+- shai-hulud
+- worm
+- npm
+- self-replicating
+- javascript
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://webhook.site/bb8ca5f6-4175-45d2-b042-fc9ebb8170b7
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

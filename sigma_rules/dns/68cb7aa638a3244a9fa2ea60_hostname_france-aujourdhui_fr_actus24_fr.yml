@@ -1,0 +1,29 @@
+title: OTX hostname IOC - france-aujourdhui.fr.actus24.fr
+id: e968cc9a-b249-45e0-af3d-5c5f79351521
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Deepens Its Playbook
+  with New Websites and Targets' (68cb7aa638a3244a9fa2ea60).
+author: AlienVault
+date: '2025-09-18'
+references:
+- https://www.recordedfuture.com/research/copycop-deepens-its-playbook-with-new-websites-and-targets
+tags:
+- elections
+- deepfakes
+- ai-generated content
+- ukraine
+- political fragmentation
+- social media
+- disinformation
+- russian influence
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: france-aujourdhui.fr.actus24.fr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

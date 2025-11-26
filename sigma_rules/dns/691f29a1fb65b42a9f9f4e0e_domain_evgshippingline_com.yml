@@ -1,0 +1,29 @@
+title: OTX domain IOC - evgshippingline.com
+id: eb393399-371b-462e-a9c4-7c5df8fdb378
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'October 2025 Infostealer
+  Trend Report' (691f29a1fb65b42a9f9f4e0e).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://asec.ahnlab.com/en/91062
+tags:
+- seo poisoning
+- rhadamanthys
+- acrstealer
+- lummac2
+- infostealer
+- loader
+- phishing
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: evgshippingline.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

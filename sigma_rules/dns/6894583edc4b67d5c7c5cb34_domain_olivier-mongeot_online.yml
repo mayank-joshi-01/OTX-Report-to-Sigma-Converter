@@ -1,0 +1,20 @@
+title: OTX domain IOC - olivier-mongeot.online
+id: e561d851-9247-4cf1-8ada-adc66e11c447
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: olivier-mongeot.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

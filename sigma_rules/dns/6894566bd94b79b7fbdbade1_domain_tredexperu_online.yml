@@ -1,0 +1,20 @@
+title: OTX domain IOC - tredexperu.online
+id: 20ba4b0c-058b-407f-b221-5ca0275a8f22
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tredexperu.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

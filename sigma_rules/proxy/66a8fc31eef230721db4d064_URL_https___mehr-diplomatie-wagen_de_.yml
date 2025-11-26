@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://mehr-diplomatie-wagen.de/
+id: e30a5b1e-2ea3-47f0-9b49-0f6cccd3350f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://mehr-diplomatie-wagen.de/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

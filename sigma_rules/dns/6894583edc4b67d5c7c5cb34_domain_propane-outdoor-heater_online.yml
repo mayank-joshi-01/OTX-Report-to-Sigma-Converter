@@ -1,0 +1,20 @@
+title: OTX domain IOC - propane-outdoor-heater.online
+id: c6e95be7-13b8-4ac9-b30c-4d043dcc07d8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: propane-outdoor-heater.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

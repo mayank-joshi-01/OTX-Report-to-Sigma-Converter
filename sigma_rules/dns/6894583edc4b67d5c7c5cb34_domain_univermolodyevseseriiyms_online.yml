@@ -1,0 +1,20 @@
+title: OTX domain IOC - univermolodyevseseriiyms.online
+id: 7ca883d8-7fba-496c-99ee-a119d72d41c9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: univermolodyevseseriiyms.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - udllnjmbtdeqqxq7vqloizisn7gs3.dz
+id: eaa5b4c3-12d0-4d90-a403-0a7ffc89ebce
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: udllnjmbtdeqqxq7vqloizisn7gs3.dz
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

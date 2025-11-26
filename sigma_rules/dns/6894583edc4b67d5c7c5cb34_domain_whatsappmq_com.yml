@@ -1,0 +1,20 @@
+title: OTX domain IOC - whatsappmq.com
+id: 7295fc8b-51e4-4750-bf40-b7aaa5d5941a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whatsappmq.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

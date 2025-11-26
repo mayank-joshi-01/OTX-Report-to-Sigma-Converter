@@ -1,0 +1,20 @@
+title: OTX domain IOC - pqjmiokxp.work
+id: 292b56fa-0517-4ad2-9a29-d19d39f5cab5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pqjmiokxp.work
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

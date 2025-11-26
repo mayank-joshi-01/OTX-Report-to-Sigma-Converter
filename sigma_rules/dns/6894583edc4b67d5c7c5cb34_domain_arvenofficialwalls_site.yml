@@ -1,0 +1,20 @@
+title: OTX domain IOC - arvenofficialwalls.site
+id: 78b7a9dd-b582-4dc5-ad4c-f07811d347f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: arvenofficialwalls.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

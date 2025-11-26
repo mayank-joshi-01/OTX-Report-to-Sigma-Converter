@@ -1,0 +1,20 @@
+title: OTX domain IOC - tiger1688sx.online
+id: 8dc459bd-94a9-4fc1-9e80-9db108991ba1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tiger1688sx.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

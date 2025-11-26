@@ -1,0 +1,31 @@
+title: OTX FileHash-SHA256 IOC - c74897b1e986e2876873abb3b5069bf1b103667f7f0e6b4581fbda3fd647a74a
+id: 0f86d4c3-d62d-4254-843d-db6260821be0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Velociraptor leveraged
+  in ransomware attacks' (68e7ccd21eb0955f048bcba6).
+author: AlienVault
+date: '2025-10-09'
+references:
+- https://blog.talosintelligence.com/velociraptor-leveraged-in-ransomware-attacks
+tags:
+- windows
+- data-exfiltration
+- cve-2025-6264
+- warlock
+- babuk
+- privilege-escalation
+- lockbit
+- velociraptor
+- ransomware
+- vmware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: c74897b1e986e2876873abb3b5069bf1b103667f7f0e6b4581fbda3fd647a74a
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

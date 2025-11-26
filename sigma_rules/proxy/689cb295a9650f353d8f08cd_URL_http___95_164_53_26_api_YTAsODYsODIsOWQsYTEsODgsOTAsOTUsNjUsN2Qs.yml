@@ -1,0 +1,33 @@
+title: OTX URL IOC - http://95.164.53.26/api/YTAsODYsODIsOWQsYTEsODgsOTAsOTUsNjUsN2Qs
+id: 5316e47a-5e3f-4ba7-a166-2e2dafddb207
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Distribution of SmartLoader
+  Malware via Github Repository Disguised as a Legitimate Project' (689cb295a9650f353d8f08cd).
+author: AlienVault
+date: '2025-08-13'
+references:
+- https://asec.ahnlab.com/en/89551/
+tags:
+- smartloader
+- game-cheats
+- lumma stealer
+- github
+- c2
+- obfuscation
+- software-cracks
+- luascript
+- redline
+- persistence
+- rhadamanthys
+- infostealer
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://95.164.53.26/api/YTAsODYsODIsOWQsYTEsODgsOTAsOTUsNjUsN2Qs
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

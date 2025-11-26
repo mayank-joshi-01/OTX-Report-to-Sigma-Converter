@@ -1,0 +1,20 @@
+title: OTX domain IOC - puremindvit.site
+id: 5a77a5b3-0dcd-432b-80c0-2500840512ad
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: puremindvit.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

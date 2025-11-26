@@ -1,0 +1,28 @@
+title: OTX domain IOC - redirects.ca
+id: d9ff79f8-1109-488c-9791-3d3b5598ef18
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Homograph Illusion:
+  Not Everything Is As It Seems'' (689627920ecf51e98bcdf15f).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://unit42.paloaltonetworks.com/homograph-attacks/
+tags:
+- email security
+- character substitution
+- phishing
+- homograph attack
+- social engineering
+- unicode
+- brand impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: redirects.ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - ftw8hb.top
+id: 5a90eb52-d3b6-4249-b4f6-c8d81cc985f2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ftw8hb.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

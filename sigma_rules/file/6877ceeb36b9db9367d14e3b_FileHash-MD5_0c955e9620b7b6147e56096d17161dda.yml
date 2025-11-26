@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 0c955e9620b7b6147e56096d17161dda
+id: 6b15d2ca-9c93-4a28-a64b-362295000559
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'June 2025 Threat Trend
+  Report on Ransomware' (6877ceeb36b9db9367d14e3b).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://asec.ahnlab.com/en/89032
+tags:
+- affected companies
+- dls
+- raas
+- devman
+- threat trends
+- safepay
+- md5 hashes
+- ransomware
+- statistics
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 0c955e9620b7b6147e56096d17161dda
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

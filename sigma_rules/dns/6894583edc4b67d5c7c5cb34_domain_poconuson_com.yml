@@ -1,0 +1,20 @@
+title: OTX domain IOC - poconuson.com
+id: b018ff9d-0743-4137-ba11-61f11c089675
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: poconuson.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,31 @@
+title: OTX URL IOC - https://brproxy.868id.com/index_base64.php
+id: c6114e7e-49f5-4362-9fbd-5119ba7aad97
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''GhostRedirector
+  poisons Windows servers: Backdoors with a side of Potatoes'' (68ba2380ae861d314e902af1).'
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.welivesecurity.com/en/eset-research/ghostredirector-poisons-windows-servers-backdoors-side-potatoes
+tags:
+- zunput
+- comdai
+- china-aligned
+- seo fraud
+- windows servers
+- privilege escalation
+- rungan
+- iis module
+- backdoor
+- gamshen
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://brproxy.868id.com/index_base64.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

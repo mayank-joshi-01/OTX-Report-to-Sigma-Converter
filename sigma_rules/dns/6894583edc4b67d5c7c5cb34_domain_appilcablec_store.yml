@@ -1,0 +1,20 @@
+title: OTX domain IOC - appilcablec.store
+id: cd5d515f-0def-49ef-b8f3-9880b0c5eb7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: appilcablec.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

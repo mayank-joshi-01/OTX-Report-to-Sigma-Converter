@@ -1,0 +1,20 @@
+title: OTX domain IOC - tajirmelintir.site
+id: 4c19706b-02f1-43cc-b35d-ea7d6290d98e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tajirmelintir.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - digitalcoin.site
+id: a2a07be9-c924-48c8-bb08-f05f8018e710
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: digitalcoin.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - dental-insurance-kyi.click
+id: 813c9de9-b4ea-4727-a877-522374d68d1c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dental-insurance-kyi.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

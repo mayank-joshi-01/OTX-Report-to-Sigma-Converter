@@ -1,0 +1,28 @@
+title: OTX domain IOC - gatewaytorussia.ru
+id: d68ed84e-5cef-4eee-bd07-b741eccd5b74
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Russian Influence
+  Assets Converge on Moldovan Elections' (68b8723ba4c742df7daf8d01).
+author: AlienVault
+date: '2025-09-03'
+references:
+- https://www.recordedfuture.com/research/russian-influence-assets-converge-on-moldovan-elections
+tags:
+- elections
+- moldova
+- social media manipulation
+- influence operations
+- eu integration
+- disinformation
+- russia
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gatewaytorussia.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

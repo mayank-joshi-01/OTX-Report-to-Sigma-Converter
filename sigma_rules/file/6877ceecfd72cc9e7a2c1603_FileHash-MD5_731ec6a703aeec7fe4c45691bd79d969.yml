@@ -1,0 +1,31 @@
+title: OTX FileHash-MD5 IOC - 731ec6a703aeec7fe4c45691bd79d969
+id: 12440b1c-974a-4f2a-b4ae-ac84c662a830
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'June 2025 Security
+  Issues in Korean & Global Financial Sector' (6877ceecfd72cc9e7a2c1603).
+author: AlienVault
+date: '2025-07-16'
+references:
+- https://asec.ahnlab.com/en/88936
+tags:
+- financial sector
+- phishing
+- dark web
+- database leak
+- digital payments
+- everest
+- account takeover
+- ransomware
+- cybercrime forums
+- data breach
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 731ec6a703aeec7fe4c45691bd79d969
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

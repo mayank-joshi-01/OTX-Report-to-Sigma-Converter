@@ -1,0 +1,27 @@
+title: OTX hostname IOC - mrasis.n-e.kr
+id: 5c412707-ec95-40bb-8139-270f8a99f83c
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Analysis of APT-C-55
+  (Kimsuky) Organization's HappyDoor Backdoor Attack Based on VMP Strong Shell' (6870094726b379cd976c869b).
+author: AlienVault
+date: '2025-07-10'
+references:
+- https://mp.weixin.qq.com/s/fDan8ihUQEAF5Kf_6fXATQ
+tags:
+- happydoor
+- information theft
+- backdoor
+- vmp
+- multi-stage attack
+- apt
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mrasis.n-e.kr
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

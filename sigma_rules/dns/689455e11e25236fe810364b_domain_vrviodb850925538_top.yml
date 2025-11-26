@@ -1,0 +1,20 @@
+title: OTX domain IOC - vrviodb850925538.top
+id: 57eb1f24-dd87-4f3f-8430-87d44359a7b7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vrviodb850925538.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

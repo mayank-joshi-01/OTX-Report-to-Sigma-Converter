@@ -1,0 +1,28 @@
+title: OTX domain IOC - faster.mo
+id: 6198296b-149b-4bde-9f73-31d0f801ceaa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''CryptoJacking is
+  dead: long live CryptoJacking'' (68a5a893d0e6cf5fee6c45a2).'
+author: AlienVault
+date: '2025-08-20'
+references:
+- https://cside.dev/blog/cryptojacking-is-dead-long-live-cryptojacking
+tags:
+- cryptojacking
+- webassembly
+- monero
+- stealth mining
+- web workers
+- obfuscation
+- websockets
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: faster.mo
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

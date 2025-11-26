@@ -1,0 +1,20 @@
+title: OTX domain IOC - qualitycare.site
+id: bf9ec976-37c1-4756-ae88-5c3ba54a42df
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qualitycare.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

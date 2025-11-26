@@ -1,0 +1,25 @@
+title: OTX FileHash-SHA256 IOC - b81febd19a457e6814d7e28d68742ae25fc4cf6472289a481e262048e9d8eee4
+id: 436e3fd6-ba6e-4f84-a249-2258b7c212fe
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'SpyNote Malware Analysis'
+  (68af30b824b7695dad2b9796).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://dti.domaintools.com/spynote-malware-part-2
+tags:
+- malware delivery
+- apk
+- android
+- spynote
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b81febd19a457e6814d7e28d68742ae25fc4cf6472289a481e262048e9d8eee4
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - natilluz-co.store
+id: be36d05e-2d51-4327-8e97-61daec5a57bf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: natilluz-co.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

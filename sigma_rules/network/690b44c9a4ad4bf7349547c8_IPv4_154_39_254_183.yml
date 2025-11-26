@@ -1,0 +1,31 @@
+title: OTX IPv4 IOC - 154.39.254.183
+id: 8fbe1226-bbb3-4dff-bf00-a6370578fd2a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation Dragon
+  Breath (APT-Q-27): Dimensional Reduction Attack Against the Gambling Industry''
+  (690b44c9a4ad4bf7349547c8).'
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://www.ctfiot.com/40522.html
+tags:
+- telegram
+- miuuti group
+- ghost
+- gambling industry
+- msi installer
+- golden eye dog
+- southeast asia
+- watering hole
+- chinese communities
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 154.39.254.183
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

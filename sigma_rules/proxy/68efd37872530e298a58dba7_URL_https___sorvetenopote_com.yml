@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://sorvetenopote.com
+id: 00072c08-0809-45f3-a6a4-42239a62bec2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Maverick: a new
+  banking trojan abusing WhatsApp in a massive scale distribution'' (68efd37872530e298a58dba7).'
+author: AlienVault
+date: '2025-10-15'
+references:
+- https://securelist.com/maverick-banker-distributing-via-whatsapp/117715/
+tags:
+- fileless
+- maverick
+- coyote
+- ai-assisted
+- banking trojan
+- whatsapp
+- brazil
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://sorvetenopote.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

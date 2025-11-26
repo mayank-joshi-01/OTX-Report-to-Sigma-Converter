@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://blackout-news.de/aktuelles/einzelhandel-in-der-krise-drastische-umsatzeinbrueche-bremsen-wirtschaftswachstum/
+id: 9f4ad004-4aae-4c73-95c2-bc7875ed8086
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://blackout-news.de/aktuelles/einzelhandel-in-der-krise-drastische-umsatzeinbrueche-bremsen-wirtschaftswachstum/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

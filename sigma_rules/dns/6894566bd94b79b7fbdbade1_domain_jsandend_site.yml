@@ -1,0 +1,20 @@
+title: OTX domain IOC - jsandend.site
+id: 8350e32b-a0aa-42b2-8b4c-2bfbdada8860
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jsandend.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

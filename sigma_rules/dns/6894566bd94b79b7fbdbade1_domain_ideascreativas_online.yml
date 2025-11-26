@@ -1,0 +1,20 @@
+title: OTX domain IOC - ideascreativas.online
+id: 0d380d26-4778-41cc-887b-9b87b5f45ec4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ideascreativas.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

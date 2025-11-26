@@ -1,0 +1,20 @@
+title: OTX domain IOC - nbzghx87y2893ehwa98uy98e21e7q6t7e.shop
+id: 8b5a4356-2761-424c-a493-5fc4a66f5f3b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: nbzghx87y2893ehwa98uy98e21e7q6t7e.shop
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

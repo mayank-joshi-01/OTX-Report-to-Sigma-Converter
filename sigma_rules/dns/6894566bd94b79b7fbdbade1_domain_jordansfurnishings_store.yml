@@ -1,0 +1,20 @@
+title: OTX domain IOC - jordansfurnishings.store
+id: 6f68cec0-69c7-4f8e-a84d-f7614ed8ab12
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jordansfurnishings.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

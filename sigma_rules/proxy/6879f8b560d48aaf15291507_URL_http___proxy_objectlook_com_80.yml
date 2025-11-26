@@ -1,0 +1,27 @@
+title: OTX URL IOC - http://proxy.objectlook.com:80
+id: b60c4710-38b4-46f4-a597-351090ef4854
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Malware Identified
+  in Attacks Exploiting Ivanti Connect Secure Vulnerabilities' (6879f8b560d48aaf15291507).
+author: AlienVault
+date: '2025-07-18'
+references:
+- https://blogs.jpcert.or.jp/en/2025/07/ivanti_cs.html
+tags:
+- cobalt strike
+- fscan
+- cobalt strike beacon
+- ivanti connect secure
+- vshell
+- mdifyloader
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://proxy.objectlook.com:80
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

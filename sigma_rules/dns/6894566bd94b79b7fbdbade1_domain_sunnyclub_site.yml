@@ -1,0 +1,20 @@
+title: OTX domain IOC - sunnyclub.site
+id: 991644ba-6937-432d-865f-42e73d6189f5
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sunnyclub.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

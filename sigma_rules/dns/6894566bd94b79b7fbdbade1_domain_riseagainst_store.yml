@@ -1,0 +1,20 @@
+title: OTX domain IOC - riseagainst.store
+id: f566f45f-6810-4311-a431-8c20eb42aba4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: riseagainst.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

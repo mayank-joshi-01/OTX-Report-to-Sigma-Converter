@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 65a08e14ca41bfedf483d1ada74844a9
+id: 2d897bf7-4058-49c6-a14a-2b9132015fbb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UNC Cluster Targeting
+  South Asian Countries' (68af30b96e802c733e0c8b8a).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://strikeready.com/blog/apt-android-phishing-microsoft
+tags:
+- android malware
+- rafel rat
+- information stealer
+- credential theft
+- phishing
+- military targets
+- south asian apt
+- remote access
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 65a08e14ca41bfedf483d1ada74844a9
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

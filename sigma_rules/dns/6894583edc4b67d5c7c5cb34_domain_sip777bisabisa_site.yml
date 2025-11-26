@@ -1,0 +1,20 @@
+title: OTX domain IOC - sip777bisabisa.site
+id: f888b7a9-4e73-483e-8144-a967dddd24a3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sip777bisabisa.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

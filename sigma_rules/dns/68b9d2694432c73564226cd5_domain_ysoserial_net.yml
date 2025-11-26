@@ -1,0 +1,33 @@
+title: OTX domain IOC - ysoserial.net
+id: 73ce7080-5792-4fef-b074-1c830a7afc86
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'ViewState Deserialization
+  Zero-Day Vulnerability in Sitecore Products (CVE-2025-53690)' (68b9d2694432c73564226cd5).
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/viewstate-deserialization-zero-day-vulnerability
+tags:
+- privilege escalation
+- cve-2025-53690
+- sitecore
+- dwagent
+- lateral movement
+- deserialization
+- reconnaissance
+- weepsteel
+- sharphound
+- remote code execution
+- earthworm
+- viewstate
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ysoserial.net
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

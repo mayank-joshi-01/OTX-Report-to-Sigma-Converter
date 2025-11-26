@@ -1,0 +1,29 @@
+title: OTX domain IOC - infranova.store
+id: 70559d4e-27fa-4946-80b0-7a41a09b9988
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse '330 custom email domains,
+  and what this tells us about how attackers build infrastructure for fake account
+  creation' (691ceae73fedb4c4eb5d0c5a).
+author: AlienVault
+date: '2025-11-18'
+references:
+- https://securityboulevard.com/2025/11/330-custom-email-domains-and-what-this-tells-us-about-how-attackers-build-infrastructure-for-fake-account-creation/
+tags:
+- anti-abuse
+- fake accounts
+- bot detection
+- domain registration
+- fingerprinting
+- email infrastructure
+- behavioral analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: infranova.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

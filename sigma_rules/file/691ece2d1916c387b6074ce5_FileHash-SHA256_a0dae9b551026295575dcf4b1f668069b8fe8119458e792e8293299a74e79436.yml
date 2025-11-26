@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - a0dae9b551026295575dcf4b1f668069b8fe8119458e792e8293299a74e79436
+id: 5897613e-70ea-4664-a0ca-6de289dd0898
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Cooking up trouble:
+  How TamperedChef uses signed apps to deliver stealthy payloads'' (691ece2d1916c387b6074ce5).'
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.acronis.com/en/tru/posts/cooking-up-trouble-how-tamperedchef-uses-signed-apps-to-deliver-stealthy-payloads
+tags:
+- malvertising
+- javascript
+- persistence
+- shell companies
+- code-signing
+- seo
+- remote access
+- social engineering
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: a0dae9b551026295575dcf4b1f668069b8fe8119458e792e8293299a74e79436
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

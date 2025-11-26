@@ -1,0 +1,20 @@
+title: OTX domain IOC - exchangezone.online
+id: b2cbbaf8-0e6a-42cb-96d8-3597b615dc35
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: exchangezone.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

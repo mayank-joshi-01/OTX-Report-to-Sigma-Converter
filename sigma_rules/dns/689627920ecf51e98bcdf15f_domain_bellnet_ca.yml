@@ -1,0 +1,28 @@
+title: OTX domain IOC - bellnet.ca
+id: f869451e-da0e-4e20-8121-dad0a946662b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Homograph Illusion:
+  Not Everything Is As It Seems'' (689627920ecf51e98bcdf15f).'
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://unit42.paloaltonetworks.com/homograph-attacks/
+tags:
+- email security
+- character substitution
+- phishing
+- homograph attack
+- social engineering
+- unicode
+- brand impersonation
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bellnet.ca
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

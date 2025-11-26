@@ -1,0 +1,25 @@
+title: OTX domain IOC - dslbay.com
+id: e5b91ee4-f0b6-4559-ba34-14934e8fb7d1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Belarus-Linked DSLRoot
+  Proxy Network Deploys Hardware in U.S. Residences, Including Military Homes' (68af30b52ebb20fed2ec85f7).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://infrawatch.app/blog/dslroot-us-proxy-investigation
+tags:
+- residential proxy
+- anonymous routing
+- u.s. infrastructure
+- virtual credit cards
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dslbay.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

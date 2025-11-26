@@ -1,0 +1,20 @@
+title: OTX domain IOC - kra40at-3.online
+id: 9b560294-26a8-4352-b954-ec57d55e19c1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: kra40at-3.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

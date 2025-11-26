@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA256 IOC - 29c60e17d43f7268431929836c1b72df60d3b7643ed177f858a9d9bbab207783
+id: 4276033b-0004-4731-8717-a3efc84536a5
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'GHOSTGRAB ANDROID
+  MALWARE' (6901f157575993da349e2590).
+author: AlienVault
+date: '2025-10-29'
+references:
+- https://www.cyfirma.com/research/ghostgrab-android-malware
+tags:
+- ghostgrab
+- cryptocurrency mining
+- banking trojan
+- sms interception
+- android
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 29c60e17d43f7268431929836c1b72df60d3b7643ed177f858a9d9bbab207783
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

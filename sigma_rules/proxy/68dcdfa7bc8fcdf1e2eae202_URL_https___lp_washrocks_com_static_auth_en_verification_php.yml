@@ -1,0 +1,30 @@
+title: OTX URL IOC - https://lp.washrocks.com/static/auth/en/verification.php
+id: 3e9a1c55-c8b2-4e6b-a82d-cb4f1004d6fa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Silent Smishing:
+  The Hidden Abuse of Cellular Router APIs'' (68dcdfa7bc8fcdf1e2eae202).'
+author: AlienVault
+date: '2025-10-01'
+references:
+- https://blog.sekoia.io/silent-smishing-the-hidden-abuse-of-cellular-router-apis/
+tags:
+- belgium
+- csam
+- cellular routers
+- smishing
+- phishing
+- ebox
+- vulnerability
+- cve-2023-43261
+- api exploitation
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://lp.washrocks.com/static/auth/en/verification.php
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

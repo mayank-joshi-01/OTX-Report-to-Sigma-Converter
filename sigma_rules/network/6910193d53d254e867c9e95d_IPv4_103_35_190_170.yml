@@ -1,0 +1,37 @@
+title: OTX IPv4 IOC - 103.35.190.170
+id: 5ab30828-7426-4070-968a-6d0472f7db23
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'From primitive crypto
+  theft to sophisticated AI-based deception' (6910193d53d254e867c9e95d).
+author: AlienVault
+date: '2025-11-09'
+references:
+- https://www.welivesecurity.com/en/eset-research/deceptivedevelopment-from-primitive-crypto-theft-to-sophisticated-ai-based-deception/
+tags:
+- ottercookie
+- weaselstore
+- akdoortea
+- job scams
+- invisibleferret
+- north korea
+- social engineering
+- it worker fraud
+- identity theft
+- beavertail
+- postnaptea
+- tsunamikit
+- tropidoor
+- cryptocurrency
+- ai-based deception
+- malware
+- otx
+- threat-intel
+logsource:
+  category: network
+detection:
+  selection:
+    dst_ip: 103.35.190.170
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

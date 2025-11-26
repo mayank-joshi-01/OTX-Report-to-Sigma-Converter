@@ -1,0 +1,20 @@
+title: OTX domain IOC - brightmorningstar.online
+id: 96e04276-2600-4845-a2f1-25815905c980
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: brightmorningstar.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

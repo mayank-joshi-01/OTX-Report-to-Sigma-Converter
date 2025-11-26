@@ -1,0 +1,20 @@
+title: OTX domain IOC - dosya-indirici.online
+id: 7861edaf-88d5-4389-84ab-343889793123
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: dosya-indirici.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

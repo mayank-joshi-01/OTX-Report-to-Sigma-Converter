@@ -1,0 +1,29 @@
+title: OTX domain IOC - gmlygt.ru
+id: 161c05b2-687b-41c8-90e8-78c1593c1c75
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft OAuth App
+  Impersonation Campaign Leads to MFA Phishing' (688cdfbe7ede50a6ec81f692).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing
+tags:
+- phishing
+- oauth
+- application impersonation
+- aitm
+- microsoft 365
+- tycoon
+- mfa bypass
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: gmlygt.ru
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

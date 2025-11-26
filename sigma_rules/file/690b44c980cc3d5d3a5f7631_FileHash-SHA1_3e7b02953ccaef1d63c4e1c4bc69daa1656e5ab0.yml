@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA1 IOC - 3e7b02953ccaef1d63c4e1c4bc69daa1656e5ab0
+id: 088acf2c-de78-42cb-9af8-3052d9b1f5e1
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Weaponized Military
+  Documents Deliver Advanced SSH-Tor Backdoor' (690b44c980cc3d5d3a5f7631).
+author: AlienVault
+date: '2025-11-05'
+references:
+- https://cyble.com/blog/weaponized-military-documents-deliver-backdoor
+tags:
+- tor hidden service
+- defense sector
+- openssh
+- military lure
+- obfs4
+- uav operations
+- ssh-tor backdoor
+- belarusian air force
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 3e7b02953ccaef1d63c4e1c4bc69daa1656e5ab0
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

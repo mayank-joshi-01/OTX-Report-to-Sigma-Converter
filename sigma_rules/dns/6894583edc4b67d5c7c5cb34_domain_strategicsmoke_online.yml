@@ -1,0 +1,20 @@
+title: OTX domain IOC - strategicsmoke.online
+id: b0157f66-1486-47d1-b402-0771c79e262f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: strategicsmoke.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

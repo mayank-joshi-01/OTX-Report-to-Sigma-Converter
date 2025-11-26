@@ -1,0 +1,26 @@
+title: OTX FileHash-SHA1 IOC - 61ca26f402efc5f7ac717b6f4960706b20d644eb
+id: d492dc45-56c0-44e5-91bc-e343085a7e93
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Online Speedtest
+  Application' (68d50967331055dd8308adfd).
+author: AlienVault
+date: '2025-09-25'
+references:
+- https://security5magics.blogspot.com/2025/09/fake-online-speedtest-application.html
+tags:
+- javascript payload
+- node.js
+- scheduled tasks
+- evilai
+- fake applications
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 61ca26f402efc5f7ac717b6f4960706b20d644eb
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

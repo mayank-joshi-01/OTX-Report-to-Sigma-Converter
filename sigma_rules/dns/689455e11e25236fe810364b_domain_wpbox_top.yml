@@ -1,0 +1,20 @@
+title: OTX domain IOC - wpbox.top
+id: 298eab79-05ae-4a04-ab82-8d48e6f93052
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: wpbox.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

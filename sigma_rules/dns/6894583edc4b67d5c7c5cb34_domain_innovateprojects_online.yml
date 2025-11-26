@@ -1,0 +1,20 @@
+title: OTX domain IOC - innovateprojects.online
+id: 2f31e452-9d38-48b7-82dd-d3c2c11f3939
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: innovateprojects.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - lclxtf888.com
+id: dae41d71-4cb7-4279-9a4b-7d465cfcb998
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lclxtf888.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-SHA256 IOC - 6b7912e550c66688c65f8cf8651b638defc4dbeabae5f0f6a23fb20d98333f6b
+id: 2bfefd97-e773-4fcd-8a20-46d66d4d389c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Apache Under the
+  Lens: Tomcat''s Partial PUT and Camel''s Header Hijack'' (6866650f9a525176d0fa51dc).'
+author: AlienVault
+date: '2025-07-03'
+references:
+- https://unit42.paloaltonetworks.com/apache-cve-2025-24813-cve-2025-27636-cve-2025-29891
+tags:
+- cve-2025-24813
+- exploit
+- tomcat
+- cve-2025-29891
+- vulnerability
+- apache
+- cve-2025-27636
+- remote code execution
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 6b7912e550c66688c65f8cf8651b638defc4dbeabae5f0f6a23fb20d98333f6b
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

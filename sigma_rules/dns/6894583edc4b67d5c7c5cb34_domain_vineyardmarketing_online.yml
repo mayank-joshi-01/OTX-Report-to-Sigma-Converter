@@ -1,0 +1,20 @@
+title: OTX domain IOC - vineyardmarketing.online
+id: bfa0e060-bab3-4d7e-82d4-df71bff74f48
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vineyardmarketing.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

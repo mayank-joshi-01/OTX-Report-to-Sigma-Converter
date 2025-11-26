@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://cdn.discordapp.com/attachments/1395171942494896190/1413957011837816915/VrchatPlugin.rar?ex=68bdd195&is=68bc8015&hm=b9f359a7f75b84d1b860d2aa4dd92f8adad3a2feef5d82832f49d664a256ff7b&
+id: e0df4b7e-fca9-4f5d-8a14-2dd6ceb0f1c0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'New Stealit Campaign
+  Abuses Node.js Single Executable Application' (68e9c610ed593e428bddfceb).
+author: AlienVault
+date: '2025-10-11'
+references:
+- https://www.fortinet.com/blog/threat-research/stealit-campaign-abuses-nodejs-single-executable-application
+tags:
+- single executable application
+- cryptocurrency
+- anti-analysis
+- information theft
+- node.js
+- obfuscation
+- stealit
+- rat
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://cdn.discordapp.com/attachments/1395171942494896190/1413957011837816915/VrchatPlugin.rar?ex=68bdd195&is=68bc8015&hm=b9f359a7f75b84d1b860d2aa4dd92f8adad3a2feef5d82832f49d664a256ff7b&
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

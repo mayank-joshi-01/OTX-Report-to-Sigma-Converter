@@ -1,0 +1,20 @@
+title: OTX domain IOC - teleglqjx.top
+id: dd0beb28-a51f-474a-a8da-2f81f7b6b2f6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: teleglqjx.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

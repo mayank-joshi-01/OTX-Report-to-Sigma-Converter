@@ -1,0 +1,28 @@
+title: OTX domain IOC - tradingviewen.com
+id: a8d1b82c-0838-4793-8b68-2650f9f837ca
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Odyssey Stealer Malware
+  Attacks macOS Users' (68951749fda95619a21de94a).
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.forcepoint.com/blog/x-labs/odyssey-stealer-attacks-macos-users
+tags:
+- phishing
+- clickfix
+- credential theft
+- applescript
+- crypto wallet
+- macos
+- odyssey stealer
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: tradingviewen.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

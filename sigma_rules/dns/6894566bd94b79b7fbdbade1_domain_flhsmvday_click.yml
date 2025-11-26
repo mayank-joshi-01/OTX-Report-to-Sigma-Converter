@@ -1,0 +1,20 @@
+title: OTX domain IOC - flhsmvday.click
+id: c8109af4-45fc-400c-8386-5021cd84db93
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: flhsmvday.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

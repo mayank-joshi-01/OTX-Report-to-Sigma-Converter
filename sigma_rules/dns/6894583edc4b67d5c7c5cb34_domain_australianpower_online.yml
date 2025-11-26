@@ -1,0 +1,20 @@
+title: OTX domain IOC - australianpower.online
+id: 9d9c6f07-277e-4721-acc8-f0e529062cd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: australianpower.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

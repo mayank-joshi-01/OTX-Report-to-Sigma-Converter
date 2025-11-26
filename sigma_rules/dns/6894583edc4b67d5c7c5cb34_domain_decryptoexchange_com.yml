@@ -1,0 +1,20 @@
+title: OTX domain IOC - decryptoexchange.com
+id: c50c0ed2-a9fd-459f-a155-904e6b0e973a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: decryptoexchange.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

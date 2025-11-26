@@ -1,0 +1,20 @@
+title: OTX domain IOC - ecolivingz.site
+id: 0fac9223-246a-4cb9-addd-ecf5e411e6d6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ecolivingz.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

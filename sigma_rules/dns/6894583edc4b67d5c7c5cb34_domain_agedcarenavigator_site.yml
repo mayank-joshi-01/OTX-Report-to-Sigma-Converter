@@ -1,0 +1,20 @@
+title: OTX domain IOC - agedcarenavigator.site
+id: e7691e50-e399-436c-949c-1db14fff6780
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: agedcarenavigator.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - itsmejack.online
+id: f2806eb5-08c5-4815-8c7e-6860fbffcd75
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: itsmejack.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

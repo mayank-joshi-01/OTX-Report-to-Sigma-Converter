@@ -1,0 +1,20 @@
+title: OTX domain IOC - alt5bocah4d.site
+id: 39f213a0-3f47-4586-9e91-5dad0fc9a44b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alt5bocah4d.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,27 @@
+title: OTX domain IOC - vseaviations-inc.com
+id: 1de45baf-af72-4854-b83e-618d1caea21a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''NET RFQ: Request
+  for Quote Scammers Casting Wide Net to Steal Real Goods'' (6880970dcf6caa73c7a79b70).'
+author: AlienVault
+date: '2025-07-23'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/net-rfq-request-quote-scammers-casting-wide-net-steal-real-goods
+tags:
+- rfq scam
+- supply chain
+- business email compromise
+- social engineering
+- electronics theft
+- net financing fraud
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vseaviations-inc.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

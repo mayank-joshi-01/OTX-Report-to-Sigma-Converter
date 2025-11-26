@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA256 IOC - 1bfe65acbb9e509f80efcfe04b23daf31381e8b95a98112b81c9a080bdd65a2d
+id: 65615570-5fb6-42d4-8980-4b579ff63b5c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Operation BarrelFire:
+  Targeting Kazakhstan Oil & Gas'' (68b95a9f66687cde0c6c8561).'
+author: AlienVault
+date: '2025-09-04'
+references:
+- https://www.seqrite.com/blog/operation-barrelfire-noisybear-kazakhstan-oil-gas-sector/
+tags:
+- powershell
+- dll injection
+- spear-phishing
+- infrastructure
+- amsi bypass
+- oil and gas
+- downshell
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 1bfe65acbb9e509f80efcfe04b23daf31381e8b95a98112b81c9a080bdd65a2d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

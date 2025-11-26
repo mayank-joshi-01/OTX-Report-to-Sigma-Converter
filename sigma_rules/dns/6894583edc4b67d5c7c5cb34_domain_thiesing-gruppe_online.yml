@@ -1,0 +1,20 @@
+title: OTX domain IOC - thiesing-gruppe.online
+id: 2d892ecb-73f5-4d2f-aa7d-06a23af17623
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: thiesing-gruppe.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

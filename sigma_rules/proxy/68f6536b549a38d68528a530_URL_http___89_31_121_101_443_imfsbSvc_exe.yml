@@ -1,0 +1,26 @@
+title: OTX URL IOC - http://89.31.121.101:443/imfsbSvc.exe
+id: 68844970-7dfb-4861-bb49-b884547dbc52
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'A view on a recent
+  Salt Typhoon intrusion' (68f6536b549a38d68528a530).
+author: AlienVault
+date: '2025-10-20'
+references:
+- https://www.darktrace.com/blog/salty-much-darktraces-view-on-a-recent-salt-typhoon-intrusion
+tags:
+- snappybee
+- citrix
+- telecommunications
+- cve-2024-40766
+- dll sideloading
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: http://89.31.121.101:443/imfsbSvc.exe
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

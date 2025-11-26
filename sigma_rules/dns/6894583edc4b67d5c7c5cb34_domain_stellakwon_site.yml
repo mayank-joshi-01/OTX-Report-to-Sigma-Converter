@@ -1,0 +1,20 @@
+title: OTX domain IOC - stellakwon.site
+id: 1fe55360-8493-436f-9ba7-f604f65fa1a9
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stellakwon.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

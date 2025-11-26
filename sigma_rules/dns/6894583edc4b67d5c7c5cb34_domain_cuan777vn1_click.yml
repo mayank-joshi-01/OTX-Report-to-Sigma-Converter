@@ -1,0 +1,20 @@
+title: OTX domain IOC - cuan777vn1.click
+id: 52e02c59-9ff6-4266-b1b4-d05195c54995
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cuan777vn1.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

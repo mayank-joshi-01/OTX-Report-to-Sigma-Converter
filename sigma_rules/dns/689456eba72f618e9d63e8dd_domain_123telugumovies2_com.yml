@@ -1,0 +1,20 @@
+title: OTX domain IOC - 123telugumovies2.com
+id: 2725d788-26a8-49bc-9304-175cc588ac18
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence FastFlux'' (689456eba72f618e9d63e8dd).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 123telugumovies2.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

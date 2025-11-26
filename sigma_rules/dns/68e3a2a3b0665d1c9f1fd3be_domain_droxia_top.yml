@@ -1,0 +1,28 @@
+title: OTX domain IOC - droxia.top
+id: 1face8a0-0fc6-4783-8321-2d01a752c41c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''SecuritySnack: 18+E-Crime''
+  (68e3a2a3b0665d1c9f1fd3be).'
+author: AlienVault
+date: '2025-10-06'
+references:
+- https://dti.domaintools.com/securitysnack-18e-crime/
+tags:
+- social engineering
+- lure websites
+- spoofed domains
+- trojans
+- windows malware
+- credential theft
+- android malware
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: droxia.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

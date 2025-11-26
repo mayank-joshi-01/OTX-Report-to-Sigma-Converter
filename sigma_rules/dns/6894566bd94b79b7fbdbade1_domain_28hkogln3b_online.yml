@@ -1,0 +1,20 @@
+title: OTX domain IOC - 28hkogln3b.online
+id: 96dca1b1-a00b-4b6f-9d6e-670811e1b34c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 28hkogln3b.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

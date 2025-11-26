@@ -1,0 +1,20 @@
+title: OTX domain IOC - g-eternal-palms.site
+id: 84d47d87-238e-4cc4-8cb0-4ae2477e9ce6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: g-eternal-palms.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

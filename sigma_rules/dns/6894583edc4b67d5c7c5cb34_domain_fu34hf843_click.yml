@@ -1,0 +1,20 @@
+title: OTX domain IOC - fu34hf843.click
+id: 4e09e2cd-764b-4e2e-b010-b7989e0a9948
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fu34hf843.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

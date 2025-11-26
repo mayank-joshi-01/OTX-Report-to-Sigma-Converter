@@ -1,0 +1,35 @@
+title: OTX FileHash-SHA256 IOC - b75dec6f19a3dec025862a0d6e7dd565ad49c327cd85c21d5135ccffef60e68f
+id: 949f4cbe-3ef4-44a8-878e-52def72fa863
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Digital Frontlines:
+  India Under Multi-Nation Hacktivist Attack'' (68c85f705a536cbddb028faa).'
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.cyfirma.com/research/digital-frontlines-india-under-multi-nation-hacktivist-attack
+tags:
+- india
+- cross-border
+- smss.exe
+- phishing
+- cyberattacks
+- hacktivism
+- sysaid.exe
+- ddos
+- 103.97.128.77#clientsetup.exe
+- fshost64.exe
+- defacement
+- svchost.exe
+- data breach
+- manc.exe
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: b75dec6f19a3dec025862a0d6e7dd565ad49c327cd85c21d5135ccffef60e68f
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,29 @@
+title: OTX FileHash-MD5 IOC - 5c835258fc39104f198bca243e730d57
+id: e0ec812f-4792-423a-9c0a-e98003fcad0f
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Statistics Report
+  on Malware Targeting Windows Web Servers in Q2 2025' (68962f0cc24e24c3ada6d33b).
+author: AlienVault
+date: '2025-08-08'
+references:
+- https://asec.ahnlab.com/en/88925
+tags:
+- iis
+- wograt
+- windows
+- remote code execution
+- vulnerabilities
+- web servers
+- apache tomcat
+- web shells
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 5c835258fc39104f198bca243e730d57
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

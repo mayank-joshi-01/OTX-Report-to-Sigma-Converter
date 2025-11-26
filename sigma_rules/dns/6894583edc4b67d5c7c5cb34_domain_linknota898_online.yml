@@ -1,0 +1,20 @@
+title: OTX domain IOC - linknota898.online
+id: aadf0034-026a-4d94-a345-7eae6d46ba56
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: linknota898.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

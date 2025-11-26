@@ -1,0 +1,29 @@
+title: OTX domain IOC - mskisdakw.top
+id: 5187d88f-4808-4cd5-b7df-fa0bb85dd58f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''PlayPraetor''s evolving
+  threat: How Chinese-speaking actors globally scale an Android RAT'' (68948bfab798d830a4506f28).'
+author: AlienVault
+date: '2025-08-07'
+references:
+- https://www.cleafy.com/cleafy-labs/playpraetors-evolving-threat-how-chinese-speaking-actors-globally-scale-an-android-rat
+tags:
+- cryptocurrency
+- playpraetor
+- rat
+- banking
+- android
+- botnet
+- accessibility services
+- maas
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mskisdakw.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

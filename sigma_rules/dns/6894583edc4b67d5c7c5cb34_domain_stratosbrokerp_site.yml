@@ -1,0 +1,20 @@
+title: OTX domain IOC - stratosbrokerp.site
+id: b27584ce-5650-48e5-832d-b3c6e2514828
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: stratosbrokerp.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

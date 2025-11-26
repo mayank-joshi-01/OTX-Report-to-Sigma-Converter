@@ -1,0 +1,26 @@
+title: OTX domain IOC - redbludfootvr.com
+id: b4d74586-f8c0-4c46-ae94-78dc20859827
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Significant Risk and
+  Proactive Defense' (68bef37d948f9f130f1cbecc).
+author: AlienVault
+date: '2025-09-08'
+references:
+- https://www.silentpush.com/blog/salt-typhoon-2025/
+tags:
+- telecommunications
+- persistent threat
+- domain infrastructure
+- long-term access
+- cyberespionage
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: redbludfootvr.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

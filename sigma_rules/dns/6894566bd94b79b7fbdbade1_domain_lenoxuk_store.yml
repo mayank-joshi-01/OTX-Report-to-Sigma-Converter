@@ -1,0 +1,20 @@
+title: OTX domain IOC - lenoxuk.store
+id: c173c8a4-16b6-4e65-985f-2e1e9bc705ca
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: lenoxuk.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

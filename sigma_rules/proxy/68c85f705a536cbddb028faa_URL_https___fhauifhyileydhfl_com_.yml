@@ -1,0 +1,35 @@
+title: OTX URL IOC - https://fhauifhyileydhfl.com/
+id: 2ed6042b-1fe4-49d4-a402-1e598dba9fcd
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Digital Frontlines:
+  India Under Multi-Nation Hacktivist Attack'' (68c85f705a536cbddb028faa).'
+author: AlienVault
+date: '2025-09-15'
+references:
+- https://www.cyfirma.com/research/digital-frontlines-india-under-multi-nation-hacktivist-attack
+tags:
+- india
+- cross-border
+- smss.exe
+- phishing
+- cyberattacks
+- hacktivism
+- sysaid.exe
+- ddos
+- 103.97.128.77#clientsetup.exe
+- fshost64.exe
+- defacement
+- svchost.exe
+- data breach
+- manc.exe
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://fhauifhyileydhfl.com/
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

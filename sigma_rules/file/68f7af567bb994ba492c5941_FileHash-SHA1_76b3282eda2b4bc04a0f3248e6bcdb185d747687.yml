@@ -1,0 +1,28 @@
+title: OTX FileHash-SHA1 IOC - 76b3282eda2b4bc04a0f3248e6bcdb185d747687
+id: fc5ac519-c51a-4b48-bb61-0b63cf6227bf
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Privacy and Prizes:
+  Rewards from a Malicious Browser Extension'' (68f7af567bb994ba492c5941).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cofense.com/blog/privacy%E2%80%9D-and-prizes%E2%80%9D-rewards-from-a-malicious-browser-extension
+tags:
+- browser extension
+- chrome
+- manual installation
+- social engineering
+- phishing
+- credential theft
+- mac spoofer
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 76b3282eda2b4bc04a0f3248e6bcdb185d747687
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

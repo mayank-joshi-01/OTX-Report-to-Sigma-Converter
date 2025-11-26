@@ -1,0 +1,20 @@
+title: OTX domain IOC - vitalive.online
+id: f5904700-b8f1-45f9-998a-b616a82b7f6c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: vitalive.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

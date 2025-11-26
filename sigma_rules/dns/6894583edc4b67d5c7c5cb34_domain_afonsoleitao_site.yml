@@ -1,0 +1,20 @@
+title: OTX domain IOC - afonsoleitao.site
+id: b54173e7-75e3-41d6-b835-1cb4ffd2c970
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: afonsoleitao.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

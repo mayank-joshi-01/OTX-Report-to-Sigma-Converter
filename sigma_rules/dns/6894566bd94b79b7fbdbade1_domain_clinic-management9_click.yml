@@ -1,0 +1,20 @@
+title: OTX domain IOC - clinic-management9.click
+id: bd313ab9-34e8-4e4f-8eb9-3ad40a28347b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: clinic-management9.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

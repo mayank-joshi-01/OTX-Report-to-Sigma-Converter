@@ -1,0 +1,20 @@
+title: OTX domain IOC - profixstudios.site
+id: ed3690bd-1b8f-4a2d-9abe-c403c4de8e14
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: profixstudios.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

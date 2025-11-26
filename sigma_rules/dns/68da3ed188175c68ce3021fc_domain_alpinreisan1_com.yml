@@ -1,0 +1,30 @@
+title: OTX domain IOC - alpinreisan1.com
+id: 079d2de9-2916-491c-8446-a341a4fd7181
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XWorm RAT Delivered
+  via Shellcode: Multi-Stage Attack Analysis'' (68da3ed188175c68ce3021fc).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://www.forcepoint.com/blog/x-labs/xworm-rat-shellcode-multi-stage-analysis
+tags:
+- steganography
+- rat
+- phishing
+- obfuscation
+- shellcode
+- reflective dll injection
+- .net
+- xworm
+- multi-stage attack
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alpinreisan1.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

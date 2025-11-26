@@ -1,0 +1,27 @@
+title: OTX domain IOC - into-support.online
+id: 3be4941f-56e4-4df3-92ab-fcb859bed2a0
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Hunting on
+  potential APT35 Servers' (68d7b01af9417544ec39f9e5).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.stormshield.com/news/apt35-plays-same-music-again
+tags:
+- typosquatting
+- iranian apt
+- video conferencing
+- threat hunting
+- infrastructure tracking
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: into-support.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

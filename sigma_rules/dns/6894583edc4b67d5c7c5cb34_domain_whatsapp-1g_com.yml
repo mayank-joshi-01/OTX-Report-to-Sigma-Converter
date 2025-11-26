@@ -1,0 +1,20 @@
+title: OTX domain IOC - whatsapp-1g.com
+id: 27123306-299f-40e4-963c-88f3f9e26bd2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: whatsapp-1g.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

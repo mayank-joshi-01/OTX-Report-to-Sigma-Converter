@@ -1,0 +1,29 @@
+title: OTX domain IOC - jamaicahurricanerecovery.org
+id: b65cf5d3-a89c-420d-816e-3ef845ad90db
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Hurricane Melissa
+  Relief Scams: How Criminals Exploit Disaster'' (691695b880e1e02f77ed42d2).'
+author: AlienVault
+date: '2025-11-14'
+references:
+- https://www.netcraft.com/blog/hurricane-melissa-jamaica-relief-scams
+tags:
+- phishing
+- cryptocurrency
+- social engineering
+- fake charities
+- hurricane
+- domain spoofing
+- disaster relief
+- scams
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jamaicahurricanerecovery.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

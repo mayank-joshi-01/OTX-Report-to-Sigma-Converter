@@ -1,0 +1,20 @@
+title: OTX domain IOC - drmelaxinfoundation.store
+id: 7250cb04-605e-4cda-bc33-997c7d9205ab
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: drmelaxinfoundation.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

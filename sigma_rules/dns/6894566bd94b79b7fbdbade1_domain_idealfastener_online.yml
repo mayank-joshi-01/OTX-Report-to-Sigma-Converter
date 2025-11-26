@@ -1,0 +1,20 @@
+title: OTX domain IOC - idealfastener.online
+id: 406262e5-98b7-4d76-bebf-88e6c562ba7f
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: idealfastener.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

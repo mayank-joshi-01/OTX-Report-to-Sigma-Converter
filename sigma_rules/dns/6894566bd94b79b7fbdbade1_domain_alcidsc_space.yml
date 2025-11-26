@@ -1,0 +1,20 @@
+title: OTX domain IOC - alcidsc.space
+id: fcb86df4-5acb-4839-87ee-ec81e071f87a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: alcidsc.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - xn--80axddlt.site
+id: 6d8f8213-55bc-4dcd-b88f-863dad8d41b7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: xn--80axddlt.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

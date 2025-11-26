@@ -1,0 +1,20 @@
+title: OTX domain IOC - srx5651.click
+id: 1316709c-95bd-4790-86e4-0443b77fe56b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: srx5651.click
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

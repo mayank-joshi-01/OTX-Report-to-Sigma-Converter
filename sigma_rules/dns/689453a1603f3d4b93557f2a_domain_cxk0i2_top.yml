@@ -1,0 +1,20 @@
+title: OTX domain IOC - cxk0i2.top
+id: 772c7e72-ee66-4bf0-88d9-bd18f18bfaa1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cxk0i2.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,30 @@
+title: OTX hostname IOC - www.slickvpn.com
+id: 80675bac-a958-485c-ad5f-95ffb77cac5b
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Updated Toneshell
+  backdoor and novel SnakeDisk USB worm dropped' (68c32568c1f6fad2db3a2d3a).
+author: AlienVault
+date: '2025-09-11'
+references:
+- https://www.ibm.com/think/x-force/hive0154-drops-updated-toneshell-backdoor
+tags:
+- espionage
+- usb worm
+- yokai
+- china
+- thailand
+- toneshell
+- pubload
+- backdoor
+- snakedisk
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: www.slickvpn.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

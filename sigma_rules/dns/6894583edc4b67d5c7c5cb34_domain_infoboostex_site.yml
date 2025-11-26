@@ -1,0 +1,20 @@
+title: OTX domain IOC - infoboostex.site
+id: 6db63552-410a-47fe-8580-5d5153829762
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: infoboostex.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

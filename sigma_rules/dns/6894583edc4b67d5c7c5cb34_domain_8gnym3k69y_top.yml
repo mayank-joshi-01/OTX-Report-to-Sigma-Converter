@@ -1,0 +1,20 @@
+title: OTX domain IOC - 8gnym3k69y.top
+id: e6544b1e-1555-432c-9596-4e06e6dbc48b
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: 8gnym3k69y.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,34 @@
+title: OTX FileHash-SHA256 IOC - 996c7bcec3c12c3462220fc2c19d61ccc039005ef5e7c8fabc0b34631a31abb1
+id: d2d15d5c-f3b8-4650-ab9d-4a2d362fa491
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Warlock operation
+  joins busy ransomware landscape' (68caf32f9257e8264fc9c0b3).
+author: AlienVault
+date: '2025-09-17'
+references:
+- https://news.sophos.com/en-us/2025/09/17/gold-salems-warlock-operation-joins-busy-ransomware-landscape
+tags:
+- edr bypass
+- cve-2025-49704
+- cve-2025-53770
+- lateral movement
+- cve-2024-51324
+- sharepoint exploitation
+- warlock group
+- warlock
+- dedicated leak site
+- credential theft
+- cve-2025-49706
+- cve-2025-53771
+- ransomware
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 996c7bcec3c12c3462220fc2c19d61ccc039005ef5e7c8fabc0b34631a31abb1
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

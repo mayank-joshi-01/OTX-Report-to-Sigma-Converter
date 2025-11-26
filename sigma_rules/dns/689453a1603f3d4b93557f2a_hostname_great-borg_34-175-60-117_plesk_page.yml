@@ -1,0 +1,20 @@
+title: OTX hostname IOC - great-borg.34-175-60-117.plesk.page
+id: d019e6d1-8d26-4ea6-9475-fc38f1907934
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Phishing'' (689453a1603f3d4b93557f2a).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: great-borg.34-175-60-117.plesk.page
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

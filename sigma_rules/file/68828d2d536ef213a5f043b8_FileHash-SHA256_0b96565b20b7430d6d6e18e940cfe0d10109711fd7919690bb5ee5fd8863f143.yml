@@ -1,0 +1,27 @@
+title: OTX FileHash-SHA256 IOC - 0b96565b20b7430d6d6e18e940cfe0d10109711fd7919690bb5ee5fd8863f143
+id: b3aadc28-98e4-42a3-b04e-b304978ad8eb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'AI-Generated Malware
+  in Panda Image Hides Persistent Linux Threat' (68828d2d536ef213a5f043b8).
+author: AlienVault
+date: '2025-07-24'
+references:
+- https://www.aquasec.com/blog/ai-generated-malware-in-panda-image-hides-persistent-linux-threat
+tags:
+- koske
+- cryptomining
+- linux
+- rootkit
+- polyglot-abuse
+- ai-generated
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 0b96565b20b7430d6d6e18e940cfe0d10109711fd7919690bb5ee5fd8863f143
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

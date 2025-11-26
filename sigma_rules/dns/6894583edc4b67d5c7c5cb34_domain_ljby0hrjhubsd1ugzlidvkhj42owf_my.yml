@@ -1,0 +1,20 @@
+title: OTX domain IOC - ljby0hrjhubsd1ugzlidvkhj42owf.my
+id: e1d1a4d9-07a9-482b-8d55-d2f80b57740c
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: ljby0hrjhubsd1ugzlidvkhj42owf.my
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

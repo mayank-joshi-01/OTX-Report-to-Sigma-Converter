@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://caribview.info/tesla/.
+id: 485973c2-b4a8-46de-9549-cb1e89db2cfc
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Fake Tesla Websites
+  Scams' (6899074649af6129a0cfbb66).
+author: AlienVault
+date: '2025-08-10'
+references:
+- https://isc.sans.edu/diary/rss/32186
+tags:
+- tesla
+- phishing
+- fake websites
+- scam
+- google ads
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://caribview.info/tesla/.
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

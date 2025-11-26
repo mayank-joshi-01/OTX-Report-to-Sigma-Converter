@@ -1,0 +1,20 @@
+title: OTX domain IOC - jetdigitalwave.online
+id: 623ba36a-7f95-435a-9819-0d980286ae57
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: jetdigitalwave.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

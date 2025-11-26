@@ -1,0 +1,20 @@
+title: OTX domain IOC - bespokeinternationalrealty.online
+id: 1d9f4e7e-6b33-484d-b446-808b9027b2ec
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bespokeinternationalrealty.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

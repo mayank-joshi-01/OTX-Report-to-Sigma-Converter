@@ -1,0 +1,20 @@
+title: OTX domain IOC - easternrepublic.store
+id: 93b33f08-2e0d-42fb-8168-7e3c44c1fd7a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: easternrepublic.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

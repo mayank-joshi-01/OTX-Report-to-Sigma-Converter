@@ -1,0 +1,29 @@
+title: OTX URL IOC - https://chikeukohandco.com/csi/index.html?redirect_mongo_id=
+id: 52f17415-fa73-41cb-aaee-59c7db684a58
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Microsoft OAuth App
+  Impersonation Campaign Leads to MFA Phishing' (688cdfbe7ede50a6ec81f692).
+author: AlienVault
+date: '2025-08-01'
+references:
+- https://www.proofpoint.com/us/blog/threat-insight/microsoft-oauth-app-impersonation-campaign-leads-mfa-phishing
+tags:
+- phishing
+- oauth
+- application impersonation
+- aitm
+- microsoft 365
+- tycoon
+- mfa bypass
+- credential theft
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://chikeukohandco.com/csi/index.html?redirect_mongo_id=
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

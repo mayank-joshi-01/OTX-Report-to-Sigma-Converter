@@ -1,0 +1,20 @@
+title: OTX domain IOC - prontocharge.online
+id: 7c48f640-ab9c-4a67-b62d-d8203da305b8
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: prontocharge.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

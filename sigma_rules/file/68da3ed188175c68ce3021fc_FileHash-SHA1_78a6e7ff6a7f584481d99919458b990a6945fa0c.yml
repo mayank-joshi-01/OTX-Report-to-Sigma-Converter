@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - 78a6e7ff6a7f584481d99919458b990a6945fa0c
+id: 0b98d78c-3bb5-4fff-a207-0e12599659aa
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''XWorm RAT Delivered
+  via Shellcode: Multi-Stage Attack Analysis'' (68da3ed188175c68ce3021fc).'
+author: AlienVault
+date: '2025-09-29'
+references:
+- https://www.forcepoint.com/blog/x-labs/xworm-rat-shellcode-multi-stage-analysis
+tags:
+- steganography
+- rat
+- phishing
+- obfuscation
+- shellcode
+- reflective dll injection
+- .net
+- xworm
+- multi-stage attack
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: 78a6e7ff6a7f584481d99919458b990a6945fa0c
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

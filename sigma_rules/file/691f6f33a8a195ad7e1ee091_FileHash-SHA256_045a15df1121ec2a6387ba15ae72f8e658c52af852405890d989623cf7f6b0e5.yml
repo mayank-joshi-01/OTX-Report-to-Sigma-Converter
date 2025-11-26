@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 045a15df1121ec2a6387ba15ae72f8e658c52af852405890d989623cf7f6b0e5
+id: b663e166-5184-4e25-8a10-172a9453290d
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mobile Banking Malware
+  bypassing WhatsApp, Telegram and Signal Encryption' (691f6f33a8a195ad7e1ee091).
+author: AlienVault
+date: '2025-11-20'
+references:
+- https://www.threatfabric.com/blogs/sturnus-banking-trojan-bypassing-whatsapp-telegram-and-signal
+tags:
+- banking trojan
+- remote control
+- europe
+- android
+- vnc
+- keylogging
+- sturnus
+- encrypted messaging
+- data exfiltration
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 045a15df1121ec2a6387ba15ae72f8e658c52af852405890d989623cf7f6b0e5
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

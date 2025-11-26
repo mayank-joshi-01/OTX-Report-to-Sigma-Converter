@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - d080f553c9b1276317441894ec6861573fa64fb1fae46165a55302e782b1614d
+id: 6e497f86-c4e8-447a-bf54-7960b113b75a
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Exploitation
+  of SonicWall VPNs' (6890cbb5ea3a135d64b186c0).
+author: AlienVault
+date: '2025-08-04'
+references:
+- https://www.huntress.com/blog/exploitation-of-sonicwall-vpn
+- https://www.guidepointsecurity.com/blog/gritrep-akira-sonicwall/
+tags:
+- sonicwall
+- vpn
+- credential theft
+- mfa bypass
+- ransomware
+- akira
+- lateral movement
+- zero-day
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: d080f553c9b1276317441894ec6861573fa64fb1fae46165a55302e782b1614d
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

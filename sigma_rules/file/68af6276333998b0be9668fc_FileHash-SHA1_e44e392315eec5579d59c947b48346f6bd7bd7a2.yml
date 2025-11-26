@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA1 IOC - e44e392315eec5579d59c947b48346f6bd7bd7a2
+id: 4e5bb8d5-b592-4756-90f1-7e9515ea5820
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'UAC-0057 Keeps Pressure
+  on Ukraine and Poland' (68af6276333998b0be9668fc).
+author: AlienVault
+date: '2025-08-27'
+references:
+- https://harfanglab.io/insidethelab/uac-0057-pressure-ukraine-poland/#tid_chains_sim
+tags:
+- ukraine
+- confuserex
+- cobalt strike
+- poland
+- cyber espionage
+- upx
+- downloaders
+- vba macros
+- domain impersonation
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha1: e44e392315eec5579d59c947b48346f6bd7bd7a2
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

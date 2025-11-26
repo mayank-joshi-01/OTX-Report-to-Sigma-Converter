@@ -1,0 +1,28 @@
+title: OTX domain IOC - windows-msg-as.live
+id: b816e117-0243-4faa-b36d-17d3db7d8378
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''A Cereal Offender:
+  Analyzing the CORNFLAKE.V3 Backdoor'' (68a6827e930a07d2130dda50).'
+author: AlienVault
+date: '2025-08-21'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/analyzing-cornflake-v3-backdoor
+tags:
+- cornflake.v3
+- windytwist.sea
+- node.js
+- clickfix
+- backdoor
+- kerberoasting
+- php
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: windows-msg-as.live
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

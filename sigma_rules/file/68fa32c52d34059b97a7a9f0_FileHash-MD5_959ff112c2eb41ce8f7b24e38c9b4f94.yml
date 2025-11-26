@@ -1,0 +1,25 @@
+title: OTX FileHash-MD5 IOC - 959ff112c2eb41ce8f7b24e38c9b4f94
+id: 00af62bb-db8c-44ec-9325-fa488fb8f339
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Agenda Ransomware
+  Deploys Linux Variant on Windows Systems Through Remote Management Tools and BYOVD
+  Techniques' (68fa32c52d34059b97a7a9f0).
+author: AlienVault
+date: '2025-10-23'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/agenda-ransomware-deploys-linux-variant-on-windows-systems.html
+tags:
+- ransomware
+- coroxy
+- byovd
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 959ff112c2eb41ce8f7b24e38c9b4f94
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

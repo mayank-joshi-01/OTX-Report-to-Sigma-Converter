@@ -1,0 +1,26 @@
+title: OTX domain IOC - csopakistan.com
+id: 721df85d-1df5-446b-8852-11f5708077ca
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Pakistani freelancers
+  building cracking websites for stealer-delivery' (6864dc229b132a5ca4e3add8).
+author: AlienVault
+date: '2025-07-02'
+references:
+- https://www.intrinsec.com/wp-content/uploads/2025/06/TLP-CLEAR-Pakistani-Freelancers-EN.pdf
+tags:
+- pakistani freelancers
+- cracking websites
+- hosting providers
+- stealer malware
+- pay-per-install
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: csopakistan.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

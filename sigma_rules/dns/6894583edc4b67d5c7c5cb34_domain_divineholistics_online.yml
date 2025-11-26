@@ -1,0 +1,20 @@
+title: OTX domain IOC - divineholistics.online
+id: f42d6b7b-baa3-4e6c-af47-6216b48b4fd6
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: divineholistics.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

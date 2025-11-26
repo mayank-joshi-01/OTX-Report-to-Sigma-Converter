@@ -1,0 +1,31 @@
+title: OTX domain IOC - sites-phantom.com
+id: 0ea835f1-85e1-44d1-9a57-fb7c9fcaebe3
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Odyssey Stealer &
+  AMOS Hit macOS Developers with Fake Homebrew Sites' (68f130fdef3c6aab4fcab821).
+author: AlienVault
+date: '2025-10-16'
+references:
+- https://hunt.io/blog/macos-odyssey-amos-malware-campaign
+tags:
+- stealer
+- macos
+- privilege escalation
+- phishing
+- homebrew
+- odyssey stealer
+- amos
+- developers
+- social engineering
+- infrastructure reuse
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: sites-phantom.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

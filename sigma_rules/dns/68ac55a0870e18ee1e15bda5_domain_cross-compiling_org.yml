@@ -1,0 +1,27 @@
+title: OTX domain IOC - cross-compiling.org
+id: bc109e1f-2a7e-4bd4-b18a-7819c90172b3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''The Resurgence of
+  IoT Malware: Inside the Mirai-Based "Gayfemboy" Botnet Campaign'' (68ac55a0870e18ee1e15bda5).'
+author: AlienVault
+date: '2025-08-25'
+references:
+- https://www.fortinet.com/blog/threat-research/iot-malware-gayfemboy-mirai-based-botnet-campaign
+tags:
+- obfuscation
+- mirai
+- botnet
+- evasion
+- iot
+- ddos
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: cross-compiling.org
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

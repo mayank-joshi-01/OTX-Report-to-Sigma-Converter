@@ -1,0 +1,20 @@
+title: OTX domain IOC - qyoprobasxtbk.store
+id: 33984a33-f86c-4915-a56d-6097f2101856
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: qyoprobasxtbk.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

@@ -1,0 +1,20 @@
+title: OTX domain IOC - payment-stage.site
+id: 7bb15bc5-28e6-4ecd-b247-bc47dda3a52a
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: payment-stage.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

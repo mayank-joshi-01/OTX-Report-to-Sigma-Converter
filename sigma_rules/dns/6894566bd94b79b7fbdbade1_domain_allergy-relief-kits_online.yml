@@ -1,0 +1,20 @@
+title: OTX domain IOC - allergy-relief-kits.online
+id: 7cab6fa7-742f-4152-9ab1-cae8942669c7
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: allergy-relief-kits.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

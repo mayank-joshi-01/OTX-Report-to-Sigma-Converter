@@ -1,0 +1,20 @@
+title: OTX domain IOC - igrovoj-rul.site
+id: 432a1226-f644-4bc2-adf2-3dd3392fed6d
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: igrovoj-rul.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

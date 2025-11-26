@@ -1,0 +1,20 @@
+title: OTX domain IOC - fzphcbf9cd38043e.com
+id: de628a12-38b4-43a7-a270-d740f8c8dc00
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: fzphcbf9cd38043e.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

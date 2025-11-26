@@ -1,0 +1,20 @@
+title: OTX domain IOC - aerial-drone-pro.online
+id: 1490f42d-43fa-4fc4-bc4b-a7c8f09182e1
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: aerial-drone-pro.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

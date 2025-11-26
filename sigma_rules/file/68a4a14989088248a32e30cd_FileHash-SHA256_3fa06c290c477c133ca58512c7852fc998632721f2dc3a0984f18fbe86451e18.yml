@@ -1,0 +1,30 @@
+title: OTX FileHash-SHA256 IOC - 3fa06c290c477c133ca58512c7852fc998632721f2dc3a0984f18fbe86451e18
+id: 5d692869-ed09-4048-8383-e64b23179b44
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'July 2025 APT Attack
+  Trends Report (South Korea)' (68a4a14989088248a32e30cd).
+author: AlienVault
+date: '2025-08-19'
+references:
+- https://asec.ahnlab.com/en/89639
+tags:
+- dropbox api
+- rat
+- apt
+- lnk files
+- rokrat
+- xenorat
+- google drive
+- south korea
+- spear phishing
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 3fa06c290c477c133ca58512c7852fc998632721f2dc3a0984f18fbe86451e18
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

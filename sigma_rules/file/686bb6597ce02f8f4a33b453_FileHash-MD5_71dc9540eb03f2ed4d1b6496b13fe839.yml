@@ -1,0 +1,30 @@
+title: OTX FileHash-MD5 IOC - 71dc9540eb03f2ed4d1b6496b13fe839
+id: 58466ffe-c0f9-4541-b7eb-3fa12199b040
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'BERT Ransomware Group
+  Targets Asia and Europe on Multiple Platforms' (686bb6597ce02f8f4a33b453).
+author: AlienVault
+date: '2025-07-07'
+references:
+- https://www.trendmicro.com/en_us/research/25/g/bert-ransomware-group-targets-asia-and-europe-on-multiple-platforms.html
+tags:
+- asia
+- esxi
+- powershell
+- ransomware
+- europe
+- encryption
+- linux
+- bert
+- windows
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.md5: 71dc9540eb03f2ed4d1b6496b13fe839
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

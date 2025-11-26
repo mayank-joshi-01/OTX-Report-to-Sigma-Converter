@@ -1,0 +1,20 @@
+title: OTX domain IOC - driverfortnigtly.ga
+id: 996a797a-7bf4-457a-a286-dd3ad3ec5ac3
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: driverfortnigtly.ga
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

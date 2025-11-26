@@ -1,0 +1,20 @@
+title: OTX domain IOC - mythi-epris-fixer.space
+id: 04b3e6fe-5980-48ca-9bcc-8924e1659082
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: mythi-epris-fixer.space
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

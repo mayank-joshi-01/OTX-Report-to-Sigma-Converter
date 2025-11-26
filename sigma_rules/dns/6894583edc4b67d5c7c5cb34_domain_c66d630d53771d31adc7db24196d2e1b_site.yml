@@ -1,0 +1,20 @@
+title: OTX domain IOC - c66d630d53771d31adc7db24196d2e1b.site
+id: 47791481-dcd3-4e93-ad32-614098f05fd4
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Detection'' (6894583edc4b67d5c7c5cb34).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: c66d630d53771d31adc7db24196d2e1b.site
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

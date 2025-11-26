@@ -1,0 +1,20 @@
+title: OTX domain IOC - pua-us.top
+id: 764236cf-286e-4bc1-a7f2-698c9a23458e
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence Command And Control'' (689455e11e25236fe810364b).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: pua-us.top
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

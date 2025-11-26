@@ -1,0 +1,26 @@
+title: OTX domain IOC - system-healthadv.com
+id: 7c8547b4-8de5-4cb8-b013-3bd296eb8296
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''To Be (A Robot)
+  or Not to Be: New Malware Attributed to Russia State-Sponsored COLDRIVER'' (68f756148d1335a1b45d57c2).'
+author: AlienVault
+date: '2025-10-21'
+references:
+- https://cloud.google.com/blog/topics/threat-intelligence/new-malware-russia-coldriver?linkId=17354485
+tags:
+- coldcopy
+- backdoor
+- lostkeys
+- russian state-sponsored
+- powershell
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: system-healthadv.com
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

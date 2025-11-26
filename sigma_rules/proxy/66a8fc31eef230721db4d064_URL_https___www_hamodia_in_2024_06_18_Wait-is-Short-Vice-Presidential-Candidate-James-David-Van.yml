@@ -1,0 +1,26 @@
+title: OTX URL IOC - https://www.hamodia.in/2024/06/18/Wait-is-Short-Vice-Presidential-Candidate-James-David-Vance-Offers-Hope-for-Israel.html
+id: b2f0d179-18d3-42bc-a68c-bdd42ec826cb
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Mid-year Doppelganger
+  information operations in Europe and the US' (66a8fc31eef230721db4d064).
+author: AlienVault
+date: '2024-07-30'
+references:
+- https://harfanglab.io/en/insidethelab/doppelganger-operations-europe-us/
+tags:
+- redirection
+- social media
+- russian actors
+- disinformation
+- elections
+- otx
+- threat-intel
+logsource:
+  category: proxy
+detection:
+  selection:
+    url.full: https://www.hamodia.in/2024/06/18/Wait-is-Short-Vice-Presidential-Candidate-James-David-Vance-Offers-Hope-for-Israel.html
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

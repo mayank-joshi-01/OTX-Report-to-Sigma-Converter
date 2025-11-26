@@ -1,0 +1,27 @@
+title: OTX hostname IOC - viliam.sky-writer.online
+id: eb1d5fb6-4c07-4937-954d-283eab6d6f26
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Threat Hunting on
+  potential APT35 Servers' (68d7b01af9417544ec39f9e5).
+author: AlienVault
+date: '2025-09-27'
+references:
+- https://www.stormshield.com/news/apt35-plays-same-music-again
+tags:
+- typosquatting
+- iranian apt
+- video conferencing
+- threat hunting
+- infrastructure tracking
+- phishing
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: viliam.sky-writer.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

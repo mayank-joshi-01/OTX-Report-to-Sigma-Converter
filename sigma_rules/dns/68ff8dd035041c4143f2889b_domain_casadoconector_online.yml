@@ -1,0 +1,27 @@
+title: OTX domain IOC - casadoconector.online
+id: d37234b9-08ea-4383-ac9a-2e6d44fcf541
+status: experimental
+description: Indicator of compromise from AlienVault OTX pulse 'Active Water Saci
+  Campaign Spreading Via WhatsApp Features Multi-Vector Persistence and Sophisticated
+  C&C' (68ff8dd035041c4143f2889b).
+author: AlienVault
+date: '2025-10-27'
+references:
+- https://www.trendmicro.com/en_us/research/25/j/active-water-saci-campaign-whatsapp-update.html
+tags:
+- sorvepotel
+- banking trojan
+- vbs
+- coyote
+- anti-analysis
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: casadoconector.online
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

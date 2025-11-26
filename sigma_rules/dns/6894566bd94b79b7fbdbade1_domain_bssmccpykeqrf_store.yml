@@ -1,0 +1,20 @@
+title: OTX domain IOC - bssmccpykeqrf.store
+id: 9393fe4d-38bd-4e1b-8511-1c5296b6eac2
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Infrastructure of
+  Interest: Medium Confidence InfoStealer'' (6894566bd94b79b7fbdbade1).'
+author: AlienVault
+date: '2025-08-07'
+references: []
+tags:
+- otx
+- threat-intel
+logsource:
+  category: dns
+detection:
+  selection:
+    dns.question.name: bssmccpykeqrf.store
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium

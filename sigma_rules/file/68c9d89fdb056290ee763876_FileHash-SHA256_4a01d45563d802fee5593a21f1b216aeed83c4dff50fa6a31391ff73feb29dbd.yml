@@ -1,0 +1,33 @@
+title: OTX FileHash-SHA256 IOC - 4a01d45563d802fee5593a21f1b216aeed83c4dff50fa6a31391ff73feb29dbd
+id: fd503877-0e48-4c34-be7b-9c0ab3342c87
+status: experimental
+description: 'Indicator of compromise from AlienVault OTX pulse ''Under the Pure Curtain:
+  From RAT to Builder to Coder'' (68c9d89fdb056290ee763876).'
+author: AlienVault
+date: '2025-09-16'
+references:
+- https://research.checkpoint.com/2025/under-the-pure-curtain-from-rat-to-builder-to-coder
+tags:
+- rust loader
+- rat
+- purehvnc
+- cybercrime
+- purecrypter
+- purerat
+- pureminer
+- purehvnc rat
+- clickfix
+- blue loader
+- github
+- purelogs
+- otx
+- threat-intel
+logsource:
+  category: file
+detection:
+  selection:
+    file.hash.sha256: 4a01d45563d802fee5593a21f1b216aeed83c4dff50fa6a31391ff73feb29dbd
+  condition: selection
+falsepositives:
+- Unknown – verify this IOC against your environment.
+level: medium
